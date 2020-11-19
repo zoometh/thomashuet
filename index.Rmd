@@ -1,5 +1,5 @@
 ---
-title: "**Eco**, beyond *nomos* and *logos*"
+title: "**Eco** *nomos* and *logos*"
 author: "Thomas Huet"
 date: "11/12/2020"
 header-includes:
@@ -9,7 +9,7 @@ header-includes:
 #   html_document:
 #     # template: my-template.html
 #     template: null
-output: html_document
+output: html_document 
 ---
 
 ```{r setup, include=FALSE}
@@ -31,15 +31,47 @@ I have participate to various projects where a certain degree of formalism was e
 
 ## Rock-art
 
-My PhD (2012) was dedicated to the mont Bego rock-art (Alpes-Maritimes, France), one of the major concentration in Western Europe with near to 4,000 engraved rocks and 20,000 figurative engravings.
+[My PhD (2012)](https://tel.archives-ouvertes.fr/tel-00712290), published in the [*Mémoires de la Société Préhistorique Française (n° 63)* (2017)](http://www.prehistoire.org/shop_515-40342-0-0/m63-2017-les-gravures-piquetees-du-mont-bego-alpes-maritimes-organisation-spatiale-et-seriation-vie-iie-millenaire-av.-j.-c.-t.-huet.html), was dedicated to the mont Bego rock-art (Alpes-Maritimes, France), 
 
+![](http://www.prehistoire.org/offres/file_inline_src/515/515_imgO_020317_092024.jpg){width=250px}]
+<!-- http://www.prehistoire.org/shop_515-40342-2674-822/m63-2017-les-gravures-piquetees-du-mont-bego-alpes-maritimes-organisation-spatiale-et-seriation-vie-iie-millenaire-av.-j.-c.-t.-huet.html -->
 
+The mont Bego site is one of the major concentration in Western Europe with near to 4,000 engraved rocks.
 
-My PhD has been published in the [*Mémoires de la Société Préhistorique Française (n° 63)*](http://www.prehistoire.org/shop_515-40342-0-0/m63-2017-les-gravures-piquetees-du-mont-bego-alpes-maritimes-organisation-spatiale-et-seriation-vie-iie-millenaire-av.-j.-c.-t.-huet.html) in 2017
+```{r lf.Sectors}
+# load the lf map from img/CdT.html
+# knitr::include_url("https://yihui.shinyapps.io/miniUI/")
+# knitr::include_app(paste0(getwd(),"/img/m.html"), height = '600px')
+# htmltools::includeHTML("https://github.com/zoometh/bego/blob/main/img/Bego.html")
+```
 
-![](http://www.prehistoire.org/offres/file_inline_src/515/515_imgO_020317_092024.jpg){width=250px}
+There's 20,000 figurative engravings. 
+
 
 I started to develop the **[Bego app]("https://zoometh.github.io/bego/")** to allow the general public to prepare a visit to the site.
+
+## Anthropomorphic flint bladelets
+
+Ibañez *et al.*, published a comprehensive study of the context of PPNB flint bladelets found in Kharaysin (Jordania)[ in *Antiquity* (2020)](https://www.cambridge.org/core/journals/antiquity/article/flint-figurines-from-the-early-neolithic-site-of-kharaysin-jordan/FFEB57291718AF9FF216F1113844C61B) question the anthropomorphism of these first societies of farmers.  
+
+
+```{r df, fig.width= 7, fig.cap="Kharaysin bladelets, credits: Kharaysin project"}
+knitr::include_graphics('img/kharaysin_bladelets.png')
+```
+
+The dataset was compared to Aïn Ghazal statues and busts (PPNB). A shape analysis of the  , dated to , with a procustre analysis made on the whole contour (not only some landmarks)
+The shapes of the flint bladelets from Kharaysin mix together with the statues and busts from the near Aïn Ghazal site
+
+```{r tyr, fig.width= 7, fig.cap="Kharaysin bladelets, credits: Kharaysin project"}
+knitr::include_graphics('img/mds.png')
+# library(cowplot)
+# fig_svg<-cowplot::ggdraw()+cowplot::draw_image("img/mds.svg")
+# plot(fig_svg)
+# dist.meth <- "euclidian" # "euclidian"
+# clust.meth <- "complete" # "ward.D2", "complete", "min"
+# mat1 <- 'D:/Cultures_9/PPNB/(Etude)/resultats/distance_matrix_part1.jpg'
+# include_graphics(mat1)
+```
 
 # IT development
 
