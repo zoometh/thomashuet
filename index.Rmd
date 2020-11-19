@@ -1,26 +1,82 @@
 ---
-title: "Eco"
+title: "**Eco**, beyond *nomos* and *logos*"
 author: "Thomas Huet"
 date: "11/12/2020"
 header-includes:
   - \usepackage{float}
   - \floatplacement{figure}{H}  #make every figure with capti
+# output: 
+#   html_document:
+#     # template: my-template.html
+#     template: null
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, fig.width = 19, fig.height = 14)
-
-
+library(knitr)
+library(kableExtra)
+library(dplyr)
+knitr::opts_chunk$set(echo = FALSE,  fig.align="center", fig.width = 12, fig.height = 12)
 ```
 
-I'm an archaeologist deeply involved in quantitative archaeology
+I'm an archaeologist deeply involved in quantitative archaeology. According to me ***there is a natural history of human societies***, so I am quite interested by social sciences, statistics, pattern recognition and data visualization.
 
-I've developed two RShiny apps on the C14 radiocarbon dating: [EUROEVOL_R](https://neolithic.shinyapps.io/Euroevol_R/) and [NeoNet](https://neolithic.shinyapps.io/NeoNet/)
+# Curriculum Vitae
 
-These applications are based on R and leaflet:
+There is my [CV](https://github.com/zoometh/thomashuet.github.io/blob/main/cv/cv_english.pdf)
 
-![](https://raw.githubusercontent.com/zoometh/C14/main/docs/imgs/panel_map_idx.png){width=20%}
+# Archaeological researches
+
+I have participate to various projects where a certain degree of formalism was expected to identify reccurent and significative patterns
+
+## Rock-art
+
+My PhD (2012) was dedicated to the mont Bego rock-art (Alpes-Maritimes, France), one of the major concentration in Western Europe with near to 4,000 engraved rocks and 20,000 figurative engravings.
+
+
+
+My PhD has been published in the [*Mémoires de la Société Préhistorique Française (n° 63)*](http://www.prehistoire.org/shop_515-40342-0-0/m63-2017-les-gravures-piquetees-du-mont-bego-alpes-maritimes-organisation-spatiale-et-seriation-vie-iie-millenaire-av.-j.-c.-t.-huet.html) in 2017
+
+![](http://www.prehistoire.org/offres/file_inline_src/515/515_imgO_020317_092024.jpg){width=250px}
+
+I started to develop the **[Bego app]("https://zoometh.github.io/bego/")** to allow the general public to prepare a visit to the site.
+
+# IT development
+
+I am used to programm in R and Python, also using markup languages (LaTeX, HTML, etc.), the GitHub platform, GIS and database. I am also familiar with network analysis, shape analysis and 3D/photogrammetry
+
+## Interactive web apps
+
+I've developed **3** RShiny apps based on [R](https://www.r-project.org/) and [Leaflet](https://leafletjs.com/):
+
+```{r Rshiny.apps}
+shiny.apps.df <- data.frame(name=c("EUROEVOL_R",
+                                "NeoNet",
+                                "Bego"),
+                         topic=c("Radiocarbon mapping",
+                                 "Radiocarbon mapping",
+                                 "Rock-art mapping"),
+                         web.url=c("https://zoometh.github.io/C14/",
+                                   "https://zoometh.github.io/C14/neonet",
+                                   "https://zoometh.github.io/bego/"),
+                         app.url=c("https://neolithic.shinyapps.io/Euroevol_R/",
+                                   "https://neolithic.shinyapps.io/NeoNet/",
+                                   "None"))
+kable(shiny.apps.df,"html") %>% 
+  kable_styling(full_width = FALSE, position = "center", font_size=12)
+```
+
+
+## The **iconr** R package
+
+I am developping of a R package with [Jose Pozo](https://orcid.org/0000-0002-0759-3510) and [Craig Alexander](https://www.researchgate.net/profile/Craig_Alexander2). This package has the working name of 'decorr' (soon: 'iconr'). Its purpose is to:
+
+1. map an iconographical content with a relative neighborhood graphs (RNG) created in a GIS
+2. compare iconographical composition based on quantitative indices coming from Graph theory (degrees, betweeness, etc.) and spatial analysis (average heights, etc.)
+
+| ![](https://github.com/zoometh/iconr/raw/master/vignettes/compar_eds_2_3.png){width=500px} |
+|:--:| 
+| common edges (in red) between two Late Bronze stelae |
 
 
 
