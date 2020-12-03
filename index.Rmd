@@ -1,5 +1,5 @@
 ---
-title: "**Eco** *nomos* and *logos*"
+title: "**Eco**-*nomique* and **Eco**-*logique*"
 author: "Thomas Huet"
 date: "11/12/2020"
 header-includes:
@@ -19,11 +19,13 @@ library(dplyr)
 knitr::opts_chunk$set(echo = FALSE,  fig.align="center", fig.width = 12, fig.height = 12)
 ```
 
-I'm an archaeologist deeply involved in quantitative archaeology. According to me ***there is a natural history of human societies***, so I am quite interested by social sciences, statistics, pattern recognition and data visualization.
+Si les mots on un sens (plutôt que seulement des usages), il faudrait se pencher un peu plus vers l'étymologie de ces deux termes: écologie et économie. Leur caractère conflictuel de nos sociétés modernes reflète mal que ces deux notions sont formées sur l' *oikos* (eco). En fait ce qui les fait différer c'est que le *logos* (d'écologie) réfère à des lois qui s'impose aux hommes et aux femmes, alors que le *nomos* (de économie) réfère à des lois que les hommes et aux femmes se sont donnés d'eux-mêmes. Selon moi, l'exaptation de la nature, via la technique, reste le grand mystère à éclaircir
+
+Je suis un archéologue très impliqué dans les sciences informatiques, suivant mon credo  (il y a une **histoire naturelle des sociétés humaines**), je développe des formalismes en sciences humaines, statistiques, visualisation de données, etc. pour mettre en évidence les régularités des distributions. 
 
 # Curriculum Vitae
 
-There is my [CV](https://github.com/zoometh/thomashuet.github.io/blob/main/cv/cv_english.pdf)
+Mon [CV](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)
 
 # Archaeological researches
 
@@ -31,9 +33,6 @@ I have participate to various projects where a certain degree of formalism was e
 
 ## Rock-art
 
-[My PhD (2012)](https://tel.archives-ouvertes.fr/tel-00712290), published in the [*Mémoires de la Société Préhistorique Française (n° 63)* (2017)](http://www.prehistoire.org/shop_515-40342-0-0/m63-2017-les-gravures-piquetees-du-mont-bego-alpes-maritimes-organisation-spatiale-et-seriation-vie-iie-millenaire-av.-j.-c.-t.-huet.html), was dedicated to the mont Bego rock-art (Alpes-Maritimes, France), 
-
-![](http://www.prehistoire.org/offres/file_inline_src/515/515_imgO_020317_092024.jpg){width=250px}]
 <!-- http://www.prehistoire.org/shop_515-40342-2674-822/m63-2017-les-gravures-piquetees-du-mont-bego-alpes-maritimes-organisation-spatiale-et-seriation-vie-iie-millenaire-av.-j.-c.-t.-huet.html -->
 
 The mont Bego site is one of the major concentration in Western Europe with near to 4,000 engraved rocks.
