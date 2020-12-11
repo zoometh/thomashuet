@@ -1,7 +1,7 @@
 ---
-title: "**Eco**-*nomique* and **Eco**-*logique*"
-author: "Thomas Huet"
-date: "11/12/2020"
+title: Thomas Huet
+# author: "Thomas Huet
+# date: "11/12/2020"
 header-includes:
   - \usepackage{float}
   - \floatplacement{figure}{H}  #make every figure with capti
@@ -19,95 +19,32 @@ library(dplyr)
 knitr::opts_chunk$set(echo = FALSE,  fig.align="center", fig.width = 12, fig.height = 12)
 ```
 
-Si les mots on un sens (plutôt que seulement des usages), il faudrait se pencher un peu plus vers l'étymologie de ces deux termes: écologie et économie. Leur caractère conflictuel de nos sociétés modernes reflète mal que ces deux notions sont formées sur l' *oikos* (eco). En fait ce qui les fait différer c'est que le *logos* (d'écologie) réfère à des lois qui s'impose aux hommes et aux femmes, alors que le *nomos* (de économie) réfère à des lois que les hommes et aux femmes se sont donnés d'eux-mêmes. Selon moi, l'exaptation de la nature, via la technique, reste le grand mystère à éclaircir
+Labex ARCHIMEDE, Associate Researcher \n UMR 5140 ASM-CNRS \n Université Paul-Valéry Montpellier 3, France
 
-Je suis un archéologue très impliqué dans les sciences informatiques, suivant mon credo  (il y a une **histoire naturelle des sociétés humaines**), je développe des formalismes en sciences humaines, statistiques, visualisation de données, etc. pour mettre en évidence les régularités des distributions. 
+* professional page: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
+* mail: [thomashuet7@gmail.com](thomashuet7@gmail.com)
+* [CV](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)
 
-# Curriculum Vitae
-
-Mon [CV](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)
-
-# Archaeological researches
-
-I have participate to various projects where a certain degree of formalism was expected to identify reccurent and significative patterns
-
-## Rock-art
-
-<!-- http://www.prehistoire.org/shop_515-40342-2674-822/m63-2017-les-gravures-piquetees-du-mont-bego-alpes-maritimes-organisation-spatiale-et-seriation-vie-iie-millenaire-av.-j.-c.-t.-huet.html -->
-
-The mont Bego site is one of the major concentration in Western Europe with near to 4,000 engraved rocks.
-
-```{r lf.Sectors}
-# load the lf map from img/CdT.html
-# knitr::include_url("https://yihui.shinyapps.io/miniUI/")
-# knitr::include_app(paste0(getwd(),"/img/m.html"), height = '600px')
-# htmltools::includeHTML("https://github.com/zoometh/bego/blob/main/img/Bego.html")
-```
-
-There's 20,000 figurative engravings. 
-
-
-I started to develop the **[Bego app]("https://zoometh.github.io/bego/")** to allow the general public to prepare a visit to the site.
-
-## Anthropomorphic flint bladelets
-
-Ibañez *et al.*, published a comprehensive study of the context of PPNB flint bladelets found in Kharaysin (Jordania)[ in *Antiquity* (2020)](https://www.cambridge.org/core/journals/antiquity/article/flint-figurines-from-the-early-neolithic-site-of-kharaysin-jordan/FFEB57291718AF9FF216F1113844C61B) question the anthropomorphism of these first societies of farmers.  
-
-
-```{r df, fig.width= 7, fig.cap="Kharaysin bladelets, credits: Kharaysin project"}
-knitr::include_graphics('img/kharaysin_bladelets.png')
-```
-
-The dataset was compared to Aïn Ghazal statues and busts (PPNB). A shape analysis of the  , dated to , with a procustre analysis made on the whole contour (not only some landmarks)
-The shapes of the flint bladelets from Kharaysin mix together with the statues and busts from the near Aïn Ghazal site
-
-```{r tyr, fig.width= 7, fig.cap="Kharaysin bladelets, credits: Kharaysin project"}
-knitr::include_graphics('img/mds.png')
-# library(cowplot)
-# fig_svg<-cowplot::ggdraw()+cowplot::draw_image("img/mds.svg")
-# plot(fig_svg)
-# dist.meth <- "euclidian" # "euclidian"
-# clust.meth <- "complete" # "ward.D2", "complete", "min"
-# mat1 <- 'D:/Cultures_9/PPNB/(Etude)/resultats/distance_matrix_part1.jpg'
-# include_graphics(mat1)
-```
-
-# IT development
-
-I am used to programm in R and Python, also using markup languages (LaTeX, HTML, etc.), the GitHub platform, GIS and database. I am also familiar with network analysis, shape analysis and 3D/photogrammetry
-
-## Interactive web apps
-
-I've developed **3** RShiny apps based on [R](https://www.r-project.org/) and [Leaflet](https://leafletjs.com/):
+### Current researches
 
 ```{r Rshiny.apps}
 shiny.apps.df <- data.frame(name=c("EUROEVOL_R",
                                 "NeoNet",
-                                "Bego"),
+                                "encounter_postdoc",
+                                "Golasecca-net"),
                          topic=c("Radiocarbon mapping",
                                  "Radiocarbon mapping",
-                                 "Rock-art mapping"),
+                                 "Radiocarbon mapping",
+                                 "Networks & Open Science"),
                          web.url=c("https://zoometh.github.io/C14/",
                                    "https://zoometh.github.io/C14/neonet",
-                                   "https://zoometh.github.io/bego/"),
+                             "https://zoometh.github.io/encounter_postdoc/docs/lf_jomon_sites.html",
+                                   "https://zoometh.github.io/golasecca/"),
                          app.url=c("https://neolithic.shinyapps.io/Euroevol_R/",
                                    "https://neolithic.shinyapps.io/NeoNet/",
+                                   "None",
                                    "None"))
 kable(shiny.apps.df,"html") %>% 
   kable_styling(full_width = FALSE, position = "center", font_size=12)
 ```
-
-
-## The **iconr** R package
-
-I am developping of a R package with [Jose Pozo](https://orcid.org/0000-0002-0759-3510) and [Craig Alexander](https://www.researchgate.net/profile/Craig_Alexander2). This package has the working name of 'decorr' (soon: 'iconr'). Its purpose is to:
-
-1. map an iconographical content with a relative neighborhood graphs (RNG) created in a GIS
-2. compare iconographical composition based on quantitative indices coming from Graph theory (degrees, betweeness, etc.) and spatial analysis (average heights, etc.)
-
-| ![](https://github.com/zoometh/iconr/raw/master/vignettes/compar_eds_2_3.png){width=500px} |
-|:--:| 
-| common edges (in red) between two Late Bronze stelae |
-
-
 
