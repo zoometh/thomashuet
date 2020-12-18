@@ -12,7 +12,7 @@
 
 | name              | topic                   | webpage url                                                          | app url                                                |
 |-------------------|-------------------------|----------------------------------------------------------------------|--------------------------------------------------------|
-| decorr package    | Iconography analysis    | https://zoometh.github.io/iconr/docs/                                | install with devtools::install_github("zoometh/iconr") | 
+| *iconr* package    | Iconography analysis    | https://zoometh.github.io/iconr/vignettes/                           | install with devtools::install_github("zoometh/iconr") | 
 | EpiSpat_R         | Multifactorial analysis | None                                                                 | https://epispat.shinyapps.io/analyses_mult_5/          |                         
 | Golasecca-net     | Networks & Open Science | https://zoometh.github.io/golasecca/                                 | None                                                   |
 | EUROEVOL_R        | Radiocarbon mapping     | https://zoometh.github.io/C14/                                       | https://neolithic.shinyapps.io/Euroevol_R/             |
