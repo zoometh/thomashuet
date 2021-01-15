@@ -5,6 +5,7 @@
 * mail: [thomashuet7@gmail.com](thomashuet7@gmail.com)
 * CV: [https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)
 * ORCID: [0000-0002-1112-6122](https://orcid.org/0000-0002-1112-6122)
+* Google Scholar: [2hKEVaIAAAAJ&hl](https://scholar.google.fr/citations?user=2hKEVaIAAAAJ&hl=en&oi=sra)
 * professional webpage: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
 * personal webpage: [https://zoometh.github.io/thomashuet.github.io/](https://zoometh.github.io/thomashuet.github.io/)
 
