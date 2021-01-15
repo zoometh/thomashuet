@@ -18,7 +18,8 @@
 | *iconr* R package    | Iconography analysis    | https://zoometh.github.io/iconr/vignettes/                        | *install with* devtools::install_github("zoometh/iconr") | 
 | EpiSpat_R         | Multifactorial analysis | None                                                                 | https://epispat.shinyapps.io/analyses_mult_5/          |                         
 | Golasecca-net     | Networks & Open Science | https://zoometh.github.io/golasecca/                                 | None                                                   |
-| EUROEVOL_R        | Radiocarbon mapping     | https://zoometh.github.io/C14/                                       | https://neolithic.shinyapps.io/Euroevol_R/             |
+| EUROEVOL_R        | Radiocarbon mapping     | None                                                                 | https://neolithic.shinyapps.io/Euroevol_R/             |
 | NeoNet            | Radiocarbon mapping     | https://zoometh.github.io/C14/neonet                                 | https://neolithic.shinyapps.io/NeoNet/                 |
 | encounter_postdoc | Radiocarbon mapping     | https://zoometh.github.io/encounter_postdoc/docs/lf_jomon_sites.html | None                                                   |
+| Radiocarbon review| Radiocarbon review     | https://zoometh.github.io/C14/                                        | None                                                   |
 | Sauri             | Rock-art                | https://zoometh.github.io/Sauri/                                     | None
