@@ -21,5 +21,5 @@
 | EUROEVOL_R        | Radiocarbon mapping     | None                                                                 | https://neolithic.shinyapps.io/Euroevol_R/             |
 | NeoNet            | Radiocarbon mapping     | https://zoometh.github.io/C14/neonet                                 | https://neolithic.shinyapps.io/NeoNet/                 |
 | encounter_postdoc | Radiocarbon mapping     | https://zoometh.github.io/encounter_postdoc/docs/lf_jomon_sites.html | None                                                   |
-| Radiocarbon review Radiocarbon review     || https://zoometh.github.io/C14/                                        | None                                                   |
+| Radiocarbon review                         || https://zoometh.github.io/C14/                                        | None                                                   |
 | Sauri             | Rock-art                | https://zoometh.github.io/Sauri/                                     | None
