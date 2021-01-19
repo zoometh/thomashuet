@@ -9,16 +9,24 @@
 * ResearchGate: [Thomas_Huet2](https://www.researchgate.net/profile/Thomas_Huet2)
 * webpages:
   + professional: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
-  + personal: [https://zoometh.github.io/thomashuet.github.io/](https://zoometh.github.io/thomashuet.github.io/)
+  + GitHub: [https://github.com/zoometh](https://github.com/zoometh)
 
 ### Current researches
 
+IT development, methods and models for Archaeology
+
+#### Prehistoric iconography
+
+*iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr#iconr-package-modeling-prehistoric-iconography-) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
+
+#### C14
+
+Development of database, webpage, RShiny app and R functions for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#c14)
+
+#### others
+
 | name              | topic                   | webpage url                                                          | app url                                                |
 |-------------------|-------------------------|----------------------------------------------------------------------|--------------------------------------------------------|
-| *iconr* R package    | Iconography analysis    | https://zoometh.github.io/iconr/vignettes/                        | *install with* devtools::install_github("zoometh/iconr") | 
 | EpiSpat_R         | Multifactorial analysis | None                                                                 | https://epispat.shinyapps.io/analyses_mult_5/          |                         
 | Golasecca-net     | Networks & Open Science | https://zoometh.github.io/golasecca/                                 | None                                                   |
-| EUROEVOL_R        | Radiocarbon mapping     | https://zoometh.github.io/C14/                                       | https://neolithic.shinyapps.io/Euroevol_R/             |
-| NeoNet            | Radiocarbon mapping     | https://zoometh.github.io/C14/neonet                                 | https://neolithic.shinyapps.io/NeoNet/                 |
-| encounter_postdoc | Radiocarbon mapping     | https://zoometh.github.io/encounter_postdoc/docs/lf_jomon_sites.html | None                                                   |
 | Sauri             | Rock-art                | https://zoometh.github.io/Sauri/                                     | None
