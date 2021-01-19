@@ -17,7 +17,7 @@ IT development, methods and models for Archaeology
 
 #### Prehistoric iconography
 
-*iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr#iconr) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
+*iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr#iconr-r-package-modeling-prehistoric-iconography-) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
 
 #### C14
 
