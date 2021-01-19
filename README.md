@@ -9,7 +9,7 @@
 * ResearchGate: [Thomas_Huet2](https://www.researchgate.net/profile/Thomas_Huet2)
 * webpages:
   + professional: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
-  + personal: [https://zoometh.github.io/thomashuet.github.io/](https://zoometh.github.io/thomashuet.github.io/)
+  + GitHub: [https://github.com/zoometh](https://github.com/zoometh)
 
 ### Current researches
 
