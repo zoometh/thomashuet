@@ -17,11 +17,11 @@ IT development, methods and models for Archaeology
 
 #### Prehistoric iconography
 
-*iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
+*iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr#iconr) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
 
 #### C14
 
-Development of database, webpage, RShiny app and R functions for radiocarbon data management (collect, calibration, analysis, modeling)
+Development of database, webpage, RShiny app and R functions for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#c14)
 
 #### others
 
