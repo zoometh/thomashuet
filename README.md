@@ -24,7 +24,6 @@ Development of the [*iconr* R package](https://zoometh.github.io/iconr/vignettes
 Development of databases, webpages, interactive apps functions with R for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#c14)
 
 ### Networks during the Protohistory <img src="/img/Ha_Gol.png" align="right" width="150"/>
-> Created by Thomas Huet and [Veronica Ciccolani](cicojunior@gmail.com)
 
 A [R + Leaflet + Plotly webpage](https://zoometh.github.io/golasecca/) dedicated to the networks of artefacts *versus* networks of potential paths during the First Iron Age in the Central Alps. We Our purpose is also the *Reuse* of data in a context of Open Science  
 
