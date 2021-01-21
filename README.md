@@ -1,4 +1,4 @@
-## Thomas Huet (Dr.)
+# Thomas Huet (Dr.)
 
 [LabEx ARCHIMEDE](https://archimede.cnrs.fr/), Associate Researcher UMR 5140 ASM-CNRS, Université Paul-Valéry Montpellier 3, France
 
@@ -11,16 +11,15 @@
   + professional: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
   + GitHub: [https://github.com/zoometh](https://github.com/zoometh)
 
-### Current researches
+## Current researches
 
 IT development, methods and models for Archaeology
 
-#### Prehistoric iconography
+### Prehistoric iconography <img src="/img/moulin_t142.png" align="right" width="200"/>
 
-<img src="/img/moulin_t142.png" align="center" width="200"/>
 *iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr#iconr-package-modeling-prehistoric-iconography-) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
 
-#### C14
+### C14 modeling
 
 Development of database, webpage, RShiny app and R functions for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#c14)
 
