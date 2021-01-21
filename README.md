@@ -15,18 +15,18 @@
 
 IT development, methods and models for Archaeology
 
-### Prehistoric iconography <img src="/img/moulin_t142.png" align="right" width="200"/>
+### Prehistoric iconography <img src="/img/moulin_t142.png" align="right" width="150"/>
 
-*iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr#iconr-package-modeling-prehistoric-iconography-) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
+Development of the [*iconr* R package](https://zoometh.github.io/iconr/vignettes/) to model iconographic content with Graph theory and GIS... visit the [GitHub repo](https://github.com/zoometh/iconr#iconr-package-modeling-prehistoric-iconography-)
 
 ### C14 modeling
 
 Development of database, webpage, RShiny app and R functions for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#c14)
 
-#### others
+### Networks during the Protohistory
 
-| name              | topic                   | webpage url                                                          | app url                                                |
-|-------------------|-------------------------|----------------------------------------------------------------------|--------------------------------------------------------|
-| EpiSpat_R         | Multifactorial analysis | None                                                                 | https://epispat.shinyapps.io/analyses_mult_5/          |                         
-| Golasecca-net     | Networks & Open Science | https://zoometh.github.io/golasecca/                                 | None                                                   |
-| Sauri             | Rock-art                | https://zoometh.github.io/Sauri/                                     | None
+A [R + Leaflet + Plotly webpage] dedicated to the networks of artefacts *versus* networks of potential paths during the First Iron Age in the Central Alps. We Our purpose is also the *Reuse* of data in a context of Open Science  
+
+#### Roman stelae from the South of France
+
+The [Epispat_R shiny app](https://epispat.shinyapps.io/analyses_mult_5/) for multifactorial analysis on the [Base_Epigraphique database](https://www.cepam.cnrs.fr/ressources/bases-de-donnees/archaepigraph/) 
