@@ -21,7 +21,7 @@ Development of the [*iconr* R package](https://zoometh.github.io/iconr/vignettes
 
 ### C14 modeling
 
-Development of databases, webpages, interactive apps functions with R for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#c14)
+Development of databases, webpages, interactive apps functions with R for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#radiocarbon-data-integration-and-visualization)
 
 ### Networks during the Protohistory <img src="/img/Ha_Gol.png" align="right" width="150"/>
 
