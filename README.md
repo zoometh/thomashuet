@@ -28,6 +28,6 @@ Development of databases, webpages, interactive apps functions with R for radioc
 
 A [R + Leaflet + Plotly webpage](https://zoometh.github.io/golasecca/) dedicated to the networks of artefacts *versus* networks of potential paths during the First Iron Age in the Central Alps. We Our purpose is also the *Reuse* of data in a context of Open Science  
 
-#### Roman stelae from the South of France
+### Roman stelae from the South of France
 
 The [Epispat_R shiny app](https://epispat.shinyapps.io/analyses_mult_5/) for multifactorial analysis on the [Base_Epigraphique database](https://www.cepam.cnrs.fr/ressources/bases-de-donnees/archaepigraph/) 
