@@ -17,7 +17,7 @@ IT development, methods and models for Archaeology
 
 #### Prehistoric iconography
 
-<img src="/vignettes/img/solana.png" align="center" width="200"/>
+<img src="/img/moulin_t142.png" align="center" width="200"/>
 *iconr* R package development. See [GitHub repo](https://github.com/zoometh/iconr#iconr-package-modeling-prehistoric-iconography-) or the [package vignette](https://zoometh.github.io/iconr/vignettes/)
 
 #### C14
