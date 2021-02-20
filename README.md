@@ -15,15 +15,15 @@
 
 IT development, methods and models for Archaeology
 
-### Prehistoric iconography <img src="/img/moulin_t142.png" align="right" width="150"/>
+### Prehistoric iconography <img src="/img/moulin_t142.png" align="right" width="120"/>
 
-Development of the [*iconr* R package](https://zoometh.github.io/iconr/vignettes/) to model iconographic content with Graph theory and GIS... visit the [GitHub repo](https://github.com/zoometh/iconr#iconr-package-modeling-prehistoric-iconography-)
+Development of the [*iconr* R package](https://zoometh.github.io/iconr/) to model iconographic content with Graph theory and GIS
 
-### C14 modeling
+### Time modeling
 
-Development of databases, webpages, interactive apps functions with R for radiocarbon data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#radiocarbon-data-integration-and-visualization)
+Development of databases, webpages, interactive apps functions with R for radiocarbon/dendrochronological data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#radiocarbon-data-integration-and-visualization)
 
-### Networks during the Protohistory <img src="/img/Ha_Gol.png" align="right" width="150"/>
+### Networks during the Protohistory <img src="/img/Ha_Gol.png" align="right" width="120"/>
 
 A [R + Leaflet + Plotly webpage](https://zoometh.github.io/golasecca/) dedicated to the networks of artefacts *versus* networks of potential paths during the First Iron Age in the Central Alps. We Our purpose is also the *Reuse* of data in a context of Open Science  
 
