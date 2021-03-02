@@ -157,42 +157,32 @@ Development of databases, webpages, interactive apps functions with R for radioc
 
 #### Spread of farming during Mesolithic/Neolithic transition
 
-The time period covered by the Mesolithic-Neolithic transition to the
-Late Neolithic represents three major demic diffusions: the arrival of
-Anatolian early farmers during the Early Neolithic [@Bentley]; the
-arrival of North-Pontic populations into the Corded-Ware complex (CWC)
-area during the Late Neolithic [@Brandt13]; and the spread of the the
-Bell-Beaker complex (BBC) at the very end of Late Neolithic [@Olalde].
-Between these major population diffusions, smaller demic changes
-occurred. Final Mesolithic societies (ca. 7000-6000 BC) are considered
-to form the background of the early farmers arrivals. They are
-collectors-gatherers with a low net reproduction rate [@Diamond],
-generally a semi-sedentary residence (i.e. foragers), living in small
-groups with few storage capacities [@Binford] and long-distance
-exchanges are sparse [@Karamitrou]. Direct contacts between these last
-Mesolithics and first farmers, or close settlements, are very few.
-Indeed, during this period and from Greece to Spain, we observed an
-absence of occupations (the so-called \"hiatus\" or \"gap\"). This
-\"hiatus\" is maybe due to a major mobility at the end of the 7^th^
-millenium BC linked to a major climatic event (8.2 Ky BP event) with
-drying and cooling in Europe [@Guilaine]. The earliest Neolithic culture
-in Europe concerns the South-eastern part of the continent occupied by
-the PPC, ca 6500-6000 BC. After PPC diffusion in Greece, Thrace and the
-Balkan peninsula, a first stop in the progression is observed on its
-western and northern frontiers, respectively in western Greece with the
-PPC/ICC transition, and in the western Hungarian with the PPC/LBK
-transition. The former frontier, near the archaeological site of Sidari
-(Corfu, Greece), seems to depend on a renewal of the Neolithic culture
-[@Guilaine1]. The second frontier (PPC/LBK transition) is linked to the
-Central European-Balkanic agro-ecological barrier and may result in the
-adaption of the agro-pastoral way of living to a new environment. For
-example, the development of farming and breeding in northern parts of
-Europe needs the development of a day length non-response gene (PPD-H1)
-for the barley [@Jones]. The two main currents for the beginning of
-farming in Central and Western Europe are the ICC (ca 5800-4900 BC) in
-the Mediterranean area, and the LBK (ca 5600-4900 BC) in the continent
-area. These currents where relatively fast even if other delays can also
-be observed in the diffusion of farming [@Guilaine1].
+The time period covered by the Mesolithic-Neolithic transition to the Late Neolithic represents three major demic diffusions: 
+
+1. the arrival of Anatolian early farmers during the Early Neolithic [@Bentley]
+2. the arrival of North-Pontic populations into the Corded-Ware complex (CWC) area during the Late Neolithic [@Brandt13]
+3. the spread of the Bell-Beaker complex (BBC) at the very end of Late Neolithic [@Olalde]
+
+Between these major population diffusions, smaller demic changes occurred. Final Mesolithic societies (ca. 7000-6000 BC) are considered
+to form the background of the early farmers arrivals. They are collectors-gatherers with a low net reproduction rate [@Diamond],
+generally a semi-sedentary residence (i.e. foragers), living in small groups with few storage capacities [@Binford] and long-distance
+exchanges are sparse [@Karamitrou]. Direct contacts between these last Mesolithics and first farmers, or close settlements, are very few. In Eastern and Northern Europe, despite various material exchanges, few admixtures between early farmers farmers and indigenous hunter-gatherers have been observed: the [hg U5](https://sites.google.com/view/haplotree-info/home/mtdna-u5) is typical of last hunter-gatherers/Mesolithics and the [hg N1a](https://sites.google.com/view/haplotree-info/home/y-dna-n) is typical of early farmers. Mesolithics could have backed up to West Europe, the westernmost part of the Eurasian continent, and admixture could be more frequent in the West. In the middle Rhine valley, last hunter-gatherers populations have probably played a role in the Michelsberg cultural
+affirmation [@Beau] and such interrogations also exist for the development of Megalithism along the Atlantic shore [@Ard18].
+
+Indeed, during this period and from Greece to Spain, we observed an absence of occupations (the so-called \"hiatus\" or \"gap\"). This
+\"hiatus\" is maybe due to a major mobility at the end of the 7^th^ millenium BC linked to a major climatic event (8.2 Ky BP event) with
+drying and cooling in Europe [@Guilaine]. The earliest Neolithic culture in Europe concerns the South-eastern part of the continent occupied by
+the PPC, ca 6500-6000 BC. After PPC diffusion in Greece, Thrace and the Balkan peninsula, a first stop in the progression is observed on its
+western and northern frontiers, respectively in western Greece with the PPC/ICC transition, and in the western Hungarian with the PPC/LBK
+transition.
+
+1. The former frontier, near the archaeological site of Sidari (Corfu, Greece), seems to depend on a renewal of the Neolithic culture
+[@Guilaine1]
+2. The second frontier (PPC/LBK transition) is linked to the Central European-Balkanic agro-ecological barrier and may result in the
+adaption of the agro-pastoral way of living to a new environment. For example, the development of farming and breeding in northern parts of
+Europe needs the development of a day length non-response gene (PPD-H1) for the barley [@Jones]. 
+
+After that, the two main currents for the beginning of farming in Central and Western Europe are the ICC (ca 5800-4900 BC) in the Mediterranean area, and the LBK (ca 5600-4900 BC) in the continent area. These currents where relatively fast even if other delays can also be observed in the diffusion of farming [@Guilaine1].
 
 ICC current of farming is the fastest but shows spatial discontinuities
 (leapfrog movements) [@Binder1]. The first phase of ICC, Impressa
