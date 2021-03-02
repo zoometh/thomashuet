@@ -14,7 +14,7 @@
 
 ## Statements
 
-There is probably a natural history of human societies. Multiscalar, parsimonial and bottom-up agglomerative and unsupervised classifications and statistical approaches should be favored since we did not know, *a priori*, what aspects and at which scale (from settlement to continent) will be the positive results. By nature, the data on past societies are multi-dimensional, come from different scales (quantitative, ordinal, categorical, etc.) and change of scales. Multifactorial analysis will permit to enlighten pattern in the datasets. The clustering process, adjusted to the granularity of the analysis, will reduce the variability of distributions by distinguishing different clusters. The archaeological investigation can be divided into:
+There is probably a natural history of human societies. Multiscalar, parsimonial, bottom-up, agglomerative, unsupervised and data-driven statistical approaches should be favored since we did not know, *a priori*, what aspects and at which scale (from settlement to continent) will be the positive results. By nature, the data on past societies are multi-dimensional, come from different scales (quantitative, ordinal, categorical, etc.) and change of scales. Multifactorial analysis will permit to enlighten pattern in the datasets. The clustering process, adjusted to the granularity of the analysis, will reduce the variability of distributions by distinguishing different clusters. The archaeological investigation can be divided into:
 
 * 'What' (culture) participate to the processes
 * 'Where' (geography) did these processes occurred
@@ -113,7 +113,7 @@ Iconography represent a part of the symbolic subsystem. The [*iconr* R package](
 
 ### Spatio-temporal modeling
 
-### Space modeling
+#### Space modeling
 
 Spatialization will permit to respond to the question: 'Where ?'.
 Spatial distributions of social groups are the result of historical
@@ -152,6 +152,54 @@ analyses;
 #### Time modeling
 
 Development of databases, webpages, interactive apps functions with R for radiocarbon/dendrochronological data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#radiocarbon-data-integration-and-visualization)
+
+### ABM
+
+Once *facts* established and patterns recognized, spatio-temporal
+*scenarios* will also be proposed. ABM permits to simulated interactions
+between local entities (agents or patches) within an environment (the
+so-called 'world'). For historical sciences, it permits to infer past
+mechanisms (simulated data) from the observation of the present
+situation (observed data). In archaeology, ABM had been appropriately
+employ, for example, to explain the LBK Neolithic diffusion[@Dubouloz].
+LBK diffusion is almost continuous and seems to correspond to the
+so-called 'ideal despotic distribution' model (IDD model): after a
+village scission and a migration, LBK families, or groups, founded a new
+settlement in the best soils ('best patches')[@Shennan07]. The village
+scission is probably triggered by a high consumption/production (C/P)
+ratio: a population growth and a correlative decreasing productivity for
+food production [@Dubouloz]. This processes are also visible in the LBK
+village organization. This latter shows two kinds of houses: small
+houses with ceramic innovations, craft activities, importance of hunting
+products, few grinding tools, without granaries, etc., and big houses
+with traditional ceramics, ox dominant, concentration of grinding tools,
+granaries, etc. The small houses are considered to be those of the new
+incomers into the village, while big houses correspond to more ancient
+inhabitants and lineages [@Coudart98][@Gomart15]. These observations
+will be further developed as part of the ANR Homes[^3]. To be
+meaningfully conducted on Neolithic contexts, ABM necessarily needs to
+be simple and grounded on robust observations: its task is to enlighten
+emerging complex structures from simple interactions and models by
+identifying threshold effects (e.g. agriculture capabilities, estimated
+population size). Our ABM will be based on aDNA data and cultural traits
+analyses. Agents (*turtles* in NetLogo) and patches (field units in the
+'world') will be social groups, villages, agrarian units, family
+lineage, etc. We will employ, and develop, existing mathematical models
+of interactions: between different agents (e.g. gravity models), or
+between agent and its environment (e.g. GLUES model [@Lemmen11]).
+Considering populations' size and demography, summed radiocarbon
+probability distributions (SRPD), settlement studies, and analyses of
+funeral domain (e.g. necropolis, average age of death) would be used as
+a proxy. Map algebra, taking into account nature of the soil, average of
+precipitation, temperature and cloudiness, will permit to infer the
+agriculture capabilities of patches. By programming simulations with
+different inputs and models, we will test scenarios of historical
+developments to find the most likely to explain observed regularities.
+For each type of simulation the definition of the region of interest,
+different levels of interactions, rules of adaptation and emergence,
+models, types of statistical outputs, etc. will be done respecting the
+Overview, Design concepts, and Details (ODD) protocol. A particular
+interest will be put on the study of the time dimension.
 
 ### Case studies
 
