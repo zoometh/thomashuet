@@ -19,7 +19,7 @@ There is probably a natural history of human societies. Multiscalar, parsimonial
 * 'What' (culture) participate to the processes
 * 'Where' (geography) did these processes occurred
 * 'When' (time) did these processes occurred
-* 'Who' (genetic) participate to these processes
+* 'Who' ([genetic](https://github.com/zoometh/aDNA#adna)) participate to these processes
 * 'Why' past societies choose a solution instead of another
 * 'How' does it works
 * 
@@ -104,6 +104,8 @@ tables, etc.
 Programming language (like R or Python) permit to connect existing online databases, iterate statistics routines, generate reports with online interactive forms, etc. 
 
 ## Axes
+
+### Gene-culture coevolution
 
 ### Prehistoric iconography {#symbolic} <img src="/img/moulin_t142.png" align="right" width="120"/>
 
