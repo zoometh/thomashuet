@@ -12,7 +12,7 @@
   + professional: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
   + GitHub: [https://github.com/zoometh](https://github.com/zoometh)
 
-## I guess
+## Statement
 
 There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into:
 
@@ -25,9 +25,9 @@ There is probably a natural history of human societies. Adolphe Quetelet's stati
 * 
 Two global dimensions of social groups can be distinguished: its genetic identity and its cultural identity. Cultural and genetic identities will be defined relatively to the central tendencies (i.e. mean, median, standard deviations) of their cultural and genetic traits.
 
-1.  **Genetic identity** of a population is its genetic signature. Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA)).
+### What
 
-2.  **Cultural identity** is the product of a set of cultural traits. Cultural traits are considered in terms of presence/absence, relative quantities and correlations of various items belonging to material (raw material, settlements, etc.) and practices (technical, symbolic, etc.). A cultural trait can be shared (at different degrees), or not, by different groups. Renfrew and Bahn (1991) have modeled the different cultural subsystems:
+**Cultural identity** is the product of a set of cultural traits. Cultural traits are considered in terms of presence/absence, relative quantities and correlations of various items belonging to material (raw material, settlements, etc.) and practices (technical, symbolic, etc.). A cultural trait can be shared (at different degrees), or not, by different groups. Renfrew and Bahn (1991) have modeled the different cultural subsystems:
 
 | subsystem   | description  | 
 |-------------|-------------|
@@ -38,8 +38,6 @@ Two global dimensions of social groups can be distinguished: its genetic identit
 |external trade   |  trade exchanges inter-groups |
 |demographic   | population size (scale factor) |
 |ecological   |  set of natural features |
-
-[@Renfrew]
 
 Study of archaeological cultures will permit to respond to the question:
 'What ?'. It will contribute to define the cultural identity of the
@@ -98,6 +96,12 @@ groups, (dis)similarities between these groups will be measured in R
 with appropriated packages, functions or indexes: Bray-Curtis
 coefficient for contingency tables, Jaccard index for presence/absence
 tables, etc.
+
+[@Renfrew]
+
+### Who
+
+**Genetic identity** of a population is its genetic signature. Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA)).
 
 ## Methods
 
