@@ -12,6 +12,8 @@
   + professional: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
   + GitHub: [https://github.com/zoometh](https://github.com/zoometh)
 
+I mostly use R to create graphs and interactive maps ([here](https://zoometh.github.io/aDNA/#Community_detection) and [there](https://zoometh.github.io/golasecca/#Evolution_au_cours_du_Golasecca)), [mutlfactorial analysis](https://epispat.shinyapps.io/analyses_mult_5/), trying to establish [new methods](https://zoometh.github.io/iconr/articles/shiny.html) in computer archaeology. My main projects cover the Neolithic of Western Asia (spread)
+
 ## Statement
 
 There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into 5 dimensions:
@@ -140,11 +142,12 @@ Different R packages permit to manage both geographical and network
 analyses.
 
 ### When
+> [project](https://github.com/zoometh/C14#time-modeling)
 
 Development of databases, webpages, interactive apps functions with R for radiocarbon/dendrochronological data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#radiocarbon-data-integration-and-visualization)
 
 ### Who
-> [project](https://github.com/zoometh/aDNA#adna) 
+> [project](https://github.com/zoometh/aDNA#gene-culture-coevolution)
 
 **Genetic identity** of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences. On the base of single-nucleotide polymorphisms (SNPs) study, the neutral hypothesis (H~0~, i.e. a population continuity with few random genetic drifts) can be rejected (H~1~ accepted) and factors like mutation, selection and migration can be supposed. At the time scale we investigate (Recent Prehistory), only the migration factor could explain observed significant changes in the genetic of populations. Differences between populations can be detected by different means but the determination of groups (e.g. indigenous, immigrants) is mostly based on the study of the SNPs or discrete haplogroup (hg) frequencies [@Bramanti09].
-Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups.  The R packages [ape](https://cran.r-project.org/web/packages/ape/index.html) and [pegas](https://cran.r-project.org/web/packages/pegas/index.html), among others, permit to perform analysis of Molecular Variance (AMOVA), genetic mapping (e.g. phylogenetic trees, haplotype network, median-joining network) and cluster analysis (multidimensional scaling, dendrogram, etc.)
+Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA#adna)).  The R packages [ape](https://cran.r-project.org/web/packages/ape/index.html) and [pegas](https://cran.r-project.org/web/packages/pegas/index.html), among others, permit to perform analysis of Molecular Variance (AMOVA), genetic mapping (e.g. phylogenetic trees, haplotype network, median-joining network) and cluster analysis (multidimensional scaling, dendrogram, etc.)
