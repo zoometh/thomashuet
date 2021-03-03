@@ -1,3 +1,8 @@
+---
+title: "Sample Document"
+bibliography: references.bib
+---
+
 # Thomas Huet (Dr.)
 > Archaeology, IT development, methods, models and software creation
 
@@ -16,10 +21,10 @@
 
 There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into:
 
-* 'What' ([culture](https://github.com/zoometh/thomahsuet#adna)) participate to the processes
+* 'What' ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the processes
 * 'Where' (geography) did these processes occurred
 * 'When' (time) did these processes occurred
-* 'Who' ([genetic](https://github.com/zoometh/aDNA#adna)) participate to these processes
+* 'Who' ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these processes
 * 'Why' past societies choose a solution instead of another
 * 'How' does it works
 * 
@@ -34,7 +39,7 @@ Two global dimensions of social groups can be distinguished: its genetic identit
 |subsistence  |  interactions around food resources |
 |technological |  set of *chaines opératoires* for artifacts production |
 |social |  set of inter-individuals and intra-group interactions |
-|[symbolic](#symbolic)   |  languages, picture production, religions, etc. |
+|symbolic |  languages, [picture production](https://zoometh.github.io/iconr/), religions, etc. |
 |external trade   |  trade exchanges inter-groups |
 |demographic   | population size (scale factor) |
 |ecological   |  set of natural features |
@@ -101,7 +106,7 @@ tables, etc.
 
 ### Who
 
-**Genetic identity** of a population is its genetic signature. Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA)).
+**Genetic identity** of a population is its genetic signature. Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA#adna)).
 
 ## Methods
 
