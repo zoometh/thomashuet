@@ -34,7 +34,7 @@ Two global dimensions of social groups can be distinguished: its genetic identit
 |subsistence  |  interactions around food resources |
 |technological |  set of *chaines opératoires* for artifacts production |
 |social |  set of inter-individuals and intra-group interactions |
-|symbolic |  languages, [picture production](https://zoometh.github.io/iconr/), religions, etc. |
+|symbolic |  languages, [picture production](https://github.com/zoometh/thomashuet/blob/main/README.md#prehistoric-iconography-), religions, etc. |
 |external trade   |  trade exchanges inter-groups |
 |demographic   | population size (scale factor) |
 |ecological   |  set of natural features |
