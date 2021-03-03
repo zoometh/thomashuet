@@ -14,7 +14,7 @@
 
 ## Statement
 
-There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into:
+There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into 5 dimensions:
 
 * 'What' ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the processes
 * 'Where' (geography) did these processes occurred
@@ -22,7 +22,7 @@ There is probably a natural history of human societies. Adolphe Quetelet's stati
 * 'Who' ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these processes
 * 'Why' past societies choose a solution instead of another
 * 'How' does it works
-* 
+
 Two global dimensions of social groups can be distinguished: its genetic identity and its cultural identity. Cultural and genetic identities will be defined relatively to the central tendencies (i.e. mean, median, standard deviations) of their cultural and genetic traits.
 
 ### What
@@ -112,7 +112,7 @@ Programming language (like R or Python) permit to connect existing online databa
 
 ### Gene-culture coevolution
 
-### Prehistoric iconography {#symbolic} <img src="/img/moulin_t142.png" align="right" width="120"/>
+### Prehistoric iconography <img src="/img/moulin_t142.png" align="right" width="120"/>
 
 Iconography represent a part of the symbolic subsystem. The [*iconr* R package](https://zoometh.github.io/iconr/) helps to model iconographic content with Graph theory and GIS
 
