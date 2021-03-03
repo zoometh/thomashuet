@@ -1,5 +1,5 @@
 ## Thomas Huet (Dr.)
-> Archaeology, IT development, methods, models and software creation
+> Archaeology, [IT methods](https://github.com/zoometh/thomashuet/blob/main/README.md#methods)
 
 [LabEx ARCHIMEDE](https://archimede.cnrs.fr/), Associate Researcher UMR 5140 ASM-CNRS, Université Paul-Valéry Montpellier 3, France
 
@@ -17,8 +17,8 @@
 There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into 5 dimensions:
 
 * 'What' ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the processes
-* 'Where' (geography) did these processes occurred
-* 'When' (time) did these processes occurred
+* 'Where' ([geography](https://github.com/zoometh/thomashuet/blob/main/README.md#where)) did these processes occurred
+* 'When' ([time](https://github.com/zoometh/thomashuet/blob/main/README.md#when)) did these processes occurred
 * 'Who' ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these processes
 * 'Why' past societies choose a solution instead of another
 * 'How' does it works
@@ -34,7 +34,7 @@ Two global dimensions of social groups can be distinguished: its genetic identit
 |subsistence  |  interactions around food resources |
 |technological |  set of *chaines opératoires* for artifacts production |
 |social |  set of inter-individuals and intra-group interactions |
-|symbolic |  languages, [picture production](https://github.com/zoometh/thomashuet/blob/main/README.md#prehistoric-iconography-), religions, etc. |
+|symbolic |  languages, [picture production](https://github.com/zoometh/thomashuet/blob/main/README.md#iconography-), religions, etc. |
 |external trade   |  trade exchanges inter-groups |
 |demographic   | population size (scale factor) |
 |ecological   |  set of natural features |
@@ -96,29 +96,14 @@ groups, (dis)similarities between these groups will be measured in R
 with appropriated packages, functions or indexes: Bray-Curtis
 coefficient for contingency tables, Jaccard index for presence/absence
 tables, etc.
-
 [@Renfrew]
 
-### Who
-
-**Genetic identity** of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences. On the base of single-nucleotide polymorphisms (SNPs) study, the neutral hypothesis (H~0~, i.e. a population continuity with few random genetic drifts) can be rejected (H~1~ accepted) and factors like mutation, selection and migration can be supposed. At the time scale we investigate (Recent Prehistory), only the migration factor could explain observed significant changes in the genetic of populations. Differences between populations can be detected by different means but the determination of groups (e.g. indigenous, immigrants) is mostly based on the study of the SNPs or discrete haplogroup (hg) frequencies [@Bramanti09].
-Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA#adna)).  The R packages [ape](https://cran.r-project.org/web/packages/ape/index.html) and [pegas](https://cran.r-project.org/web/packages/pegas/index.html), among others, permit to perform analysis of Molecular Variance (AMOVA), genetic mapping (e.g. phylogenetic trees, haplotype network, median-joining network) and cluster analysis (multidimensional scaling, dendrogram, etc.)
-
-## Methods
-
-Programming language (like R or Python) permit to connect existing online databases, iterate statistics routines, generate reports with online interactive forms, etc. 
-
-## Axes
-
-### Gene-culture coevolution
-
-### Prehistoric iconography <img src="/img/moulin_t142.png" align="right" width="120"/>
+### Iconography <img src="/img/moulin_t142.png" align="right" width="120"/>
 
 Iconography represent a part of the symbolic subsystem. The [*iconr* R package](https://zoometh.github.io/iconr/) helps to model iconographic content with Graph theory and GIS
 
-### Spatio-temporal modeling
 
-#### Space modeling
+### Where
 
 Spatialization will permit to respond to the question: 'Where ?'.
 Spatial distributions of social groups are the result of historical
@@ -152,11 +137,30 @@ differences of their inhabitants). Beside geographical analysis, network
 analysis will be performed when qualitative \"connections\" between
 \"nodes\" (these terms are contextually-defined) will be observed.
 Different R packages permit to manage both geographical and network
-analyses;
+analyses.
 
-#### Time modeling
+### When
 
 Development of databases, webpages, interactive apps functions with R for radiocarbon/dendrochronological data management (collect, calibration, analysis, modeling)... visit the [GitHub repo](https://github.com/zoometh/C14#radiocarbon-data-integration-and-visualization)
+
+### Who
+
+**Genetic identity** of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences. On the base of single-nucleotide polymorphisms (SNPs) study, the neutral hypothesis (H~0~, i.e. a population continuity with few random genetic drifts) can be rejected (H~1~ accepted) and factors like mutation, selection and migration can be supposed. At the time scale we investigate (Recent Prehistory), only the migration factor could explain observed significant changes in the genetic of populations. Differences between populations can be detected by different means but the determination of groups (e.g. indigenous, immigrants) is mostly based on the study of the SNPs or discrete haplogroup (hg) frequencies [@Bramanti09].
+Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA#adna)).  The R packages [ape](https://cran.r-project.org/web/packages/ape/index.html) and [pegas](https://cran.r-project.org/web/packages/pegas/index.html), among others, permit to perform analysis of Molecular Variance (AMOVA), genetic mapping (e.g. phylogenetic trees, haplotype network, median-joining network) and cluster analysis (multidimensional scaling, dendrogram, etc.)
+
+## Methods
+
+### Spatialized databases
+
+
+
+### Graphs and Networks
+
+A [R + Leaflet + Plotly webpage](https://zoometh.github.io/golasecca/) dedicated to the networks of artefacts *versus* networks of potential paths during the First Iron Age in the Central Alps. We Our purpose is also the *Reuse* of data in a context of Open Science  <img src="/img/Ha_Gol.png" align="right" width="120"/> 
+
+### Multifactorial analysis
+
+The [Epispat_R shiny app](https://epispat.shinyapps.io/analyses_mult_5/) for multifactorial analysis on the [Base_Epigraphique database](https://www.cepam.cnrs.fr/ressources/bases-de-donnees/archaepigraph/) 
 
 ### ABM
 
@@ -276,10 +280,4 @@ all along the CO. At the westernmost part of the continent, the English
 Channel between the agro-pastoral continent and the British Islands, is
 crosses around 4000 BC by early farmers [@Collard].
 
-#### Networks during the Protohistory <img src="/img/Ha_Gol.png" align="right" width="120"/>
 
-A [R + Leaflet + Plotly webpage](https://zoometh.github.io/golasecca/) dedicated to the networks of artefacts *versus* networks of potential paths during the First Iron Age in the Central Alps. We Our purpose is also the *Reuse* of data in a context of Open Science  
-
-### Roman stelae from the South of France
-
-The [Epispat_R shiny app](https://epispat.shinyapps.io/analyses_mult_5/) for multifactorial analysis on the [Base_Epigraphique database](https://www.cepam.cnrs.fr/ressources/bases-de-donnees/archaepigraph/) 
