@@ -16,7 +16,7 @@
 
 There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into:
 
-* 'What' (culture) participate to the processes
+* 'What' ([culture](https://github.com/zoometh/thomahsuet#adna)) participate to the processes
 * 'Where' (geography) did these processes occurred
 * 'When' (time) did these processes occurred
 * 'Who' ([genetic](https://github.com/zoometh/aDNA#adna)) participate to these processes
