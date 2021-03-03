@@ -12,7 +12,7 @@
   + professional: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
   + GitHub: [https://github.com/zoometh](https://github.com/zoometh)
 
-I mostly use R to create graphs and interactive maps ([here](https://zoometh.github.io/aDNA/#Community_detection) and [there](https://zoometh.github.io/golasecca/#Evolution_au_cours_du_Golasecca)), [mutlfactorial analysis](https://epispat.shinyapps.io/analyses_mult_5/), trying to establish [new methods](https://zoometh.github.io/iconr/articles/shiny.html) in computer archaeology. My main projects cover the Neolithic of Western Asia (spread)
+I mostly use R to create graphs and interactive maps ([here](https://zoometh.github.io/aDNA/#Community_detection) and [there](https://zoometh.github.io/golasecca/#Evolution_au_cours_du_Golasecca)), [mutlfactorial analysis](https://epispat.shinyapps.io/analyses_mult_5/), trying to establish [new methods](https://zoometh.github.io/iconr/articles/shiny.html) in computer archaeology. My main projects cover the Neolithic of Western Asia ([spread](https://zoometh.github.io/C14/neonet), consolidation, etc.) and its embedded symbolic system
 
 ## Statement
 
