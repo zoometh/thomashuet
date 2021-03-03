@@ -1,5 +1,5 @@
 # Thomas Huet (Dr.)
-> IT development, methods and models for Archaeology
+> Archaeology, IT development, methods, models and software creation
 
 [LabEx ARCHIMEDE](https://archimede.cnrs.fr/), Associate Researcher UMR 5140 ASM-CNRS, Université Paul-Valéry Montpellier 3, France
 
@@ -12,9 +12,9 @@
   + professional: [https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)
   + GitHub: [https://github.com/zoometh](https://github.com/zoometh)
 
-## Statements
+## I guess
 
-There is probably a natural history of human societies. Multiscalar, parsimonial, bottom-up, agglomerative, unsupervised and data-driven statistical approaches should be favored since we did not know, *a priori*, what aspects and at which scale (from settlement to continent) will be the positive results. By nature, the data on past societies are multi-dimensional, come from different scales (quantitative, ordinal, categorical, etc.) and change of scales. Multifactorial analysis will permit to enlighten pattern in the datasets. The clustering process, adjusted to the granularity of the analysis, will reduce the variability of distributions by distinguishing different clusters. The archaeological investigation can be divided into:
+There is probably a natural history of human societies. Adolphe Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative are suitable methods to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The archaeological investigation can be divided into:
 
 * 'What' (culture) participate to the processes
 * 'Where' (geography) did these processes occurred
