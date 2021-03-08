@@ -1,23 +1,22 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2021.1.18)  18 FEB 2021 09:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2021.1.18)  8 MAR 2021 19:25
 entering extended mode
 **./cv_english.tex
 (cv_english.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
-Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@chapter=\count80
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@subparagraph=\count85
-\c@figure=\count86
-\c@table=\count87
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -39,9 +38,9 @@ Package ifvtex Info: VTeX not detected.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count88
-\Gm@cntv=\count89
-\c@Gm@tempcnt=\count90
+\Gm@cnth=\count87
+\Gm@cntv=\count88
+\c@Gm@tempcnt=\count89
 \Gm@bindingoffset=\dimen103
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
@@ -53,6 +52,11 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex\latex\changepage\changepage.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count90
+\cp@tempcnt=\count91
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
 
@@ -114,8 +118,8 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen111
-\Hy@linkcounter=\count91
-\Hy@pagecounter=\count92
+\Hy@linkcounter=\count92
+\Hy@pagecounter=\count93
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
@@ -123,7 +127,7 @@ File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\intcalc.sty"
 Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count93
+\Hy@SavedSpaceFactor=\count94
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -135,7 +139,7 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count94
+\c@Hy@tempcnt=\count95
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
@@ -151,7 +155,7 @@ Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count95
+\Fld@menulength=\count96
 \Field@Width=\dimen113
 \Fld@charsize=\dimen114
 Package hyperref Info: Hyper figures OFF on input line 6369.
@@ -167,9 +171,9 @@ LaTeX Info: Redefining \pageref on input line 6443.
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 )
-\Hy@abspage=\count96
-\c@Item=\count97
-\c@Hfootnote=\count98
+\Hy@abspage=\count97
+\c@Item=\count98
+\c@Hfootnote=\count99
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -180,8 +184,8 @@ File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count99
-\c@bookmark@seq@number=\count100
+\Fld@listcount=\count100
+\c@bookmark@seq@number=\count101
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -217,20 +221,20 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 (cv_english.aux)
 \openout1 = `cv_english.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -251,12 +255,12 @@ LaTeX Font Info:    ... okay on input line 15.
 * \topmargin=-37.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=59.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -267,7 +271,7 @@ LaTeX Font Info:    ... okay on input line 15.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 15.
+Package hyperref Info: Link coloring OFF on input line 16.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -277,11 +281,11 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count101
+\c@section@level=\count102
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 16.
+LaTeX Info: Redefining \pageref on input line 16.
+LaTeX Info: Redefining \nameref on input line 16.
 
 (cv_english.out) (cv_english.out)
 \@outlinefile=\write3
@@ -290,16 +294,16 @@ LaTeX Info: Redefining \nameref on input line 15.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
+\scratchcounter=\count103
 \scratchdimen=\dimen117
 \scratchbox=\box27
-\nofMPsegments=\count103
-\nofMParguments=\count104
+\nofMPsegments=\count104
+\nofMParguments=\count105
 \everyMPshowfont=\toks16
-\MPscratchCnt=\count105
+\MPscratchCnt=\count106
 \MPscratchDim=\dimen118
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
 \everyMPtoPDFconversion=\toks17
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -314,147 +318,183 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 17--25
+<../img/phone.png, id=44, 2409.0pt x 2409.0pt>
+File: ../img/phone.png Graphic file (type png)
+<use ../img/phone.png>
+Package pdftex.def Info: ../img/phone.png  used on input line 22.
+(pdftex.def)             Requested size: 12.05673pt x 12.05673pt.
+<../img/gmail.png, id=46, 385.44pt x 385.44pt>
+File: ../img/gmail.png Graphic file (type png)
+<use ../img/gmail.png>
+Package pdftex.def Info: ../img/gmail.png  used on input line 23.
+(pdftex.def)             Requested size: 9.63362pt x 9.63362pt.
+<../img/orcid.png, id=48, 1204.5pt x 1204.5pt>
+File: ../img/orcid.png Graphic file (type png)
+<use ../img/orcid.png>
+Package pdftex.def Info: ../img/orcid.png  used on input line 24.
+(pdftex.def)             Requested size: 12.03835pt x 12.03835pt.
+<../img/github.png, id=50, 1606.0pt x 1606.0pt>
+File: ../img/github.png Graphic file (type png)
+<use ../img/github.png>
+Package pdftex.def Info: ../img/github.png  used on input line 25.
+(pdftex.def)             Requested size: 16.05113pt x 16.05113pt.
+<../img/gscholar.png, id=52, 513.92pt x 513.92pt>
+File: ../img/gscholar.png Graphic file (type png)
+<use ../img/gscholar.png>
+Package pdftex.def Info: ../img/gscholar.png  used on input line 26.
+(pdftex.def)             Requested size: 12.84482pt x 12.84482pt.
+<../img/rgate.png, id=54, 225.84375pt x 225.84375pt>
+File: ../img/rgate.png Graphic file (type png)
+<use ../img/rgate.png>
+Package pdftex.def Info: ../img/rgate.png  used on input line 27.
+(pdftex.def)             Requested size: 11.29285pt x 11.29285pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--29
 
  []
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 32.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 32.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 32.
 
-Overfull \hbox (4.79982pt too wide) in paragraph at lines 32--33
-\OT1/cmr/bx/n/10.95 2020 \OT1/cmr/m/n/10.95 Re-spon-si-ble of the sur-vey of th
-e me-dieval en-grav-ings of Sauri (Cat-alo-nia, Spain), 2$[][]$campaign,
+Underfull \hbox (badness 10000) in paragraph at lines 18--29
+
  []
 
 
-Overfull \hbox (2.26878pt too wide) in paragraph at lines 36--37
-[]\OT1/cmr/bx/n/10.95 2019 \OT1/cmr/m/n/10.95 Re-spon-si-ble of the sur-vey of 
-the me-dieval en-grav-ings of Sauri (Cat-alo-nia, Spain), 1$[][]$campaign,
+Underfull \hbox (badness 10000) in paragraph at lines 18--29
+
+ []
+
+(cv_english.toc)
+\tf@toc=\write4
+\openout4 = `cv_english.toc'.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+
+Overfull \hbox (5.70578pt too wide) in paragraph at lines 50--51
+[]\OT1/cmr/bx/n/12 2018 \OT1/cmr/m/n/12 Re-search As-so-ciate (IR), UMR 7264 CE
+PAM---CNRS, Uni-ver-site Nice Sophia-Antipolis,
  []
 
 [1
 
-{C:/Users/supernova/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (32.18019pt too wide) in paragraph at lines 86--87
-\OT1/cmr/m/n/10.95 pa-tions hu-maines a l'anthropisation du mi-lieu", CTHS ed
-itions, []https://halshs.archives-ouvertes.fr/halshs-
- []
-
-
-Overfull \hbox (22.5379pt too wide) in paragraph at lines 90--91
-\OT1/cmr/m/n/10.95 (Alpes-Maritimes, France), \OT1/cmr/m/it/10.95 Cam-bridge Ar
--chae-o-log-i-cal Jour-nal \OT1/cmr/m/n/10.95 41, 1-23, doi: []10.1017/s0959774
-316000524[] 
+{C:/Users/supernova/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../img/
+phone.png> <../img/gmail.png> <../img/orcid.png> <../img/github.png> <../img/gs
+cholar.png> <../img/rgate.png>]
+Overfull \hbox (33.40137pt too wide) in paragraph at lines 62--63
+[]\OT1/cmr/bx/n/12 2014 \OT1/cmr/m/n/12 Re-search As-so-ciate (IR), project \OT
+1/cmr/m/it/12 Ar-chaepi-graph \OT1/cmr/m/n/12 project, UMR 6249 Chrono---Enviro
+nnement,
  []
 
 [2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 111.
+Overfull \hbox (52.41794pt too wide) in paragraph at lines 101--102
+\OT1/cmr/m/n/12 art (Alpes-Maritimes, France), \OT1/cmr/m/it/12 Cam-bridge Ar-c
+hae-o-log-i-cal Jour-nal \OT1/cmr/m/n/12 41, 1-23, []10.1017/s0959774316000524[
+] 
+ []
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 111.
-
-Overfull \hbox (2.09914pt too wide) in paragraph at lines 127--128
-[]\OT1/cmr/bx/n/10.95 --- \OT1/cmr/m/n/10.95 "Ter-ri-to-ri-alite, mo-bilite, 
-in-ter-ac-tions : ap-ports croises des sous-systemes lithiques et ceramiques
-",
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
+ [3]
+Overfull \hbox (3.4855pt too wide) in paragraph at lines 162--163
+\OT1/cmr/bx/n/12 2020 \OT1/cmr/m/n/12 Sur-vey of the me-dieval en-grav-ings of 
+Sauri (Cat-alo-nian Pyre-nean, Spain), 2$[][]$campaign,
  []
-
-
-Overfull \hbox (2.58577pt too wide) in paragraph at lines 133--134
-[]\OT1/cmr/bx/n/10.95 ---  \OT1/cmr/m/n/10.95 "In-ter-ac-tions cul-turelles au 
-Pre-mier ^age du Fer dans les Alpes oc-ci-den-tales : es-sai de modelisation
- []
-
-[3]
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no © in font cmr10!
-
-
-! LaTeX Error: File `"euroevol_R"' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 ...ncludegraphics[scale=0.20]{"euroevol_R"}}
-                                                   and \href{https://neolith...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `"neonet"' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.175 ...}{\includegraphics[scale=0.04]{"neonet"}}
-                                                   RShiny interactive web ap...
-
-I could not locate the file with any of these extensions:
-.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 [4]
-Overfull \hbox (10.85922pt too wide) in paragraph at lines 198--199
-\OT1/cmr/m/n/10.95 Recherche et Pro-fes-sion-nel, Archeologie des Societes e
-t Ter-ri-toires en France Metropolitaine, Methodes
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no © in font cmr12!
+<../img/euroevol_R.png, id=119, 337.9827pt x 55.8888pt>
+File: ../img/euroevol_R.png Graphic file (type png)
+<use ../img/euroevol_R.png>
+Package pdftex.def Info: ../img/euroevol_R.png  used on input line 190.
+(pdftex.def)             Requested size: 67.59534pt x 11.17755pt.
+<../img/neonet.png, id=121, 1045.9075pt x 237.88875pt>
+File: ../img/neonet.png Graphic file (type png)
+<use ../img/neonet.png>
+Package pdftex.def Info: ../img/neonet.png  used on input line 190.
+(pdftex.def)             Requested size: 41.82916pt x 9.51392pt.
+
+
+! LaTeX Error: \begin{document} ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \end{itemize}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.191 \end{itemize}
+                   
+Things are pretty mixed up, but I think the worst is over.
+
+File: ../img/neonet.png Graphic file (type png)
+<use ../img/neonet.png>
+Package pdftex.def Info: ../img/neonet.png  used on input line 197.
+(pdftex.def)             Requested size: 41.82916pt x 9.51392pt.
+[5 <../img/euroevol_R.png> <../img/neonet.png>]
+Overfull \hbox (3.52202pt too wide) in paragraph at lines 228--229
+[]\OT1/cmr/m/n/12 Tutor of the Mas-ter 2 steer-ing com-mit-tee (2018-2019) of: 
+Marco Padovan, Uni-ver-sity Toulouse
  []
 
-
-Overfull \hbox (7.69038pt too wide) in paragraph at lines 230--231
-[]\OT1/cmr/m/n/10.95 - For-mer mem-ber of the \OT1/cmr/m/it/10.95 Evo-lu-tions,
- trans-ferts, inter-culturalites dans l'arc liguro-provencal : Matieres
+[6]
+Overfull \hbox (5.98758pt too wide) in paragraph at lines 284--285
+\OT1/cmr/bx/n/12 2013 \OT1/cmr/m/n/12 "De-tec-tion of struc-tures and spatio-mo
+rphological dy-nam-ics by im-age anal-y-ses: morpho-
  []
 
-[5]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 286.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 288.
- [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
- [7]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 304.
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
+ [8]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
  (cv_english.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
 Package rerunfilecheck Info: File `cv_english.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 317.
+(rerunfilecheck)             Checksum: E6970D79E0BFC777707680B400D61844;609.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
  ) 
 Here is how much of TeX's memory you used:
- 5599 strings out of 493305
- 84605 string characters out of 3138862
- 175043 words of memory out of 3000000
- 9016 multiletter control sequences out of 15000+200000
- 9417 words of font info for 33 fonts, out of 3000000 for 9000
+ 5668 strings out of 493305
+ 85986 string characters out of 3138862
+ 173348 words of memory out of 3000000
+ 9080 multiletter control sequences out of 15000+200000
+ 9829 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,4n,37p,527b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,5n,33p,542b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_english.pdf (7 pages, 190390 bytes).
+ic/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss
+12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on cv_english.pdf (8 pages, 981466 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 40 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 41 named destinations out of 1000 (max. 500000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
