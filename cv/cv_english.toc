@@ -6,5 +6,4 @@
 \contentsline {section}{\numberline {6}ACADEMIC \textit {\&} RESEARCH PROGRAMS (2014-20)}{5}{section.6}
 \contentsline {section}{\numberline {7}TRAINING COURSES ATTENDED}{6}{section.7}
 \contentsline {section}{\numberline {8}INFORMATIC TOOLS}{7}{section.8}
-\contentsline {section}{\numberline {9}LANGUAGES}{8}{section.9}
-\contentsline {section}{\numberline {10}COMPLEMENTARY INFORMATIONS}{8}{section.10}
+\contentsline {section}{\numberline {9}LANGUAGES \textit {\&} COMPLEMENTARY INFORMATIONS}{8}{section.9}
