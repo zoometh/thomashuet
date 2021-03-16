@@ -25,11 +25,7 @@
 
 ## Theory
 
-Historical sciences operate by comparison, evaluating the similarities and the differences between two or more autonomous populations, groups, cultures, settlements, etc.
-
-The hypothesis <a name="H0"></a>H<sub>0</sub> is the neutral hypothesis
-
-The archaeological investigation can be divided into 4 dimensions to address the questions [***'Why?'*** and ***'How?'***](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies:
+Historical sciences operate by comparison, evaluating the similarities and the differences between two or more autonomous populations, groups, cultures, settlements, etc. The archaeological investigation can be divided into 4 dimensions (W4) to address the questions [***'Why?'*** and ***'How?'***](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies:
 
 * ***'What?'*** ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the historical processes
 * ***'Where?'*** ([geography](https://github.com/zoometh/thomashuet/blob/main/README.md#where)) did these historical processes occurred
@@ -38,9 +34,24 @@ The archaeological investigation can be divided into 4 dimensions to address the
 
 The Cartesian product of these lines of evidence are resumed in my web docs under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).
 
-### What
+### H<sub>0</sub> and H<sub>1</sub>
 
-**Cultural identity** is the product of a set of cultural traits. Cultural traits are considered in terms of presence/absence, relative quantities and correlations of various items belonging to material (raw material, settlements, etc.) and practices (technical, symbolic, etc.). A cultural trait can be shared (at different degrees), or not, by different groups. Renfrew and Bahn (1991)[[1]](#1) have modeled the different cultural subsystems:
+The hypothesis <a name="H0"></a>H<sub>0</sub> is the null hypothesis, normal distribution, homogeneity of variances, same populations, etc., its W4 variants are:
+  + ***'What?'***: cultural consensus, homophily, homogeneity of cultural traits, social affinity, social proximity, cultural affinity, cultural proximity, etc. 
+  + ***'When?'***: time continuity principle, gradual patterns, etc.
+  + ***'Where?'***: space continuity principle, homogeneous space, isotropic space, etc. 
+  + ***'Who?'***: molecular clock, random genetic drifts, population continuity, PC, neutral mutation, genetic drift alone, *mutation dans le temps*, etc. 
+
+The opposite hypothesis is the <a name="H1"></a>H<sub>1</sub> hypothesis. Its W4 variants are:
+  + ***'What?'***: cultural evolution, ethnicity, cultural change, heterogeneity of cultural traits, *dérive historique*, etc. 
+  + ***'When?'***: emergence, etc.
+  + ***'Where?'***: heterogeneous space, anisotropic space, etc. 
+  + ***'Who?'***: genetic dissimilarity, genetic distance, demic diffusion, etc. 
+
+### What
+> "Cultural consensus leads to ethnicity" (Juan Anton Barceló Alvarez)
+
+Cultural identity is the product of a set of cultural traits. Cultural traits are considered in terms of presence/absence, relative quantities and correlations of various items belonging to material (raw material, settlements, etc.) and practices (technical, symbolic, etc.). A cultural trait can be shared (at different degrees), or not, by different groups. Renfrew and Bahn (1991)[[1]](#1) have modeled the different cultural subsystems:
 
 | subsystem   | description  | 
 |-------------|-------------|
@@ -129,11 +140,11 @@ Development of [datasets](https://github.com/zoometh/C14/blob/main/neonet/c14dat
 ### Who
 > [project](https://github.com/zoometh/aDNA#gene-culture-coevolution)
 
-**Genetic identity** of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences.
+Genetic identity of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences.
 
 ### Why
 
-And how... that's the big question
+And how... According to Mauss, "the social domain is the domain of modality" (Mauss 1930). For Bourdieu (1977), the *habitus* is the "generative principle of regulated improvisions".
 
 ## References
 <a id="1">[1]</a> 
