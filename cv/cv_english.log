@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2021.1.18)  8 MAR 2021 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6630 64-bit) (preloaded format=pdflatex 2021.1.18)  16 MAR 2021 12:59
 entering extended mode
 **./cv_english.tex
 (cv_english.tex
@@ -218,23 +218,77 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
 )
-(cv_english.aux)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjustbox.sty"
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count102
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\adjcalc.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\trimclip.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\collectbox\collectbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box26
+)
+\tc@llx=\dimen117
+\tc@lly=\dimen118
+\tc@urx=\dimen119
+\tc@ury=\dimen120
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\adjustbox\tc-pdftex.def"
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen121
+\adjbox@Height=\dimen122
+\adjbox@Depth=\dimen123
+\adjbox@Totalheight=\dimen124
+\adjbox@pwidth=\dimen125
+\adjbox@pheight=\dimen126
+\adjbox@pdepth=\dimen127
+\adjbox@ptotalheight=\dimen128
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\ifoddpage\ifoddpage.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count103
+LaTeX Info: Redefining \checkoddpage on input line 45.
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count104
+\@vwid@loff=\dimen129
+\@vwid@roff=\dimen130
+)) (cv_english.aux)
 \openout1 = `cv_english.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -270,8 +324,8 @@ LaTeX Font Info:    ... okay on input line 16.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box26
-Package hyperref Info: Link coloring OFF on input line 16.
+\AtBeginShipoutBox=\box28
+Package hyperref Info: Link coloring OFF on input line 17.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -281,11 +335,11 @@ Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count102
+\c@section@level=\count105
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
+LaTeX Info: Redefining \ref on input line 17.
+LaTeX Info: Redefining \pageref on input line 17.
+LaTeX Info: Redefining \nameref on input line 17.
 
 (cv_english.out) (cv_english.out)
 \@outlinefile=\write3
@@ -294,17 +348,17 @@ LaTeX Info: Redefining \nameref on input line 16.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
-\scratchdimen=\dimen117
-\scratchbox=\box27
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks16
-\MPscratchCnt=\count106
-\MPscratchDim=\dimen118
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks17
+\scratchcounter=\count106
+\scratchdimen=\dimen131
+\scratchbox=\box29
+\nofMPsegments=\count107
+\nofMParguments=\count108
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count109
+\MPscratchDim=\dimen132
+\MPnumerator=\count110
+\makeMPintoPDFobject=\count111
+\everyMPtoPDFconversion=\toks19
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -318,48 +372,53 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-<../img/phone.png, id=40, 2409.0pt x 2409.0pt>
+<../img/id.png, id=40, 327.2225pt x 327.2225pt>
+File: ../img/id.png Graphic file (type png)
+<use ../img/id.png>
+Package pdftex.def Info: ../img/id.png  used on input line 23.
+(pdftex.def)             Requested size: 99.58464pt x 99.58551pt.
+<../img/phone.png, id=42, 2409.0pt x 2409.0pt>
 File: ../img/phone.png Graphic file (type png)
 <use ../img/phone.png>
-Package pdftex.def Info: ../img/phone.png  used on input line 22.
+Package pdftex.def Info: ../img/phone.png  used on input line 24.
 (pdftex.def)             Requested size: 12.05673pt x 12.05673pt.
-<../img/gmail.png, id=42, 385.44pt x 385.44pt>
+<../img/gmail.png, id=43, 385.44pt x 385.44pt>
 File: ../img/gmail.png Graphic file (type png)
 <use ../img/gmail.png>
-Package pdftex.def Info: ../img/gmail.png  used on input line 23.
+Package pdftex.def Info: ../img/gmail.png  used on input line 25.
 (pdftex.def)             Requested size: 9.63362pt x 9.63362pt.
-<../img/orcid.png, id=44, 1204.5pt x 1204.5pt>
+<../img/orcid.png, id=45, 1204.5pt x 1204.5pt>
 File: ../img/orcid.png Graphic file (type png)
 <use ../img/orcid.png>
-Package pdftex.def Info: ../img/orcid.png  used on input line 24.
+Package pdftex.def Info: ../img/orcid.png  used on input line 26.
 (pdftex.def)             Requested size: 12.03835pt x 12.03835pt.
-<../img/github.png, id=46, 1606.0pt x 1606.0pt>
+<../img/github.png, id=47, 1606.0pt x 1606.0pt>
 File: ../img/github.png Graphic file (type png)
 <use ../img/github.png>
-Package pdftex.def Info: ../img/github.png  used on input line 25.
+Package pdftex.def Info: ../img/github.png  used on input line 27.
 (pdftex.def)             Requested size: 16.05113pt x 16.05113pt.
-<../img/gscholar.png, id=48, 513.92pt x 513.92pt>
+<../img/gscholar.png, id=49, 513.92pt x 513.92pt>
 File: ../img/gscholar.png Graphic file (type png)
 <use ../img/gscholar.png>
-Package pdftex.def Info: ../img/gscholar.png  used on input line 26.
+Package pdftex.def Info: ../img/gscholar.png  used on input line 28.
 (pdftex.def)             Requested size: 12.84482pt x 12.84482pt.
-<../img/rgate.png, id=50, 225.84375pt x 225.84375pt>
+<../img/rgate.png, id=51, 225.84375pt x 225.84375pt>
 File: ../img/rgate.png Graphic file (type png)
 <use ../img/rgate.png>
-Package pdftex.def Info: ../img/rgate.png  used on input line 27.
+Package pdftex.def Info: ../img/rgate.png  used on input line 29.
 (pdftex.def)             Requested size: 11.29285pt x 11.29285pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--29
+Underfull \hbox (badness 10000) in paragraph at lines 19--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--29
+Underfull \hbox (badness 10000) in paragraph at lines 19--31
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 18--29
+Underfull \hbox (badness 10000) in paragraph at lines 19--31
 
  []
 
@@ -368,67 +427,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--29
 \openout4 = `cv_english.toc'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 42.
+(Font)              <12> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 42.
+(Font)              <8> on input line 44.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 42.
+(Font)              <6> on input line 44.
 
-Overfull \hbox (5.70578pt too wide) in paragraph at lines 50--51
+Overfull \hbox (5.70578pt too wide) in paragraph at lines 52--53
 []\OT1/cmr/bx/n/12 2018 \OT1/cmr/m/n/12 Re-search As-so-ciate (IR), UMR 7264 CE
 PAM---CNRS, Uni-ver-site Nice Sophia-Antipolis,
  []
 
+Missing character: There is no Ã in font cmti12!
+Missing character: There is no ¨ in font cmti12!
 [1
 
 {C:/Users/supernova/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../img/
-phone.png> <../img/gmail.png> <../img/orcid.png> <../img/github.png> <../img/gs
-cholar.png> <../img/rgate.png>]
-Overfull \hbox (33.40137pt too wide) in paragraph at lines 62--63
+id.png> <../img/phone.png> <../img/gmail.png> <../img/orcid.png> <../img/github
+.png> <../img/gscholar.png> <../img/rgate.png>]
+Overfull \hbox (33.40137pt too wide) in paragraph at lines 66--67
 []\OT1/cmr/bx/n/12 2014 \OT1/cmr/m/n/12 Re-search As-so-ciate (IR), project \OT
 1/cmr/m/it/12 Ar-chaepi-graph \OT1/cmr/m/n/12 project, UMR 6249 Chrono---Enviro
 nnement,
  []
 
-
-Overfull \hbox (52.41794pt too wide) in paragraph at lines 101--102
+[2]
+Overfull \hbox (52.41794pt too wide) in paragraph at lines 105--106
 \OT1/cmr/m/n/12 art (Alpes-Maritimes, France), \OT1/cmr/m/it/12 Cam-bridge Ar-c
 hae-o-log-i-cal Jour-nal \OT1/cmr/m/n/12 41, 1-23, []10.1017/s0959774316000524[
 ] 
  []
 
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 122.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 126.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 122.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 126.
  [3]
-Overfull \hbox (3.4855pt too wide) in paragraph at lines 162--163
+Overfull \hbox (3.4855pt too wide) in paragraph at lines 168--169
 \OT1/cmr/bx/n/12 2020 \OT1/cmr/m/n/12 Sur-vey of the me-dieval en-grav-ings of 
 Sauri (Cat-alo-nian Pyre-nean, Spain), 2$[][]$campaign,
  []
 
-
-Overfull \hbox (0.95447pt too wide) in paragraph at lines 166--167
+[4]
+Overfull \hbox (0.95447pt too wide) in paragraph at lines 172--173
 []\OT1/cmr/bx/n/12 2019 \OT1/cmr/m/n/12 Sur-vey of the me-dieval en-grav-ings o
 f Sauri (Cat-alo-nian Pyre-nean, Spain), 1$[][]$campaign,
  []
 
-[4]
-<../img/euroevol_R.png, id=114, 337.9827pt x 55.8888pt>
+[5]
+Overfull \hbox (3.52202pt too wide) in paragraph at lines 210--211
+[]\OT1/cmr/m/n/12 Tutor of the Mas-ter 2 steer-ing com-mit-tee (2018-2019) of: 
+Marco Padovan, Uni-ver-sity Toulouse
+ []
+
+<../img/euroevol_R.png, id=122, 337.9827pt x 55.8888pt>
 File: ../img/euroevol_R.png Graphic file (type png)
 <use ../img/euroevol_R.png>
-Package pdftex.def Info: ../img/euroevol_R.png  used on input line 192.
+Package pdftex.def Info: ../img/euroevol_R.png  used on input line 244.
 (pdftex.def)             Requested size: 67.59534pt x 11.17755pt.
-<../img/neonet.png, id=116, 1045.9075pt x 237.88875pt>
+<../img/neonet.png, id=124, 1045.9075pt x 237.88875pt>
 File: ../img/neonet.png Graphic file (type png)
 <use ../img/neonet.png>
-Package pdftex.def Info: ../img/neonet.png  used on input line 192.
+Package pdftex.def Info: ../img/neonet.png  used on input line 244.
 (pdftex.def)             Requested size: 41.82916pt x 9.51392pt.
-
 
 ! LaTeX Error: \begin{document} ended by \end{itemize}.
 
@@ -436,7 +500,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.193 \end{itemize}
+l.245 \end{itemize}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -445,51 +509,45 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.193 \end{itemize}
+l.245 \end{itemize}
                    
 Things are pretty mixed up, but I think the worst is over.
 
 File: ../img/neonet.png Graphic file (type png)
 <use ../img/neonet.png>
-Package pdftex.def Info: ../img/neonet.png  used on input line 199.
+Package pdftex.def Info: ../img/neonet.png  used on input line 251.
 (pdftex.def)             Requested size: 41.82916pt x 9.51392pt.
-[5 <../img/euroevol_R.png> <../img/neonet.png>]
-Overfull \hbox (3.52202pt too wide) in paragraph at lines 230--231
-[]\OT1/cmr/m/n/12 Tutor of the Mas-ter 2 steer-ing com-mit-tee (2018-2019) of: 
-Marco Padovan, Uni-ver-sity Toulouse
- []
-
-[6]
-Overfull \hbox (5.98758pt too wide) in paragraph at lines 286--287
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 264.
+[6 <../img/euroevol_R.png> <../img/neonet.png>]
+Overfull \hbox (5.98758pt too wide) in paragraph at lines 318--319
 \OT1/cmr/bx/n/12 2013 \OT1/cmr/m/n/12 "De-tec-tion of struc-tures and spatio-mo
 rphological dy-nam-ics by im-age anal-y-ses: morpho-
  []
 
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 306.
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 328--332
+Underfull \hbox (badness 10000) in paragraph at lines 334--338
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
 [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
  (cv_english.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `cv_english.out' has not changed.
-(rerunfilecheck)             Checksum: 1DD6CB3595BA3D25FF300D3069B09D33;577.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
+(rerunfilecheck)             Checksum: 8CFBC7D4843B6C22103CAA8BA3D34D14;575.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 5666 strings out of 493305
- 85964 string characters out of 3138862
- 173347 words of memory out of 3000000
- 9079 multiletter control sequences out of 15000+200000
+ 6672 strings out of 493305
+ 102428 string characters out of 3138862
+ 191231 words of memory out of 3000000
+ 10050 multiletter control sequences out of 15000+200000
  9829 words of font info for 34 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,5n,33p,542b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,7n,45p,543b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiK
@@ -501,9 +559,9 @@ ts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss
 12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Progra
 m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on cv_english.pdf (8 pages, 980873 bytes).
+Output written on cv_english.pdf (8 pages, 1154665 bytes).
 PDF statistics:
- 218 PDF objects out of 1000 (max. 8388607)
+ 220 PDF objects out of 1000 (max. 8388607)
  40 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 
