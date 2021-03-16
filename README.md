@@ -23,12 +23,11 @@
   
 <font size="4">**There**</font> is probably a natural history of human societies. Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative methods are suitable to describe data and datasets. Multifactorial, unsupervised and data-driven analysis ([example analysis](https://epispat.shinyapps.io/analyses_mult_5/)) are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The recurrent and relevant patterns will be identified *a posteriori*. The archaeological investigation can be divided into 5 dimensions:
 
-* ***'What?'*** ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the processes
-* ***'Where?'*** ([geography](https://github.com/zoometh/thomashuet/blob/main/README.md#where)) did these processes occurred
-* ***'When?'*** ([time](https://github.com/zoometh/thomashuet/blob/main/README.md#when)) did these processes occurred
-* ***'Who?'*** ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these processes
-* ***'Why?'*** past societies choose a solution instead of another
-* ***'How?'*** does it works
+* ***'What?'*** ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the historical processes
+* ***'Where?'*** ([geography](https://github.com/zoometh/thomashuet/blob/main/README.md#where)) did these historical processes occurred
+* ***'When?'*** ([time](https://github.com/zoometh/thomashuet/blob/main/README.md#when)) did these processes historical occurred
+* ***'Who?'*** ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these historical processes
+* ***'Why?'*** and ***'How?'*** ([history](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies 
 
 And their Cartesian product, resumed here under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).
 
@@ -155,6 +154,10 @@ Development of [datasets](https://github.com/zoometh/C14/blob/main/neonet/c14dat
 
 **Genetic identity** of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences. On the base of single-nucleotide polymorphisms (SNPs) study, the neutral hypothesis (H~0~, i.e. a population continuity with few random genetic drifts) can be rejected (H~1~ accepted) and factors like mutation, selection and migration can be supposed. At the time scale we investigate (Recent Prehistory), only the migration factor could explain observed significant changes in the genetic of populations. Differences between populations can be detected by different means but the determination of groups (e.g. indigenous, immigrants) is mostly based on the study of the SNPs or discrete haplogroup (hg) frequencies [[11]](#11).
 Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA#adna)).  The R packages [ape](https://cran.r-project.org/web/packages/ape/index.html) and [pegas](https://cran.r-project.org/web/packages/pegas/index.html), among others, permit to perform analysis of Molecular Variance (AMOVA), genetic mapping (e.g. phylogenetic trees, haplotype network, median-joining network) and cluster analysis (multidimensional scaling, dendrogram, etc.)
+
+### Why
+
+And how... that's the big question
 
 ## References
 <a id="1">[1]</a> 
