@@ -1,5 +1,7 @@
-## Thomas Huet (Dr.)
+## Thomas Huet (Dr.) <img src="img/id.png" align="right" width="100" height="100"/>
 > <font size="2.5"> **Archaeology and IT methods**. My main research project cover the Neolithic of Western Asia and its embedded symbolic system, the iconography </font> 
+
+\smash{\includegraphics[width=3.5cm, right]{id}}
 
 [LabEx ARCHIMEDE](https://archimede.cnrs.fr/), Associate Researcher UMR 5140 ASM-CNRS, Université Paul-Valéry Montpellier 3, France
 
