@@ -21,15 +21,22 @@
 
 <br>
   
-<font size="4">**There**</font> is probably a natural history of human societies. Quetelet's statistical observations of the oscillations around the mean value -- and his concept of "average man" (*homme moyen*) -- show that parsimonial, multiscalar, bottom-up and agglomerative methods are suitable to describe data and datasets. Multifactorial, unsupervised and data-driven analysis ([example analysis](https://epispat.shinyapps.io/analyses_mult_5/)) are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The recurrent and relevant patterns will be identified *a posteriori*. The archaeological investigation can be divided into 5 dimensions:
+<font size="4">**There**</font> is probably a natural history of human societies. Quetelet's concept of "average man" (*homme moyen*) or Tobler's first law of geography, show that parsimonial, multiscalar, bottom-up and agglomerative methods are suitable to describe data and datasets. Multifactorial, unsupervised and data-driven analysis ([example analysis](https://epispat.shinyapps.io/analyses_mult_5/)) are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The recurrent and relevant patterns will be identified *a posteriori*. 
+
+## Theory
+
+Historical sciences operate by comparison, evaluating the similarities and the differences between two or more autonomous populations, groups, cultures, settlements, etc.
+
+The hypothesis <a name="H0"></a>H<sub>0</sub> is the neutral hypothesis
+
+The archaeological investigation can be divided into 4 dimensions to address the questions [***'Why?'*** and ***'How?'***](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies:
 
 * ***'What?'*** ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the historical processes
 * ***'Where?'*** ([geography](https://github.com/zoometh/thomashuet/blob/main/README.md#where)) did these historical processes occurred
 * ***'When?'*** ([time](https://github.com/zoometh/thomashuet/blob/main/README.md#when)) did these processes historical occurred
 * ***'Who?'*** ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these historical processes
-* ***'Why?'*** and ***'How?'*** ([history](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies 
 
-And their Cartesian product, resumed here under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).
+The Cartesian product of these lines of evidence are resumed in my web docs under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).
 
 ### What
 
@@ -109,40 +116,10 @@ Iconography represent a part of the symbolic subsystem. The R package [*iconr*](
 
 
 ### Where
+> "*Que les valeurs d’un caractère ne se répartissent pas n’importe comment dans l’espace signifie qu’il existe une organisation spatiale*" (Groupe Chadule 1997)
 
-Spatialization will permit to respond to the question: 'Where ?'.
-Spatial distributions of social groups are the result of historical
-processes. For example, last Mesolithic sites are preferentially located
-in the mountain -- maybe because of the Neolithic pressure created by
-the arrival of first farmers -- while early farming sites occupied
-fertile lands: soils of the Balkans flood plains during Painted Pottery
-complex (PPC) diffusion, loessic soils of Central Europe and morainic
-soils of the Northern Alps during LBK diffusion (id. in the Southern
-Alps during Cardial diffusion). Spatial statistics have various indexes
-or models able to describe and explain spatial distributions. For
-example, we will calculate cost-weighted time of walk buffers from site
-locations (site catchment analysis) to study both site environmental
-context (site supply, repository of raw materials, land cover and arable
-lands, local climate, etc.) and inter-site connections. For traditional
-societies, a terrestrial 50/60 km radius, corresponding roughly to a
-day's walk, would be a theoretically good threshold below which
-principal genetic and cultural traits (marriage, language, economic
-exchanges, etc.) are optimal. Map algebra between land cover, slopes,
-climatic model, etc., will be used to evaluate the attractiveness of
-soils. Spatial statistics (e.g. semi-variograms), indexes (e.g.,
-autocorrelation Moran's I, location quotient) or pattern distribution
-(e.g. Ripley's K function, Kernel density) will permit to characterize
-social groups' spatial distributions [[10]](#10). Geographic models (e.g.
-core-periphery, down-the-line, directional trade) will permit to match
-past observations with present ones (ethnographic, economic). To reduce
-the variability of the dataset, sites will be clustered according to
-their own specificities (e.g. category, size) and their inter-relations
-(e.g. geographical or network distances, genetic and cultural
-differences of their inhabitants). Beside geographical analysis, network
-analysis will be performed when qualitative \"connections\" between
-\"nodes\" (these terms are contextually-defined) will be observed.
-Different R packages permit to manage both geographical and network
-analyses ([example](https://zoometh.github.io/golasecca/#Evolution_au_cours_du_Golasecca)).
+Spatialization will permit to respond to the question: 'Where ?'. Spatial distributions of social groups are the result of historical
+processes. Different R packages permit to manage both geographical and network analyses ([example](https://zoometh.github.io/golasecca/#Evolution_au_cours_du_Golasecca)).
 
 ### When
 > [project](https://github.com/zoometh/C14#time-modeling)
@@ -152,8 +129,7 @@ Development of [datasets](https://github.com/zoometh/C14/blob/main/neonet/c14dat
 ### Who
 > [project](https://github.com/zoometh/aDNA#gene-culture-coevolution)
 
-**Genetic identity** of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences. On the base of single-nucleotide polymorphisms (SNPs) study, the neutral hypothesis (H~0~, i.e. a population continuity with few random genetic drifts) can be rejected (H~1~ accepted) and factors like mutation, selection and migration can be supposed. At the time scale we investigate (Recent Prehistory), only the migration factor could explain observed significant changes in the genetic of populations. Differences between populations can be detected by different means but the determination of groups (e.g. indigenous, immigrants) is mostly based on the study of the SNPs or discrete haplogroup (hg) frequencies [[11]](#11).
-Each individual belongs to a hg. Individual sharing a common hg have also a common ancestor. Genetic traits are considered in terms of presence/absence, relative quantities and correlations of hg. A hg can be shared (in different proportions), or not, by different groups (see [here](https://github.com/zoometh/aDNA#adna)).  The R packages [ape](https://cran.r-project.org/web/packages/ape/index.html) and [pegas](https://cran.r-project.org/web/packages/pegas/index.html), among others, permit to perform analysis of Molecular Variance (AMOVA), genetic mapping (e.g. phylogenetic trees, haplotype network, median-joining network) and cluster analysis (multidimensional scaling, dendrogram, etc.)
+**Genetic identity** of a population is its genetic signature. Genetic analysis permit to evaluate genetic populations similarities by comparison of ancient DNA (aDNA) sequences.
 
 ### Why
 
