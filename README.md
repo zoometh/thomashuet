@@ -1,5 +1,5 @@
 ## Thomas Huet (Dr.) <img src="img/id.png" align="right" width="100" height="100"/>
-> <font size="2.5"> **Archaeology and IT methods**. My main research project cover the Neolithic of Western Asia and its embedded symbolic system, the iconography </font> 
+> <font size="2.5"> **Prehistory and Computational Archaeology**. My main research projects cover the Neolithic of Western Asia and its embedded iconography </font> 
 
 \smash{\includegraphics[width=3.5cm, right]{id}}
 
