@@ -24,23 +24,30 @@
 ## Theory
 
 Historical sciences operate by comparison, evaluating the similarities and the differences between two or more autonomous populations, groups, cultures, settlements, etc. The archaeological investigation can be divided into 4 dimensions (W4) to address the questions [***'Why?'*** and ***'How?'***](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies:
-
+  
+  
 * ***'What?'*** ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the historical processes
 * ***'Where?'*** ([geography](https://github.com/zoometh/thomashuet/blob/main/README.md#where)) did these historical processes occurred
 * ***'When?'*** ([time](https://github.com/zoometh/thomashuet/blob/main/README.md#when)) did these processes historical occurred
 * ***'Who?'*** ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these historical processes
+
+
 
 The Cartesian product of these lines of evidence are resumed in my web docs under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).
 
 ### H<sub>0</sub> and H<sub>1</sub>
 
 The hypothesis <a name="H0"></a>H<sub>0</sub> is the null hypothesis, normal distribution, homogeneity of variances, same populations, etc., its W4 variants are:
+
+  
   + ***'What?'***: cultural consensus, homophily, homogeneity of cultural traits, social affinity, social proximity, cultural affinity, cultural proximity, etc. 
   + ***'When?'***: time continuity principle, gradual patterns, etc.
   + ***'Where?'***: space continuity principle, homogeneous space, isotropic space, etc. 
   + ***'Who?'***: molecular clock, random genetic drifts, population continuity, PC, neutral mutation, genetic drift alone, *mutation dans le temps*, etc. 
 
+  
 The opposite hypothesis is the <a name="H1"></a>H<sub>1</sub> hypothesis. Its W4 variants are:
+
   + ***'What?'***: cultural evolution, ethnicity, cultural change, heterogeneity of cultural traits, *dérive historique*, etc. 
   + ***'When?'***: emergence, etc.
   + ***'Where?'***: heterogeneous space, anisotropic space, etc. 
@@ -125,7 +132,7 @@ Iconography represent a part of the symbolic subsystem. The R package [*iconr*](
 
 
 ### Where
-> "*Que les valeurs d’un caractère ne se répartissent pas n’importe comment dans l’espace signifie qu’il existe une organisation spatiale*" (Groupe Chadule 1997)
+> "*Que les valeurs d’un caractère ne se répartissent pas n’importe comment dans l’espace signifie qu’il existe une organisation spatiale*" (Groupe Chadule 1997)<br>  
 > [project](https://zoometh.github.io/popland/)
 
 Spatialization will permit to respond to the question: 'Where ?'. Spatial distributions of social groups are the result of historical
