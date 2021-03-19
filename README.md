@@ -1,8 +1,6 @@
 ## Thomas Huet (Dr.) <img src="img/id.png" align="right" width="100" height="100"/>
 > <font size="2.5"> **Prehistory and Computational Archaeology**. My main research projects cover the Neolithic of Western Asia and its embedded iconography </font> 
 
-\smash{\includegraphics[width=3.5cm, right]{id}}
-
 [LabEx ARCHIMEDE](https://archimede.cnrs.fr/), Associate Researcher UMR 5140 ASM-CNRS, Université Paul-Valéry Montpellier 3, France
 
 <img align="left" width="22" height="22" src="img/gmail.png">  thomashuet7@gmail.com  
@@ -128,6 +126,7 @@ Iconography represent a part of the symbolic subsystem. The R package [*iconr*](
 
 ### Where
 > "*Que les valeurs d’un caractère ne se répartissent pas n’importe comment dans l’espace signifie qu’il existe une organisation spatiale*" (Groupe Chadule 1997)
+> [project](https://zoometh.github.io/popland/)
 
 Spatialization will permit to respond to the question: 'Where ?'. Spatial distributions of social groups are the result of historical
 processes. Different R packages permit to manage both geographical and network analyses ([example](https://zoometh.github.io/golasecca/#Evolution_au_cours_du_Golasecca)).
