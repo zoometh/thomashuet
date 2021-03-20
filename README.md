@@ -16,14 +16,12 @@
 <img align="left" width="22" height="22" src="img/gscholar.png" alt=" ">  [2hKEVaIAAAAJ&hl](https://scholar.google.fr/citations?user=2hKEVaIAAAAJ&hl=en&oi=sra)
 
 <img align="left" width="22" height="22" src="img/rgate.png" alt=" ">  [Thomas_Huet2](https://www.researchgate.net/profile/Thomas_Huet2)  
-
-<br>
   
-<font size="4">**There**</font> is probably a natural history of human societies. Quetelet's concept of "average man" (*homme moyen*) or Tobler's first law of geography, show that parsimonial, multiscalar, bottom-up and agglomerative methods are suitable to describe data and datasets. Multifactorial, unsupervised and data-driven analysis ([example analysis](https://epispat.shinyapps.io/analyses_mult_5/)) are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The recurrent and relevant patterns will be identified *a posteriori*. 
+<br>
 
-## Theory
-
-Historical sciences operate by comparison, evaluating the similarities and the differences between two or more autonomous populations, groups, cultures, settlements, etc. The archaeological investigation can be divided into 4 dimensions (W4) to address the questions [***'Why?'*** and ***'How?'***](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies:
+---
+  
+<font size="4">**There is**</font> probably a natural history of human societies. Quetelet's concept of "average man" (*homme moyen*) or Tobler's first law of geography, show that parsimonial, multiscalar, bottom-up and agglomerative methods are suitable to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The recurrent and relevant patterns will be identified *a posteriori*. Historical sciences operate by comparison, evaluating the similarities and the differences between two or more autonomous populations, groups, cultures, settlements, etc. The archaeological investigation can be divided into 4 dimensions (W4) to address the questions [***'Why?'*** and ***'How?'***](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies:
   
   
 * ***'What?'*** ([culture](https://github.com/zoometh/thomashuet/blob/main/README.md#what)) participate to the historical processes
@@ -31,9 +29,20 @@ Historical sciences operate by comparison, evaluating the similarities and the d
 * ***'When?'*** ([time](https://github.com/zoometh/thomashuet/blob/main/README.md#when)) did these processes historical occurred
 * ***'Who?'*** ([genetic](https://github.com/zoometh/thomashuet/blob/main/README.md#who)) participate to these historical processes
 
+The Cartesian product of these lines of evidence are resumed in my web docs under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).  
 
+<br>
 
-The Cartesian product of these lines of evidence are resumed in my web docs under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).
+**PROJECTS** <br>
+
+[<img src="img/prj_iconr.png" width='100px'>](https://cran.r-project.org/web/packages/iconr/index.html "iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis")
+[<img src="img/prj_gene_culture.png" width='140px'>](https://zoometh.github.io/aDNA/ "Gene-culture coevolution through cross-analysis of aDNA data, culture tags and radiocarbon dates")
+[<img src="img/prj_landscape_archaeology.png" width='140px'>](https://zoometh.github.io/popland/ "Landscape Archaeology theory and methods: management of LiDAR, shapefiles, etc.")
+[<img src="img/prj_golasecca.png" width='140px'>](https://zoometh.github.io/golasecca/ "Networks drawing (graph theory, spatial networks) and enriched data visualisation of movable goods (personal ornements, imported/prestige goods)")
+[<img src="img/neonet.png"  width='130px'>](https://neolithic.shinyapps.io/neonet2/ "NeoNet. Interactive web applications for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates, with its tutorial web page: <https://zoometh.github.io/C14/neonet/>")
+[<img src="img/prj_absolute_date.png" width='140px'>](https://neolithic.shinyapps.io/AbsoluteDating/ "Absolute dates. Web applications/databases review, methods for archaeological absolute dates (radiocarbon and dendrochronological) analyses and management")
+
+## Statistical approach
 
 ### H<sub>0</sub> and H<sub>1</sub>
 
