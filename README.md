@@ -20,6 +20,23 @@
 <br>
 
 ---
+
+**PROJECTS** <br>
+
+<center>
+  
+[<img src="img/prj_iconr.png" width='100px'>](https://cran.r-project.org/web/packages/iconr/index.html "iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis") &nbsp;&nbsp;
+[<img src="img/prj_neonet.png"  width='120px'>](https://neolithic.shinyapps.io/neonet2/ "NeoNet. Interactive web applications for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates") &nbsp;&nbsp;
+[<img src="img/prj_neonet_tutorial.png"  width='120px'>](https://zoometh.github.io/C14/neonet/ "NeoNet tutorial web page") &nbsp;&nbsp;
+[<img src="img/prj_absolute_date.png" width='120px'>](https://neolithic.shinyapps.io/AbsoluteDating/ "Absolute dates. Web applications/databases review, methods for archaeological absolute dates (radiocarbon and dendrochronological) analyses and management")
+[<img src="img/prj_gene_culture.png" width='90px'>](https://zoometh.github.io/aDNA/ "Gene-culture coevolution through cross-analysis of aDNA data, culture tags and radiocarbon dates") &nbsp;
+[<img src="img/prj_landscape_archaeology.png" width='120px'>](https://zoometh.github.io/popland/ "Landscape Archaeology theory and methods: management of LiDAR, shapefiles, etc.") &nbsp;&nbsp;
+[<img src="img/prj_golasecca.png" width='120px'>](https://zoometh.github.io/golasecca/ "Networks drawing (graph theory, spatial networks) and enriched data visualisation of movable goods (personal ornements, imported/prestige goods)") &nbsp;&nbsp;
+  
+</center>
+<br>
+
+---
   
 <font size="4">**There is**</font> probably a natural history of human societies. Quetelet's concept of "average man" (*homme moyen*) or Tobler's first law of geography, show that parsimonial, multiscalar, bottom-up and agglomerative methods are suitable to describe data and datasets. Multifactorial, unsupervised and data-driven analysis are favored since we did not know, *a priori*, what aspects and at which scale (from the settlement to the continent) will give the positive results. The recurrent and relevant patterns will be identified *a posteriori*. Historical sciences operate by comparison, evaluating the similarities and the differences between two or more autonomous populations, groups, cultures, settlements, etc. The archaeological investigation can be divided into 4 dimensions (W4) to address the questions [***'Why?'*** and ***'How?'***](https://github.com/zoometh/thomashuet/blob/main/README.md#why)) evoluate past societies:
   
@@ -32,15 +49,6 @@
 The Cartesian product of these lines of evidence are resumed in my web docs under the concept of [Gene-Culure coevolution](https://github.com/zoometh/aDNA#gene-culture-coevolution).  
 
 <br>
-
-**PROJECTS** <br>
-
-[<img src="img/prj_iconr.png" width='100px'>](https://cran.r-project.org/web/packages/iconr/index.html "iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis")
-[<img src="img/prj_gene_culture.png" width='140px'>](https://zoometh.github.io/aDNA/ "Gene-culture coevolution through cross-analysis of aDNA data, culture tags and radiocarbon dates")
-[<img src="img/prj_landscape_archaeology.png" width='140px'>](https://zoometh.github.io/popland/ "Landscape Archaeology theory and methods: management of LiDAR, shapefiles, etc.")
-[<img src="img/prj_golasecca.png" width='140px'>](https://zoometh.github.io/golasecca/ "Networks drawing (graph theory, spatial networks) and enriched data visualisation of movable goods (personal ornements, imported/prestige goods)")
-[<img src="img/neonet.png"  width='130px'>](https://neolithic.shinyapps.io/neonet2/ "NeoNet. Interactive web applications for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates, with its tutorial web page: <https://zoometh.github.io/C14/neonet/>")
-[<img src="img/prj_absolute_date.png" width='140px'>](https://neolithic.shinyapps.io/AbsoluteDating/ "Absolute dates. Web applications/databases review, methods for archaeological absolute dates (radiocarbon and dendrochronological) analyses and management")
 
 ## Statistical approach
 
