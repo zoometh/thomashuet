@@ -21,7 +21,7 @@
 
 ---
 
-**PROJECTS** <br>
+### PROJECTS
 
 <center>
   
