@@ -26,6 +26,7 @@
 <center>
   
 [<img src="img/prj_iconr.png" width='100px'>](https://cran.r-project.org/web/packages/iconr/index.html "iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis") &nbsp;&nbsp;
+[<img src="img/prj_rockart.png" width='120px'>](https://zoometh.github.io/rockart/ "Multi-paradigm and multi-scale rock-art management with open-source apps") &nbsp;&nbsp;
 [<img src="img/prj_neonet.png"  width='120px'>](https://neolithic.shinyapps.io/neonet2/ "NeoNet. Interactive web applications for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates") &nbsp;&nbsp;
 [<img src="img/prj_neonet_tutorial.png"  width='120px'>](https://zoometh.github.io/C14/neonet/ "NeoNet tutorial web page") &nbsp;&nbsp;
 [<img src="img/prj_absolute_date.png" width='120px'>](https://neolithic.shinyapps.io/AbsoluteDating/ "Absolute dates. Web applications/databases review, methods for archaeological absolute dates (radiocarbon and dendrochronological) analyses and management")
