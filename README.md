@@ -29,7 +29,7 @@
 [<img src="img/prj_rockart.png" width='120px'>](https://zoometh.github.io/rockart/ "Multi-paradigm and multi-scale rock-art management with open-source apps") &nbsp;&nbsp;
 [<img src="img/prj_neonet.png"  width='120px'>](https://neolithic.shinyapps.io/neonet2/ "NeoNet. Interactive web applications for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates") &nbsp;&nbsp;
 [<img src="img/prj_neonet_tutorial.png"  width='120px'>](https://zoometh.github.io/C14/neonet/ "NeoNet tutorial web page") &nbsp;&nbsp;
-[<img src="img/prj_absolute_date.png" width='120px'>](https://neolithic.shinyapps.io/AbsoluteDating/ "Absolute dates. Web applications/databases review, methods for archaeological absolute dates (radiocarbon and dendrochronological) analyses and management")
+<!--- [<img src="img/prj_absolute_date.png" width='120px'>](https://neolithic.shinyapps.io/AbsoluteDating/ "Absolute dates. Web applications/databases review, methods for archaeological absolute dates (radiocarbon and dendrochronological) analyses and management") --->
 [<img src="img/prj_gene_culture.png" width='90px'>](https://zoometh.github.io/aDNA/ "Gene-culture coevolution through cross-analysis of aDNA data, culture tags and radiocarbon dates") &nbsp;
 [<img src="img/prj_landscape_archaeology.png" width='120px'>](https://zoometh.github.io/popland/ "Landscape Archaeology theory and methods: management of LiDAR, shapefiles, etc.") &nbsp;&nbsp;
 [<img src="img/prj_golasecca.png" width='120px'>](https://zoometh.github.io/golasecca/ "Networks drawing (graph theory, spatial networks) and enriched data visualisation of movable goods (personal ornements, imported/prestige goods)") &nbsp;&nbsp;
