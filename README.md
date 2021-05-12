@@ -72,7 +72,7 @@ The opposite hypothesis is the <a name="H1"></a>H<sub>1</sub> hypothesis. Its W4
   + ***'Who?'***: genetic dissimilarity, genetic distance, demic diffusion, etc. 
 
 ### What
-> "Cultural consensus leads to ethnicity" (Juan Anton Barceló Alvarez)
+> <font size="2">"*Cultural consensus leads to ethnicity*" (Juan Anton Barceló Alvarez)</font>
 
 Cultural identity is the product of a set of cultural traits. Cultural traits are considered in terms of presence/absence, relative quantities and correlations of various items belonging to material (raw material, settlements, etc.) and practices (technical, symbolic, etc.). A cultural trait can be shared (at different degrees), or not, by different groups. Renfrew and Bahn (1991)[[1]](#1) have modeled the different cultural subsystems:
 
