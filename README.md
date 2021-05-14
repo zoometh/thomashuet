@@ -36,7 +36,7 @@
 			</a>
 		</td>
 	</tr><tr>
-			  <th style="padding:10px">**R package** ***iconr***. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis</th>
+			  <th style="padding:10px">R package iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis</th>
 		    <th style="padding:10px">Multi-paradigm and multi-scale rock-art management with open-source apps (3D, webmapping, etc.)</th>
 	</tr><tr align="center">
 		<td>
@@ -49,7 +49,7 @@
 			</a>
 		</td>
 	</tr><tr>
-			<th style="padding:10px">**NeoNet app**. RShiny interactive web application for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates to model the Mesolithic/Neolithic transition</th>
+			<th style="padding:10px">NeoNet app. RShiny interactive web application for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates to model the Mesolithic/Neolithic transition</th>
 		<th style="padding:10px">NeoNet tutorial webpage</th>
 		</tr><tr align="center">
       <td>
