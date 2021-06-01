@@ -31,7 +31,7 @@
 				<img src="img/prj_iconr.png" width='110px' />
 			</a>
 		</td><td>
-			<a href="https://cepam.github.io/rockart" target="_blank">
+			<a href="https://zoometh.github.io/rockart" target="_blank">
 				<img src="img/prj_rockart.png" width='150px' />
 			</a>
 		</td>
