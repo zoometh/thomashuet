@@ -27,7 +27,7 @@
 <table style="width:100%">
 	<tr align="center">
 		<td>
-			<a href="https://cran.r-project.org/web/packages/iconr/index.html" target="_blank">
+			<a href="https://github.com/zoometh/iconr/#readme" target="_blank">
 				<img src="img/prj_iconr.png" width='110px' />
 			</a>
 		</td><td>
