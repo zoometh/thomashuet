@@ -40,7 +40,7 @@
 		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, atrifacts, etc., with open-source apps</th>
 	</tr><tr align="center">
 		<td>
-			<a href="https://neolithic.shinyapps.io/neonet" target="_blank">
+			<a href="https://neolithic.shinyapps.io/neonet3" target="_blank">
 				<img src="img/prj_neonet.png" width='150px' />
 			</a>
 		</td><td>
