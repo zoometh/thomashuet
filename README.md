@@ -85,7 +85,7 @@
 			</a>
 		</td><td>
 					<a href="https://github.com/zoometh/zoowok" target="_blank">
-				<img src="img/prj_zoonisp.png" width='150px' />
+				<img src="img/prj_zoowork.png" width='150px' />
 			</a>
 		</td>
 	</tr><tr>
