@@ -84,13 +84,13 @@
 				<img src="img/prj_sauri.png" width='150px' />
 			</a>
 		</td><td>
-					<a href="https://github.com/zoometh/zoonisp" target="_blank">
+					<a href="https://github.com/zoometh/zoowok" target="_blank">
 				<img src="img/prj_zoonisp.png" width='150px' />
 			</a>
 		</td>
 	</tr><tr>
 			<th style="padding:10px">  Sauri - Pallars (project Universitat Autònoma de Barcelona - Departament de Prehistòria). Database, webmapping, statistical analysis and FAIR data of Sauri (Pallars Sobira, Lleida) medieval rock-art</th>
-		<th style="padding:10px">Management of NISP data (Number of Identified Specimens) for Zooarchaeology</th>
+		<th style="padding:10px">Zoowork : Methods for Zooarchaeology</th>
 	</tr>
 </table>
 </font>
