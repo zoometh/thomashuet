@@ -84,7 +84,7 @@
 				<img src="img/prj_sauri.png" width='150px' />
 			</a>
 		</td><td>
-					<a href="https://zoometh.github.io/zoonisp" target="_blank">
+					<a href="https://github.com/zoometh/zoonisp" target="_blank">
 				<img src="img/prj_zoonisp.png" width='150px' />
 			</a>
 		</td>
