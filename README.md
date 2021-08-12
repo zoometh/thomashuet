@@ -84,7 +84,7 @@
 				<img src="img/prj_sauri.png" width='150px' />
 			</a>
 		</td><td>
-					<a href="https://github.com/zoometh/zoowok" target="_blank">
+					<a href="https://github.com/zoometh/zoowork" target="_blank">
 				<img src="img/prj_zoowork.png" width='150px' />
 			</a>
 		</td>
