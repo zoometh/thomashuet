@@ -37,10 +37,10 @@
 		</td>
 	</tr><tr>
 			  <th style="padding:10px">R package iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis</th>
-		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, atrifacts, etc., with open-source apps</th>
+		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, atrifacts, etc., with open-source apps (3DHOP, Blender, Meshlab, etc.)</th>
 	</tr><tr align="center">
 		<td>
-			<a href="https://neolithic.shinyapps.io/neonet3" target="_blank">
+			<a href="https://neolithic.shinyapps.io/neonet" target="_blank">
 				<img src="img/prj_neonet.png" width='150px' />
 			</a>
 		</td><td>
