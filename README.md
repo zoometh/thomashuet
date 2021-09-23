@@ -44,7 +44,7 @@
 				<img src="img/prj_neonet_stable.png" width='200px' />
 			</a>
 		</td><td>
-					<a href="https://zoometh.github.io/neonet/" target="_blank">
+					<a href="https://github.com/zoometh/neonet" target="_blank">
 				<img src="img/prj_neonet_dev.png" width='200px' />
 			</a>
 		</td>
