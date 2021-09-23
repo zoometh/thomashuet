@@ -31,26 +31,26 @@
 				<img src="img/prj_iconr.png" width='110px' />
 			</a>
 		</td><td>
-			<a href="https://zoometh.github.io/rockart" target="_blank">
-				<img src="img/prj_rockart.png" width='150px' />
+			<a href="https://zoometh.github.io/Sauri" target="_blank">
+				<img src="img/prj_sauri.png" width='150px' />
 			</a>
 		</td>
 	</tr><tr>
 			  <th style="padding:10px">R package iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis</th>
-		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, atrifacts, etc., with open-source apps</th>
+			  			<th style="padding:10px">  Sauri - Pallars (project Universitat Autònoma de Barcelona - Departament de Prehistòria). Database, webmapping, statistical analysis and FAIR data of Sauri (Pallars Sobira, Lleida) medieval rock-art</th>
 	</tr><tr align="center">
 		<td>
-			<a href="https://neolithic.shinyapps.io/neonet3" target="_blank">
-				<img src="img/prj_neonet.png" width='150px' />
+			<a href="http://shinyserver.cfs.unipi.it:3838/C14/" target="_blank">
+				<img src="img/prj_neonet_stable.png" width='150px' />
 			</a>
 		</td><td>
-					<a href="https://zoometh.github.io/C14/neonet/" target="_blank">
-				<img src="img/prj_neonet_tutorial.png" width='150px' />
+					<a href="https://zoometh.github.io/neonet/" target="_blank">
+				<img src="img/prj_neonet_dev.png" width='150px' />
 			</a>
 		</td>
 	</tr><tr>
-			<th style="padding:10px">NeoNet app. RShiny interactive web application for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates to model the Mesolithic/Neolithic transition</th>
-		<th style="padding:10px">NeoNet tutorial webpage</th>
+			<th style="padding:10px">NeoNet app stable version. RShiny interactive web application for selecting, calibrating, summing and plotting on-the-fly radiocarbon dates to model the Mesolithic/Neolithic transition, hosted by the University of Pisa</th>
+		<th style="padding:10px">NeoNet app development version, hosted on GitHub</th>
 		</tr><tr align="center">
       <td>
 			<a href="https://zoometh.github.io/LOD" target="_blank">
@@ -80,17 +80,17 @@
 		<th style="padding:10px">Landscape Archaeology theory and methods: reuse of data with management of LiDAR surveys, shapefiles, etc.</th>
 	</tr><tr align="center">
 		<td>
-			<a href="https://zoometh.github.io/Sauri" target="_blank">
-				<img src="img/prj_sauri.png" width='150px' />
+			<a href="https://zoometh.github.io/rockart" target="_blank">
+				<img src="img/prj_rockart.png" width='150px' />
 			</a>
 		</td><td>
-					<a href="https://github.com/zoometh/zoowork" target="_blank">
+			<a href="https://github.com/zoometh/zoowork" target="_blank">
 				<img src="img/prj_zoowork.png" width='150px' />
 			</a>
 		</td>
 	</tr><tr>
-			<th style="padding:10px">  Sauri - Pallars (project Universitat Autònoma de Barcelona - Departament de Prehistòria). Database, webmapping, statistical analysis and FAIR data of Sauri (Pallars Sobira, Lleida) medieval rock-art</th>
-		<th style="padding:10px">Zoowork : Methods for Zooarchaeology</th>
+		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, atrifacts, etc., with open-source apps</th>
+		<th style="padding:10px">R package Zoowork : Methods for Zooarchaeology</th>
 	</tr>
 </table>
 </font>
