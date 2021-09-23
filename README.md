@@ -37,11 +37,19 @@
 		</td>
 	</tr><tr>
 			  <th style="padding:10px">R package iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis</th>
+<<<<<<< HEAD
 			  			<th style="padding:10px">  Sauri - Pallars (project Universitat Autònoma de Barcelona - Departament de Prehistòria). Database, webmapping, statistical analysis and FAIR data of Sauri (Pallars Sobira, Lleida) medieval rock-art</th>
 	</tr><tr align="center">
 		<td>
 			<a href="http://shinyserver.cfs.unipi.it:3838/C14/" target="_blank">
 				<img src="img/prj_neonet_stable.png" width='150px' />
+=======
+		    <th style="padding:10px">Multi -paradigm and -scale management of 3D models for atrifacts and rock-art with web3D and open-source apps (3DHOP, Blender, Meshlab, etc.)</th>
+	</tr><tr align="center">
+		<td>
+			<a href="https://neolithic.shinyapps.io/neonet" target="_blank">
+				<img src="img/prj_neonet.png" width='150px' />
+>>>>>>> c9cdf295f3746706576ea2506c441b9c0aa487c4
 			</a>
 		</td><td>
 					<a href="https://zoometh.github.io/neonet/" target="_blank">
