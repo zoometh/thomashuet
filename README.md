@@ -36,7 +36,7 @@
 			</a>
 		</td>
 	</tr><tr>
-			  <th style="padding:10px">R package iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network and spatial analysis</th>
+			  <th style="padding:10px">R package iconr. Set of formal methods for studying archaeological iconographic datasets (rock-art, pottery decoration, stelae, etc.) using network, spatial, and geometric morphometry analysis</th>
 			  <th style="padding:10px">  Sauri - Pallars (project Universitat Autònoma de Barcelona - Departament de Prehistòria). Database, webmapping, statistical analysis and FAIR data of Sauri (Pallars Sobira, Lleida) medieval rock-art</th>
 	</tr><tr align="center">
 		<td>
