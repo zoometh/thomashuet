@@ -5,7 +5,7 @@ Researcher and Database Manager, [University of Oxford, School of Archaeology](h
 
 <img align="left" width="22" height="22" src="img/gmail.png">  thomas.huet@arch.ox.ac.uk | thomashuet7@gmail.com |  
 
-[//]: <> (<img align="left" width="22" height="22" src="img/webpro.png">  [professional page](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)) 
+<img align="left" width="22" height="22" src="img/webpro.png">  professional page
 
 <img align="left" width="22" height="22" src="img/cv.png" alt=" ">  [CV](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)  
 
