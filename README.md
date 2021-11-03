@@ -1,11 +1,11 @@
-## Thomas Huet (Dr.) <img src="img/id.png" align="right" width="100" height="100"/>
+## Dr Thomas Huet <img src="img/id.png" align="right" width="100" height="100"/>
 > <font size="2.5"> **Prehistory and Computational Archaeology**. My main research projects cover the Neolithic of Western Asia and its embedded iconography </font> 
 
-[LabEx ARCHIMEDE](https://archimede.cnrs.fr/), Associate Researcher UMR 5140 ASM-CNRS, Université Paul-Valéry Montpellier 3, France
+Researcher and Database Manager, [University of Oxford, School of Archaeology](https://www.arch.ox.ac.uk/home#/), 2 South Parks Road, Oxford OX1 3TG, United Kingdom
 
-<img align="left" width="22" height="22" src="img/gmail.png">  thomashuet7@gmail.com  
+<img align="left" width="22" height="22" src="img/gmail.png">  thomas.huet@arch.ox.ac.uk | thomashuet7@gmail.com |  
 
-<img align="left" width="22" height="22" src="img/webpro.png">  [professional page](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet) 
+[//]: <> (<img align="left" width="22" height="22" src="img/webpro.png">  [professional page](https://archimede.cnrs.fr/index.php/annuaire/123-annuaire/e-h/456-thomas-huet)) 
 
 <img align="left" width="22" height="22" src="img/cv.png" alt=" ">  [CV](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)  
 
@@ -21,7 +21,15 @@
 
 ---
 
-### PROJECTS
+### EAMENA PROJECT
+
+#### EAMENA GITHUB PROJECT
+
+<a href="https://github.com/eamena-oxford" target="_blank"> 
+<img src="img/prj_eamena.png" width='90px' />
+</a>  Endangered Archaeology in the Middle East & North Africa
+
+### OTHER PROJECTS
 
 <font size="2" align="left">
 <table style="width:100%">
