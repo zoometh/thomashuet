@@ -1,10 +1,11 @@
 ## Dr Thomas Huet <img src="img/id.png" align="right" width="100" height="100"/>
 
-Researcher and Database Manager, [EAMENA](https://eamena.org/home)
-
+- Researcher and Database Manager, [EAMENA](https://eamena.org/home)
 University of Oxford, [School of Archaeology](https://www.arch.ox.ac.uk/home#/)
-
 <font size="2">2 South Parks Road, Oxford OX1 3TG, United Kingdom</font>
+
+- Associate Researcher, UMR 5140, Université Montpellier 3, [ASM-CNRS](ASM-CNRS)
+[LabEx Archimede](https://archimede.cnrs.fr/)
 
 <br><br>
 
