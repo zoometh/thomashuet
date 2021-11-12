@@ -1,11 +1,18 @@
 ## Dr Thomas Huet <img src="img/id.png" align="right" width="100" height="100"/>
-> <font size="2.5"> **Prehistory and Computational Archaeology**. My main research projects cover the Neolithic of Western Asia and its embedded iconography </font> 
 
-Researcher and Database Manager, [University of Oxford, School of Archaeology](https://www.arch.ox.ac.uk/home#/), 2 South Parks Road, Oxford OX1 3TG, United Kingdom
+Researcher and Database Manager, [EAMENA](https://eamena.org/home)
+
+University of Oxford, [School of Archaeology](https://www.arch.ox.ac.uk/home#/)
+
+<font size="2">2 South Parks Road, Oxford OX1 3TG, United Kingdom</font>
+
+<br><br>
 
 <img align="left" width="22" height="22" src="img/gmail.png">  thomas.huet@arch.ox.ac.uk | thomashuet7@gmail.com |  
 
 <img align="left" width="22" height="22" src="img/webpro.png">  professional page
+
+<img align="left" width="22" height="22" src="img/phone.png">  +44 (0)1865 611660
 
 <img align="left" width="22" height="22" src="img/cv.png" alt=" ">  [CV](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)  
 
@@ -21,12 +28,16 @@ Researcher and Database Manager, [University of Oxford, School of Archaeology](h
 
 ---
 
+<p style="text-align:center;" font size="6"> **Prehistory and Computational Archaeology** <br> My main research interests cover the Late Prehistory of Western Asia and its embedded iconography </p>
+
+---
+
 ### EAMENA PROJECT
 
 #### EAMENA GITHUB PROJECT
 
 <a href="https://github.com/eamena-oxford" target="_blank"> 
-<img src="img/prj_eamena.png" width='90px' />
+<img src="img/prj_eamena.png" width='70px' />
 </a>  Endangered Archaeology in the Middle East & North Africa
 
 ### OTHER PROJECTS
@@ -97,7 +108,7 @@ Researcher and Database Manager, [University of Oxford, School of Archaeology](h
 			</a>
 		</td>
 	</tr><tr>
-		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, atrifacts, etc., with open-source apps</th>
+		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, artifacts, etc., with open-source apps</th>
 		<th style="padding:10px">R package Zoowork : Methods for Zooarchaeology</th>
 </table>
 </font>
