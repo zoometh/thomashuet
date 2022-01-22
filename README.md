@@ -36,10 +36,9 @@ University of Oxford, School of Archaeology
 
 #### EAMENA GITHUB PROJECT
 
-[project](https://eamena.web.ox.ac.uk/), [GitHub](https://github.com/eamena-oxford)
 <a href="https://github.com/eamena-oxford" target="_blank"> 
 <img src="img/prj_eamena.png" width='70px' />
-</a>  Endangered Archaeology in the Middle East & North Africa: [project](https://eamena.web.ox.ac.uk/), [GitHub](https://github.com/eamena-oxford)
+</a>  Endangered Archaeology in the Middle East & North Africa (EAMENA): [project](https://eamena.web.ox.ac.uk/), [GitHub](https://github.com/eamena-oxford)
 
 ### OTHER PROJECTS
 
