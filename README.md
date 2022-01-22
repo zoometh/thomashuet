@@ -10,7 +10,7 @@ University of Oxford, School of Archaeology
 
 <img align="left" width="22" height="22" src="img/gmail.png">  thomas.huet@arch.ox.ac.uk | thomashuet7@gmail.com |  
 
-<img align="left" width="22" height="22" src="img/webpro.png">  professional page: [School of Archaeology](https://archit.web.ox.ac.uk/people/dr-thomas-huet), professional page: [EAMENA project](https://eamena.web.ox.ac.uk/user)
+<img align="left" width="22" height="22" src="img/webpro.png">  [School of Archaeology](https://archit.web.ox.ac.uk/people/dr-thomas-huet), [EAMENA project](https://eamena.web.ox.ac.uk/user)
 
 <img align="left" width="22" height="22" src="img/phone.png">  +44 (0)1865 611660
 
@@ -28,7 +28,7 @@ University of Oxford, School of Archaeology
 
 ---
 
-<p style=text-align:center><b> Prehistory and Computational Archaeology </b></span><br> My main research interests cover the Late Prehistory of Western Asia and its embedded iconography </p> 
+<p><b> Prehistory and Computational Archaeology </b></span><br> My main research interests cover the Late Prehistory of Western Asia and its embedded iconography </p> 
 
 ---
 
@@ -36,6 +36,7 @@ University of Oxford, School of Archaeology
 
 #### EAMENA GITHUB PROJECT
 
+[project](https://eamena.web.ox.ac.uk/), [GitHub](https://github.com/eamena-oxford)
 <a href="https://github.com/eamena-oxford" target="_blank"> 
 <img src="img/prj_eamena.png" width='70px' />
 </a>  Endangered Archaeology in the Middle East & North Africa: [project](https://eamena.web.ox.ac.uk/), [GitHub](https://github.com/eamena-oxford)
