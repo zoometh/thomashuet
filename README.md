@@ -1,17 +1,16 @@
 ## Dr Thomas Huet <img src="img/id.png" align="right" width="100" height="100"/>
 
-- Researcher and Database Manager, [EAMENA](https://eamena.org/home)
-University of Oxford, [School of Archaeology](https://www.arch.ox.ac.uk/home#/)
+- Researcher and Database Manager, EAMENA project
+University of Oxford, School of Archaeology
 <font size="2">2 South Parks Road, Oxford OX1 3TG, United Kingdom</font>
 
-- Associate Researcher, UMR 5140, Université Montpellier 3, [ASM-CNRS](ASM-CNRS)
-[LabEx Archimede](https://archimede.cnrs.fr/)
+- Associate Researcher, UMR 5140, Université Montpellier 3, ASM-CNRS
 
 <br><br>
 
 <img align="left" width="22" height="22" src="img/gmail.png">  thomas.huet@arch.ox.ac.uk | thomashuet7@gmail.com |  
 
-<img align="left" width="22" height="22" src="img/webpro.png">  professional page
+<img align="left" width="22" height="22" src="img/webpro.png">  professional page: [School of Archaeology](https://archit.web.ox.ac.uk/people/dr-thomas-huet), professional page: [EAMENA project](https://eamena.web.ox.ac.uk/user)
 
 <img align="left" width="22" height="22" src="img/phone.png">  +44 (0)1865 611660
 
@@ -29,7 +28,7 @@ University of Oxford, [School of Archaeology](https://www.arch.ox.ac.uk/home#/)
 
 ---
 
-<p style="text-align:center;" font size="6"> **Prehistory and Computational Archaeology** <br> My main research interests cover the Late Prehistory of Western Asia and its embedded iconography </p>
+<p style=text-align:center><b> Prehistory and Computational Archaeology </b></span><br> My main research interests cover the Late Prehistory of Western Asia and its embedded iconography </p> 
 
 ---
 
@@ -39,7 +38,7 @@ University of Oxford, [School of Archaeology](https://www.arch.ox.ac.uk/home#/)
 
 <a href="https://github.com/eamena-oxford" target="_blank"> 
 <img src="img/prj_eamena.png" width='70px' />
-</a>  Endangered Archaeology in the Middle East & North Africa
+</a>  Endangered Archaeology in the Middle East & North Africa: [project](https://eamena.web.ox.ac.uk/), [GitHub](https://github.com/eamena-oxford)
 
 ### OTHER PROJECTS
 
