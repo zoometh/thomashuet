@@ -8,16 +8,16 @@ This training module consists of two parts and two documents:
 
 ### Part 1: R Markdown - Theory
 
-* R markdown document: https://github.com/zoometh/oxford/blob/main/R4A/1_Rmarkdown_Theory.Rmd
+* R markdown document: https://github.com/zoometh/thomashuet/blob/main/profiles/oxford/1_Rmarkdown_Theory.Rmd
 
-* HTML render: https://zoometh.github.io/oxford/R4A/1_Rmarkdown_Theory  
+* HTML render: https://zoometh.github.io/thomashuet/profiles/oxford/R4A/1_Rmarkdown_Theory  
 
 ---
 
 ### Part 2: R Markdown - Practice
 
-* R markdown document: https://github.com/zoometh/oxford/blob/main/R4A/2_Rmarkdown_Practice.Rmd
+* R markdown document: https://github.com/zoometh/thomashuet/blob/main/profiles/oxford/2_Rmarkdown_Practice.Rmd
 
-* PDF render: https://github.com/zoometh/oxford/blob/main/R4A/2_Rmarkdown_Practice.pdf  
+* PDF render: https://github.com/zoometh/thomashuet/blob/main/profiles/oxford/2_Rmarkdown_Practice.pdf  
 
 ---
