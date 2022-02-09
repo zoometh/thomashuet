@@ -172,4 +172,31 @@
   - Overview of Ash IT methods
 
   - Planned to use GitHub to develop source code management, starting with the HR record quality measurement and representation (function in prep.: [hr_quality_rec.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/))
+  
+---
+
+### ManCom Monthly report
+> 13th Jan 22 - 9th Feb 22
+
+* IT: Preparing CPF training part 2/2 (14th, 15th, 16th), with help from Sayantani & Will
+  + 3 slots of 3 hours
+    - Arches/EAMENA install
+    - Arches/EAMENA customization
+    - Arches/EAMENA Database Manager tools
+    
+* IT: Regular updates from/to Reuben Osborne (KI), and Ash Smith (MarEA)
+
+* As a result of these IT, development of the [EAMENA GitHub](https://github.com/eamena-oxford)
+  + programmed routines (ex: [use of environment variables](https://github.com/eamena-oxford/eamena-arches-dev/blob/087061ec864a8101f825c088492826a7471b4066/training/commands.sh#L70))
+  + new [Arches/EAMENA package](https://github.com/eamena-oxford/eamena-arches-package)
+  + etc.
+
+* The submitted session abstract to the [CAA22 annual conference](https://2022.caaconference.org/call-for-sessions/) - Oxford, with Bijan  (EAMENA) Crystal El Safadi (MarEA), Ash Smith (MarEA) needs some major revisions (deadline the 14th Feb)
+
+* Given a 3-hours lecture at the R4Archaeologists Winter school, Universita di Pisa
+  + [teaching material online](https://github.com/zoometh/thomashuet/tree/main/profiles/oxford/R4A#report-with-r-markdown-)
+  
+* Current business on EAMENA administartion (phone number, new user registering, etc.)
+
+---
 
