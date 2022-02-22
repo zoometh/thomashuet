@@ -114,7 +114,7 @@
 
 - Exchanges of messages with Mike Fisher and Bijan to try to solve the issue of the YHMP database
 
-- added new Slack plug-in [TeamGantt](https://www.teamgantt.com/) for project management (eg, Arches v5.2 -> v7)
+- added to Slack a new plug-in [TeamGantt](https://www.teamgantt.com/) for project management (eg, Arches v5.2 -> v7)
     - will start tests with William
 
 - a first draft of a session abstract proposal for the forthcoming CAA22 (Oxford)
@@ -175,7 +175,7 @@
 - Given a 3-hours lecture at the R4Archaeologists Winter school, Universita di Pisa
     - [teaching material online](https://github.com/zoometh/thomashuet/tree/main/profiles/oxford/R4A#report-with-r-markdown-)
 
-- Current business on EAMENA administartion (phone number, new user registering, etc.)
+- Current business on EAMENA administration (phone number, new user registering, etc.)
 
 ---
 
