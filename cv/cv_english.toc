@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}FIELDWORK EXPERIENCE (2012-)}{1}{section.1}%
+\contentsline {section}{\numberline {2}ACADEMIC \textit {\&} PROFESSIONAL POSITIONS (2014-)}{1}{section.2}%
+\contentsline {section}{\numberline {3}EDUCATION (2003-)}{2}{section.3}%
+\contentsline {section}{\numberline {4}PUBLICATIONS (2014-)}{2}{section.4}%
+\contentsline {section}{\numberline {5}ACADEMIC \textit {\&} RESEARCH PROGRAMS (2014-)}{5}{section.5}%
+\contentsline {section}{\numberline {6}IT RELEASES \textit {\&} INFORMATIC TOOLS}{6}{section.6}%
