@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  27 FEB 2022 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  7 MAR 2022 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -426,7 +426,7 @@ File: ../img//link_darkblue.png Graphic file (type png)
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 116.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 
-Overfull \hbox (28.40176pt too wide) in paragraph at lines 126--127
+Overfull \hbox (28.40176pt too wide) in paragraph at lines 124--125
 []$\OMS/cmsy/m/n/10 ^^A$ \OT1/cmr/m/n/10 Binder D., \OT1/cmr/bx/n/10 Huet T.\OT1/cmr/m/n/10 , \OT1/cmr/bx/it/10 to be pub-lished\OT1/cmr/m/n/10 , Base de donn^^Sees et ap-pli-ca-tion Leapfrog, NAKALA: [][]10.34847/nkl.fbd6t845[][]. 
  []
 
@@ -438,11 +438,11 @@ File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 148.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+[2 <../img//link_darkblue.png>]
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 153.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-[2 <../img//link_darkblue.png>]
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 155.
@@ -539,7 +539,7 @@ Package pdftex.def Info: ../img//github-rect.png  used on input line 300.
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 306.
  [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 425--430
+Underfull \hbox (badness 10000) in paragraph at lines 427--432
 
  []
 
@@ -560,9 +560,9 @@ Here is how much of TeX's memory you used:
  28737 multiletter control sequences out of 15000+600000
  473669 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,65p,713b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,65p,763b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_english.pdf (8 pages, 710549 bytes).
+Output written on cv_english.pdf (8 pages, 690714 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  137 compressed objects within 2 object streams
