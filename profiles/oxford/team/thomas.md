@@ -214,7 +214,7 @@
     - Jordan:
         - Waiting for an official authorisation
 
-- Finalising [CAA 2022 session 07 'Cultural Heritage data across borders'(https://2022.caaconference.org/sessions/)], inviting papers, etc., with Crystal, Bijan and Ash
+- Finalising [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/), inviting papers, etc., with Crystal, Bijan and Ash
 
 - Regular updates of KI about the ring-fencing function
 
