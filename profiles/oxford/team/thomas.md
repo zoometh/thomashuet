@@ -196,3 +196,32 @@
   - Participate to the internationalization of Arches vocabulary with (among others) Mike and Crytsal
   - Fix the new user sign-up (possibly with Mike and Ash)
   - Develop the function [hr_quality_rec.py](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/functions/)) to model the quality of data
+
+---
+
+### ManCom Monthly report
+
+> 10th Feb 22 - 9th Mar 22
+
+- 9-hours training to Palestine DACH, Jordan DoA, Lebanon DGA, futur Arches/EAMENA database managers, with Will and Sayantani
+
+- Updating the teaching material (namely Google slides and a bash script)
+
+- Migrating the Arches/EAMENA DBs for Palestine, Jordan, Lebanon to the local servers, with Will
+    - Palestine and Lebanon: 
+        - Arches/EAMENA **model** *OK*
+        - Arches/EAMENA **data** *in process*
+    - Jordan:
+        - Waiting for an official authorisation
+
+- Finalising [CAA 2022 session 07 'Cultural Heritage data across borders'(https://2022.caaconference.org/sessions/)], inviting papers, etc., with Crystal, Bijan and Ash
+
+- Regular updates of KI about the ring-fencing function
+
+- Some updates on the internationalisation
+
+- Attended a Blender (3D) training / Preparing another training on IIIF for Arches -> integration of photograph archives into EAMENA
+
+- Processing some BUs
+
+---
