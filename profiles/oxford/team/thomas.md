@@ -216,7 +216,7 @@
 
 - Finalising [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/), inviting papers, etc., with Crystal, Bijan and Ash
 
-- Regular updates of KI about the ring-fencing function
+- Recieved the ring-fencing function from KI
 
 - Some updates on the internationalisation
 
