@@ -214,13 +214,16 @@
     - Jordan:
         - Waiting for an official authorisation
 
-- Finalising [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/), inviting papers, etc., with Crystal, Bijan and Ash
-
 - Recieved the ring-fencing function from KI
 
-- Some updates on the internationalisation
+- Finalising [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/), inviting papers, etc., with Crystal, Bijan and Ash
 
-- Attended a Blender (3D) training / Preparing another training on IIIF for Arches -> integration of photograph archives into EAMENA
+- Some updates on the internationalisation for Arches v7
+
+- trainings
+    - attended a training on Blender (3D) [Kick-off (Activity)](https://skills.it.ox.ac.uk/3d-modelling-kick-off-and-blender-up-and-running-activity)
+    - scheduling  a second training on Blender: [Up and running](https://skills.it.ox.ac.uk/whats-on#/course/DV005W)
+    - scheduling a training on IIIF/Cantaloupe for Arches, having in mind the integration of photograph archives into EAMENA
 
 - Processing some BUs
 
