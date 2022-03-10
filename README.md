@@ -4,7 +4,7 @@
 University of Oxford, School of Archaeology
 <font size="2">2 South Parks Road, Oxford OX1 3TG, United Kingdom</font>
 
-- Associate Researcher, UMR 5140, Université Montpellier 3, ASM-CNRS
+- Associate Researcher, UMR 5140, ASM-CNRS, Université Montpellier 3
 
 <br><br>
 
@@ -86,7 +86,7 @@ University of Oxford, School of Archaeology
 		<th style="padding:10px">Linked Open Data (LOD), <i>Science Ouverte</i>, computing methods and concepts for the a FAIR open science: the case of Archaeology </th>
 		<th style="padding:10px">Networks drawing (graph theory, spatial networks) and enriched data visualization of movable goods (personal ornements, imported/prestige goods) during the First Iron Age in Northern Italy (Golasecca culture)</th>
 	</tr><tr align="center">
-      <td>
+		<td>
 			<a href="https://zoometh.github.io/aDNA" target="_blank">
 				<img src="img/prj_gene_culture.png" width='110px' />
 			</a>
