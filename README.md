@@ -1,4 +1,4 @@
-## Dr Thomas Huet <img src="img/id.png" align="right" width="100" height="100"/>
+## Dr Thomas Huet <img src="img/id-r.png" align="right" width="100" height="100"/>
 
 - Researcher and Database Manager, EAMENA project
 University of Oxford, School of Archaeology
