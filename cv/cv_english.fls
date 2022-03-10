@@ -574,10 +574,10 @@ INPUT c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
-INPUT ../img//id.png
-INPUT ../img//id.png
-INPUT ../img//id.png
-INPUT ../img//id.png
+INPUT ../img//id-r.png
+INPUT ../img//id-r.png
+INPUT ../img//id-r.png
+INPUT ../img//id-r.png
 INPUT ../img//gmail.png
 INPUT ../img//gmail.png
 INPUT ../img//gmail.png
