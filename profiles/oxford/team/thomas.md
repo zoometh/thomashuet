@@ -229,3 +229,25 @@
 
 ---
 
+#### Week 11
+
+- Meetings
+    - ~~Arches meeting~~ (*missed*)
+    - Ring-fencing with Kristen Hopper
+    - DB meeting with MaREA
+    - Enhancement record meeting
+
+- Preparation of the dataset migration for Masdar series, with Will
+
+- Test and follow-up with the ring-fencing function
+
+- Follow-up of the S07 CAA session 
+
+- Developping a [translation Python script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/Trans.md#translation-for-arches-v70-internationalisation) for the Arches v7 internationalisation
+
+- Processing some BUs, completing the [GitHub tutorial page](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/bulk/BU.md#bulk-upload-bu--)
+
+- Activities on Arches forum:
+    - [Include BibTex or any plain text bibliographical reference](https://community.archesproject.org/t/include-bibtex-or-any-plain-text-bibliographical-reference/1565?u=zoometh)
+
+---
