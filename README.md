@@ -14,7 +14,7 @@ University of Oxford, School of Archaeology
 
 <img align="left" width="22" height="22" src="img/phone.png">  +44 (0)1865 611660
 
-<img align="left" width="22" height="22" src="img/cv.png" alt=" ">  [CV](https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf)  
+<img align="left" width="22" height="22" src="img/cv.png" alt=" ">  [CV](https://github.com/zoometh/thomashuet/blob/main/cv/cv_english.pdf)         <a href="https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf" target="_blank"><img src="img/download.png" width="12" height="12" /></a>  
 
 <img align="left" width="22" height="22" src="img/orcid.png" alt=" ">  [0000-0002-1112-6122](https://orcid.org/0000-0002-1112-6122)
 
@@ -33,13 +33,12 @@ University of Oxford, School of Archaeology
 ---
 
 ### EAMENA PROJECT
+> *Endangered Archaeology in the Middle East & North Africa* (EAMENA), Oxford
 
-#### EAMENA GITHUB PROJECT
-
-<a href="https://github.com/eamena-oxford" target="_blank"> 
-<img src="img/prj_eamena.png" width='70px' />
-</a> 
- Endangered Archaeology in the Middle East & North Africa (EAMENA): [project](https://eamena.web.ox.ac.uk/), [GitHub](https://github.com/eamena-oxford)
+<ul>
+  <li>project: https://eamena.web.ox.ac.uk</li>
+  <li>GitHub: https://github.com/eamena-oxford </li>
+</ul>
 
 ### OTHER PROJECTS
 
