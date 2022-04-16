@@ -200,7 +200,6 @@
 ---
 
 ### ManCom Monthly report
-
 > 10th Feb 22 - 9th Mar 22
 
 - 9-hours training to Palestine DACH, Jordan DoA, Lebanon DGA, futur Arches/EAMENA database managers, with Will and Sayantani
@@ -251,3 +250,41 @@
     - [Include BibTex or any plain text bibliographical reference](https://community.archesproject.org/t/include-bibtex-or-any-plain-text-bibliographical-reference/1565?u=zoometh)
 
 ---
+
+### ManCom Monthly report
+> 10th Mar 22 - 12th Apr 22
+
+- Two weeks as a 'visiting fellow' at the Univeristy of Pisa (14th-18th March, 11th-15th April)
+    - meeting with the 3DHOP team, linked with the Visual Media Studio (VSM) of ARIADNE+, which can provide a 3D framework for EAMENA
+
+- Installation of the Lebanon Arches/EAMENA database on a Virtual Machine of the DGA, with Will
+    - An index issue with the Palestine Arches/EAMENA database (DASH)
+    - Waiting an official authorisation for the installation of the Jordanian instance (DoA)
+
+- First test with the ring-fencing function programmed by KI
+
+- Developped
+    - A [translation function](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/translation#readme), based on Google Translate, for the internationalisation, with Ash
+        - Organise a meeting with the EAMENA team and partner to identify a framework from the translated file
+    - A [temporal function](https://github.com/zoometh/Rdev/tree/master/time), based on EDTF, for the modeling of temporal damage dynamics, with Will
+
+- Preparing to develop
+    - A BibTex field for Information Resources
+
+- Preparing the [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/) with Crystal, Bijan and Ash
+
+- Attended various meetings (Arches Sustainibility meeting, DB meeting, Ring-fencing function meeting, etc.)
+
+- Trainings
+    - attended a training on Blender (3D) [Up and running](https://skills.it.ox.ac.uk/whats-on#/course/DV005W)
+    - will attend a training on IIIF/Cantaloupe for Arches, with Mel, having in mind the integration of photograph archives into EAMENA (end of April)
+
+- Processing BUs
+
+- Activities on the Arches platforms (forum, GitHub, etc.)
+
+- TODO:
+    - Solve the EAMENA images path error, with Ash
+    - Restore the YHMP database
+    - Extract certain exclusive data from various databases we maintain on AWS
+    - Schedule a workshop for the ring-fencing function with EAMENA users to show how it works and how it meets our needs
