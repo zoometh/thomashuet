@@ -104,7 +104,7 @@
 
 - Preparing and submitting a session to the [CAA22 annual conference](https://2022.caaconference.org/call-for-sessions/) - Oxford
 
-------------------------------------------------------------------------
+---
 
 ## *Hilary* term 2022
 
@@ -290,3 +290,30 @@
         - **http://levant.eamena.training/**:
          http://levant.eamena.training/search?page=1&termFilter=%5B%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22EAMENA-F%22%2C%22text%22%3A%22EAMENA-F%22%2C%22value%22%3A%22EAMENA-F%22%7D%5D%5D&temporalFilter=%5B%7B%22year_min_max%22%3A%5B%5D%2C%22filters%22%3A%5B%5D%2C%22inverted%22%3Afalse%7D%5D&spatialFilter=%7B%22geometry%22%3A%7B%22type%22%3A%22%22%2C%22coordinates%22%3A%5B%5D%7D%2C%22buffer%22%3A%7B%22width%22%3A%220%22%2C%22unit%22%3A%22m%22%7D%2C%22inverted%22%3Afalse%7D&mapExpanded=false&timeExpanded=false&booleanSearch=and&searchRelatedResources=false&termFilterAndOr=%5B%22and%22%5D&termFilterCombineWithPrev=%5B%5Bfalse%5D%5D&termFilterGroup=%5B%22No%20group%22%5D&advancedSearch=false&include_ids=true
     - Schedule a workshop for the ring-fencing function with EAMENA users to show how it works and how it meets our needs
+
+---
+
+## *Trinity* term 2022
+
+### Weekly
+
+#### Week 0
+
+- End of my Visiting Fellow:
+    - one teaching + teaching material preparation on Mont Bego rock-art
+    - meet the [MAPPA Lab](https://www.mappalab.eu/en/home-eng/) / [ArchAIDE project](http://www.archaide.eu/) on Deep Learning
+
+- Shutdown other Arches instances hosted on AWS
+
+- Scheduling meetings for:
+    - internationalisation (Arches v7): Crystal Safadi, Ash Smith, Stefania Merlo
+    - ring-fencing function: Kristen, Ash Smith
+    - image path error: Ash Smith
+
+- Preparing the [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/) monitoring abstracts
+
+- Training on IIIF/Cantaloupe for Arches, with Mel, 3 x 3-hours slots (25, 26, 28 of April)
+
+- Will attend the AWS summit in London (27 April)
+
+- Will attend a Python training on Data analysis
