@@ -249,6 +249,26 @@
 - Activities on Arches forum:
     - [Include BibTex or any plain text bibliographical reference](https://community.archesproject.org/t/include-bibtex-or-any-plain-text-bibliographical-reference/1565?u=zoometh)
 
+#### Week 12
+
+- Preparing the [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/) with Crystal, Bijan and Ash
+
+- Working with Will on EDTF format and temporal analysis
+
+- DB installation meetings, with Will:
+    - Palestine (index problem)
+    - Lebanon (minor problem)
+
+- Exchanges with Ash:
+    - on EAMENA image paths errors
+    - on the [translation Python script](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/translation/Trans.md#translation-for-arches-v70-internationalisation) 
+
+- Reviewing info on EAMENA clones in order to close them
+
+- Attended the sustainibility meeting
+
+- Processing some BUs
+
 ---
 
 ### ManCom Monthly report
@@ -310,10 +330,12 @@
     - ring-fencing function: Kristen, Ash Smith
     - image path error: Ash Smith
 
+- Worked on EAMENA 'Saved Searches' with Michael (data) and Mel (management) to add content for social medias
+
 - Preparing the [CAA 2022 session 07 'Cultural Heritage data across borders'](https://2022.caaconference.org/sessions/) monitoring abstracts
 
 - Training on IIIF/Cantaloupe for Arches, with Mel, 3 x 3-hours slots (25, 26, 28 of April)
 
-- Will attend the AWS summit in London (27 April)
-
-- Will attend a Python training on Data analysis
+- Will attend:
+    - the [AWS summit](https://aws.amazon.com/events/summits/london/) in London (27 April)
+    - the IT Learning Centre '[Python: Data analysis](https://skills.it.ox.ac.uk/python-data-analysis-course-pack)'
