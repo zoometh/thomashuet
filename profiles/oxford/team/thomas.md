@@ -338,4 +338,30 @@
 
 - Will attend:
     - the [AWS summit](https://aws.amazon.com/events/summits/london/) in London (27 April)
-    - the IT Learning Centre '[Python: Data analysis](https://skills.it.ox.ac.uk/python-data-analysis-course-pack)'
+    - the IT Learning Centre '[Python: Data analysis](https://skills.it.ox.ac.uk/python-data-analysis-course-pack)' (29 April)
+
+#### Week 1
+
+- Worked with Will to fix the index/concept error
+    - message (28 April) from Reuben on this topic
+
+- Met with Crystal El Safadi, Stefania Merlo for a meeting on the internationalisation of Arches
+    - creation of a Google group ['Arches translation'](https://groups.google.com/u/1/g/arches-translation)
+    - two Google sheets linked (eng :arrow_right: ar, eng :arrow_right: fr)
+    - promote it to [Arches developper forum](https://community.archesproject.org/t/arches-v7-internationalisation-automatic-translation-arabic-and-french/1587?u=zoometh) and Slack
+
+- Developped a reveal.js HTML framework for social medias, with Michael's dataset on NEOM, and with Mel  
+
+- Attended the Katrizky lecture in St Catherine College (26 April) on Climate Change and Cultural Heritage, by Mechtild ROssler
+
+
+- Attended the [AWS summit](https://aws.amazon.com/events/summits/london/) in London (27 April)
+    - she point out the lack of peer-reviewed papers
+
+- the IT Learning Centre '[Python: Data analysis](https://skills.it.ox.ac.uk/python-data-analysis-course-pack)' (29 April)
+
+- Scheduling meetings for:
+    - ring-fencing function: Kristen, Ash Smith (28 April)
+    - image path error: Ash Smith (10-12 May,.. before the APAAME meeting, 18 May)
+
+- ~~Training on IIIF/Cantaloupe for Arches, with Mel, 3 x 3-hours slots (25, 26, 28 of April)~~
