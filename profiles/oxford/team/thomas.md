@@ -345,12 +345,12 @@
 - Worked with Will to fix the index/concept error
     - message (28 April) from Reuben on this topic
 
-- Met with Crystal El Safadi, Stefania Merlo for a meeting on the internationalisation of Arches
+- Met with Crystal El Safadi, Stefania Merlo (MAESaM) for a meeting on the internationalisation of Arches
     - creation of a Google group ['Arches translation'](https://groups.google.com/u/1/g/arches-translation)
     - two Google sheets linked (eng :arrow_right: ar, eng :arrow_right: fr)
     - promote it to [Arches developper forum](https://community.archesproject.org/t/arches-v7-internationalisation-automatic-translation-arabic-and-french/1587?u=zoometh) and Slack
 
-- Developped a reveal.js HTML framework for social medias, with Michael's dataset on NEOM, and with Mel  
+- Developped a [reveal.js HTML framework](https://eamena-oxford.github.io/reveal.js/) for social medias, with Michael's dataset on NEOM, and with Mel  
 
 - Attended the Katrizky lecture in St Catherine College (26 April) on Climate Change and Cultural Heritage, by Mechtild ROssler
 
