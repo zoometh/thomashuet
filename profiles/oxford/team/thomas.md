@@ -368,6 +368,8 @@
 
 #### Week 3
 
+- Joined the Durham MOOC support team
+
 - Attended a 1st training (2-hours), together with Mel, on Arches/IIIF
 
 - Attended a Oxford IT Center on Research data management plans: How to write one
@@ -391,4 +393,3 @@
 - Scheduling next week work on:
     - image path/IIIF/APAAME
 
-- ~~Training on IIIF/Cantaloupe for Arches, with Mel, 3 x 3-hours slots (25, 26, 28 of April)~~
