@@ -352,7 +352,7 @@
 
 - Developped a [reveal.js HTML framework](https://eamena-oxford.github.io/reveal.js/) for social medias, with Michael's dataset on NEOM, and with Mel  
 
-- Attended the Katrizky lecture in St Catherine College (26 April) on Climate Change and Cultural Heritage, by Mechtild ROssler
+- Attended the Katrizky lecture in St Catherine College (26 April) on Climate Change and Cultural Heritage, by Mechtild Rossler
 
 
 - Attended the [AWS summit](https://aws.amazon.com/events/summits/london/) in London (27 April)
@@ -363,5 +363,32 @@
 - Scheduling meetings for:
     - ring-fencing function: Kristen, Ash Smith (28 April)
     - image path error: Ash Smith (10-12 May,.. before the APAAME meeting, 18 May)
+
+- ~~Training on IIIF/Cantaloupe for Arches, with Mel, 3 x 3-hours slots (25, 26, 28 of April)~~
+
+#### Week 3
+
+- Attended a 1st training (2-hours), together with Mel, on Arches/IIIF
+
+- Attended a Oxford IT Center on Research data management plans: How to write one
+
+- Installed a IIIF services on my own, still need to fix a couple of things
+
+- Worked with Ash to fix the errors with image paths:
+    - Ash fixed a ~1,300 erroneous paths, e.g.:
+        - https://database.eamena.org/en/report/07b8ecdd-21d3-44d4-b1f1-0f0271e29310
+        - https://database.eamena.org/en/report/4b3e72cb-103f-407b-a388-f4305df6ea8d
+        - https://database.eamena.org/en/report/6fa112c7-2ab7-404a-9110-6f9825638530
+
+- Worked on an issue of re-indexing (occuring with the Palestinian dataset)
+
+- Processing some BUs (Michael, Mohamed)
+
+- Scheduling meetings for:
+    - image paths (with Ash)
+    - Amy Bogaard (1-to-1 meeting)
+
+- Scheduling next week work on:
+    - image path/IIIF/APAAME
 
 - ~~Training on IIIF/Cantaloupe for Arches, with Mel, 3 x 3-hours slots (25, 26, 28 of April)~~
