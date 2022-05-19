@@ -393,3 +393,19 @@
 - Scheduling next week work on:
     - image path/IIIF/APAAME
 
+
+#### Week 4
+
+
+- developed the IIIF on a AWS Arches/EAMENA training instance
+    - pre-contact with the Bodleian Library: specialcollections.enquiries@bodleian.ox.ac.uk
+
+- attended 'Archaeology and Heritage in the Global South: Decolonising Theory and Practice' round-table
+
+- attended meetings:
+    - 1-to-1 with Amy
+    - APAAME meeting with Bill, Bob and Jeremy
+
+- Start Durham MOOC comments reviewing
+
+
