@@ -397,15 +397,25 @@
 #### Week 4
 
 
-- developed the IIIF on a AWS Arches/EAMENA training instance
+- Developed the IIIF on a AWS Arches/EAMENA training instance
     - pre-contact with the Bodleian Library: specialcollections.enquiries@bodleian.ox.ac.uk
 
-- attended 'Archaeology and Heritage in the Global South: Decolonising Theory and Practice' round-table
+- Posting on IIIF, basemaps, etc., on Arches Forum and/or Arches Slack
 
-- attended meetings:
-    - 1-to-1 with Amy
-    - APAAME meeting with Bill, Bob and Jeremy
+- Bulk uploads for Michael, Mohamed
 
 - Start Durham MOOC comments reviewing
+
+- Attended 'Archaeology and Heritage in the Global South: Decolonising Theory and Practice' round-table
+
+- Reviewing many abstracts for the [CAA22 Oxford conference](https://2022.caaconference.org/)
+
+- Attended meetings:
+    - 1-to-1 with Amy
+    - APAAME meeting with Bill, Bob and Jeremy
+    - informal Thursday Arches meeting with UCL, Cambridge, etc.
+
+- Scheduled next week:
+    - internationalisation meeting with Crystal, Stefania Merlo, Ash Smith
 
 
