@@ -436,6 +436,8 @@
 
 - Liaising with OB to help with French-language MOOC comments (Durham University)
 
+- Attended some CH lectures, and the AWS London Summit
+
 - TODO:
     - Solve the EAMENA images path error, with Ash
     - Restore the YHMP database
