@@ -438,6 +438,8 @@
 
 - Attended some CH lectures, and the AWS London Summit
 
+- Reviewing many abstracts for the [CAA22 Oxford conference](https://2022.caaconference.org/) among which those for the S07 session: 'Cultural Heritage data across borders'
+
 - TODO:
     - Solve the EAMENA images path error, with Ash
     - Restore the YHMP database
