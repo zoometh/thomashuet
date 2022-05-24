@@ -427,12 +427,12 @@
     - the translation from `en` ➡ `ar`, and `en` ➡ `fr`, for the Arches v7 with Crystal, Ash and Stefania Merlo
     - the ring-fencing function with Kristen and Ash
 
-- Created an JavaScript/HTML interactive presentation repository on EAMENA Github: https://eamena-oxford.github.io/reveal.js which integrates, among others, `<iframe>`: EAMENA database search URLs, 3D models, etc. 
-    - Michael created the first narrative for the NEOM area, Mel putted it on social media 
+- Created an JavaScript/HTML interactive presentation repository on EAMENA Github: https://eamena-oxford.github.io/reveal.js which integrates, among other things, `<iframe>`: EAMENA database search URLs, 3D models, etc. 
+    - Michael created the first resume for the NEOM area (NW Arabia), Mel put it on social media 
 
-- 1<sup>st</sup> meeting on the [APAAME photograph archive](https://www.flickr.com/photos/apaame/collections), to see how it can be (i) moved from Fickr to a ArchDAMS structure (as [HEIR](http://heir.arch.ox.ac.uk/pages/home.php?login=true) or [Manar-al-Athar](http://www.manar-al-athar.ox.ac.uk) archives)
+- 1<sup>st</sup> meeting on the [APAAME photograph archive](https://www.flickr.com/photos/apaame/collections), to see how it can be (i) moved from Fickr to a ArchDAMS structure (as [HEIR](http://heir.arch.ox.ac.uk/pages/home.php?login=true) or [Manar-al-Athar](http://www.manar-al-athar.ox.ac.uk) archives) (ii, to follow) properly addressed by EAMENA
 
-- Start to test the IIIF framework on a training Arches/EAMENA instance
+- Start testing the IIIF framework on a training Arches/EAMENA instance
 
 - Liaising with OB to help with French-language MOOC comments (Durham University)
 
@@ -441,7 +441,7 @@
 - Reviewing many abstracts for the [CAA22 Oxford conference](https://2022.caaconference.org/) among which those for the S07 session: 'Cultural Heritage data across borders'
 
 - TODO:
-    - Solve the EAMENA images path error, with Ash
+    - Resolve the EAMENA images path error, with Ash
     - Restore the YHMP database
     - Extract certain exclusive data from various databases we maintain on AWS, ex:
         - **http://levant.eamena.training/**:
