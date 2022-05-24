@@ -427,10 +427,10 @@
     - the translation from `en` ➡ `ar`, and `en` ➡ `fr`, for the Arches v7 with Crystal, Ash and Stefania Merlo
     - the ring-fencing function with Kristen and Ash
 
-- Created an JavaScript/HTML interactive presentation repository on EAMENA Github: https://eamena-oxford.github.io/reveal.js which integrates, among other things, `<iframe>`: EAMENA database search URLs, 3D models, etc. 
+- Created a JavaScript/HTML interactive presentation repository on EAMENA Github: https://eamena-oxford.github.io/reveal.js which integrates, among other things, `<iframe>`: EAMENA database search URLs, 3D models, etc. 
     - Michael created the first resume for the NEOM area (NW Arabia), Mel put it on social media 
 
-- 1<sup>st</sup> meeting on the [APAAME photograph archive](https://www.flickr.com/photos/apaame/collections), to see how it can be (i) moved from Fickr to a ArchDAMS structure (as [HEIR](http://heir.arch.ox.ac.uk/pages/home.php?login=true) or [Manar-al-Athar](http://www.manar-al-athar.ox.ac.uk) archives) (ii, to follow) properly addressed by EAMENA
+- 1<sup>st</sup> meeting on the [APAAME photograph archive](https://www.flickr.com/photos/apaame/collections), to see how it can be (i) moved from Flickr to an ArchDAMS structure (as [HEIR](http://heir.arch.ox.ac.uk/pages/home.php?login=true) or [Manar-al-Athar](http://www.manar-al-athar.ox.ac.uk) archives) (ii, to follow) properly addressed by EAMENA
 
 - Start testing the IIIF framework on a training Arches/EAMENA instance
 
