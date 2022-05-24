@@ -418,4 +418,31 @@
 - Scheduled next week:
     - internationalisation meeting with Crystal, Stefania Merlo, Ash Smith
 
+### ManCom Monthly report
+>12th Apr 22 - 24th May 22
+
+- Processed some bulks, added some basemaps
+
+- Worked on:
+    - the translation from `en` ➡ `ar`, and `en` ➡ `fr`, for the Arches v7 with Crystal, Ash and Stefania Merlo
+    - the ring-fencing function with Kristen and Ash
+
+- Created an JavaScript/HTML interactive presentation repository on EAMENA Github: https://eamena-oxford.github.io/reveal.js which integrates, among others, `<iframe>`: EAMENA database search URLs, 3D models, etc. 
+    - Michael created the first narrative for the NEOM area, Mel putted it on social media 
+
+- 1<sup>st</sup> meeting on the [APAAME photograph archive](https://www.flickr.com/photos/apaame/collections), to see how it can be (i) moved from Fickr to a ArchDAMS structure (as [HEIR](http://heir.arch.ox.ac.uk/pages/home.php?login=true) or [Manar-al-Athar](http://www.manar-al-athar.ox.ac.uk) archives)
+
+- Start to test the IIIF framework on a training Arches/EAMENA instance
+
+- Liaising with OB to help with French-language MOOC comments (Durham University)
+
+- TODO:
+    - Solve the EAMENA images path error, with Ash
+    - Restore the YHMP database
+    - Extract certain exclusive data from various databases we maintain on AWS, ex:
+        - **http://levant.eamena.training/**:
+         http://levant.eamena.training/search?page=1&termFilter=%5B%5B%7B%22inverted%22%3Afalse%2C%22type%22%3A%22string%22%2C%22context%22%3A%22%22%2C%22context_label%22%3A%22%22%2C%22id%22%3A%22EAMENA-F%22%2C%22text%22%3A%22EAMENA-F%22%2C%22value%22%3A%22EAMENA-F%22%7D%5D%5D&temporalFilter=%5B%7B%22year_min_max%22%3A%5B%5D%2C%22filters%22%3A%5B%5D%2C%22inverted%22%3Afalse%7D%5D&spatialFilter=%7B%22geometry%22%3A%7B%22type%22%3A%22%22%2C%22coordinates%22%3A%5B%5D%7D%2C%22buffer%22%3A%7B%22width%22%3A%220%22%2C%22unit%22%3A%22m%22%7D%2C%22inverted%22%3Afalse%7D&mapExpanded=false&timeExpanded=false&booleanSearch=and&searchRelatedResources=false&termFilterAndOr=%5B%22and%22%5D&termFilterCombineWithPrev=%5B%5Bfalse%5D%5D&termFilterGroup=%5B%22No%20group%22%5D&advancedSearch=false&include_ids=true
+    - Work on the ring-fencing function
+
+
 
