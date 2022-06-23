@@ -447,6 +447,8 @@
 
 #### Week 7
 
+- Creation of the Afghanistan Grid from [QDGC](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/grids/qdgc_)
+
 - Setting up workflows 
     - Analysis: EAMENA, RStudio.cloud and Google Drive. Case of study: GMM on Kites heads/driving walls
     - Presentation: EAMENA, R, GitHub, revaeal.js (+ 3DHOP). Case of study: Caravanserail
