@@ -462,3 +462,20 @@
 - Scheduled next week:
     - internationalisation meeting with Crystal, Stefania Merlo, Ash Smith
 
+#### Week 9
+
+- Finished the french translation
+
+- Work on current practices with EAMENA
+    - Interview with Michael about a data entry -> data analysis workflow including: POLYGONS and LINES geometries, related ressources, R and Python back-end for HPs, BCs
+    - Scheduled interview with Bijan on the same topic
+
+- Work with Letty on a new presentation with a high definition 3D model
+
+- In contact with Knowledge Integration to draw a Sys Admin profile for the Jordan instance of EAMENA (Jordan Masdar)
+
+- With the help of Ash, solved a glitch identified by Michael
+
+- Developping on the trinaing database:
+    - Add scale bar
+    - Add pop-up windows with the coordinates of the current location
