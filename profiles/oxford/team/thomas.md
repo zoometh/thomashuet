@@ -472,10 +472,38 @@
 
 - Work with Letty on a new presentation with a high definition 3D model
 
-- In contact with Knowledge Integration to draw a Sys Admin profile for the Jordan instance of EAMENA (Jordan Masdar)
+- Work with Bijan on a new presentation with a caravanserail map 
+
+- In contact with Knowledge Integration (Neil Smith) to draw a Sys Admin profile for the Jordan instance of EAMENA (Jordan Masdar)
 
 - With the help of Ash, solved a glitch identified by Michael
 
-- Developping on the trinaing database:
+- Developping on the training database:
     - Add scale bar
     - Add pop-up windows with the coordinates of the current location
+
+- Attended the useR training "Docker for R Users" (3-hours)
+
+- Overviewing the french MOOC comments
+
+#### Week 10
+
+- A bulk for Mohamed
+
+- Work on current practices with EAMENA
+    - Interview with Bijan about a data entry -> data analysis workflow including: POLYGONS and LINES geometries, related ressources, R and Python back-end for HPs, BCs
+
+- Work with Letty on a new presentation with a high definition 3D model
+
+- Solving an issue for the session S07 of the CAA22
+
+- Overviewing the french MOOC comments
+
+### ManCom Monthly report
+>25th May 22 - 07th July 22
+
+- Database Development
+    - Internationalisation
+    - Ring-fencing
+    - IT Tools
+    - Status of other developments
