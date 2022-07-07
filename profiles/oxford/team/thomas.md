@@ -504,7 +504,7 @@
 
 Database Development
 
-- Arches' Internationalisation scheduled for the v7 release in August 22 ((Transifex)[https://www.transifex.com/archesproject/arches-70/dashboard/]): 
+- Arches' Internationalisation scheduled for the v7 release in August 22 ([Transifex](https://www.transifex.com/archesproject/arches-70/dashboard/)): 
     - 5 languages ready for use: Bulgarian, French, Hebrew, Russian, Urdu
     - 3 languages to complete: Chinese, Arabic (183 strings to review), Spanish
 - Ring-fencing
