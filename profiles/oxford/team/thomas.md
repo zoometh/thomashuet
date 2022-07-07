@@ -513,11 +513,10 @@ Database Development
     - until I have only worked on it in point form
     - scheduled to practice, complete the documentation ASAP
     - scheduled to have regular meetings with Kristen on this topic
-- IT Tools
+- IT Tools & Status of other developments
     - made few customisation on EAMENA and/or training databases: basemaps, scale, click/coordinates
-    - worked on the EDTF iso-standard for the time
-    - start to work with the *International Image Interoperability Framework* (IIIF)
-    - integrated two side repositories linked to the EAMENA's GitHub ([reveal.js](https://github.com/eamena-oxford/reveal.js) and [3DHOP](https://github.com/eamena-oxford/3DHOP)) respectively for HTML Powerpoint like presentation and Web3D
-    - connect EAMENA DD and start to develop routines with [R](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/R) and [Python](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/Python) scripts to analyse it
-
-- Status of other developments
+    - start to work with the *International Image Interoperability Framework* (IIIF), creating a pre-release of the IIIF Resource Model in a training database
+    - connect EAMENA DB and start to develop routines with [R](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/R) and [Python](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/Python) scripts to analyse it
+    - developp a scripted workflow reading EAMENA data from [RStudio Cloud](https://rstudio.cloud/) and writing in my [Google Drive](https://googledrive.tidyverse.org/).. such an equivalent exists with Python
+    - integrated two side repositories linked to the EAMENA's GitHub ([reveal.js](https://github.com/eamena-oxford/reveal.js) and [3DHOP](https://github.com/eamena-oxford/3DHOP)) respectively for HTML Powerpoint like presentation and Web3D. In this sense, I have work with different person of the Oxford team
+    - worked on the EDTF iso-standard for the time (with Kristen and Will, Durham)
