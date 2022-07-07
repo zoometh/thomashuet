@@ -502,8 +502,22 @@
 ### ManCom Monthly report
 >25th May 22 - 07th July 22
 
-- Database Development
-    - Internationalisation
-    - Ring-fencing
-    - IT Tools
-    - Status of other developments
+Database Development
+
+- Arches' Internationalisation scheduled for the v7 release in August 22 ((Transifex)[https://www.transifex.com/archesproject/arches-70/dashboard/]): 
+    - 5 languages ready for use: Bulgarian, French, Hebrew, Russian, Urdu
+    - 3 languages to complete: Chinese, Arabic (183 strings to review), Spanish
+- Ring-fencing
+    - installed on a training EAMENA instance
+    - all installation files and tutorial are on GitHub
+    - until I have only worked on it in point form
+    - scheduled to practice, complete the documentation ASAP
+    - scheduled to have regular meetings with Kristen on this topic
+- IT Tools
+    - made few customisation on EAMENA and/or training databases: basemaps, scale, click/coordinates
+    - worked on the EDTF iso-standard for the time
+    - start to work with the *International Image Interoperability Framework* (IIIF)
+    - integrated two side repositories linked to the EAMENA's GitHub ([reveal.js](https://github.com/eamena-oxford/reveal.js) and [3DHOP](https://github.com/eamena-oxford/3DHOP)) respectively for HTML Powerpoint like presentation and Web3D
+    - connect EAMENA DD and start to develop routines with [R](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/R) and [Python](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/Python) scripts to analyse it
+
+- Status of other developments
