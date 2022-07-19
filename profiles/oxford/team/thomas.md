@@ -510,7 +510,7 @@ Database Development
 - Ring-fencing
     - installed on a training EAMENA instance
     - all installation files and tutorial are on GitHub
-    - until I have only worked on it in point form
+    - until now I have only worked on it in point form
     - scheduled to practice, complete the documentation ASAP
     - scheduled to have regular meetings with Kristen on this topic
 - IT Tools & Status of other developments
