@@ -520,3 +520,23 @@ Database Development
     - developp a scripted workflow reading EAMENA data from [RStudio Cloud](https://rstudio.cloud/) and writing in my [Google Drive](https://googledrive.tidyverse.org/).. such an equivalent exists with Python
     - integrated two side repositories linked to the EAMENA's GitHub ([reveal.js](https://github.com/eamena-oxford/reveal.js) and [3DHOP](https://github.com/eamena-oxford/3DHOP)) respectively for HTML Powerpoint like presentation and Web3D. In this sense, I have work with different person of the Oxford team
     - worked on the EDTF iso-standard for the time (with Kristen and Will, Durham)
+
+#### Week 15
+
+- developping the [eamenaR](https://github.com/eamena-oxford/eamenaR#readme) package
+    - today used by Will Deadman
+
+- CAA22
+    - session 07 organisation 
+        - preparing the [key-note](https://eamena-oxford.github.io/reveal.js/projects/caa22s07.html) 
+        - logistic/administratif work
+    - paper 140 (with Almohamad, Adnan; Hopper, Kristen; Huet, Thomas; Deadman, William M)
+
+- working with Mohamed Kenawi to recast his XLSX dataset into a BU format
+    - according to Mohamed, this process reduces his working time by about 50%
+
+- working on [EAMENA periods and subperiods](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/data/time/results/cultural_periods.tsv) 
+    - cleaning the period concepts (duplicates, typos, scopeNotes)
+    - alignement with the PeriodO thesaurus
+        - create a new Slack channel for this purpose
+
