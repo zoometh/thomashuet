@@ -540,3 +540,28 @@ Database Development
     - alignement with the PeriodO thesaurus
         - create a new Slack channel for this purpose
 
+### Michaelmas Term
+
+#### Week -7
+
+- last week: CAA22
+    - organisation S07 with Crystal, Bijan, and Ash
+    - attended sessions:
+        - AI/DL/NN
+        - round-table on Digital gap (organised by Cambridge)
+- developping GitHub
+    - organising the versioning of the BU template
+    -
+
+- developping the [eamenaR](https://github.com/eamena-oxford/eamenaR#readme) package
+    - add the `list_mapping_bu()` function to fill an empty BU template with data from an unformatted XLSX;
+    - extend the `geojson_map()` function to deal with MaREA Geoarchaeology datasets;
+    - etc.
+- uploaded a BU sheet for Mohamed using the `list_mapping_bu()` function
+- checking Arches French translation on [transifex](https://www.transifex.com/archesproject/arches-70/translate/#fr/djangopo/355132719)
+- scheduled:
+    - DB meeting with MaREA (early October)
+    - GitHub training (end of October)
+
+
+
