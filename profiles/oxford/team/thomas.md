@@ -549,10 +549,8 @@ Database Development
     - attended sessions:
         - AI/DL/NN
         - round-table on Digital gap (organised by Cambridge)
-- developping GitHub
+- working with GitHub
     - organising the versioning of the BU template
-    -
-
 - developping the [eamenaR](https://github.com/eamena-oxford/eamenaR#readme) package
     - add the `list_mapping_bu()` function to fill an empty BU template with data from an unformatted XLSX;
     - extend the `geojson_map()` function to deal with MaREA Geoarchaeology datasets;
