@@ -561,5 +561,32 @@ Database Development
     - DB meeting with MaREA (early October)
     - GitHub training (end of October)
 
+### ManCom Monthly report
+>07th July 22 - 15th September 22
+
+- Working with GitHub
+    - organising the versioning of the BU template
+- Arches 7 has been released
+    - tested by Ash (will be back in a week)
+    - need new translation for 1,410 words ([Transifex](https://www.transifex.com/archesproject/arches-70/dashboard/))
+- Development of the [***eamenaR*** R package](https://github.com/eamena-oxford/eamenaR#readme)
+    - Analysis (with Bijan)
+    - BU formating (with Mohamed)
+- Working on [EAMENA periods and subperiods](https://github.com/eamena-oxford/eamenaR/blob/main/inst/extdata/cultural_periods.tsv) 
+    - cleaning the period concepts (duplicates, typos, scopeNotes)
+    - alignement with the PeriodO thesaurus (EAMENA will be a new authority on [PeriodO](https://perio.do/en/))
+        - create a new Slack channel for this purpose
+- Scheduled:
+    - a DB meeting with MaREA (early October)
+    - a [GitHub workshop](https://framadate.org/tD7TFpAnlNx5S9N1) (end of October)
+- In contact with:
+    - IIIF: 
+        - Andrew Irving <andrew.irving@bodleian.ox.ac.uk> Bodleian Library
+        - Alexis Pantos (via Letty), see: https://ommphoto.ca/kings_chamber-v01/kings_chamber.html
+- Planned (priority) to:
+    - restore the YHMP database
+    - finish the french translation, and test Arches 7
+    - work on the ring-fencing function with Kristen and Ash
+
 
 
