@@ -579,7 +579,7 @@ Database Development
 - CAA22 organisation S07 with Crystal (in person), Bijan (remote), and Ash (remote):
     - 5 papers + 1 introduction + 1 discussion (see: [running order table](https://eamena-oxford.github.io/reveal.js/projects/caa22s07.html#/23))
     - Attended sessions:
-        - AI/DL/NN | *would it be interesting to contact AI specialists to work with us since we have a huge database with manual labelling (ground truth)? For example, we have text associated with remote sensing spatial prints that can be processed by natural language processing*)
+        - AI/DL/NN || *Would it be interesting to contact AI specialists to work with us since we have a huge database with manual labelling (ground truth)? For example, we have text associated with remote sensing spatial prints that can be processed by natural language processing* ||
         - round-table on Digital gap (organised by Cambridge)
 - Scheduled:
     - a DB meeting with MaREA (early October)
