@@ -564,11 +564,11 @@ Database Development
 ### ManCom Monthly report
 >07th July 22 - 15th September 22
 
-- Working with GitHub
-    - organising the versioning of the BU template
 - Arches 7 has been released
     - tested by Ash (will be back in a week)
     - need new translation for 1,410 words ([Transifex](https://www.transifex.com/archesproject/arches-70/dashboard/))
+- Working with GitHub
+    - organising the versioning of the BU template
 - Development of the [***eamenaR*** R package](https://github.com/eamena-oxford/eamenaR#readme)
     - Analysis (with Bijan)
     - BU formating (with Mohamed)
@@ -576,6 +576,11 @@ Database Development
     - cleaning the period concepts (duplicates, typos, scopeNotes)
     - alignement with the PeriodO thesaurus (EAMENA will be a new authority on [PeriodO](https://perio.do/en/))
         - create a new Slack channel for this purpose
+- CAA22 organisation S07 with Crystal (in person), Bijan (remote), and Ash (remote):
+    - 5 papers + 1 introduction + 1 discussion (see: [running order table](https://eamena-oxford.github.io/reveal.js/projects/caa22s07.html#/23))
+    - Attended sessions:
+        - AI/DL/NN | *would it be interesting to contact AI specialists to work with us since we have a huge database with manual labelling (ground truth)? For example, we have text associated with remote sensing spatial prints that can be processed by natural language processing*)
+        - round-table on Digital gap (organised by Cambridge)
 - Scheduled:
     - a DB meeting with MaREA (early October)
     - a [GitHub workshop](https://framadate.org/tD7TFpAnlNx5S9N1) (end of October)
