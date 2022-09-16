@@ -572,6 +572,7 @@ Database Development
 - Development of the [***eamenaR*** R package](https://github.com/eamena-oxford/eamenaR#readme)
     - Analysis (with Bijan)
     - BU formating (with Mohamed)
+    - Datapapers
 - Working on [EAMENA periods and subperiods](https://github.com/eamena-oxford/eamenaR/blob/main/inst/extdata/cultural_periods.tsv) 
     - cleaning the period concepts (duplicates, typos, scopeNotes)
     - alignement with the PeriodO thesaurus (EAMENA will be a new authority on [PeriodO](https://perio.do/en/))
