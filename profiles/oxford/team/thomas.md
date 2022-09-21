@@ -593,5 +593,18 @@ Database Development
     - finish the french translation, and test Arches 7
     - work on the ring-fencing function with Kristen and Ash
 
+#### Week -3
 
-
+- working to migrate business data from Arches v3 data to Arches v5 (BD Levant, but later DB YHMP)
+- recontact KI on a Business data migration from Arches v3 data to Arches v5 issue 
+    - Reuben is out, new contact: Samuel (without further information)
+- meet Ash to discuss: 
+    - Arches v7 ➡️ today: v7.1.1
+    - Transifex new lines to translate with [transifex](https://www.transifex.com/archesproject/arches-70/translate/#fr/djangopo/355132719)➡️ OK
+    - a Python 2.7 script hosted on AWS that creates daily backups ➡️ need to be translated to Python 3 + send snapshots to Glacier
+- EAMENA DB current business:
+    - readibility of Condition Assessment (via Bijan, Mel)
+    - BU for Mohamed
+    - solving an [BU issue](https://community.archesproject.org/t/how-to-remove-a-null-geometry-from-a-resource/1694?u=zoometh) for Nichole
+- developing ***eamenaR*** logic while Bijan works on data
+- will give a 45-min lecture at the GOA Skills Seminar: 'Statistical reasoning and computer scripting in archaeology' (MT2, 17 Oct)
