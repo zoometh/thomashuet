@@ -114,13 +114,51 @@ Renfrew, C., & Bahn, P. (2012). Archaeology: theories, methods and practice. Tha
 regression = parcimonious = RMS
 :::
 
-## 2-dimensions data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointpattern/"}
+## 2-dimensions spatial data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointpattern/"}
 
 ::: {.notes}
 spatial dataset
+"everything is related to everything else, but near things are more related than distant things"  Tobler, 1970
 :::
 
-## 2-dimensions data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/"}
+## 2-dimensions spatial data: random and clustered patterns
+
+![](images/bz_rockart.png){width=200px}
+
+
+::: {.notes}
+random = 
+clustered = 
+:::
+
+## 2-dimensions spatial data: regular pattern
+
+![](images/eba_tumulus.jpg){width=200px}
+
+
+::: {.notes}
+regular = competition
+:::
+
+## 2-dimensions spatial data: regular pattern
+
+![](images/eia_centralplaces.jpg){width=200px}
+
+
+::: {.notes}
+regular = competition
+:::
+
+## 2-dimensions spatial data: regular pattern
+
+![](images/eia_emporion.jpg){width=200px}
+
+
+::: {.notes}
+regular = competition
+:::
+
+## 2-dimensions data: shape analysis {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/"}
 
 ::: {.notes}
 gmm dataset
