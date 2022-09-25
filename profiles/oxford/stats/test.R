@@ -1,0 +1,107 @@
+library(spatstat)
+
+w <- as.owin(c(min(x1),max(x1),min(x1),max(x1)))
+Kpts <- ppp(coordinates(regular.pt)[ , 1],
+            coordinates(regular.pt)[ , 2],
+            window = w)
+L <- Lest(Kpts, correction = "Ripley")
+plot(L, xlab="d (m)", ylab="K(d)")
+
+w <- as.owin(c(min(x1),max(x1),min(x1),max(x1)))
+Kpts <- ppp(coordinates(random.pt)[ , 1],
+            coordinates(random.pt)[ , 2],
+            window = w)
+L <- Lest(Kpts, correction = "Ripley")
+plot(L, xlab="d (m)", ylab="K(d)")
+
+
+w <- as.owin(c(min(x1),max(x1),min(x1),max(x1)))
+Kpts <- ppp(coordinates(cluster)[ , 1],
+            coordinates(cluster)[ , 2],
+            window = w)
+L <- Lest(Kpts, correction = "Ripley")
+plot(L, xlab="d (m)", ylab="K(d)")
+
+
+
+
+# # library(shiny)
+# # 
+# # ui <- fluidPage(
+# #   sidebarLayout(
+# #     sidebarPanel(
+# #       selectInput("units", label = "Units", choices = c("Mosaic", "Gridded", "Transect")),
+# #     ),
+# #     mainPanel(
+# #       renderPlot({
+# #         if (input$units == "Mosaic") {
+# #           sunits <<- mosaic(sframe, density = input$n_units)
+# #         }
+# #         else if (input$units == "Gridded") {
+# #           sunits <<- fieldwalkr::quadrats(sframe, n = round(sqrt(input$n_units)),
+# #                                           orientation = input$orient)
+# #         }
+# #         else if (input$units == "Transect") {
+# #           sunits <<- fieldwalkr::transects(sframe, n = input$n_units, orientation = input$orient)
+# #         }
+# #         
+# #         ggplot() + 
+# #           geom_sf(data = sunits, mapping = aes(fill = sample)) + 
+# #           scale_fill_manual(values = c("lightgrey", "yellow"), guide = FALSE) +
+# #           geom_sf(data = sframe, fill = NA) +
+# #           theme_blank()
+# #       })
+# #     )
+# #   )
+# # )
+# # 
+# # 
+# # server <- function(input, output, session) {
+# # }
+# # 
+# # shinyApp(ui, server)
+# 
+# library(sp)
+# 
+# # make a grid of size 50*50
+# x1 <- seq(1:10) - 0.5
+# x2 <- x1
+# grid <- expand.grid(x1, x2)
+# names(grid) <- c("x1", "x2")
+# 
+# # make a grid a spatial object
+# coordinates(grid) <- ~x1 + x2
+# gridded(grid) <- TRUE
+# plot(grid)
+# 
+# random.pt <- spsample(x = grid, n= 20, type = 'random')
+# regular.pt <- spsample(x = grid, n= 20, type = 'regular')
+# 
+# # random sampling of one location 
+# ori <- data.frame(spsample(x = grid, n= 1, type = 'random'))
+# 
+# # select randomly 20 distances between 0 and 2
+# n.point <- 20 
+# h <- rnorm(n.point, 1:2) 
+# h
+# 
+# # empty dataframe
+# dxy <- data.frame(matrix(nrow = n.point, ncol = 2))
+# 
+# # take a random angle from the randomly selected location and make a dataframe of the new distances from the original sampling points, in a random direction
+# angle <- runif(n = n.point, min = 0, max = 2*pi)
+# dxy[ , 1] <- h*sin(angle)
+# dxy[ , 2] <- h*cos(angle)
+# cluster <- data.frame(x = rep(NA, 20), y=rep(NA, 20))
+# cluster$x <- ori$coords.x1 + dxy$X1
+# cluster$y <- ori$coords.x2 + dxy$X2
+# 
+# # make a spatial object and plot
+# coordinates(cluster)<-  ~ x+y
+# plot(grid)
+# plot(cluster, add = T, col='green')
+# plot(random.pt, add = T, col= 'red')
+# plot(regular.pt, add = T, col= 'blue')
+# 
+# 
+# 

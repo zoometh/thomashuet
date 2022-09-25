@@ -1,0 +1,37 @@
+---
+title: "`fieldwalkr`"
+subtitle: "An R package for spatial sampling and field survey simulation"
+author: "Joe Roe (University of Copenhagen)"
+runtime: shiny
+output: 
+  ioslides_presentation:
+    smaller: true
+    logo: img/ku_logo_dk_hh.png
+    css: styles.css
+---
+
+## 1
+
+```{r, echo=FALSE}
+sliderInput("bins", "Number of bins:", 
+            min = 1, max = 50, value = 30)
+plotOutput("distPlot")
+```
+
+```{r, echo=FALSE}
+#| context: server
+output$distPlot <- renderPlot({
+  x <- faithful[, 2]  # Old Faithful Geyser data
+  bins <- seq(min(x), max(x), length.out = input$bins + 1)
+  hist(x, breaks = bins, col = 'darkgray', border = 'white')
+})
+```
+
+## 2
+
+ded
+
+
+## 3
+
+frfr
