@@ -51,14 +51,16 @@ server <- function(input, output) {
     if (input$points == "Yes"){
       ef <- efourier(a.bot, input$efourier)
       efi <- efourier_i(ef)
-      coo_plot(efi, border='black', main = paste(names(bot)[input$bot], "\n", input$efourier, " harmonics"), points = TRUE, pch = 16)
-      # coo_plot(efi, border='black', main = input$efourier, points = TRUE, pch = 16)
-      # coo_plot(a.bot, points = TRUE, pch = 16, border='black')
+      coo_plot(efi, border='black', main = paste(names(bot)[input$bot], "\n",
+                                                 input$efourier, " harmonics"),
+               points = TRUE, pch = 16)
     }
     else if (input$points == "No"){
+      print(input$bot)
       ef <- efourier(a.bot, input$efourier)
       efi <- efourier_i(ef)
-      coo_plot(efi, border='black', main = paste(names(bot)[input$bot], "\n", input$efourier, " harmonics"))
+      coo_plot(efi, border='black', main = paste(names(bot)[input$bot], "\n",
+                                                 input$efourier, " harmonics"))
       # coo_plot(a.bot)
     }
   })
@@ -104,5 +106,11 @@ server <- function(input, output) {
   })
 }
 
-
 shinyApp(ui, server)
+
+# a.bot <- bot[1]
+# ef <- efourier(a.bot, 12)
+# efi <- efourier_i(ef)
+# coo_plot(efi, border='black', main = paste(names(bot)[1], "\n",
+#                                            12, " harmonics"),
+#          points = TRUE, pch = 16)

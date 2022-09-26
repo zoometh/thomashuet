@@ -1,107 +1,42 @@
 library(spatstat)
 
-w <- as.owin(c(min(x1),max(x1),min(x1),max(x1)))
-Kpts <- ppp(coordinates(regular.pt)[ , 1],
-            coordinates(regular.pt)[ , 2],
-            window = w)
-L <- Lest(Kpts, correction = "Ripley")
-plot(L, xlab="d (m)", ylab="K(d)")
+x1 <- seq(1:10)
+w <- as.owin(c(min(x1), max(x1),
+               min(x1), max(x1)))
+plot(w, lwd=3, main = "")
+pts <- runifpoint(5, win = w)
+plot(pts)
 
-w <- as.owin(c(min(x1),max(x1),min(x1),max(x1)))
-Kpts <- ppp(coordinates(random.pt)[ , 1],
-            coordinates(random.pt)[ , 2],
-            window = w)
-L <- Lest(Kpts, correction = "Ripley")
-plot(L, xlab="d (m)", ylab="K(d)")
+ch <- convexhull(pts)
+plot(ch, add = TRUE)
 
+ctr <- centroid.owin(pts, as.ppp = FALSE)
+points(mean(pts$x), mean(pts$y), pch = 16)
 
-w <- as.owin(c(min(x1),max(x1),min(x1),max(x1)))
-Kpts <- ppp(coordinates(cluster)[ , 1],
-            coordinates(cluster)[ , 2],
-            window = w)
-L <- Lest(Kpts, correction = "Ripley")
-plot(L, xlab="d (m)", ylab="K(d)")
+segments(x0 = pts$x[-length(pts$x)], 
+         y0 = pts$y[-length(pts$y)], 
+         x1 = pts$x[-1], 
+         y1 = pts$y[-1],
+         col = "darkgreen")
 
+plot(boundingcircle(pts), add = TRUE)
 
 
+X <- psp(runif(5), runif(5), runif(5), runif(5), window=w)
+m <- data.frame(A=1:5, B=letters[1:5])
+X <- psp(runif(5, min = 0, max = 10),
+         runif(5, min = 0, max = 10),
+         runif(5, min = 0, max = 10),
+         runif(5, min = 0, max = 10), window=w, marks=m)
 
-# # library(shiny)
-# # 
-# # ui <- fluidPage(
-# #   sidebarLayout(
-# #     sidebarPanel(
-# #       selectInput("units", label = "Units", choices = c("Mosaic", "Gridded", "Transect")),
-# #     ),
-# #     mainPanel(
-# #       renderPlot({
-# #         if (input$units == "Mosaic") {
-# #           sunits <<- mosaic(sframe, density = input$n_units)
-# #         }
-# #         else if (input$units == "Gridded") {
-# #           sunits <<- fieldwalkr::quadrats(sframe, n = round(sqrt(input$n_units)),
-# #                                           orientation = input$orient)
-# #         }
-# #         else if (input$units == "Transect") {
-# #           sunits <<- fieldwalkr::transects(sframe, n = input$n_units, orientation = input$orient)
-# #         }
-# #         
-# #         ggplot() + 
-# #           geom_sf(data = sunits, mapping = aes(fill = sample)) + 
-# #           scale_fill_manual(values = c("lightgrey", "yellow"), guide = FALSE) +
-# #           geom_sf(data = sframe, fill = NA) +
-# #           theme_blank()
-# #       })
-# #     )
-# #   )
-# # )
-# # 
-# # 
-# # server <- function(input, output, session) {
-# # }
-# # 
-# # shinyApp(ui, server)
-# 
-# library(sp)
-# 
-# # make a grid of size 50*50
-# x1 <- seq(1:10) - 0.5
-# x2 <- x1
-# grid <- expand.grid(x1, x2)
-# names(grid) <- c("x1", "x2")
-# 
-# # make a grid a spatial object
-# coordinates(grid) <- ~x1 + x2
-# gridded(grid) <- TRUE
-# plot(grid)
-# 
-# random.pt <- spsample(x = grid, n= 20, type = 'random')
-# regular.pt <- spsample(x = grid, n= 20, type = 'regular')
-# 
-# # random sampling of one location 
-# ori <- data.frame(spsample(x = grid, n= 1, type = 'random'))
-# 
-# # select randomly 20 distances between 0 and 2
-# n.point <- 20 
-# h <- rnorm(n.point, 1:2) 
-# h
-# 
-# # empty dataframe
-# dxy <- data.frame(matrix(nrow = n.point, ncol = 2))
-# 
-# # take a random angle from the randomly selected location and make a dataframe of the new distances from the original sampling points, in a random direction
-# angle <- runif(n = n.point, min = 0, max = 2*pi)
-# dxy[ , 1] <- h*sin(angle)
-# dxy[ , 2] <- h*cos(angle)
-# cluster <- data.frame(x = rep(NA, 20), y=rep(NA, 20))
-# cluster$x <- ori$coords.x1 + dxy$X1
-# cluster$y <- ori$coords.x2 + dxy$X2
-# 
-# # make a spatial object and plot
-# coordinates(cluster)<-  ~ x+y
-# plot(grid)
-# plot(cluster, add = T, col='green')
-# plot(random.pt, add = T, col= 'red')
-# plot(regular.pt, add = T, col= 'blue')
-# 
-# 
-# 
+
+d <-data.frame(x0 = pts$x[-length(pts$x)], 
+               y0 = pts$y[-length(pts$y)], 
+               x1 = pts$x[-1], 
+               y1 = pts$y[-1])
+d$xmean <- rowMeans(cbind(d$x0, d$x1))
+d$ymean <- rowMeans(cbind(d$y0, d$y1))
+points(d$xmean, 
+       d$ymean,
+       pch = 16,
+       col = "darkgreen")

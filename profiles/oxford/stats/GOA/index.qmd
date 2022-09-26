@@ -29,13 +29,14 @@ This presentation will show you examples of statistical processes in archaeology
 
 | Start     | Period | Description |
 |:----------|:-------|:------------|
-| 1850      | 1<sup>st</sup> revolution in archaeology  | theory of evolution, geology, early anthropology |
+| 1850      | Prehistory  | evolution, geology, early anthropology |
 | 1950      | Culture-Historical  | typology (similarities), chronology, 14C |
-| 1960      | Processual archaeology  | chain operative, positivism |
-| 1980      | Post-processual archaeology  | differences / similarities, cultural relativism |
-| 2020      | Tool-driven archaeology  | Big data, modelling, aDNA |
+| 1960      | New archaeology  | chain operative, positivism |
+| 1980      | Post-processual  | dissimilarities, cultural relativism |
+| 2020      | Tool-driven  | Big data, ML / DL, aDNA |
 
-: Historiography of Archaeology
+: {tbl-colwidths="[15,35,50]"}
+
 
 ::: footer
 Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
@@ -75,7 +76,7 @@ middle range theories
 |           |        | 
 |:----------|:-------|
 | descriptive      | 📊  |
-| explanatory      | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){width=100px} |
+| explanatory      | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){width=150px} |
 | confirmatory      | ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px} |
 
 ## Distributions
@@ -83,8 +84,8 @@ middle range theories
 
 |           |        | 
 |:----------|:-------|
-| normal      | 📊  |
-| logarithmic      | 📊 |
+| normal      | ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}  |
+| logarithmic      | ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px} |
 | exponential      | 📊 |
 | Poisson      | 📊 |
 
@@ -114,6 +115,13 @@ Renfrew, C., & Bahn, P. (2012). Archaeology: theories, methods and practice. Tha
 regression = parcimonious = RMS
 :::
 
+## 2-dimensions spatial data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointbasic/"}
+
+::: {.notes}
+spatial dataset
+"everything is related to everything else, but near things are more related than distant things"  Tobler, 1970
+:::
+
 ## 2-dimensions spatial data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointpattern/"}
 
 ::: {.notes}
@@ -121,7 +129,9 @@ spatial dataset
 "everything is related to everything else, but near things are more related than distant things"  Tobler, 1970
 :::
 
-## 2-dimensions spatial data: random and clustered patterns
+## 2-dimensions spatial data
+
+random and clustered patterns
 
 ![](images/bz_rockart.png){width=200px}
 
@@ -131,7 +141,9 @@ random =
 clustered = 
 :::
 
-## 2-dimensions spatial data: regular pattern
+## 2-dimensions spatial data
+
+regular pattern
 
 ![](images/eba_tumulus.jpg){width=200px}
 
@@ -140,7 +152,9 @@ clustered =
 regular = competition
 :::
 
-## 2-dimensions spatial data: regular pattern
+## 2-dimensions spatial data
+
+regular pattern
 
 ![](images/eia_centralplaces.jpg){width=200px}
 
@@ -149,7 +163,9 @@ regular = competition
 regular = competition
 :::
 
-## 2-dimensions spatial data: regular pattern
+## 2-dimensions spatial data
+
+regular pattern
 
 ![](images/eia_emporion.jpg){width=200px}
 
@@ -158,7 +174,7 @@ regular = competition
 regular = competition
 :::
 
-## 2-dimensions data: shape analysis {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/"}
+## 2-dimensions shape data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/"}
 
 ::: {.notes}
 gmm dataset
@@ -170,40 +186,19 @@ gmm dataset
 Useful when data are complete (chemical composition, genetics, etc.)
 :::
 
-## > 3-dimensions
+## > 3-dimensions data
 
 ::: {.notes}
 Multivariate
 :::
 
-## Seriation
+## Seriation {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/seriation/"}
 
 ::: {.notes}
 Seriation = Guttman effect = horse shoe = arc
 = relation directe sur la sphere
 :::
 
-## Tabsets {.smaller .scrollable transition="slide"}
-
-::: panel-tabset
-### Plot
-
-```{r}
-library(ggplot2)
-ggplot(mtcars, aes(hp, mpg, color = am)) +
-  geom_point() +  geom_smooth(formula = y ~ x, method = "loess")
-```
-
-### Data
-
-```{r}
-knitr::kable(mtcars)
-```
-:::
-
-::: footer
-Learn more: [Tabsets](https://quarto.org/docs/presentations/revealjs/#tabsets)
-:::
 
 ## XXI century
 
@@ -219,8 +214,23 @@ AI
 |           |        | 
 |:----------|:-------|
 | semantic      | 🖼️ |
-| logic      | <pre><code class="r">>_</code> |
+| logic      | `>_` |
 | hardware      | 🔬 |
 
-## Shiny
+## Research workflow
+
+```{mermaid}
+flowchart LR
+  A() --> B(Round edge)
+  B --> C(Round edge)
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+XLSX ➡️ `>_` ➡️ 📊
+
+::: {.notes}
+no DB
+no Illustrator
+:::
 

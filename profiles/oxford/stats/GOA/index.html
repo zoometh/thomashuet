@@ -321,6 +321,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -344,11 +347,10 @@
 <section id="historiography-of-archaeology" class="slide level2">
 <h2>Historiography of Archaeology</h2>
 <table>
-<caption>Historiography of Archaeology</caption>
 <colgroup>
-<col style="width: 34%">
-<col style="width: 25%">
-<col style="width: 40%">
+<col style="width: 15%">
+<col style="width: 35%">
+<col style="width: 50%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -360,8 +362,8 @@
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">1850</td>
-<td style="text-align: left;">1<sup>st</sup> revolution in archaeology</td>
-<td style="text-align: left;">theory of evolution, geology, early anthropology</td>
+<td style="text-align: left;">Prehistory</td>
+<td style="text-align: left;">evolution, geology, early anthropology</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">1950</td>
@@ -370,18 +372,18 @@
 </tr>
 <tr class="odd">
 <td style="text-align: left;">1960</td>
-<td style="text-align: left;">Processual archaeology</td>
+<td style="text-align: left;">New archaeology</td>
 <td style="text-align: left;">chain operative, positivism</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">1980</td>
-<td style="text-align: left;">Post-processual archaeology</td>
-<td style="text-align: left;">differences / similarities, cultural relativism</td>
+<td style="text-align: left;">Post-processual</td>
+<td style="text-align: left;">dissimilarities, cultural relativism</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">2020</td>
-<td style="text-align: left;">Tool-driven archaeology</td>
-<td style="text-align: left;">Big data, modelling, aDNA</td>
+<td style="text-align: left;">Tool-driven</td>
+<td style="text-align: left;">Big data, ML / DL, aDNA</td>
 </tr>
 </tbody>
 </table>
@@ -455,7 +457,7 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
 </tr>
 <tr class="even">
 <td style="text-align: left;">explanatory</td>
-<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png" width="100"></td>
+<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png" width="150"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">confirmatory</td>
@@ -467,14 +469,18 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
 <section id="distributions" class="slide level2">
 <h2>Distributions</h2>
 <table>
+<colgroup>
+<col style="width: 57%">
+<col style="width: 42%">
+</colgroup>
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">normal</td>
-<td style="text-align: left;">📊</td>
+<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png" width="200"></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">logarithmic</td>
-<td style="text-align: left;">📊</td>
+<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png" width="200"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">exponential</td>
@@ -542,7 +548,7 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-spatial-data" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointpattern/">
+<section id="dimensions-spatial-data" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointbasic/">
 <h2>2-dimensions spatial data</h2>
 <aside class="notes">
 <p>spatial dataset “everything is related to everything else, but near things are more related than distant things” Tobler, 1970</p>
@@ -558,8 +564,25 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-spatial-data-random-and-clustered-patterns" class="slide level2">
-<h2>2-dimensions spatial data: random and clustered patterns</h2>
+<section id="dimensions-spatial-data-1" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointpattern/">
+<h2>2-dimensions spatial data</h2>
+<aside class="notes">
+<p>spatial dataset “everything is related to everything else, but near things are more related than distant things” Tobler, 1970</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="dimensions-spatial-data-2" class="slide level2">
+<h2>2-dimensions spatial data</h2>
+<p>random and clustered patterns</p>
 
 <img data-src="images/bz_rockart.png" width="200" class="r-stretch"><aside class="notes">
 <p>random = clustered =</p>
@@ -575,8 +598,9 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-spatial-data-regular-pattern" class="slide level2">
-<h2>2-dimensions spatial data: regular pattern</h2>
+<section id="dimensions-spatial-data-3" class="slide level2">
+<h2>2-dimensions spatial data</h2>
+<p>regular pattern</p>
 
 <img data-src="images/eba_tumulus.jpg" width="200" class="r-stretch"><aside class="notes">
 <p>regular = competition</p>
@@ -592,8 +616,9 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-spatial-data-regular-pattern-1" class="slide level2">
-<h2>2-dimensions spatial data: regular pattern</h2>
+<section id="dimensions-spatial-data-4" class="slide level2">
+<h2>2-dimensions spatial data</h2>
+<p>regular pattern</p>
 
 <img data-src="images/eia_centralplaces.jpg" width="200" class="r-stretch"><aside class="notes">
 <p>regular = competition</p>
@@ -609,8 +634,9 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-spatial-data-regular-pattern-2" class="slide level2">
-<h2>2-dimensions spatial data: regular pattern</h2>
+<section id="dimensions-spatial-data-5" class="slide level2">
+<h2>2-dimensions spatial data</h2>
+<p>regular pattern</p>
 
 <img data-src="images/eia_emporion.jpg" width="200" class="r-stretch"><aside class="notes">
 <p>regular = competition</p>
@@ -626,8 +652,8 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-data-1" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/">
-<h2>2-dimensions data</h2>
+<section id="dimensions-shape-data" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/">
+<h2>2-dimensions shape data</h2>
 <aside class="notes">
 <p>gmm dataset</p>
 <style type="text/css">
@@ -642,7 +668,7 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-data-2" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/">
+<section id="dimensions-data-1" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/">
 <h2>3-dimensions data</h2>
 <aside class="notes">
 <p>Useful when data are complete (chemical composition, genetics, etc.)</p>
@@ -658,8 +684,8 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions" class="slide level2">
-<h2>&gt; 3-dimensions</h2>
+<section id="dimensions-data-2" class="slide level2">
+<h2>&gt; 3-dimensions data</h2>
 <aside class="notes">
 <p>Multivariate</p>
 <style type="text/css">
@@ -674,7 +700,7 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="seriation" class="slide level2">
+<section id="seriation" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/seriation/">
 <h2>Seriation</h2>
 <aside class="notes">
 <p>Seriation = Guttman effect = horse shoe = arc = relation directe sur la sphere</p>
@@ -689,512 +715,6 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-</section>
-<section id="tabsets" class="slide level2 smaller scrollable" data-transition="slide">
-<h2>Tabsets</h2>
-<div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Plot</a></li><li><a href="#tabset-1-2">Data</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="index_files/figure-revealjs/unnamed-chunk-2-1.png" width="960"></p>
-</div>
-</div>
-</div>
-<div id="tabset-1-2">
-<div class="cell">
-<div class="cell-output-display">
-<table style="width:100%;">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 6%">
-<col style="width: 5%">
-<col style="width: 8%">
-<col style="width: 5%">
-<col style="width: 6%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 4%">
-<col style="width: 4%">
-<col style="width: 6%">
-<col style="width: 6%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: right;">mpg</th>
-<th style="text-align: right;">cyl</th>
-<th style="text-align: right;">disp</th>
-<th style="text-align: right;">hp</th>
-<th style="text-align: right;">drat</th>
-<th style="text-align: right;">wt</th>
-<th style="text-align: right;">qsec</th>
-<th style="text-align: right;">vs</th>
-<th style="text-align: right;">am</th>
-<th style="text-align: right;">gear</th>
-<th style="text-align: right;">carb</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Mazda RX4</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160.0</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">3.90</td>
-<td style="text-align: right;">2.620</td>
-<td style="text-align: right;">16.46</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mazda RX4 Wag</td>
-<td style="text-align: right;">21.0</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">160.0</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">3.90</td>
-<td style="text-align: right;">2.875</td>
-<td style="text-align: right;">17.02</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Datsun 710</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">108.0</td>
-<td style="text-align: right;">93</td>
-<td style="text-align: right;">3.85</td>
-<td style="text-align: right;">2.320</td>
-<td style="text-align: right;">18.61</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Hornet 4 Drive</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">258.0</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">3.08</td>
-<td style="text-align: right;">3.215</td>
-<td style="text-align: right;">19.44</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Hornet Sportabout</td>
-<td style="text-align: right;">18.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360.0</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">3.15</td>
-<td style="text-align: right;">3.440</td>
-<td style="text-align: right;">17.02</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Valiant</td>
-<td style="text-align: right;">18.1</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">225.0</td>
-<td style="text-align: right;">105</td>
-<td style="text-align: right;">2.76</td>
-<td style="text-align: right;">3.460</td>
-<td style="text-align: right;">20.22</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Duster 360</td>
-<td style="text-align: right;">14.3</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">360.0</td>
-<td style="text-align: right;">245</td>
-<td style="text-align: right;">3.21</td>
-<td style="text-align: right;">3.570</td>
-<td style="text-align: right;">15.84</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 240D</td>
-<td style="text-align: right;">24.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">146.7</td>
-<td style="text-align: right;">62</td>
-<td style="text-align: right;">3.69</td>
-<td style="text-align: right;">3.190</td>
-<td style="text-align: right;">20.00</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Merc 230</td>
-<td style="text-align: right;">22.8</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">140.8</td>
-<td style="text-align: right;">95</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.150</td>
-<td style="text-align: right;">22.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 280</td>
-<td style="text-align: right;">19.2</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">167.6</td>
-<td style="text-align: right;">123</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.440</td>
-<td style="text-align: right;">18.30</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Merc 280C</td>
-<td style="text-align: right;">17.8</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">167.6</td>
-<td style="text-align: right;">123</td>
-<td style="text-align: right;">3.92</td>
-<td style="text-align: right;">3.440</td>
-<td style="text-align: right;">18.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 450SE</td>
-<td style="text-align: right;">16.4</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
-<td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">4.070</td>
-<td style="text-align: right;">17.40</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Merc 450SL</td>
-<td style="text-align: right;">17.3</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
-<td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">3.730</td>
-<td style="text-align: right;">17.60</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Merc 450SLC</td>
-<td style="text-align: right;">15.2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">275.8</td>
-<td style="text-align: right;">180</td>
-<td style="text-align: right;">3.07</td>
-<td style="text-align: right;">3.780</td>
-<td style="text-align: right;">18.00</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">3</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Cadillac Fleetwood</td>
-<td style="text-align: right;">10.4</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">472.0</td>
-<td style="text-align: right;">205</td>
-<td style="text-align: right;">2.93</td>
-<td style="text-align: right;">5.250</td>
-<td style="text-align: right;">17.98</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Lincoln Continental</td>
-<td style="text-align: right;">10.4</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">460.0</td>
-<td style="text-align: right;">215</td>
-<td style="text-align: right;">3.00</td>
-<td style="text-align: right;">5.424</td>
-<td style="text-align: right;">17.82</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Chrysler Imperial</td>
-<td style="text-align: right;">14.7</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">440.0</td>
-<td style="text-align: right;">230</td>
-<td style="text-align: right;">3.23</td>
-<td style="text-align: right;">5.345</td>
-<td style="text-align: right;">17.42</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Fiat 128</td>
-<td style="text-align: right;">32.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">78.7</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">4.08</td>
-<td style="text-align: right;">2.200</td>
-<td style="text-align: right;">19.47</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Honda Civic</td>
-<td style="text-align: right;">30.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">75.7</td>
-<td style="text-align: right;">52</td>
-<td style="text-align: right;">4.93</td>
-<td style="text-align: right;">1.615</td>
-<td style="text-align: right;">18.52</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Toyota Corolla</td>
-<td style="text-align: right;">33.9</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">71.1</td>
-<td style="text-align: right;">65</td>
-<td style="text-align: right;">4.22</td>
-<td style="text-align: right;">1.835</td>
-<td style="text-align: right;">19.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Toyota Corona</td>
-<td style="text-align: right;">21.5</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">120.1</td>
-<td style="text-align: right;">97</td>
-<td style="text-align: right;">3.70</td>
-<td style="text-align: right;">2.465</td>
-<td style="text-align: right;">20.01</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Dodge Challenger</td>
-<td style="text-align: right;">15.5</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">318.0</td>
-<td style="text-align: right;">150</td>
-<td style="text-align: right;">2.76</td>
-<td style="text-align: right;">3.520</td>
-<td style="text-align: right;">16.87</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">AMC Javelin</td>
-<td style="text-align: right;">15.2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">304.0</td>
-<td style="text-align: right;">150</td>
-<td style="text-align: right;">3.15</td>
-<td style="text-align: right;">3.435</td>
-<td style="text-align: right;">17.30</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Camaro Z28</td>
-<td style="text-align: right;">13.3</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">350.0</td>
-<td style="text-align: right;">245</td>
-<td style="text-align: right;">3.73</td>
-<td style="text-align: right;">3.840</td>
-<td style="text-align: right;">15.41</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Pontiac Firebird</td>
-<td style="text-align: right;">19.2</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">400.0</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">3.08</td>
-<td style="text-align: right;">3.845</td>
-<td style="text-align: right;">17.05</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Fiat X1-9</td>
-<td style="text-align: right;">27.3</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">79.0</td>
-<td style="text-align: right;">66</td>
-<td style="text-align: right;">4.08</td>
-<td style="text-align: right;">1.935</td>
-<td style="text-align: right;">18.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">1</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Porsche 914-2</td>
-<td style="text-align: right;">26.0</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">120.3</td>
-<td style="text-align: right;">91</td>
-<td style="text-align: right;">4.43</td>
-<td style="text-align: right;">2.140</td>
-<td style="text-align: right;">16.70</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Lotus Europa</td>
-<td style="text-align: right;">30.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">95.1</td>
-<td style="text-align: right;">113</td>
-<td style="text-align: right;">3.77</td>
-<td style="text-align: right;">1.513</td>
-<td style="text-align: right;">16.90</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">2</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Ford Pantera L</td>
-<td style="text-align: right;">15.8</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">351.0</td>
-<td style="text-align: right;">264</td>
-<td style="text-align: right;">4.22</td>
-<td style="text-align: right;">3.170</td>
-<td style="text-align: right;">14.50</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">4</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Ferrari Dino</td>
-<td style="text-align: right;">19.7</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">145.0</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">3.62</td>
-<td style="text-align: right;">2.770</td>
-<td style="text-align: right;">15.50</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">6</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Maserati Bora</td>
-<td style="text-align: right;">15.0</td>
-<td style="text-align: right;">8</td>
-<td style="text-align: right;">301.0</td>
-<td style="text-align: right;">335</td>
-<td style="text-align: right;">3.54</td>
-<td style="text-align: right;">3.570</td>
-<td style="text-align: right;">14.60</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">8</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Volvo 142E</td>
-<td style="text-align: right;">21.4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">121.0</td>
-<td style="text-align: right;">109</td>
-<td style="text-align: right;">4.11</td>
-<td style="text-align: right;">2.780</td>
-<td style="text-align: right;">18.60</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">2</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#tabsets">Tabsets</a></p>
-</div>
 </section>
 <section id="xxi-century" class="slide level2">
 <h2>XXI century</h2>
@@ -1223,7 +743,7 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
 </tr>
 <tr class="even">
 <td style="text-align: left;">logic</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;"><code>&gt;_</code></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">hardware</td>
@@ -1232,8 +752,39 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
 </tbody>
 </table>
 </section>
-<section id="shiny" class="slide level2">
-<h2>Shiny</h2>
+<section id="research-workflow" class="slide level2">
+<h2>Research workflow</h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A() --&gt; B(Round edge)
+  B --&gt; C(Round edge)
+  C --&gt; D[Result one]
+  C --&gt; E[Result two]
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+<p>XLSX ➡️ <code>&gt;_</code> ➡️ 📊</p>
+<aside class="notes">
+<p>no DB no Illustrator</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 <img src="images/inst-uni-oxford_.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="https://tinyurl.com/goa-oxford" class="uri">https://tinyurl.com/goa-oxford</a></p>
