@@ -608,3 +608,14 @@ Database Development
     - solving an [BU issue](https://community.archesproject.org/t/how-to-remove-a-null-geometry-from-a-resource/1694?u=zoometh) for Nichole
 - developing ***eamenaR*** logic while Bijan works on data
 - will give a 45-min lecture at the GOA Skills Seminar: 'Statistical reasoning and computer scripting in archaeology' (MT2, 17 Oct)
+
+#### Week -1
+
+- restored YHMP
+- re-formatting business data from the `eamena.lavant.training` DB in a bulk
+- plannifying the migration of our back-ups from a hot to a cold AWS storage 
+- 270 Transifex lines translated from `en` to `fr`
+- webinar:
+    - *'Dive into Heritage Digital Platform - Online Technical Meeting on the platform development'*
+- session organisation:
+    - CAA23, [S12. 'Chronological modelling: formal methods and research software'](https://2023.caaconference.org/submissions/sessions/)

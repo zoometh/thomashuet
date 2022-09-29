@@ -321,6 +321,9 @@
       margin-right: 0; 
     }
   </style>
+  <script src="index_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="index_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -331,11 +334,14 @@
   <p class="author">Thomas Huet (University of Oxford, EAMENA project)</p>
 </section>
 
-<section id="introduction" class="slide level2">
-<h2>Introduction</h2>
+<section class="slide level2">
+
 <div class="cell">
 
 </div>
+</section>
+<section id="introduction" class="slide level2">
+<h2>Introduction</h2>
 <p>This presentation will show you examples of statistical processes in archaeology and how these processes can be automated with computer scripts</p>
 </section>
 <section id="historiography-of-archaeology" class="slide level2">
@@ -399,89 +405,14 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
           display:block!important;
       }</style></aside>
 </section>
-<section id="historiography-of-archaeology-1" class="slide level2">
-<h2>Historiography of Archaeology</h2>
-<table>
-<colgroup>
-<col style="width: 15%">
-<col style="width: 35%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Start</th>
-<th style="text-align: left;">Period</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">1850</td>
-<td style="text-align: left;">Prehistory</td>
-<td style="text-align: left;">evolution, geology, early anthropology</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1950</td>
-<td style="text-align: left;">Culture-Historical</td>
-<td style="text-align: left;">typology (similarities), chronology, 14C</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">1960</td>
-<td style="text-align: left;"><strong>New archaeology</strong></td>
-<td style="text-align: left;">chain operative, statistics</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">1980</td>
-<td style="text-align: left;">Post-processual</td>
-<td style="text-align: left;">dissimilarities, cultural relativism</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">2020</td>
-<td style="text-align: left;"><strong>Tool-driven</strong></td>
-<td style="text-align: left;">Big data, ML / DL, aDNA</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="birth-of-statistics---median" class="slide level2">
-<h2>Birth of statistics - median</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png" width="50"></p>
-<p></p><figcaption>Title page of Edward Wright (1599) Certaine Errors in Navigation</figcaption><p></p>
-</figure>
-</div>
-</div><div class="column" style="width:50%;">
-<p>Right column <img data-src="https://www.google.com/url?sa=i&amp;url=https%3A%2F%2Fdepositphotos.com%2F22975072%2Fstock-photo-old-compass-on-a-navigation.html&amp;psig=AOvVaw1ZjyrF_crS2G6eDScUG0M7&amp;ust=1664380502401000&amp;source=images&amp;cd=vfe&amp;ved=0CAwQjRxqFwoTCKDZ8tuqtfoCFQAAAAAdAAAAABAI" width="50"></p>
-</div>
-</div>
-</section>
-<section id="birth-of-statistics---significance-test" class="slide level2">
-<h2>Birth of statistics - significance test</h2>
-<p>‘From whence it follows, that it is Art, not Chance, that governs’ (J. Arbuthnot)</p>
-</section>
-<section id="birth-of-statistics---normal-law" class="slide level2">
-<h2>Birth of statistics - normal law</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/quetelet_1821-33_census.png" width="300"></p>
-<p></p><figcaption>Quetelet census 1821-33</figcaption><p></p>
-</figure>
-</div>
-</div><div class="column" style="width:60%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png" width="300"></p>
-<p></p><figcaption>A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<aside class="notes">
+<section id="birth-of-statistics" class="slide level2">
+<h2>Birth of statistics</h2>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png" width="50" class="r-stretch quarto-figure-center"><p class="caption">Title page of Edward Wright (1599) Certaine Errors in Navigation</p></section>
+<section id="birth-of-statistics-1" class="slide level2">
+<h2>Birth of statistics</h2>
+
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png" width="100" class="r-stretch quarto-figure-center"><p class="caption">A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied</p><aside class="notes">
 <p>Statistik (description of a state, a country): collecting population data through census, surveys != probability. Based on social data (!= mathematics). Statistics need to analyse large amount of data (dataset), Statistics are manded by institutions, to be interesting they need to be realised over the long term to allow comparisons.</p>
 <style type="text/css">
         span.MJX_Assistive_MathML {
@@ -514,28 +445,6 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
 </section>
 <section id="type-of-statistics" class="slide level2">
 <h2>Type of statistics</h2>
-<div class="columns">
-<div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Histogram_of_arrivals_per_minute.svg/1920px-Histogram_of_arrivals_per_minute.svg.png" width="300"></p>
-<p></p><figcaption>descriptive</figcaption><p></p>
-</figure>
-</div>
-</div><div class="column" style="width:33%;">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png" width="150"></p>
-<p></p><figcaption>explanatory</figcaption><p></p>
-</figure>
-</div>
-</div><div class="column" style="width:33%;">
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png" alt="confirmatory">{width=200px</p>
-</div>
-</div>
-</section>
-<section id="type-of-statistics-1" class="slide level2">
-<h2>Type of statistics</h2>
 <table>
 <colgroup>
 <col style="width: 57%">
@@ -548,11 +457,11 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
 </tr>
 <tr class="even">
 <td style="text-align: left;">explanatory</td>
-<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png" width="150" alt="explanatory"></td>
+<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png" width="150"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">confirmatory</td>
-<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png" width="200" alt="confirmatory"></td>
+<td style="text-align: left;"><img data-src="https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png" width="200"></td>
 </tr>
 </tbody>
 </table>
@@ -845,6 +754,23 @@ New Archaeology, or Processual archaeology, see the advent of statistics</p>
 </section>
 <section id="research-workflow" class="slide level2">
 <h2>Research workflow</h2>
+<div class="cell" data-reveal="true">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid" data-tooltip-selector="#mermaid-tooltip-1">flowchart LR
+  A() --&gt; B(Round edge)
+  B --&gt; C(Round edge)
+  C --&gt; D[Result one]
+  C --&gt; E[Result two]
+</pre>
+<div id="mermaid-tooltip-1" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
 <p>XLSX ➡️ <code>&gt;_</code> ➡️ 📊</p>
 <aside class="notes">
 <p>no DB no Illustrator</p>

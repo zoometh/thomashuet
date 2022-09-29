@@ -15,13 +15,13 @@ resources:
   - demo.pdf
 ---
 
+
+## Introduction
+
 ```{r, echo=FALSE}
 library(shiny)
 library(rmarkdown)
 ```
-
-
-## Introduction
 
 This presentation will show you examples of statistical processes in archaeology and how these processes can be automated with computer scripts
 
@@ -47,14 +47,51 @@ Culture-Historical is the 2nd revolution in archaeology
 New Archaeology, or Processual archaeology, see the advent of statistics
 :::
 
-## Birth of statistics
+## Historiography of Archaeology
+
+| Start     | Period | Description |
+|:----------|:-------|:------------|
+| 1850      | Prehistory  | evolution, geology, early anthropology |
+| 1950      | Culture-Historical  | typology (similarities), chronology, 14C |
+| 1960      | **New archaeology**  | chain operative, statistics |
+| 1980      | Post-processual  | dissimilarities, cultural relativism |
+| 2020      | **Tool-driven**  | Big data, ML / DL, aDNA |
+
+: {tbl-colwidths="[15,35,50]"}
 
 
+## Birth of statistics - median
+
+:::: {.columns}
+
+::: {.column width="50%"}
 ![Title page of Edward Wright (1599) Certaine Errors in Navigation](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png){width=50px}
+:::
 
-## Birth of statistics
+::: {.column width="50%"}
+Right column
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2F22975072%2Fstock-photo-old-compass-on-a-navigation.html&psig=AOvVaw1ZjyrF_crS2G6eDScUG0M7&ust=1664380502401000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDZ8tuqtfoCFQAAAAAdAAAAABAI){width=50px}
+:::
 
-![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){width=100px}
+::::
+
+## Birth of statistics - significance test
+
+'From whence it follows, that it is Art, not Chance, that governs' (J. Arbuthnot)
+
+## Birth of statistics - normal law
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![Quetelet census 1821-33](images/quetelet_1821-33_census.png){width=300px}
+:::
+
+::: {.column width="60%"}
+![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){width=300px}
+:::
+
+::::
 
 ::: {.notes}
 Statistik (description of a state, a country): collecting population data through census, surveys 
@@ -72,12 +109,51 @@ middle range theories
 
 ## Type of statistics
 
+:::: {.columns}
+
+::: {.column width="33%"}
+![descriptive](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Histogram_of_arrivals_per_minute.svg/1920px-Histogram_of_arrivals_per_minute.svg.png){width=200px}
+:::
+
+::: {.column width="33%"}
+![explanatory](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){width=200px}
+:::
+
+::: {.column width="33%"}
+![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::::
+
+## Type of statistics
+
 
 |           |        | 
 |:----------|:-------|
 | descriptive      | 📊  |
-| explanatory      | ![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){width=150px} |
-| confirmatory      | ![](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px} |
+| explanatory      | ![explanatory](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){width=150px} |
+| confirmatory      | ![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px} |
+
+## Distributions
+
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![normal](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::: {.column width="33%"}
+![logarithmic](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+![exponential](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::: {.column width="33%"}
+![Poisson](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::::
+
 
 ## Distributions
 
@@ -92,10 +168,35 @@ middle range theories
 ## 1-dimension data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim1/"}
 
 ::: {.notes}
+TODO: block scale
 univariate
 Data with 1 dimension = 1 measure
 Histogram = discretization = bins = change of scale
 :::
+
+## Change of scale
+
+:::: {.columns}
+
+::: {.column width="25%"}
+![quantitative](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::: {.column width="25%"}
+![ordinal](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::: {.column width="25%"}
+![nominal](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::: {.column width="25%"}
+![bimodal](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+:::
+
+::::
+
+
 
 ## Change of scale
 
@@ -109,6 +210,7 @@ Histogram = discretization = bins = change of scale
 ## 2-dimensions data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim2/"}
 
 ::: {.notes}
+TODO: show coeff
 bi-variate
 utiliser la regression de 
 Renfrew, C., & Bahn, P. (2012). Archaeology: theories, methods and practice. Thames and Hudson
@@ -219,13 +321,6 @@ AI
 
 ## Research workflow
 
-```{mermaid}
-flowchart LR
-  A() --> B(Round edge)
-  B --> C(Round edge)
-  C --> D[Result one]
-  C --> E[Result two]
-```
 
 XLSX ➡️ `>_` ➡️ 📊
 
