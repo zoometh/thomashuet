@@ -612,7 +612,7 @@ Database Development
 #### Week -1
 
 - restored YHMP
-- re-formatting business data from the `eamena.lavant.training` DB in a bulk
+- re-formatting business data from the `eamena.levant.training` DB in a bulk
 - plannifying the migration of our back-ups from a hot to a cold AWS storage 
 - 270 Transifex lines translated from `en` to `fr`
 - webinar:
