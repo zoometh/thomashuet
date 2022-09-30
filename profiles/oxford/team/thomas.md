@@ -611,8 +611,11 @@ Database Development
 
 #### Week -1
 
-- restored YHMP
+- restored YHMP, need to fix some index errors
 - re-formatting business data from the `eamena.levant.training` DB in a bulk
+- reviewing the CGI-EAMENA-DoA convention with Bill and Bijan
+- working on ***eamenaR*** with Bijan
+- scoping the next Arcadia round with Bijan and Michael
 - plannifying the migration of our back-ups from a hot to a cold AWS storage 
 - 270 Transifex lines translated from `en` to `fr`
 - webinar:

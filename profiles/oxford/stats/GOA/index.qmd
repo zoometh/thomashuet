@@ -2,6 +2,7 @@
 title: "Statistical Reasoning and Computer Scripting in Archaeology"
 # subtitle: "Create beautiful interactive slide decks with Reveal.js"
 author: "Thomas Huet (University of Oxford, EAMENA project)"
+server: shiny
 format:
   revealjs: 
     slide-number: true
@@ -25,13 +26,31 @@ library(rmarkdown)
 
 This presentation will show you examples of statistical processes in archaeology and how these processes can be automated with computer scripts
 
+
+## Shiny
+
+```{r}
+sliderInput("bins", "Number of bins:", 
+            min = 1, max = 50, value = 30)
+plotOutput("distPlot")
+```
+
+```{r}
+#| context: server
+output$distPlot <- renderPlot({
+  x <- faithful[, 2]  # Old Faithful Geyser data
+  bins <- seq(min(x), max(x), length.out = input$bins + 1)
+  hist(x, breaks = bins, col = 'darkgray', border = 'white')
+})
+```
+
 ## Historiography of Archaeology
 
 | Start     | Period | Description |
 |:----------|:-------|:------------|
 | 1850      | Prehistory  | evolution, geology, early anthropology |
 | 1950      | Culture-Historical  | typology (similarities), chronology, 14C |
-| 1960      | New archaeology  | chain operative, positivism |
+| 1960      | New archaeology  | chain operative, statistics |
 | 1980      | Post-processual  | dissimilarities, cultural relativism |
 | 2020      | Tool-driven  | Big data, ML / DL, aDNA |
 
@@ -43,8 +62,10 @@ Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-co
 :::
 
 ::: {.notes}
-Culture-Historical is the 2nd revolution in archaeology  
-New Archaeology, or Processual archaeology, see the advent of statistics
+With the development of prehistory, archaeology has the characteristic of seeking to unite the history of Nature with that of Man by focusing on the most ancient past. With Montelius (archaeo), Darwin (biol) and Lyell (geol.), there is a concomitance between biological "species" and archaeological "types". 
+Culture-Historical is the 2nd revolution in archaeology. Based on national traditions.
+New Archaeology, or Processual archaeology, see the advent of statistics. With the development of anthropology, archaeology became interested in the recent past
+
 :::
 
 ## Historiography of Archaeology
@@ -53,31 +74,46 @@ New Archaeology, or Processual archaeology, see the advent of statistics
 |:----------|:-------|:------------|
 | 1850      | Prehistory  | evolution, geology, early anthropology |
 | 1950      | Culture-Historical  | typology (similarities), chronology, 14C |
-| 1960      | **New archaeology**  | chain operative, statistics |
+| **1960**      | **New archaeology**  | **chain operative, statistics** |
 | 1980      | Post-processual  | dissimilarities, cultural relativism |
-| 2020      | **Tool-driven**  | Big data, ML / DL, aDNA |
+| **2020**      | **Tool-driven**  | **Big data, ML / DL, aDNA** |
 
 : {tbl-colwidths="[15,35,50]"}
 
+::: {.notes}
+New Archaeology no longer has a historical aim but an anthropological and explanatory aim  
+deconstructs the notion of 'culture' by speaking of 'social space' and 'polythetic dataset' 
+::: 
 
 ## Birth of statistics - median
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-![Title page of Edward Wright (1599) Certaine Errors in Navigation](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png){width=50px}
+![Title page of Edward Wright (1599) Certaine Errors in Navigation](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png){height=400px}
 :::
 
 ::: {.column width="50%"}
 Right column
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdepositphotos.com%2F22975072%2Fstock-photo-old-compass-on-a-navigation.html&psig=AOvVaw1ZjyrF_crS2G6eDScUG0M7&ust=1664380502401000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDZ8tuqtfoCFQAAAAAdAAAAABAI){width=50px}
+![](images/compass-map.png){height=400px}
 :::
 
 ::::
 
 ## Birth of statistics - significance test
 
+:::: {.columns}
+
+::: {.column width="40%"}
+![Quetelet census 1821-33](images/arbuthnot-1629-1710.png){width=300px}
 'From whence it follows, that it is Art, not Chance, that governs' (J. Arbuthnot)
+:::
+
+::: {.column width="60%"}
+![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){width=300px}
+:::
+
+::::
 
 ## Birth of statistics - normal law
 
@@ -101,10 +137,12 @@ Statistik (description of a state, a country): collecting population data throug
 ## Middle Range Theories 
 
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/main/img/conformity.png){width=50px}
+![](images/conformity.png){width=50px}
 
 ::: {.notes}
 middle range theories
+= comparisons
+Archaeology establishes facts and proposes scenarios to connect these facts, formulating possibilities and identifying the most probable ones within them. Over-valuing a specific element by giving it a marker character is fundamentally very dangerous, as its very originality makes its management uncontrollable in practice.
 :::
 
 ## Type of statistics
@@ -112,18 +150,24 @@ middle range theories
 :::: {.columns}
 
 ::: {.column width="33%"}
-![descriptive](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Histogram_of_arrivals_per_minute.svg/1920px-Histogram_of_arrivals_per_minute.svg.png){width=200px}
+![descriptive](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Histogram_of_arrivals_per_minute.svg/1920px-Histogram_of_arrivals_per_minute.svg.png){height=300px}
 :::
 
 ::: {.column width="33%"}
-![explanatory](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){width=200px}
+![explanatory](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){height=300px}
 :::
 
 ::: {.column width="33%"}
-![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){height=300px}
 :::
 
 ::::
+
+::: {.notes}
+middle range theories
+= comparisons
+:::
+
 
 ## Type of statistics
 
