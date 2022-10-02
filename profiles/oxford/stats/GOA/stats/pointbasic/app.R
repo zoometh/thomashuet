@@ -7,14 +7,18 @@ ui <- fluidPage(
     sidebarPanel(
       selectInput("geom", 
                   label = "Geometry type",
-                  choices = c("Point", "Line", "Polygon"),
+                  choices = c("Point",
+                              "Line",
+                              "Polygon"),
                   selected = "Point"),
       checkboxGroupInput("stat",
                          label = "Display",
-                         choices = c("Centroid",
-                                     "Convexhull",
+                         choices = c("Convexhull",
                                      "Bounding box",
-                                     "Bounding circle"))
+                                     "Bounding circle",
+                                     "Centroid",
+                                     "Delaunay",
+                                     "Dirichlet"))
     ),
     mainPanel(
       fluidRow(plotOutput(outputId = "spatPlot")
@@ -31,7 +35,7 @@ server <- function(input, output) {
   pts <- runifpoint(5, win = w)
   output$spatPlot <- renderPlot({
     if (input$geom == "Point") {
-      plot(pts)
+      plot(pts, pch = 16)
       if ("Bounding circle" %in% input$stat) {
         mbc <- boundingcircle(pts)
         plot(mbc, add = TRUE)
@@ -48,7 +52,21 @@ server <- function(input, output) {
       if ("Centroid" %in% input$stat) {
         ctr <- centroid.owin(pts, as.ppp = FALSE)
         # plot(pts)
-        points(mean(pts$x), mean(pts$y), pch = 16)
+        points(mean(pts$x), mean(pts$y))
+      }
+      if ("Dirichlet" %in% input$stat) {
+        # ctr <- centroid.owin(pts, as.ppp = FALSE)
+        # # plot(pts)
+        # points(mean(pts$x), mean(pts$y), pch = 16)
+        thiessen <- dirichlet(pts)
+        plot(thiessen, add = TRUE)
+      }
+      if ("Delaunay" %in% input$stat) {
+        # ctr <- centroid.owin(pts, as.ppp = FALSE)
+        # # plot(pts)
+        # points(mean(pts$x), mean(pts$y), pch = 16)
+        thiessen <- delaunay(pts)
+        plot(thiessen, add = TRUE, col = "red")
       }
     }
     if (input$geom == "Line") {

@@ -1,61 +1,30 @@
-library(spatstat)
+library(shiny)
+library(plotly)
 
-x1 <- seq(1:10)
-w <- as.owin(c(min(x1), max(x1),
-               min(x1), max(x1)))
-plot(w, lwd=3, main = "")
-pts <- runifpoint(5, win = w)
-plot(pts)
-
-ch <- convexhull(pts)
-plot(ch, add = TRUE)
-
-ctr <- centroid.owin(pts, as.ppp = FALSE)
-points(mean(pts$x), mean(pts$y), pch = 16)
-
-segments(x0 = pts$x[-length(pts$x)], 
-         y0 = pts$y[-length(pts$y)], 
-         x1 = pts$x[-1], 
-         y1 = pts$y[-1],
-         col = "darkgreen")
-
-plot(boundingcircle(pts), add = TRUE)
-
-
-X <- psp(runif(5), runif(5), runif(5), runif(5), window=w)
-m <- data.frame(A=1:5, B=letters[1:5])
-X <- psp(runif(5, min = 0, max = 10),
-         runif(5, min = 0, max = 10),
-         runif(5, min = 0, max = 10),
-         runif(5, min = 0, max = 10), window=w, marks=m)
-
-
-d <-data.frame(x0 = pts$x[-length(pts$x)], 
-               y0 = pts$y[-length(pts$y)], 
-               x1 = pts$x[-1], 
-               y1 = pts$y[-1])
-d$xmean <- rowMeans(cbind(d$x0, d$x1))
-d$ymean <- rowMeans(cbind(d$y0, d$y1))
-points(d$xmean, 
-       d$ymean,
-       pch = 16,
-       col = "darkgreen")
-
-#############################
-library(HistData)
-data(Arbuthnot)
-# plot the sex ratios
-with(Arbuthnot, plot(Year, Ratio, type='b', ylim=c(1, 1.20), ylab="Sex Ratio (M/F)"))
-abline(h=1, col="red")
-#  add loess smooth
-Arb.smooth <- with(Arbuthnot, loess.smooth(Year,Ratio))
-lines(Arb.smooth$x, Arb.smooth$y, col="blue", lwd=2)
-
-# plot the total christenings to observe the anomalie in 1704
-with(Arbuthnot, plot(Year,Total, type='b', ylab="Total Christenings"))
-var.test(Arbuthnot$Males, Arbuthnot$Females, alternative = "two.sided")
-# res.ftest <- var.test(Males ~ Females, data = Arbuthnot)
-# res.ftest
-#################################
-
-
+shinyApp(
+  ui = fluidPage(
+    tabsetPanel(
+      tabPanel("Map", fluid = TRUE,
+               sidebarLayout(
+                 sidebarPanel(selectInput("Country", "Select Country", choices = "", selected = "")),
+                 mainPanel(
+                   htmlOutput("Attacks")
+                 )
+               )
+      ),
+      tabPanel("plot", fluid = TRUE,
+               sidebarLayout(
+                 sidebarPanel(sliderInput("year", "Year:", min = 1968, max = 2009, value = 2009, sep='')),
+                 mainPanel(fluidRow(
+                   column(7,  plotlyOutput("")),
+                   column(5, plotlyOutput(""))   
+                 )
+                 )
+               )
+      )
+    )
+  ), 
+  server = function(input, output) {
+    
+  }
+)

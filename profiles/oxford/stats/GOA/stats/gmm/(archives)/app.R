@@ -4,57 +4,43 @@ library(Momocs)
 library(shiny)
 
 ui <- fluidPage(
-  tabsetPanel(
-    tabPanel("Single", fluid = TRUE,
-             sidebarLayout(
-               sidebarPanel(
-                 sliderInput("bot",
-                             label = "Select one bootle",
-                             min = 1, value = 1, max = length(bot)),
-                 selectInput("points",
-                             label = "Show points",
-                             choices = c("Yes","No"),
-                             selected = "No"),
-                 sliderInput("efourier",
-                             label = "number of harmonics",
-                             min = 2, value = 12, max = 20)
-               ),
-               mainPanel("Shape", 
-                         plotOutput(outputId = "onePlot")
-               )
-             )
+  sidebarLayout(
+    sidebarPanel(
+    sliderInput("bot",
+                label = "Select one bootle",
+                min = 1, value = 1, max = length(bot)),
+    selectInput("points",
+                label = "Show points",
+                choices = c("Yes","No"),
+                selected = "No"),
+    sliderInput("efourier",
+                label = "number of harmonics",
+                min = 2, value = 12, max = 20),
+    selectInput("scale",
+                label = "Scale",
+                choices = c("Not centered, Not scaled",
+                            "Centered",
+                            "Centered-Scaled"),
+                selected = "Not centered, Not scaled"),
+    selectInput("gmm",
+                label = "gmm",
+                choices = c("PCA",
+                            "CLUST",
+                            "KMEANS"),
+                selected = "PCA"),
+    sliderInput("kmeans",
+                label = "Number of Kmeans centers",
+                min = 2, value = 3, max = 7)
     ),
-    tabPanel("Compare", fluid = TRUE,
-             sidebarLayout(
-               sidebarPanel(
-                 selectInput("scale",
-                             label = "Scale",
-                             choices = c("Not centered, Not scaled",
-                                         "Centered",
-                                         "Centered-Scaled"),
-                             selected = "Not centered, Not scaled")
-               ),
-               mainPanel("Shape Comparison", 
-                         plotOutput(outputId = "stackPlot")
-               )
-             )
-    ),
-    tabPanel("Classify", fluid = TRUE,
-             sidebarLayout(
-               sidebarPanel(
-                 selectInput("gmm",
-                             label = "gmm",
-                             choices = c("PCA",
-                                         "CLUST",
-                                         "KMEANS"),
-                             selected = "PCA"),
-                 sliderInput("kmeans",
-                             label = "Number of Kmeans centers",
-                             min = 2, value = 3, max = 7)
-               ),
-               mainPanel("Shape Analysis", 
-                         plotOutput(outputId = "gmmPlot"))
-             )
+    mainPanel(
+      tabsetPanel(
+        tabPanel("Shape", 
+                 plotOutput(outputId = "onePlot")),
+        tabPanel("Shape Comparison", 
+                 plotOutput(outputId = "stackPlot")),
+        tabPanel("Shape Analysis", 
+                 plotOutput(outputId = "gmmPlot"))
+      )
     )
   )
 )

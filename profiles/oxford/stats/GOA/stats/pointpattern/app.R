@@ -64,25 +64,32 @@ server <- function(input, output) {
       Kpts <- ppp(coordinates(random.pt)[ , 1],
                   coordinates(random.pt)[ , 2],
                   window = w)
-      L <- Lest(Kpts, correction = "Ripley")
-      plot(L, xlab="d (units)", ylab = "K(d)")
+      E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE, verbose=FALSE)
+      # L <- Lest(Kpts, correction = "Ripley")
+      plot(E, xlab="d (units)", ylab = "K(d)", main = "Random")
     }
     else if (input$ppa == "Regular") {
       Kpts <- ppp(coordinates(regular.pt)[ , 1],
                   coordinates(regular.pt)[ , 2],
                   window = w)
-      L <- Lest(Kpts, correction = "Ripley")
-      plot(L, xlab="d (units)", ylab = "K(d)")
+      E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE, verbose=FALSE)
+      # L <- Lest(Kpts, correction = "Ripley")
+      plot(E, xlab="d (units)", ylab = "K(d)", main = "Regular")
     }
     else if (input$ppa == "Clustered") {
       Kpts <- ppp(coordinates(cluster.pt)[ , 1],
                   coordinates(cluster.pt)[ , 2],
                   window = w)
-      L <- Lest(Kpts, correction = "Ripley")
-      plot(L, xlab="d (units)", ylab = "K(d)")
+      E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE, verbose=FALSE)
+      # plot(E)
+      # L <- Lest(Kpts, correction = "Ripley")
+      plot(E, xlab="d (units)", ylab = "K(d)", main = "Clustered")
     }
   })
 }
 
 
 shinyApp(ui, server)
+
+# E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE)
+# plot(E)

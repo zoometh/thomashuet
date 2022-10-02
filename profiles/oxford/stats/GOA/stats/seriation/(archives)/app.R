@@ -26,10 +26,9 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  # seriat <- read.csv("https://raw.githubusercontent.com/zoometh/thomashuet/main/profiles/oxford/stats/GOA/seriation.csv", row.name = 1)
-  seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv",row.name = 1)
-  # rownames(seriat) <- seriat$X
-  # seriat$X <- NULL
+  seriat <- read.csv("https://raw.githubusercontent.com/zoometh/thomashuet/main/profiles/oxford/stats/GOA/seriation.csv")
+  rownames(seriat) <- seriat$X
+  seriat$X <- NULL
   seriat <- as.matrix(seriat)
   output$seriatePlot <- renderPlot({
     if (input$seriate == "Raw dataframe"){
@@ -51,20 +50,3 @@ server <- function(input, output) {
 
 
 shinyApp(ui, server)
-
-# fibulae <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv",row.name = 1)
-# fibulae <- read.csv("fibulae.csv", header = TRUE, sep = ",", row.name=1)
-# names(fibulae)
-# ca_fib <- ca(fibulae)
-# plot(ca_fib, dim = c(1,2), 
-#      map = "rowprincipal", 
-#      what = c("all", "all"),
-#      mass=c(TRUE, TRUE),
-#      contrib=c("relative", "relative"),
-#      col=c("darkslategray4", "salmon4"),
-#      labels=c(2,2),
-#      col.lab = c("darkslategray4", "salmon4"),
-#      xlim=c(1,1), ylim=c(-2,3),
-#      xlab = "1st CA-Axis",
-#      ylab = "2nd CA-Axis", cex.lab=.9)
-# title(main="Biplot of the CA of the Fibulae in Szentloerinc", sub= "(symmetric biplot with rows in Principalcoordinates)", cex.sub=.75)

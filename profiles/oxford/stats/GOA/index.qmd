@@ -1,8 +1,7 @@
 ---
-title: "Statistical Reasoning and Computer Scripting in Archaeology"
+title: "Statistics and Computer Scripts in Archaeology"
 # subtitle: "Create beautiful interactive slide decks with Reveal.js"
 author: "Thomas Huet (University of Oxford, EAMENA project)"
-server: shiny
 format:
   revealjs: 
     slide-number: true
@@ -24,25 +23,9 @@ library(shiny)
 library(rmarkdown)
 ```
 
-This presentation will show you examples of statistical processes in archaeology and how these processes can be automated with computer scripts
+This presentation will show you examples of **statistical processes** in archaeology and how these processes can be automated with **computer scripts**
 
 
-## Shiny
-
-```{r}
-sliderInput("bins", "Number of bins:", 
-            min = 1, max = 50, value = 30)
-plotOutput("distPlot")
-```
-
-```{r}
-#| context: server
-output$distPlot <- renderPlot({
-  x <- faithful[, 2]  # Old Faithful Geyser data
-  bins <- seq(min(x), max(x), length.out = input$bins + 1)
-  hist(x, breaks = bins, col = 'darkgray', border = 'white')
-})
-```
 
 ## Historiography of Archaeology
 
@@ -62,28 +45,19 @@ Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-co
 :::
 
 ::: {.notes}
-With the development of prehistory, archaeology has the characteristic of seeking to unite the history of Nature with that of Man by focusing on the most ancient past. With Montelius (archaeo), Darwin (biol) and Lyell (geol.), there is a concomitance between biological "species" and archaeological "types". 
-Culture-Historical is the 2nd revolution in archaeology. Based on national traditions.
-New Archaeology, or Processual archaeology, see the advent of statistics. With the development of anthropology, archaeology became interested in the recent past
+With the development of *Prehistory*, archaeology seeks to unite the history of Nature with that of Man by focusing on the most ancient past. With Montelius (archaeo), Darwin (biol) and Lyell (geol.), there is a concomitance between biological "species" and archaeological "types". 
+*Culture-Historical* is the 2nd revolution in archaeology. Based on national traditions.
+*New Archaeology*, or Processual archaeology, see the advent of statistics. With the development of anthropology, archaeology became interested in the recent past. No longer has a historical aim but an anthropological and explanatory aim (horizontal layer) Deconstructs the notion of 'culture' by speaking of 'social space' and 'polythetic dataset'. Hypothetico-deductive, favorates hypothesis/models/tests. 
 
 :::
 
-## Historiography of Archaeology
-
-| Start     | Period | Description |
-|:----------|:-------|:------------|
-| 1850      | Prehistory  | evolution, geology, early anthropology |
-| 1950      | Culture-Historical  | typology (similarities), chronology, 14C |
-| **1960**      | **New archaeology**  | **chain operative, statistics** |
-| 1980      | Post-processual  | dissimilarities, cultural relativism |
-| **2020**      | **Tool-driven**  | **Big data, ML / DL, aDNA** |
-
-: {tbl-colwidths="[15,35,50]"}
+## Birth of statistics
 
 ::: {.notes}
-New Archaeology no longer has a historical aim but an anthropological and explanatory aim  
-deconstructs the notion of 'culture' by speaking of 'social space' and 'polythetic dataset' 
-::: 
+Statistik (description of a state, a country): collecting population data through census, surveys 
+						!= probability. Based on social data (!= mathematics). Statistics need to analyse large amount of data (dataset), Statistics are manded by institutions, to be interesting they need to be realised over the long term to allow comparisons.
+:::
+ 
 
 ## Birth of statistics - median
 
@@ -94,7 +68,6 @@ deconstructs the notion of 'culture' by speaking of 'social space' and 'polythet
 :::
 
 ::: {.column width="50%"}
-Right column
 ![](images/compass-map.png){height=400px}
 :::
 
@@ -105,12 +78,16 @@ Right column
 :::: {.columns}
 
 ::: {.column width="40%"}
-![Quetelet census 1821-33](images/arbuthnot-1629-1710.png){width=300px}
-'From whence it follows, that it is Art, not Chance, that governs' (J. Arbuthnot)
+![Arbuthnot 1629-1710: 'From whence it follows, that it is Art, not Chance, that governs'](images/aut-arbuthnot-1629-1710.png){height=400px}
+
 :::
 
 ::: {.column width="60%"}
-![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){width=300px}
+![*p-value* and *Z-score*, two normalised test thresholds to estimate the significance of an observed distribution *vs* a random distribution](images/stat-pvalue.png){height=400px}
+:::
+
+::: {.notes}
+*p-value* is a test value, 95% = > .05
 :::
 
 ::::
@@ -120,19 +97,15 @@ Right column
 :::: {.columns}
 
 ::: {.column width="40%"}
-![Quetelet census 1821-33](images/quetelet_1821-33_census.png){width=300px}
+![Quetelet census 1821-33](images/aut-quetelet_1821-33_census.png){height=400px}
 :::
 
 ::: {.column width="60%"}
-![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){width=300px}
+![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=400px}
 :::
 
 ::::
 
-::: {.notes}
-Statistik (description of a state, a country): collecting population data through census, surveys 
-						!= probability. Based on social data (!= mathematics). Statistics need to analyse large amount of data (dataset), Statistics are manded by institutions, to be interesting they need to be realised over the long term to allow comparisons.
-:::
 
 ## Middle Range Theories 
 
@@ -150,33 +123,38 @@ Archaeology establishes facts and proposes scenarios to connect these facts, for
 :::: {.columns}
 
 ::: {.column width="33%"}
-![descriptive](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Histogram_of_arrivals_per_minute.svg/1920px-Histogram_of_arrivals_per_minute.svg.png){height=300px}
+![Descriptive](images/stat-histogram.png){height=400px}
 :::
 
 ::: {.column width="33%"}
-![explanatory](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){height=300px}
+![Explanatory](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){height=400px}
 :::
 
 ::: {.column width="33%"}
-![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){height=300px}
+![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){height=400px}
 :::
 
 ::::
 
 ::: {.notes}
-middle range theories
-= comparisons
+Explanatory -> New Archaeology
 :::
 
 
-## Type of statistics
+## Type of statistics - descriptive
 
+::: {layout-nrow=2}
+![Scatterplot](images/stat-scatterplot.png){height=200px}
 
-|           |        | 
-|:----------|:-------|
-| descriptive      | 📊  |
-| explanatory      | ![explanatory](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/GaussianScatterPCA.svg/800px-GaussianScatterPCA.svg.png){width=150px} |
-| confirmatory      | ![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px} |
+![Histogram](images/stat-histogram.png){height=200px}
+
+![Boxplot](images/stat-boxplot.png){height=200px}
+
+![Pie Chart](images/stat-piechart.png){height=200px}
+
+![Lin Wang](lin-wang.png)
+:::
+
 
 ## Distributions
 
@@ -220,25 +198,17 @@ Histogram = discretization = bins = change of scale
 
 ## Change of scale
 
-:::: {.columns}
+::: {layout-nrow=2}
 
-::: {.column width="25%"}
-![quantitative](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
+![quantitative](images/stat-scale-quant.png){width=200px}
+
+![ordinal](images/stat-scale-ord.png){width=200px}
+
+![nominal](images/stat-scale-nom.png){width=200px}
+
+![bimodal](images/stat-scale-bimod.png){width=200px}
+
 :::
-
-::: {.column width="25%"}
-![ordinal](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
-:::
-
-::: {.column width="25%"}
-![nominal](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
-:::
-
-::: {.column width="25%"}
-![bimodal](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){width=200px}
-:::
-
-::::
 
 
 
@@ -254,11 +224,14 @@ Histogram = discretization = bins = change of scale
 ## 2-dimensions data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim2/"}
 
 ::: {.notes}
-TODO: show coeff
+TODO: show coeff value
 bi-variate
 utiliser la regression de 
 Renfrew, C., & Bahn, P. (2012). Archaeology: theories, methods and practice. Thames and Hudson
 regression = parcimonious = RMS
+SD, standardize residuals: standard deviation. The SD represents the "distance" between the mean value and the value under consideration, expressed as a number of standard deviations. In the context of a regression, the SD gives an idea of the "distance" of an individual (described by one or more variables) from the value estimated if the model were perfect (R2=1, i.e. all points aligned on the least squares line) (SS BIB). 
+The standard deviation between the value that the variable characterising an individual takes and its expected value (normal distribution). The standard deviation (or standardised residuals) makes it possible to avoid the size effect. The latter would not allow working with individuals with extremely different numbers (BIB 1526). 
+If the series studied is normal, the standard deviations of the values of this series follow a normal distribution of mean 0 and standard deviation 1, i.e. a centred-reduced normal distribution (internet)
 :::
 
 ## 2-dimensions spatial data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointbasic/"}
@@ -363,6 +336,33 @@ AI
 | logic      | `>_` |
 | hardware      | 🔬 |
 
+<table>
+    <thead>
+        <tr>
+            <th>Layer 1</th>
+            <th>Layer 2</th>
+            <th>Layer 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=4>L1 Name</td>
+            <td rowspan=2>L2 Name A</td>
+            <td>L3 Name A</td>
+        </tr>
+        <tr>
+            <td>L3 Name B</td>
+        </tr>
+        <tr>
+            <td rowspan=2>L2 Name B</td>
+            <td>L3 Name C</td>
+        </tr>
+        <tr>
+            <td>L3 Name D</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Research workflow
 
 
@@ -372,4 +372,8 @@ XLSX ➡️ `>_` ➡️ 📊
 no DB
 no Illustrator
 :::
+
+## Logic layer
+
+R is the 1️⃣<sup>st</sup> programming language used by archaeologists, and the 11<sup>th</sup> worldwide
 
