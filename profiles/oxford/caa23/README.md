@@ -3,9 +3,9 @@
 # S12. Chronological modelling: formal methods and research software
 
 <p style="font-size: 10px">
-&emsp;Eythan Levy, University of Bern, Department of Jewish Studies
-&emsp;Thomas Huet, University of Oxford, School of Archaeology
-&emsp;Florian Thiery, Römisch-Germanisches Zentralmuseum, Department of Scientific IT
+&emsp;Eythan Levy, University of Bern, Department of Jewish Studies<br>
+&emsp;Thomas Huet, University of Oxford, School of Archaeology<br>
+&emsp;Florian Thiery, Römisch-Germanisches Zentralmuseum, Department of Scientific IT<br>
 &emsp;Allard W. Mees, Römisch-Germanisches Zentralmuseum, Department of Scientific IT
 </p>
 
@@ -30,7 +30,7 @@ We invite papers in all fields related to time/chronology research, including:
 We welcome papers dealing with new theoretical, methodological and research software developments in any of the above fields, in order to promote shared practices and the discovery of new ideas and paradigms.
 
 <center>
-![](www/qr-code.png)
+<img src="www/qr-code.png" alt="qrt" width="100">
 </center>
 
 ### References
