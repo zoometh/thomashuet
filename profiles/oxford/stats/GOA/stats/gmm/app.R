@@ -10,14 +10,14 @@ ui <- fluidPage(
                sidebarPanel(
                  sliderInput("bot",
                              label = "Select one bootle",
-                             min = 1, value = 1, max = length(bot)),
+                             min = 1, value = 1, max = length(bot), step = 1),
                  selectInput("points",
                              label = "Show points",
                              choices = c("Yes","No"),
                              selected = "No"),
                  sliderInput("efourier",
                              label = "number of harmonics",
-                             min = 2, value = 12, max = 20)
+                             min = 2, value = 10, max = 20)
                ),
                mainPanel("Shape", 
                          plotOutput(outputId = "onePlot")
@@ -61,19 +61,27 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$onePlot <- renderPlot({
-    a.bot <- bot[input$bot]
+    idx <- input$bot
+    idx <- idx + .5
+    a.bot <- bot[idx]
+    harm <- input$efourier
+    ef <- efourier(a.bot, harm)
+    efi <- efourier_i(ef)
+    print(input$bot)
+    # print(input$efourier)
     if (input$points == "Yes"){
-      ef <- efourier(a.bot, input$efourier)
-      efi <- efourier_i(ef)
+      # ef <- efourier(a.bot, input$efourier)
+      # efi <- efourier_i(ef)
       coo_plot(efi, border='black', main = paste(names(bot)[input$bot], "\n",
                                                  input$efourier, " harmonics"),
                points = TRUE, pch = 16)
     }
     else if (input$points == "No"){
-      print(input$bot)
-      ef <- efourier(a.bot, input$efourier)
-      efi <- efourier_i(ef)
-      coo_plot(efi, border='black', main = paste(names(bot)[input$bot], "\n",
+      # ef <- efourier(a.bot, input$efourier)
+      # # print(a.bot)
+      # # print(input$efourier)
+      # efi <- efourier_i(ef)
+      coo_plot(efourier_i(ef), border='black', main = paste(names(bot)[input$bot], "\n",
                                                  input$efourier, " harmonics"))
       # coo_plot(a.bot)
     }

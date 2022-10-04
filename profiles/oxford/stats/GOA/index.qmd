@@ -131,7 +131,7 @@ Archaeology establishes facts and proposes scenarios to connect these facts, for
 :::
 
 ::: {.column width="33%"}
-![confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){height=400px}
+![Confirmatory](https://upload.wikimedia.org/wikipedia/commons/b/bf/NormalDist1.96.png){height=400px}
 :::
 
 ::::
@@ -200,13 +200,13 @@ Histogram = discretization = bins = change of scale
 
 ::: {layout-nrow=2}
 
-![quantitative](images/stat-scale-quant.png){width=200px}
+![quantitative](images/stat-scale-quant.png){width=300px}
 
-![ordinal](images/stat-scale-ord.png){width=200px}
+![ordinal](images/stat-scale-ord.png){width=300px}
 
-![nominal](images/stat-scale-nom.png){width=200px}
+![nominal](images/stat-scale-nom.png){width=300px}
 
-![bimodal](images/stat-scale-bimod.png){width=200px}
+![bimodal](images/stat-scale-bimod.png){width=300px}
 
 :::
 
@@ -318,6 +318,9 @@ Seriation = Guttman effect = horse shoe = arc
 = relation directe sur la sphere
 :::
 
+::: footer
+Current dataset: [Schneider, Ágnes. (2020). *Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary*](https://ojs.elte.hu/dissarch/article/view/2262/2082)
+:::
 
 ## XXI century
 
