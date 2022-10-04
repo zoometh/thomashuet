@@ -622,3 +622,25 @@ Database Development
     - *'Dive into Heritage Digital Platform - Online Technical Meeting on the platform development'*
 - session organisation:
     - CAA23, [S12. 'Chronological modelling: formal methods and research software'](https://2023.caaconference.org/submissions/sessions/)
+
+#### EAMENA/MaREA database meeting
+
+- Arches v7
+    - 270 Transifex lines translated from `en` to `ar`
+    - EAMENA will be a new authority on [PeriodO](https://perio.do/en/)
+- restored YHMP:
+    - data are preserved, need to fix some [index errors](https://community.archesproject.org/t/arches-v3-loading-results-loading-resource-data-issue/1701?u=zoometh)
+- re-formatting business data from the [`eamena.levant.training` DB](http://levant.eamena.training/) in a bulk for 110 HPs
+    - see this [GitHub page](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/mapping/v3_to_v5/eamena_csv_export#eamena_2022-09-26_03-23-29csv--resource_relationshipscsv)
+    - see the [data + outputs](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk/bu/v3)
+- ring-fencing
+    - worked with Kristen & Ash (until now I have only worked on it in point form, I need feed back from users)
+    - installation files and tutorial are on [GitHub](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/permissions)
+    - installed on a [training EAMENA instance](http://34.244.135.144/)
+    - scheduled to practice, complete the documentation ASAP
+- plannifying the migration of our back-ups from a hot to a cold AWS storage
+- working on the referencing of photograph databases (APAAME, Mana-al-Athar, etc.) into the DB
+    - see [the workflow](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/apaame-photos)
+    - BU information resource for Manar-al-Athar (for example)
+- developping the [eamenaR package](https://github.com/eamena-oxford/eamenaR)
+- Ash, developping a [Python function](https://github.com/ads04r/arches-dataquality-plugin) to model the quality of the data
