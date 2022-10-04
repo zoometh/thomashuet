@@ -33,7 +33,7 @@ We welcome papers dealing with new theoretical, methodological and research soft
 <center>
 <img src="www/qr-code.png" alt="qrt" width="200">
 </center>
-<\p>
+</p>
 
 ### References
 
