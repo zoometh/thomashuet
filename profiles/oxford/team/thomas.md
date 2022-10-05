@@ -624,6 +624,7 @@ Database Development
     - CAA23, [S12. 'Chronological modelling: formal methods and research software'](https://2023.caaconference.org/submissions/sessions/)
 
 #### EAMENA/MaREA database meeting
+> 4/10/22
 
 EAMENA DB
 
@@ -639,7 +640,7 @@ EAMENA DB
 - working on the referencing of photograph databases (APAAME, Mana-al-Athar, etc.) into the DB
     - see [the workflow](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/apaame-photos)
     - BU information resource for Manar-al-Athar (for example)
-- created a IIIF resource model
+- created a IIIF resource model (it will be deployed in Arches 7)
 - developping the [eamenaR package](https://github.com/eamena-oxford/eamenaR)
 - Ash, developping a [Python function](https://github.com/ads04r/arches-dataquality-plugin) to model the quality of the data
 
@@ -650,3 +651,27 @@ Other databases
 - re-formatting business data from the [`eamena.levant.training` DB](http://levant.eamena.training/) in a bulk for 110 HPs
     - see this [GitHub page](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/mapping/v3_to_v5/eamena_csv_export#eamena_2022-09-26_03-23-29csv--resource_relationshipscsv)
     - see the [data + outputs](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk/bu/v3)
+
+#### ManCom meeting
+> 5/10/22
+
+DB
+ - Internationalisation
+    - french is ready for use, Hebrew and Urdu will come soon, the rest 270 strings to translate (Arabic) or more. See: https://www.transifex.com/archesproject/arches-70/dashboard/
+ - Ring-fencing
+     - worked with Kristen & Ash (until now I have only worked on it in point form, I need feed back from users)
+    - installation files and tutorial are on [GitHub](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/permissions)
+    - installed on a [training EAMENA instance](http://34.244.135.144/)
+ - IT Tools
+    - [eamenaR package](https://github.com/eamena-oxford/eamenaR)
+    - [Python function](https://github.com/ads04r/arches-dataquality-plugin) 
+- Status of other developments
+    - plannifying the migration of our back-ups from a hot to a cold AWS storage
+    - EAMENA will be a new authority on [PeriodO](https://perio.do/en/)
+    - restored [YHMP](http://18.202.251.30/search):
+        - data are preserved, need to fix some [index errors](https://community.archesproject.org/t/arches-v3-loading-results-loading-resource-data-issue/1701?u=zoometh)
+    - [`eamena.levant.training` DB](http://levant.eamena.training/): re-formatting business data in a BU for 110 HPs
+        - see this [GitHub page](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/mapping/v3_to_v5/eamena_csv_export#eamena_2022-09-26_03-23-29csv--resource_relationshipscsv) and the [data + outputs](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk/bu/v3)
+    - working on the referencing of photograph databases (APAAME, Mana-al-Athar, etc.) into the DB
+        - see [the workflow](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/apaame-photos)
+        - BU information resource for Manar-al-Athar (for example)
