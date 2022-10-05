@@ -667,7 +667,9 @@ DB
     - [Python function](https://github.com/ads04r/arches-dataquality-plugin) 
 - Status of other developments
     - plannifying the migration of our back-ups from a hot to a cold AWS storage
+    - created a IIIF resource model (it will be deployed in Arches 7)
     - EAMENA will be a new authority on [PeriodO](https://perio.do/en/)
+        - see [Slack channel](https://app.slack.com/client/T8CLY0DML/C03RTBGUY58)
     - restored [YHMP](http://18.202.251.30/search):
         - data are preserved, need to fix some [index errors](https://community.archesproject.org/t/arches-v3-loading-results-loading-resource-data-issue/1701?u=zoometh)
     - [`eamena.levant.training` DB](http://levant.eamena.training/): re-formatting business data in a BU for 110 HPs
