@@ -658,6 +658,7 @@ Other databases
 DB
  - Internationalisation
     - french is ready for use, Hebrew and Urdu will come soon, the rest 270 strings to translate (Arabic) or more. See: https://www.transifex.com/archesproject/arches-70/dashboard/
+    - migration from Arches v5 to Arches v7 planned for January/February
  - Ring-fencing
      - worked with Kristen & Ash (until now I have only worked on it in point form, I need feed back from users)
     - installation files and tutorial are on [GitHub](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/functions/permissions)
@@ -674,6 +675,6 @@ DB
         - data are preserved, need to fix some [index errors](https://community.archesproject.org/t/arches-v3-loading-results-loading-resource-data-issue/1701?u=zoometh)
     - [`eamena.levant.training` DB](http://levant.eamena.training/): re-formatting business data in a BU for 110 HPs
         - see this [GitHub page](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/mapping/v3_to_v5/eamena_csv_export#eamena_2022-09-26_03-23-29csv--resource_relationshipscsv) and the [data + outputs](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk/bu/v3)
-    - working on the referencing of photograph databases (APAAME, Mana-al-Athar, etc.) into the DB
+    - working on the referencing of photograph databases (APAAME, Mana-al-Athar, etc.) into the DB with Bob Bewley, Andrew Wilson, and Jeremy Worth.
         - see [the workflow](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/apaame-photos)
         - BU information resource for Manar-al-Athar (for example)
