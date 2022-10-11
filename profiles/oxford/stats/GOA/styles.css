@@ -7,3 +7,21 @@
 .border-thick {
   border-width: 3px;
 }
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.table, table, th, td {
+  border: 1px solid;
+  vertical-align: middle;
+  text-align: center;
+}

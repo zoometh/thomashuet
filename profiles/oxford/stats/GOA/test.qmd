@@ -1,0 +1,121 @@
+---
+title: "TEST"
+# subtitle: "Create beautiful interactive slide decks with Reveal.js"
+author: "zoometh"
+format:
+  revealjs: 
+    slide-number: true
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/inst-uni-oxford_.png
+    css: styles.css
+    footer: <https://tinyurl.com/goa-oxford>
+resources:
+  - demo.pdf
+fig-cap-location: margin
+---
+
+```{r, echo=FALSE}
+library(shiny)
+library(rmarkdown)
+library(plotly)
+library(archdata)
+
+data(OxfordPots)
+```
+
+
+## Computational Archaeology stack
+
+::: {.panel-tabset}
+
+### GitHub
+
+<a href="https://github.com">
+	<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+</a>
+The 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+
+### Stack
+
+<table class="table">
+<thead>
+  <tr>
+    <th><a href="https://www.r-project.org/">
+	<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+</a></th>
+    <th><a href="https://www.python.org/">
+	<img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+</a></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan="2"><a href="https://github.com">
+	<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+</a></td>
+  </tr>
+</tbody>
+</table>
+
+### R
+
+<table class="table">
+<thead>
+  <tr>
+    <th>R</th>
+    <th>description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Rmarkdown</td>
+    <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+  </tr>
+  <tr>
+    <td>RShiny</td>
+    <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+  </tr>
+  <tr>
+    <td>Quarto</td>
+    <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+  </tr>
+</tbody>
+</table>
+
+### Python
+
+<table class="table">
+<thead>
+  <tr>
+    <th>Python</th>
+    <th>description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Rmarkdown</td>
+    <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+  </tr>
+  <tr>
+    <td>RShiny</td>
+    <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+  </tr>
+  <tr>
+    <td>Quarto</td>
+    <td>xxxxxxxxxxxxxxxxxxxxxxxxx</td>
+  </tr>
+</tbody>
+</table>
+
+:::
+
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```

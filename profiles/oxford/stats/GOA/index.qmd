@@ -13,8 +13,8 @@ format:
     footer: <https://tinyurl.com/goa-oxford>
 resources:
   - demo.pdf
+fig-cap-location: margin
 ---
-
 
 ## Introduction
 
@@ -24,7 +24,6 @@ library(rmarkdown)
 ```
 
 This presentation will show you examples of **statistical processes** in archaeology and how these processes can be automated with **computer scripts**
-
 
 
 ## Historiography of Archaeology
@@ -40,6 +39,7 @@ This presentation will show you examples of **statistical processes** in archaeo
 : {tbl-colwidths="[15,35,50]"}
 
 
+
 ::: footer
 Learn more: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
 :::
@@ -50,6 +50,9 @@ With the development of *Prehistory*, archaeology seeks to unite the history of 
 *New Archaeology*, or Processual archaeology, see the advent of statistics. With the development of anthropology, archaeology became interested in the recent past. No longer has a historical aim but an anthropological and explanatory aim (horizontal layer) Deconstructs the notion of 'culture' by speaking of 'social space' and 'polythetic dataset'. Hypothetico-deductive, favorates hypothesis/models/tests. 
 
 :::
+
+# Statistics in Archaeology
+
 
 ## Birth of statistics
 
@@ -86,11 +89,11 @@ Statistik (description of a state, a country): collecting population data throug
 ![*p-value* and *Z-score*, two normalised test thresholds to estimate the significance of an observed distribution *vs* a random distribution](images/stat-pvalue.png){height=400px}
 :::
 
+::::
+
 ::: {.notes}
 *p-value* is a test value, 95% = > .05
 :::
-
-::::
 
 ## Birth of statistics - normal law
 
@@ -109,8 +112,20 @@ Statistik (description of a state, a country): collecting population data throug
 
 ## Middle Range Theories 
 
+:::: {.columns}
 
-![](images/conformity.png){width=50px}
+::: {.column width="40%"}
+![](images/conformity.png){height=500px}
+:::
+
+::: {.column width="60%"}
+middle range theories
+= comparisons
+Archaeology establishes facts and proposes scenarios to connect these facts, formulating possibilities and identifying the most probable ones within them. Over-valuing a specific element by giving it a marker character is fundamentally very dangerous, as its very originality makes its management uncontrollable in practice.
+:::
+
+::::
+
 
 ::: {.notes}
 middle range theories
@@ -139,6 +154,36 @@ Archaeology establishes facts and proposes scenarios to connect these facts, for
 ::: {.notes}
 Explanatory -> New Archaeology
 :::
+
+
+## Type of statistics - confirmatory
+
+<table>
+<thead>
+  <tr>
+    <th>cor</th>
+    <th>interpretation</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>0.9</td>
+    <td>oustanding</td>
+  </tr>
+  <tr>
+    <td>0.8</td>
+    <td>excellent</td>
+  </tr>
+  <tr>
+    <td>0.7</td>
+    <td>acceptable</td>
+  </tr>
+  <tr>
+    <td>0.6</td>
+    <td>?</td>
+  </tr>
+</tbody>
+</table>
 
 
 ## Type of statistics - descriptive
@@ -196,6 +241,10 @@ Data with 1 dimension = 1 measure
 Histogram = discretization = bins = change of scale
 :::
 
+::: footer
+Dataset: [`archdata` R package - `Mesolithic` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
+:::
+
 ## Change of scale
 
 ::: {layout-nrow=2}
@@ -234,6 +283,10 @@ The standard deviation between the value that the variable characterising an ind
 If the series studied is normal, the standard deviations of the values of this series follow a normal distribution of mean 0 and standard deviation 1, i.e. a centred-reduced normal distribution (internet)
 :::
 
+::: footer
+Dataset: [`archdata` R package - `OxfordPots` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
+:::
+
 ## 2-dimensions spatial data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointbasic/"}
 
 ::: {.notes}
@@ -252,7 +305,33 @@ spatial dataset
 
 random and clustered patterns
 
-![](images/bz_rockart.png){width=200px}
+::: {.panel-tabset}
+
+### BA Rock art 1
+
+<div class="row">
+  <div class="column">![](images/bz_rockart.png){height=400px}</div>
+  <div class="column">Bradley</div>
+</div>
+
+
+### NEO Rock art 2
+
+<div class="row">
+  <div class="column">![](images/eia_centralplaces.jpg){height=400px}</div>
+  <div class="column">Bego</div>
+</div>
+
+
+### BA Bronze deposit
+
+<div class="row">
+  <div class="column">![](images/lba-hoards-random.jpg){height=400px}</div>
+  <div class="column">Les formes sont centrées et ensuite, selon la direction, le point au nord, au sud, à l'est ou à l'ouest du centroïde, devient le premier point avec coo_slide. </div>
+</div>
+
+
+:::
 
 
 ::: {.notes}
@@ -264,34 +343,38 @@ clustered =
 
 regular pattern
 
-![](images/eba_tumulus.jpg){width=200px}
+::: {.panel-tabset}
 
+### EBA Tumulus
+
+<div class="row">
+  <div class="column">![](images/eba_tumulus.jpg){height=400px}</div>
+  <div class="column">Les formes sont centrées et ensuite, selon la direction, le point au nord, au sud, à l'est ou à l'ouest du centroïde, devient le premier point avec coo_slide. </div>
+</div>
+
+
+### EIA Central Places
+
+<div class="row">
+  <div class="column">![](images/eia_centralplaces.jpg){height=400px}</div>
+  <div class="column">Les formes sont centrées et ensuite, selon la direction, le point au nord, au sud, à l'est ou à l'ouest du centroïde, devient le premier point avec coo_slide. </div>
+</div>
+
+
+### EIA Emporions
+
+<div class="row">
+  <div class="column">![](images/eia_emporion.jpg){height=400px}</div>
+  <div class="column">Les formes sont centrées et ensuite, selon la direction, le point au nord, au sud, à l'est ou à l'ouest du centroïde, devient le premier point avec coo_slide. </div>
+</div>
+
+
+:::
 
 ::: {.notes}
 regular = competition
 :::
 
-## 2-dimensions spatial data
-
-regular pattern
-
-![](images/eia_centralplaces.jpg){width=200px}
-
-
-::: {.notes}
-regular = competition
-:::
-
-## 2-dimensions spatial data
-
-regular pattern
-
-![](images/eia_emporion.jpg){width=200px}
-
-
-::: {.notes}
-regular = competition
-:::
 
 ## 2-dimensions shape data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/"}
 
@@ -300,6 +383,10 @@ gmm dataset
 :::
 
 ## 3-dimensions data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/"}
+
+::: footer
+Current dataset: [ANR Itineris](https://github.com/zoometh/itineRis/blob/main/inst/extdata/dfisotops.csv)
+:::
 
 ::: {.notes}
 Useful when data are complete (chemical composition, genetics, etc.)
@@ -322,16 +409,107 @@ Seriation = Guttman effect = horse shoe = arc
 Current dataset: [Schneider, Ágnes. (2020). *Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary*](https://ojs.elte.hu/dissarch/article/view/2262/2082)
 :::
 
-## XXI century
+# Computer Scripts in Archaeology
 
+## Computer Science
+
+:::: {.columns}
+
+::: {.column width="50%"}
 ![Garry Kasparov and Deep Blue](https://cdn.britannica.com/62/71262-050-25BFC8AB/Garry-Kasparov-Deep-Blue-IBM-computer.jpg?w=690&h=388&c=crop)
+:::
+
+::: {.column width="50%"}
+![Midjourney AI](images/ai-oxford.png){height=400px}
+:::
+
+
+::::
+
+
 
 ::: {.notes}
 Deep Blue = expert system for chess
 AI
 :::
 
-## Computer stack
+## Computer science
+
+::: {.panel-tabset}
+
+### Stack
+
+<table>
+<thead>
+  <tr>
+    <th rowspan="3">software</th>
+    <th colspan="2">semantic</th>
+  </tr>
+  <tr>
+    <th rowspan="2">logic</th>
+    <th>front-end</th>
+  </tr>
+  <tr>
+    <th>back-end</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan="3">hardware</td>
+  </tr>
+</tbody>
+</table>
+
+### Back-end
+
+<a href="https://www.python.org/">
+	<img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+</a>
+<p>
+ Python is the 2️⃣⃣<sup>st</sup> programming language used by archaeologists, and the 1️⃣<sup>st</sup> worldwide
+</p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist, Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
+
+### Front-end
+
+<a href="https://www.r-project.org/">
+	<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+</a>
+<p>
+ R is the 1️⃣<sup>st</sup> programming language used by archaeologists, and the 18<sup>t<small> worldwide- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist, Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
+</p>
+:::
+
+## R and RStudio
+
+
+::: footer
+Open software for archaeology: [open-archaeo](https://open-archaeo.info/)
+:::
+
+
+## GitHub
+
+<a href="https://github.com">
+	<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+</a>
+The 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
+
+<table>
+<thead>
+  <tr>
+    <th>R</th>
+    <th>Python</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td colspan="2">GitHub</td>
+  </tr>
+</tbody>
+</table>
+
+
+## A classer
 
 |           |        | 
 |:----------|:-------|
@@ -339,44 +517,10 @@ AI
 | logic      | `>_` |
 | hardware      | 🔬 |
 
-<table>
-    <thead>
-        <tr>
-            <th>Layer 1</th>
-            <th>Layer 2</th>
-            <th>Layer 3</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=4>L1 Name</td>
-            <td rowspan=2>L2 Name A</td>
-            <td>L3 Name A</td>
-        </tr>
-        <tr>
-            <td>L3 Name B</td>
-        </tr>
-        <tr>
-            <td rowspan=2>L2 Name B</td>
-            <td>L3 Name C</td>
-        </tr>
-        <tr>
-            <td>L3 Name D</td>
-        </tr>
-    </tbody>
-</table>
-
-## Research workflow
-
-
 XLSX ➡️ `>_` ➡️ 📊
 
 ::: {.notes}
 no DB
 no Illustrator
 :::
-
-## Logic layer
-
-R is the 1️⃣<sup>st</sup> programming language used by archaeologists, and the 11<sup>th</sup> worldwide
 

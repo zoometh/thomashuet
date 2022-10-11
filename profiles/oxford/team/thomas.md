@@ -607,7 +607,7 @@ Database Development
     - BU for Mohamed
     - solving an [BU issue](https://community.archesproject.org/t/how-to-remove-a-null-geometry-from-a-resource/1694?u=zoometh) for Nichole
 - developing ***eamenaR*** logic while Bijan works on data
-- will give a 45-min lecture at the GOA Skills Seminar: 'Statistical reasoning and computer scripting in archaeology' (MT2, 17 Oct)
+- will give a 45-min lecture at the GOA Skills Seminar: *'Statistical reasoning and computer scripting in archaeology'* (MT2, ~~17~~ 19 Oct)
 
 #### Week -1
 
@@ -678,3 +678,18 @@ DB
     - working on the referencing of photograph databases (APAAME, Mana-al-Athar, etc.) into the DB with Bob Bewley, Andrew Wilson, and Jeremy Worth.
         - see [the workflow](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/projects/apaame-photos)
         - BU information resource for Manar-al-Athar (for example)
+
+#### Week 1
+
+- solved the glich on [YHMP](http://18.202.251.30/search)
+- met with Will and Sayantani to have an update on the  [`eamena.levant.training` DB](http://levant.eamena.training/)
+- working on moving AWS back-ups (~ 36.3 TB) into cold storage: https://eamena-oxford.github.io/eamena-arches-dev/AWS/Pricing
+    - Glacier.Deep.Archive is the cheapest and most convenient storage service, see these estimations: https://eamena-oxford.github.io/eamena-arches-dev/AWS/Pricing
+- worked with:
+    - Bill and Bijan on the GCI-DoA-EAMENA agreement
+    - Bijan and Michael on the Arcadia 2024
+- APAAME/ArchDAMS:
+    - starting to develop a Python script to red/format metadata
+    - exchanges with Bob and Jeremy on the APAAME/ArchDAMS database
+- some BU mapping work for Mohamed's new sheet (diffrent shape)
+- preparing my GAO lecture *'Statistical reasoning and computer scripting in archaeology'* (MT2, 19 Oct)

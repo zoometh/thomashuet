@@ -4,88 +4,86 @@
 library(plotly)
 library(jsonlite)
 
-URL <- "https://gist.githubusercontent.com/davenquinn/988167471993bc2ece29/raw/f38d9cb3dd86e315e237fde5d65e185c39c931c2/data.json"
-ds <- fromJSON(txt = URL)
+# df.isotop$Pb206_Pb204.perc <- round((df.isotop$Pb206_Pb204/(df.isotop$Pb206_Pb204 + df.isotop$Pb207_Pb204 + df.isotop$Pb208_Pb204) * 100), 2)
+# df.isotop$Pb207_Pb204.perc <- round((df.isotop$Pb207_Pb204/(df.isotop$Pb206_Pb204 + df.isotop$Pb207_Pb204 + df.isotop$Pb208_Pb204) * 100), 2)
+# df.isotop$Pb208_Pb204.perc <- round((df.isotop$Pb208_Pb204/(df.isotop$Pb206_Pb204 + df.isotop$Pb207_Pb204 + df.isotop$Pb208_Pb204) * 100), 2)
+# 
+# write.csv2(df.isotop, paste0(getwd(), "/dfisotops.csv"))
 
-colors = c('#8dd3c7','#ffffb3','#bebada',
-           '#fb8072','#80b1d3','#fdb462',
-           '#b3de69','#fccde5','#d9d9d9',
-           '#bc80bd','#ccebc5','#ffed6f')
+df.isotop <- read.csv2(paste0(dirname(rstudioapi::getSourceEditorContext()$path),
+                              "/dfisotops.csv"), sep = ";")
+df.isotop$lbl <- paste0(df.isotop$num, "\n", 
+                        "Pb206/204: ", df.isotop$Pb206_Pb204.perc, "% \n",
+                        "Pb207/204: ", df.isotop$Pb207_Pb204.perc, "% \n",
+                        "Pb208/204: ", df.isotop$Pb208_Pb204.perc, "%")
+
+# # axis layout
+# axis <- function(title) {
+#   list(
+#     title = title,
+#     titlefont = list(
+#       size = 20
+#     ),
+#     tickfont = list(
+#       size = 15
+#     ),
+#     tickcolor = 'rgba(0,0,0,0)',
+#     ticklen = 5
+#   )
+# }
 
 ui <- fluidPage(
   # tags$style('.container-fluid {
   #                            background-color: #000000;
   #             }'),
-  radioButtons("ternary", "", choices = c("points", "areas")
-               # choiceNames = list(
-               #   HTML("<font color='grey'>points</font>"),
-               #   HTML("<font color='grey'>areas</font>")
-               # ),
-               # choiceValues = c("points", "areas"),
-               # selected = "areas"
+  checkboxGroupInput("objects", "objects",
+                     choices = c("golasecca", "hochdorf"),
+                     selected = "hochdorf"
+  ),
+  checkboxGroupInput("mines", "mines",
+                     choices = c("France", "Iberian Peninsula", "Switzerland"),
+                     selected = "France"
   ),
   plotlyOutput("graph")
 )
 
 server <- function(input, output, session){
   output$graph <- renderPlotly({
-    if(input$ternary == "points"){
-      p <- plot_ly()
-      for(i in 1:length(ds)){
-        p <- add_trace(p,
-                       data = ds[[i]],
-                       a = ~clay,
-                       b = ~sand,
-                       c = ~silt,
-                       type = "scatterternary",
-                       mode = "lines+markers",
-                       # evaluate = T,
-                       line = list(color = "black"))
-      }
-      p <- layout(p,
-                  title ="",
-                  showlegend = F,
-                  # font = list(color = "grey"),
-                  # paper_bgcolor='#000000',
-                  xaxis = list(title = "", showgrid = F, zeroline = F, showticklabels = F),
-                  yaxis = list(title = "", showgrid = F, zeroline = F, showticklabels = F),
-                  # sum = 100,
-                  ternary = list(
-                    aaxis = list(title = "Clay", tickformat = ".0%", tickfont = list(size = 10)),
-                    baxis = list(title = "Sand", tickformat = ".0%", tickfont = list(size = 10)),
-                    caxis = list(title = "Silt", tickformat = ".0%", tickfont = list(size = 10)))
+    df.isotop.filtered <- df.isotop[df.isotop$object %in% c(input$objects, input$mines), ]
+    min206 <- min(df.isotop$Pb206_Pb204)
+    min207 <- min(df.isotop$Pb207_Pb204)
+    min208 <- min(df.isotop$Pb208_Pb204)
+    fig <- plot_ly(df.isotop.filtered) %>%
+      add_trace(
+        type = 'scatterternary',
+        mode = 'markers',
+        a = ~Pb206_Pb204.perc,
+        b = ~Pb207_Pb204.perc,
+        c = ~Pb208_Pb204.perc,
+        text = ~lbl,
+        hoverinfo='text',
+        marker = list(
+          # symbol = ~symbol,
+          symbols = 'square',# unique(df.isotop$symbol),
+          color = ~color.object,
+          size = 10,
+          line = list('width' = 1, color = 'black')
+        )
+      ) %>% 
+      layout(
+        title = "Relative percentages of lead isotops",
+        ternary = list(
+          legend = list(orientation = "h"),
+          sum = 100,
+          aaxis = list(min = min206, title = 'Pb206/Pb204'),
+          baxis = list(min = min207, title = 'Pb207/Pb204'),
+          caxis = list(min = min208, title = 'Pb208/Pb204')
+          # aaxis = list(min = 24, title = 'Pb206/Pb204'),
+          # baxis = list(min = 20, title = 'Pb207/Pb204'),
+          # caxis = list(min = 48, title = 'Pb208/Pb204')
+        )
       )
-      print(p)
-    }
-    if(input$ternary == "areas"){
-      p <- plot_ly()
-      for(i in 1:length(ds)){
-        p <- add_trace(p,
-                       data = ds[[i]],
-                       a = ~clay,
-                       b = ~sand,
-                       c = ~silt,
-                       type = "scatterternary",
-                       mode = "lines",
-                       fill = "toself",
-                       fillcolor = colors[i],
-                       # evaluate = T,
-                       line = list(color = "black"))
-      }
-      p <- layout(p,
-                  title ="",
-                  showlegend = F,
-                  # font = list(color = "grey"),
-                  # paper_bgcolor='#000000',
-                  xaxis = list(title = "", showgrid = F, zeroline = F, showticklabels = F),
-                  yaxis = list(title = "", showgrid = F, zeroline = F, showticklabels = F),
-                  ternary = list(
-                    aaxis = list(title = "Clay", tickformat = ".0%", tickfont = list(size = 10)),
-                    baxis = list(title = "Sand", tickformat = ".0%", tickfont = list(size = 10)),
-                    caxis = list(title = "Silt", tickformat = ".0%", tickfont = list(size = 10)))
-      )
-      print(p)
-    }
+    print(fig)
   })
 }
 

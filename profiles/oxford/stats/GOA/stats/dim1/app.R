@@ -8,11 +8,17 @@ library(archdata)
 data("Mesolithic")
 
 ui <- fluidPage(
+  title = "British Mesolithic assemblages",
   selectInput("category", "category", 
               choices = colnames(Mesolithic), selected = "Microliths"),
   radioButtons("diagram", "points / histogram",
                choices = c("points", "histogram")
   ),
+  sliderInput(inputId = "bins",
+              label = "Number of bins:",
+              min = 1,
+              max = 10,
+              value = 5),
   radioButtons("blockaxe", "fixed x-axis",
                choices = c("Yes", "No")
   ),
@@ -37,9 +43,12 @@ server <- function(input, output, session){
       print(ggplotly(gplot))
     }
     else if(input$diagram == "histogram"){
+      # x <- input$category
+      # bins <- seq(min(x), max(x), length.out = input$bins + 1)
       print(
         plot_ly(Mesolithic,
                 x = ~get(input$category),
+                nbinsx = input$bins,
                 type = "histogram") %>%
           layout(xaxis = list(
                    title = input$category),
