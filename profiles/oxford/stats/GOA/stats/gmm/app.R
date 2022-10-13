@@ -3,14 +3,18 @@
 library(Momocs)
 library(shiny)
 
+my.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+# outlines_combined_petrik <- readRDS(file = file.path(dirname(dirname(rstudioapi::getSourceEditorContext()$path)),"1_data","outlines_combined_petrik_2018.RDS"))
+arrow.heads <- readRDS(file = file.path(my.dir, "arrowheads.RDS"))
+
 ui <- fluidPage(
   tabsetPanel(
     tabPanel("Single", fluid = TRUE,
              sidebarLayout(
                sidebarPanel(
-                 sliderInput("bot",
-                             label = "Select one bootle",
-                             min = 1, value = 1, max = length(bot), step = 1),
+                 sliderInput("arrow.heads",
+                             label = "Select one arrow",
+                             min = 1, value = 1, max = length(arrow.heads), step = 1),
                  selectInput("points",
                              label = "Show points",
                              choices = c("Yes","No"),
@@ -50,7 +54,7 @@ ui <- fluidPage(
                              selected = "PCA"),
                  sliderInput("kmeans",
                              label = "Number of Kmeans centers",
-                             min = 2, value = 3, max = 7)
+                             min = 2, value = 3, max = 7, step = 1)
                ),
                mainPanel("Shape Analysis", 
                          plotOutput(outputId = "gmmPlot"))
@@ -61,78 +65,83 @@ ui <- fluidPage(
 
 server <- function(input, output) {
   output$onePlot <- renderPlot({
-    idx <- input$bot
+    idx <- input$arrow.heads
     idx <- idx + .5
-    a.bot <- bot[idx]
+    a.arrow.heads <- arrow.heads[idx]
     harm <- input$efourier
-    ef <- efourier(a.bot, harm)
+    ef <- efourier(a.arrow.heads, harm)
     efi <- efourier_i(ef)
-    print(input$bot)
+    # print(input$arrow.heads)
     # print(input$efourier)
     if (input$points == "Yes"){
-      # ef <- efourier(a.bot, input$efourier)
+      # ef <- efourier(a.arrow.heads, input$efourier)
       # efi <- efourier_i(ef)
-      coo_plot(efi, border='black', main = paste(names(bot)[input$bot], "\n",
+      coo_plot(efi, 
+               borders = arrow.heads$color, 
+               main = paste(names(arrow.heads)[input$arrow.heads], "\n",
                                                  input$efourier, " harmonics"),
-               points = TRUE, pch = 16)
+               points = TRUE,
+               pch = 16)
     }
     else if (input$points == "No"){
-      # ef <- efourier(a.bot, input$efourier)
-      # # print(a.bot)
+      # ef <- efourier(a.arrow.heads, input$efourier)
+      # # print(a.arrow.heads)
       # # print(input$efourier)
       # efi <- efourier_i(ef)
-      coo_plot(efourier_i(ef), border='black', main = paste(names(bot)[input$bot], "\n",
+      coo_plot(efourier_i(ef), 
+               borders = arrow.heads$color, 
+               main = paste(names(arrow.heads)[input$arrow.heads], "\n",
                                                  input$efourier, " harmonics"))
-      # coo_plot(a.bot)
+      # coo_plot(a.arrow.heads)
     }
   })
   output$stackPlot <- renderPlot({
     if (input$scale == "Centered-Scaled") {
-      bot %>%
+      arrow.heads %>%
         coo_center %>%
         coo_scale %>%
         coo_slidedirection("up") %T>%
         print() %>% 
-        stack()
+        stack(borders = arrow.heads$color)
     }
     else if (input$scale == "Centered") {
-      bot %>%
+      arrow.heads %>%
         coo_center %>%
         coo_slidedirection("up") %T>%
         print() %>% 
-        stack()
+        stack(borders = arrow.heads$color)
     }
     else if (input$scale == "Not centered, Not scaled") {
-      bot %>%
+      arrow.heads %>%
         coo_slidedirection("up") %T>%
         print() %>% 
-        stack()
+        stack(borders = arrow.heads$color)
     }
   })
   output$gmmPlot <- renderPlot({
     if (input$gmm == "PCA") {
-      bot.f <- efourier(bot, input$efourier)
-      bot.p <- PCA(bot.f)
-      plot(bot.p)
+      arrow.heads.f <- efourier(arrow.heads, input$efourier)
+      arrow.heads.p <- PCA(arrow.heads.f)
+      plot(arrow.heads.p)
     }
     else if (input$gmm == "CLUST") {
-      bot.f <- efourier(bot, input$efourier)
-      bot.p <- CLUST(bot.f)
-      plot(bot.p)
+      arrow.heads.f <- efourier(arrow.heads, input$efourier)
+      arrow.heads.p <- CLUST(arrow.heads.f)
+      plot(arrow.heads.p)
     }
     else if (input$gmm == "KMEANS") {
-      bot.f <- efourier(bot, input$efourier)
-      bot.f <- PCA(bot.f)
-      KMEANS(bot.f, centers = input$kmeans)
+      arrow.heads.f <- efourier(arrow.heads, input$efourier)
+      arrow.heads.f <- PCA(arrow.heads.f)
+      KMEANS(arrow.heads.f, centers = input$kmeans)
     }
   })
 }
 
 shinyApp(ui, server)
 
-# a.bot <- bot[1]
-# ef <- efourier(a.bot, 12)
+# a.arrow.heads <- arrow.heads[1]
+# ef <- efourier(a.arrow.heads, 12)
 # efi <- efourier_i(ef)
-# coo_plot(efi, border='black', main = paste(names(bot)[1], "\n",
+# coo_plot(efi, border='black', main = paste(names(arrow.heads)[1], "\n",
 #                                            12, " harmonics"),
 #          points = TRUE, pch = 16)

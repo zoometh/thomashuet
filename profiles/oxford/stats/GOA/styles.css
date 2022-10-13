@@ -1,5 +1,3 @@
-
-
 .border {
   border: 1px solid #dee2e6;
 }
@@ -13,6 +11,15 @@
   width: 50%;
 }
 
+.column33 {
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+}
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -24,4 +31,8 @@
   border: 1px solid;
   vertical-align: middle;
   text-align: center;
+}
+
+.smalltext {
+  font-size: small;
 }

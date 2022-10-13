@@ -24,6 +24,63 @@ library(archdata)
 
 data(OxfordPots)
 ```
+## Models
+
+::: {.panel-tabset}
+
+### Statement
+
+<div class="row">
+  <div class="column"><center>![George E. P. Box](images/aut-box.jpg){height=250px}</center></div>
+  <div class="column"><em><center>"All models are wrong, but some are useful"</em><br><small> Box, 1976</small></center></div>
+</div>
+
+
+### Proprieties
+
+<table class="table">
+<thead>
+  <tr>
+    <th>propriety</th>
+    <th>description</th>
+    <th>example</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Explanatory</td>
+    <td>not over- or under-determined</td>
+    <td>example</td>
+  </tr>
+  <tr>
+    <td>Regularity</td>
+    <td>reproducing data regularity</td>
+    <td>example</td>
+  </tr>
+  <tr>
+    <td>Robust</td>
+    <td>replicable</td>
+    <td>example</td>
+  </tr>
+  <tr>
+    <td>Parsimonious</td>
+    <td></td>
+    <td>example</td>
+  </tr>
+  <tr>
+    <td>Versioning</td>
+    <td>carry its own story</td>
+    <td>example</td>
+  </tr>
+</tbody>
+</table>
+
+:::
+
+::: {.notes}
+(abandoned hypotheses, alternative versions, etc.)
+controlled vocabulary -> scale
+:::
 
 
 ## Computational Archaeology stack
@@ -110,6 +167,8 @@ The 🔝 popular web-platform for source code management and software developmen
 </table>
 
 :::
+
+
 
 
 ## Code

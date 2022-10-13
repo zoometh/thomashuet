@@ -665,54 +665,6 @@ All the comparison carried out obtain the same result. <br> ⚠️ In practice,
 </section>
 <section id="type-of-statistics---confirmatory" class="slide level2">
 <h2>Type of statistics - confirmatory</h2>
-
-<table>
-<thead>
-<tr>
-<th>
-cor
-</th>
-<th>
-interpretation
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-0.9
-</td>
-<td>
-oustanding
-</td>
-</tr>
-<tr>
-<td>
-0.8
-</td>
-<td>
-excellent
-</td>
-</tr>
-<tr>
-<td>
-0.7
-</td>
-<td>
-acceptable
-</td>
-</tr>
-<tr>
-<td>
-0.6
-</td>
-<td>
-?
-</td>
-</tr>
-</tbody>
-
-</table>
 </section>
 <section id="type-of-statistics---descriptive" class="slide level2">
 <h2>Type of statistics - descriptive</h2>
@@ -914,12 +866,70 @@ acceptable
 <p>Dataset: <a href="https://rdrr.io/cran/archdata/man/archdata-package.html"><code>archdata</code> R package - <code>OxfordPots</code> dataset</a></p>
 </div>
 </section>
-<section id="dimensions-data-1" class="slide level2">
-<h2>2-dimensions data</h2>
+<section id="comparisons" class="slide level2">
+<h2>Comparisons</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Regression</a></li><li><a href="#tabset-4-2">Coefficient</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-366a2d3303bb6a08f042" style="width:960px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-366a2d3303bb6a08f042">{"x":{"visdat":{"2d2c36bd2347":["function () ","plotlyVisDat"]},"cur_data":"2d2c36bd2347","attrs":{"2d2c36bd2347":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"name":"Oxford Pottery","y":{},"marker":{"color":"black"},"inherit":true},"2d2c36bd2347.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"name":"Predicted value","y":{},"opacity":0.5,"marker":{"color":"grey","line":{"color":"grey","width":1}},"inherit":true},"2d2c36bd2347.2":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"name":"Regression line","y":[20.1889438943894,19.7204803813715,21.453795379538,19.2988632196553,20.6105610561056,21.219563623029,20.1889438943894,17.3781628162816,17.8466263292996,22.3438760542721,22.2501833516685],"mode":"lines","line":{"color":"black","width":2},"inherit":true},"2d2c36bd2347.3":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"xend":{},"yend":{},"type":"scatter","mode":"lines","name":"Residuals","line":{"color":"grey","width":1,"dash":"dash"},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Distance (miles)"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Percentage of Oxford Pottery"},"legend":{"orientation":"h","xanchor":"center","x":0.5},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[55,65,28,74,46,33,55,115,105,9,11],"name":"Oxford Pottery","y":[21.25,21,19.5,19,21,22.5,18.25,17.5,17.5,22.5,22.5],"marker":{"color":"black","line":{"color":"rgba(31,119,180,1)"}},"type":"scatter","mode":"markers","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[55,65,28,74,46,33,55,115,105,9,11],"name":"Predicted value","y":[20.1889438943894,19.7204803813715,21.453795379538,19.2988632196553,20.6105610561056,21.219563623029,20.1889438943894,17.3781628162816,17.8466263292996,22.3438760542721,22.2501833516685],"opacity":0.5,"marker":{"color":"grey","line":{"color":"grey","width":1}},"type":"scatter","mode":"markers","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[55,65,28,74,46,33,55,115,105,9,11],"name":"Regression line","y":[20.1889438943894,19.7204803813715,21.453795379538,19.2988632196553,20.6105610561056,21.219563623029,20.1889438943894,17.3781628162816,17.8466263292996,22.3438760542721,22.2501833516685],"mode":"lines","line":{"color":"black","width":2},"type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[55,55,null,65,65,null,28,28,null,74,74,null,46,46,null,33,33,null,55,55,null,115,115,null,105,105,null,9,9,null,11,11],"y":[21.25,20.1889438943894,null,21,19.7204803813715,null,19.5,21.453795379538,null,19,19.2988632196553,null,21,20.6105610561056,null,22.5,21.219563623029,null,18.25,20.1889438943894,null,17.5,17.3781628162816,null,17.5,17.8466263292996,null,22.5,22.3438760542721,null,22.5,22.2501833516685],"type":"scatter","mode":"lines","name":"Residuals","line":{"color":"grey","width":1,"dash":"dash"},"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-35b90e3158d3e6e062a0" style="width:960px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-35b90e3158d3e6e062a0">{"x":{"visdat":{"4b187e5c321a":["function () ","plotlyVisDat"]},"cur_data":"4b187e5c321a","attrs":{"4b187e5c321a":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"name":"Oxford Pottery","y":{},"marker":{"color":"black"},"inherit":true},"4b187e5c321a.1":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"name":"Predicted value","y":{},"opacity":0.5,"marker":{"color":"grey","line":{"color":"grey","width":1}},"inherit":true},"4b187e5c321a.2":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"name":"Regression line","y":[20.1889438943894,19.7204803813715,21.453795379538,19.2988632196553,20.6105610561056,21.219563623029,20.1889438943894,17.3781628162816,17.8466263292996,22.3438760542721,22.2501833516685],"mode":"lines","line":{"color":"black","width":2},"inherit":true},"4b187e5c321a.3":{"x":{},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"y":{},"xend":{},"yend":{},"type":"scatter","mode":"lines","name":"Residuals","line":{"color":"grey","width":1,"dash":"dash"},"inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Distance (miles)"},"yaxis":{"domain":[0,1],"automargin":true,"title":"Percentage of Oxford Pottery"},"legend":{"orientation":"h","xanchor":"center","x":0.5},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[55,65,28,74,46,33,55,115,105,9,11],"name":"Oxford Pottery","y":[21.25,21,19.5,19,21,22.5,18.25,17.5,17.5,22.5,22.5],"marker":{"color":"black","line":{"color":"rgba(31,119,180,1)"}},"type":"scatter","mode":"markers","error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[55,65,28,74,46,33,55,115,105,9,11],"name":"Predicted value","y":[20.1889438943894,19.7204803813715,21.453795379538,19.2988632196553,20.6105610561056,21.219563623029,20.1889438943894,17.3781628162816,17.8466263292996,22.3438760542721,22.2501833516685],"opacity":0.5,"marker":{"color":"grey","line":{"color":"grey","width":1}},"type":"scatter","mode":"markers","error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"line":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[55,65,28,74,46,33,55,115,105,9,11],"name":"Regression line","y":[20.1889438943894,19.7204803813715,21.453795379538,19.2988632196553,20.6105610561056,21.219563623029,20.1889438943894,17.3781628162816,17.8466263292996,22.3438760542721,22.2501833516685],"mode":"lines","line":{"color":"black","width":2},"type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[55,55,null,65,65,null,28,28,null,74,74,null,46,46,null,33,33,null,55,55,null,115,115,null,105,105,null,9,9,null,11,11],"y":[21.25,20.1889438943894,null,21,19.7204803813715,null,19.5,21.453795379538,null,19,19.2988632196553,null,21,20.6105610561056,null,22.5,21.219563623029,null,18.25,20.1889438943894,null,17.5,17.3781628162816,null,17.5,17.8466263292996,null,22.5,22.3438760542721,null,22.5,22.2501833516685],"type":"scatter","mode":"lines","name":"Residuals","line":{"color":"grey","width":1,"dash":"dash"},"marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<div id="tabset-4-2">
+<p>Coefficient of correlation (ρ, etc.) and coefficient of determination (R<sup>2</sup>)</p>
+
+<table class="table">
+<thead>
+<tr>
+<th>
+cor
+</th>
+<th>
+interpretation
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+0.9
+</td>
+<td>
+oustanding
+</td>
+</tr>
+<tr>
+<td>
+0.8
+</td>
+<td>
+excellent
+</td>
+</tr>
+<tr>
+<td>
+0.7
+</td>
+<td>
+acceptable
+</td>
+</tr>
+<tr>
+<td>
+0.6
+</td>
+<td>
+wek
+</td>
+</tr>
+</tbody>
+
+</table>
+</div>
 </div>
 </div>
 <div class="footer">
@@ -962,9 +972,9 @@ acceptable
 <h2>2-dimensions spatial data</h2>
 <p>random and clustered patterns</p>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">BA Rock art 1</a></li><li><a href="#tabset-4-2">NEO Rock art 2</a></li><li><a href="#tabset-4-3">BA Bronze deposit</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">BA Rock art 1</a></li><li><a href="#tabset-5-2">NEO Rock art 2</a></li><li><a href="#tabset-5-3">BA Bronze deposit</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1">
+<div id="tabset-5-1">
 <div class="row">
 <div class="column">
 <img data-src="images/bz_rockart.png" height="400">
@@ -974,7 +984,7 @@ Bradley
 </div>
 </div>
 </div>
-<div id="tabset-4-2">
+<div id="tabset-5-2">
 <div class="row">
 <div class="column">
 <img data-src="images/eia_centralplaces.jpg" height="400">
@@ -984,7 +994,7 @@ Bego
 </div>
 </div>
 </div>
-<div id="tabset-4-3">
+<div id="tabset-5-3">
 <div class="row">
 <div class="column">
 <img data-src="images/lba-hoards-random.jpg" height="400">
@@ -1014,9 +1024,9 @@ Les formes sont centrées et ensuite, selon la direction, le point au nord, au s
 <h2>2-dimensions spatial data</h2>
 <p>regular pattern</p>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">EBA Tumulus</a></li><li><a href="#tabset-5-2">EIA Central Places</a></li><li><a href="#tabset-5-3">EIA Emporions</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">EBA Tumulus</a></li><li><a href="#tabset-6-2">EIA Central Places</a></li><li><a href="#tabset-6-3">EIA Emporions</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1">
+<div id="tabset-6-1">
 <div class="row">
 <div class="column">
 <img data-src="images/eba_tumulus.jpg" height="400">
@@ -1026,7 +1036,7 @@ Les formes sont centrées et ensuite, selon la direction, le point au nord, au s
 </div>
 </div>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-6-2">
 <div class="row">
 <div class="column">
 <img data-src="images/eia_centralplaces.jpg" height="400">
@@ -1036,7 +1046,7 @@ Les formes sont centrées et ensuite, selon la direction, le point au nord, au s
 </div>
 </div>
 </div>
-<div id="tabset-5-3">
+<div id="tabset-6-3">
 <div class="row">
 <div class="column">
 <img data-src="images/eia_emporion.jpg" height="400">
@@ -1078,7 +1088,7 @@ Les formes sont centrées et ensuite, selon la direction, le point au nord, au s
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-data-2" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/">
+<section id="dimensions-data-1" class="slide level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/">
 <h2>3-dimensions data</h2>
 <div class="footer">
 <p>Current dataset: <a href="https://github.com/zoometh/itineRis/blob/main/inst/extdata/dfisotops.csv">ANR Itineris</a></p>
@@ -1097,7 +1107,7 @@ Les formes sont centrées et ensuite, selon la direction, le point au nord, au s
           display:block!important;
       }</style></aside>
 </section>
-<section id="dimensions-data-3" class="slide level2">
+<section id="dimensions-data-2" class="slide level2">
 <h2>&gt; 3-dimensions data</h2>
 <aside class="notes">
 <p>Multivariate</p>
@@ -1173,9 +1183,9 @@ Les formes sont centrées et ensuite, selon la direction, le point au nord, au s
 <section id="computer-science-1" class="slide level2">
 <h2>Computer science</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Stack</a></li><li><a href="#tabset-6-2">Back-end</a></li><li><a href="#tabset-6-3">Front-end</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Stack</a></li><li><a href="#tabset-7-2">Back-end</a></li><li><a href="#tabset-7-3">Front-end</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-7-1">
 
 <table>
 <thead>
@@ -1211,14 +1221,14 @@ hardware
 
 </table>
 </div>
-<div id="tabset-6-2">
+<div id="tabset-7-2">
 <a href="https://www.python.org/"> <img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> </a>
 <p>
 Python is the 2️⃣<sup>st</sup> programming language used by archaeologists, and the 1️⃣<sup>st</sup> worldwide
 </p>
 <p><small>- <a href="https://www.tiobe.com/tiobe-index/">Tiobe index 2022</a> + <a href="https://youtu.be/tUhHhzGSgbk?t=7499">Batist, Roe, 2022</a></small></p>
 </div>
-<div id="tabset-6-3">
+<div id="tabset-7-3">
 <a href="https://www.r-project.org/"> <img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> </a>
 <p>
 R is the 1️⃣<sup>st</sup> programming language used by archaeologists, and the 18<sup>t/<sup> worldwide<small>- <a href="https://www.tiobe.com/tiobe-index/">Tiobe index 2022</a> + <a href="https://youtu.be/tUhHhzGSgbk?t=7499">Batist, Roe, 2022</a></small>
@@ -1237,7 +1247,7 @@ R is the 1️⃣<sup>st</sup> programming language used by archaeologists, and t
 <h2>GitHub</h2>
 <p><a href="https://github.com"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> </a> The 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)</p>
 
-<table>
+<table class="table">
 <thead>
 <tr>
 <th>

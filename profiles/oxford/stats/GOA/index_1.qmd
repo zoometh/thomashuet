@@ -32,10 +32,10 @@ This presentation will show you examples of **statistical processes** in archaeo
 
 ## Historiography of Archaeology
 
-| Start     | Period | Description |
+| Start     | Method | Description |
 |:----------|:-------|:------------|
-| 1850      | Prehistory  | evolution, geology, early anthropology |
-| 1950      | Culture-Historical  | typology (similarities), chronology, 14C |
+| 1850      | Prehistory  | evolution, geology, anthropology |
+| 1950      | Culture-Historical  | typology (similarities), chronology, C14 |
 | 1960      | New archaeology  | chain operative, statistics |
 | 1980      | Post-processual  | dissimilarities, cultural relativism |
 | 2020      | Tool-driven  | Big data, ML / DL, aDNA |
@@ -93,7 +93,21 @@ Statistik (description of a state, a country): collecting population data throug
 *p-value* is a test value, 95% = > .05
 :::
 
+## Models
 
+Archaeology establishes facts and proposes models to connect these facts
+
+::: {.panel-tabset}
+
+### Singularity
+
+<div class="row">
+  <div class="column"><center>![George E. P. Box](images/aut-tobler.jpg){height=250px}</center></div>
+  <div class="column"><em><center>"All models are wrong, but some are useful"</em><br><small> Tobler, 1970</small></center></div>
+</div>
+
+
+### Singularity
 
 
 ## Middle Range Theories 
@@ -108,7 +122,7 @@ Archaeology establishes facts and proposes models to connect these facts
 <div class="row">
   <div class="column"><center>![](images/conformity.png){height=400px}</center></div>
   <div class="column">All comparisons give different results.<br>
-  ⚠️ In practice, over-valuing a specific element by giving it a marker character is very dangerous, as its very originality makes its management uncontrollable.</div>
+  ⚠️ <span class= smalltext>In practice, over-valuing a specific element by giving it a marker character is very dangerous, as its very originality makes its management uncontrollable.</span></div>
 </div>
 
 ### Conformity
@@ -186,7 +200,7 @@ Archaeology establishes facts and proposes scenarios to connect these facts, for
 ### Who
 
 <div class="row">
-  <div class="column">![](images/who-obama.jpg)</div>
+  <div class="column">![](images/who-family.jpg)</div>
   <div class="column">![](images/who-haak_afo.jpg)</div>
 </div>
 
@@ -502,6 +516,24 @@ Useful when data are complete (chemical composition, genetics, etc.)
 
 ## > 3-dimensions data
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<div class="row">
+  <div class="column33">![Descriptive](images/stat-ca-camel-1.png){height=400px}</div>
+  <div class="column33"> ➡️ </div>
+  <div class="column33">![Descriptive](images/stat-ca-camel-2.png){height=400px}</div>
+</div>
+:::
+
+
+::: {.column width="50%"}
+blblalalalalal
+:::
+
+::::
+
 ::: {.notes}
 Multivariate
 :::
@@ -583,8 +615,8 @@ AI
 	<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
 </a>
 <p>
- R is the 1️⃣<sup>st</sup> programming language used by archaeologists, and the 18<sup>t/<sup> worldwide<small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist, Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
-</p>
+ R is the 1️⃣<sup>st</sup> programming language used by archaeologists, and the 18<sup>t/<sup>> worldwide
+</p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist, Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
 :::
 
 ## R and RStudio
