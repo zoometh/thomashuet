@@ -1,8 +1,6 @@
 ## URL
 
-https://tinyurl.com/oxford-goa
-
-
+GOA 19/10/22 presentation: https://tinyurl.com/oxford-goa
 
 ## Used R packages
 
