@@ -8,17 +8,19 @@ data(OxfordPots)
 
 
 ui <- fluidPage(
-  title = "Distribution of Late Romano-British Oxford Pottery",
+  br(), br(), br(), br(), br(), br(), br(), br(), br(),
+  h3("Distribution of Late Romano-British Oxford Pottery"),
   checkboxGroupInput("watertrans", "water transportation probable",
-                     choices = c("Yes", "No"), selected = "Yes"
+                     choices = c("Yes", "No"), selected = c("Yes", "No")
   ),
   radioButtons("regression", "show regression",
                choices = c("Yes", "No"), selected = "No"
   ),
-  radioButtons("residuals", "show residuals",
-               choices = c("Yes", "No"), selected = "No"
-  ),
-  plotlyOutput("graph", height = "auto")
+  # radioButtons("residuals", "show residuals",
+  #              choices = c("Yes", "No"), selected = "No"
+  # ),
+  plotlyOutput("graph", 
+               height = "500px")
 )
 
 server <- function(input, output, session){
@@ -83,23 +85,23 @@ server <- function(input, output, session){
                     aes(x = max(OxfordDst) + 2,
                         y = min(OxfordPct) + 2,
                         label = paste0("no water transport R2 = ", lm.nowater.R2)))
-        if("Yes" %in% input$residuals){
-          print("GJGKJGGKJGKJG")
-          gplot <- gplot +
-            geom_smooth(method='lm', formula= y~x, se = F, color = "black") +
-            geom_text(data = Oxford.nowater, 
-                      aes(x = max(OxfordDst) + 2,
-                          y = min(OxfordPct) + 2,
-                          label = paste0("no water transport R2 = ", lm.nowater.R2))) +
-            geom_segment(data = Oxford.nowater,
-                         aes(xend = OxfordDst,
-                             yend = predicted),
-                         alpha = .2) +  # alpha to fade lines
-            # geom_point() +
-            geom_point(data = Oxford.nowater, 
-                       aes(y = predicted), 
-                       shape = 4)
-        }
+        # if("Yes" %in% input$residuals){
+        #   print("GJGKJGGKJGKJG")
+        #   gplot <- gplot +
+        #     geom_smooth(method='lm', formula= y~x, se = F, color = "black") +
+        #     geom_text(data = Oxford.nowater, 
+        #               aes(x = max(OxfordDst) + 2,
+        #                   y = min(OxfordPct) + 2,
+        #                   label = paste0("no water transport R2 = ", lm.nowater.R2))) +
+        #     geom_segment(data = Oxford.nowater,
+        #                  aes(xend = OxfordDst,
+        #                      yend = predicted),
+        #                  alpha = .2) +  # alpha to fade lines
+        #     # geom_point() +
+        #     geom_point(data = Oxford.nowater, 
+        #                aes(y = predicted), 
+        #                shape = 4)
+        # }
       }
       print(ggplotly(gplot))
     }

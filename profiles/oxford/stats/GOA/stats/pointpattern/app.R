@@ -1,22 +1,28 @@
 # Random, vs Regular, vs Clustered +
-# L-Besage
+# L-Besag
 
 library(shiny)
 library(sp)
 library(spatstat)
 
 ui <- fluidPage(
+  br(), br(), br(), br(), br(), br(), br(), br(), br(),
+  h3("K-ripley/L-Besag functions"),
+  h4("Second-Order Neighborhood Analysis"),
   sidebarLayout(
-    sidebarPanel(
+    sidebarPanel(width = 2,
       selectInput("ppa", 
                   label = "Point Pattern Analysis",
                   choices = c("Random", "Regular", "Clustered")),
+      # tags$head(tags$style(HTML(".selectize-input {width: 300px;}")))
     ),
     mainPanel(
       fluidRow(
         splitLayout(cellWidths = c("50%", "50%"), 
-                    plotOutput(outputId = "gridPlot"), 
-                    plotOutput(outputId = "LBesagPlot"))
+                    plotOutput(outputId = "gridPlot",
+                               height = "700px"), 
+                    plotOutput(outputId = "LBesagPlot",
+                               height = "700px"))
       )
       
     )
@@ -48,15 +54,15 @@ server <- function(input, output) {
   output$gridPlot <- renderPlot({
     if (input$ppa == "Random") {
       plot(grid)
-      plot(random.pt, add = T, col = 'red', pch = 16)
+      plot(random.pt, add = T, col = 'red', pch = 16, cex = 1.5)
     }
     else if (input$ppa == "Regular") {
       plot(grid)
-      plot(regular.pt, add = T, col = 'blue', pch = 16)
+      plot(regular.pt, add = T, col = 'blue', pch = 16, cex = 1.5)
     }
     else if (input$ppa == "Clustered") {
       plot(grid)
-      plot(cluster.pt, add = T, col = 'green', pch = 16)
+      plot(cluster.pt, add = T, col = 'green', pch = 16, cex = 1.5)
     }
   })
   output$LBesagPlot <- renderPlot({
@@ -64,8 +70,9 @@ server <- function(input, output) {
       Kpts <- ppp(coordinates(random.pt)[ , 1],
                   coordinates(random.pt)[ , 2],
                   window = w)
+      # E <- envelope(Kpts, Lest, funargs = list(correction="Ripley"), nsim=100, VARIANCE=TRUE, verbose=FALSE)
       E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE, verbose=FALSE)
-      # L <- Lest(Kpts, correction = "Ripley")
+      # E <- Lest(Kpts, correction = "Ripley") # makes the legend easy to read
       plot(E, xlab="d (units)", ylab = "K(d)", main = "Random")
     }
     else if (input$ppa == "Regular") {

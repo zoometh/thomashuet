@@ -18,6 +18,17 @@
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle;
+  align-items: center;
+}
+
+.column66 {
+  float: left;
+  width: 66%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: middle;
+  align-items: center;
 }
 
 /* Clear floats after the columns */
@@ -34,5 +45,25 @@
 }
 
 .smalltext {
-  font-size: small;
+  font-size: 25px;
+}
+
+/* IDE */
+.it-ide{
+  color: #e31a1c;
+}
+
+/* layouts */
+.it-layouts{
+  color: #fd8d3c;
+}
+
+/* libraries and packges */
+.it-libraries{
+  color: #fecc5c;
+}
+
+/* outside links */
+.it-resources{
+  color: #ffffb2;
 }

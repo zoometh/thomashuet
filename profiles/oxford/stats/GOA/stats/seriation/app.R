@@ -5,8 +5,11 @@ library(seriation)
 library(ca)
 
 ui <- fluidPage(
+  br(), br(), br(), br(), br(), br(), br(),
+  h3("LIA cemetery of Szentlőrinc, Hungary"),
   sidebarLayout(
     sidebarPanel(
+      width = 3,
       selectInput("seriate",
                   label = "Seriate",
                   choices = c("Raw dataframe",
@@ -17,7 +20,8 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(
         tabPanel("Plot", 
-                 plotOutput(outputId = "seriatePlot")),
+                 plotOutput(outputId = "seriatePlot",
+                            height = "700px")),
         tabPanel("Dataframe", 
                  tableOutput(outputId = "dataframePlot"))
       )
@@ -26,7 +30,7 @@ ui <- fluidPage(
 )
 
 server <- function(input, output) {
-  seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv",row.name = 1)
+  seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv", row.name = 1)
   seriat <- as.matrix(seriat)
   output$seriatePlot <- renderPlot({
     if (input$seriate == "Raw dataframe"){

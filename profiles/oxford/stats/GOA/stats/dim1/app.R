@@ -8,7 +8,8 @@ library(archdata)
 data("Mesolithic")
 
 ui <- fluidPage(
-  title = "British Mesolithic assemblages",
+  br(), br(), br(), br(), br(), br(), br(), br(), br(),
+  h3("British Mesolithic assemblages (n = 33 sites)"),
   selectInput("category", "category", 
               choices = colnames(Mesolithic), selected = "Microliths"),
   radioButtons("diagram", "points / histogram",
@@ -22,13 +23,15 @@ ui <- fluidPage(
   radioButtons("blockaxe", "fixed x-axis",
                choices = c("Yes", "No")
   ),
-  plotlyOutput("graph")
+  plotlyOutput("graph",
+               height = "400px")
 )
 
 server <- function(input, output, session){
   output$graph <- renderPlotly({
     if(input$diagram == "points"){
       x <- Mesolithic[ , input$category]
+      #lbls <- paste0("site-", row.names(Mesolithic), "<br>", as.character(x))
       if(input$blockaxe == "No"){
         gplot <- ggplot() +
           geom_point(aes(y = rep(0, length(x)), x = x)) +

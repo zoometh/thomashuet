@@ -3,18 +3,22 @@
 library(Momocs)
 library(shiny)
 
-my.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
+# my.dir <- dirname(rstudioapi::getSourceEditorContext()$path)
 # outlines_combined_petrik <- readRDS(file = file.path(dirname(dirname(rstudioapi::getSourceEditorContext()$path)),"1_data","outlines_combined_petrik_2018.RDS"))
-arrow.heads <- readRDS(file = file.path(my.dir, "arrowheads.RDS"))
+file.path <- paste0(getwd(), "/arrowheads.RDS")
+arrow.heads <- readRDS(file = file.path)
 
 ui <- fluidPage(
+  br(), br(), br(), br(), br(), br(), br(), br(), br(),
+  h3("Comparisons of two Bell-Beaker sampled arrowheads datasets"),
   tabsetPanel(
     tabPanel("Single", fluid = TRUE,
              sidebarLayout(
                sidebarPanel(
+                 width = 3,
                  sliderInput("arrow.heads",
                              label = "Select one arrow",
-                             min = 1, value = 1, max = length(arrow.heads), step = 1),
+                             min = 1, value = 1, max = length(arrow.heads$coo), step = 1),
                  selectInput("points",
                              label = "Show points",
                              choices = c("Yes","No"),
@@ -24,13 +28,15 @@ ui <- fluidPage(
                              min = 2, value = 10, max = 20)
                ),
                mainPanel("Shape", 
-                         plotOutput(outputId = "onePlot")
+                         plotOutput(outputId = "onePlot", 
+                                    height = "600px")
                )
              )
     ),
     tabPanel("Compare", fluid = TRUE,
              sidebarLayout(
                sidebarPanel(
+                 width = 3,
                  selectInput("scale",
                              label = "Scale",
                              choices = c("Not centered, Not scaled",
@@ -39,13 +45,15 @@ ui <- fluidPage(
                              selected = "Not centered, Not scaled")
                ),
                mainPanel("Shape Comparison", 
-                         plotOutput(outputId = "stackPlot")
+                         plotOutput(outputId = "stackPlot",
+                                    height = "700px")
                )
              )
     ),
     tabPanel("Classify", fluid = TRUE,
              sidebarLayout(
                sidebarPanel(
+                 width = 3,
                  selectInput("gmm",
                              label = "gmm",
                              choices = c("PCA",
@@ -53,11 +61,12 @@ ui <- fluidPage(
                                          "KMEANS"),
                              selected = "PCA"),
                  sliderInput("kmeans",
-                             label = "Number of Kmeans centers",
+                             label = "Number of KMEANS centers",
                              min = 2, value = 3, max = 7, step = 1)
                ),
                mainPanel("Shape Analysis", 
-                         plotOutput(outputId = "gmmPlot"))
+                         plotOutput(outputId = "gmmPlot",
+                                    height = "700px"))
              )
     )
   )
