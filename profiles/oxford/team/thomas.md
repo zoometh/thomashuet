@@ -697,5 +697,5 @@ DB
 #### Week 2
 
 - finished to prepare, and gave my *'Statistical reasoning and computer scripting in archaeology'* (MT2, 19 Oct) lecture: https://tinyurl.com/oxford-goa
-- working on duplicates
+- working on [data exchnages](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk#bu-exchanges) including duplicate management and BU.
 - start to prepare the 'kites' (M. Fradley) dataset (~ 'caravanserails') by creating new functionalities in the eamenaR package
