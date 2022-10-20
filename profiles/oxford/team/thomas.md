@@ -693,3 +693,9 @@ DB
     - exchanges with Bob and Jeremy on the APAAME/ArchDAMS database
 - some BU mapping work for Mohamed's new sheet (diffrent shape)
 - preparing my GAO lecture *'Statistical reasoning and computer scripting in archaeology'* (MT2, 19 Oct)
+
+#### Week 2
+
+- finished to prepare, and gave my *'Statistical reasoning and computer scripting in archaeology'* (MT2, 19 Oct) lecture: https://tinyurl.com/oxford-goa
+- working on duplicates
+- start to prepare the 'kites' (M. Fradley) dataset (~ 'caravanserails') by creating new functionalities in the eamenaR package
