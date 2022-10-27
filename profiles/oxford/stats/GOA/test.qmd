@@ -2,8 +2,8 @@
 title: "TEST"
 # subtitle: "Create beautiful interactive slide decks with Reveal.js"
 author: "zoometh"
-margin-left: 5.4mm
-margin-right: 5.4mm
+# margin-left: 5.4mm
+# margin-right: 5.4mm
 format:
   revealjs: 
     slide-number: true
@@ -13,9 +13,8 @@ format:
     logo: images/inst-uni-oxford_.png
     css: styles.css
     footer: <https://tinyurl.com/goa-oxford>
-    margin: 0.05
+    margin: 0
     width: 1400
-
 ---
 
 ```{r, echo=FALSE}

@@ -697,5 +697,19 @@ DB
 #### Week 2
 
 - finished to prepare, and gave my *'Statistical reasoning and computer scripting in archaeology'* (MT2, 19 Oct) lecture: https://tinyurl.com/oxford-goa
-- working on [data exchnages](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk#bu-exchanges) including [duplicate management](https://github.com/eamena-oxford/eamena-arches-dev/issues/8) and BU.
+- working on [data exchanges](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk#bu-exchanges) including [duplicate management](https://github.com/eamena-oxford/eamena-arches-dev/issues/8) and BU.
 - start to prepare the 'kites' (M. Fradley) dataset (~ 'caravanserails') by creating new functionalities in the eamenaR package
+    - exploratory work with the shapes (POLYGONS) of the caravanserails
+
+#### Week 3
+
+- drafting the sysadmin profile profile for Jordan and IT support for Palestine (reviewing the profile, contact Reuben, ...)
+- develop a workflow for [integrating Google Earth geometries](https://github.com/eamena-oxford/eamenaR#integrating-google-earth-geometries) to EAMENA.
+- give a ~ 1 hour introduction to GitHub to: Bijan, Will, Nichole, Kristen and Mel
+- re-start to work on [PeriodO](https://github.com/eamena-oxford/eamena-arches-dev/issues/12)
+- continue to work on [duplicate](https://github.com/eamena-oxford/eamena-arches-dev/issues/8)
+- start to prepare the 'kites' (M. Fradley) dataset (~ 'caravanserails') by creating new functionalities in the eamenaR package
+- plan to:
+    - move the AWS DB backups from a standard S3 bucket to a Glacier cold storage
+    - develop a workflow for duplicate management
+    - to start with Arches 7 the MT5

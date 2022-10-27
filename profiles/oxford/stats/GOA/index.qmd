@@ -11,6 +11,7 @@ format:
     logo: images/inst-uni-oxford_.png
     css: styles.css
     footer: "Statistics and Computer Scripts in Archaeology, Oxford MT2 2022 - T. Huet - <https://tinyurl.com/goa-oxford>"
+    # margin: -0.5
 resources:
   - demo.pdf
 fig-cap-location: margin
