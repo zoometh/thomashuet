@@ -703,7 +703,7 @@ DB
 
 #### Week 3
 
-- drafting the sysadmin profile profile for Jordan and IT support for Palestine (reviewing the profile, contact Reuben, ...)
+- drafting the sysadmin profile for Jordan and IT support for Palestine (reviewing the profile, contact Reuben, ...)
 - develop a workflow for [integrating Google Earth geometries](https://github.com/eamena-oxford/eamenaR#integrating-google-earth-geometries) to EAMENA.
 - give a ~ 1 hour introduction to GitHub to: Bijan, Will, Nichole, Kristen and Mel
 - re-start to work on [PeriodO](https://github.com/eamena-oxford/eamena-arches-dev/issues/12)
@@ -713,3 +713,29 @@ DB
     - move the AWS DB backups from a standard S3 bucket to a Glacier cold storage
     - develop a workflow for duplicate management
     - to start with Arches 7 the MT5
+
+#### EAMENA team meeting
+> 02/11/22, week 4
+
+- continue to developp the eamenaR package, for example:
+    - basic functions for EAMENA output data layout ('caravanserails', and in coming days 'kites' datasets, respectively with Bijan and Michael)
+    - [list_mapping_bu()](https://eamena-oxford.github.io/eamenaR/doc/list_mapping_bu) for BU (with Mohamed)
+    - [ref_cultural_periods()](https://eamena-oxford.github.io/eamenaR/doc/ref_cultural_periods) for PeriodO
+    - [geojson_kml()](https://eamena-oxford.github.io/eamenaR/doc/geojson_kml) for geometries integration 
+    - etc.
+```
+flowchart LR
+    A[(EAMENA<br>DB)] --export<br>GeoJSON--> B{{"eamenaR"}}:::eamenaRpkg;
+    B --data management--> B;
+    B <--data exchange--> C((third part<br>app));
+    B --import--> A;
+    B --creates--> D[maps<br>charts<br>listings<br>...]
+    classDef eamenaRpkg fill:#e3c071;
+```
+- give a 1-hour introduction to GitHub to EAMENA members from Leicester, Durham, Oxford
+    - maybe a GitHub repository will be created for the GEE/ACD work (Nichole) 
+- organising the sysadmin profile training for Jordan and IT support for Palestine (reviewing the profile, contact consultant, scheduling training, etc.)
+- plan to install Arches 7 on AWS next week (7<sup>th</sup> November)
+- working to attach a [CC BY license](https://creativecommons.org/licenses/by/2.0/) together with DB Open Access policies
+
+
