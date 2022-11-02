@@ -717,17 +717,16 @@ DB
 #### EAMENA team meeting
 > 02/11/22, week 4
 
+- organising the sysadmin profile training for Jordan and IT support for Palestine (reviewing the profile, contact consultant, scheduling training, etc.)
+- plan to start working with Arches v7 next week (7<sup>th</sup> November): installation on AWS, data import, etc., see the draft of the [Gantt diagram](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/dbs/database.eamena/README.md)
 - moved ~ 350 TB of AWS backups from traditional storage to cold storage (estimated savings: ~ $350/month)
 - continue to develop & use the [eamenaR package](https://github.com/eamena-oxford/eamenaR), for example:
     - basic functions for EAMENA output data layout ('caravanserails', and in coming days 'kites' datasets, respectively with Bijan and Michael)
     - [list_mapping_bu()](https://eamena-oxford.github.io/eamenaR/doc/list_mapping_bu) for BU (with Mohamed)
-    - [ref_cultural_periods()](https://eamena-oxford.github.io/eamenaR/doc/ref_cultural_periods) for PeriodO
-    - [geojson_kml()](https://eamena-oxford.github.io/eamenaR/doc/geojson_kml) for geometries integration 
+    - [ref_cultural_periods()](https://eamena-oxford.github.io/eamenaR/doc/ref_cultural_periods) for PeriodO (with Will)
+    - [geojson_kml()](https://eamena-oxford.github.io/eamenaR/doc/geojson_kml) for geometries integration (with Bijan, and soon with Michael)
     - etc.
 - give a 1-hour introduction to GitHub to EAMENA members from Leicester, Durham, Oxford
     - maybe a GitHub repository will be created for the GEE/ACD work (Nichole) 
-- organising the sysadmin profile training for Jordan and IT support for Palestine (reviewing the profile, contact consultant, scheduling training, etc.)
-- plan to install Arches 7 on AWS next week (7<sup>th</sup> November)
 - working to attach a [CC BY license](https://creativecommons.org/licenses/by/2.0/) and a "how-to-cite", together with DB Open Access policies
-
 
