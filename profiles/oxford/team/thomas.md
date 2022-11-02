@@ -698,7 +698,7 @@ DB
 
 - finished to prepare, and gave my *'Statistical reasoning and computer scripting in archaeology'* (MT2, 19 Oct) lecture: https://tinyurl.com/oxford-goa
 - working on [data exchanges](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/data/bulk#bu-exchanges) including [duplicate management](https://github.com/eamena-oxford/eamena-arches-dev/issues/8) and BU.
-- start to prepare the 'kites' (M. Fradley) dataset (~ 'caravanserails') by creating new functionalities in the eamenaR package
+- start to prepare the 'kites' (M. Fradley) dataset (~ 'caravanserails') by creating new functionalities in the [eamenaR package](https://github.com/eamena-oxford/eamenaR)
     - exploratory work with the shapes (POLYGONS) of the caravanserails
 
 #### Week 3
@@ -717,25 +717,17 @@ DB
 #### EAMENA team meeting
 > 02/11/22, week 4
 
-- continue to developp the eamenaR package, for example:
+- moved ~ 350 TB of AWS backups from traditional storage to cold storage (estimated savings: ~ $350/month)
+- continue to develop & use the [eamenaR package](https://github.com/eamena-oxford/eamenaR), for example:
     - basic functions for EAMENA output data layout ('caravanserails', and in coming days 'kites' datasets, respectively with Bijan and Michael)
     - [list_mapping_bu()](https://eamena-oxford.github.io/eamenaR/doc/list_mapping_bu) for BU (with Mohamed)
     - [ref_cultural_periods()](https://eamena-oxford.github.io/eamenaR/doc/ref_cultural_periods) for PeriodO
     - [geojson_kml()](https://eamena-oxford.github.io/eamenaR/doc/geojson_kml) for geometries integration 
     - etc.
-```
-flowchart LR
-    A[(EAMENA<br>DB)] --export<br>GeoJSON--> B{{"eamenaR"}}:::eamenaRpkg;
-    B --data management--> B;
-    B <--data exchange--> C((third part<br>app));
-    B --import--> A;
-    B --creates--> D[maps<br>charts<br>listings<br>...]
-    classDef eamenaRpkg fill:#e3c071;
-```
 - give a 1-hour introduction to GitHub to EAMENA members from Leicester, Durham, Oxford
     - maybe a GitHub repository will be created for the GEE/ACD work (Nichole) 
 - organising the sysadmin profile training for Jordan and IT support for Palestine (reviewing the profile, contact consultant, scheduling training, etc.)
 - plan to install Arches 7 on AWS next week (7<sup>th</sup> November)
-- working to attach a [CC BY license](https://creativecommons.org/licenses/by/2.0/) together with DB Open Access policies
+- working to attach a [CC BY license](https://creativecommons.org/licenses/by/2.0/) and a "how-to-cite", together with DB Open Access policies
 
 
