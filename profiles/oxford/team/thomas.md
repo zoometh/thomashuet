@@ -741,5 +741,6 @@ DB
 - worked on cultural periods with Will, with the idea to become an PeriodO authority
 - mapped caravanserails Google Earth/KML POLYGONS with caravanserails EAMENA/GeoJSON POINTS
 - work with Mohamed on BU
+- attended the ["Heritage and Sustainable Development in Africa"](https://www.eventbrite.co.uk/e/special-public-lecture-heritage-and-sustainable-development-in-africa-tickets-453851711687) special Public Lecture, by Webber Ndoro, DG of the ICCROM
 
 
