@@ -730,3 +730,16 @@ DB
     - maybe a GitHub repository will be created for the GEE/ACD work (Nichole) 
 - working to attach a [CC BY license](https://creativecommons.org/licenses/by/2.0/) and a "how-to-cite", together with DB Open Access policies
 
+
+#### week 5
+
+- delayed the deployment of Arches v7
+- met with Nichole, Ahmed and Will to create a GitHub repo dedicated to ACD: https://github.com/eamena-oxford/eamena-gee
+    - Bill and Bijan agreed on renaming the GitHub organisation https://github.com/eamena-oxford to avoid mentioning only Oxford.
+- work on the [GMPCA colloquium](https://gmpca.fr/colloques-d-archeometrie/1849-archeometrie-2023-nice-appel-a-communication) abstract, session on dta management, with Bijan and Bill. After Bill's corrections, the abstract will be send to the Oxford team.
+- developped new eamenaR functions (e.g. [ref_users()](https://eamena-oxford.github.io/eamenaR/doc/ref_users)), improved other ones (e.g. for [cultural periods](https://github.com/eamena-oxford/eamenaR#cultural-and-subcultural-periods-references))
+- worked on cultural periods with Will, with the idea to become an PeriodO authority
+- mapped caravanserails Google Earth/KML POLYGONS with caravanserails EAMENA/GeoJSON POINTS
+- work with Mohamed on BU
+
+
