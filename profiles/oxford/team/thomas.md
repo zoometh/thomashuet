@@ -743,4 +743,17 @@ DB
 - work with Mohamed on BU
 - attended the ["Heritage and Sustainable Development in Africa"](https://www.eventbrite.co.uk/e/special-public-lecture-heritage-and-sustainable-development-in-africa-tickets-453851711687) special Public Lecture, by Webber Ndoro, DG of the ICCROM
 
+#### week 6
+
+- start the deployment of Arches v7:
+    - work on the test [24test](http://34.243.109.142/) database
+- no response from the EAMENA GitHub user account, so will rename the EAMENA organisation account from "eamena-oxford" to something similar to "eamena-project" (I'll create a pool).
+- will submit on the [GMPCA colloquium](https://gmpca.fr/colloques-d-archeometrie/1849-archeometrie-2023-nice-appel-a-communication) abstract, session on data management, after Bijan and Andrew comments.
+- adapted [iconr](https://github.com/zoometh/iconr#readme) package to GeoJSON in order to deal with HPs [shape analysis](https://github.com/eamena-oxford/eamenaR#shape-analysis)
+- (re)contact Shaw Ryan and Adam Rabinowitz (PeriodO). Will is in the loop.
+- wait Sayantani to solve the duplicate issue.
+- work with Mohamed on BU (+ 458 HPs)
+- will attend:
+    - a IT learning training: "[Presentations: Improving your online talks](https://www.it.ox.ac.uk/event/presentations-improving-online-talks)" (this afternoon);
+    - a 4-mornings training in the Ashmolean Museum "[Eloquent Things: teaching using objects](https://www.socsci.ox.ac.uk/event/eloquent-things-teaching-using-real-objects)" (next Tuesday to Friday, 10am-1pm)
 
