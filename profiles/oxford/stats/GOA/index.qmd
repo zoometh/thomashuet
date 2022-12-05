@@ -179,7 +179,7 @@ Statistik (description of a state, a country): collecting population data throug
 ![Confirmatory](images/stat-pvalue-1.png){height=350px}
 :::
 
-::::
+
 
 ### Descriptive
 

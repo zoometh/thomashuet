@@ -745,7 +745,7 @@ DB
 
 #### week 6
 
-- start the deployment of Arches v7:
+- start to work on the deployment of Arches v7:
     - work on the test [24test](http://34.243.109.142/) database
 - no response from the EAMENA GitHub user account, so will rename the EAMENA organisation account from "eamena-oxford" to something similar to "eamena-project" (I'll create a pool).
 - will submit on the [GMPCA colloquium](https://gmpca.fr/colloques-d-archeometrie/1849-archeometrie-2023-nice-appel-a-communication) abstract, session on data management, after Bijan and Andrew comments.
@@ -756,4 +756,9 @@ DB
 - will attend:
     - a IT learning training: "[Presentations: Improving your online talks](https://www.it.ox.ac.uk/event/presentations-improving-online-talks)" (this afternoon);
     - a 4-mornings training in the Ashmolean Museum "[Eloquent Things: teaching using objects](https://www.socsci.ox.ac.uk/event/eloquent-things-teaching-using-real-objects)" (next Tuesday to Friday, 10am-1pm)
+
+#### week 8
+
+- attended the Linked Pasts VIII Symposium, a ARIADNEplus/COST action organised by the ADS in York, 29th Nov- 1st Dec
+- gived a talk in Durham,
 
