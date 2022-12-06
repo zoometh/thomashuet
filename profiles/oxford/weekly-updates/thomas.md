@@ -757,8 +757,18 @@ DB
     - a IT learning training: "[Presentations: Improving your online talks](https://www.it.ox.ac.uk/event/presentations-improving-online-talks)" (this afternoon);
     - a 4-mornings training in the Ashmolean Museum "[Eloquent Things: teaching using objects](https://www.socsci.ox.ac.uk/event/eloquent-things-teaching-using-real-objects)" (next Tuesday to Friday, 10am-1pm)
 
-#### week 8
+#### EAMENA team meeting
+> 7/12/22, week 9
 
-- attended the Linked Pasts VIII Symposium, a ARIADNEplus/COST action organised by the ADS in York, 29th Nov- 1st Dec
-- gived a talk in Durham,
+- Start to work on the update of Arches v5.2 to Arches v7 (see [this Gantt diagram](https://github.com/eamena-oxford/eamena-arches-dev/tree/main/dbs/database.eamena#timeline), I'm late)
+- Continue to develop and improve the [eamenaR](https://github.com/eamena-oxford/eamenaR) package, exist functions to: [find duplicates](https://github.com/eamena-oxford/eamenaR#duplicates), [map dataset to BU](https://github.com/eamena-oxford/eamenaR#bu-mapping), [append new geometries](https://github.com/eamena-oxford/eamenaR#integrating-google-earth-geometries), [count users](https://github.com/eamena-oxford/eamenaR#users), etc.
+- Maintenance of the GitHub repository [eamena-arches-dev](https://github.com/eamena-oxford/eamena-arches-dev) to reflect EAMENA database developments both in term of data and computer scripts structure and documentation (metadata)
+- Worked with Bijan on caravanserails dataset
+- Worked on licensing the data of EAMENA [CC BY license](https://creativecommons.org/licenses/by/2.0/)
+- Maybe an "how-to-cite" will be useful
+- In contact with PeriodO (with Will) to become an authority (connected issues in the Arches community)
+- Create a new GitHub repository, https://github.com/eamena-oxford/eamena-gee, for Google Earth Engine & automatic change detection (ACD)
+- Will change the GitHub organisation name from `https://github.com/eamena-oxford` to `https://github.com/eamena-project`
+- Attended the [Linked Past VIII workshop](https://www.seadda.eu/?p=1808) in York, attended LOD infrastructures and ARIADNEplus/SPARQL sessions
+
 
