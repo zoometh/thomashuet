@@ -179,6 +179,7 @@ Statistik (description of a state, a country): collecting population data throug
 ![Confirmatory](images/stat-pvalue-1.png){height=350px}
 :::
 
+::::
 
 
 ### Descriptive
@@ -235,37 +236,43 @@ Archaeology establishes facts and proposes **models** to connect these facts
 
 <div class="row">
 <div class="column33"><center>![Model of archaeological reasoning by Renfrew and Bahn, 2020](images/theo-archaeo-renfrewbahn.jpg){height=300px}</center></div>
-<div class="column66"><em><center>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</em><br><small> Robert K. Merton, 1968</small></center></div>
+<div class="column66"><em><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span></em><br><small> Robert K. Merton, 1968</small></center></div>
 </div>
 
 ### Example
 
 <div class="row">
-<div class="column"><center>![](images/conformity-example.png){height=350px}</center></div>
-<div class="column">We want to compare groups of settlement of 3 different cultures (or sites): A, B and C</div>
+<div class="column"><center>![](images/conformity--example.png){height=350px}</center></div>
+<div class="column">We want to compare groups of settlement of 3 different cultures (or sites): <br>
+<ul>
+  <li>A</li>
+  <li>B</li>
+  <li>C</li>
+</ul>
+</div>
 </div>
 
 ### Singularity
 
 <div class="row">
-<div class="column"><center>![](images/conformity.png){height=350px}</center></div>
-<div class="column">All comparisons give different results. <br>
+<div class="column"><center>![](images/conformity-singularity.png){height=350px}</center></div>
+<div class="column"><b>None</b> comparisons give the same results<br>
 <div class= smalltext>⚠️ In practice, over-valuing a specific element by giving it a marker character is dangerous, as its originality makes its management uncontrollable.</div></div>
 </div>
 
 ### Conformity
 
 <div class="row">
-<div class="column"><center>![](images/conformity.png){height=350px}</center></div>
-<div class="column">Most comparisons give identical results. <br>
+<div class="column"><center>![](images/conformity-conformity.png){height=350px}</center></div>
+<div class="column"><b>Most</b> comparisons give the same results<br>
 ️<div class= smalltext>💡 Increase the matching success of the model by decreasing its precision, or decrease the matching success of the model by increasing its precision.</div></div>
 </div>
 
 ### Identity
 
 <div class="row">
-<div class="column"><center>![](images/conformity.png){height=350px}</center></div>
-<div class="column">All the comparison give the same result. <br>
+<div class="column"><center>![](images/conformity-identity.png){height=350px}</center></div>
+<div class="column"><b>All</b> the comparison give the same result<br>
 ️<div class= smalltext>⚠️️In practice, a common element in 3 or more different data sets is usually rare. </div></div>
 </div>
 
@@ -341,18 +348,36 @@ middle range theories
 ### Comformity
 
 ```{r}
-df <- data.frame(where = c(20, 60, 60),
+# df <- data.frame(where = c(20, 60, 60),
+#                  when = c(10, 30, 20),
+#                  what = c(70, 10, 20),
+#                  row.names = c("A", "B", "C"))
+# sites <- rownames(df)
+# df
+
+library(DT)
+library(dplyr)
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
                  when = c(10, 30, 20),
                  what = c(70, 10, 20),
                  row.names = c("A", "B", "C"))
+
 sites <- rownames(df)
-df
 
 ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) + 
   theme_bw() +
   geom_point(alpha = 0.5, size = 17) +
   geom_point(size = 1, color = "black") +
-  theme_showarrows()
+  theme_showarrows() +
+  theme(legend.position="none")
+
+datatable(df, rownames = FALSE) %>% 
+  formatStyle(
+    "feat",
+    backgroundColor = styleEqual(c("A", "B", "C"), 
+                                 c('#FF000070', '#00800070', '#0000FF70'))
+  )
 ```
 
 
@@ -412,6 +437,13 @@ Oxford.water %>%
                        y = - 0.1,
                        x = 0.5))             
 ```
+
+### XXXX
+
+```{=html}
+<iframe width="780" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/_stats/dim2/oxfordwater" title="Quarto Documentation"></iframe>
+```
+
 
 ### Coefficient
 

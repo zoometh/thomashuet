@@ -48,6 +48,10 @@
   font-size: 25px;
 }
 
+.midtext {
+  font-size: 30px;
+}
+
 /* IDE */
 .it-ide{
   color: #e31a1c;
