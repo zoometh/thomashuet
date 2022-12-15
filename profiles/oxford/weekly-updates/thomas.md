@@ -772,3 +772,29 @@ DB
 - Attended the [Linked Past VIII workshop](https://www.seadda.eu/?p=1808) in York, attended LOD infrastructures and ARIADNEplus/SPARQL sessions
 
 
+#### week 10
+
+- start to work on the deployment of Arches v7:
+    - work on the test [24test](http://34.243.109.142/) database
+- no response from the EAMENA GitHub user account, so will rename the EAMENA organisation account from "eamena-oxford" to something similar to "eamena-project" (I'll create a pool).
+- will submit on the [GMPCA colloquium](https://gmpca.fr/colloques-d-archeometrie/1849-archeometrie-2023-nice-appel-a-communication) abstract, session on data management, after Bijan and Andrew comments.
+- adapted [iconr](https://github.com/zoometh/iconr#readme) package to GeoJSON in order to deal with HPs [shape analysis](https://github.com/eamena-oxford/eamenaR#shape-analysis)
+- (re)contact Shaw Ryan and Adam Rabinowitz (PeriodO). Will is in the loop.
+- wait Sayantani to solve the duplicate issue.
+- work with Mohamed on BU (+ 458 HPs)
+- will attend:
+    - a IT learning training: "[Presentations: Improving your online talks](https://www.it.ox.ac.uk/event/presentations-improving-online-talks)" (this afternoon);
+    - a 4-mornings training in the Ashmolean Museum "[Eloquent Things: teaching using objects](https://www.socsci.ox.ac.uk/event/eloquent-things-teaching-using-real-objects)" (next Tuesday to Friday, 10am-1pm)
+
+- Agree with Ash that he will scout Arches v7 until the end of Christmas break, while I will dedicate more time on data analysis
+    - Ash and I will meet in person in Southampton by the end of January
+- Developping audit functions, in the frame of the eamenaR package (complex SQL requests), helped by Ash, to:
+    - count the number of grids filled by a team member during a certain interval of time (ex: 2022)
+    - count the number of HP created by a team during a certain interval of time (ex: MaREA, 2022)
+- Contact with the *Oxford Applied and Theoretical Machine Learning* group to host the postdoc research stay of Maria Castiello (ML/site detection in arid areas)
+    - add an informal meeting with a postdoc in engineering, used to ML, to get some tips about computer vision & site detection
+- Re-start the unformal meetings *Arches & Coffee* with Mike, Ash, Brian, Junaid, etc., each Wednesday at 10:00
+- Attend a meeting with Bijan and Hamed Rahnama, to work on caravanserails
+- Attend the Arcadia webinar about accessibility & Arches collector (with Bill and Bijan)
+- Work with Mohamed (BUs)
+- Join a research group on Time modeling (https://time.zulipchat.com/) with the members of PeriodO (A. Rabinowitz, R. Shaw), the Matrix Project (K. May, J. Taylor), etc. Will has been invited to join this group 

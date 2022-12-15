@@ -877,7 +877,7 @@ Gradient pattern
 Current dataset: [Matzig, D.N., Hussain, S.T. and Riede, F. *Design Space Constraints and the Cultural Taxonomy of European Final Palaeolithic Large Tanged Points (...)*](https://doi.org/10.1007/s41982-021-00097-2)
 :::
 
-## 3-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/"}
+## 3-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/" background-interactive="true"}
 
 ::: footer
 Current dataset: [ANR Itineris](https://github.com/zoometh/itineRis/blob/main/inst/extdata/dfisotops.csv)
