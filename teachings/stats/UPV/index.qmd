@@ -484,7 +484,17 @@ Oxford.water %>%
 </tbody>
 </table>
 </div>
-<div class="column">Coefficient of correlation (Spearman's &rho;, Pearson's r, etc.) and coefficient of determination (R<sup>2</sup>), between `[-1:1]`</div>
+<div class="column">
+Coefficient of correlation:
+<ul>
+<li>Spearman's &rho;</li>
+<li>Pearson's r</li>
+</ul><br>
+Coefficient of determination:
+<ul>
+<li>R<sup>2</sup></li>
+</ul><br>
+... all between `[-1:1]`</div>
 </div>
 
 :::
@@ -499,21 +509,21 @@ Oxford.water %>%
 ### Statement
 
 <div class="row">
-<div class="column"><center>![George E. P. Box](images/aut-box.jpg){height=250px}</center></div>
+<div class="column"><center>![George E. P. Box](images/aut-box.jpg){height=300px}</center></div>
 <div class="column"><em><center>"All models are wrong, but some are useful"</em><br><small> Box, 1976</small></center></div>
 </div>
 
 ### Examples
 
-<center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](images/mod-know-thyself.jpg){height=250px}</center>
+<center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](images/mod-know-thyself.jpg){height=200px}</center>
 
 <div class="row">
 
 <div class="column">
-<center>![Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*](images/mod-tree-kroeber.png){height=250px}</center></div>
+<center>![Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*](images/mod-tree-kroeber.png){height=300px}</center></div>
 
 <div class="column">
-<center>![Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 365(1559), 3923-3933](images/mod-tree-splitgraph.jpg){height=250px}</center></div>
+<center>![Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 365(1559), 3923-3933](images/mod-tree-splitgraph.jpg){height=300px}</center></div>
 
 </div>
 
@@ -602,7 +612,7 @@ controlled vocabulary -> scale
 </tr>
 <tr>
 <td>Missing data</td>
-<td>Lack of knowledge, eg. `NA` (Not Available)</td>
+<td>Lack of knowledge, eg. `NA` (<em>Not Available</em>)</td>
 </tr>
 </tbody>
 </table>
