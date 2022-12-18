@@ -22,6 +22,7 @@ fig-cap-location: margin
 ```{r, echo=FALSE}
 library(shiny)
 library(rmarkdown)
+library(knitr)
 library(plotly)
 library(archdata)
 library(ggtern)
@@ -247,9 +248,9 @@ Archaeology establishes facts and proposes **models** to connect these facts
 <div class="column"><center>![](images/conformity--example.png){height=350px}</center></div>
 <div class="column">We want to compare groups of settlement of 3 different cultures (or sites): <br>
 <ul>
-  <li>A</li>
-  <li>B</li>
-  <li>C</li>
+<li>A</li>
+<li>B</li>
+<li>C</li>
 </ul>
 </div>
 </div>
@@ -351,7 +352,7 @@ middle range theories
 
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="60%"}
 
 ```{r}
 df <- data.frame(feat = c("A", "B", "C"),
@@ -383,10 +384,12 @@ df <- data.frame(feat = c("A", "B", "C"),
 
 datatable(df, 
           rownames = FALSE,
+          options = list(searching = FALSE,
+                         lengthChange = FALSE),
           filter = "none") %>% 
   formatStyle(
     "feat",
-    fontSize = '50%',
+    fontSize = '20%',
     backgroundColor = styleEqual(c("A", "B", "C"), 
                                  c('#FF000070', '#00800070', '#0000FF70'))
   )
@@ -414,9 +417,9 @@ lm.water <- lm(OxfordPct ~ OxfordDst, data = Oxford.water)
 r2 <- round(summary(lm.water)$r.squared, 2)
 Oxford.water$predicted <- predict(lm.water) 
 Oxford.water$residuals <- residuals(lm.water)
-values <- paste0("<b>", Oxford.water$Place, "<b><br>", 
+values <- paste0("<b>", Oxford.water$Place, "<\b><br>", 
                  "% Oxford Pottery (observed): ", Oxford.water$OxfordPct)
-residuals <- paste0("<b>", Oxford.water$Place, "<b><br>",
+residuals <- paste0("<b>", Oxford.water$Place, "<\b><br>",
                     "% Oxford Pottery (predicted): ", round(Oxford.water$predicted, 2))
 m <- list(
   l = 50,
@@ -426,7 +429,7 @@ m <- list(
   pad = 20
 )
 Oxford.water %>% 
-  plot_ly(x = ~OxfordDst) %>% 
+  plot_ly(x = ~OxfordDst, width = 900) %>% 
   add_trace(name = "Oxford Pottery", y = ~OxfordPct,
             #mode = 'scatter',
             marker = list(color = 'black'), 
@@ -511,7 +514,7 @@ Coefficient of correlation:
 </ul><br>
 Coefficient of determination:
 <ul>
-<li>R<sup>2</sup></li>
+<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
 </ul><br>
 ... all between `[-1:1]`</div>
 </div>
@@ -542,7 +545,7 @@ Coefficient of determination:
 <center>![Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*](images/mod-tree-kroeber.png){height=300px}</center></div>
 
 <div class="column">
-<center>![Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philosophical Transactions of the Royal Society B: Biological Sciences*, 365(1559), 3923-3933](images/mod-tree-splitgraph.jpg){height=300px}</center></div>
+<center>![Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philos. Trans. R. Soc. B*, 365(1559), 3923-3933](images/mod-tree-splitgraph.jpg){height=300px}</center></div>
 
 </div>
 
@@ -561,26 +564,26 @@ Coefficient of determination:
 <tr>
 <td>Explanatory</td>
 <td>not over- or under-fitting</td>
-<td>![](images/mod-fitting.png){height=200px}</td>
+<td>![](../_images/mod-fitting.png){height=200px}</td>
 </tr>
 <tr>
 <td>Regularity</td>
-<td>central tendencies: reproducing data regularity</td>
+<td>reproducing data regularity</td>
 <td>![](images/mod-regularity-christaller.jpg){height=200px}</td>
 </tr>
 <tr>
 <td>Robustness</td>
-<td>replicable: not sensitive to small changes in data</td>
+<td>not sensitive to small changes in data</td>
 <td>![](images/mod-robust.jpg){height=200px}</td>
 </tr>
 <tr>
 <td>Parsimony</td>
-<td>all things being equal, the simplest possible explanation for a phenomenon is also the most probable</td>
+<td>the simplest possible explanation is also the most probable</td>
 <td>![](images/mod-parsimony-laplace.jpg){height=200px}</td>
 </tr>
 <tr>
 <td>Versioning</td>
-<td>carry its own story: abandoned assumptions, alternative versions, etc.</td>
+<td>carry its own story</td>
 <td>![](images/mod-versioning.jpg){height=200px}</td>
 </tr>
 </tbody>
@@ -599,13 +602,87 @@ controlled vocabulary -> scale
 
 ### Explanatory
 
+<div class="row">
+
+<div class="column">
+<center>![✔️ Fitting](images/mod-fitting.png){height=300px}</center></div>
+<center>![❌ Fitting](images/mod-fittingnot-a.png)height=300px}</center></div>
+</div>
+
+<div class="column">
+<center>
+not over- or under-fitting
+</center>
+</div>
+
+</div>
+
+
 ### Regularity
+
+<div class="row">
+
+<div class="column">
+<center>![bblblb](images/mod-regularity-christaller.jpg){height=300px}</center></div>
+</div>
+
+<div class="column">
+<center>
+reproducing data regularity (central tendencies)
+</center>
+</div>
+
+</div>
 
 ### Robustness
 
+<div class="row">
+
+<div class="column">
+<center>![bblblb](images/mod-robust.jpg){height=300px}</center></div>
+</div>
+
+<div class="column">
+<center>
+not sensitive to small changes in data (reproducible)
+</center>
+</div>
+
+</div>
+
 ### Parsimony
 
+<div class="row">
+
+<div class="column">
+<center>![bblblb](images/mod-parsimony-laplace.jpg){height=300px}</center></div>
+</div>
+
+<div class="column">
+<center>
+all things being equal, the simplest possible explanation for a phenomenon is also the most probable
+</center>
+</div>
+
+</div>
+
+
 ### Versioning
+
+<div class="row">
+
+<div class="column">
+<center>![bblblb](images/mod-versioning.jpg){height=300px}</center></div>
+</div>
+
+<div class="column">
+<center>
+carry its own story: abandoned assumptions, alternative versions, etc.
+</center>
+</div>
+
+</div>
+
 
 :::
 
@@ -631,11 +708,11 @@ controlled vocabulary -> scale
 </tr>
 <tr>
 <td>Processed data</td>
-<td>Working data processed but not definitive</td>
+<td>Working data (i.e. not definitive)</td>
 </tr>
 <tr>
 <td>Aggregated data</td>
-<td>Data is gathered and expressed in a summary form</td>
+<td>Gathered data expressed in a summary form</td>
 </tr>
 <tr>
 <td>Metadata</td>
@@ -666,13 +743,13 @@ dataIn <- paste0(dirIn, fileIn)
 C14 <- read.csv2(dataIn, sep = "\t")
 C14cal <- calibrate(x = C14[1, "C14Age"], 
                     errors = C14[1, "C14SD"],
-                    calCurves='intcal20')
+                    calCurves = 'intcal20')
 C14cal$grids  
 ```
 
 ### Processed
 
-Raw data
+Processed data
 
 ```{r}
 #| echo: true
@@ -695,7 +772,7 @@ x <- calibrate(C14[1:2, "C14Age"],
                C14[1:2, "C14SD"],
                normalised = FALSE)
 spd.levant <- spd(x,
-                  bins=bins,
+                  bins = bins,
                   timeRange = c(7000, 4000))
 plot(spd.levant,
      runm = 50, 
@@ -704,6 +781,7 @@ plot(spd.levant,
 
 
 ```{r}
+#| eval: false
 #| echo: true
 library(archdata)
 
@@ -728,7 +806,6 @@ Missing data
 
 ```{r}
 #| echo: true
-library(knitr)
 df <- data.frame(row.names = c("A", "B", "C", "D"),
                  pots1 =  c(10, 5, NA, 2),
                  pots2 =  c(7, 6, 10, 5),
