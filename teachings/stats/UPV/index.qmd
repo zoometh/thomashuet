@@ -25,6 +25,8 @@ library(rmarkdown)
 library(plotly)
 library(archdata)
 library(ggtern)
+library(DT)
+library(dplyr)
 
 data(OxfordPots)
 ```
@@ -347,16 +349,11 @@ middle range theories
 
 ### Comformity
 
-```{r}
-# df <- data.frame(where = c(20, 60, 60),
-#                  when = c(10, 30, 20),
-#                  what = c(70, 10, 20),
-#                  row.names = c("A", "B", "C"))
-# sites <- rownames(df)
-# df
+:::: {.columns}
 
-library(DT)
-library(dplyr)
+::: {.column width="40%"}
+
+```{r}
 df <- data.frame(feat = c("A", "B", "C"),
                  where = c(20, 60, 60),
                  when = c(10, 30, 20),
@@ -371,14 +368,34 @@ ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) +
   geom_point(size = 1, color = "black") +
   theme_showarrows() +
   theme(legend.position="none")
+```
 
-datatable(df, rownames = FALSE) %>% 
+:::
+
+::: {.column width="60%"}
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+datatable(df, 
+          rownames = FALSE,
+          filter = "none") %>% 
   formatStyle(
     "feat",
+    fontSize = '50%',
     backgroundColor = styleEqual(c("A", "B", "C"), 
                                  c('#FF000070', '#00800070', '#0000FF70'))
   )
 ```
+
+:::
+
+::::
+
 
 
 ### Regression
@@ -397,8 +414,10 @@ lm.water <- lm(OxfordPct ~ OxfordDst, data = Oxford.water)
 r2 <- round(summary(lm.water)$r.squared, 2)
 Oxford.water$predicted <- predict(lm.water) 
 Oxford.water$residuals <- residuals(lm.water)
-values <- paste0(Oxford.water$Place, "<br>", Oxford.water$OxfordPct)
-residuals <- paste0(Oxford.water$Place, "<br>", round(Oxford.water$predicted, 2))
+values <- paste0("<b>", Oxford.water$Place, "<b><br>", 
+                 "% Oxford Pottery (observed): ", Oxford.water$OxfordPct)
+residuals <- paste0("<b>", Oxford.water$Place, "<b><br>",
+                    "% Oxford Pottery (predicted): ", round(Oxford.water$predicted, 2))
 m <- list(
   l = 50,
   r = 50,
@@ -434,7 +453,7 @@ Oxford.water %>%
          margin = m,
          legend = list(orientation = "h",   
                        xanchor = "center",  
-                       y = - 0.1,
+                       y = + 0.1,
                        x = 0.5))             
 ```
 
@@ -487,8 +506,8 @@ Oxford.water %>%
 <div class="column">
 Coefficient of correlation:
 <ul>
-<li>Spearman's &rho;</li>
-<li>Pearson's r</li>
+<li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
+<li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
 </ul><br>
 Coefficient of determination:
 <ul>
@@ -515,7 +534,7 @@ Coefficient of determination:
 
 ### Examples
 
-<center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](images/mod-know-thyself.jpg){height=200px}</center>
+<!-- <center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](images/mod-know-thyself.jpg){height=200px}</center> -->
 
 <div class="row">
 
@@ -542,7 +561,7 @@ Coefficient of determination:
 <tr>
 <td>Explanatory</td>
 <td>not over- or under-fitting</td>
-<td>![](images/mod-overfitting.png){height=200px}</td>
+<td>![](images/mod-fitting.png){height=200px}</td>
 </tr>
 <tr>
 <td>Regularity</td>
@@ -550,12 +569,12 @@ Coefficient of determination:
 <td>![](images/mod-regularity-christaller.jpg){height=200px}</td>
 </tr>
 <tr>
-<td>Robust</td>
+<td>Robustness</td>
 <td>replicable: not sensitive to small changes in data</td>
 <td>![](images/mod-robust.jpg){height=200px}</td>
 </tr>
 <tr>
-<td>Parsimonious</td>
+<td>Parsimony</td>
 <td>all things being equal, the simplest possible explanation for a phenomenon is also the most probable</td>
 <td>![](images/mod-parsimony-laplace.jpg){height=200px}</td>
 </tr>
@@ -567,17 +586,29 @@ Coefficient of determination:
 </tbody>
 </table>
 
-
-
-
-
-
 :::
 
 ::: {.notes}
 (abandoned hypotheses, alternative versions, etc.)
 controlled vocabulary -> scale
 :::
+
+## Models - Proprieties
+
+::: {.panel-tabset}
+
+### Explanatory
+
+### Regularity
+
+### Robustness
+
+### Parsimony
+
+### Versioning
+
+:::
+
 
 ## Data
 

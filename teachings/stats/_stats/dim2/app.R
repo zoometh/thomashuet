@@ -10,11 +10,10 @@ data(OxfordPots)
 ui <- fluidPage(
   br(), br(), br(), br(), br(), br(), br(), br(), br(),
   h3("Distribution of Late Romano-British Oxford Pottery"),
-  checkboxGroupInput("watertrans", "water transportation probable",
-                     choices = c("Yes", "No"), selected = c("Yes", "No")
-  ),
-  radioButtons("regression", "show regression",
-               choices = c("Yes", "No"), selected = "No"
+  fluidRow(column(3, checkboxGroupInput("watertrans", "water transportation probable",
+                                        choices = c("Yes", "No"), selected = c("Yes", "No"))),
+           column(3, radioButtons("regression", "show regression",
+                                  choices = c("Yes", "No"), selected = "No"))
   ),
   # radioButtons("residuals", "show residuals",
   #              choices = c("Yes", "No"), selected = "No"
@@ -44,17 +43,18 @@ server <- function(input, output, session){
   # d <- mtcars
   # fit <- lm(mpg ~ hp, data = d)
   
-
+  
   
   output$graph <- renderPlotly({
     # water transport
     if("Yes" %in% input$watertrans & !("No" %in% input$watertrans)){
       gplot <- ggplot(Oxford.water, aes(OxfordDst, OxfordPct)) +
-        # stat_summary(fun.data=mean_cl_normal) + 
-        geom_point() +
-        # geom_point(data = Oxford.nowater, aes(OxfordDst, OxfordPct)) +
+        geom_point(aes(text = paste0("<b>", Place, "</b><br>",
+                                     "distance (in miles): ", OxfordDst, "<br>",
+                                     "% Oxford Pottery: ", OxfordPct
+        ))) +
         scale_y_continuous(breaks = c(1, 5, 10, 20), trans = 'log') +
-        xlab("Distance (miles)") +
+        xlab("Distance (in miles)") +
         ylab("Percentage of Oxford Pottery") +
         xlim(c(0, 160)) +
         theme_bw()
@@ -64,17 +64,20 @@ server <- function(input, output, session){
           geom_text(data = Oxford.water,
                     aes(x = max(OxfordDst) + 2,
                         y = min(OxfordPct) + 2,
-                        label = paste0("water transport R2 = ", lm.water.R2))
+                        label = paste0("water transport R<sup>2</sup> = ", lm.water.R2))
           )
       }
-      print(ggplotly(gplot))
+      print(ggplotly(gplot, tooltip = "text"))
     }
     # no water transport
     else if("No" %in% input$watertrans & !("Yes" %in% input$watertrans)){
       gplot <- ggplot(Oxford.nowater, aes(OxfordDst, OxfordPct)) +
-        geom_point(shape = 1) +
+        geom_point(shape = 1, aes(text = paste0("<b>", Place, "</b><br>",
+                                                "distance (in miles): ", OxfordDst, "<br>",
+                                                "% Oxford Pottery: ", OxfordPct
+        ))) +
         scale_y_continuous(breaks = c(1, 5, 10, 20), trans = 'log') +
-        xlab("Distance (miles)") +
+        xlab("Distance (in miles)") +
         ylab("Percentage of Oxford Pottery") +
         xlim(c(0, 160)) +
         theme_bw()
@@ -84,7 +87,7 @@ server <- function(input, output, session){
           geom_text(data = Oxford.nowater, 
                     aes(x = max(OxfordDst) + 2,
                         y = min(OxfordPct) + 2,
-                        label = paste0("no water transport R2 = ", lm.nowater.R2)))
+                        label = paste0("no water transport R<sup>2</sup> = ", lm.nowater.R2)))
         # if("Yes" %in% input$residuals){
         #   print("GJGKJGGKJGKJG")
         #   gplot <- gplot +
@@ -92,7 +95,7 @@ server <- function(input, output, session){
         #     geom_text(data = Oxford.nowater, 
         #               aes(x = max(OxfordDst) + 2,
         #                   y = min(OxfordPct) + 2,
-        #                   label = paste0("no water transport R2 = ", lm.nowater.R2))) +
+        #                   label = paste0("no water transport R<sup>2</sup> = ", lm.nowater.R2))) +
         #     geom_segment(data = Oxford.nowater,
         #                  aes(xend = OxfordDst,
         #                      yend = predicted),
@@ -103,40 +106,51 @@ server <- function(input, output, session){
         #                shape = 4)
         # }
       }
-      print(ggplotly(gplot))
+      print(ggplotly(gplot, tooltip = "text"))
     }
     # both
     else if("No" %in% input$watertrans & "Yes" %in% input$watertrans){
       gplot <- ggplot() +
-        geom_point(Oxford.nowater, mapping = aes(OxfordDst, OxfordPct), shape = 1) +
-        geom_point(Oxford.water, mapping = aes(OxfordDst, OxfordPct)) +
+        geom_point(Oxford.nowater, 
+                   mapping = aes(OxfordDst, OxfordPct, 
+                                 text = paste0("<b>", Place, "</b><br>",
+                                               "distance (in miles): ", OxfordDst, "<br>",                                                                                 "% Oxford Pottery: ", OxfordPct
+                                 )), shape = 1) +
+        geom_point(Oxford.water, 
+                   mapping = aes(OxfordDst, OxfordPct,
+                                 text = paste0("<b>", Place, "</b><br>",
+                                               "distance (in miles): ", OxfordDst, "<br>",                                                                                 "% Oxford Pottery: ", OxfordPct
+                                 ))) +
         scale_y_continuous(breaks = c(1, 5, 10, 20), trans = 'log') +
-        xlab("Distance (miles)") +
+        xlab("Distance (in miles)") +
         ylab("Percentage of Oxford Pottery") +
         xlim(c(0, 160)) +
         theme_bw()
       if("Yes" %in% input$regression){
+        # regression
         gplot <- gplot +
+          # no water
           geom_smooth(data = Oxford.nowater,
-                      aes(x = OxfordDst, y = OxfordPct),
+                      aes(x = OxfordDst, y = OxfordPct), # , text = paste0(OxfordDst, "<br>", OxfordPct)
                       method='lm', formula= y~x, se = F, color = "black") +
           geom_text(data = Oxford.nowater,
                     aes(x = max(OxfordDst) + 2,
                         y = min(OxfordPct) + 2,
-                        label = paste0("no water transport R2 = ", lm.nowater.R2),
+                        label = paste0("no water transport R<sup>2</sup> = ", lm.nowater.R2),
                         hjust = 0)) +
+          # yes water
           geom_smooth(data = Oxford.water, 
                       aes(x = OxfordDst, y = OxfordPct),
                       method='lm', formula= y~x, se = F, color = "black") +
           geom_text(data = Oxford.water,
                     aes(x = max(OxfordDst) + 2,
                         y = min(OxfordPct) + 2,
-                        label = paste0("water transport R2 = ", lm.water.R2),
+                        label = paste0("water transport R<sup>2</sup> = ", lm.water.R2),
                         hjust = 0,
                         vjust = 0)
           )
       }
-      print(ggplotly(gplot))
+      print(ggplotly(gplot, tooltip = "text"))
     }
   })
 }
