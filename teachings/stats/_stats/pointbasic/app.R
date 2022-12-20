@@ -4,7 +4,7 @@ library(shiny)
 library(spatstat)
 
 ui <- fluidPage(
-  br(), br(), br(), br(), br(), br(), br(), br(), br(), br(), br(),
+  br(), br(), br(), br(), br(), br(), br(), br(), br(), br(),
   h3("Main geographical indices"),
   h4("Fist-Order Neighborhood Analysis"),
   sidebarLayout(
@@ -23,11 +23,11 @@ ui <- fluidPage(
                          label = "Display",
                          choices = c("Mean Center",
                                      "Central Feature",
+                                     "Dirichlet",
+                                     "Delaunay",
                                      "Convexhull",
                                      "Minimum Bounding Rectangle",
-                                     "Minimum Bounding Circle",
-                                     "Delaunay",
-                                     "Dirichlet"))
+                                     "Minimum Bounding Circle"))
       # fullscreen_all(click_id = "test"),
       # actionButton("refresh", "Refresh", icon = icon("refresh"))
       # actionButton("n_poly", icon = icon("refresh"), label = "")
@@ -62,19 +62,20 @@ server <- function(input, output) {
     }
     if ("Convexhull" %in% input$stat) {
       ch <- convexhull(pts)
-      plot(ch, add = TRUE, border = "darkgrey")
+      plot(ch, add = TRUE, border = "darkgrey", 
+           lwd = 2)
     }
     if ("Central Feature" %in% input$stat) {
       # ctr <- centroid.owin(pts, as.ppp = FALSE)
       closest <- nncross(ctr, pts)
       ctf <- pts[closest$which]
-      points(ctf$x, ctf$y, pch = 1, col="darkgrey",
-             lwd = 2, cex = 3)
+      points(ctf$x, ctf$y, pch = 1, col="red",
+             lwd = 3, cex = 3)
     }
     if ("Mean Center" %in% input$stat) {
       # ctr <- centroid.owin(pts, as.ppp = FALSE)
       # points(ctr$x, ctr$y, pch = 3, col = "red", cex = 2)
-      points(ctr$x, ctr$y, pch = 3, col = "red", cex = 2)
+      points(ctr$x, ctr$y, pch = 3, col = "red", cex = 3)
     }
     if ("Dirichlet" %in% input$stat) {
       dirt <- dirichlet(pts)

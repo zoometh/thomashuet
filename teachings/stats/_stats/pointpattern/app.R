@@ -47,7 +47,7 @@ server <- function(input, output) {
   angle <- runif(n = n.point, min = 0, max = 2*pi)
   dxy[ , 1] <- h*sin(angle)
   dxy[ , 2] <- h*cos(angle)
-  cluster.pt <- data.frame(x = rep(NA, 20), y=rep(NA, 20))
+  cluster.pt <- data.frame(x = rep(NA, 20), y = rep(NA, 20))
   cluster.pt$x <- ori$coords.x1 + dxy$X1
   cluster.pt$y <- ori$coords.x2 + dxy$X2
   coordinates(cluster.pt)<-  ~ x+y
@@ -71,26 +71,26 @@ server <- function(input, output) {
                   coordinates(random.pt)[ , 2],
                   window = w)
       # E <- envelope(Kpts, Lest, funargs = list(correction="Ripley"), nsim=100, VARIANCE=TRUE, verbose=FALSE)
-      E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE, verbose=FALSE)
+      E <- envelope(Kpts, Lest, correction="Ripley", nsim = 100, VARIANCE = TRUE, verbose = FALSE)
       # E <- Lest(Kpts, correction = "Ripley") # makes the legend easy to read
-      plot(E, xlab="d (units)", ylab = "K(d)", main = "Random")
+      plot(E, xlab = "d (units)", ylab = "K(d)", main = "Random distribution")
     }
     else if (input$ppa == "Regular") {
       Kpts <- ppp(coordinates(regular.pt)[ , 1],
                   coordinates(regular.pt)[ , 2],
                   window = w)
-      E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE, verbose=FALSE)
+      E <- envelope(Kpts, Lest, correction="Ripley", nsim = 100, VARIANCE = TRUE, verbose = FALSE)
       # L <- Lest(Kpts, correction = "Ripley")
-      plot(E, xlab="d (units)", ylab = "K(d)", main = "Regular")
+      plot(E, xlab = "d (units)", ylab = "K(d)", main = "Regular distribution")
     }
     else if (input$ppa == "Clustered") {
       Kpts <- ppp(coordinates(cluster.pt)[ , 1],
                   coordinates(cluster.pt)[ , 2],
                   window = w)
-      E <- envelope(Kpts, Lest, correction="Ripley", nsim=100, VARIANCE=TRUE, verbose=FALSE)
+      E <- envelope(Kpts, Lest, correction="Ripley", nsim = 100, VARIANCE = TRUE, verbose = FALSE)
       # plot(E)
       # L <- Lest(Kpts, correction = "Ripley")
-      plot(E, xlab="d (units)", ylab = "K(d)", main = "Clustered")
+      plot(E, xlab = "d (units)", ylab = "K(d)", main = "Clustered distribution")
     }
   })
 }

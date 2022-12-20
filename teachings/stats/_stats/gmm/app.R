@@ -33,7 +33,7 @@ ui <- fluidPage(
                )
              )
     ),
-    tabPanel("Compare", fluid = TRUE,
+    tabPanel("Dataset", fluid = TRUE,
              sidebarLayout(
                sidebarPanel(
                  width = 3,
@@ -44,10 +44,24 @@ ui <- fluidPage(
                                          "Centered-Scaled"),
                              selected = "Not centered, Not scaled")
                ),
-               mainPanel("Shape Comparison", 
+               mainPanel("Shape dataset", 
                          plotOutput(outputId = "stackPlot",
-                                    height = "700px")
+                                    height = "600px")
                )
+             )
+    ),
+    tabPanel("Compare", fluid = TRUE,
+             sidebarLayout(
+               sidebarPanel(
+                 width = 3,
+                 selectInput("compar",
+                             label = "Compar",
+                             choices = c("PCA",
+                                         "CLUST"),
+                             selected = "PCA")),
+               mainPanel("Shape comparisons", 
+                         plotOutput(outputId = "comparPlot",
+                                    height = "700px"))
              )
     ),
     tabPanel("Classify", fluid = TRUE,
@@ -55,16 +69,14 @@ ui <- fluidPage(
                sidebarPanel(
                  width = 3,
                  selectInput("gmm",
-                             label = "gmm",
-                             choices = c("PCA",
-                                         "CLUST",
-                                         "KMEANS"),
-                             selected = "PCA"),
+                             label = "GMM",
+                             choices = c("KMEANS"),
+                             selected = "KMEANS"),
                  sliderInput("kmeans",
                              label = "Number of KMEANS centers",
                              min = 2, value = 3, max = 7, step = 1)
                ),
-               mainPanel("Shape Analysis", 
+               mainPanel("Shape classification", 
                          plotOutput(outputId = "gmmPlot",
                                     height = "700px"))
              )
@@ -88,7 +100,7 @@ server <- function(input, output) {
       coo_plot(efi, 
                borders = arrow.heads$color, 
                main = paste(names(arrow.heads)[input$arrow.heads], "\n",
-                                                 input$efourier, " harmonics"),
+                            input$efourier, " harmonics"),
                points = TRUE,
                pch = 16)
     }
@@ -100,7 +112,7 @@ server <- function(input, output) {
       coo_plot(efourier_i(ef), 
                borders = arrow.heads$color, 
                main = paste(names(arrow.heads)[input$arrow.heads], "\n",
-                                                 input$efourier, " harmonics"))
+                            input$efourier, " harmonics"))
       # coo_plot(a.arrow.heads)
     }
   })
@@ -127,18 +139,25 @@ server <- function(input, output) {
         stack(borders = arrow.heads$color)
     }
   })
-  output$gmmPlot <- renderPlot({
-    if (input$gmm == "PCA") {
+  output$comparPlot <- renderPlot({
+    if (input$compar == "PCA") {
       arrow.heads.f <- efourier(arrow.heads, input$efourier)
       arrow.heads.p <- PCA(arrow.heads.f)
-      plot(arrow.heads.p)
+      plot(arrow.heads.p,
+           col = arrow.heads$color,
+           cex = 2
+           )
     }
-    else if (input$gmm == "CLUST") {
+    else if (input$compar == "CLUST") {
       arrow.heads.f <- efourier(arrow.heads, input$efourier)
       arrow.heads.p <- CLUST(arrow.heads.f)
       plot(arrow.heads.p)
+           # col = arrow.heads$color,
+           # palette = pal_manual(c("green", "yellow", "red")))
     }
-    else if (input$gmm == "KMEANS") {
+  })
+  output$gmmPlot <- renderPlot({
+    if (input$gmm == "KMEANS") {
       arrow.heads.f <- efourier(arrow.heads, input$efourier)
       arrow.heads.f <- PCA(arrow.heads.f)
       KMEANS(arrow.heads.f, centers = input$kmeans)

@@ -52,6 +52,14 @@
   font-size: 30px;
 }
 
+.worldwide {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #FFBB7D;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+
 /* IDE */
 .it-ide{
   color: #e31a1c;

@@ -1,15 +1,31 @@
 # Seriation
 
 library(shiny)
+library(DT)
 library(seriation)
 library(ca)
+
+
+
+seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv", row.name = 1)
+
+datas <- datatable(
+  seriat, extensions = 'Buttons', options = list(
+    dom = 'Blfrtip',
+    buttons = c('copy', 'csv', 'excel', 'pdf'),
+    lengthMenu = list(c(10,30, 50, -1), 
+                      c('10', '30', '50', 'All')),
+    paging = T)
+)
+
+seriat <- as.matrix(seriat)
 
 ui <- fluidPage(
   br(), br(), br(), br(), br(), br(), br(),
   h3("LIA cemetery of Szentlőrinc, Hungary"),
   sidebarLayout(
     sidebarPanel(
-      width = 3,
+      width = 2,
       selectInput("seriate",
                   label = "Seriate",
                   choices = c("Raw dataframe",
@@ -23,15 +39,13 @@ ui <- fluidPage(
                  plotOutput(outputId = "seriatePlot",
                             height = "700px")),
         tabPanel("Dataframe", 
-                 tableOutput(outputId = "dataframePlot"))
+                 DT::dataTableOutput(outputId = "dataframePlot"))
       )
     )
   )
 )
 
 server <- function(input, output) {
-  seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv", row.name = 1)
-  seriat <- as.matrix(seriat)
   output$seriatePlot <- renderPlot({
     if (input$seriate == "Raw dataframe"){
       bertinplot(seriat, panel = panel.tiles)
@@ -45,9 +59,9 @@ server <- function(input, output) {
       plot(my.ca)
     }
   })
-  output$dataframePlot <- renderTable({
-    as.data.frame(seriat)
-  }, rownames = TRUE)
+  output$dataframePlot <- DT::renderDataTable({
+    
+    datas})
 }
 
 

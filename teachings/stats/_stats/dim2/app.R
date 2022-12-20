@@ -6,10 +6,13 @@ library(archdata)
 
 data(OxfordPots)
 
-
 ui <- fluidPage(
   br(), br(), br(), br(), br(), br(), br(), br(), br(),
   h3("Distribution of Late Romano-British Oxford Pottery"),
+  h4("
+  Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.<br>
+  Hodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119.
+     "),
   fluidRow(column(3, checkboxGroupInput("watertrans", "water transportation probable",
                                         choices = c("Yes", "No"), selected = c("Yes", "No"))),
            column(3, radioButtons("regression", "show regression",

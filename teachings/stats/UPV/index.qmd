@@ -10,7 +10,7 @@ format:
     preview-links: true
     logo: images/inst-uni-oxford_.png
     css: styles.css
-    footer: "Statistics & Computer Scripts in Archaeology, Oxford MT2 2022 - T. Huet - <https://tinyurl.com/goa-oxford>"
+    footer: "Statistics & Computer Scripts in Archaeology, UPV 2022 - T. Huet - <https://tinyurl.com/stats-upv>"
     # margin: -0.5
 resources:
   - demo.pdf
@@ -148,6 +148,24 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 <div class="row">
 <div class="column">![A. Quetelet, 1821-1833 census](images/aut-quetelet_1821-33_census.png){height=350px}</div>
 <div class="column">![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=350px}</div>
+</div>
+
+### Computing for peace
+
+### IBM dominion
+
+### PC era
+
+### Expert Systems
+
+<div class="row">
+<div class="column">![Garry Kasparov *vs* Deep Blue, 1996-1997](images/hist-computer-science-expert.jpg){height=300px}</div>
+</div>
+
+### Artificial Intelligence & Machine Learning
+
+<div class="row">
+<div class="column">![Prompted image with Midjourney AI, 2022](images/hist-computer-science-ai.png){height=300px}</div>
 </div>
 
 :::
@@ -344,17 +362,18 @@ middle range theories
 
 :::
 
-## Comparisons
+## Conformity
 
 ::: {.panel-tabset}
 
-### Comformity
+### Compare
 
 :::: {.columns}
 
 ::: {.column width="60%"}
 
 ```{r}
+#| fig-width: 8
 df <- data.frame(feat = c("A", "B", "C"),
                  where = c(20, 60, 60),
                  when = c(10, 30, 20),
@@ -373,9 +392,10 @@ ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) +
 
 :::
 
-::: {.column width="60%"}
+::: {.column width="30%"}
 
 ```{r}
+
 df <- data.frame(feat = c("A", "B", "C"),
                  where = c(20, 60, 60),
                  when = c(10, 30, 20),
@@ -384,15 +404,22 @@ df <- data.frame(feat = c("A", "B", "C"),
 
 datatable(df, 
           rownames = FALSE,
+          width = '30%',
           options = list(searching = FALSE,
-                         lengthChange = FALSE),
-          filter = "none") %>% 
-  formatStyle(
-    "feat",
-    columns = colnames(.), fontSize = '50%', # fontSize = '20%',
-    backgroundColor = styleEqual(c("A", "B", "C"), 
-                                 c('#FF000070', '#00800070', '#0000FF70'))
-  )
+                         lengthChange = FALSE,
+                         pagingType = "numbers",
+                         PageLength = 3,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '24px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '24px')
 ```
 
 :::
@@ -400,13 +427,13 @@ datatable(df,
 ::::
 
 
-
-### Regression
+### Regress
 
 
 ```{r}
 #| warning: false
 #| message: false
+
 library(ggplot2)
 library(archdata)
 data("OxfordPots")
@@ -429,7 +456,7 @@ m <- list(
   pad = 20
 )
 Oxford.water %>% 
-  plot_ly(x = ~OxfordDst, width = 900) %>% 
+  plot_ly(x = ~OxfordDst, width = 1200) %>% 
   add_trace(name = "Oxford Pottery", y = ~OxfordPct,
             #mode = 'scatter',
             marker = list(color = 'black'), 
@@ -439,17 +466,20 @@ Oxford.water %>%
             #mode = 'scatter',
             marker = list(color = 'grey', line = list(color = 'grey', width = 1)),
             text = residuals,
-            hoverinfo = 'text') %>% 
+            hoverinfo = 'text',
+            visible = "legendonly") %>% 
   add_trace(name = "Regression line", x = ~OxfordDst, y = fitted(lm.water),
             mode = 'lines', line = list(color = 'black', width = 2),
             text = r2,
-            hoverinfo = 'text') %>%
+            hoverinfo = 'text',
+            visible = "legendonly") %>%
   add_segments(name = "Residuals",  x = ~OxfordDst, y =  ~OxfordPct,
                xend = ~OxfordDst, yend = ~predicted, 
                mode = 'lines', 
                line = list(color = 'grey', width = 1, dash = 'dash'),
                text = ~residuals,
-               hoverinfo = 'text') %>%
+               hoverinfo = 'text',
+               visible = "legendonly") %>%
   layout(title = paste0('Oxford pottery with a probable water transportation <br> (R<sup>2</sup> = ', r2, ")"),
          xaxis = list(title = "Distance (miles)"), 
          yaxis = list(title = "Percentage of Oxford Pottery"),
@@ -564,7 +594,7 @@ Coefficient of determination:
 <tr>
 <td>Explanatory</td>
 <td>not over- or under-fitting</td>
-<td>![](../_images/mod-fitting.png){height=200px}</td>
+<td>![](../-images/mod-fitting.png){height=200px}</td>
 </tr>
 <tr>
 <td>Regularity</td>
@@ -821,19 +851,6 @@ colSums(df)
 :::
 
 
-## 1-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim1/"}
-
-
-::: {.notes}
-univariate
-Data with 1 dimension = 1 measure
-Histogram = discretization = bins = change of scale
-:::
-
-::: footer
-Dataset: [`archdata` R package - `Mesolithic` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
-:::
-
 ## Scales
 
 ::: {.panel-tabset}
@@ -899,6 +916,21 @@ Dataset: [`archdata` R package - `Mesolithic` dataset](https://rdrr.io/cran/arch
 
 
 
+## 1-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim1/"}
+
+
+::: {.notes}
+univariate
+Data with 1 dimension = 1 measure
+Histogram = discretization = bins = change of scale
+:::
+
+::: footer
+Dataset: [`archdata` R package - `Mesolithic` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
+:::
+
+
+
 ## 2-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim2/"}
 
 ::: {.notes}
@@ -913,6 +945,9 @@ If the series studied is normal, the standard deviations of the values of this s
 :::
 
 ::: footer
+Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.
+
+Hodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119.
 Dataset: [`archdata` R package - `OxfordPots` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
 :::
 
@@ -932,7 +967,7 @@ spatial dataset
 
 ## {}
 
-Random and clustered patterns
+Random <em>versus</em> clustered patterns
 
 ::: {.panel-tabset}
 
@@ -1017,7 +1052,7 @@ Gradient pattern
 
 <div class="row">
 <div class="column">![Ammerman and Cavalli-Sforza, 1971, *Measuring the rate of spread of early farming in Europe*](images/dist-gradient-spread-neo.jpg){height=300px}</div>
-<div class="column">**Diffusion** (spatial and temporal). In the case of a linear gradient, the calculation of the centroid of a group of points is a good indicator of its evolution..</div>
+<div class="column">**Diffusion** (spatial and temporal). In the case of a linear gradient, the calculation of the centroid of a group of points is a good indicator of its evolution.</div>
 </div>
 
 
@@ -1039,6 +1074,18 @@ Useful when data are complete (chemical composition, genetics, etc.)
 
 ## 3-dim or more data
 
+<center>Factorial Analysis (FA)</center>
+<br>
+<div class="row">
+<div class="column" style="width: 25%">![](images/stat-fa-camel-1.png){height=300px}</div>
+<div class="column33" style="width: 5%; vertical-align: middle;">➡️</div>
+<div class="column" style="width: 25%">![](images/stat-fa-camel-2.png){height=300px}</div>
+<div class="column" style="width: 45%">Factorial Analysis is the generic term for multivariate (or multifactorial) analysis</div>
+</div>
+
+
+## 3-dim or more data
+
 ::: {.panel-tabset}
 
 ### Dataset
@@ -1047,18 +1094,6 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <div class="column">![Map of NE Iberia with locations of the studied sites](images/stat-plosone-carto-zona.png){height=300px}</div>
 <div class="column">![Chrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity](images/stat-seriat-plosone.png){height=300px}
 </div>
-</div>
-
-
-### FA
-
-<center>Factorial Analysis (FA)</center>
-<br>
-<div class="row">
-<div class="column" style="width: 25%">![](images/stat-fa-camel-1.png){height=300px}</div>
-<div class="column33" style="width: 5%; vertical-align: middle;">➡️</div>
-<div class="column" style="width: 25%">![](images/stat-fa-camel-2.png){height=300px}</div>
-<div class="column" style="width: 45%">Factorial Analysis is the generic term for multivariate (or multifactorial) analysis</div>
 </div>
 
 
@@ -1100,11 +1135,10 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <div class="column66">![LDA of sites’ NISP profiles during the LBA](images/stat-fa-lda-plosone-lba-zona.png){height=300px}</div>
 </div>
 
-
 :::
 
-::: {.notes}
-Multivariate
+::: footer
+[Espinet et al., "Resilience and livestock adaptations to demographic growth and technological change (...)" *PloS one 16.2 (2021)*](https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0246201)
 :::
 
 ## Seriation {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/seriation/"}
@@ -1122,12 +1156,6 @@ Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Arch
 
 ::: {.panel-tabset}
 
-### Human *vs* Machine
-
-<div class="row">
-<div class="column">![Garry Kasparov *vs* Deep Blue, 1996-1997](images/hist-computer-science-expert.jpg){height=300px}</div>
-<div class="column">![Prompted image with Midjourney AI, 2022](images/hist-computer-science-ai.png){height=300px}</div>
-</div>
 
 ### Stack
 
@@ -1137,17 +1165,17 @@ Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Arch
 <thead>
 <tr>
 <th><a href="https://www.r-project.org/">
-<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a></th>
 <th><a href="https://www.python.org/">
-<img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+<img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td colspan="2"><a href="https://github.com">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 auto; background: transparent;" class="demo-logo">
 </a></td>
 </tr>
 </tbody>
@@ -1157,17 +1185,17 @@ Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Arch
 ### GitHub
 
 <a href="https://github.com">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a>
 The 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 
 ### R
 
 <a href="https://www.r-project.org/">
-<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a>
 <p>
-R is a scripting language for data science. It is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> worldwide</p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist and Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
+R is a scripting language for data science. It is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> <span class=worldwide>worldwide</span></p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist and Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
 
 <table class="table">
 <thead>

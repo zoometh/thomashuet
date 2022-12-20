@@ -3,7 +3,7 @@ project:
 
 website:
   title: "UPV"
-  favicon: ../img/inst-asm-cnrs.png
+  favicon: ../../imgages/inst-asm-cnrs.png
   repo-url: https://github.com/quarto-dev/quarto-web
   page-footer:
     right:

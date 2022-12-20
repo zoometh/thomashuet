@@ -15,9 +15,9 @@ dfisotops$Pb206_Pb204.perc <- (dfisotops$Pb206_Pb204/(dfisotops$Pb206_Pb204 + df
 dfisotops$Pb207_Pb204.perc <- (dfisotops$Pb207_Pb204/(dfisotops$Pb206_Pb204 + dfisotops$Pb207_Pb204 + dfisotops$Pb208_Pb204))*100  
 dfisotops$Pb208_Pb204.perc <- (dfisotops$Pb208_Pb204/(dfisotops$Pb206_Pb204 + dfisotops$Pb207_Pb204 + dfisotops$Pb208_Pb204))*100 
 dfisotops$lbl <- paste0(dfisotops$num, "\n", 
-                        "Pb206/204: ", round(dfisotops$Pb206_Pb204.perc, 2), "% \n",
-                        "Pb207/204: ", round(dfisotops$Pb207_Pb204.perc, 2), "% \n",
-                        "Pb208/204: ", round(dfisotops$Pb208_Pb204.perc, 2), "%")
+                        "<sup>206/204</sup>Pb: ", round(dfisotops$Pb206_Pb204.perc, 2), "% \n",
+                        "<sup>207/204</sup>Pb: ", round(dfisotops$Pb207_Pb204.perc, 2), "% \n",
+                        "<sup>208/204</sup>Pb: ", round(dfisotops$Pb208_Pb204.perc, 2), "%")
 m <- list(
   l = 50,
   r = 50,
@@ -32,16 +32,38 @@ ui <- fluidPage(
   #                            background-color: #000000;
   #             }'),
   h3("Relative % of lead isotops for mines and EIA items"),
-  checkboxGroupInput("objects", "objects",
-                     choices = c("golasecca", "hochdorf"),
-                     selected = "hochdorf"
-  ),
-  checkboxGroupInput("mines", "mines",
-                     choices = c("France", "Iberian Peninsula", "Switzerland"),
-                     selected = "France"
-  ),
-  plotlyOutput("graph",
-               height = "600px")
+  
+  tabPanel("Single", fluid = TRUE,
+           sidebarLayout(
+             sidebarPanel(
+               width = 2,
+               checkboxGroupInput("objects", "objects",
+                                  choices = c("golasecca", "hochdorf"),
+                                  selected = "hochdorf"
+               ),
+               checkboxGroupInput("mines", "mines",
+                                  choices = c("France", "Iberian Peninsula", "Switzerland"),
+                                  selected = "France"
+               )
+             ),
+             mainPanel("Relative percentages of lead isotops", 
+                       plotlyOutput("graph",
+                                    height = "600px")
+             )
+           )
+  )
+  
+  
+  # checkboxGroupInput("objects", "objects",
+  #                    choices = c("golasecca", "hochdorf"),
+  #                    selected = "hochdorf"
+  # ),
+  # checkboxGroupInput("mines", "mines",
+  #                    choices = c("France", "Iberian Peninsula", "Switzerland"),
+  #                    selected = "France"
+  # ),
+  # plotlyOutput("graph",
+  #              height = "600px")
 )
 
 server <- function(input, output, session){
@@ -58,17 +80,20 @@ server <- function(input, output, session){
         b = ~Pb207_Pb204.perc,
         c = ~Pb208_Pb204.perc,
         text = ~lbl,
-        hoverinfo='text',
+        hoverinfo = 'text',
+        #opacity = .3, 
         marker = list(
           # symbol = ~symbol,
           symbols = 'square',# unique(df.isotop$symbol),
           color = ~color.object,
           size = 10,
-          line = list('width' = 1, color = 'black')
+          opacity = .5,
+          line = list('width' = 1, 
+                      color = '#00000070')
         )
       ) %>% 
       layout(
-        title = "Relative percentages of lead isotops",
+        # title = "Relative percentages of lead isotops",
         margin = m,
         # title = list(orientation = "h",   # show entries horizontally
         #              xanchor = "center",  # use center of legend as anchor
@@ -77,9 +102,9 @@ server <- function(input, output, session){
         ternary = list(
           legend = list(orientation = "h"),
           sum = 100,
-          aaxis = list(min = min206, title = 'Pb206/Pb204'),
-          baxis = list(min = min207, title = 'Pb207/Pb204'),
-          caxis = list(min = min208, title = 'Pb208/Pb204')
+          aaxis = list(min = min206, title = '<sup>206</sup>Pb/<sup>204</sup>Pb'),
+          baxis = list(min = min207, title = '<sup>207</sup>Pb/<sup>204</sup>Pb'),
+          caxis = list(min = min208, title = '<sup>208</sup>Pb/<sup>204</sup>Pb')
         )
       )
     print(fig)
