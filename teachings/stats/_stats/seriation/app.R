@@ -60,7 +60,6 @@ server <- function(input, output) {
     }
   })
   output$dataframePlot <- DT::renderDataTable({
-    
     datas})
 }
 

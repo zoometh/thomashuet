@@ -12,6 +12,8 @@ format:
     css: styles.css
     footer: "Statistics & Computer Scripts in Archaeology, UPV 2022 - T. Huet - <https://tinyurl.com/stats-upv>"
     # margin: -0.5
+    margin: 0
+    width: 1200
 resources:
   - demo.pdf
 fig-cap-location: margin
@@ -23,6 +25,7 @@ fig-cap-location: margin
 library(shiny)
 library(rmarkdown)
 library(knitr)
+library(kableExtra)
 library(plotly)
 library(archdata)
 library(ggtern)
@@ -318,7 +321,6 @@ middle range theories
 </div>
 
 
-
 ### Where
 
 
@@ -426,7 +428,6 @@ datatable(df,
 
 ::::
 
-
 ### Regress
 
 
@@ -493,7 +494,7 @@ Oxford.water %>%
 ### XXXX
 
 ```{=html}
-<iframe width="780" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/_stats/dim2/oxfordwater" title="Quarto Documentation"></iframe>
+<iframe width="780" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/temp/oxfordwater" title="Quarto Documentation"></iframe>
 ```
 
 
@@ -537,22 +538,21 @@ Oxford.water %>%
 </table>
 </div>
 <div class="column">
-Coefficient of correlation:
-<ul>
+All are between `[-1:1]`</div>
+<ul class="roman">
+<li>Coefficient of correlation</li>
+<ul class="square">
 <li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
 <li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
 </ul><br>
-Coefficient of determination:
-<ul>
+<li>Coefficient of determination</li>
+<ul class="square">
 <li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
-</ul><br>
-... all between `[-1:1]`</div>
+</ul>
 </div>
 
 :::
 
-::: footer
-:::
 
 ## Models
 
@@ -594,7 +594,8 @@ Coefficient of determination:
 <tr>
 <td>Explanatory</td>
 <td>not over- or under-fitting</td>
-<td>![](../-images/mod-fitting.png){height=200px}</td>
+<td><img src="../-images/mod-fitting.png"></td>
+<!-- <td>![](../-images/mod-fitting.png){height=200px}</td> -->
 </tr>
 <tr>
 <td>Regularity</td>
@@ -633,19 +634,17 @@ controlled vocabulary -> scale
 ### Explanatory
 
 <div class="row">
-
-<div class="column">
-<center>![✔️ Fitting](images/mod-fitting.png){height=300px}</center><br>
-<center>![❌ Fitting](images/mod-fittingnot-a.png){height=300px}</center>
+<center>not over- or under-fitting</center>
 </div>
 
 <div class="column">
-<center>
-not over- or under-fitting
-</center>
+<center>![✔️ Fitting](images/mod-fitting.png){height=250px}</center><br>
 </div>
 
+<div class="column">
+<center>![❌ Fitting](images/mod-fittingnot-a.png){height=250x}</center>
 </div>
+
 
 
 ### Regularity
@@ -653,7 +652,7 @@ not over- or under-fitting
 <div class="row">
 
 <div class="column">
-<center>![bblblb](images/mod-regularity-christaller.jpg){height=300px}</center>
+<center>![](images/mod-regularity-christaller.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -669,7 +668,7 @@ reproducing data regularity (central tendencies)
 <div class="row">
 
 <div class="column">
-<center>![bblblb](images/mod-robust.jpg){height=300px}</center>
+<center>![](images/mod-robust.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -685,7 +684,7 @@ not sensitive to small changes in data (reproducible)
 <div class="row">
 
 <div class="column">
-<center>![bblblb](images/mod-parsimony-laplace.jpg){height=300px}</center>
+<center>![](images/mod-parsimony-laplace.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -702,7 +701,7 @@ all things being equal, the simplest possible explanation for a phenomenon is al
 <div class="row">
 
 <div class="column">
-<center>![bblblb](images/mod-versioning.jpg){height=300px}</center>
+<center>![](images/mod-versioning.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -722,130 +721,104 @@ carry its own story: abandoned assumptions, alternative versions, etc.
 
 ::: {.panel-tabset}
 
-### *Types*
-
-<table class="table">
-<thead>
-<tr>
-<th>type</th>
-<th>description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Raw data</td>
-<td>Primary data acquired via a device (hardware) and not processed</td>
-</tr>
-<tr>
-<td>Processed data</td>
-<td>Working data (i.e. not definitive)</td>
-</tr>
-<tr>
-<td>Aggregated data</td>
-<td>Gathered data expressed in a summary form</td>
-</tr>
-<tr>
-<td>Metadata</td>
-<td>Data about data</td>
-</tr>
-<tr>
-<td>Missing data</td>
-<td>Lack of knowledge, eg. `NA` (<em>Not Available</em>)</td>
-</tr>
-</tbody>
-</table>
-
-
 ### Raw
 
-Raw data
+Raw data<br>
+<span class="midtext">Primary data acquired via a device (hardware) and not processed</span>
 
 ```{r}
-#| echo: true
-#| warning: false
-# Radiocarbon probability densities
-library(rcarbon)
+#| echo: false
 
-dirIn <- "https://raw.githubusercontent.com/zoometh/neonet/main/inst/extdata/"
-fileIn <- "140_140_id00140_doc_elencoc14.tsv"
-dataIn <- paste0(dirIn, fileIn)
+library(archdata)
 
-C14 <- read.csv2(dataIn, sep = "\t")
-C14cal <- calibrate(x = C14[1, "C14Age"], 
-                    errors = C14[1, "C14SD"],
-                    calCurves = 'intcal20')
-C14cal$grids  
+data("Mesolithic")
+rownames(Mesolithic) <- paste0("site_", rownames(Mesolithic))
+d <- datatable(Mesolithic, 
+          caption = "British Mesolithic assemblages (%)",
+          options = list(initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '24px'});}"))
+)
+print(d)
 ```
 
 ### Processed
 
-Processed data
+Processed data<br>
+<span class="midtext">Working data (i.e. not definitive)</span>
 
 ```{r}
-#| echo: true
-# Radiocarbon probability densities for 1 date
-plot(C14cal) 
+#| echo: false
+
+Mesolithic.pers <- round(Mesolithic/rowSums(Mesolithic)*100, 1)
+
+datatable(Mesolithic.pers, caption = "British Mesolithic assemblages (%)") %>%
+  formatStyle(
+    colnames(Mesolithic.pers),
+    background = styleColorBar(Mesolithic.pers$Microliths, 'lightblue'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  )
 ```
 
 
 ### Aggregated
 
-Aggregated data
+Aggregated data<br>
+<span class="midtext">Gathered data expressed in a summary form)</span>
 
 ```{r}
-#| echo: true
-#| # Radiocarbon probability densities for 2 dates
-bins <- binPrep(C14[1:2, "SiteName"],
-                C14[1:2, "C14Age"],
-                h = 50)
-x <- calibrate(C14[1:2, "C14Age"],
-               C14[1:2, "C14SD"],
-               normalised = FALSE)
-spd.levant <- spd(x,
-                  bins = bins,
-                  timeRange = c(7000, 4000))
-plot(spd.levant,
-     runm = 50, 
-     xlim = c(6500, 5000))
-```
+#| echo: false
 
-
-```{r}
-#| eval: false
-#| echo: true
-library(archdata)
-
-data("OxfordPots")
-
-place <- OxfordPots[1, "Place"]
-x <- c(OxfordPots[1, "OxfordPct"], OxfordPots[1, "NewForestPct"])
-labels <- c("OxfordPct", "NewForestPct")
-pie(x, labels, main = place)
+percent <- colSums(Mesolithic)/sum(Mesolithic)*100
+names(percent) <- colnames(Mesolithic)
+pie(percent)
 ```
 
 
 ### Meta
 
-Metadata
+Metadata<br>
+<span class="midtext">data about data</span>
 
-![](images/data-meta-photo.png){height=400}
+<center>
+
+![](images/data-meta-photo-microliths.jpg){height=300}
+
+</center>
+
+```{r}
+library(exiftoolr)
+
+img <- exif_read("C:/Rprojects/thomashuet/teachings/stats/UPV/images/data-meta-photo-microliths.jpg")
+img[["Caption-Abstract"]]
+img[["Copyright"]]
+```
+
 
 ### Missing
 
-Missing data
+Missing data (`NA`, <em>Not Available</em>)<br>
+<span class="midtext">Lack of knowledge, eg. `NA` (<em>Not Available</em>)</span>
 
 ```{r}
-#| echo: true
-df <- data.frame(row.names = c("A", "B", "C", "D"),
-                 pots1 =  c(10, 5, NA, 2),
-                 pots2 =  c(7, 6, 10, 5),
-                 pots3 =  c(13, 7, 4, NA))
-kable(df)
-# remove NA
-colSums(df, na.rm = T)
-# without removing NA
-colSums(df)
+#| echo: true 
+df <- data.frame(row.names = c("site_A", "site_B", "site_C", "site_D"),
+                 Microliths =  c(10, 5, NA, 2),
+                 Scrapers =  c(7, 6, 10, 5),
+                 Burins =  c(13, 7, 4, NA))
+kable(df) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
 ```
+
+```{r}
+#| echo: true 
+
+# with NA
+colSums(df)
+# without NA
+colSums(df, na.rm = T)
+```
+
 
 
 :::
@@ -967,7 +940,7 @@ spatial dataset
 
 ## {}
 
-Random <em>versus</em> clustered patterns
+Random patterns <em>versus</em> Clustered patterns
 
 ::: {.panel-tabset}
 
@@ -1195,7 +1168,7 @@ The 🔝 popular web-platform for source code management and software developmen
 <img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a>
 <p>
-R is a scripting language for data science. It is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> <span class=worldwide>worldwide</span></p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist and Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
+R is a scripting language for data science. It is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> <span class=worldwide>Worldwide</span></p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist and Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
 
 <table class="table">
 <thead>
@@ -1231,7 +1204,7 @@ R is a scripting language for data science. It is the 1️⃣<sup>st</sup> used 
 <img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
 </a>
 <p>
-Python is a high-level programming language. It is the 2️⃣<sup>st</sup> programming language used by archaeologists, and the 1️⃣<sup>st</sup> worldwide
+Python is a high-level programming language. It is the 2️⃣<sup>st</sup> programming language used by archaeologists, and the 1️⃣<sup>st</sup> <span class=worldwide>Worldwide</span></p><small>
 </p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist and Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
 
 <table class="table">
