@@ -24,3 +24,7 @@ Quelques recommendations pour vos données tabulaires:
 ### Autres
 
 Vous pouvez partager d'autres types de données: photographies, modèle numérique de terrain (MNT), *shapefiles* , objets 3D, etc. Mais limitez leur taille (maximum: 10 Mo)
+
+---
+contact: thomas.huet@arch.ox.ac.uk
+---
