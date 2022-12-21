@@ -1,4 +1,4 @@
-# TW223AH Atelier traitement des données (Master) <img src="../../../doc/img/inst-asm-cnrs.png" width='100px' align="right"/>
+# TW223AH Atelier traitement des données (Master) <img src="../../../img/inst-asm-cnrs.png" width='100px' align="right"/>
 > Statistiques et informatique 
 
 Cours du 21/02/23 au 23/02/23 à l'Université Paul Valéry, Montpellier. Niveau Master
