@@ -27,6 +27,8 @@ Vous pouvez partager d'autres types de données: photographies, modèle numériq
 
 ---
 
-contact: thomas.huet@arch.ox.ac.uk
+Pour toutes questions:
+
+- **contact**: thomas.huet@arch.ox.ac.uk
 
 ---
