@@ -6,6 +6,8 @@ library(archdata)
 
 data(OxfordPots)
 
+finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
+
 ui <- fluidPage(
   br(), br(), br(), br(), br(), br(), br(), br(), br(),
   h3("Distribution of Late Romano-British Oxford Pottery"),
