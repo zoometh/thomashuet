@@ -81,21 +81,21 @@ This presentation will show you examples of **statistical reasoning** in archaeo
 
 <div class="row">
 <div class="column33">![Boucher de Perthes, 1847, *Antiquités celtiques et  antédiluviennes*](images/hist-archaeo-prehistoire-perthes.jpg){height=350px}</div>
-<div class="column66">With the development of *Prehistory*, archaeology seeks to unite the history of Nature with that of Man by focusing on the most ancient past. With C. Darwin (biol.) and C. Lyell (geol.), and O. Montelius (archaeo.), there is a concomitance between biological "species" and archaeological "types".</div>
+<div class="column66">Concomitance between biological "species" (C. Darwin) and archaeological "types" (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)</div>
 </div>
 
 ### Culture-Historical
 
 <div class="row">
 <div class="column33">!['Monument druidique près de Gisors': Baron Taylor, 1824, *Voyage pittoresque et romantique dans l’ancienne France*](images/hist-archaeo-romantic.png){height=350px}</div>
-<div class="column66">*Culture-Historical* is focused on chronology. Its is rooted in academic/national traditions and develops in parallel with History as a 'scientific' discipline taught in universities.</div>
+<div class="column66">Focused on chronology, rooted in academic/national traditions and develops in parallel with History as a 'scientific' discipline taught in universities. </div>
 </div>
 
 ### New Archaeology
 
 <div class="row">
 <div class="column33">![R. & S. Binford, 1968, *New Perspectives in Archaeology*](images/hist-archaeo-newarchaeo-binford.png){height=350px}</div>
-<div class="column">*New archaeology*, or Processual archaeology, see the advent of statistics and promotes demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
+<div class="column">Advent of statistics and promotion of demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
 </div>
 
 ### Post-Processual
@@ -431,126 +431,63 @@ datatable(df,
 
 ### Regress
 
-
-```{r}
-#| warning: false
-#| message: false
-
-library(ggplot2)
-library(archdata)
-data("OxfordPots")
-
-OxfordPots$OxfordPct.log <- log(OxfordPots$OxfordPct)
-Oxford.water <- subset(OxfordPots, WaterTrans == 1)
-lm.water <- lm(OxfordPct ~ OxfordDst, data = Oxford.water)
-r2 <- round(summary(lm.water)$r.squared, 2)
-Oxford.water$predicted <- predict(lm.water) 
-Oxford.water$residuals <- residuals(lm.water)
-values <- paste0("<b>", Oxford.water$Place, "</b><br>", 
-                 "% Oxford Pottery (observed): ", Oxford.water$OxfordPct)
-residuals <- paste0("<b>", Oxford.water$Place, "</b><br>",
-                    "% Oxford Pottery (predicted): ", round(Oxford.water$predicted, 2))
-m <- list(
-  l = 50,
-  r = 50,
-  b = 100,
-  t = 50,
-  pad = 20
-)
-Oxford.water %>% 
-  plot_ly(x = ~OxfordDst, width = 1200) %>% 
-  add_trace(name = "Oxford Pottery", y = ~OxfordPct,
-            #mode = 'scatter',
-            marker = list(color = 'black'), 
-            text = values,
-            hoverinfo = 'text') %>%
-  add_trace(name = "Predicted value", y = ~predicted, opacity = 0.5,
-            #mode = 'scatter',
-            marker = list(color = 'grey', line = list(color = 'grey', width = 1)),
-            text = residuals,
-            hoverinfo = 'text',
-            visible = "legendonly") %>% 
-  add_trace(name = "Regression line", x = ~OxfordDst, y = fitted(lm.water),
-            mode = 'lines', line = list(color = 'black', width = 2),
-            text = r2,
-            hoverinfo = 'text',
-            visible = "legendonly") %>%
-  add_segments(name = "Residuals",  x = ~OxfordDst, y =  ~OxfordPct,
-               xend = ~OxfordDst, yend = ~predicted, 
-               mode = 'lines', 
-               line = list(color = 'grey', width = 1, dash = 'dash'),
-               text = ~residuals,
-               hoverinfo = 'text',
-               visible = "legendonly") %>%
-  layout(title = paste0('Oxford pottery with a probable water transportation <br> (R<sup>2</sup> = ', r2, ")"),
-         xaxis = list(title = "Distance (miles)"), 
-         yaxis = list(title = "Percentage of Oxford Pottery"),
-         margin = m,
-         legend = list(orientation = "h",   
-                       xanchor = "center",  
-                       y = + 0.1,
-                       x = 0.5))             
-```
-
-### XXXX
-
 ```{=html}
-<iframe width="780" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/temp/oxfordwater" title="Quarto Documentation"></iframe>
+<iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/_stats/dim2/oxfordwater" title="Regression"></iframe>
 ```
 
 
 ### Coefficient
 
-<div class="row">
 <div class="column">
-<table class="table">
-<thead>
-<tr>
-<th>cor</th>
-<th>interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>...</td>
-</tr>
-<tr>
-<td>0.9</td>
-<td>oustanding</td>
-</tr>
-<tr>
-<td>0.8</td>
-<td>excellent</td>
-</tr>
-<tr>
-<td>0.7</td>
-<td>acceptable</td>
-</tr>
-<tr>
-<td>0.6</td>
-<td>weak</td>
-</tr>
-<tr>
-<td>...</td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>cor</th>
+        <th>interpretation</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>0.9</td>
+        <td>oustanding</td>
+      </tr>
+      <tr>
+        <td>0.8</td>
+        <td>excellent</td>
+      </tr>
+      <tr>
+        <td>0.7</td>
+        <td>acceptable</td>
+      </tr>
+      <tr>
+        <td>0.6</td>
+        <td>weak</td>
+      </tr>
+      <tr>
+        <td>...</td>
+        <td>...</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-<div class="column">
-All are between `[-1:1]`</div>
-<ul class="roman">
-<li>Coefficient of correlation</li>
-<ul class="square">
-<li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
-<li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
-</ul><br>
-<li>Coefficient of determination</li>
-<ul class="square">
-<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
-</ul>
+<div class="column"> All are between `[-1:1]` <ul class="roman">
+    <li>Coefficient of correlation</li>
+    <ul class="square">
+      <li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
+      <li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
+    </ul>
+  </ul>
+  <br>
+  <li>Coefficient of determination</li>
+  <ul class="square">
+    <li>[R <sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination) </li>
+  </ul>
 </div>
+
 
 :::
 
@@ -1149,7 +1086,7 @@ Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Arch
 <tbody>
 <tr>
 <td colspan="2"><a href="https://github.com">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 auto; background: transparent;" class="demo-logo">
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a></td>
 </tr>
 </tbody>
@@ -1237,27 +1174,5 @@ Python is a high-level programming language. It is the 2️⃣<sup>st</sup> prog
 </table>
 
 
-:::
-## An example using R and GitHub
-
-<span class= smalltext> see the rendered dataset: [https://github.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/blob/master/DATA/fibulae.csv](https://github.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/blob/master/DATA/fibulae.csv)</span>
-
-```{.r code-line-numbers="1|2|3|4|5"}
-# install.packages("ca")
-library(ca)
-seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv", row.name = 1)
-print(head(seriat))
-plot(ca(seriat))
-```
-
-```{r out.height="50%", out.width="50%"}
-#| echo: false
-library(ca)
-seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv", row.name = 1)
-print(head(seriat))
-plot(ca(seriat))
-```
-
-
-# Thank you
+:::  
 

@@ -28,35 +28,106 @@ library(dplyr)
 library(archdata)
 ```
 
-## Conformity
+
+## COLO
+
+:::{.column-body-outset}
+Outset content...
+:::
+
+## More sspace
+
+:::{.column-page}
+![](images/dist-rand-ra-millestone.png)
+:::
+
+## dewpiwep
+
+```{r}
+#| column: screen
+#| out-width: 150%
+#| fig-format: svg
+plot(pressure)
+```
+
+
+## GGGJGLJ
+
+```{r}
+#| column: page
+
+knitr::kable(
+  mtcars[1:6, 1:10]
+)
+```
+
+## frwef
+
+::: {.column-screen-inset}
+![Full screen inset](images/dist-rand-ra-millestone.png)
+:::
+
+
+## Historiography of Archaeology
 
 ::: {.panel-tabset}
 
-### Processed
+### *Timetable*
 
-Processed data
+:::{.column-screen-inset}
 
-```{r}
-#| echo: false
+| Start     | Method | Description |
+|:----------|:-------|:------------|
+| 1850s      | Prehistory  | evolution, geology, anthropology |
+| 1950s      | Culture-Historical  | <span style="color:red;">similarities</span>, typology, <span style="color:blue;">chronology</span> |
+| 1960s      | New archaeology  | chain operative, statistics, <span style="color:blue;">chronology (C14) </span> |
+| 1980s      | Post-processual  | <span style="color:red;">dissimilarities</span>, cultural relativism |
+| 2020s      | Tool-driven  | Big data, ML / DL, aDNA |
 
-data("Mesolithic")
+: {tbl-colwidths="[15,35,50]"}
 
-Mesolithic.pers <- round(Mesolithic/rowSums(Mesolithic)*100, 1)
+:::
 
-datatable(Mesolithic.pers, caption = "British Mesolithic assemblages (%)") %>%
-  formatStyle(
-    colnames(Mesolithic.pers),
-    background = styleColorBar(Mesolithic.pers$Microliths, 'lightblue'),
-    backgroundSize = '100% 90%',
-    backgroundRepeat = 'no-repeat',
-    backgroundPosition = 'center'
-  )
-```
+### Prehistory
 
+<div class="row">
+<div class="column33">![Boucher de Perthes, 1847, *Antiquités celtiques et  antédiluviennes*](images/hist-archaeo-prehistoire-perthes.jpg){height=350px}</div>
+<div class="column66">Concomitance between biological "species" (C. Darwin) and archaeological "types" (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)</div>
+</div>
+
+### Culture-Historical
+
+<div class="row">
+<div class="column33">!['Monument druidique près de Gisors': Baron Taylor, 1824, *Voyage pittoresque et romantique dans l’ancienne France*](images/hist-archaeo-romantic.png){height=350px}</div>
+<div class="column66">Focused on chronology, rooted in academic/national traditions and develops in parallel with History as a 'scientific' discipline taught in universities. </div>
+</div>
+
+### New Archaeology
+
+<div class="row">
+<div class="column33">![R. & S. Binford, 1968, *New Perspectives in Archaeology*](images/hist-archaeo-newarchaeo-binford.png){height=350px}</div>
+<div class="column">Advent of statistics and promotion of demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
+</div>
+
+### Post-Processual
+
+<div class="row">
+<div class="column33">![Laurent Olivier, 2008, *Le sombre abîme du temps*](images/hist-archaeo-postprocess-sombreabime.png){height=350px}</div>
+<div class="column66">*Post-processualism*, or Post-positivism, archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity) </div>
+</div>
+
+### Tool-driven
+
+<div class="row">
+<div class="column33">![Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer](images/hist-archaeo-ai-ml-angkor.jpg){height=350px}</div>
+<div class="column66">With the development of computational archaeology (eg. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
+</div>
+</div>
 
 :::
 
 ::: footer
+Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practice*, p. 39 ff. ](https://ebookcentral.proquest.com/lib/oxford/reader.action?docID=6178544&ppg=39)
 :::
 
 

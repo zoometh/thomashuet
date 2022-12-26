@@ -1,4 +1,3 @@
-
 library(plotly)
 library(archdata)
 
@@ -11,57 +10,77 @@ t <- list(
   family = "sans serif",
   size = 14,
   color = "blue")
+xy.size <- 6
 
-image <- list(  
-  list(  
-    # sources of images
-    source =  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Iris_setosa_var._setosa_%282595031014%29.jpg/360px-Iris_setosa_var._setosa_%282595031014%29.jpg",  
-    row=1, 
-    col=1, 
-    source=1, 
-    xref="x domain", 
-    yref="y domain", 
-    x=1, 
-    y=1, 
-    xanchor="right", 
-    yanchor="top", 
-    sizex=0.2, 
-    sizey=0.2 
-  )
-)
+OxfordP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-oxford.jpg"
+NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
+OxfordP.txt <- RCurl::base64Encode(readBin(OxfordP, "raw", file.info(OxfordP)[1, "size"]), "txt")
+NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(NewForP)[1, "size"]), "txt")
 
-
-plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels) %>% 
-  # add_trace(mode = "markers", text = labels, hoverinfo = 'text') %>%
-  # add_annotations(#text = rownames(data),
-  #   xref = "x",
-  #   yref = "y",
-  #   showarrow = TRUE,
-  #   arrowhead = 4,
-  #   arrowsize = .5,
-  #   ax = 10,
-  #   ay = -20) %>%
-  add_markers() %>%
+plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels,
+        type = 'scatter', mode = 'markers',
+        width = 1000, height = 600) %>%
   add_text(textfont = t, textposition = 'middle right') %>%
-  layout(title = paste0('Ratio of Oxford pottery/New Forest pottery for ', nrow(finePots),' Late Roman sites'),
-         xaxis = list(title = "% Oxford pottery"), 
-         yaxis = list(title = "% New Forest pottery"),
-         images = image)
+  layout(title = paste0('Ratio Oxford pottery/New Forest pottery for ', nrow(finePots),
+                        ' Late Roman sites'),
+  xaxis = list(title = "% Oxford pottery", showgrid = FALSE), 
+  yaxis = list(title = "% New Forest pottery", showgrid = FALSE),
+    images = list(
+      list(
+        source =  paste('data:image/jpg;base64', NewForP.txt, sep=','),
+        xref = "x",
+        yref = "y",
+        x = 12,
+        y = 18,
+        sizex = xy.size,
+        sizey = xy.size,
+        # sizing = "stretch",
+        opacity = 1,
+        layer = "below"
+      ),
+      list(
+        source =  paste('data:image/jpg;base64', OxfordP.txt, sep=','),
+        xref = "x",
+        yref = "y",
+        x = 16,
+        y = 6,
+        sizex = xy.size,
+        sizey = xy.size,
+        # sizing = "stretch",
+        opacity = 1,
+        layer = "below"
+      )
+    )
+  )
 
 
-data(iris)
-plot_ly(data = iris, 
-        x = ~Sepal.Length, 
-        y = ~Petal.Length, 
-        mode = "markers", 
-        color = ~Species) %>%
-  layout(legend = list(orientation = "h",   # show entries horizontally
-                       xanchor = "center",  # use center of legend as anchor
-                       x = 0.5))             # put legend in center of x-axis
+library('plotly')
+library('RCurl')
 
-#
+GHraw.z <- "https://github.com/charlottesirot/elementR/blob/master/inst/www/2.png?raw=true"
 
 
+
+NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
+NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(OxfordP)[1, "size"]), "txt")
+plot_ly(x = c(1, 2, 3), y = c(1, 2, 3), type = 'scatter', mode = 'markers') %>%
+  layout(
+    images = list(
+      list(
+        # source =  paste('data:image/png;base64', txt, sep=','),
+        source =  paste('data:image/png;base64', NewForP.txt, sep=','),
+        xref = "x",
+        yref = "y",
+        x = 1,
+        y = 3,
+        sizex = 2,
+        sizey = 2,
+        sizing = "stretch",
+        opacity = 0.4,
+        layer = "below"
+      )
+    )
+  )
 
 
 
