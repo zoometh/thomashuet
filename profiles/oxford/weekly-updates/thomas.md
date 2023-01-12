@@ -786,3 +786,20 @@ DB
 - Attend the Arcadia webinar about accessibility & Arches collector (with Bill and Bijan)
 - Work with Mohamed (BUs)
 - Join a research group on Time modeling (https://time.zulipchat.com/) with the members of PeriodO (A. Rabinowitz, R. Shaw), the Matrix Project (K. May, J. Taylor), etc. Will has been invited to join this group 
+
+
+### Hilary Term
+
+#### week 0
+
+- Developping a GeoServer to store georeferenced maps. We need to set a framework to see what will be the most appropriate IT solution (AWS? same instance as EAMENA or a separate one?,...)
+- Generalised several functions of *eamenaR* so that the package works with other instances of Arches, in contact with David Myers
+- Scheduled 2 days in Southampton to work on Arches v7 with Ash (13 and 14 February)
+- Scheduled to attend the Leicester ACD Workshop (2 March)
+- Organising a meeting between Maria Castiello (postdoc working on Machine Learning/site detection), EAMENA (DB) and the [OATML](https://oatml.cs.ox.ac.uk/) (ML)
+- Reviewing Reuben Osborne contract
+- Reviewing reports:
+    - Arcadia annual
+    - Arcadia bid 2024
+    - Reporting Heritage Destruction
+- Attended the informal *Coffee & Arches* meeting with Mike Fisher and Ash

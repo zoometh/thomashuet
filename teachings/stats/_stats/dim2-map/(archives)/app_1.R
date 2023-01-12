@@ -5,11 +5,9 @@
 library(shiny)
 library(leaflet)
 library(leaflet.minicharts)
-library(plotly)
 library(archdata)
 library(dplyr)
 library(DT)
-library(reshape)
 
 data(OxfordPots)
 # rectify an error in the dataset
@@ -68,10 +66,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(
       width = 2,
-      radioButtons("pie", "Ratio",
-                   choices = c("raw", "pie"), 
-                   selected = "raw"),
-      radioButtons("pts", "Map",
+      radioButtons("pts", "show",
                    choices = c("raw", "pie", "water transport", "residuals"), 
                    selected = "raw")
     ),
@@ -95,87 +90,64 @@ ui <- fluidPage(
 server <- function(input, output, session) {
   
   output$ratioPlot <- renderPlotly({
-    if(input$pie == "raw"){
-      finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
-      labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
-      print("edew")
-      t <- list(
-        family = "sans serif",
-        size = 14,
-        color = "blue")
-      xy.size <- 6
-      
-      OxfordP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-oxford.jpg"
-      NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
-      OxfordP.txt <- RCurl::base64Encode(readBin(OxfordP, "raw", file.info(OxfordP)[1, "size"]), "txt")
-      NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(NewForP)[1, "size"]), "txt")
-      
-      m <- list(
-        l = 50,
-        r = 50,
-        b = 100,
-        t = 50,
-        pad = 20
-      )
-      
-      fig <- plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels,
-              type = 'scatter', mode = 'markers') %>%
-        add_text(textfont = t, textposition = 'middle right') %>%
-        layout(title = paste0('Ratio Oxford pottery/New Forest pottery for ', nrow(finePots),
-                              ' Late Roman sites'),
-               xaxis = list(title = "% Oxford pottery", showgrid = FALSE), 
-               yaxis = list(title = "% New Forest pottery", showgrid = FALSE),
-               margin = m,
-               images = list(
-                 list(
-                   source =  paste('data:image/jpg;base64', NewForP.txt, sep=','),
-                   xref = "x",
-                   yref = "y",
-                   x = 15,
-                   y = 18,
-                   sizex = xy.size,
-                   sizey = xy.size,
-                   # sizing = "stretch",
-                   opacity = 1,
-                   layer = "below"
-                 ),
-                 list(
-                   source =  paste('data:image/jpg;base64', OxfordP.txt, sep=','),
-                   xref = "x",
-                   yref = "y",
-                   x = 18,
-                   y = 9,
-                   sizex = xy.size,
-                   sizey = xy.size,
-                   # sizing = "stretch",
-                   opacity = 1,
-                   layer = "below"
-                 )
+    finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
+    labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
+    
+    t <- list(
+      family = "sans serif",
+      size = 14,
+      color = "blue")
+    xy.size <- 6
+    
+    OxfordP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-oxford.jpg"
+    NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
+    OxfordP.txt <- RCurl::base64Encode(readBin(OxfordP, "raw", file.info(OxfordP)[1, "size"]), "txt")
+    NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(NewForP)[1, "size"]), "txt")
+    
+    m <- list(
+      l = 50,
+      r = 50,
+      b = 100,
+      t = 50,
+      pad = 20
+    )
+    
+    plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels,
+            type = 'scatter', mode = 'markers',
+            width = 1000, height = 600) %>%
+      add_text(textfont = t, textposition = 'middle right') %>%
+      layout(title = paste0('Ratio Oxford pottery/New Forest pottery for ', nrow(finePots),
+                            ' Late Roman sites'),
+             xaxis = list(title = "% Oxford pottery", showgrid = FALSE), 
+             yaxis = list(title = "% New Forest pottery", showgrid = FALSE),
+             margin = m,
+             images = list(
+               list(
+                 source =  paste('data:image/jpg;base64', NewForP.txt, sep=','),
+                 xref = "x",
+                 yref = "y",
+                 x = 15,
+                 y = 18,
+                 sizex = xy.size,
+                 sizey = xy.size,
+                 # sizing = "stretch",
+                 opacity = 1,
+                 layer = "below"
+               ),
+               list(
+                 source =  paste('data:image/jpg;base64', OxfordP.txt, sep=','),
+                 xref = "x",
+                 yref = "y",
+                 x = 18,
+                 y = 9,
+                 sizex = xy.size,
+                 sizey = xy.size,
+                 # sizing = "stretch",
+                 opacity = 1,
+                 layer = "below"
                )
-        )
-      fig
-      print("dedede")
-    }
-    if(input$pie == "pie"){
-      fig <- plot_ly()
-      finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
-      labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
-      finePots <- finePots[ , c("Place", "OxfordPct", "NewForestPct")]
-      ws.melt <- melt(finePots)
-      ct <- 0
-      for(a.place in unique(ws.melt$Place)){
-        # a.place <- "Dorchester (Dorset)"
-        df <- ws.melt[ws.melt$Place == a.place, ]
-        labels <- paste0(rownames(finePots[finePots$Place == a.place, ]), ". ", a.place)
-        fig <- fig %>% add_pie(data = df, labels = ~variable, values = ~value,
-                               name = labels, domain = list(row = ct, column = 0))
-        ct <- ct + 1
-      }
-      fig %>% layout(title = "Ratios", showlegend = F,
-                     grid=list(rows=ct, columns=1),
-                     xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-                     yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
-    }
+             )
+      )
   })
   output$mymap <- renderLeaflet({
     map <- leaflet(Place.coords) %>%
@@ -184,7 +156,7 @@ server <- function(input, output, session) {
       addGraticule(interval = 1)
     if("raw" %in% input$pts){
       map <- map %>%
-        addCircleMarkers(data = finePots,
+        addCircleMarkers(data = df.both,
                          lng = ~lon,
                          lat = ~lat,
                          weight = 1,
@@ -192,48 +164,40 @@ server <- function(input, output, session) {
                          popup = ~Place,
                          color = "blue",
                          fillOpacity = 1,
-                         opacity = 1) %>%
-        addLabelOnlyMarkers(data = finePots,
-                            lng = ~lon, 
-                            lat = ~lat,
-                            label =  ~labels, 
-                            labelOptions = labelOptions(noHide = T, 
-                                                        direction = 'top',
-                                                        textOnly = T,
-                                                        style = list(
-                                                          "color" = "black", 
-                                                          "font-style" = "bold",
-                                                          "font-size" = "12px"
-                                                        )))
+                         opacity = 1) 
     }
     if("pie" %in% input$pts){
       # only with available data
       map <- map %>%
         addMinicharts(
-          lng = finePots$lon, 
-          lat = finePots$lat,
+          lng = df.both$lon, 
+          lat = df.both$lat,
           type = "pie",
-          chartdata = finePots[, c("OxfordPct", "NewForestPct")],
+          chartdata = df.both[, c("OxfordPct", "NewForestPct")],
           colorPalette = colors) %>%
-        addLabelOnlyMarkers(data = finePots,
+        addLabelOnlyMarkers(data = df.both,
                             lng = ~lon, 
                             lat = ~lat,
-                            label =  ~labels, 
+                            label =  ~Place, 
                             labelOptions = labelOptions(noHide = T, 
                                                         direction = 'top',
                                                         textOnly = T,
                                                         style = list(
                                                           "color" = "black", 
+                                                          # "font-family" = "serif",
                                                           "font-style" = "bold",
+                                                          # "box-shadow" = "1px 1px rgba(0,0,0,0.25)",
                                                           "font-size" = "12px"
+                                                          # "border-color" = "rgba(0,0,0,0.5)",
+                                                          # "padding" = "2px" 
                                                         )))
-      # addMinicharts(
-      #   lng = finePots$lon, 
-      #   lat = finePots$lat,
-      #   type = "pie",
-      #   chartdata = finePots[, c("OxfordPct", "NewForestPct")],
-      #   colorPalette = colors
-      # )
+        # addMinicharts(
+        #   lng = finePots$lon, 
+        #   lat = finePots$lat,
+        #   type = "pie",
+        #   chartdata = finePots[, c("OxfordPct", "NewForestPct")],
+        #   colorPalette = colors
+        # )
     }
     if("water transport" %in% input$pts){
       map <- map %>%

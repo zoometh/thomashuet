@@ -665,6 +665,7 @@ Raw data<br>
 <span class="midtext">Primary data acquired via a device (hardware) and not processed</span>
 
 ```{r}
+#| eval: true
 #| echo: false
 
 library(archdata)
@@ -685,6 +686,11 @@ Processed data<br>
 
 ```{r}
 #| echo: false
+library(archdata)
+library(DT)
+
+data("Mesolithic")
+
 
 Mesolithic.pers <- round(Mesolithic/rowSums(Mesolithic)*100, 1)
 
@@ -725,11 +731,10 @@ Metadata<br>
 </center>
 
 ```{r}
-library(exiftoolr)
+img <- exiftoolr::exif_read("C:/Rprojects/thomashuet/teachings/stats/UPV/images/data-meta-photo-microliths.jpg")
 
-img <- exif_read("C:/Rprojects/thomashuet/teachings/stats/UPV/images/data-meta-photo-microliths.jpg")
-img[["Caption-Abstract"]]
-img[["Copyright"]]
+print(paste0("<b>Caption-Abstract</b>: ", img[["Caption-Abstract"]]))
+print(paste0("<b>Copyright</b>: ", img[["Copyright"]]))
 ```
 
 
@@ -840,9 +845,7 @@ Histogram = discretization = bins = change of scale
 Dataset: [`archdata` R package - `Mesolithic` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
 :::
 
-
-
-## 2-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim2/"}
+## 2-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim2-map/"}
 
 ::: {.notes}
 TODO: show coeff value

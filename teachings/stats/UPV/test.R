@@ -1,65 +1,7 @@
-library(plotly)
-library(archdata)
-
-data(OxfordPots)
-
-finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
-labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
-
-t <- list(
-  family = "sans serif",
-  size = 14,
-  color = "blue")
-xy.size <- 6
-
-OxfordP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-oxford.jpg"
-NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
-OxfordP.txt <- RCurl::base64Encode(readBin(OxfordP, "raw", file.info(OxfordP)[1, "size"]), "txt")
-NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(NewForP)[1, "size"]), "txt")
-
-plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels,
-        type = 'scatter', mode = 'markers',
-        width = 1000, height = 600) %>%
-  add_text(textfont = t, textposition = 'middle right') %>%
-  layout(title = paste0('Ratio Oxford pottery/New Forest pottery for ', nrow(finePots),
-                        ' Late Roman sites'),
-  xaxis = list(title = "% Oxford pottery", showgrid = FALSE), 
-  yaxis = list(title = "% New Forest pottery", showgrid = FALSE),
-    images = list(
-      list(
-        source =  paste('data:image/jpg;base64', NewForP.txt, sep=','),
-        xref = "x",
-        yref = "y",
-        x = 12,
-        y = 18,
-        sizex = xy.size,
-        sizey = xy.size,
-        # sizing = "stretch",
-        opacity = 1,
-        layer = "below"
-      ),
-      list(
-        source =  paste('data:image/jpg;base64', OxfordP.txt, sep=','),
-        xref = "x",
-        yref = "y",
-        x = 16,
-        y = 6,
-        sizex = xy.size,
-        sizey = xy.size,
-        # sizing = "stretch",
-        opacity = 1,
-        layer = "below"
-      )
-    )
-  )
-
-
 library('plotly')
 library('RCurl')
 
 GHraw.z <- "https://github.com/charlottesirot/elementR/blob/master/inst/www/2.png?raw=true"
-
-
 
 NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
 NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(OxfordP)[1, "size"]), "txt")
