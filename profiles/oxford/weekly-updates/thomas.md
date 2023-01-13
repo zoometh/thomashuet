@@ -796,7 +796,7 @@ DB
 - Generalised several functions of *eamenaR* so that the package works with other instances of Arches, in contact with David Myers
 - Scheduled 2 days in Southampton to work on Arches v7 with Ash (13 and 14 February)
 - Scheduled to attend the Leicester ACD Workshop (2 March)
-- Organising a meeting between Maria Castiello (postdoc working on Machine Learning/site detection), EAMENA (DB) and the [OATML](https://oatml.cs.ox.ac.uk/) (ML)
+- Organising a meeting (16 January) between Maria Castiello (postdoc working on Machine Learning/site detection), EAMENA (DB) and the [OATML](https://oatml.cs.ox.ac.uk/) (ML)
 - Reviewing Reuben Osborne contract
 - Reviewing reports:
     - Arcadia annual
