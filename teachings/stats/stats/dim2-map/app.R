@@ -47,7 +47,7 @@ nowater.residuals <- paste0("<b>", Oxford.nowater$Place, "</b><br>",
                             "Observed: ", round(Oxford.nowater$predicted, 2))
 
 
-Place.coords.path <- "C:/Rprojects/thomashuet/teachings/stats/_stats/dim2/oxfordpots_data.xlsx"
+Place.coords.path <- "C:/Rprojects/thomashuet/teachings/stats/stats/dim2/oxfordpots_data.xlsx"
 Place.coords <- openxlsx::read.xlsx(Place.coords.path, 1)
 Place.coords <- Place.coords[ , c("Place", "lon", "lat")]
 Place.coords[, c("lon", "lat")] <- sapply(Place.coords[, c("lon", "lat")], as.numeric)

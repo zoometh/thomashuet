@@ -1,3 +1,70 @@
+######################### kernel 3d ##########################
+
+library(misc3d)
+library(MASS)
+library(misc3d)
+library(rgl)
+library(oce)
+
+dfisotops <- read.csv2("https://raw.githubusercontent.com/zoometh/thomashuet/main/teachings/stats/stats/dim3/dfisotops.csv", sep = ";") # GH
+dens3d <- misc3d::kde3d(dfisotops[["Pb206_Pb204"]],
+                        dfisotops[["Pb207_Pb204"]],
+                        dfisotops[["Pb208_Pb204"]], 
+                        n = 40,
+                        lims = c(
+                          range(dfisotops[["Pb206_Pb204"]]),
+                          range(dfisotops[["Pb207_Pb204"]]),
+                          range(dfisotops[["Pb208_Pb204"]])
+                        )
+)
+# Find the estimated density at each observed point
+datadensity <- approx3d(dens3d$x, dens3d$y, dens3d$z,
+                        dens3d$d, 
+                        dfisotops[["Pb206_Pb204"]],
+                        dfisotops[["Pb207_Pb204"]],
+                        dfisotops[["Pb208_Pb204"]])
+# Find the contours
+prob <- .5
+levels <- quantile(datadensity, probs = prob, na.rm = TRUE)
+
+# Plot it
+colours <- c("gray", "orange")
+cuts <- cut(datadensity, c(0, levels, Inf))
+for (i in seq_along(levels(cuts))) {
+  gp <- as.numeric(cuts) == i
+  spheres3d(dfisotops[gp, "Pb206_Pb204"],
+            dfisotops[gp, "Pb207_Pb204"],
+            dfisotops[gp, "Pb208_Pb204"],
+            col = colours[i],
+            radius = 0.2)
+}
+box3d(col = "gray")
+contour3d(dens3d$d, level = levels,
+          x = dens3d$x, y = dens3d$y, z = dens3d$z, #exp(-12)
+          alpha = .1, color = "red", color2 = "gray", add = TRUE)
+title3d(xlab = "x", ylab = "y", zlab = "z")
+
+################################ kernel 3d ####################
+
+library(MASS)
+library(ks)
+library(misc3d)
+
+x <- dfisotops[ , c("Pb206_Pb204", "Pb207_Pb204", "Pb208_Pb204")]
+H.pi <- Hpi(x, pilot = "samse")
+fhat <- kde(x, H = H.pi, compute.cont = TRUE)  
+plot(fhat, drawpoints = TRUE)
+
+
+x <- rnorm(1000)
+y <- 2 + x*rnorm(1000,1,.1) + rnorm(1000)
+library(MASS)
+den3d <- kde2d(x, y)
+persp(den3d, box=FALSE)
+
+
+########################################
+
 library(plotly)
 library(dplyr)
 
@@ -57,7 +124,7 @@ ggplot(ws.melt, aes(x = "", y = value, fill = variable)) +
 
 
 
-###############
+##########################
 
 library(leaflet.minicharts)
 
@@ -75,7 +142,7 @@ leaflet(df.both) %>%
     type = "pie",
     chartdata = df.both[, c("OxfordPct", "NewForestPct")]
   )
-  add_text(x = ~lon, y = ~lat, text = ~Place, textposition = 'middle right')
+add_text(x = ~lon, y = ~lat, text = ~Place, textposition = 'middle right')
 
 leaflet(data = df.both) %>%
   # add_text(x = ~lon, y = ~lat, text = ~Place, textposition = 'middle right') %>%
@@ -124,5 +191,5 @@ leaflet() %>%
                                                   )))
 
 
-  add_text(x = ~lon, y = ~lat, text = ~Place, textposition = 'middle right') 
+add_text(x = ~lon, y = ~lat, text = ~Place, textposition = 'middle right') 
 

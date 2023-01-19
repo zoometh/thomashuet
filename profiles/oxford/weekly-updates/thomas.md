@@ -798,8 +798,36 @@ DB
 - Scheduled to attend the Leicester ACD Workshop (2 March)
 - Organising a meeting (16 January) between Maria Castiello (postdoc working on Machine Learning/site detection), EAMENA (DB) and the [OATML](https://oatml.cs.ox.ac.uk/) (ML)
 - Reviewing Reuben Osborne contract
-- Reviewing reports:
-    - Arcadia annual
-    - Arcadia bid 2024
-    - Reporting Heritage Destruction
+- Reviewing reports: Arcadia annual, Arcadia bid 2024, Reporting Heritage Destruction
 - Attended the informal *Coffee & Arches* meeting with Mike Fisher and Ash
+
+#### ManCom meeting
+> 16/01/23
+
+- Preparing to upgrade Arches to v7
+    - there's still 501 string to translate from English to Arabic.
+    - agreed to meet Ash in person in Februray in Southampton
+- Continue to develop the *eamenaR* package, made it more generic to be able to work with other Arches instances than EAMENA
+    - in contact with David Myers
+    - help to publish data papers (for example in the *Journal of Archaeological Open Data*) and code scipts (eamenaR package) aside scientific papers
+- Deployed a GeoServer having in mind the maps of the *Atlas Archeologique d'Algerie* (AAA)
+- work in progress:
+    - Finishing the BU of the AAA, with Mohamed
+    - Completing the final steps to have EAMENA as a PeriodO authority, with Will
+    - Work on duplicates, with Sayantani
+- EAMENA will probably (administrative, host a 3-month research stay of Maria Castiello on ML for site detection, in collaboration with the Oxford Computer Science Department
+
+#### week 1
+
+- Appointment with Maria Castiello (postdoc) on ML for site detection, in collaboration with Alfredo Kalaitzis [OATML](https://oatml.cs.ox.ac.uk/) group (Oxford Computer Science Department). Now serching for IT facilities (GPUs)
+- Clening the periods temporal extent and label [EAMENA cultural periods and subperiods dataset](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/cultural_periods.tsv) and proposed this dataset to PeriodO (in collaboration with Will)
+- GeoServer
+    - Reading the documentation
+    - Search to find out what the practices are in the EAMENA team, in other Arches projects
+- In contact with:
+    - Nichole, to extract caravanserais Google Earth foot prints, with buffers (10m, 50m), from Google Earth Engine
+    - Mohamed, about the AAA and the remaining strings to translate from English to Arabic
+- Attended the informal *Coffee & Arches* meeting with Brian
+- Scheduled appointments:
+    - Friday with Rowan Wilson (IT Services Research Support team)
+    - Reuben Osborne (IT consultant)

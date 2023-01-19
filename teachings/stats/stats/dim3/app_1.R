@@ -11,6 +11,11 @@ dfisotops <- read.csv2("https://raw.githubusercontent.com/zoometh/thomashuet/mai
 # dfisotops <- read.csv2(paste0(getwd(), "/dfisotops.csv"),  sep = ";") # locally
 
 
+# dfkmeans <- kmeans(x = dfisotops[, c("Pb206_Pb204", "Pb207_Pb204", "Pb208_Pb204")], 
+#                    centers = 3, 
+#                    nstart = 20)
+# dfisotops$cluster <- dfkmeans$cluster
+
 #TODO: pass this assignations to itineRis 'symbol' calculation
 dfisotops$symbol <- NULL
 symbols.default <- c('circle', 'square', 'triangle', 'diamond', 'star', 'cross')
@@ -24,10 +29,7 @@ dfisotops <- merge(dfisotops, symbols.objects, by = "object", all.x = TRUE)
 dfisotops$Pb206_Pb204.perc <- (dfisotops$Pb206_Pb204/(dfisotops$Pb206_Pb204 + dfisotops$Pb207_Pb204 + dfisotops$Pb208_Pb204))*100
 dfisotops$Pb207_Pb204.perc <- (dfisotops$Pb207_Pb204/(dfisotops$Pb206_Pb204 + dfisotops$Pb207_Pb204 + dfisotops$Pb208_Pb204))*100  
 dfisotops$Pb208_Pb204.perc <- (dfisotops$Pb208_Pb204/(dfisotops$Pb206_Pb204 + dfisotops$Pb207_Pb204 + dfisotops$Pb208_Pb204))*100 
-dfisotops$lbl <- paste0(dfisotops$num, "\n", 
-                        "<sup>206/204</sup>Pb: ", round(dfisotops$Pb206_Pb204.perc, 2), "% \n",
-                        "<sup>207/204</sup>Pb: ", round(dfisotops$Pb207_Pb204.perc, 2), "% \n",
-                        "<sup>208/204</sup>Pb: ", round(dfisotops$Pb208_Pb204.perc, 2), "%")
+
 m <- list(
   l = 50,
   r = 50,
@@ -55,7 +57,8 @@ ui <- fluidPage(
                checkboxGroupInput("mines", "mines",
                                   choices = c("France", "Iberian Peninsula", "Switzerland"),
                                   selected = "France"
-               )
+               ),
+               sliderInput("kmeans", "kmeans", min = 1, max = 5, value = 2)
              ),
              mainPanel(#"Relative percentages of lead isotops", 
                        plotlyOutput("graph",
@@ -71,6 +74,14 @@ server <- function(input, output, session){
     min206 <- min(df.isotop.filtered$Pb206_Pb204.perc)
     min207 <- min(df.isotop.filtered$Pb207_Pb204.perc)
     min208 <- min(df.isotop.filtered$Pb208_Pb204.perc)
+    dfkmeans <- kmeans(x = df.isotop.filtered[, c("Pb206_Pb204", "Pb207_Pb204", "Pb208_Pb204")], 
+                       centers = input$kmeans, 
+                       nstart = 20)
+    df.isotop.filtered$cluster <- dfkmeans$cluster
+    df.isotop.filtered$lbl <- paste0(df.isotop.filtered$num, "\n", 
+                            "<sup>206/204</sup>Pb: ", round(df.isotop.filtered$Pb206_Pb204.perc, 2), "% \n",
+                            "<sup>207/204</sup>Pb: ", round(df.isotop.filtered$Pb207_Pb204.perc, 2), "% \n",
+                            "<sup>208/204</sup>Pb: ", round(df.isotop.filtered$Pb208_Pb204.perc, 2), "%")
     fig <- plot_ly(data = df.isotop.filtered, 
                    name = ~object, 
                    color = ~color.object) %>%
@@ -80,20 +91,41 @@ server <- function(input, output, session){
         a = ~Pb206_Pb204.perc,
         b = ~Pb207_Pb204.perc,
         c = ~Pb208_Pb204.perc,
-        text = ~lbl,
-        hoverinfo = 'text',
-        #opacity = .3, 
+        # text = ~lbl,
+        # hoverinfo = 'text',
+        #opacity = .3,
         marker = list(
           symbol = ~symbol,
           # symbols = 'square',# unique(df.isotop$symbol),
           # color = ~color.object,
-          
+
           size = 10,
           opacity = .7,
-          line = list('width' = 1, 
+          line = list('width' = 1,
                       color = '#00000070')
-        )
-      ) %>% 
+        )) %>%
+      add_trace(
+        type = 'scatterternary',
+        mode = 'text',
+        a = ~Pb206_Pb204.perc,
+        b = ~Pb207_Pb204.perc,
+        c = ~Pb208_Pb204.perc,
+        text = ~cluster,
+        hovertext = ~lbl,
+        # text = ~cluster,
+        hoverinfo = 'text',
+        #opacity = .3, 
+        marker = list(
+          # symbol = ~symbol,
+          # symbols = 'square',# unique(df.isotop$symbol),
+          color = ~color.object,
+          size = 10,
+          opacity = 0,
+          line = list('width' = 1, 
+                      color = '#00000070')),
+        showlegend = F, 
+        inherit = F
+      ) %>%
       layout(
         # title = "Relative percentages of lead isotops",
         title = list(text = "Relative % of lead isotopes for mines and EIA items", x = 1),
