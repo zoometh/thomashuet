@@ -829,6 +829,6 @@ DB
     - Nichole, to extract caravanserais Google Earth foot prints, with buffers (10m, 50m), from Google Earth Engine
     - Mohamed, about the AAA and the remaining strings to translate from English to Arabic
 - Attended the informal *Coffee & Arches* meeting with Brian
-- Scheduled appointments:
-    - Friday with Rowan Wilson (IT Services Research Support team)
+- Scheduled appointments Friday:
+    - Rowan Wilson (IT Services Research Support team)
     - Reuben Osborne (IT consultant, Arches v7)
