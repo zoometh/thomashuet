@@ -821,6 +821,7 @@ DB
 
 - Appointment with Maria Castiello (postdoc) on ML for site detection, in collaboration with Alfredo Kalaitzis [OATML](https://oatml.cs.ox.ac.uk/) group (Oxford Computer Science Department). Now serching for IT facilities (GPUs)
 - Clening the periods temporal extent and label [EAMENA cultural periods and subperiods dataset](https://github.com/eamena-project/eamena-arches-dev/blob/main/projects/periodo/cultural_periods.tsv) and proposed this dataset to PeriodO (in collaboration with Will)
+- Renamed the EAMENA GitHub organisation `eamena-oxford` has been to `eamena-project`
 - GeoServer
     - Reading the documentation
     - Search to find out what the practices are in the EAMENA team, in other Arches projects
@@ -830,4 +831,4 @@ DB
 - Attended the informal *Coffee & Arches* meeting with Brian
 - Scheduled appointments:
     - Friday with Rowan Wilson (IT Services Research Support team)
-    - Reuben Osborne (IT consultant)
+    - Reuben Osborne (IT consultant, Arches v7)
