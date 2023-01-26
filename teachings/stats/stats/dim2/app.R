@@ -40,7 +40,7 @@ server <- function(input, output, session){
   water.values <- paste0("<b>", Oxford.water$Place, "</b><br>", 
                          "Observed: ", Oxford.water$OxfordPct)
   water.residuals <- paste0("<b>", Oxford.water$Place, "</b><br>",
-                            "Observed: ", round(Oxford.water$predicted, 2))
+                            "Predicted: ", round(Oxford.water$predicted, 2))
   
   # no water
   Oxford.nowater <- subset(OxfordPots, WaterTrans == 0)
@@ -53,7 +53,7 @@ server <- function(input, output, session){
   nowater.values <- paste0("<b>", Oxford.nowater$Place, "</b><br>", 
                            "Observed: ", Oxford.nowater$OxfordPct)
   nowater.residuals <- paste0("<b>", Oxford.nowater$Place, "</b><br>",
-                              "Observed: ", round(Oxford.nowater$predicted, 2))
+                              "Predicted: ", round(Oxford.nowater$predicted, 2))
   # 
   # Oxford.nowater$predicted <- predict(Oxford.lm.nowater)   # Save the predicted values
   # Oxford.nowater$residuals <- residuals(Oxford.lm.nowater) # Save the residual values
@@ -88,18 +88,21 @@ server <- function(input, output, session){
                        xend = ~OxfordDst, yend = ~predicted, 
                        mode = 'lines', 
                        line = list(color = 'lightgrey', width = 1, dash = 'dash'),
+                       # text = ~water.residuals,
                        text = ~paste0("Residual: ", round(residuals, 1)),
                        # text = ~residuals,
                        hoverinfo = 'text') %>%
           add_trace(name = "Predicted value", y = ~predicted, opacity = 0.5,
                     marker = list(color = 'grey', line = list(color = 'grey', width = 1)),
                     # text = ~predicted,
-                    text = ~paste0("Predicted: ", round(predicted, 1)),
+                    text = ~water.residuals,
+                    # text = ~paste0("Predicted: ", round(predicted, 1)),
                     hoverinfo = 'text')
       }
       
       ox.w %>%
-        layout(title = paste0('Oxford pottery with a probable <b>water</b> transportation <br> (R<sup>2</sup> = ', r2.water, ")"),
+        layout(title = paste0('Oxford pottery with a probable <b>water</b> transportation', 
+                              '<br> (R<sup>2</sup> = ', r2.water, ")"),
                xaxis = list(title = "Distance (miles)"), 
                yaxis = list(title = "Percentage of Oxford Pottery"),
                margin = m,
@@ -128,7 +131,8 @@ server <- function(input, output, session){
                     #mode = 'scatter',
                     marker = list(color = 'grey', line = list(color = 'grey', width = 1)),
                     # text = ~predicted,
-                    text = ~paste0("Predicted: ", round(predicted, 1)),
+                    # text = ~paste0("Predicted: ", round(predicted, 1)),
+                    text = ~nowater.residuals,
                     hoverinfo = 'text') %>% 
           add_trace(name = "Regression line", x = ~OxfordDst, y = fitted(lm.nowater),
                     mode = 'lines', line = list(color = 'darkgrey', width = 1.5),
@@ -140,11 +144,13 @@ server <- function(input, output, session){
                        mode = 'lines', 
                        line = list(color = 'lightgrey', width = 1, dash = 'dash'),
                        # text = ~residuals,
+                       # text = ~nowater.residuals,
                        text = ~paste0("Residual: ", round(residuals, 1)),
                        hoverinfo = 'text')
       }
       ox.nw %>%
-        layout(title = paste0('Oxford pottery with a probable <b>no water</b> transportation <br> (R<sup>2</sup> = ', r2.nowater, ")"),
+        layout(title = paste0('Oxford pottery with a probable <b>no water</b> ', 
+                              'transportation <br> (R<sup>2</sup> = ', r2.nowater, ")"),
                xaxis = list(title = "Distance (miles)"), 
                yaxis = list(title = "Percentage of Oxford Pottery"),
                margin = m,
@@ -174,12 +180,16 @@ server <- function(input, output, session){
                   hoverinfo = 'text')
       if("Yes" %in% input$regression){
         ox.A <- ox.A %>%
+          
           # water
-          add_trace(data = Oxford.water, name = "Predicted value", y = ~predicted, opacity = 0.5,
+          add_trace(data = Oxford.water,
+                    name = "Predicted value", x = ~OxfordDst, y = ~predicted,
+                    opacity = 0.5,
                     #mode = 'scatter',
                     marker = list(color = 'grey', line = list(color = 'grey', width = 1)),
                     # text = ~predicted,
-                    text = ~paste0("Predicted: ", round(predicted, 1)),
+                    text = ~water.residuals,
+                    # text = ~paste0("Predicted: ", round(predicted, 1)),
                     hoverinfo = 'text') %>% 
           add_trace(data = Oxford.water, name = "Regression line", x = ~OxfordDst, y = fitted(lm.water),
                     mode = 'lines', line = list(color = 'darkgrey', width = 1.5),
@@ -187,27 +197,30 @@ server <- function(input, output, session){
                     text = ~paste0("R<sup>2</sup>: ", round(r2.water, 2)),
                     hoverinfo = 'text') %>%
           add_segments(data = Oxford.water, name = "Residuals",  x = ~OxfordDst, y =  ~OxfordPct,
-                       xend = ~OxfordDst, yend = ~predicted, 
-                       mode = 'lines', 
+                       xend = ~OxfordDst, yend = ~predicted,
+                       mode = 'lines',
                        line = list(color = 'lightgrey', width = 1, dash = 'dash'),
                        # text = ~residuals,
                        text = ~paste0("Residual: ", round(residuals, 1)),
                        hoverinfo = 'text') %>%
           # no water
-          add_trace(data = Oxford.nowater, name = "Predicted value", y = ~predicted, opacity = 0.5,
+          add_trace(data = Oxford.nowater,
+                    name = "Predicted value", x = ~OxfordDst, y = ~predicted,
+                    opacity = 0.5,
                     #mode = 'scatter',
                     marker = list(color = 'grey', line = list(color = 'grey', width = 1)),
                     # text = ~predicted,
-                    text = ~paste0("Predicted: ", round(predicted, 1)),
+                    text = ~nowater.residuals,
+                    # text = ~paste0("Predicted: ", round(predicted, 1)),
                     hoverinfo = 'text') %>% 
-          add_trace(data = Oxford.nowater, name = "Regression line", x = ~OxfordDst, y = fitted(lm.water),
+          add_trace(data = Oxford.nowater, name = "Regression line", x = ~OxfordDst, y = fitted(lm.nowater),
                     mode = 'lines', line = list(color = 'darkgrey', width = 1.5),
                     # text = r2.nowater,
                     text = ~paste0("R<sup>2</sup>: ", round(r2.nowater, 2)),
                     hoverinfo = 'text') %>%
           add_segments(data = Oxford.nowater, name = "Residuals",  x = ~OxfordDst, y =  ~OxfordPct,
-                       xend = ~OxfordDst, yend = ~predicted, 
-                       mode = 'lines', 
+                       xend = ~OxfordDst, yend = ~predicted,
+                       mode = 'lines',
                        line = list(color = 'lightgrey', width = 1, dash = 'dash'),
                        # text = ~residuals,
                        text = ~paste0("Residual: ", round(residuals, 1)),

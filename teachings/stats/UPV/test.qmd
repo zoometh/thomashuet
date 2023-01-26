@@ -28,6 +28,13 @@ library(dplyr)
 library(archdata)
 ```
 
+## Insert PDF
+
+
+<img src="C:/Rprojects/thomashuet/teachings/stats/stats/z-references/fulford-hodder-74.pdf" alt="this is a PDF"  width="4200" height="4200">
+
+<img src="C:/Rprojects/thomashuet/teachings/stats/stats/z-references/fulford-hodder-74.pdf" alt="this is a PDF"  width="4200" height="4200">
+
 
 ## COLO
 

@@ -779,7 +779,7 @@ DB
 - Developping audit functions, in the frame of the eamenaR package (complex SQL requests), helped by Ash, to:
     - count the number of grids filled by a team member during a certain interval of time (ex: 2022)
     - count the number of HP created by a team during a certain interval of time (ex: MaREA, 2022)
-- Contact with the *Oxford Applied and Theoretical Machine Learning* group to host the postdoc research stay of Maria Castiello (ML/site detection in arid areas)
+- Contact with the *Oxford Applied and Theoretical Machine Learning* group to host the postdoc research stay of Maria Castiello (ML/site detection in arid areas). Her project: *Automated Detection of Archaeological Sites in the Andes* (ADArchaeoSA)
     - add an informal meeting with a postdoc in engineering, used to ML, to get some tips about computer vision & site detection
 - Re-start the unformal meetings *Arches & Coffee* with Mike, Ash, Brian, Junaid, etc., each Wednesday at 10:00
 - Attend a meeting with Bijan and Hamed Rahnama, to work on caravanserails
@@ -832,3 +832,24 @@ DB
 - Scheduled appointments Friday:
     - Rowan Wilson (IT Services Research Support team)
     - Reuben Osborne (IT consultant, Arches v7)
+
+#### week 2
+
+- Working on EAMENA Postgres DB, to solve issues related to duplicates
+- eamenaR package
+    - developped a new function that can [related resources](https://github.com/eamena-project/eamenaR#related-resources) components of an HP (ex: Built component)
+    - David Myers (GCI) will mention the package in the next Arches bulletin 
+    - scheduled a one-hour presentation of the eamenaR package in early March
+- Continued documentation of the deployment and use of GeoServer
+- Done several BU for Mohamed
+- Attended a meeting with Reuben and Mel
+- We recieved the hardware for the APAAME server
+- Attended:
+    - the informal *Coffee & Arches* meeting with Mike
+    - the SPECTRA board committee meeting
+- Mohamed and Ahmed finished the Arabic translation. I will upload it on Transifex
+- Will:
+    - create an [ARC project](https://www.arc.ox.ac.uk/creating-a-project) to give access to IT facilities to Maria Castiello project
+    - attend a meeting with Bijan and Hamed about caravanserais
+    - meet Galen Mancino to consume the remaining 9 paid hours
+
