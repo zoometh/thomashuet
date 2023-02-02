@@ -853,3 +853,16 @@ DB
     - attend a meeting with Bijan and Hamed about caravanserais
     - meet Galen Mancino to consume the remaining 9 paid hours
 
+#### week 3
+
+- Created a [ARC project](https://www.arc.ox.ac.uk/creating-a-project) called `arc-oca` to host Maria Castiello project, but also other computational archaeological project
+- Installed a GeoServer on the same server as EAMENA prod. I need to solve an IT issue (Mixed content) to display Overlays in EAMENA DB. Once done, this could be the basis for:
+    - archiving georeferenced maps (GeoTIFF)
+    - volunteers/project-based works (starting with the Atlas of caravanserais)
+- Preparing the spatial coverage of EAMENA cultural periods/subperiods for PeriodO, with Will.
+- Developpement of the eamenaR function [geojson_stat()](https://eamena-project.github.io/eamenaR/doc/geojson_stat) to create basic statistics (pie chart, histogram)
+- Work on the caravanserais AMESS talk, with Bijan and Ahmed
+- Attended:
+    - the informal *Coffee & Arches* meeting with Mike
+- Will attend the Sustainibility WS
+- We recieved part of the hardware needed for the APAAME server. But, the missing part (TVS) will take a while to arrived, says Jeremy.
