@@ -175,7 +175,7 @@
 - Given a 3-hours lecture at the R4Archaeologists Winter school, Universita di Pisa
     - [teaching material online](https://github.com/zoometh/thomashuet/tree/main/profiles/oxford/R4A#report-with-r-markdown-)
 
-- Current business on EAMENA administration (phone number, new user registering, etc.)
+- Current business on EAMENA DB administration (phone number, new user registering, etc.)
 
 ---
 
@@ -779,7 +779,7 @@ DB
 - Developping audit functions, in the frame of the eamenaR package (complex SQL requests), helped by Ash, to:
     - count the number of grids filled by a team member during a certain interval of time (ex: 2022)
     - count the number of HP created by a team during a certain interval of time (ex: MaREA, 2022)
-- Contact with the *Oxford Applied and Theoretical Machine Learning* group to host the postdoc research stay of Maria Castiello (ML/site detection in arid areas). Her project: *Automated Detection of Archaeological Sites in the Andes* (ADArchaeoSA)
+- Contact with the [*Oxford Applied and Theoretical Machine Learning*](https://oatml.cs.ox.ac.uk/) group to host the postdoc research stay of Maria Castiello (ML/site detection in arid areas). Her project: *Automated Detection of Archaeological Sites in the Andes* (ADArchaeoSA)
     - add an informal meeting with a postdoc in engineering, used to ML, to get some tips about computer vision & site detection
 - Re-start the unformal meetings *Arches & Coffee* with Mike, Ash, Brian, Junaid, etc., each Wednesday at 10:00
 - Attend a meeting with Bijan and Hamed Rahnama, to work on caravanserails
@@ -866,3 +866,17 @@ DB
     - the informal *Coffee & Arches* meeting with Mike
 - Will attend the Sustainibility WS
 - We recieved part of the hardware needed for the APAAME server. But, the missing part (TVS) will take a while to arrived, says Jeremy.
+
+#### EAMENA team meeting
+> 3/2/23, week 3
+
+- Start to work on the update of Arches v5.2 to Arches v7 (I'm very late)
+- Deployed a GeoServer
+- Continue to develop and improve the [eamenaR](https://github.com/eamena-oxford/eamenaR) package: made it more generic to be able to work with other Arches instances than EAMENA, function that gather data from the Built Component, etc. 
+- Continue to develop [GitHub](https://github.com/eamena-project): renamed it to `eamena-project`, create a `eamena-gee` repository for Leicester, etc.
+- Work with Will to line-up EAMENA cultural (sub)periods with [PeriodO](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/periodo)
+- Attended various mmetings: *Coffee & Arches*, *Sustainibility*, etc.
+- Prepare a 3 months research stay for a postdoc in ML
+- Created an [Advanced Research Computing project](https://www.arc.ox.ac.uk/creating-a-project) to give access to IT facilities
+- Current business on EAMENA DB administration (BUs with Mohamed, IT support for the `en` -> `ar` translation, etc.)
+- Current administrative business (consultants' contracts, purchase of hardware, etc.)
