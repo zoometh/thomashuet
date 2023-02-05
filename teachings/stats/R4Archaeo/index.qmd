@@ -13,7 +13,7 @@ format:
     margin: 0.01
 bibliography: references.bib
 pagetitle: Report with R Markdown - Theory
-footer: "Report with R Markdown <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png' style='height: 35px;vertical-align: middle;'> Thomas Huet"
+footer: "Report with R Markdown <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png' style='height: 40px;vertical-align: middle;'> Thomas Huet"
 ---
 
 ```{r echo=FALSE, eval=FALSE, out.width="50%", fig.align="center", fig.cap="R4Archaeologists"}
@@ -38,7 +38,8 @@ library(rgl)
 
 ## Introduction
 
-::: panel-tabset
+::: {.panel-tabset}
+
 ### R Markdown
 
 **R Markdown** is an authoring framework for data science (AFDS) combining R code with narrative text. AFDS are used to create data-driven documents (reports) with a notebook interface.
@@ -103,9 +104,11 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 ```
+
 ## RStudio tools
 
-::: panel-tabset
+::: {.panel-tabset}
+
 ### Tools
 
 <img src="www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"/>
@@ -134,14 +137,14 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 <img src="www/rmd_nav_visualMdEditor_bar.png" align="left"/>  
 
-[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax (extension of Mardown), supports [Zotero](https://www.zotero.org/), can retrieve complete bibliographical references from DOI or searches on PubMed, Crossref, and DataCite
+[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax (extension of Mardown), supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-zotero.png" style="height: 40px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI or searches on PubMed, Crossref, and DataCite
 :::
 
 ## Document structure
 
 R Markdown combines
 
-::: columns
+:::: {.columns}
 ::: {.column width="60%"}
 -   a [YAML header](#yaml) for the document metadata
 
@@ -170,97 +173,83 @@ R Markdown combines
 +------------------+---------+
 | YAML header      |         |
 +==================+=========+
-| Lorem ipsum \... |         |
+| Lorem ipsum ...  |         |
 +------------------+---------+
-| \`\`\`{r}\       |         |
-| code chunk\      |         |
-| \`\`\`           |         |
+| ```{r}           |         |
+| code chunk       |         |
+| ```              |         |
 +------------------+---------+
-| Lorem ipsum \... |         |
+| Lorem ipsum ...  |         |
 +------------------+---------+
-| \`\`\`{r}\       |         |
-| code chunk\      |         |
-| \`\`\`           |         |
+| ```{r}           |         |
+| code chunk       |         |
+| ```              |         |
 +------------------+---------+
-| \...             |         |
+| ...              |         |
 +------------------+---------+
 
 </center>
 :::
-:::
+::::
 
 ## Narrative parts {#text}
 
 Narrative parts required principally the use of the Markdown syntax, but also supports HTML/CSS code, LaTeX syntax, etc.
 
-::: columns
+:::: {.columns}
 ::: {.column width="50%"}
-plain text
+<center>plain text</center>
 
     normal, *italic*, **Bolded**
 :::
 
 ::: {.column width="50%"}
-rendered
+<center>rendered</center>
 
 normal, *italic*, **Bolded**
 :::
-:::
+::::
 
 ## Markdown syntax
 
 Easy-to-write plain text syntax
 
-::: panel-tabset
-### Code-oriented frameworks
+::: {.panel-tabset}
 
-used by different code-oriented frameworks:
+### In use
 
--   [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 35px;vertical-align: middle;"/>
-
--   [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 35px;vertical-align: middle;"/>
-
--   [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/sketchfab.png" style="height: 35px;vertical-align: middle;"/>
-
--   [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 35px;vertical-align: middle;"/>
-
--   [bookdown](https://martinhinz.github.io/smada2021/book/preface.html) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 35px;vertical-align: middle;"/>
-
--   [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 35px;vertical-align: middle;"/>
-
--   etc.
+Used by different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 40px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 40px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 40px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 40px;vertical-align: middle;"/>, [bookdown](https://martinhinz.github.io/smada2021/book/preface.html) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 40px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 40px;vertical-align: middle;"/>, etc.
 
 ### Basic syntax
 
 ```{=html}
-<iframe width="780" height="500" src="https://www.markdownguide.org/basic-syntax/" title="Markdown basic syntax"></iframe>
+<iframe width="780" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 ```
+
 ### Online editor
 
 ```{=html}
 <iframe width="780" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
 ```
-### Conversion
 
-Pandoc is an extension of Markdown, really usefull for text conversions (Markdown to HTML, LaTex to Markdown, etc.)
+### Online converter
+
+Pandoc is an extension of Markdown, usefull for text conversions (Markdown <-> HTML, LaTex <-> Markdown, etc.)
 
 ```{=html}
 <iframe width="780" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 ```
-### XXX
 
-![](www/info_darkblue.png){width="20px"}  [Markdown basic syntax](https://www.markdownguide.org/basic-syntax/) and [Markdown online editor](https://stackedit.io/app#)
-
-![](www/info_darkblue.png){width="20px"}  [Pandoc converter](https://pandoc.org/try/) is an extension of Markdown, really usefull for text conversions (Markdown to HTML, LaTex to Markdown, etc.)
 :::
 
 ## Styling
 
-::: panel-tabset
+::: {.panel-tabset}
+
 ### Text
 
 +---------------------------------------+-------------------------------------+
-| Markdown                              | Render                              |
+| Markdown                              | Rendered                            |
 +=======================================+=====================================+
 | `**bold**, __bold__`                  | **bold**, **bold**                  |
 +---------------------------------------+-------------------------------------+
@@ -279,7 +268,7 @@ Pandoc is an extension of Markdown, really usefull for text conversions (Markdow
 
 ### Math formula
 
-| Markdown                   | Render                   |
+| Markdown                   | Rendered                 |
 |----------------------------|--------------------------|
 | `$$\sum_{i=1}^{n} X^3_i$$` | $$\sum_{i=1}^{n} X^3_i$$ |
 | ...                        | ...                      |
@@ -298,6 +287,7 @@ Pandoc is an extension of Markdown, really usefull for text conversions (Markdow
 
     --- or ***
 
+
 ------------------------------------------------------------------------
 :::
 
@@ -307,7 +297,7 @@ A extended part of the text styling can also be done with HTML/CSS
 
 ## Lists {.unnumbered}
 
-::: columns
+:::: {.columns}
 ::: {.column width="50%"}
     - numbered  
       
@@ -323,11 +313,11 @@ A extended part of the text styling can also be done with HTML/CSS
     2.  second element
     3.  third element
 :::
-:::
+::::
 
 ## Lists {.unnumbered}
 
-::: columns
+:::: {.columns}
 ::: {.column width="50%"}
     - bullet
       
@@ -351,80 +341,142 @@ A extended part of the text styling can also be done with HTML/CSS
             -   third element - sub 2 - subsub 1
             -   third element - sub 2 - subsub 2
 :::
-:::
+::::
 
 ## Tables {.unnumbered}
 
-::: panel-tabset
+::: {.panel-tabset}
+
 ### Simple table
 
-::: columns
+Write  
+
+
+:::: {.columns}
 ::: {.column width="40%"}
-    | Syntax | Description |
-    | --- | ----------- |
-    | Header | Title |
-    | Paragraph | Text |
+
+```
+| Header 1 | Header 2 |
+| --- | ----------- |
+| Row 1 | Text |
+| Row 2 | Another text |
+```
+
 :::
 
 ::: {.column width="20%"}
-and
+or
 :::
 
 ::: {.column width="40%"}
-    | Syntax      | Description |
-    | ----------- | ----------- |
-    | Header      | Title       |
-    | Paragraph   | Text        |
+
+```
+| Header 1    | Header 2    |
+| ----------- | ----------- |
+| Row 1       | Text        |
+| Row 2       | Another text|
+```
+
 :::
-:::
+::::
 
 produce the same result:
 
-| Syntax    | Description |
-|-----------|-------------|
-| Header    | Title       |
-| Paragraph | Text        |
+| Header 1    | Header 2    |
+| ----------- | ----------- |
+| Row 1       | Text        |
+| Row 2       | Another text|
 
 ### Alignements
 
-    | Left        |    Center   |         Right |
-    | :---        |    :----:   |          ---: |
-    | Header      | Title       | Here's this   |
-    | Paragraph   | Text        | And more      |
+Use `:----:`, `:---` or `---:` to align
+
+```
+| Left        |    Center   |         Right |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+```
+
 
 | Left      | Center |       Right |
 |:----------|:------:|------------:|
 | Header    | Title  | Here's this |
 | Paragraph |  Text  |    And more |
 
-![](www/info_darkblue.png){width="20px"}  Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g. kable() from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
+### Complex tables
+
+Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g. kable() from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
+
+
 :::
 
-## Images {.unnumbered}
+## Images
 
-These coding give the same results (Markdown and HTML):
+::: {.panel-tabset}
 
--   online images (Markdown and HTML)
+### Online images
 
-<!-- -->
+These different codes give the same results (Markdown and HTML)
 
-    ![](https://raw.githubusercontent.com/zoometh/oxford/main/R4A/www/logo.png){width=100px}  
-    <img src="https://raw.githubusercontent.com/zoometh/oxford/main/R4A/www/logo.png" alt="" width=100>  
+:::: {.columns}
 
-![](https://raw.githubusercontent.com/zoometh/oxford/main/R4A/www/logo.png){width="100px"}\
-<img src="https://raw.githubusercontent.com/zoometh/oxford/main/R4A/www/logo.png" width="100"/>
+::: {.column width="70%"}
 
--   local images (Markdown and HTML)
+```
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png){width=100px}
+```
 
-<!-- -->
+or
 
-    ![](www/logo.png){width=100px}  
-    <img src="www/logo.png" alt="" width=100>  
+```
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png" width=100> 
+```
 
-![](www/logo.png){width="100px"}\
-<img src="www/logo.png" width="100"/>
+:::
 
-## Spaces and end of lines {.unnumbered}
+::: {.column width="30%"}
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png){width="100px"}
+
+
+:::
+::::
+
+### Local images
+
+These different codes give the same results (Markdown and HTML)
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+```
+![](www/logo.png){width=100px}
+```
+
+or
+
+```
+<img src="www/logo.png" alt="" width=100>  
+```
+
+:::
+
+::: {.column width="30%"}
+
+![](www/logo.png){width="100px"}
+
+:::
+
+::::
+
+
+## Spaces and end of lines
+
+::: {.panel-tabset}
+
+### Spaces
 
 Extra spaces (HTML only)
 
@@ -432,18 +484,29 @@ Extra spaces (HTML only)
 -     `&ensp;` means 2 spaces
 -     `&nbsp;` means 1 space
 
-End of line (`<br>` in HTML) with 2 or more spaces and return, for example:
+### End of line
+
+End of line (`<br>` in HTML) with 2 or more spaces and return, or `\` and retrun, for example:
 
 ![](https://raw.githubusercontent.com/zoometh/oxford/main/R4A/www/rmd_eol.png){width="400px"}
 
-    'Reconnais-toi  
-    Cette adorable personne c'est toi  
-    Sous le grand chapeau canotier  
-    Oeil
-    Nez  
-    Ta Bouche  
-    Voici l’ovale de ta figure  
-    Ton cou Exquis' (Apollinaire, 1913) 
+:::: {.columns}
+
+::: {.column width="50%"}
+
+```
+'Reconnais-toi  
+Cette adorable personne c'est toi  
+Sous le grand chapeau canotier  
+Oeil
+Nez  
+Ta Bouche  
+Voici l’ovale de ta figure  
+Ton cou Exquis' (Apollinaire, 1913) 
+```
+:::
+
+::: {.column width="50%"}
 
 'Reconnais-toi\
 Cette adorable personne c'est toi\
@@ -451,21 +514,37 @@ Sous le grand chapeau canotier\
 Oeil Nez\
 Ta Bouche\
 Voici l'ovale de ta figure\
-Ton cou Exquis' (Apollinaire, 1913)
+Ton cou Exquis'\
+(Apollinaire, 1913)
 
-## Titles {.unnumbered}
+:::
 
-    # Header level 1
+::::
 
-    ## Heading level 2
+:::
 
-    ### Heading level 3
+## Titles
 
-    etc.
+
+```
+# Header level 1
+
+## Heading level 2
+
+### Heading level 3
+```
+
+etc.
+
+
+    
+## Anchor
 
 An anchor:
 
 `# Practice {#practice}`
+
+## Numbering titles
 
 Avoid numbering:
 
@@ -477,43 +556,98 @@ Avoid numbering and add an anchor:
 
 ## Hyperlinks {.unnumbered}
 
--   to text
+Add hyperlinks
 
-`Report with R Markdown, part 2: [Practice](https://zoometh.github.io/oxford/R4A/2_R Markdown_Practice)`\
+::: {.panel-tabset}
+
+### To text
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+`Report with R Markdown, part 2: [Practice](https://zoometh.github.io/oxford/R4A/2_R Markdown_Practice)`
+
+:::
+
+::: {.column width="30%"}
+
 Report with R Markdown, part 2: [Practice](https://zoometh.github.io/oxford/R4A/2_R%20Markdown_Practice)
 
--   to an image
+:::
 
-`[![](www/logo.png){width=70px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)`\
+::::
+
+### To images
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+`[![](www/logo.png){width=70px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)`
+
+:::
+
+::: {.column width="30%"}
+
 [![](www/logo.png){width="70px"}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
 
-![](www/info_darkblue.png){width="20px"}  Hyperlinks can also be done with HTML/CSS
+:::
+
+::::
+
+:::
+
+
 
 ## Bookmarks {#bookmarks .unnumbered}
 
-`After this theoretical part, you will have to [practice](#practice)`\
+:::: {.columns}
+
+::: {.column width="50%"}
+
+`After this theoretical part, you will have to [practice](#practice)`
+
+:::
+
+::: {.column width="50%"}
+
 After this theoretical part, you will have to [practice](#practice)
 
-The reference section, 'Practice', appears like that:
+:::
 
-![](www/rmd_bookmark.png){width="250px"}
+::::
+
+
+The referenced section, 'Practice' has the anchor `#practice` inside curly brackets:
+
+![](www/rmd_bookmark.png){width="150px"}
 
 ## Footnotes {.unnumbered}
 
-Footnote to the bottom of the document
+:::: {.columns}
 
-`A simple footnote,[^1] or a longer one.[^bignote]`\
-A simple footnote,[^1] or a longer one.[^2]
+::: {.column width="50%"}
+
+```
+A simple footnote[^1]
+...
+
+[^1]: This is the first footnote.
+```
+
+:::
+
+::: {.column width="50%"}
+
+A simple footnote[^1]
+...
 
 [^1]: This is the first footnote.
 
-[^2]: Here's one with multiple paragraphs and code.
+:::
 
-    Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
+::::
 
 ## Cross-referencing
 
@@ -531,11 +665,26 @@ number.of.axes <- nrow(Handaxes)
 
 Variables are called like this: 'r variable_name'
 
-![](www/rmd_call_var.png){width="150px"}
+![](www/rmd_call_var.png){width="100px"}
 
-    '(...) the Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. The maximal length (L = 'r max(Handaxes$L)')  (...)'  
+:::: {.columns}
 
-'(...) the Furze Platt dataset counts `r number.of.axes` described by `r ncol(Handaxes)`. The maximal length (L = `r max(Handaxes$L)`) (...)'
+::: {.column width="50%"}
+
+```
+(...) Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. The maximal length (L = 'r max(Handaxes$L)')  
+(...)
+```  
+
+:::
+
+::: {.column width="50%"}
+
+'(...) Furze Platt dataset counts `r number.of.axes` described by `r ncol(Handaxes)`. The maximal length (L = `r max(Handaxes$L)`) (...)'
+
+:::
+
+::::
 
 ## Figures {.unnumbered}
 
