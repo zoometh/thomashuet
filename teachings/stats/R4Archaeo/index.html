@@ -465,10 +465,14 @@
 <ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">AFDS</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<p><strong>R Markdown</strong> is an authoring framework for data science (AFDS) combining R code with narrative text. AFDS are used to create data-driven documents (reports) with a notebook interface.</p>
+<p><strong>R Markdown</strong> is an authoring framework for data science (AFDS). It combines R code with narrative text. AFDS are used to create data-driven documents (reports) with a notebook interface.</p>
+<ul>
+<li><p>Code chunks are expressed with a local header, and a body part</p></li>
+<li><p>Narrative parts required principally the use of the Markdown syntax, but also supports HTML/CSS code, LaTeX syntax, etc.</p></li>
+</ul>
 </div>
 <div id="tabset-1-2">
-<p>Authoring frameworks for data science (AFDS)</p>
+<p>Main authoring frameworks for data science (AFDS)</p>
 <table>
 <thead>
 <tr class="header">
@@ -504,17 +508,13 @@
 </div>
 </div>
 </section>
-<section id="academic-writing" class="slide level2">
-<h2>Academic writing</h2>
-<p><strong>R Markdown</strong> is often enough for academic writing. It uses Markdown syntax, supports HTML/CSS markup languages, , BibTex references, 3D plots, interactive maps.</p>
+<section id="academic-reporting" class="slide level2">
+<h2>Academic reporting</h2>
+<p><strong>R Markdown</strong> is often enough for academic reporting It uses Markdown syntax, supports HTML/CSS markup languages, LaTeX, BibTex references, 3D plots, interactive maps, etc.</p>
 </section>
 <section id="main-packages" class="slide level2">
 <h2>Main packages</h2>
 <table>
-<colgroup>
-<col style="width: 36%">
-<col style="width: 63%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>package</th>
@@ -524,19 +524,19 @@
 <tbody>
 <tr class="odd">
 <td><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png"></td>
-<td>[knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g.&nbsp;convert to LaTeX)</td>
+<td><a href="https://yihui.org/knitr/">knitr</a> engine for dynamic report generation with R (e.g.&nbsp;convert to LaTeX) |</td>
 </tr>
 <tr class="even">
 <td><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png"></td>
-<td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
+<td><a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a> convert R Markdown documents into a variety of formats, extension of {<code>knitr</code>} |</td>
 </tr>
 <tr class="odd">
 <td><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png"></td>
-<td>[tinytex](https://yihui.org/tinytex/) typesetting system for LaTeX syntax (e.g.&nbsp;export in PDF)</td>
+<td><a href="https://yihui.org/tinytex/">tinytex</a> typesetting system for LaTeX syntax (e.g.&nbsp;export in PDF) |</td>
 </tr>
 <tr class="even">
 <td><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png"></td>
-<td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g.&nbsp;cross reference figures)</td>
+<td><a href="https://bookdown.org/">bookdown</a> advanced editing and publishing functions (e.g.&nbsp;cross reference figures) |</td>
 </tr>
 </tbody>
 </table>
@@ -571,10 +571,6 @@
 <div id="tabset-2-1">
 <p><img src="www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"></p>
 <table>
-<colgroup>
-<col style="width: 43%">
-<col style="width: 56%">
-</colgroup>
 <thead>
 <tr class="header">
 <th>tool</th>
@@ -596,7 +592,7 @@
 </tr>
 <tr class="even">
 <td><img data-src="www/rmd_nav_mdFormatOpt.png"></td>
-<td>run [Visual R Markdown](#vrm) + other options</td>
+<td>run <a href="#/vrm">Visual R Markdown</a> + other options |</td>
 </tr>
 <tr class="odd">
 <td><img data-src="www/rmd_nav_newCodeChunk.png"></td>
@@ -612,14 +608,14 @@
 </tr>
 <tr class="even">
 <td><img data-src="www/rmd_nav_visualMdEditor.png"></td>
-<td>run [Visual R Markdown](#vrm)</td>
+<td>run <a href="#/vrm">Visual R Markdown</a></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="tabset-2-2">
 <p><img src="www/rmd_nav_visualMdEditor_bar.png" align="left"></p>
-<p><a href="https://rstudio.github.io/visual-markdown-editing/">Visual R Markdown</a> has a Pandoc syntax (extension of Mardown), supports <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-zotero.png" style="height: 40px;vertical-align: middle;">, can retrieve complete bibliographical references from DOI or searches on PubMed, Crossref, and DataCite</p>
+<p><a href="https://rstudio.github.io/visual-markdown-editing/">Visual R Markdown</a> has a Pandoc syntax (extension of Mardown), supports <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-zotero.png" style="height: 45px;vertical-align: middle;">, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/doi-logo.png" style="height: 45px;vertical-align: middle;"> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pubmed.png" style="height: 45px;vertical-align: middle;">, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-crossref.png" style="height: 45px;vertical-align: middle;">, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-datacite.png" style="height: 45px;vertical-align: middle;"></p>
 </div>
 </div>
 </div>
@@ -648,58 +644,55 @@
 .tg .tg-0lax{text-align:left;vertical-align:top}
 .tg .tg-abk0{font-family:"Comic Sans MS", cursive, sans-serif !important;text-align:left;vertical-align:top}
 </style>
-<table style="width:40%;">
-<colgroup>
-<col style="width: 26%">
-<col style="width: 13%">
-</colgroup>
+
+<table class="tg">
 <thead>
-<tr class="header">
-<th>YAML header</th>
-<th></th>
+<tr>
+<th class="tg-lto5">
+YAML header
+</th>
+<th class="tg-0lax">
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td>Lorem ipsum …</td>
-<td></td>
+<tr>
+<td class="tg-12h1">
+Lorem ipsum …
+</td>
+<td class="tg-0lax">
+</td>
 </tr>
-<tr class="even">
-<td><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb1-1"><a href="#cb1-1"></a>code chunk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td></td>
+<tr>
+<td class="tg-a6nh">
+<code>{r}&lt;br&gt;code chunk&lt;br&gt;</code>
+</td>
+<td class="tg-0lax">
+</td>
 </tr>
-<tr class="odd">
-<td>Lorem ipsum …</td>
-<td></td>
+<tr>
+<td class="tg-abk0">
+Lorem ipsum …
+</td>
+<td class="tg-0lax">
+</td>
 </tr>
-<tr class="even">
-<td><div class="sourceCode" id="cb2"><pre class="sourceCode numberSource {r} number-lines code-with-copy"><code class="sourceCode"><span id="cb2-1"><a href="#cb2-1"></a>code chunk</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td></td>
+<tr>
+<td class="tg-a6nh">
+<code>{r}&lt;br&gt;code chunk&lt;br&gt;</code>
+</td>
+<td class="tg-0lax">
+</td>
 </tr>
-<tr class="odd">
-<td>…</td>
-<td></td>
+<tr>
+<td class="tg-0lax" colspan="2">
+…
+</td>
 </tr>
 </tbody>
+
 </table>
 </center>
-</div>
-</div>
-</section>
-<section id="text" class="slide level2">
-<h2>Narrative parts</h2>
-<p>Narrative parts required principally the use of the Markdown syntax, but also supports HTML/CSS code, LaTeX syntax, etc.</p>
-<div class="columns">
-<div class="column" style="width:50%;">
-<center>
-plain text
-</center>
-<pre><code>normal, *italic*, **Bolded**</code></pre>
-</div><div class="column" style="width:50%;">
-<center>
-rendered
-</center>
-<p>normal, <em>italic</em>, <strong>Bolded</strong></p>
 </div>
 </div>
 </section>
@@ -710,17 +703,20 @@ rendered
 <ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">In use</a></li><li><a href="#tabset-3-2">Basic syntax</a></li><li><a href="#tabset-3-3">Online editor</a></li><li><a href="#tabset-3-4">Online converter</a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1">
-<p>Used by different code-oriented frameworks: <a href="https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb">Jupyter</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 40px;vertical-align: middle;">, <a href="https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown">GitHub</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 40px;vertical-align: middle;">, <a href="https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37">Sketchfab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 40px;vertical-align: middle;">, <a href="https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200">Slack</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 40px;vertical-align: middle;">, <a href="https://martinhinz.github.io/smada2021/book/preface.html">bookdown</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 40px;vertical-align: middle;">, <a href="https://stackoverflow.com/a/14747656/2854081">Stackoverflow</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 40px;vertical-align: middle;">, etc.</p>
+<p>Used by different code-oriented frameworks: <a href="https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb">Jupyter</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 45px;vertical-align: middle;">, <a href="https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown">GitHub</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, <a href="https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37">Sketchfab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 45px;vertical-align: middle;">, <a href="https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200">Slack</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 45px;vertical-align: middle;">, <a href="https://martinhinz.github.io/smada2021/book/preface.html">bookdown</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 45px;vertical-align: middle;">, <a href="https://stackoverflow.com/a/14747656/2854081">Stackoverflow</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 45px;vertical-align: middle;">, etc.</p>
 </div>
 <div id="tabset-3-2">
-<iframe width="780" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+<iframe width="900" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+<p>https://rmarkdown.rstudio.com/authoring_basics.html</p>
 </div>
 <div id="tabset-3-3">
-<iframe width="780" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+<iframe width="900" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+<p>https://stackedit.io/app#</p>
 </div>
 <div id="tabset-3-4">
-<p>Pandoc is an extension of Markdown, usefull for text conversions (Markdown &lt;-&gt; HTML, LaTex &lt;-&gt; Markdown, etc.)</p>
-<iframe width="780" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<p>Pandoc is an extension of Markdown, usefull for text conversions (Markdown &lt;-&gt; HTML, LaTeX &lt;-&gt; Markdown, etc.)</p>
+<iframe width="900" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<p>https://pandoc.org/try/</p>
 </div>
 </div>
 </div>
@@ -876,7 +872,9 @@ rendered
 <ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Simple table</a></li><li><a href="#tabset-5-2">Alignements</a></li><li><a href="#tabset-5-3">Complex tables</a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
-<p>Write</p>
+<center>
+Write
+</center>
 <div class="columns">
 <div class="column" style="width:40%;">
 <pre><code>| Header 1 | Header 2 |
@@ -884,7 +882,9 @@ rendered
 | Row 1 | Text |
 | Row 2 | Another text |</code></pre>
 </div><div class="column" style="width:20%;">
-<p>or</p>
+<center>
+or
+</center>
 </div><div class="column" style="width:40%;">
 <pre><code>| Header 1    | Header 2    |
 | ----------- | ----------- |
@@ -892,7 +892,9 @@ rendered
 | Row 2       | Another text|</code></pre>
 </div>
 </div>
-<p>produce the same result:</p>
+<center>
+produce the same result:
+</center>
 <table>
 <thead>
 <tr class="header">
@@ -914,10 +916,12 @@ rendered
 </div>
 <div id="tabset-5-2">
 <p>Use <code>:----:</code>, <code>:---</code> or <code>---:</code> to align</p>
+<center>
 <pre><code>| Left        |    Center   |         Right |
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |</code></pre>
+</center>
 <table>
 <thead>
 <tr class="header">
@@ -948,8 +952,10 @@ rendered
 </section>
 <section id="images" class="slide level2">
 <h2>Images</h2>
-<p>::: {.panel-tabset}</p>
-<h3 id="online-images">Online images</h3>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Online images</a></li><li><a href="#tabset-6-2">Local images</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
 <p>These different codes give the same results (Markdown and HTML)</p>
 <div class="columns">
 <div class="column" style="width:70%;">
@@ -960,7 +966,8 @@ rendered
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png" width="100"></p>
 </div>
 </div>
-<h3 id="local-images">Local images</h3>
+</div>
+<div id="tabset-6-2">
 <p>These different codes give the same results (Markdown and HTML)</p>
 <div class="columns">
 <div class="column" style="width:70%;">
@@ -971,13 +978,16 @@ rendered
 <p><img data-src="www/logo.png" width="100"></p>
 </div>
 </div>
+</div>
+</div>
+</div>
 </section>
 <section id="spaces-and-end-of-lines" class="slide level2">
 <h2>Spaces and end of lines</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Spaces</a></li><li><a href="#tabset-6-2">End of line</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Spaces</a></li><li><a href="#tabset-7-2">End of line</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-7-1">
 <p>Extra spaces (HTML only)</p>
 <ul>
 <li>  <code>&amp;emsp;</code> means 4 spaces (= a tabulation)</li>
@@ -985,9 +995,9 @@ rendered
 <li>&nbsp; <code>&amp;nbsp;</code> means 1 space</li>
 </ul>
 </div>
-<div id="tabset-6-2">
-<p>End of line (<code>&lt;br&gt;</code> in HTML) with 2 or more spaces and return, or <code>\</code> and retrun, for example:</p>
-<p><img data-src="https://raw.githubusercontent.com/zoometh/oxford/main/R4A/www/rmd_eol.png" width="400"></p>
+<div id="tabset-7-2">
+<p>End of line (<code>&lt;br&gt;</code> in HTML) with 2 or more spaces and return – or <code>\</code> and return – for example:</p>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_eol.png" width="400"></p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <pre><code>'Reconnais-toi  
@@ -1017,9 +1027,9 @@ Ton cou Exquis’<br>
 <h2>Titles</h2>
 <pre><code># Header level 1
 
-## Heading level 2
+## Header level 2
 
-### Heading level 3</code></pre>
+### Header level 3</code></pre>
 <p>etc.</p>
 </section>
 <section id="anchor" class="slide level2">
@@ -1029,31 +1039,40 @@ Ton cou Exquis’<br>
 </section>
 <section id="numbering-titles" class="slide level2">
 <h2>Numbering titles</h2>
-<p>Avoid numbering:</p>
-<p><code>#### Spaces and end of lines {-}</code></p>
-<p>Avoid numbering and add an anchor:</p>
-<p><code>#### Bookmarks {-#bookmarks}</code></p>
+<table>
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th colspan="2">Headers | Syntax</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Avoid numbering</td>
+<td><code>## My Header level 2 {-}</code></td>
+</tr>
+<tr class="even">
+<td>Avoid numbering and add an anchor</td>
+<td><code>## My Header level 3 {-#bookmarks}</code></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="hyperlinks" class="slide level2 unnumbered">
 <h2>Hyperlinks</h2>
 <p>Add hyperlinks</p>
 <div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">To text</a></li><li><a href="#tabset-7-2">To images</a></li></ul>
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">To text</a></li><li><a href="#tabset-8-2">To images</a></li></ul>
 <div class="tab-content">
-<div id="tabset-7-1">
-<div class="columns">
-<div class="column" style="width:70%;">
-<p><code>Report with R Markdown, part 2: [Practice](https://zoometh.github.io/oxford/R4A/2_R Markdown_Practice)</code></p>
-</div><div class="column" style="width:30%;">
-<p>Report with R Markdown, part 2: <a href="https://zoometh.github.io/oxford/R4A/2_R%20Markdown_Practice">Practice</a></p>
+<div id="tabset-8-1">
+<div class="sourceCode" id="cb13" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Report with R Markdown, part 2: <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R%20Markdown_Practice">Practice</a></p>
 </div>
-</div>
-</div>
-<div id="tabset-7-2">
-<div class="columns">
-<div class="column" style="width:70%;">
-<p><code>[![](www/logo.png){width=70px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</code></p>
-</div><div class="column" style="width:30%;">
+<div id="tabset-8-2">
+<div class="sourceCode" id="cb14" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1"></a><span class="co">[</span><span class="al">![](www/logo.png)</span><span class="ot">{width=70px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists"><img data-src="www/logo.png" width="70"></a></p>
@@ -1062,18 +1081,11 @@ Ton cou Exquis’<br>
 </div>
 </div>
 </div>
-</div>
-</div>
 </section>
 <section id="bookmarks" class="slide level2 unnumbered">
 <h2>Bookmarks</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><code>After this theoretical part, you will have to [practice](#practice)</code></p>
-</div><div class="column" style="width:50%;">
+<div class="sourceCode" id="cb15" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a>After this theoretical part, you will have to <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>After this theoretical part, you will have to <a href="#/practice">practice</a></p>
-</div>
-</div>
 <p>The referenced section, ‘Practice’ has the anchor <code>#practice</code> inside curly brackets:</p>
 
 <img data-src="www/rmd_bookmark.png" width="150" class="r-stretch"></section>
@@ -1317,8 +1329,8 @@ See section <a href="#/bookmarks"><strong>Bookmarks</strong></a></p>
 <span id="cb23-13"><a href="#cb23-13"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb23-14"><a href="#cb23-14"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-fdcb9fd8325759ec731c" style="width:60%;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-fdcb9fd8325759ec731c">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-e92a8175c5afc63d1b0a" style="width:60%;height:400px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e92a8175c5afc63d1b0a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -1341,8 +1353,8 @@ See section <a href="#/bookmarks"><strong>Bookmarks</strong></a></p>
 <span id="cb24-13"><a href="#cb24-13"></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb24-14"><a href="#cb24-14"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Munsingen fibulae"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-259271dc89d5864af5cb" style="width:960px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-259271dc89d5864af5cb">{"x":{"visdat":{"4974258d7d1c":["function () ","plotlyVisDat"]},"cur_data":"4974258d7d1c","attrs":{"4974258d7d1c":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Munsingen fibulae","xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-a147aafd17be97e54225" style="width:960px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a147aafd17be97e54225">{"x":{"visdat":{"a2c48ef6a70":["function () ","plotlyVisDat"]},"cur_data":"a2c48ef6a70","attrs":{"a2c48ef6a70":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Munsingen fibulae","xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -1372,8 +1384,8 @@ See section <a href="#/bookmarks"><strong>Bookmarks</strong></a></p>
 <span id="cb25-20"><a href="#cb25-20"></a>  <span class="at">zlab =</span> <span class="st">"Bow Height"</span>)</span>
 <span id="cb25-21"><a href="#cb25-21"></a><span class="fu">rglwidget</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display no-overflow-x">
-<div id="rgl46965" style="width:960px;height:480px;" class="rglWebGL html-widget"></div>
-<script type="application/json" data-for="rgl46965">{"x":{"material":{"color":"#000000","alpha":1,"lit":true,"ambient":"#000000","specular":"#FFFFFF","emission":"#000000","shininess":50,"smooth":true,"front":"filled","back":"filled","size":3,"lwd":1,"fog":true,"point_antialias":false,"line_antialias":false,"texture":null,"textype":"rgb","texmipmap":false,"texminfilter":"linear","texmagfilter":"linear","texenvmap":false,"depth_mask":true,"depth_test":"less","isTransparent":false,"polygon_offset":[0,0],"margin":"","floating":false,"tag":""},"rootSubscene":7,"objects":{"13":{"id":13,"type":"spheres","material":{},"vertices":"0","colors":"1","radii":[[2.99735999107361]],"centers":"2","ignoreExtent":false,"fastTransparency":true,"flags":32771},"15":{"id":15,"type":"text","material":{"lit":false,"margin":0,"floating":true,"edge":[0,1,1]},"vertices":"3","colors":"4","texts":[["Length"]],"cex":[[1]],"adj":[[0.5,0.5,0.5]],"centers":"5","family":[["sans"]],"font":[[1]],"ignoreExtent":true,"flags":33808},"16":{"id":16,"type":"text","material":{"lit":false,"margin":1,"floating":true,"edge":[1,1,1]},"vertices":"6","colors":"7","texts":[["Foot Angle"]],"cex":[[1]],"adj":[[0.5,0.5,0.5]],"centers":"8","family":[["sans"]],"font":[[1]],"ignoreExtent":true,"flags":33808},"17":{"id":17,"type":"text","material":{"lit":false,"margin":2,"floating":true,"edge":[1,1,1]},"vertices":"9","colors":"10","texts":[["Bow Height"]],"cex":[[1]],"adj":[[0.5,0.5,0.5]],"centers":"11","family":[["sans"]],"font":[[1]],"ignoreExtent":true,"flags":33808},"11":{"id":11,"type":"light","vertices":[[0,0,1]],"colors":[[1,1,1,1],[1,1,1,1],[1,1,1,1]],"viewpoint":true,"finite":false},"10":{"id":10,"type":"background","material":{},"colors":"12","centers":"13","sphere":false,"fogtype":"none","fogscale":1,"flags":32768},"12":{"id":12,"type":"background","material":{"lit":false,"back":"lines"},"colors":"14","centers":"15","sphere":false,"fogtype":"none","fogscale":1,"flags":32768},"14":{"id":14,"type":"bboxdeco","material":{"front":"lines","back":"lines"},"vertices":"16","colors":"17","axes":{"mode":["pretty","pretty","pretty"],"step":[20,1,5],"nticks":[5,5,5],"marklen":[15,15,15],"expand":[1.02999997138977,1.02999997138977,1.02999997138977]},"draw_front":true,"flags":32769},"7":{"id":7,"type":"subscene","par3d":{"antialias":8,"FOV":30,"ignoreExtent":false,"listeners":7,"mouseMode":{"none":"none","left":"trackball","right":"zoom","middle":"fov","wheel":"pull"},"observer":[0,0,279.475921630859],"modelMatrix":[[0.587718069553375,0,0,-45.2542915344238],[0,5.12532091140747,2.96479225158691,-89.9216384887695],[0,-14.0817031860352,1.07909619808197,-184.627380371094],[0,0,0,1]],"projMatrix":[[3.73205065727234,0,0,0],[0,3.73205065727234,0,0],[0,0,-3.86370348930359,-1007.47839355469],[0,0,-1,0]],"skipRedraw":false,"userMatrix":[[1,0,0,0],[0,0.342020143325668,0.939692620785909,0],[0,-0.939692620785909,0.342020143325668,0],[0,0,0,1]],"userProjection":[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]],"scale":[0.587718069553375,14.9854354858398,3.15506601333618],"viewport":{"x":0,"y":0,"width":1,"height":1},"zoom":1,"bbox":[20.9000034332275,133.099990844727,5.79998159408569,10.2000179290771,6.0499849319458,26.9500141143799],"windowRect":[0,0,256,256],"family":"sans","font":1,"cex":1,"useFreeType":false,"fontname":"NULL","maxClipPlanes":2147483647,"glVersion":"NA","activeSubscene":0},"embeddings":{"viewport":"replace","projection":"replace","model":"replace","mouse":"replace"},"objects":[12,14,13,15,16,17,11],"subscenes":[],"flags":34067}},"crosstalk":{"key":[],"group":[],"id":[],"options":[]},"width":960,"height":480,"context":{"shiny":false,"rmarkdown":null},"buffer":{"accessors":[{"bufferView":0,"componentType":5121,"count":30,"type":"VEC3"},{"bufferView":1,"componentType":5126,"count":17,"type":"VEC4"},{"bufferView":2,"componentType":5121,"count":30,"type":"VEC3"},{"bufferView":3,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":4,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":5,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":6,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":7,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":8,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":9,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":10,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":11,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":12,"componentType":5126,"count":1,"type":"VEC4"},{"bufferView":13,"componentType":5121,"count":1,"type":"VEC3"},{"bufferView":14,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":15,"componentType":5121,"count":1,"type":"VEC3"},{"bufferView":16,"componentType":5126,"count":14,"type":"VEC3"},{"bufferView":17,"componentType":5121,"count":1,"type":"VEC4"}],"bufferViews":[{"buffer":0,"byteLength":90,"byteOffset":0},{"buffer":0,"byteLength":272,"byteOffset":92},{"buffer":0,"byteLength":90,"byteOffset":364},{"buffer":0,"byteLength":12,"byteOffset":456},{"buffer":0,"byteLength":4,"byteOffset":468},{"buffer":0,"byteLength":12,"byteOffset":472},{"buffer":0,"byteLength":12,"byteOffset":484},{"buffer":0,"byteLength":4,"byteOffset":496},{"buffer":0,"byteLength":12,"byteOffset":500},{"buffer":0,"byteLength":12,"byteOffset":512},{"buffer":0,"byteLength":4,"byteOffset":524},{"buffer":0,"byteLength":12,"byteOffset":528},{"buffer":0,"byteLength":16,"byteOffset":540},{"buffer":0,"byteLength":3,"byteOffset":556},{"buffer":0,"byteLength":4,"byteOffset":559},{"buffer":0,"byteLength":3,"byteOffset":563},{"buffer":0,"byteLength":168,"byteOffset":568},{"buffer":0,"byteLength":4,"byteOffset":736}],"buffers":[{"byteLength":740,"bytes":"cgoYIwkHPAgPSgcaRAgXNwgPLQoQKAoSNgkNJwcRRwgXTgkRLwgPKQgNJgcPLAcQMgcPJAgN\nMQkSNQoRgAoPOwgSLAgOLwgPLQYWNQgPOAgTGgoKHAoNbgkSAACBgAA/AACAPwAAAAAAAIA/\nAAAAAAAAAAAAAIA/AACAPwAAAAAAAIA/gYAAPwAAgD8AAIA/AAAAAAAAgD8AAIA/gYAAPwAA\ngD8AAAAAAACAP4GAAD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/\nAACAPwAAgD8AAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AACAPwAAAACBgAA/AACAPwAA\ngD+BgAA/AAAAAAAAgD8AAAAAgYAAPwAAgD8AAIA/AACAPwAAAACBgAA/AACAPwAAgD8AAIA/\nAAAAAAAAgD+BgAA/AACAPwAAAAAAAIA/gYAAPwAAAAAAAIA/AACAP3IKGCMJBzwID0oHGkQI\nFzcIDy0KECgKEjYJDScHEUcIF04JES8IDykIDSYHDywHEDIHDyQIDTEJEjUKEYAKDzsIEiwI\nDi8IDy0GFjUIDzgIExoKChwKDW4JEgAAAADAfwAAgEAAAIA/AAAAAQAAwH8AAIBAAACAPwAA\nwH8AAIBAAACAPwAAAAEAAMB/AACAQAAAgD8AAMB/AACAQAAAgD8AAAABAADAfwAAgEAAAIA/\nmZiYPpmYmD6ZmJg+AACAPwAAAAEBAQEAAAAAAAAAIEIAAMB/AADAfwAAcEIAAMB/AADAfwAA\noEIAAMB/AADAfwAAyEIAAMB/AADAfwAA8EIAAMB/AADAfwAAwH8AAMBAAADAfwAAwH8AAOBA\nAADAfwAAwH8AAABBAADAfwAAwH8AABBBAADAfwAAwH8AACBBAADAfwAAwH8AAMB/AAAgQQAA\nwH8AAMB/AABwQQAAwH8AAMB/AACgQQAAwH8AAMB/AADIQQAAAAE="}]},"players":[],"webGLoptions":{"preserveDrawingBuffer":true}},"evals":[],"jsHooks":[]}</script>
+<div id="rgl20620" style="width:960px;height:480px;" class="rglWebGL html-widget"></div>
+<script type="application/json" data-for="rgl20620">{"x":{"material":{"color":"#000000","alpha":1,"lit":true,"ambient":"#000000","specular":"#FFFFFF","emission":"#000000","shininess":50,"smooth":true,"front":"filled","back":"filled","size":3,"lwd":1,"fog":true,"point_antialias":false,"line_antialias":false,"texture":null,"textype":"rgb","texmipmap":false,"texminfilter":"linear","texmagfilter":"linear","texenvmap":false,"depth_mask":true,"depth_test":"less","isTransparent":false,"polygon_offset":[0,0],"margin":"","floating":false,"tag":""},"rootSubscene":7,"objects":{"13":{"id":13,"type":"spheres","material":{},"vertices":"0","colors":"1","radii":[[2.99735999107361]],"centers":"2","ignoreExtent":false,"fastTransparency":true,"flags":32771},"15":{"id":15,"type":"text","material":{"lit":false,"margin":0,"floating":true,"edge":[0,1,1]},"vertices":"3","colors":"4","texts":[["Length"]],"cex":[[1]],"adj":[[0.5,0.5,0.5]],"centers":"5","family":[["sans"]],"font":[[1]],"ignoreExtent":true,"flags":33808},"16":{"id":16,"type":"text","material":{"lit":false,"margin":1,"floating":true,"edge":[1,1,1]},"vertices":"6","colors":"7","texts":[["Foot Angle"]],"cex":[[1]],"adj":[[0.5,0.5,0.5]],"centers":"8","family":[["sans"]],"font":[[1]],"ignoreExtent":true,"flags":33808},"17":{"id":17,"type":"text","material":{"lit":false,"margin":2,"floating":true,"edge":[1,1,1]},"vertices":"9","colors":"10","texts":[["Bow Height"]],"cex":[[1]],"adj":[[0.5,0.5,0.5]],"centers":"11","family":[["sans"]],"font":[[1]],"ignoreExtent":true,"flags":33808},"11":{"id":11,"type":"light","vertices":[[0,0,1]],"colors":[[1,1,1,1],[1,1,1,1],[1,1,1,1]],"viewpoint":true,"finite":false},"10":{"id":10,"type":"background","material":{},"colors":"12","centers":"13","sphere":false,"fogtype":"none","fogscale":1,"flags":32768},"12":{"id":12,"type":"background","material":{"lit":false,"back":"lines"},"colors":"14","centers":"15","sphere":false,"fogtype":"none","fogscale":1,"flags":32768},"14":{"id":14,"type":"bboxdeco","material":{"front":"lines","back":"lines"},"vertices":"16","colors":"17","axes":{"mode":["pretty","pretty","pretty"],"step":[20,1,5],"nticks":[5,5,5],"marklen":[15,15,15],"expand":[1.02999997138977,1.02999997138977,1.02999997138977]},"draw_front":true,"flags":32769},"7":{"id":7,"type":"subscene","par3d":{"antialias":8,"FOV":30,"ignoreExtent":false,"listeners":7,"mouseMode":{"none":"none","left":"trackball","right":"zoom","middle":"fov","wheel":"pull"},"observer":[0,0,279.475921630859],"modelMatrix":[[0.587718069553375,0,0,-45.2542915344238],[0,5.12532091140747,2.96479225158691,-89.9216384887695],[0,-14.0817031860352,1.07909619808197,-184.627380371094],[0,0,0,1]],"projMatrix":[[3.73205065727234,0,0,0],[0,3.73205065727234,0,0],[0,0,-3.86370348930359,-1007.47839355469],[0,0,-1,0]],"skipRedraw":false,"userMatrix":[[1,0,0,0],[0,0.342020143325668,0.939692620785909,0],[0,-0.939692620785909,0.342020143325668,0],[0,0,0,1]],"userProjection":[[1,0,0,0],[0,1,0,0],[0,0,1,0],[0,0,0,1]],"scale":[0.587718069553375,14.9854354858398,3.15506601333618],"viewport":{"x":0,"y":0,"width":1,"height":1},"zoom":1,"bbox":[20.9000034332275,133.099990844727,5.79998159408569,10.2000179290771,6.0499849319458,26.9500141143799],"windowRect":[0,0,256,256],"family":"sans","font":1,"cex":1,"useFreeType":false,"fontname":"NULL","maxClipPlanes":2147483647,"glVersion":"NA","activeSubscene":0},"embeddings":{"viewport":"replace","projection":"replace","model":"replace","mouse":"replace"},"objects":[12,14,13,15,16,17,11],"subscenes":[],"flags":34067}},"crosstalk":{"key":[],"group":[],"id":[],"options":[]},"width":960,"height":480,"context":{"shiny":false,"rmarkdown":null},"buffer":{"accessors":[{"bufferView":0,"componentType":5121,"count":30,"type":"VEC3"},{"bufferView":1,"componentType":5126,"count":17,"type":"VEC4"},{"bufferView":2,"componentType":5121,"count":30,"type":"VEC3"},{"bufferView":3,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":4,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":5,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":6,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":7,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":8,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":9,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":10,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":11,"componentType":5126,"count":1,"type":"VEC3"},{"bufferView":12,"componentType":5126,"count":1,"type":"VEC4"},{"bufferView":13,"componentType":5121,"count":1,"type":"VEC3"},{"bufferView":14,"componentType":5121,"count":1,"type":"VEC4"},{"bufferView":15,"componentType":5121,"count":1,"type":"VEC3"},{"bufferView":16,"componentType":5126,"count":14,"type":"VEC3"},{"bufferView":17,"componentType":5121,"count":1,"type":"VEC4"}],"bufferViews":[{"buffer":0,"byteLength":90,"byteOffset":0},{"buffer":0,"byteLength":272,"byteOffset":92},{"buffer":0,"byteLength":90,"byteOffset":364},{"buffer":0,"byteLength":12,"byteOffset":456},{"buffer":0,"byteLength":4,"byteOffset":468},{"buffer":0,"byteLength":12,"byteOffset":472},{"buffer":0,"byteLength":12,"byteOffset":484},{"buffer":0,"byteLength":4,"byteOffset":496},{"buffer":0,"byteLength":12,"byteOffset":500},{"buffer":0,"byteLength":12,"byteOffset":512},{"buffer":0,"byteLength":4,"byteOffset":524},{"buffer":0,"byteLength":12,"byteOffset":528},{"buffer":0,"byteLength":16,"byteOffset":540},{"buffer":0,"byteLength":3,"byteOffset":556},{"buffer":0,"byteLength":4,"byteOffset":559},{"buffer":0,"byteLength":3,"byteOffset":563},{"buffer":0,"byteLength":168,"byteOffset":568},{"buffer":0,"byteLength":4,"byteOffset":736}],"buffers":[{"byteLength":740,"bytes":"cgoYIwkHPAgPSgcaRAgXNwgPLQoQKAoSNgkNJwcRRwgXTgkRLwgPKQgNJgcPLAcQMgcPJAgN\nMQkSNQoRgAoPOwgSLAgOLwgPLQYWNQgPOAgTGgoKHAoNbgkSAACBgAA/AACAPwAAAAAAAIA/\nAAAAAAAAAAAAAIA/AACAPwAAAAAAAIA/gYAAPwAAgD8AAIA/AAAAAAAAgD8AAIA/gYAAPwAA\ngD8AAAAAAACAP4GAAD8AAIA/AAAAAAAAgD8AAIA/AAAAAAAAAAAAAIA/AAAAAAAAgD8AAIA/\nAACAPwAAgD8AAIA/AAAAAAAAgD8AAAAAAACAPwAAAAAAAIA/AACAPwAAAACBgAA/AACAPwAA\ngD+BgAA/AAAAAAAAgD8AAAAAgYAAPwAAgD8AAIA/AACAPwAAAACBgAA/AACAPwAAgD8AAIA/\nAAAAAAAAgD+BgAA/AACAPwAAAAAAAIA/gYAAPwAAAAAAAIA/AACAP3IKGCMJBzwID0oHGkQI\nFzcIDy0KECgKEjYJDScHEUcIF04JES8IDykIDSYHDywHEDIHDyQIDTEJEjUKEYAKDzsIEiwI\nDi8IDy0GFjUIDzgIExoKChwKDW4JEgAAAADAfwAAgEAAAIA/AAAAAQAAwH8AAIBAAACAPwAA\nwH8AAIBAAACAPwAAAAEAAMB/AACAQAAAgD8AAMB/AACAQAAAgD8AAAABAADAfwAAgEAAAIA/\nmZiYPpmYmD6ZmJg+AACAPwAAAAEBAQEAAAAAAAAAIEIAAMB/AADAfwAAcEIAAMB/AADAfwAA\noEIAAMB/AADAfwAAyEIAAMB/AADAfwAA8EIAAMB/AADAfwAAwH8AAMBAAADAfwAAwH8AAOBA\nAADAfwAAwH8AAABBAADAfwAAwH8AABBBAADAfwAAwH8AACBBAADAfwAAwH8AAMB/AAAgQQAA\nwH8AAMB/AABwQQAAwH8AAMB/AACgQQAAwH8AAMB/AADIQQAAAAE="}]},"players":[],"webGLoptions":{"preserveDrawingBuffer":true}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><img data-src="www/info_darkblue.png" width="20">  <a href="https://www.r-graph-gallery.com/3d_scatter_plot.html">3D scatterplots</a></p>
