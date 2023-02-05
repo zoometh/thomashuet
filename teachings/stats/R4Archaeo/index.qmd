@@ -56,6 +56,8 @@ Authoring frameworks for data science (AFDS)
 | [D3.js](https://d3js.org/)       |JavaScript   | web oriented         |
 | [Plotly](https://plotly.com/)      | JavaScript  | web oriented         |
 
+:::
+
 ## Academic writing
 
 **R Markdown** is often enough for academic writing. It uses Markdown syntax, supports HTML/CSS markup languages, \LaTeX, BibTex references, 3D plots, interactive maps. 
@@ -115,96 +117,170 @@ Run the new document with `knitr` <img src='https://raw.githubusercontent.com/zo
 
 [![](www/rmd_render.png){width=900px}](https://github.com/zoometh/oxford/blob/main/R4A/www/rmd_render.png)
 
-## Rendered PDF
+## First R Markdown document
+
+<script src="https://gist.github.com/zoometh/6a91b544989db141d5a1a4b7b72ed123.js"></script>
+
+<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+
+## RStudio tools
+
+<img align="left" src="www/rmd_nav_scriptWindowTopBar.png" alt=" ">
+
+::: {.panel-tabset}
+
+### Tools
+
+<table>
+<thead>
+<tr>
+<th>tool</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img align="left" src="www/rmd_nav_knitOnSave.png"></td>
+<td>knit automatically when save the document</td>
+</tr>
+<tr>
+<td><img align="left" src="www/rmd_nav_checkSpelling.png"></td>
+<td>check spelling</td>
+</tr>
+<tr>
+<td><img align="left" src="www/rmd_nav_knit.png"></td>
+<td>knit the document</td>
+</tr>
+<tr>
+<td><img align="left" src="www/rmd_nav_mdFormatOpt.png"></td>
+<td>run [Visual R Markdown](#vrm) + other options</td>
+</tr>
+
+<tr>
+<td><img align="left" src="www/rmd_nav_visualMdEditor_bar.png"></td>
+<td>new editing tools</td>
+</tr>
+<tr>
+<td><img align="left" src="www/rmd_nav_newCodeChunk.png"></td>
+<td>New code chunk (R, Bash, D3, Python, etc.)</td>
+</tr>
+<tr>
+<td><img align="left" src="www/rmd_nav_run.png"></td>
+<td>run a part or the whole document</td>
+</tr>
+<tr>
+<td><img align="left" src="www/rmd_nav_publish.png"></td>
+<td>publish the document</td>
+</tr>
+<tr>
+<td><img align="left" src="www/rmd_nav_visualMdEditor.png"></td>
+<td>run [Visual R Markdown](#vrm)</td>
+</tr>
+
+</tbody>
+</table>
 
 
+### Visual R Markdown {#vrm}
 
+[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax (extension of Mardown), supports [Zotero](https://www.zotero.org/), can retrieve complete bibliographical references from DOI or searches on PubMed, Crossref, and DataCite  
 
-## Navigate
-<img align="left" src="www/rmd_nav_scriptWindowTopBar.png" alt=" ">  
-  
-Use RStudio tools
-  
-<img align="left" src="www/rmd_nav_knitOnSave.png" alt=" ">&ensp; knit when save the document 
-
-<img align="left" src="www/rmd_nav_checkSpelling.png" alt=" ">&ensp; check spelling  
-
-<img align="left" src="www/rmd_nav_knit.png" alt=" ">&ensp; knit the document  
-
-<img align="left" src="www/rmd_nav_mdFormatOpt.png" alt=" ">&ensp; run [Visual R Markdown](#vrm) + other options   
-  
-&ensp;<img align="left" src="www/rmd_nav_visualMdEditor_bar.png" alt=" ">&ensp; new editing tools 
-
-<img align="left" src="www/rmd_nav_newCodeChunk.png" alt=" ">&ensp; create a new code chunk (R, Bash, D3, Python, etc.)  
-
-<img align="left" src="www/rmd_nav_run.png" alt=" ">&ensp; run a part or the whole document  
-
-<img align="left" src="www/rmd_nav_publish.png" alt=" ">&ensp; publish the document
-
-<img align="left" src="www/rmd_nav_visualMdEditor.png" alt=" ">&ensp; run [Visual R Markdown](#vrm)  
-
-## Visual R Markdown {#vrm}
-
-[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) as a Pandoc syntax (extension of Mardown), supports [Zotero](https://www.zotero.org/), can retrieve complete bibliographical references from DOI or searches on PubMed, Crossref, and DataCite  
+:::
 
 ## Document structure
 
-R Markdown combines: 
+R Markdown combines
+
+:::: {.columns}
+
+::: {.column width="60%"}
 
 * a [YAML header](#yaml) for the document metadata
 
 * different [code chunks](#chunks) (R code embedded)
 
 * many [narrative parts](#text) (Markdown syntax) with inline R code
-  
+
+:::
+
+::: {.column width="40%"}
+
   
 <center>
-<table style="align: center;border-collapse:collapse;border:none;margin-left:6.75pt;margin-right:6.75pt;">
-    <tbody>
-        <tr>
-            <td style="width: 147.15pt;border: 1pt solid windowtext;background: rgb(217, 149, 148);padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>YAML<span style="color:black;">&nbsp;header</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 147.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>narrative part</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 147.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;background: rgb(191, 191, 191);padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'><span style='font-size:15px;font-family:"Courier New";color:black;'>R code</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 147.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'>narrative part</p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 147.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;background: rgb(191, 191, 191);padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'><span style='font-size:15px;font-family:"Courier New";color:black;'>R code</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 147.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'><span style='font-size:13px;font-family:"Courier New";'>...</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style="width: 147.15pt;border-right: 1pt solid windowtext;border-bottom: 1pt solid windowtext;border-left: 1pt solid windowtext;border-image: initial;border-top: none;background: rgb(191, 191, 191);padding: 0cm 5.4pt;vertical-align: top;">
-                <p style='margin:0cm;font-size:16px;font-family:"Times New Roman",serif;text-align:center;'><span style='font-size:13px;font-family:"Courier New";color:black;'>...</span></p>
-            </td>
-        </tr>
-    </tbody>
-</table>  
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-lto5{background-color:#f8a102;border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-12h1{border-color:inherit;font-family:"Comic Sans MS", cursive, sans-serif !important;text-align:left;vertical-align:top}
+.tg .tg-a6nh{background-color:#efefef;font-family:"Courier New", Courier, monospace !important;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-abk0{font-family:"Comic Sans MS", cursive, sans-serif !important;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-lto5">YAML header</th>
+    <th class="tg-0lax"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-12h1">Lorem ipsum ...</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-a6nh">```{r}<br>code chunk<br>```</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-abk0">Lorem ipsum ...</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-a6nh">```{r}<br>code chunk<br>```</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="2">...</td>
+  </tr>
+</tbody>
+</table>
 </center>
+
+:::
+
+::::
   
   
 ## Narrative parts {#text}
 
 Narrative parts required principally the use of the Markdown syntax, but also supports HTML/CSS code, LaTeX syntax, etc. 
 
+:::: {.columns}
+
+::: {.column width="50%"}
+plain text
+
+```
+normal, *italic*, **Bolded**
+
+```
+
+:::
+
+::: {.column width="50%"}
+rendered
+
+normal, *italic*, **Bolded**
+
+
+:::
+
+::::
+  
 
 ## Markdown syntax
 
