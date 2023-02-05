@@ -39,7 +39,15 @@ library(rgl)
 
 ## Introduction
 
-**R Markdown** is an authoring framework for data science (AFDS) combining R code with narrative text. AFDS are used to create data-driven documents (reports) with a notebook interface.  
+::: {.panel-tabset}
+
+### R Markdown
+
+**R Markdown** is an authoring framework for data science (AFDS) combining R code with narrative text. AFDS are used to create data-driven documents (reports) with a notebook interface.
+
+### AFDS
+
+Authoring frameworks for data science (AFDS)
   
 | AFDS        | Language    | Description          |
 | ------------| ----------- | -------------------- |
@@ -48,12 +56,41 @@ library(rgl)
 | [D3.js](https://d3js.org/)       |JavaScript   | web oriented         |
 | [Plotly](https://plotly.com/)      | JavaScript  | web oriented         |
 
-**R Markdown** is often enough for academic writing. It uses Markdown syntax, supports HTML/CSS markup languages, BibTex references, 3D plots, interactive maps. The main R Markdown packages are:
+## Academic writing
 
-* {`knitr`} engine for dynamic report generation with R (e.g. convert to LaTeX)
-* {`rmarkdown`} convert R Markdown documents into a variety of formats, extension of {`knitr`}
-* {`tinytex`} typesetting system for LaTeX syntax (e.g. export in PDF)
-* {`bookdown`} advanced editing and publishing functions (e.g. cross reference figures)
+**R Markdown** is often enough for academic writing. It uses Markdown syntax, supports HTML/CSS markup languages, \LaTeX, BibTex references, 3D plots, interactive maps. 
+
+## Main packages
+
+R Markdown main packages are:
+
+<table>
+<thead>
+<tr>
+<th>package</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" width='150px' /></td>
+<td>[knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX) </td>
+</tr>
+<tr>
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" width='150px' /></td>
+<td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`} </td>
+</tr>
+<tr>
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" width='150px' /></td>
+<td>[tinytex](https://yihui.org/tinytex/) typesetting system for LaTeX syntax (e.g. export in PDF) </td>
+</tr>
+<tr>
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" width='150px' /></td>
+<td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross reference figures)</td>
+</tr>
+</tbody>
+</table>
+
 
 ## Create a new document
 
