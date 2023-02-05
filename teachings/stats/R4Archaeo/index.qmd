@@ -99,19 +99,23 @@ In RStudio:
 
 ![](www/rmd_create.png){width=500px}
 
-The options (`Title`, `Author`) can be changed later on the YAML header. Let HTML as the default output format.  
+The options (`Title`, `Author`, `Date`, etc.) can be changed later in the YAML header. Choose PDF as the default output format.   
 
 
 ![](www/rmd_create_rmd.png){width=500px}
+
+## New created document
 
 A new document is created:  
 
 
 ![](www/rmd_create_rmd_new.png){width=700px}
 
-Run the new document with knit, it will launch the render
+Run the new document with `knitr` <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png' style='height: 35px;vertical-align: middle;'> it will launch the render
 
 [![](www/rmd_render.png){width=900px}](https://github.com/zoometh/oxford/blob/main/R4A/www/rmd_render.png)
+
+## Rendered PDF
 
 
 
