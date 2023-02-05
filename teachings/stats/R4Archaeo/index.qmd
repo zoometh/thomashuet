@@ -1,5 +1,6 @@
 ---
-title: "<span style='font-size: 40px'><b>Report with R Markdown</b></style> <span style='font-size: 25px'> <br>Report data analysis with R Markdown authoring framework<br></style>Theory"
+title: "Report with R Markdown"
+subtitle: "Report data analysis with R Markdown authoring framework<br>Theory"
 author: "Thomas Huet, University of Oxford"
 date: "`r format(Sys.time(), '%B %Y')`"
 format:
@@ -12,15 +13,9 @@ format:
     margin: 0.01
 bibliography: references.bib
 pagetitle: Report with R Markdown - Theory
-footer: "The R package ***iconr*** - Thomas Huet, Jose Pozo, Craig Alexander - <https://github.com/zoometh/iconr>"
+footer: "Report with R Markdown <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png' style='height: 35px;vertical-align: middle;'> Thomas Huet"
 ---
 
-
-<center>
-
-![Report with R Markdown - Theory](www/logo.png){width=350px}
-
-</center>
 
 ```{r echo=FALSE, eval=FALSE, out.width="50%", fig.align="center", fig.cap="R4Archaeologists"}
 ## Not run
