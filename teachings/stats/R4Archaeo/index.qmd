@@ -42,11 +42,15 @@ library(rgl)
 
 ### R Markdown
 
-**R Markdown** is an authoring framework for data science (AFDS) combining R code with narrative text. AFDS are used to create data-driven documents (reports) with a notebook interface.
+**R Markdown** is an authoring framework for data science (AFDS). It combines R code with narrative text. AFDS are used to create data-driven documents (reports) with a notebook interface.
+
+* Code chunks are expressed with a local header, and a body part
+
+* Narrative parts required principally the use of the Markdown syntax, but also supports HTML/CSS code, LaTeX syntax, etc.
 
 ### AFDS
 
-Authoring frameworks for data science (AFDS)
+Main authoring frameworks for data science (AFDS)
 
 +------------------------------------------------------------------------------------------------------------------+------------+--------------------+
 | AFDS                                                                                                             | Language   | Description        |
@@ -61,22 +65,22 @@ Authoring frameworks for data science (AFDS)
 +------------------------------------------------------------------------------------------------------------------+------------+--------------------+
 :::
 
-## Academic writing
+## Academic reporting
 
-**R Markdown** is often enough for academic writing. It uses Markdown syntax, supports HTML/CSS markup languages, \LaTeX, BibTex references, 3D plots, interactive maps.
+**R Markdown** is often enough for academic reporting It uses Markdown syntax, supports HTML/CSS markup languages, LaTeX, BibTex references, 3D plots, interactive maps, etc.
 
 ## Main packages
 
 +------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | package                                                                                  | description                                                                                                                                                  |
 +==========================================================================================+==============================================================================================================================================================+
-| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png)     | \[knitr\](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX)                                                      |
+| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png)     | [knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX)                                                      |
 +------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png) | \[rmarkdown\](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {\`knitr\`} |
+| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png) | [rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`} |
 +------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png)   | \[tinytex\](https://yihui.org/tinytex/) typesetting system for LaTeX syntax (e.g. export in PDF)                                                             |
+| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png)   | [tinytex](https://yihui.org/tinytex/) typesetting system for LaTeX syntax (e.g. export in PDF)                                                             |
 +------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png)  | \[bookdown\](https://bookdown.org/) advanced editing and publishing functions (e.g. cross reference figures)                                                 |
+| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png)  | [bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross reference figures)                                                 |
 +------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ## Create a new document
@@ -122,7 +126,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 +-------------------------------------+-------------------------------------------------+
 | ![](www/rmd_nav_knit.png)           | knit the document                               |
 +-------------------------------------+-------------------------------------------------+
-| ![](www/rmd_nav_mdFormatOpt.png)    | run \[Visual R Markdown\](#vrm) + other options |
+| ![](www/rmd_nav_mdFormatOpt.png)    | run [Visual R Markdown](#vrm) + other options |
 +-------------------------------------+-------------------------------------------------+
 | ![](www/rmd_nav_newCodeChunk.png)   | New code chunk (R, Bash, D3, Python, etc.)      |
 +-------------------------------------+-------------------------------------------------+
@@ -130,14 +134,16 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 +-------------------------------------+-------------------------------------------------+
 | ![](www/rmd_nav_publish.png)        | publish the document                            |
 +-------------------------------------+-------------------------------------------------+
-| ![](www/rmd_nav_visualMdEditor.png) | run \[Visual R Markdown\](#vrm)                 |
+| ![](www/rmd_nav_visualMdEditor.png) | run [Visual R Markdown](#vrm)                   |
 +-------------------------------------+-------------------------------------------------+
 
 ### Visual R Markdown {#vrm}
 
 <img src="www/rmd_nav_visualMdEditor_bar.png" align="left"/>  
+  
+[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax (extension of Mardown), supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/doi-logo.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-datacite.png" style="height: 45px;vertical-align: middle;"/>
 
-[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax (extension of Mardown), supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-zotero.png" style="height: 40px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI or searches on PubMed, Crossref, and DataCite
+
 :::
 
 ## Document structure
@@ -154,9 +160,8 @@ R Markdown combines
 :::
 
 ::: {.column width="40%"}
-<center>
 
-```{=html}
+<center>
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -169,44 +174,37 @@ R Markdown combines
 .tg .tg-0lax{text-align:left;vertical-align:top}
 .tg .tg-abk0{font-family:"Comic Sans MS", cursive, sans-serif !important;text-align:left;vertical-align:top}
 </style>
-```
-+------------------+---------+
-| YAML header      |         |
-+==================+=========+
-| Lorem ipsum ...  |         |
-+------------------+---------+
-| ```{r}           |         |
-| code chunk       |         |
-| ```              |         |
-+------------------+---------+
-| Lorem ipsum ...  |         |
-+------------------+---------+
-| ```{r}           |         |
-| code chunk       |         |
-| ```              |         |
-+------------------+---------+
-| ...              |         |
-+------------------+---------+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-lto5">YAML header</th>
+    <th class="tg-0lax"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-12h1">Lorem ipsum ...</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-a6nh">```{r}<br>code chunk<br>```</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-abk0">Lorem ipsum ...</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-a6nh">```{r}<br>code chunk<br>```</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax" colspan="2">...</td>
+  </tr>
+</tbody>
+</table>
 
 </center>
-:::
-::::
-
-## Narrative parts {#text}
-
-Narrative parts required principally the use of the Markdown syntax, but also supports HTML/CSS code, LaTeX syntax, etc.
-
-:::: {.columns}
-::: {.column width="50%"}
-<center>plain text</center>
-
-    normal, *italic*, **Bolded**
-:::
-
-::: {.column width="50%"}
-<center>rendered</center>
-
-normal, *italic*, **Bolded**
 :::
 ::::
 
@@ -218,27 +216,33 @@ Easy-to-write plain text syntax
 
 ### In use
 
-Used by different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 40px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 40px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 40px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 40px;vertical-align: middle;"/>, [bookdown](https://martinhinz.github.io/smada2021/book/preface.html) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 40px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 40px;vertical-align: middle;"/>, etc.
+Used by different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 45px;vertical-align: middle;"/>, [bookdown](https://martinhinz.github.io/smada2021/book/preface.html) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, etc.
 
 ### Basic syntax
 
 ```{=html}
-<iframe width="780" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+<iframe width="900" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 ```
+
+https://rmarkdown.rstudio.com/authoring_basics.html
 
 ### Online editor
 
 ```{=html}
-<iframe width="780" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+<iframe width="900" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
 ```
+
+https://stackedit.io/app#
 
 ### Online converter
 
-Pandoc is an extension of Markdown, usefull for text conversions (Markdown <-> HTML, LaTex <-> Markdown, etc.)
+Pandoc is an extension of Markdown, usefull for text conversions (Markdown <-> HTML, LaTeX <-> Markdown, etc.)
 
 ```{=html}
-<iframe width="780" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<iframe width="900" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 ```
+
+https://pandoc.org/try/
 
 :::
 
@@ -349,7 +353,7 @@ A extended part of the text styling can also be done with HTML/CSS
 
 ### Simple table
 
-Write  
+<center> Write </center> 
 
 
 :::: {.columns}
@@ -365,7 +369,7 @@ Write
 :::
 
 ::: {.column width="20%"}
-or
+<center> or </center> 
 :::
 
 ::: {.column width="40%"}
@@ -380,7 +384,8 @@ or
 :::
 ::::
 
-produce the same result:
+<center> produce the same result: </center> 
+
 
 | Header 1    | Header 2    |
 | ----------- | ----------- |
@@ -391,12 +396,16 @@ produce the same result:
 
 Use `:----:`, `:---` or `---:` to align
 
+<center> 
+
 ```
 | Left        |    Center   |         Right |
 | :---        |    :----:   |          ---: |
 | Header      | Title       | Here's this   |
 | Paragraph   | Text        | And more      |
 ```
+
+</center>
 
 
 | Left      | Center |       Right |
@@ -441,6 +450,7 @@ or
 
 
 :::
+
 ::::
 
 ### Local images
@@ -471,6 +481,7 @@ or
 
 ::::
 
+:::
 
 ## Spaces and end of lines
 
@@ -486,9 +497,9 @@ Extra spaces (HTML only)
 
 ### End of line
 
-End of line (`<br>` in HTML) with 2 or more spaces and return, or `\` and retrun, for example:
+End of line (`<br>` in HTML) with 2 or more spaces and return -- or `\` and return -- for example:
 
-![](https://raw.githubusercontent.com/zoometh/oxford/main/R4A/www/rmd_eol.png){width="400px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_eol.png){width="400px"}
 
 :::: {.columns}
 
@@ -529,9 +540,9 @@ Ton cou Exquis'\
 ```
 # Header level 1
 
-## Heading level 2
+## Header level 2
 
-### Heading level 3
+### Header level 3
 ```
 
 etc.
@@ -546,13 +557,14 @@ An anchor:
 
 ## Numbering titles
 
-Avoid numbering:
++-------------------------------------+-------------------------------------------------+
+| Headers                                | Syntax                                       |
++=====================================+=================================================+
+| Avoid numbering                     | `## My Header level 2 {-}`                      |
++-------------------------------------+-------------------------------------------------+
+| Avoid numbering and add an anchor   | `## My Header level 3 {-#bookmarks}`            |
++-------------------------------------+-------------------------------------------------+
 
-`#### Spaces and end of lines {-}`
-
-Avoid numbering and add an anchor:
-
-`#### Bookmarks {-#bookmarks}`
 
 ## Hyperlinks {.unnumbered}
 
@@ -566,13 +578,13 @@ Add hyperlinks
 
 ::: {.column width="70%"}
 
-`Report with R Markdown, part 2: [Practice](https://zoometh.github.io/oxford/R4A/2_R Markdown_Practice)`
+`part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)`
 
 :::
 
 ::: {.column width="30%"}
 
-Report with R Markdown, part 2: [Practice](https://zoometh.github.io/oxford/R4A/2_R%20Markdown_Practice)
+Report with R Markdown, part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)
 
 :::
 
@@ -595,6 +607,27 @@ Report with R Markdown, part 2: [Practice](https://zoometh.github.io/oxford/R4A/
 :::
 
 ::::
+
+
+### XXX
+
+```{.r code-line-numbers="1|2|3|4|5|6|7|8"}
+dataDir <- system.file("extdata", package = "iconr")
+imgs <- read.table(paste0(dataDir, "/imgs.csv"), sep = ";", stringsAsFactors = FALSE)
+nodes.shp <- st_read(paste0(dataDir, "/nodes.shp"), quiet = T)
+nodes <- as.data.frame(nodes.shp)
+edges.shp <- st_read(paste0(dataDir, "/edges.shp"), quiet = T)
+edges <- as.data.frame(edges.shp)
+lgrph <- list_dec(imgs, nodes, edges)
+g <- lgrph[[1]]
+plot(g)
+```
+
+### YYY
+
+```{.md code-line-numbers="1"}
+[![](www/logo.png){width=70px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
+```
 
 :::
 
