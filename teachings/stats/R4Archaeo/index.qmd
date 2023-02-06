@@ -723,7 +723,18 @@ the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ 
 
 ::: {.panel-tabset}
 
-### BibTex format
+### BibTex
+
+BibTex, or `.bib`, is a plain text format for bibliographic references. Google Scholar is a nice tool to copy/paste BibTex references, e.g.:
+
+```{.md}
+published by Yihui Xie [-@Xie19]
+```
+
+It's easy to retrieve [this reference](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=)
+
+
+### YAML
 
 File `.bib` referenced in the YAML header
 
@@ -738,7 +749,7 @@ File `.bib` referenced in the YAML header
 ```
 
 
-### Cross citation in text
+### Cross citation
 
 +---------------------------------------------+-------------------------------------------+
 | code in R Markdown                          | Render                                    |
@@ -1287,13 +1298,30 @@ the same document is accessible by different means:
 
 ## Practice {#practice}
 
+::: {.panel-tabset}
+
+### Template
+
+Download: https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice, using this website: <https://download-directory.github.io/>
+
+```{=html}
+<iframe width="900" height="300" src="https://download-directory.github.io/"></iframe>
+```
+
+or
+
+Go there <https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice> and download, or copy/paste the `.Rmd` file
+
+### References
+
+Download: 
 
 **2)** `2_Rmarkdown_Practice.Rmd` gives an example of the desired structure for the Practice part:
 
 -   view: https://github.com/zoometh/oxford/blob/main/R4A/2_Rmarkdown_Practice.Rmd
 -   download: https://zoometh.github.io/oxford/R4A/2_Rmarkdown_Practice.Rmd
 
-**3)** `references.bib`is the document where you will add the bibliographic references of the practice part. Google Scholar is a nice tool to copy/paste BibTex references, e.g. [this reference](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=The+British+Lower+and+Middle+Paleolithic%3A+some+problems%2C+methods+of+study+and+preliminary+results&btnG=#):
+**3)** `references.bib`:
 
 -   view: https://github.com/zoometh/oxford/blob/main/R4A/references.bib
 -   download: https://zoometh.github.io/oxford/R4A/references.bib
