@@ -5,10 +5,11 @@ date: "`r format(Sys.time(), '%B %Y')`"
 bibliography: references.bib
 output:
   bookdown::pdf_document2:
+    css: styles.css
     toc: true
     toc_depth: 2
 ---
-
+<notes>
 > In this R Markdown document  
 >   - Follow the comments and delete them once completing the instructions  
 >   - For each block of instructions there is an estimation of the average duration  
@@ -16,6 +17,7 @@ output:
 >   - select a dataset from the {`archdata`} package (here: 'Fibulae') 
 >   - You will have to update the `references.bib` file with your own references  
 
+</notes>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.pos = "H")
@@ -41,7 +43,7 @@ data(Fibulae)
 Munsingen-Rain is a Late Iron Age necropolis composed of *circa* 220 graves, and 300 bronze and iron fibulae. The necropolis became the favored focus for a wide range of experimental investigations, of a typological, chronological, costume historical, art historical and sociological nature [@Muller08]. Here, we will focus on the statistical analysis of fibulae, exploring the archdata R package [@Carlson21] (...)
 
 ```{r munsingenfib, echo=FALSE, out.width = "50%", fig.align="center", fig.cap= "Fibulae measurements (Hodson, 1970)"}
-knitr::include_graphics("www/munsingen_fib_measures.png") 
+knitr::include_graphics("munsingen_fib_measures.png") 
 ```
   
 Hodson [-@Hodson70] took numerous measurements on the fibulae (Fig. \@ref(fig:munsingenfib)). This report aims to realise their statistical analysis (...)

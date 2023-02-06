@@ -47,6 +47,15 @@ library(rgl)
 
 * Narrative parts with -- mainly -- Markdown syntax
 
+### Example
+
+R Markdown extension is `.Rmd`: `R` + `md` for Markdown
+
+```{=html}
+<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+```
+
+
 ### AFDS
 
 AFDS are used to create data-driven documents (reports) with a notebook interface
@@ -1300,32 +1309,33 @@ the same document is accessible by different means:
 
 ::: {.panel-tabset}
 
-### Template
+### Objective
 
-Download: https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice, using this website: <https://download-directory.github.io/>
+Use R Markdown (code chunks and narrative text) to create a report, choose between:
 
+- [ ] improve the existing `.Rmd` template for the La Tène fibulae from the Iron Age cemetery of Münsingen near Berne, Switzerland (100 - 500 BCE)
+
+![](www/munsingen_fib_measures.png)
+
+- [ ] choose another dataset from the {`archdata`} package (e.g. 'Handaxes'), to improve the `.Rmd` template
+
+### Data
+
+Download: 
+```{.html}
+https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice
+```
+
+using this website: 
 ```{=html}
 <iframe width="900" height="300" src="https://download-directory.github.io/"></iframe>
 ```
 
+<https://download-directory.github.io/>
+
 or
 
-Go there <https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice> and download, or copy/paste the `.Rmd` file and the .`bib` file
+Go there <https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice> and download, or copy/paste the `.Rmd` file and the .`bib` file.
 
-### References
-
-Download: 
-
-**2)** `2_Rmarkdown_Practice.Rmd` gives an example of the desired structure for the Practice part:
-
--   view: https://github.com/zoometh/oxford/blob/main/R4A/2_Rmarkdown_Practice.Rmd
--   download: https://zoometh.github.io/oxford/R4A/2_Rmarkdown_Practice.Rmd
-
-**3)** `references.bib`:
-
--   view: https://github.com/zoometh/oxford/blob/main/R4A/references.bib
--   download: https://zoometh.github.io/oxford/R4A/references.bib
-
-**4)** choose a dataset of those available in the {`archdata`} package (e.g. 'Handaxes'), you will have to analyse these data/reuse the code you have already created (run `?archdata` to see the list of these dataset)
 
 ## References
