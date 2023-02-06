@@ -1310,7 +1310,7 @@ Download: https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Arch
 
 or
 
-Go there <https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice> and download, or copy/paste the `.Rmd` file
+Go there <https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice> and download, or copy/paste the `.Rmd` file and the .`bib` file
 
 ### References
 
