@@ -93,15 +93,17 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 </tbody>
 </table>
 :::
+\
 
 ## Academic reporting
 
-**R Markdown** is often enough for academic reporting. It uses Markdown syntax, it supports:
+**R Markdown** is often enough for academic reporting. It supports:
 
 * HTML/CSS markup languages  
-* LaTeX 
+* LaTeX writing
 * BibTex references
 * interactive maps
+* 3D plots
 * etc.
 
 ## Main packages
@@ -485,7 +487,7 @@ Use `:----:`, `:---`, or `---:` to align
 
 ### Complex tables
 
-Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g. kable() from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
+Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g. [kable()](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html) from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
 
 
 ```{r echo = TRUE}
@@ -689,9 +691,9 @@ part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/sta
 
 
 ```{.md }
-After this theoretical part, you will have to [practice](#practice-anchor)
+After this theoretical part, you will do a [practice](#practice-anchor)
 ```
-After this theoretical part, you will have to [practice](#practice)  
+After this theoretical part, you will do a [practice](#practice)  
 
 <center>---</center>
 
@@ -767,6 +769,12 @@ Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. T
 ```
 Furze Platt dataset counts `r number.of.axes` described by `r ncol(Handaxes)`. The maximal length (L = `r max(Handaxes$L)`)
 
+::: {.callout-warning}
+Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose
+:::
+\
+
+
 
 ### Figures
 
@@ -790,9 +798,14 @@ the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ 
 the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
 
 ::: {.callout-note}
-Here the figure callout '\@ref(fig:maxLmaxB))' is not rendered because this document is a Quarto presentation using {`revealjs`} and not {`bookdown`}
+Here the figure callout `\@ref(fig:maxLmaxB))` is not rendered because this document is a Quarto presentation using {`revealjs`} instead of {`bookdown`}
+:::
+
+::: {.callout-warning}
+Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose
 :::
 \
+
 
 
 :::
@@ -904,15 +917,15 @@ The 🔝 chunk in the document allows to set these options for all other chunks 
 </thead>
 <tbody>
   <tr>
-    <td> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_nav_mdFormatOpt.png' style='height: 60px;vertical-align: middle;'></td>
+    <td> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_nav_mdFormatOpt.png' style='height: 50px;vertical-align: middle;'></td>
     <td>graphical interface for options</td>
   </tr>
   <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runabove.png' style='height: 50px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runabove.png' style='height: 40px;vertical-align: middle;'></td>
     <td>run the previous chunks but not this one</td>
   </tr>
   <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runthis.png' style='height: 50px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runthis.png' style='height: 40px;vertical-align: middle;'></td>
     <td>run this chunk</td>
   </tr>
 </tbody>
@@ -1221,7 +1234,7 @@ This CSS file is called in the YAML header of the document:
 ### w3schools.com
 
 ```{=html}
-<iframe width="780" height="200" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
+<iframe width="900" height="300" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
 ```
 <small><https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello></small>
 \
@@ -1229,7 +1242,7 @@ This CSS file is called in the YAML header of the document:
 ### tutorialspoint.com
 
 ```{=html}
-<iframe width="780" height="200" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
+<iframe width="900" height="300" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
 ```
 <small><https://www.tutorialspoint.com/online_html_editor.php></small>
 \
@@ -1249,7 +1262,11 @@ This CSS file is called in the YAML header of the document:
 runtime: shiny
 ```
         
-Try: `File > New File > Rmarkdown > Shiny`, or in the YAML header
+        
+::: {.callout-note}
+Try: `File > New File > Rmarkdown > Shiny`, or in the YAML header. There are different ways to use Shiny in R Markdown, for example by embedding an HTML object created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.
+::: 
+\
 
 ### Leaflet
 
@@ -1376,7 +1393,7 @@ output:
 ### On Rpubs
 
 
-On [Rpubs](https://rpubs.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;"/>, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"/>
+On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;"/>, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"/>
 
 
 ```{=html}
@@ -1455,14 +1472,19 @@ or go [here](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4A
 
 ### Output
 
+Contact me here
+
+<center>or</center>
+
 Send me your updated `.Rmd`, and eventually the connected files (e.g. `references.bib`) here:
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png' style='height: 50px;vertical-align: middle;'> <thomas.huet@arch.ox.ac.uk>
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png' style='height: 50px;vertical-align: middle;'> <thomas.huet@arch.ox.ac.uk>
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/1>
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/1>
 
 
 :::
+
 
 
 ## References

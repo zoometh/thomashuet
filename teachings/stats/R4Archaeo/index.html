@@ -529,16 +529,19 @@ web oriented
 </div>
 </div>
 </div>
+<p><br>
+</p>
 </section>
 <section id="academic-reporting" class="slide level2">
 <h2>Academic reporting</h2>
-<p><strong>R Markdown</strong> is often enough for academic reporting. It uses Markdown syntax, it supports:</p>
+<p><strong>R Markdown</strong> is often enough for academic reporting. It supports:</p>
 <ul>
 <li>HTML/CSS markup languages<br>
 </li>
-<li>LaTeX</li>
+<li>LaTeX writing</li>
 <li>BibTex references</li>
 <li>interactive maps</li>
+<li>3D plots</li>
 <li>etc.</li>
 </ul>
 </section>
@@ -999,7 +1002,7 @@ gives the same result:
 </table>
 </div>
 <div id="tabset-7-3">
-<p>Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g.&nbsp;kable() from {<code>knitr</code>} with <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">kable_styling()</a> from {<code>kableExtra</code>}</p>
+<p>Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g.&nbsp;<a href="https://bookdown.org/yihui/rmarkdown-cookbook/kable.html">kable()</a> from {<code>knitr</code>} with <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">kable_styling()</a> from {<code>kableExtra</code>}</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(kableExtra)</span>
 <span id="cb9-2"><a href="#cb9-2"></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
@@ -1275,8 +1278,8 @@ Ton cou Exquis<br>
 </section>
 <section id="bookmarks" class="slide level2 unnumbered">
 <h2>Bookmarks</h2>
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a>After this theoretical part, you will have to <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice-anchor)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>After this theoretical part, you will have to <a href="#/practice">practice</a></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a>After this theoretical part, you will do a <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice-anchor)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>After this theoretical part, you will do a <a href="#/practice">practice</a></p>
 <center>
 —
 </center>
@@ -1332,6 +1335,21 @@ Ton cou Exquis<br>
 <p>Variables can be also be calculated outside code chunks (not recommended)</p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a>Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. The maximal length (L = 'r max(Handaxes$L)')</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Furze Platt dataset counts 600 described by 8. The maximal length (L = 242)</p>
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>Here the <notes>`</notes> quote has been changed to a <notes>’</notes> quote for display purpose</p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
 </div>
 <div id="tabset-12-3">
 <div class="sourceCode" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>{r maxLmaxB, echo<span class="ot">=</span><span class="cn">TRUE</span>, fig.align<span class="ot">=</span><span class="st">"center"</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1360,7 +1378,20 @@ Ton cou Exquis<br>
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>Here the figure callout ‘@ref(fig:maxLmaxB))’ is not rendered because this document is a Quarto presentation using {<code>revealjs</code>} and not {<code>bookdown</code>}</p>
+<p>Here the figure callout <code>\@ref(fig:maxLmaxB))</code> is not rendered because this document is a Quarto presentation using {<code>revealjs</code>} instead of {<code>bookdown</code>}</p>
+</div>
+</div>
+</div>
+<div class="callout callout-warning callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>Here the <notes>`</notes> quote has been changed to a <notes>’</notes> quote for display purpose</p>
 </div>
 </div>
 </div>
@@ -1474,7 +1505,7 @@ description
 <tbody>
 <tr>
 <td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_nav_mdFormatOpt.png" style="height: 60px;vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_nav_mdFormatOpt.png" style="height: 50px;vertical-align: middle;">
 </td>
 <td>
 graphical interface for options
@@ -1482,7 +1513,7 @@ graphical interface for options
 </tr>
 <tr>
 <td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runabove.png" style="height: 50px;vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runabove.png" style="height: 40px;vertical-align: middle;">
 </td>
 <td>
 run the previous chunks but not this one
@@ -1490,7 +1521,7 @@ run the previous chunks but not this one
 </tr>
 <tr>
 <td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runthis.png" style="height: 50px;vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runthis.png" style="height: 40px;vertical-align: middle;">
 </td>
 <td>
 run this chunk
@@ -1775,12 +1806,12 @@ fix the output exactly here.
 <ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">w3schools.com</a></li><li><a href="#tabset-16-2">tutorialspoint.com</a></li></ul>
 <div class="tab-content">
 <div id="tabset-16-1">
-<iframe width="780" height="200" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
+<iframe width="900" height="300" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
 <p><small><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" class="uri">https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello</a></small><br>
 </p>
 </div>
 <div id="tabset-16-2">
-<iframe width="780" height="200" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
+<iframe width="900" height="300" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
 <p><small><a href="https://www.tutorialspoint.com/online_html_editor.php" class="uri">https://www.tutorialspoint.com/online_html_editor.php</a></small><br>
 </p>
 </div>
@@ -1795,7 +1826,21 @@ fix the output exactly here.
 <div id="tabset-17-1">
 <p><a href="https://shiny.rstudio.com/">Shiny</a> offers a framework to create interactive documents</p>
 <div class="sourceCode" id="cb48"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1"></a><span class="an">runtime:</span><span class="co"> shiny</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Try: <code>File &gt; New File &gt; Rmarkdown &gt; Shiny</code>, or in the YAML header</p>
+<div class="callout callout-note callout-captioned callout-style-default">
+<div class="callout-body">
+<div class="callout-caption">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Try: <code>File &gt; New File &gt; Rmarkdown &gt; Shiny</code>, or in the YAML header. There are different ways to use Shiny in R Markdown, for example by embedding an HTML object created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.</p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
 </div>
 <div id="tabset-17-2">
 <p>Maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 45px;vertical-align: middle;"> package</p>
@@ -1815,8 +1860,8 @@ fix the output exactly here.
 <span id="cb49-13"><a href="#cb49-13"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb49-14"><a href="#cb49-14"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-e23f81723f03da0026c6" style="width:90%;height:300px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e23f81723f03da0026c6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-6ab050cf6d70f203931a" style="width:90%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6ab050cf6d70f203931a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1837,8 +1882,8 @@ fix the output exactly here.
 <span id="cb50-12"><a href="#cb50-12"></a>        <span class="at">text =</span> <span class="sc">~</span>lbl,</span>
 <span id="cb50-13"><a href="#cb50-13"></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-4794c29f77ced25e991e" style="width:960px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4794c29f77ced25e991e">{"x":{"visdat":{"1ae437c4464f":["function () ","plotlyVisDat"]},"cur_data":"1ae437c4464f","attrs":{"1ae437c4464f":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-501b16854cf1f229dead" style="width:960px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-501b16854cf1f229dead">{"x":{"visdat":{"65e87dd11d57":["function () ","plotlyVisDat"]},"cur_data":"65e87dd11d57","attrs":{"65e87dd11d57":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1903,7 +1948,7 @@ fix the output exactly here.
 <ul id="tabset-18" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-18-1">On Rpubs</a></li><li><a href="#tabset-18-2">On GitHub and GitLab</a></li></ul>
 <div class="tab-content">
 <div id="tabset-18-1">
-<p>On <a href="https://rpubs.com/">Rpubs</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;">, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"></p>
+<p>On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;">, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"></p>
 <iframe width="900" height="400" src="https://rpubs.com/"></iframe>
 <p><small><a href="https://rpubs.com/" class="uri">https://rpubs.com/</a></small></p>
 </div>
@@ -1992,6 +2037,10 @@ download
 <p>or go <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice">here</a> and download, or copy/paste the <code>.Rmd</code> file and the .<code>bib</code> file.</p>
 </div>
 <div id="tabset-19-3">
+<p>Contact me here</p>
+<center>
+or
+</center>
 <p>Send me your updated <code>.Rmd</code>, and eventually the connected files (e.g.&nbsp;<code>references.bib</code>) here:</p>
 <ul>
 <li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png" style="height: 50px;vertical-align: middle;"> <a href="mailto:thomas.huet@arch.ox.ac.uk" class="email">thomas.huet@arch.ox.ac.uk</a></p></li>
