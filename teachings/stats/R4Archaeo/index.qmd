@@ -12,7 +12,7 @@ format:
     margin: 0.01
 bibliography: references.bib
 pagetitle: Report with R Markdown - Theory
-footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png' style='height: 40px;vertical-align: middle;'> Università di Pisa, Feb 2023, <em>presented by </em> Thomas Huet"
+footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png' style='height: 40px;vertical-align: middle;'> Università di Pisa, Feb 2023 - <em>presented by </em> Thomas Huet"
 ---
 
 ## Introduction
@@ -728,7 +728,13 @@ A simple footnote[^1]
 
 ### Concept
 
-Cite and reuse variables, figures, tables, sections, etc., through your document with dynamic locators
+Locators to cite and reuse variables (figures, sections, etc.)
+
+<center>
+
+![](www/rmd-cross-ref-example.png){width="700px"}
+
+</center>
 
 ### Variables
 
