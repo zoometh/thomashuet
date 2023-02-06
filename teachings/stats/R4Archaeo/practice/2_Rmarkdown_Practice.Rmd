@@ -1,26 +1,29 @@
 ---
-title: "Münsingen-Rain necropolis (Bern, Switzerland). A quantative study of Late Iron Age fibulae"
+title: "Münsingen-Rain necropolis (Bern, Switzerland)"
+subtitle: "A quantative study of Late Iron Age fibulae"
 author: "Thomas Huet"
 date: "`r format(Sys.time(), '%B %Y')`"
 bibliography: references.bib
 output:
   bookdown::pdf_document2:
-    css: styles.css
     toc: true
     toc_depth: 2
 ---
-<notes>
+
+````{verbatim, lang = "markdown"}
 > In this R Markdown document  
 >   - Follow the comments and delete them once completing the instructions  
 >   - For each block of instructions there is an estimation of the average duration  
 >   - Do basic improvements for the layouts (colors, size, alignments, etc.), but stay focused on data  
 >   - select a dataset from the {`archdata`} package (here: 'Fibulae') 
->   - You will have to update the `references.bib` file with your own references  
+>   - You will have to update the `references.bib` file with your own references
+````
 
-</notes>
+  
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.pos = "H")
+knitr::opts_chunk$set(warning = FALSE)
 library(archdata)
 data(Fibulae)
 ```
