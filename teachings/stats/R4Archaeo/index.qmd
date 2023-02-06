@@ -275,12 +275,12 @@ Easy-to-write plain text syntax
 
 ### Used by
 
-Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 45px;vertical-align: middle;"/>, [bookdown](https://martinhinz.github.io/smada2021/book/preface.html) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, etc.
+Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 45px;vertical-align: middle;"/>, [bookdown](https://martinhinz.github.io/smada2021/book/preface.html) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, etc.
 
 ### Syntax
 
 ```{=html}
-<iframe width="900" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+<iframe width="900" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 ```
 
 <https://rmarkdown.rstudio.com/authoring_basics.html>
@@ -288,22 +288,29 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 ### Online editor
 
 ```{=html}
-<iframe width="900" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+<iframe width="900" height="300" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
 ```
 
-https://stackedit.io/app#
+<https://stackedit.io/app#>
+\
 
 ### Online converter
 
 Pandoc is an extension of Markdown, usefull for text conversions (Markdown <-> HTML, LaTeX <-> Markdown, etc.)
 
 ```{=html}
-<iframe width="900" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<iframe width="900" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 ```
 
 <https://pandoc.org/try/>
 
-With [Pandoc](https://pandoc.org/try/), exists a lot of online apps making the conversions easier (e.g. [Word to HTML](https://wordtohtml.net/))
+
+::: {.callout-tip}
+## Converters
+
+With [Pandoc](https://pandoc.org/try/), exists a lot of online apps making the conversions easier (e.g. [Word to HTML](https://wordtohtml.net/)).
+:::
+\
 
 :::
 
@@ -599,16 +606,18 @@ Ton cou Exquis
 Reconnais-toi\
 Cette adorable personne c'est toi\
 Sous le grand chapeau canotier\
-Oeil\ Nez\
+Oeil\ 
+Nez\
 Ta Bouche\
 Voici l'ovale de ta figure\
 Ton cou Exquis\
 (Apollinaire, 1913)
 ```
-Reconnais-toi\
+Reconnais-to1\
 Cette adorable personne c'est toi\
 Sous le grand chapeau canotier\
-Oeil Nez\
+Oeil\ 
+Nez\
 Ta Bouche\
 Voici l'ovale de ta figure\
 Ton cou Exquis\
@@ -679,19 +688,21 @@ part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/sta
 
 
 ```{.md }
-After this theoretical part, you will have to [practice](#practice)
+After this theoretical part, you will have to [practice](#practice-anchor)
 ```
 After this theoretical part, you will have to [practice](#practice)  
 
 <center>---</center>
 
-This referenced section has the anchor `#practice` inside curly brackets:
+This referenced section is a header level 2 (`## Practice`). It has the anchor `#practice-anchor` inside curly brackets:
 
 ```{.md}
-# Practice {#practice}
+## Practice {#practice-anchor}
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 ```
 
 
