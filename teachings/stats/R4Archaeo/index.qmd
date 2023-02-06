@@ -49,7 +49,7 @@ library(rgl)
 
 ### Example
 
-R Markdown extension is `.Rmd`: `R` + `md` for Markdown
+R Markdown extension is `.Rmd`:  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 40px;vertical-align: middle;'> + `md` for Markdown
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
@@ -1311,17 +1311,25 @@ the same document is accessible by different means:
 
 ### Objective
 
-Use R Markdown (code chunks and narrative text) to create a report, choose between:
+Use R Markdown (code chunks and narrative text) to create a report. Choice between:
 
-- [ ] improve the existing `.Rmd` template for the La Tène fibulae from the Iron Age cemetery of Münsingen near Berne, Switzerland (100 - 500 BCE)
+- [ ] improvement of the existing `.Rmd' model for the fibulae from the Münsingen cemetery
 
-![](www/munsingen_fib_measures.png)
+<center>
 
-- [ ] choose another dataset from the {`archdata`} package (e.g. 'Handaxes'), to improve the `.Rmd` template
+![](www/munsingen_fib_measures.png){width="400px"}
+
+</center>
+
+- [ ] select another dataset from the {`archdata`} package (e.g. 'Handaxes'), to improve the `.Rmd` template
+
+::: {.callout-note}
+The practical part has an estimated duration of 75 minutes
+:::
 
 ### Data
 
-Download: 
+Download the `practice/` files: 
 ```{.html}
 https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice
 ```
@@ -1333,9 +1341,17 @@ using this website:
 
 <https://download-directory.github.io/>
 
-or
+or go [here](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice) and download, or copy/paste the `.Rmd` file and the .`bib` file.
 
-Go there <https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice> and download, or copy/paste the `.Rmd` file and the .`bib` file.
+### Output
+
+Send me your updated `.Rmd`, and eventually the connected files (e.g. `references.bib`) here:
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png' style='height: 50px;vertical-align: middle;'> <thomas.huet@arch.ox.ac.uk>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/1>
+
+
+:::
 
 
 ## References
