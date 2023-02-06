@@ -15,7 +15,7 @@ output:
 In this R Markdown document  
   - Follow the comments and delete them once completing the instructions  
   - For each block of instructions there is an estimation of the average duration in minutes 
-  - Overall duration estimation: 75 min
+  - Overall duration estimation: 60 min
   - Do basic improvements for the layouts (colors, size, etc.), but stay focused on data  
   - Select a dataset from the {`archdata`} package (here: 'Fibulae') 
   - Read the documentation of the package (`?archdata`) and dataset (`?Fibulae`)
@@ -65,7 +65,7 @@ Hodson [-@Hodson70] took numerous measurements on the fibulae (Fig. \@ref(fig:mu
 
 ````md
 ```
-Mardown + Descriptive statistics ca (20 minutes)  
+Mardown + Descriptive statistics ca (10 minutes)  
   - Adapt the title  
   - Compute **descriptive statistics** (e.g. count of rows, count of columns, means)  
   - Create descriptive plots (e.g. histograms, boxplots, pie charts, scatterplots)  
@@ -107,7 +107,7 @@ The histogram of the fibulae length (Fig. \@ref(fig:histlength)) shows a 'L' sha
 
 ````md
 ```
-Mardown + Exploratory statistics ca (20 minutes)__  
+Mardown + Exploratory statistics ca (10 minutes) 
   - Adapt the title  
   - Compute exploratory analysis (e.g. factorial analysis, hierarchical clustering)  
   - Comments the results with Markdown text
@@ -132,7 +132,7 @@ The Correspondence Analysis (Fig. \@ref(fig:correspanal)) shows `r round(eig.f1 
 
 ````md
 ```
-Mardown + Confirmatory statistics ca (20 minutes)__  
+Mardown + Confirmatory statistics ca (10 minutes)  
   - Adapt the title  
   - Compute **confirmatory analysis** (i.e statistical tests)  
   - Comments the results with Markdown text  
@@ -155,7 +155,7 @@ Following the `r fib.length.normal.meth`, the distribution of the fibulae length
 
 ````md
 ```
-Mardown + Variable (15 minutes)  
+Mardown + Variable (5 minutes)  
   - Write some three lines for Conclusion  
   - In the YAML header add a new line for an **abstract** and complete it 
 ```
