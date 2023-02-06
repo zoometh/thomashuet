@@ -1,7 +1,7 @@
 ---
 title: "Report with R Markdown"
 subtitle: "Report data analysis with R Markdown authoring framework<br>Theory"
-author: "Thomas Huet, University of Oxford"
+author: "Thomas Huet, University of Oxford "
 format:
   revealjs: 
     slide-number: true
@@ -103,6 +103,10 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png){height=70px}</td>
     <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
+  </tr>
+    <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png){height=70px}</td>
+    <td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross reference figures)</td>
   </tr>
 </tbody>
 </table>
@@ -231,7 +235,7 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 <iframe width="900" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 ```
 
-https://rmarkdown.rstudio.com/authoring_basics.html
+<https://rmarkdown.rstudio.com/authoring_basics.html>
 
 ### Online editor
 
@@ -249,7 +253,7 @@ Pandoc is an extension of Markdown, usefull for text conversions (Markdown <-> H
 <iframe width="900" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 ```
 
-https://pandoc.org/try/
+<https://pandoc.org/try/>
 
 With [Pandoc](https://pandoc.org/try/), exists a lot of online apps making the conversions easier (e.g. [Word to HTML](https://wordtohtml.net/))
 
@@ -303,25 +307,18 @@ line separator
 ---
 ```
   
----  
   
 
-### with HTML/CSS
+### with HTML and CSS
 
 A extended part of the text styling can also be done with HTML/CSS
 
-```{.html, echo = TRUE}
-<html>
-<body>
-
-<h1 style="color:blue;">A Blue Heading</h1>
-
+```{.html}
+<h2 style="color:blue;">A Blue Heading</h2>
 <p style="color:red;">A red paragraph.</p>
-
-</body>
-</html>
 ```
-
+<h1 style="color:blue;">A Blue Heading</h1>
+<p style="color:red;">A red paragraph.</p>
 
 :::
 
@@ -334,14 +331,12 @@ A extended part of the text styling can also be done with HTML/CSS
 ### Numbered
 
 ```{.md}
-- numbered  
-  
+- Numbered  
   1. first element
   2. second element
   3. third element 
 ```
-- numbered  
-  
+- Numbered  
   1. first element
   2. second element
   3. third element 
@@ -349,25 +344,21 @@ A extended part of the text styling can also be done with HTML/CSS
 ### Unnumbered
 
 ```{.md}
-- bullet
-  
+- Unnumbered
   * first element
   * second element
   * third element
     - third element - sub 1
-    - third element - sub 2
-      + third element - sub 2 - subsub 1
-      + third element - sub 2 - subsub 2
+      + third element - sub 1 - subsub 1
+      + third element - sub 1 - subsub 2
 ```
-- bullet
-  
+- Unnumbered
   * first element
   * second element
   * third element
     - third element - sub 1
-    - third element - sub 2
-      + third element - sub 2 - subsub 1
-      + third element - sub 2 - subsub 2
+      + third element - sub 1 - subsub 1
+      + third element - sub 1 - subsub 2
       
 :::      
 
@@ -392,11 +383,11 @@ A extended part of the text styling can also be done with HTML/CSS
 
 :::
 
-::: {.column width="20%"}
+::: {.column width="10%"}
 <center> or </center> 
 :::
 
-::: {.column width="40%"}
+::: {.column width="50%"}
 
 ```{.md}
 | Header 1    | Header 2    |
@@ -409,7 +400,8 @@ A extended part of the text styling can also be done with HTML/CSS
 
 ::::
   
-<center> produce the same result: </center> 
+  
+<center> gives the same result: </center> 
   
   
 
@@ -598,7 +590,7 @@ Ton cou Exquis\
 ### Avoid numbering
 
 ```{.md}
-### My Header level 2 {-}
+### My Header level 3 {-}
 ```
 
 ### .. and add an anchor
@@ -643,6 +635,8 @@ After this theoretical part, you will have to [practice](#practice)
 ```
 After this theoretical part, you will have to [practice](#practice)  
 
+<center>---</center>
+
 This referenced section has the anchor `#practice` inside curly brackets:
 
 ```{.md}
@@ -671,12 +665,17 @@ A simple footnote[^1]
 
 ## Cross-referencing
 
-Cite and reuse variables, figures, tables, sections, etc., through your document
+::: {.panel-tabset}
 
+### Concept
 
-## Variables
+Cite and reuse variables, figures, tables, sections, etc., through your document with dynamic locators
+
+### Variables
 
 Variables are calculated inside the code chunks, and called outside, with an inline R code like this one: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
+
+<center>---</center>
 
 Inside the code chunk:
 ```{r echo=TRUE}
@@ -685,13 +684,15 @@ data("Handaxes")
 number.of.axes <- nrow(Handaxes)
 ```
 
+<center>---</center>
+
 Outside the code chunk:
 ```{.md}
-Furze Platt dataset counts `r number.of.axes`
+Furze Platt dataset counts 'r number.of.axes'
 ```
 Furze Platt dataset counts `r number.of.axes`
 
-## Variables
+<center>---</center>
 
 Variables can be also be calculated outside code chunks (not recommended)
 
@@ -701,7 +702,7 @@ Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. T
 Furze Platt dataset counts `r number.of.axes` described by `r ncol(Handaxes)`. The maximal length (L = `r max(Handaxes$L)`)
 
 
-## Figures {.unnumbered}
+### Figures
 
 ```{r maxLmaxB, echo=TRUE, fig.align="center", fig.cap="Maximum Length/Maximum breadth in cm"}
 
@@ -716,6 +717,7 @@ abline(lm(model))
 the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients[2], 2)',  Fig. \@ref(fig:maxLmaxB))
 ```
 
+:::
 
 ## Bibliographic references
 
@@ -725,7 +727,7 @@ the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ 
 
 File `.bib` referenced in the YAML header
 
-<img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="400"/>
+<img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="600"/>
 
 <img src="www/rmd_bib.png" alt="rmd_bib" width="600"/>
 
@@ -777,6 +779,7 @@ Options are used to show/hide the code, change the size of the output image, set
 
 The first chunk in the document allows to set these options for all other chunks unless you change these options in the following code chunks headers
 
+
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 ```
@@ -784,6 +787,8 @@ The first chunk in the document allows to set these options for all other chunks
 :::
 
 ## Tools
+
+![](www/rmd_create_rmd_new.png){width="700px"}
 
 
 <table>
@@ -831,7 +836,7 @@ The first chunk in the document allows to set these options for all other chunks
   </tr>
   <tr>
     <td>`echo = FALSE`</td>
-    <td>prevents code, but not the results from appearing in the finished file. This is a useful way to embed figures.</td>
+    <td>prevents code, but not the results from appearing in the finished file.</td>
   </tr>
   <tr>
     <td>`message = FALSE`</td>
@@ -865,15 +870,15 @@ The first chunk in the document allows to set these options for all other chunks
   </tr>
   <tr>
     <td>`fig.height = 7`</td>
-    <td>height to use in R for plots created by the chunk (in inches).</td>
+    <td>height for plots created by the chunk (in inches).</td>
   </tr>
   <tr>
     <td>`fig.width = 7`</td>
-    <td>width to use in R for plots created by the chunk (in inches).</td>
+    <td>width for plots created by the chunk (in inches).</td>
   </tr>
   <tr>
     <td>`fig.align = default`</td>
-    <td>how to align graphics in the final document. One of '`left`', '`right`', or '`center`'.</td>
+    <td>how to align graphics in the final document. One of `'left'`, `'right'`, or `'center'`.</td>
   </tr>
     <tr>
     <td>`fig.pos = 'H'`</td>
@@ -906,19 +911,24 @@ leaflet(width = "60%", height = "400px") %>%
 ```
 
 
-## Images {.unnumbered}
+## Images
 
 Images can be render inside a code chunk:
 
-```{r munsingenfib, echo=TRUE, fig.width = 7, fig.align="center", fig.cap= "Fibulae measurements (Hodson, 1970)"}
+```{.r}
 knitr::include_graphics("www/munsingen_fib_measures.png")
 ```
 
+```{r }
+#| out-width: "50%"
+
+knitr::include_graphics("www/munsingen_fib_measures.png")
+```
+
+
+
+
 ## YAML header {#yaml}
-
-<img src="www/rmd_yaml.png"/>
-
-This is the document header, it contains the metadata (e.g, Title, Authors, date) and the document configuration (e.g. HTML or PDF rendering, table of content). It is composed on key-value pairs:
 
 ```{.yml}
 ---
@@ -927,6 +937,9 @@ output: pdf_document
 date: '2023-02-05'
 ---
 ```
+
+This is the document header, it contains the metadata (e.g, Title, Authors, date) and the document configuration (e.g. HTML or PDF rendering, table of content). It is composed on key-value pairs:
+
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
@@ -948,7 +961,7 @@ date: "`r format(Sys.time(), '%D')`"
 
 Or:
 
-```{.yml}
+```{.yml code-line-numbers="4"}
 ---
 title: "temp"
 output: pdf_document
@@ -960,35 +973,44 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 
 ## YAML header, output
   
+  
+```{.yml code-line-numbers="4-5"}
+---
+title: "temp"
+date: '2023-02-05'
+output:
+  pdf_document
+---
+```
+
+Select the output format 
+
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 ```
 
 
-
-`output`:\
- `html_document`\
- `pdf_document`\
- ...\
- `pdf_document:`\
-  `toc: yes`
-  
-
 ## YAML header, TOC
 
 Table of content (TOC)  
 
-`toc`: \
- `toc: yes`\
- `toc_depth: 4`\
- `toc_float:`\
-  `collapsed: no`\
-  ...
+```{.yml code-line-numbers="4|5|6-10"}
+---
+title: "temp"
+date: '2023-02-05'
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float:
+      collapsed: false
+      smooth_scroll: false
+---
+```
+
 
 ## YAML header, references
-
-Link to the bibliographic references file (e.g.  [`references.bib`](https://github.com/zoometh/oxford/blob/main/R4A/references.bib))
 
 ```{.yml code-line-numbers="5"}
 ---
@@ -998,6 +1020,9 @@ date: "`r format(Sys.time(), '%d %B %Y')`"
 bibliography: references.bib
 ---
 ```
+
+Link to the bibliographic references file (e.g.  [`references.bib`](https://github.com/zoometh/oxford/blob/main/R4A/references.bib))
+
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
@@ -1015,7 +1040,14 @@ bibliography: references.bib
 
 ## Styling
 
+::: {.panel-tabset}
+
+### HTML/CSS
+
 HTML/CSS can be use in all parts of the document (YAML header, code chunks, narrative parts)
+
+
+### Directly in the document
 
 ```{.html}
 <span style='font-size: 60px'>Big font</span>
@@ -1032,6 +1064,8 @@ HTML/CSS can be use in all parts of the document (YAML header, code chunks, narr
 ```
 <span style="color:red">red</span>
 
+### In a CSS file
+
 ```{.md }
 Customize with a CSS layouts like <notes>this **dodgerblue** background </notes>
 ```
@@ -1041,24 +1075,33 @@ Customize with a CSS layouts like <notes>this **dodgerblue** background </notes>
 <script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
 ```
 
+This CSS file is called in the YAML header of the document:
 
+```{=html}
+<script src="https://gist.github.com/zoometh/b1a6132b445fe411ba3b9fc82961e9f4.js"></script>
+```
 
+:::
 
 ## HTML online editor
   
 ::: {.panel-tabset}
   
-### www.w3schools.com
+### w3schools.com
 
 ```{=html}
 <iframe width="780" height="200" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
 ```
+
+<https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello>
 
 ### tutorialspoint.com
 
 ```{=html}
 <iframe width="780" height="200" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
 ```
+
+<https://www.tutorialspoint.com/online_html_editor.php>
 
 :::
 
@@ -1079,14 +1122,14 @@ Try: `File > New File > Rmarkdown > Shiny`, or in the YAML header
 
 ### Leaflet
 
-Maps with {`leaflet`} package <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px;vertical-align: middle;"/>
+Maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 45px;vertical-align: middle;"/> package
 
-```{r munsingenspat, echo=TRUE, warning = FALSE, message = FALSE}
+```{r munsingenspat, echo=TRUE, warning = FALSE, message = FALSE, fig.pos='H'}
 library(dplyr)
 library(leaflet)
 munsingen.long <- 7.569587484129203
 munsingen.lat <- 46.864709895956004
-leaflet(width = "60%", height = "400px") %>%
+leaflet(width = "90%", height = "300px") %>%
   addTiles(group = 'OSM') %>%
   addControl("Munsingen necropolis", position = "bottomright") %>%
   addProviderTiles(providers$Esri.WorldImagery, group='Esri.WorldImagery') %>%
@@ -1100,9 +1143,9 @@ leaflet(width = "60%", height = "400px") %>%
 
 ### Plotly
 
-2D plots with the {`plotly`} package <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 40px;vertical-align: middle;"/>
+2D plots with the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px;vertical-align: middle;"/> package
 
-```{r munsingenplot2D, message=FALSE, echo=TRUE, warning = FALSE}
+```{r munsingenplot2D, message=FALSE, echo=TRUE, warning = FALSE, fig.pos='H'}
 library(plotly)
 library(dplyr)
 library(archdata)
@@ -1127,18 +1170,27 @@ plot_ly(data = Fibulae.ex,
 Export R Markdown in: HTML, PDF, LaTeX, Word, ODT, RTF, Markdown, etc. 
 
 ```{=html}
-<iframe width="780" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
+<iframe width="900" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
 ```
 
 
 
 ## HTML
 
-Basic. HTML export is the default option of a R Markdown document.
+HTML export is the default option of a R Markdown document.
+
+```{.md code-line-numbers="5"}
+---
+title: "temp"
+output: pdf_document
+date: '2023-02-05'
+output: html_document
+---
+```
 
 ## PDF
-
-Harder. PDF uses LaTeX syntax, if you don't have [MiKTeX](https://miktex.org/) installed, you need to install the {[tinytex](https://yihui.org/tinytex/r/)} package [Xie19].
+  
+PDF uses LaTeX syntax, if you don't have [MiKTeX](https://miktex.org/) installed, you need to install the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" style="height: 50px;vertical-align: middle;"/> package [@Xie19].
   
 
 ```{r eval=FALSE, echo=TRUE}
@@ -1147,8 +1199,27 @@ tinytex::install_tinytex()
 # .rs.restartR()
 ```
 
-To export in PDF, change the YAML key-value pair `bookdown::html_document2:` to `bookdown::pdf_document2:` and knit. These temporary files are creates:
+To export in PDF, use `bookdown::pdf_document2:` and knit. 
 
+```{.md code-line-numbers="5-6"}
+---
+title: "temp"
+output: pdf_document
+date: '2023-02-05'
+output:
+  bookdown::pdf_document2:
+    css: styles.css
+    toc: yes
+    toc_depth: 4
+    toc_float:
+      collapsed: no
+bibliography: references.bib
+---
+```
+
+  
+These temporary files are creates:
+  
 ![](www/rmd_knit_pdf.png){width="400px"}
 
 At the end of the rendering, these files are deleted.
@@ -1157,10 +1228,9 @@ At the end of the rendering, these files are deleted.
 
 LaTeX (extension of TeX) is a rich plain text syntax for academic writing. To export in TeX, select in the YAML header a PDF export + keep tex:
 
-```{.md code-line-numbers="5,6,7"}
+```{.md code-line-numbers="5-6"}
 ---
 title: "temp"
-output: pdf_document
 date: '2023-02-05'
 output:
   bookdown::pdf_document2: 
@@ -1169,22 +1239,37 @@ output:
 ```
 
 
-## Publishing on platforms
+## Publishing 
 
--   [Rpubs](https://rpubs.com/)
-    -   after Render: <img src="www/rmd_publish_Rpubs.png"/>
--   GitHub/GitLab, the same document is accessible by different means:
+::: {.panel-tabset}
+
+### On Rpubs
+
+
+On [Rpubs](https://rpubs.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 40px;vertical-align: middle;"/>, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/rmd_publish_Rpubs.png" style="height: 40px;vertical-align: middle;"/>
+
+### On GitHub and GitLab
+
+On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 40px;vertical-align: middle;"/>, or GitLab <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 40px;vertical-align: middle;"/>, 
+
+the same document is accessible by different means:
     -   formatted: https://github.com/zoometh/oxford/blob/main/R4A/helloworld.html
     -   raw: https://raw.githubusercontent.com/zoometh/oxford/main/R4A/helloworld.html
     -   HTML: https://zoometh.github.io/oxford/R4A/helloworld.html
     -   downloadable: *see below*
+    
+    
+    
+
+:::
+
 
 ## Practice {#practice}
 
 **1)** Use `1_Rmarkdown_Theory.Rmd` as a model (copy/paste code snippets, Mardown syntax, etc.):
 
--   view: https://github.com/zoometh/oxford/blob/main/R4A/1_Rmarkdown_Theory.Rmd
--   download: https://zoometh.github.io/oxford/R4A/1_Rmarkdown_Theory.Rmd
+-   view: https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd
+-   download: https://zoometh.github.io/thomashuet/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd
 
 **2)** `2_Rmarkdown_Practice.Rmd` gives an example of the desired structure for the Practice part:
 

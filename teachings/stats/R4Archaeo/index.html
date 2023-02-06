@@ -549,6 +549,14 @@ description
 <a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a> convert R Markdown documents into a variety of formats, extension of {<code>knitr</code>}
 </td>
 </tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" height="70">
+</td>
+<td>
+<a href="https://bookdown.org/">bookdown</a> advanced editing and publishing functions (e.g.&nbsp;cross reference figures)
+</td>
+</tr>
 </tbody>
 
 </table>
@@ -692,7 +700,7 @@ run <a href="#/vrm">Visual R Markdown</a>
 </div>
 <div id="tabset-3-2">
 <iframe width="900" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
-<p>https://rmarkdown.rstudio.com/authoring_basics.html</p>
+<p><a href="https://rmarkdown.rstudio.com/authoring_basics.html" class="uri">https://rmarkdown.rstudio.com/authoring_basics.html</a></p>
 </div>
 <div id="tabset-3-3">
 <iframe width="900" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
@@ -701,7 +709,7 @@ run <a href="#/vrm">Visual R Markdown</a>
 <div id="tabset-3-4">
 <p>Pandoc is an extension of Markdown, usefull for text conversions (Markdown &lt;-&gt; HTML, LaTeX &lt;-&gt; Markdown, etc.)</p>
 <iframe width="900" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
-<p>https://pandoc.org/try/</p>
+<p><a href="https://pandoc.org/try/" class="uri">https://pandoc.org/try/</a></p>
 <p>With <a href="https://pandoc.org/try/">Pandoc</a>, exists a lot of online apps making the conversions easier (e.g.&nbsp;<a href="https://wordtohtml.net/">Word to HTML</a>)</p>
 </div>
 </div>
@@ -710,7 +718,7 @@ run <a href="#/vrm">Visual R Markdown</a>
 <section id="styling" class="slide level2">
 <h2>Styling</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Text</a></li><li><a href="#tabset-4-2">Math formula</a></li><li><a href="#tabset-4-3">Others</a></li><li><a href="#tabset-4-4">with HTML/CSS</a></li><li><a href="#tabset-4-5">Unnumbered</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Text</a></li><li><a href="#tabset-4-2">Math formula</a></li><li><a href="#tabset-4-3">Others</a></li><li><a href="#tabset-4-4">with HTML and CSS</a></li></ul>
 <div class="tab-content">
 <div id="tabset-4-1">
 <table>
@@ -785,41 +793,33 @@ run <a href="#/vrm">Visual R Markdown</a>
 <hr>
 <p>line separator</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
 </div>
 <div id="tabset-4-4">
 <p>A extended part of the text styling can also be done with HTML/CSS</p>
-```{.html, echo = TRUE}
-
-
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;h2</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:blue;"</span><span class="kw">&gt;</span>A Blue Heading<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red;"</span><span class="kw">&gt;</span>A red paragraph.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h1 style="color:blue;">
 A Blue Heading
 </h1>
 <p style="color:red;">
 A red paragraph.
 </p>
-
-
-<pre><code>
-
-:::
-
-
-## List
-
-::: {.panel-tabset}
-
-
-### Numbered
-
-```{.md}
-- numbered  
-  
-  1. first element
-  2. second element
-  3. third element </code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="list" class="slide level2">
+<h2>List</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Numbered</a></li><li><a href="#tabset-5-2">Unnumbered</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="ss">- </span>Numbered  </span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="ss">  1. </span>first element</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="ss">  2. </span>second element</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="ss">  3. </span>third element </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><p>numbered</p>
+<li>Numbered
 <ol type="1">
 <li>first element</li>
 <li>second element</li>
@@ -827,28 +827,25 @@ A red paragraph.
 </ol></li>
 </ul>
 </div>
-<div id="tabset-4-5">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="ss">- </span>bullet</span>
-<span id="cb4-2"><a href="#cb4-2"></a>  </span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="ss">  * </span>first element</span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="ss">  * </span>second element</span>
-<span id="cb4-5"><a href="#cb4-5"></a><span class="ss">  * </span>third element</span>
-<span id="cb4-6"><a href="#cb4-6"></a><span class="ss">    - </span>third element - sub 1</span>
-<span id="cb4-7"><a href="#cb4-7"></a><span class="ss">    - </span>third element - sub 2</span>
-<span id="cb4-8"><a href="#cb4-8"></a><span class="ss">      + </span>third element - sub 2 - subsub 1</span>
-<span id="cb4-9"><a href="#cb4-9"></a><span class="ss">      + </span>third element - sub 2 - subsub 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-5-2">
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="ss">- </span>Unnumbered</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="ss">  * </span>first element</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="ss">  * </span>second element</span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="ss">  * </span>third element</span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="ss">    - </span>third element - sub 1</span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="ss">      + </span>third element - sub 1 - subsub 1</span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="ss">      + </span>third element - sub 1 - subsub 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><p>bullet</p>
+<li>Unnumbered
 <ul>
 <li>first element</li>
 <li>second element</li>
 <li>third element
 <ul>
-<li>third element - sub 1</li>
-<li>third element - sub 2
+<li>third element - sub 1
 <ul>
-<li>third element - sub 2 - subsub 1</li>
-<li>third element - sub 2 - subsub 2</li>
+<li>third element - sub 1 - subsub 1</li>
+<li>third element - sub 1 - subsub 2</li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -860,31 +857,31 @@ A red paragraph.
 <section id="tables" class="slide level2 unnumbered">
 <h2>Tables</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Simple table</a></li><li><a href="#tabset-5-2">Alignements</a></li><li><a href="#tabset-5-3">Complex tables</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Simple table</a></li><li><a href="#tabset-6-2">Alignements</a></li><li><a href="#tabset-6-3">Complex tables</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1">
+<div id="tabset-6-1">
 <center>
 Write
 </center>
 <div class="columns">
 <div class="column" style="width:40%;">
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a>| Header 1 | Header 2 |</span>
-<span id="cb5-2"><a href="#cb5-2"></a>| --- | ----------- |</span>
-<span id="cb5-3"><a href="#cb5-3"></a>| Row 1 | Text |</span>
-<span id="cb5-4"><a href="#cb5-4"></a>| Row 2 | Another text |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:20%;">
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a>| Header 1 | Header 2 |</span>
+<span id="cb6-2"><a href="#cb6-2"></a>| --- | ----------- |</span>
+<span id="cb6-3"><a href="#cb6-3"></a>| Row 1 | Text |</span>
+<span id="cb6-4"><a href="#cb6-4"></a>| Row 2 | Another text |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:10%;">
 <center>
 or
 </center>
-</div><div class="column" style="width:40%;">
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a>| Header 1    | Header 2    |</span>
-<span id="cb6-2"><a href="#cb6-2"></a>| ----------- | ----------- |</span>
-<span id="cb6-3"><a href="#cb6-3"></a>| Row 1       | Text        |</span>
-<span id="cb6-4"><a href="#cb6-4"></a>| Row 2       | Another text|</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a>| Header 1    | Header 2    |</span>
+<span id="cb7-2"><a href="#cb7-2"></a>| ----------- | ----------- |</span>
+<span id="cb7-3"><a href="#cb7-3"></a>| Row 1       | Text        |</span>
+<span id="cb7-4"><a href="#cb7-4"></a>| Row 2       | Another text|</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <center>
-produce the same result:
+gives the same result:
 </center>
 <table>
 <thead>
@@ -905,12 +902,12 @@ produce the same result:
 </tbody>
 </table>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-6-2">
 <p>Use <code>:----:</code>, <code>:---</code>, or <code>---:</code> to align</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a>| Left        |    Center   |         Right |</span>
-<span id="cb7-2"><a href="#cb7-2"></a>| :---        |    :----:   |          ---: |</span>
-<span id="cb7-3"><a href="#cb7-3"></a>| Header      | Title       | Here's this   |</span>
-<span id="cb7-4"><a href="#cb7-4"></a>| Paragraph   | Text        | And more      |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>| Left        |    Center   |         Right |</span>
+<span id="cb8-2"><a href="#cb8-2"></a>| :---        |    :----:   |          ---: |</span>
+<span id="cb8-3"><a href="#cb8-3"></a>| Header      | Title       | Here's this   |</span>
+<span id="cb8-4"><a href="#cb8-4"></a>| Paragraph   | Text        | And more      |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <table>
 <thead>
 <tr class="header">
@@ -933,14 +930,14 @@ produce the same result:
 </tbody>
 </table>
 </div>
-<div id="tabset-5-3">
+<div id="tabset-6-3">
 <p>Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g.&nbsp;kable() from {<code>knitr</code>} with <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">kable_styling()</a> from {<code>kableExtra</code>}</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb8-2"><a href="#cb8-2"></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
-<span id="cb8-3"><a href="#cb8-3"></a>dt <span class="sc">%&gt;%</span></span>
-<span id="cb8-4"><a href="#cb8-4"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb8-5"><a href="#cb8-5"></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb9-2"><a href="#cb9-2"></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
+<span id="cb9-3"><a href="#cb9-3"></a>dt <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <table class=" lightable-paper lightable-hover" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1008,9 +1005,9 @@ produce the same result:
 </div>
 <hr>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a>dt <span class="sc">%&gt;%</span></span>
-<span id="cb9-2"><a href="#cb9-2"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Recreating booktabs style table"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb9-3"><a href="#cb9-3"></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F, <span class="at">html_font =</span> <span class="st">"Cambria"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>dt <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Recreating booktabs style table"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F, <span class="at">html_font =</span> <span class="st">"Cambria"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 
 <table class=" lightable-classic" style="font-size: 20px; font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
@@ -1084,24 +1081,24 @@ produce the same result:
 <section id="images" class="slide level2">
 <h2>Images</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Online images</a></li><li><a href="#tabset-6-2">Local images</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Online images</a></li><li><a href="#tabset-7-2">Local images</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-7-1">
 <p>Markdown notation</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a href="#cb10-1"></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png" width="100"></p>
 <hr>
 <p>HTML notation</p>
-<div class="sourceCode" id="cb11" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png"</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png"</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png" width="100"></p>
 </div>
-<div id="tabset-6-2">
+<div id="tabset-7-2">
 <p>Markdown notation</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="al">![](www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="al">![](www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img data-src="www/logo.png" width="100"></p>
 <hr>
 <p>HTML notation</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"www/logo.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">""</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"www/logo.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">""</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img src="www/logo.png" alt="" width="100"></p>
 </div>
 </div>
@@ -1110,9 +1107,9 @@ produce the same result:
 <section id="spaces-and-end-of-lines" class="slide level2">
 <h2>Spaces and end of lines</h2>
 <div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Spaces</a></li><li><a href="#tabset-7-2">End of line</a></li></ul>
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Spaces</a></li><li><a href="#tabset-8-2">End of line</a></li></ul>
 <div class="tab-content">
-<div id="tabset-7-1">
+<div id="tabset-8-1">
 <p>Extra spaces (HTML only)</p>
 <ul>
 <li>  <code>&amp;emsp;</code> means 4 spaces (= a tabulation)</li>
@@ -1120,22 +1117,22 @@ produce the same result:
 <li>&nbsp; <code>&amp;nbsp;</code> means 1 space</li>
 </ul>
 </div>
-<div id="tabset-7-2">
+<div id="tabset-8-2">
 <p>End of line (<code>&lt;br&gt;</code> in HTML) with 2 or more spaces and return – or <code>\</code> and return – for example:</p>
 <center>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_eol.png" width="500"></p>
 </center>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1"></a>Reconnais-toi  </span>
-<span id="cb14-2"><a href="#cb14-2"></a>Cette adorable personne c'est toi  </span>
-<span id="cb14-3"><a href="#cb14-3"></a>Sous le grand chapeau canotier  </span>
-<span id="cb14-4"><a href="#cb14-4"></a>Oeil</span>
-<span id="cb14-5"><a href="#cb14-5"></a>Nez  </span>
-<span id="cb14-6"><a href="#cb14-6"></a>Ta Bouche  </span>
-<span id="cb14-7"><a href="#cb14-7"></a>Voici l’ovale de ta figure  </span>
-<span id="cb14-8"><a href="#cb14-8"></a>Ton cou Exquis  </span>
-<span id="cb14-9"><a href="#cb14-9"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a>Reconnais-toi  </span>
+<span id="cb15-2"><a href="#cb15-2"></a>Cette adorable personne c'est toi  </span>
+<span id="cb15-3"><a href="#cb15-3"></a>Sous le grand chapeau canotier  </span>
+<span id="cb15-4"><a href="#cb15-4"></a>Oeil</span>
+<span id="cb15-5"><a href="#cb15-5"></a>Nez  </span>
+<span id="cb15-6"><a href="#cb15-6"></a>Ta Bouche  </span>
+<span id="cb15-7"><a href="#cb15-7"></a>Voici l’ovale de ta figure  </span>
+<span id="cb15-8"><a href="#cb15-8"></a>Ton cou Exquis  </span>
+<span id="cb15-9"><a href="#cb15-9"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Reconnais-toi<br>
 Cette adorable personne c’est toi<br>
 Sous le grand chapeau canotier<br>
@@ -1145,14 +1142,14 @@ Voici l’ovale de ta figure<br>
 Ton cou Exquis<br>
 (Apollinaire, 1913)</p>
 </div><div class="column" style="width:50%;">
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a>Reconnais-toi\</span>
-<span id="cb15-2"><a href="#cb15-2"></a>Cette adorable personne c'est toi\</span>
-<span id="cb15-3"><a href="#cb15-3"></a>Sous le grand chapeau canotier\</span>
-<span id="cb15-4"><a href="#cb15-4"></a>Oeil\ Nez\</span>
-<span id="cb15-5"><a href="#cb15-5"></a>Ta Bouche\</span>
-<span id="cb15-6"><a href="#cb15-6"></a>Voici l'ovale de ta figure\</span>
-<span id="cb15-7"><a href="#cb15-7"></a>Ton cou Exquis\</span>
-<span id="cb15-8"><a href="#cb15-8"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1"></a>Reconnais-toi\</span>
+<span id="cb16-2"><a href="#cb16-2"></a>Cette adorable personne c'est toi\</span>
+<span id="cb16-3"><a href="#cb16-3"></a>Sous le grand chapeau canotier\</span>
+<span id="cb16-4"><a href="#cb16-4"></a>Oeil\ Nez\</span>
+<span id="cb16-5"><a href="#cb16-5"></a>Ta Bouche\</span>
+<span id="cb16-6"><a href="#cb16-6"></a>Voici l'ovale de ta figure\</span>
+<span id="cb16-7"><a href="#cb16-7"></a>Ton cou Exquis\</span>
+<span id="cb16-8"><a href="#cb16-8"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Reconnais-toi<br>
 Cette adorable personne c’est toi<br>
 Sous le grand chapeau canotier<br>
@@ -1169,19 +1166,19 @@ Ton cou Exquis<br>
 </section>
 <section id="titles" class="slide level2">
 <h2>Titles</h2>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu"># Header level 1</span></span>
-<span id="cb16-2"><a href="#cb16-2"></a></span>
-<span id="cb16-3"><a href="#cb16-3"></a><span class="fu">## Header level 2</span></span>
-<span id="cb16-4"><a href="#cb16-4"></a></span>
-<span id="cb16-5"><a href="#cb16-5"></a><span class="fu">### Header level 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu"># Header level 1</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a></span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="fu">## Header level 2</span></span>
+<span id="cb17-4"><a href="#cb17-4"></a></span>
+<span id="cb17-5"><a href="#cb17-5"></a><span class="fu">### Header level 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="panel-tabset">
-<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Avoid numbering</a></li><li><a href="#tabset-8-2">.. and add an anchor</a></li></ul>
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Avoid numbering</a></li><li><a href="#tabset-9-2">.. and add an anchor</a></li></ul>
 <div class="tab-content">
-<div id="tabset-8-1">
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">### My Header level 2 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-9-1">
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">### My Header level 3 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="tabset-8-2">
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-9-2">
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1190,14 +1187,14 @@ Ton cou Exquis<br>
 <h2>Hyperlinks</h2>
 <p>Add hyperlinks</p>
 <div class="panel-tabset">
-<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">To text</a></li><li><a href="#tabset-9-2">To images</a></li></ul>
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">To text</a></li><li><a href="#tabset-10-2">To images</a></li></ul>
 <div class="tab-content">
-<div id="tabset-9-1">
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-10-1">
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>part 2: <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R%20Markdown_Practice">Practice</a></p>
 </div>
-<div id="tabset-9-2">
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="co">[</span><span class="al">![](www/logo.png)</span><span class="ot">{width=170px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-10-2">
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">[</span><span class="al">![](www/logo.png)</span><span class="ot">{width=170px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists"><img data-src="www/logo.png" width="170"></a></p>
@@ -1209,72 +1206,93 @@ Ton cou Exquis<br>
 </section>
 <section id="bookmarks" class="slide level2 unnumbered">
 <h2>Bookmarks</h2>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a>After this theoretical part, you will have to <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a>After this theoretical part, you will have to <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>After this theoretical part, you will have to <a href="#/practice">practice</a></p>
+<center>
+—
+</center>
 <p>This referenced section has the anchor <code>#practice</code> inside curly brackets:</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a><span class="fu"># Practice {#practice}</span></span>
-<span id="cb22-2"><a href="#cb22-2"></a></span>
-<span id="cb22-3"><a href="#cb22-3"></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1"></a><span class="fu"># Practice {#practice}</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a></span>
+<span id="cb23-3"><a href="#cb23-3"></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="footnotes" class="slide level2 unnumbered">
 <h2>Footnotes</h2>
-<div class="sourceCode" id="cb23" data-code-line-numbers="1|4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a href="#cb23-1"></a>A simple footnote<span class="ot">[^1]</span></span>
-<span id="cb23-2"><a href="#cb23-2"></a>...</span>
-<span id="cb23-3"><a href="#cb23-3"></a>...</span>
-<span id="cb23-4"><a href="#cb23-4"></a><span class="ot">[^1]: </span>This is the first footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24" data-code-line-numbers="1|4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a href="#cb24-1"></a>A simple footnote<span class="ot">[^1]</span></span>
+<span id="cb24-2"><a href="#cb24-2"></a>...</span>
+<span id="cb24-3"><a href="#cb24-3"></a>...</span>
+<span id="cb24-4"><a href="#cb24-4"></a><span class="ot">[^1]: </span>This is the first footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>A simple footnote<sup>1</sup><br>
 …<br>
 …</p>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>This is the first footnote.</p></li></ol></aside></section>
 <section id="cross-referencing" class="slide level2">
 <h2>Cross-referencing</h2>
-<p>Cite and reuse variables, figures, tables, sections, etc., through your document</p>
-</section>
-<section id="variables" class="slide level2">
-<h2>Variables</h2>
+<div class="panel-tabset">
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Concept</a></li><li><a href="#tabset-11-2">Variables</a></li><li><a href="#tabset-11-3">Figures</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1">
+<p>Cite and reuse variables, figures, tables, sections, etc., through your document with dynamic locators</p>
+</div>
+<div id="tabset-11-2">
 <p>Variables are calculated inside the code chunks, and called outside, with an inline R code like this one: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_call_var.png" style="height: 45px;vertical-align: middle;"></p>
+<center>
+—
+</center>
 <p>Inside the code chunk:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="fu">library</span>(archdata)</span>
-<span id="cb24-2"><a href="#cb24-2"></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
-<span id="cb24-3"><a href="#cb24-3"></a>number.of.axes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(Handaxes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="fu">library</span>(archdata)</span>
+<span id="cb25-2"><a href="#cb25-2"></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
+<span id="cb25-3"><a href="#cb25-3"></a>number.of.axes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(Handaxes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<center>
+—
+</center>
 <p>Outside the code chunk:</p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a href="#cb25-1"></a>Furze Platt dataset counts 600</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1"></a>Furze Platt dataset counts 'r number.of.axes'</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Furze Platt dataset counts 600</p>
-</section>
-<section id="variables-1" class="slide level2">
-<h2>Variables</h2>
+<center>
+—
+</center>
 <p>Variables can be also be calculated outside code chunks (not recommended)</p>
-<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a href="#cb26-1"></a>Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. The maximal length (L = 'r max(Handaxes$L)')</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a>Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. The maximal length (L = 'r max(Handaxes$L)')</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Furze Platt dataset counts 600 described by 8. The maximal length (L = 242)</p>
-</section>
-<section id="figures" class="slide level2 unnumbered">
-<h2>Figures</h2>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="fu">library</span>(archdata)</span>
-<span id="cb27-2"><a href="#cb27-2"></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
-<span id="cb27-3"><a href="#cb27-3"></a><span class="fu">plot</span>(Handaxes<span class="sc">$</span>L, Handaxes<span class="sc">$</span>B)</span>
-<span id="cb27-4"><a href="#cb27-4"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(B <span class="sc">~</span> L, <span class="at">data =</span> Handaxes)</span>
-<span id="cb27-5"><a href="#cb27-5"></a><span class="fu">abline</span>(<span class="fu">lm</span>(model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-
 </div>
-<img data-src="index_files/figure-revealjs/maxLmaxB-1.png" width="960" class="r-stretch quarto-figure-center"><p class="caption">Maximum Length/Maximum breadth in cm</p><div class="sourceCode" id="cb28"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1"></a>the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients<span class="co">[</span><span class="ot">2</span><span class="co">]</span>, 2)',  Fig. \@ref(fig:maxLmaxB))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-11-3">
+<div class="cell" data-layout-align="center">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">library</span>(archdata)</span>
+<span id="cb28-2"><a href="#cb28-2"></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
+<span id="cb28-3"><a href="#cb28-3"></a><span class="fu">plot</span>(Handaxes<span class="sc">$</span>L, Handaxes<span class="sc">$</span>B)</span>
+<span id="cb28-4"><a href="#cb28-4"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(B <span class="sc">~</span> L, <span class="at">data =</span> Handaxes)</span>
+<span id="cb28-5"><a href="#cb28-5"></a><span class="fu">abline</span>(<span class="fu">lm</span>(model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index_files/figure-revealjs/maxLmaxB-1.png" width="960"></p>
+<p></p><figcaption>Maximum Length/Maximum breadth in cm</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1"></a>the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients<span class="co">[</span><span class="ot">2</span><span class="co">]</span>, 2)',  Fig. \@ref(fig:maxLmaxB))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
 </section>
 <section id="bibliographic-references" class="slide level2">
 <h2>Bibliographic references</h2>
 <div class="panel-tabset">
-<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">BibTex format</a></li><li><a href="#tabset-10-2">references.bib</a></li><li><a href="#tabset-10-3">Cross citation in text</a></li></ul>
+<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">BibTex format</a></li><li><a href="#tabset-12-2">references.bib</a></li><li><a href="#tabset-12-3">Cross citation in text</a></li></ul>
 <div class="tab-content">
-<div id="tabset-10-1">
+<div id="tabset-12-1">
 <p>File <code>.bib</code> referenced in the YAML header</p>
-<p><img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="400"></p>
+<p><img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="600"></p>
 <p><img src="www/rmd_bib.png" alt="rmd_bib" width="600"></p>
 </div>
-<div id="tabset-10-2">
+<div id="tabset-12-2">
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
 </div>
-<div id="tabset-10-3">
+<div id="tabset-12-3">
 <table>
 <colgroup>
 <col style="width: 51%">
@@ -1321,13 +1339,13 @@ Ton cou Exquis<br>
 <section id="headers" class="slide level2">
 <h2>Headers</h2>
 <div class="panel-tabset">
-<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Headers options</a></li><li><a href="#tabset-11-2">Options hierarchy</a></li></ul>
+<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">Headers options</a></li><li><a href="#tabset-13-2">Options hierarchy</a></li></ul>
 <div class="tab-content">
-<div id="tabset-11-1">
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="tabset-13-1">
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Options are used to show/hide the code, change the size of the output image, set the alignment of the ouptut, etc.</p>
 </div>
-<div id="tabset-11-2">
+<div id="tabset-13-2">
 <p>The first chunk in the document allows to set these options for all other chunks unless you change these options in the following code chunks headers</p>
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 </div>
@@ -1336,6 +1354,7 @@ Ton cou Exquis<br>
 </section>
 <section id="tools-1" class="slide level2">
 <h2>Tools</h2>
+<p><img data-src="www/rmd_create_rmd_new.png" width="700"></p>
 
 <table>
 <thead>
@@ -1379,7 +1398,7 @@ run this chunk
 </section>
 <section id="code-evaluation" class="slide level2 unnumbered">
 <h2>Code evaluation</h2>
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table>
 <thead>
@@ -1406,7 +1425,7 @@ prevents code and results from appearing in the finished file. R Markdown still 
 <code>echo = FALSE</code>
 </td>
 <td>
-prevents code, but not the results from appearing in the finished file. This is a useful way to embed figures.
+prevents code, but not the results from appearing in the finished file.
 </td>
 </tr>
 <tr>
@@ -1431,7 +1450,7 @@ prevents warnings that are generated by code from appearing in the finished.
 </section>
 <section id="graphics-options" class="slide level2 unnumbered">
 <h2>Graphics options</h2>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>{r munsingenspat, fig.height <span class="ot">=</span> <span class="dv">10</span>, fig.with <span class="ot">=</span> <span class="dv">10</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a>{r munsingenspat, fig.height <span class="ot">=</span> <span class="dv">10</span>, fig.with <span class="ot">=</span> <span class="dv">10</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table>
 <thead>
@@ -1458,7 +1477,7 @@ adds a caption to graphical results.
 <code>fig.height = 7</code>
 </td>
 <td>
-height to use in R for plots created by the chunk (in inches).
+height for plots created by the chunk (in inches).
 </td>
 </tr>
 <tr>
@@ -1466,7 +1485,7 @@ height to use in R for plots created by the chunk (in inches).
 <code>fig.width = 7</code>
 </td>
 <td>
-width to use in R for plots created by the chunk (in inches).
+width for plots created by the chunk (in inches).
 </td>
 </tr>
 <tr>
@@ -1474,7 +1493,7 @@ width to use in R for plots created by the chunk (in inches).
 <code>fig.align = default</code>
 </td>
 <td>
-how to align graphics in the final document. One of ‘<code>left</code>’, ‘<code>right</code>’, or ‘<code>center</code>’.
+how to align graphics in the final document. One of <code>'left'</code>, <code>'right'</code>, or <code>'center'</code>.
 </td>
 </tr>
 <tr>
@@ -1492,87 +1511,89 @@ fix the output exactly here.
 <section id="body" class="slide level2">
 <h2>Body</h2>
 <p>The body of a code chunk is where you place the R code</p>
-<div class="sourceCode" id="cb32" data-code-line-numbers="2-15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1"></a>{r munsingenspat, echo<span class="ot">=</span><span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span>
-<span id="cb32-2"><a href="#cb32-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb32-3"><a href="#cb32-3"></a><span class="fu">library</span>(leaflet)</span>
-<span id="cb32-4"><a href="#cb32-4"></a>munsingen.long <span class="ot">&lt;-</span> <span class="fl">7.569587484129203</span></span>
-<span id="cb32-5"><a href="#cb32-5"></a>munsingen.lat <span class="ot">&lt;-</span> <span class="fl">46.864709895956004</span></span>
-<span id="cb32-6"><a href="#cb32-6"></a><span class="fu">leaflet</span>(<span class="at">width =</span> <span class="st">"60%"</span>, <span class="at">height =</span> <span class="st">"400px"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb32-7"><a href="#cb32-7"></a>  <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">'OSM'</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb32-8"><a href="#cb32-8"></a>  <span class="fu">addControl</span>(<span class="st">"Munsingen necropolis"</span>, <span class="at">position =</span> <span class="st">"bottomright"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb32-9"><a href="#cb32-9"></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group=</span><span class="st">'Esri.WorldImagery'</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb32-10"><a href="#cb32-10"></a>  <span class="fu">addMarkers</span>(munsingen.long,</span>
-<span id="cb32-11"><a href="#cb32-11"></a>             munsingen.lat,</span>
-<span id="cb32-12"><a href="#cb32-12"></a>             <span class="at">label =</span> <span class="st">"Munsingen necropolis"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb32-13"><a href="#cb32-13"></a>  <span class="fu">addLayersControl</span>(</span>
-<span id="cb32-14"><a href="#cb32-14"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb32-15"><a href="#cb32-15"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33" data-code-line-numbers="2-15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>{r munsingenspat, echo<span class="ot">=</span><span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span>
+<span id="cb33-2"><a href="#cb33-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb33-3"><a href="#cb33-3"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb33-4"><a href="#cb33-4"></a>munsingen.long <span class="ot">&lt;-</span> <span class="fl">7.569587484129203</span></span>
+<span id="cb33-5"><a href="#cb33-5"></a>munsingen.lat <span class="ot">&lt;-</span> <span class="fl">46.864709895956004</span></span>
+<span id="cb33-6"><a href="#cb33-6"></a><span class="fu">leaflet</span>(<span class="at">width =</span> <span class="st">"60%"</span>, <span class="at">height =</span> <span class="st">"400px"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-7"><a href="#cb33-7"></a>  <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">'OSM'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-8"><a href="#cb33-8"></a>  <span class="fu">addControl</span>(<span class="st">"Munsingen necropolis"</span>, <span class="at">position =</span> <span class="st">"bottomright"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-9"><a href="#cb33-9"></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group=</span><span class="st">'Esri.WorldImagery'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-10"><a href="#cb33-10"></a>  <span class="fu">addMarkers</span>(munsingen.long,</span>
+<span id="cb33-11"><a href="#cb33-11"></a>             munsingen.lat,</span>
+<span id="cb33-12"><a href="#cb33-12"></a>             <span class="at">label =</span> <span class="st">"Munsingen necropolis"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb33-13"><a href="#cb33-13"></a>  <span class="fu">addLayersControl</span>(</span>
+<span id="cb33-14"><a href="#cb33-14"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb33-15"><a href="#cb33-15"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="images-1" class="slide level2 unnumbered">
+<section id="images-1" class="slide level2">
 <h2>Images</h2>
 <p>Images can be render inside a code chunk:</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"www/munsingen_fib_measures.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"www/munsingen_fib_measures.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-</div>
-<img data-src="www/munsingen_fib_measures.png" width="452" class="r-stretch quarto-figure-center"><p class="caption">Fibulae measurements (Hodson, 1970)</p></section>
+<img data-src="www/munsingen_fib_measures.png" style="width:50.0%" class="r-stretch"></section>
 <section id="yaml" class="slide level2">
 <h2>YAML header</h2>
-
-<img src="www/rmd_yaml.png" class="r-stretch"><p>This is the document header, it contains the metadata (e.g, Title, Authors, date) and the document configuration (e.g.&nbsp;HTML or PDF rendering, table of content). It is composed on key-value pairs:</p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb34-1"><a href="#cb34-1"></a><span class="pp">---</span></span>
-<span id="cb34-2"><a href="#cb34-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
-<span id="cb34-3"><a href="#cb34-3"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
-<span id="cb34-4"><a href="#cb34-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
-<span id="cb34-5"><a href="#cb34-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb35-1"><a href="#cb35-1"></a><span class="pp">---</span></span>
+<span id="cb35-2"><a href="#cb35-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb35-3"><a href="#cb35-3"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb35-4"><a href="#cb35-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb35-5"><a href="#cb35-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This is the document header, it contains the metadata (e.g, Title, Authors, date) and the document configuration (e.g.&nbsp;HTML or PDF rendering, table of content). It is composed on key-value pairs:</p>
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 </section>
 <section id="yaml-header-dates" class="slide level2">
 <h2>YAML header, dates</h2>
-<div class="sourceCode" id="cb35" data-code-line-numbers="4"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb35-1"><a href="#cb35-1"></a><span class="pp">---</span></span>
-<span id="cb35-2"><a href="#cb35-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
-<span id="cb35-3"><a href="#cb35-3"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
-<span id="cb35-4"><a href="#cb35-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"02/05/23"</span></span>
-<span id="cb35-5"><a href="#cb35-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>02/05/23</p>
-<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
-<p>Or:</p>
-<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb36-1"><a href="#cb36-1"></a><span class="pp">---</span></span>
+<div class="sourceCode" id="cb36" data-code-line-numbers="4"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb36-1"><a href="#cb36-1"></a><span class="pp">---</span></span>
 <span id="cb36-2"><a href="#cb36-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
 <span id="cb36-3"><a href="#cb36-3"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
-<span id="cb36-4"><a href="#cb36-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"05 February 2023"</span></span>
+<span id="cb36-4"><a href="#cb36-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"02/06/23"</span></span>
 <span id="cb36-5"><a href="#cb36-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>05 February 2023</p>
+<p>02/06/23</p>
+<p>Or:</p>
+<div class="sourceCode" id="cb37" data-code-line-numbers="4"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb37-1"><a href="#cb37-1"></a><span class="pp">---</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb37-3"><a href="#cb37-3"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb37-4"><a href="#cb37-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"06 February 2023"</span></span>
+<span id="cb37-5"><a href="#cb37-5"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>06 February 2023</p>
 </section>
 <section id="yaml-header-output" class="slide level2">
 <h2>YAML header, output</h2>
+<div class="sourceCode" id="cb38" data-code-line-numbers="4-5"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb38-1"><a href="#cb38-1"></a><span class="pp">---</span></span>
+<span id="cb38-2"><a href="#cb38-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb38-3"><a href="#cb38-3"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb38-4"><a href="#cb38-4"></a><span class="fu">output</span><span class="kw">:</span></span>
+<span id="cb38-5"><a href="#cb38-5"></a><span class="at">  pdf_document</span></span>
+<span id="cb38-6"><a href="#cb38-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Select the output format</p>
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
-<p><code>output</code>:<br>
- <code>html_document</code><br>
- <code>pdf_document</code><br>
- …<br>
- <code>pdf_document:</code><br>
-  <code>toc: yes</code>   </p>
 </section>
 <section id="yaml-header-toc" class="slide level2">
 <h2>YAML header, TOC</h2>
 <p>Table of content (TOC)</p>
-<p><code>toc</code>:<br>
- <code>toc: yes</code><br>
- <code>toc_depth: 4</code><br>
- <code>toc_float:</code><br>
-  <code>collapsed: no</code><br>
-  …</p>
+<div class="sourceCode" id="cb39" data-code-line-numbers="4|5|6-10"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb39-1"><a href="#cb39-1"></a><span class="pp">---</span></span>
+<span id="cb39-2"><a href="#cb39-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb39-3"><a href="#cb39-3"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb39-4"><a href="#cb39-4"></a><span class="fu">output</span><span class="kw">:</span></span>
+<span id="cb39-5"><a href="#cb39-5"></a><span class="at">  </span><span class="fu">html_document</span><span class="kw">:</span></span>
+<span id="cb39-6"><a href="#cb39-6"></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb39-7"><a href="#cb39-7"></a><span class="at">    </span><span class="fu">toc_depth</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb39-8"><a href="#cb39-8"></a><span class="at">    </span><span class="fu">toc_float</span><span class="kw">:</span></span>
+<span id="cb39-9"><a href="#cb39-9"></a><span class="at">      </span><span class="fu">collapsed</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb39-10"><a href="#cb39-10"></a><span class="at">      </span><span class="fu">smooth_scroll</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb39-11"><a href="#cb39-11"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="yaml-header-references" class="slide level2">
 <h2>YAML header, references</h2>
+<div class="sourceCode" id="cb40" data-code-line-numbers="5"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb40-1"><a href="#cb40-1"></a><span class="pp">---</span></span>
+<span id="cb40-2"><a href="#cb40-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb40-3"><a href="#cb40-3"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb40-4"><a href="#cb40-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"06 February 2023"</span></span>
+<span id="cb40-5"><a href="#cb40-5"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb40-6"><a href="#cb40-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Link to the bibliographic references file (e.g.&nbsp;<a href="https://github.com/zoometh/oxford/blob/main/R4A/references.bib"><code>references.bib</code></a>)</p>
-<div class="sourceCode" id="cb37" data-code-line-numbers="5"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb37-1"><a href="#cb37-1"></a><span class="pp">---</span></span>
-<span id="cb37-2"><a href="#cb37-2"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
-<span id="cb37-3"><a href="#cb37-3"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
-<span id="cb37-4"><a href="#cb37-4"></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"05 February 2023"</span></span>
-<span id="cb37-5"><a href="#cb37-5"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
-<span id="cb37-6"><a href="#cb37-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
 </section>
 <section id="yaml-header-references-1" class="slide level2">
@@ -1582,27 +1603,42 @@ fix the output exactly here.
 </section>
 <section id="styling-1" class="slide level2">
 <h2>Styling</h2>
+<div class="panel-tabset">
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">HTML/CSS</a></li><li><a href="#tabset-14-2">Directly in the document</a></li><li><a href="#tabset-14-3">In a CSS file</a></li></ul>
+<div class="tab-content">
+<div id="tabset-14-1">
 <p>HTML/CSS can be use in all parts of the document (YAML header, code chunks, narrative parts)</p>
-<div class="sourceCode" id="cb38"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb38-1"><a href="#cb38-1"></a><span class="kw">&lt;span</span> <span class="er">style</span><span class="ot">=</span><span class="st">'font-size: 60px'</span><span class="kw">&gt;</span>Big font<span class="kw">&lt;/span&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-14-2">
+<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb41-1"><a href="#cb41-1"></a><span class="kw">&lt;span</span> <span class="er">style</span><span class="ot">=</span><span class="st">'font-size: 60px'</span><span class="kw">&gt;</span>Big font<span class="kw">&lt;/span&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="font-size: 60px">Big font</span></p>
-<div class="sourceCode" id="cb39"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb39-1"><a href="#cb39-1"></a><span class="kw">&lt;b&gt;</span>bolded<span class="kw">&lt;/b&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb42-1"><a href="#cb42-1"></a><span class="kw">&lt;b&gt;</span>bolded<span class="kw">&lt;/b&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><b>bolded</b></p>
-<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb40-1"><a href="#cb40-1"></a><span class="kw">&lt;span</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red"</span><span class="kw">&gt;</span>red<span class="kw">&lt;/span&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb43"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb43-1"><a href="#cb43-1"></a><span class="kw">&lt;span</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red"</span><span class="kw">&gt;</span>red<span class="kw">&lt;/span&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="color:red">red</span></p>
-<div class="sourceCode" id="cb41"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a href="#cb41-1"></a>Customize with a CSS layouts like <span class="kw">&lt;notes&gt;</span>this **dodgerblue** background <span class="kw">&lt;/notes&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-14-3">
+<div class="sourceCode" id="cb44"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb44-1"><a href="#cb44-1"></a>Customize with a CSS layouts like <span class="kw">&lt;notes&gt;</span>this **dodgerblue** background <span class="kw">&lt;/notes&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Customize with a CSS layouts like <notes>this <strong>dodgerblue</strong> background </notes></p>
 <script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
+<p>This CSS file is called in the YAML header of the document:</p>
+<script src="https://gist.github.com/zoometh/b1a6132b445fe411ba3b9fc82961e9f4.js"></script>
+</div>
+</div>
+</div>
 </section>
 <section id="html-online-editor" class="slide level2">
 <h2>HTML online editor</h2>
 <div class="panel-tabset">
-<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">www.w3schools.com</a></li><li><a href="#tabset-12-2">tutorialspoint.com</a></li></ul>
+<ul id="tabset-15" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-15-1">w3schools.com</a></li><li><a href="#tabset-15-2">tutorialspoint.com</a></li></ul>
 <div class="tab-content">
-<div id="tabset-12-1">
+<div id="tabset-15-1">
 <iframe width="780" height="200" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
+<p><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" class="uri">https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello</a></p>
 </div>
-<div id="tabset-12-2">
+<div id="tabset-15-2">
 <iframe width="780" height="200" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
+<p><a href="https://www.tutorialspoint.com/online_html_editor.php" class="uri">https://www.tutorialspoint.com/online_html_editor.php</a></p>
 </div>
 </div>
 </div>
@@ -1610,56 +1646,56 @@ fix the output exactly here.
 <section id="interactivity" class="slide level2">
 <h2>Interactivity</h2>
 <div class="panel-tabset">
-<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">Shiny</a></li><li><a href="#tabset-13-2">Leaflet</a></li><li><a href="#tabset-13-3">Plotly</a></li></ul>
+<ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">Shiny</a></li><li><a href="#tabset-16-2">Leaflet</a></li><li><a href="#tabset-16-3">Plotly</a></li></ul>
 <div class="tab-content">
-<div id="tabset-13-1">
+<div id="tabset-16-1">
 <p><a href="https://shiny.rstudio.com/">Shiny</a> offers a framework to create interactive documents</p>
-<div class="sourceCode" id="cb42"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb42-1"><a href="#cb42-1"></a><span class="an">runtime:</span><span class="co"> shiny</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb45-1"><a href="#cb45-1"></a><span class="an">runtime:</span><span class="co"> shiny</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Try: <code>File &gt; New File &gt; Rmarkdown &gt; Shiny</code>, or in the YAML header</p>
 </div>
-<div id="tabset-13-2">
-<p>Maps with {<code>leaflet</code>} package <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 40px;vertical-align: middle;"></p>
+<div id="tabset-16-2">
+<p>Maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 45px;vertical-align: middle;"> package</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb43-2"><a href="#cb43-2"></a><span class="fu">library</span>(leaflet)</span>
-<span id="cb43-3"><a href="#cb43-3"></a>munsingen.long <span class="ot">&lt;-</span> <span class="fl">7.569587484129203</span></span>
-<span id="cb43-4"><a href="#cb43-4"></a>munsingen.lat <span class="ot">&lt;-</span> <span class="fl">46.864709895956004</span></span>
-<span id="cb43-5"><a href="#cb43-5"></a><span class="fu">leaflet</span>(<span class="at">width =</span> <span class="st">"60%"</span>, <span class="at">height =</span> <span class="st">"400px"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb43-6"><a href="#cb43-6"></a>  <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">'OSM'</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb43-7"><a href="#cb43-7"></a>  <span class="fu">addControl</span>(<span class="st">"Munsingen necropolis"</span>, <span class="at">position =</span> <span class="st">"bottomright"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb43-8"><a href="#cb43-8"></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group=</span><span class="st">'Esri.WorldImagery'</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb43-9"><a href="#cb43-9"></a>  <span class="fu">addMarkers</span>(munsingen.long,</span>
-<span id="cb43-10"><a href="#cb43-10"></a>             munsingen.lat,</span>
-<span id="cb43-11"><a href="#cb43-11"></a>             <span class="at">label =</span> <span class="st">"Munsingen necropolis"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb43-12"><a href="#cb43-12"></a>  <span class="fu">addLayersControl</span>(</span>
-<span id="cb43-13"><a href="#cb43-13"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb43-14"><a href="#cb43-14"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb46-2"><a href="#cb46-2"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb46-3"><a href="#cb46-3"></a>munsingen.long <span class="ot">&lt;-</span> <span class="fl">7.569587484129203</span></span>
+<span id="cb46-4"><a href="#cb46-4"></a>munsingen.lat <span class="ot">&lt;-</span> <span class="fl">46.864709895956004</span></span>
+<span id="cb46-5"><a href="#cb46-5"></a><span class="fu">leaflet</span>(<span class="at">width =</span> <span class="st">"90%"</span>, <span class="at">height =</span> <span class="st">"300px"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb46-6"><a href="#cb46-6"></a>  <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">'OSM'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb46-7"><a href="#cb46-7"></a>  <span class="fu">addControl</span>(<span class="st">"Munsingen necropolis"</span>, <span class="at">position =</span> <span class="st">"bottomright"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb46-8"><a href="#cb46-8"></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group=</span><span class="st">'Esri.WorldImagery'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb46-9"><a href="#cb46-9"></a>  <span class="fu">addMarkers</span>(munsingen.long,</span>
+<span id="cb46-10"><a href="#cb46-10"></a>             munsingen.lat,</span>
+<span id="cb46-11"><a href="#cb46-11"></a>             <span class="at">label =</span> <span class="st">"Munsingen necropolis"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb46-12"><a href="#cb46-12"></a>  <span class="fu">addLayersControl</span>(</span>
+<span id="cb46-13"><a href="#cb46-13"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb46-14"><a href="#cb46-14"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-4539e8216663582ffd3d" style="width:60%;height:400px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4539e8216663582ffd3d">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cd6e92c82dea4c9880c3" style="width:90%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-cd6e92c82dea4c9880c3">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
-<div id="tabset-13-3">
-<p>2D plots with the {<code>plotly</code>} package <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 40px;vertical-align: middle;"></p>
+<div id="tabset-16-3">
+<p>2D plots with the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px;vertical-align: middle;"> package</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a><span class="fu">library</span>(plotly)</span>
-<span id="cb44-2"><a href="#cb44-2"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb44-3"><a href="#cb44-3"></a><span class="fu">library</span>(archdata)</span>
-<span id="cb44-4"><a href="#cb44-4"></a><span class="fu">data</span>(<span class="st">"Fibulae"</span>)</span>
-<span id="cb44-5"><a href="#cb44-5"></a>Fibulae.ex <span class="ot">&lt;-</span> Fibulae</span>
-<span id="cb44-6"><a href="#cb44-6"></a>Fibulae.ex<span class="sc">$</span>lbl <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;b&gt;Museum num.: "</span>, Fibulae.ex<span class="sc">$</span>Mno, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>,</span>
-<span id="cb44-7"><a href="#cb44-7"></a>                          <span class="st">"Length: "</span>, Fibulae.ex<span class="sc">$</span>Length, <span class="st">"&lt;br&gt;"</span>,</span>
-<span id="cb44-8"><a href="#cb44-8"></a>                          <span class="st">"Foot Angle: "</span>, Fibulae.ex<span class="sc">$</span>FA, <span class="st">"&lt;br&gt;"</span>)</span>
-<span id="cb44-9"><a href="#cb44-9"></a><span class="fu">plot_ly</span>(<span class="at">data =</span> Fibulae.ex, </span>
-<span id="cb44-10"><a href="#cb44-10"></a>        <span class="at">x =</span> <span class="sc">~</span>Length,</span>
-<span id="cb44-11"><a href="#cb44-11"></a>        <span class="at">y =</span> <span class="sc">~</span>FA,</span>
-<span id="cb44-12"><a href="#cb44-12"></a>        <span class="at">text =</span> <span class="sc">~</span>lbl,</span>
-<span id="cb44-13"><a href="#cb44-13"></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb44-14"><a href="#cb44-14"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Munsingen fibulae"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb47-2"><a href="#cb47-2"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb47-3"><a href="#cb47-3"></a><span class="fu">library</span>(archdata)</span>
+<span id="cb47-4"><a href="#cb47-4"></a><span class="fu">data</span>(<span class="st">"Fibulae"</span>)</span>
+<span id="cb47-5"><a href="#cb47-5"></a>Fibulae.ex <span class="ot">&lt;-</span> Fibulae</span>
+<span id="cb47-6"><a href="#cb47-6"></a>Fibulae.ex<span class="sc">$</span>lbl <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;b&gt;Museum num.: "</span>, Fibulae.ex<span class="sc">$</span>Mno, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>,</span>
+<span id="cb47-7"><a href="#cb47-7"></a>                          <span class="st">"Length: "</span>, Fibulae.ex<span class="sc">$</span>Length, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb47-8"><a href="#cb47-8"></a>                          <span class="st">"Foot Angle: "</span>, Fibulae.ex<span class="sc">$</span>FA, <span class="st">"&lt;br&gt;"</span>)</span>
+<span id="cb47-9"><a href="#cb47-9"></a><span class="fu">plot_ly</span>(<span class="at">data =</span> Fibulae.ex, </span>
+<span id="cb47-10"><a href="#cb47-10"></a>        <span class="at">x =</span> <span class="sc">~</span>Length,</span>
+<span id="cb47-11"><a href="#cb47-11"></a>        <span class="at">y =</span> <span class="sc">~</span>FA,</span>
+<span id="cb47-12"><a href="#cb47-12"></a>        <span class="at">text =</span> <span class="sc">~</span>lbl,</span>
+<span id="cb47-13"><a href="#cb47-13"></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb47-14"><a href="#cb47-14"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Munsingen fibulae"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-e732f3abe98c9019e812" style="width:960px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-e732f3abe98c9019e812">{"x":{"visdat":{"59a87ce63546":["function () ","plotlyVisDat"]},"cur_data":"59a87ce63546","attrs":{"59a87ce63546":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Munsingen fibulae","xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-78094ef527ca32a06089" style="width:960px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-78094ef527ca32a06089">{"x":{"visdat":{"29e842a7fc1":["function () ","plotlyVisDat"]},"cur_data":"29e842a7fc1","attrs":{"29e842a7fc1":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Munsingen fibulae","xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1669,58 +1705,76 @@ fix the output exactly here.
 <section id="export-document" class="slide level2">
 <h2>Export document</h2>
 <p>Export R Markdown in: HTML, PDF, LaTeX, Word, ODT, RTF, Markdown, etc.</p>
-<iframe width="780" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
+<iframe width="900" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
 </section>
 <section id="html" class="slide level2">
 <h2>HTML</h2>
-<p>Basic. HTML export is the default option of a R Markdown document.</p>
+<p>HTML export is the default option of a R Markdown document.</p>
+<div class="sourceCode" id="cb48" data-code-line-numbers="5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1"></a><span class="co">---</span></span>
+<span id="cb48-2"><a href="#cb48-2"></a><span class="an">title:</span><span class="co"> "temp"</span></span>
+<span id="cb48-3"><a href="#cb48-3"></a><span class="an">output:</span><span class="co"> pdf_document</span></span>
+<span id="cb48-4"><a href="#cb48-4"></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
+<span id="cb48-5"><a href="#cb48-5"></a><span class="an">output:</span><span class="co"> html_document</span></span>
+<span id="cb48-6"><a href="#cb48-6"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="pdf" class="slide level2">
 <h2>PDF</h2>
-<p>Harder. PDF uses LaTeX syntax, if you don’t have <a href="https://miktex.org/">MiKTeX</a> installed, you need to install the {<a href="https://yihui.org/tinytex/r/">tinytex</a>} package [Xie19].</p>
+<p>PDF uses LaTeX syntax, if you don’t have <a href="https://miktex.org/">MiKTeX</a> installed, you need to install the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" style="height: 50px;vertical-align: middle;"> package <span class="citation" data-cites="Xie19">(<a href="#/references" role="doc-biblioref" onclick="">Xie 2019</a>)</span>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">install.packages</span>(<span class="st">'tinytex'</span>)</span>
-<span id="cb45-2"><a href="#cb45-2"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span>
-<span id="cb45-3"><a href="#cb45-3"></a><span class="co"># .rs.restartR()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a><span class="fu">install.packages</span>(<span class="st">'tinytex'</span>)</span>
+<span id="cb49-2"><a href="#cb49-2"></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span>
+<span id="cb49-3"><a href="#cb49-3"></a><span class="co"># .rs.restartR()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>To export in PDF, change the YAML key-value pair <code>bookdown::html_document2:</code> to <code>bookdown::pdf_document2:</code> and knit. These temporary files are creates:</p>
-
-<img data-src="www/rmd_knit_pdf.png" width="400" class="r-stretch"><p>At the end of the rendering, these files are deleted.</p>
+<p>To export in PDF, use <code>bookdown::pdf_document2:</code> and knit.</p>
+<div class="sourceCode" id="cb50" data-code-line-numbers="5-6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb50-1"><a href="#cb50-1"></a><span class="co">---</span></span>
+<span id="cb50-2"><a href="#cb50-2"></a><span class="an">title:</span><span class="co"> "temp"</span></span>
+<span id="cb50-3"><a href="#cb50-3"></a><span class="an">output:</span><span class="co"> pdf_document</span></span>
+<span id="cb50-4"><a href="#cb50-4"></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
+<span id="cb50-5"><a href="#cb50-5"></a><span class="an">output:</span></span>
+<span id="cb50-6"><a href="#cb50-6"></a><span class="co">  bookdown::pdf_document2:</span></span>
+<span id="cb50-7"><a href="#cb50-7"></a><span class="co">    css: styles.css</span></span>
+<span id="cb50-8"><a href="#cb50-8"></a><span class="co">    toc: yes</span></span>
+<span id="cb50-9"><a href="#cb50-9"></a><span class="co">    toc_depth: 4</span></span>
+<span id="cb50-10"><a href="#cb50-10"></a><span class="co">    toc_float:</span></span>
+<span id="cb50-11"><a href="#cb50-11"></a><span class="co">      collapsed: no</span></span>
+<span id="cb50-12"><a href="#cb50-12"></a><span class="an">bibliography:</span><span class="co"> references.bib</span></span>
+<span id="cb50-13"><a href="#cb50-13"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>These temporary files are creates:</p>
+<p><img data-src="www/rmd_knit_pdf.png" width="400"></p>
+<p>At the end of the rendering, these files are deleted.</p>
 </section>
 <section id="latex" class="slide level2">
 <h2>LaTeX</h2>
 <p>LaTeX (extension of TeX) is a rich plain text syntax for academic writing. To export in TeX, select in the YAML header a PDF export + keep tex:</p>
-<div class="sourceCode" id="cb46" data-code-line-numbers="5,6,7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb46-1"><a href="#cb46-1"></a><span class="co">---</span></span>
-<span id="cb46-2"><a href="#cb46-2"></a><span class="an">title:</span><span class="co"> "temp"</span></span>
-<span id="cb46-3"><a href="#cb46-3"></a><span class="an">output:</span><span class="co"> pdf_document</span></span>
-<span id="cb46-4"><a href="#cb46-4"></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
-<span id="cb46-5"><a href="#cb46-5"></a><span class="an">output:</span></span>
-<span id="cb46-6"><a href="#cb46-6"></a><span class="co">  bookdown::pdf_document2: </span></span>
-<span id="cb46-7"><a href="#cb46-7"></a><span class="co">    keep_tex: true</span></span>
-<span id="cb46-8"><a href="#cb46-8"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb51" data-code-line-numbers="5-6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb51-1"><a href="#cb51-1"></a><span class="co">---</span></span>
+<span id="cb51-2"><a href="#cb51-2"></a><span class="an">title:</span><span class="co"> "temp"</span></span>
+<span id="cb51-3"><a href="#cb51-3"></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
+<span id="cb51-4"><a href="#cb51-4"></a><span class="an">output:</span></span>
+<span id="cb51-5"><a href="#cb51-5"></a><span class="co">  bookdown::pdf_document2: </span></span>
+<span id="cb51-6"><a href="#cb51-6"></a><span class="co">    keep_tex: true</span></span>
+<span id="cb51-7"><a href="#cb51-7"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="publishing-on-platforms" class="slide level2">
-<h2>Publishing on platforms</h2>
-<ul>
-<li><a href="https://rpubs.com/">Rpubs</a>
-<ul>
-<li>after Render: <img src="www/rmd_publish_Rpubs.png"></li>
-</ul></li>
-<li>GitHub/GitLab, the same document is accessible by different means:
-<ul>
-<li>formatted: https://github.com/zoometh/oxford/blob/main/R4A/helloworld.html</li>
-<li>raw: https://raw.githubusercontent.com/zoometh/oxford/main/R4A/helloworld.html</li>
-<li>HTML: https://zoometh.github.io/oxford/R4A/helloworld.html</li>
-<li>downloadable: <em>see below</em></li>
-</ul></li>
-</ul>
+<section id="publishing" class="slide level2">
+<h2>Publishing</h2>
+<div class="panel-tabset">
+<ul id="tabset-17" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-17-1">On Rpubs</a></li><li><a href="#tabset-17-2">On GitHub and GitLab</a></li></ul>
+<div class="tab-content">
+<div id="tabset-17-1">
+<p>On <a href="https://rpubs.com/">Rpubs</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 40px;vertical-align: middle;">, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/rmd_publish_Rpubs.png" style="height: 40px;vertical-align: middle;"></p>
+</div>
+<div id="tabset-17-2">
+<p>On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 40px;vertical-align: middle;">, or GitLab <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 40px;vertical-align: middle;">,</p>
+<p>the same document is accessible by different means: - formatted: https://github.com/zoometh/oxford/blob/main/R4A/helloworld.html - raw: https://raw.githubusercontent.com/zoometh/oxford/main/R4A/helloworld.html - HTML: https://zoometh.github.io/oxford/R4A/helloworld.html - downloadable: <em>see below</em></p>
+</div>
+</div>
+</div>
 </section>
 <section id="practice" class="slide level2">
 <h2>Practice</h2>
 <p><strong>1)</strong> Use <code>1_Rmarkdown_Theory.Rmd</code> as a model (copy/paste code snippets, Mardown syntax, etc.):</p>
 <ul>
-<li>view: https://github.com/zoometh/oxford/blob/main/R4A/1_Rmarkdown_Theory.Rmd</li>
-<li>download: https://zoometh.github.io/oxford/R4A/1_Rmarkdown_Theory.Rmd</li>
+<li>view: https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd</li>
+<li>download: https://zoometh.github.io/thomashuet/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd</li>
 </ul>
 <p><strong>2)</strong> <code>2_Rmarkdown_Practice.Rmd</code> gives an example of the desired structure for the Practice part:</p>
 <ul>
