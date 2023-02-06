@@ -732,7 +732,7 @@ Locators to cite and reuse variables (figures, sections, etc.)
 
 <center>
 
-![](www/rmd-cross-ref-example.png){width="700px"}
+![](www/rmd-cross-ref-example.png){width="600px"}
 
 </center>
 
@@ -769,7 +769,12 @@ Furze Platt dataset counts `r number.of.axes` described by `r ncol(Handaxes)`. T
 
 ### Figures
 
-```{r maxLmaxB, echo=TRUE, fig.align="center", fig.cap="Maximum Length/Maximum breadth in cm"}
+```{.r}
+{r maxLmaxB, echo=TRUE, fig.align="center"}
+```
+
+```{r maxLmaxB, echo=TRUE, fig.align="center"}
+#| out-width: "70%"
 
 library(archdata)
 data("Handaxes")
@@ -781,6 +786,13 @@ abline(lm(model))
 ```{.md }
 the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients[2], 2)',  Fig. \@ref(fig:maxLmaxB))
 ```
+the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
+
+::: {.callout-note}
+Here the figure callout '\@ref(fig:maxLmaxB))' is not rendered because this document is a Quarto presentation using {`revealjs`} and not {`bookdown`}
+:::
+\
+
 
 :::
 
@@ -788,31 +800,24 @@ the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ 
 
 ::: {.panel-tabset}
 
-### BibTex
-
-BibTex, or `.bib`, is a plain text format for bibliographic references. Google Scholar is a nice tool to copy/paste BibTex references, e.g.:
-
-```{.md}
-published by Yihui Xie [-@Xie19]
-```
-
-It's easy to retrieve [this reference](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=)
-
 
 ### YAML
 
-File `.bib` referenced in the YAML header
+BibTex, or `.bib`, is a plain text format for bibliographic references, referenced in the YAML header
 
-<img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="600"/>
+<center>
 
-<img src="www/rmd_bib.png" alt="rmd_bib" width="600"/>
+<img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"/>
+
+<img src="www/rmd_bib.png" alt="rmd_bib" width="700"/>
+
+</center>
 
 ### references.bib
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
 ```
-
 
 ### Cross citation
 
@@ -830,12 +835,26 @@ File `.bib` referenced in the YAML header
 | ...                                         | ...                                       |
 +---------------------------------------------+-------------------------------------------+
 
+### BibTex
+
+
+```{.md}
+published by Yihui Xie [-@Xie19]
+```
+published by Yihui Xie [-@Xie19]
+
+<center>---</center>
+
+It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and to copy/paste it in a the `.bib` file.
+
 :::
+
+
 
 ## Code chunks {#chunks}
 
 
-R code chunks are are placeholders for the coding part of the document, expressed with a local header, and a body part.
+R code chunks are placeholders for the coding part of the document, expressed with a local header, and a body part.
 
 ![](www/rmd_codechunk_header.png)
 
@@ -853,7 +872,7 @@ Options are used to show/hide the code, change the size of the output image, set
 
 ### Options hierarchy 
 
-The first chunk in the document allows to set these options for all other chunks unless you change these options in the following code chunks headers
+The 🔝 chunk in the document allows to set these options for all other chunks unless you change these options in the following code chunks headers
 
 
 ```{=html}
@@ -864,8 +883,16 @@ The first chunk in the document allows to set these options for all other chunks
 
 ## Tools
 
+:::: {.columns}
+
+::: {.column width="50%"}
+
 ![](www/rmd_create_rmd_new.png){width="700px"}
 
+:::
+
+
+::: {.column width="50%"}
 
 <table>
 <thead>
@@ -876,20 +903,23 @@ The first chunk in the document allows to set these options for all other chunks
 </thead>
 <tbody>
   <tr>
-    <td>![](www/rmd_nav_mdFormatOpt.png){width="60px"}</td>
+    <td> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_nav_mdFormatOpt.png' style='height: 60px;vertical-align: middle;'></td>
     <td>graphical interface for options</td>
   </tr>
   <tr>
-    <td>![](www/rmd_codechunk_header_runabove.png){width="60px"}</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runabove.png' style='height: 50px;vertical-align: middle;'></td>
     <td>run the previous chunks but not this one</td>
   </tr>
   <tr>
-    <td>![](www/rmd_codechunk_header_runthis.png){width="60px"}</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_codechunk_header_runthis.png' style='height: 50px;vertical-align: middle;'></td>
     <td>run this chunk</td>
   </tr>
 </tbody>
 </table>
 
+:::
+
+::::
 
 ## Code evaluation {.unnumbered}
 
