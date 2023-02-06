@@ -47,9 +47,12 @@ library(rgl)
 
 * Narrative parts with -- mainly -- Markdown syntax
 
+::: {.callout-note}
+R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 45px;vertical-align: middle;'> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-markdown.png' style='height: 45px;vertical-align: middle;'> for Markdown
+:::
+
 ### Example
 
-R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 45px;vertical-align: middle;'> + `md` for Markdown
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
