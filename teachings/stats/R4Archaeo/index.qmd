@@ -1246,30 +1246,47 @@ output:
 ### On Rpubs
 
 
-On [Rpubs](https://rpubs.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 40px;vertical-align: middle;"/>, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/rmd_publish_Rpubs.png" style="height: 40px;vertical-align: middle;"/>
+On [Rpubs](https://rpubs.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;"/>, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"/>
+
+
+```{=html}
+<iframe width="900" height="400" src="https://rpubs.com/"></iframe>
+```
 
 ### On GitHub and GitLab
 
-On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 40px;vertical-align: middle;"/>, or GitLab <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 40px;vertical-align: middle;"/>, 
+On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, or GitLab <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;"/>, 
 
 the same document is accessible by different means:
-    -   formatted: https://github.com/zoometh/oxford/blob/main/R4A/helloworld.html
-    -   raw: https://raw.githubusercontent.com/zoometh/oxford/main/R4A/helloworld.html
-    -   HTML: https://zoometh.github.io/oxford/R4A/helloworld.html
-    -   downloadable: *see below*
-    
-    
-    
+
+<table>
+<thead>
+  <tr>
+    <th>code</th>
+    <th>description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Rmd</td>
+    <td><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd></td>
+  </tr>
+  <tr>
+    <td>PDF</td>
+    <td><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/2_Rmarkdown_Practice.pdf></td>
+  </tr>
+  <tr>
+    <td>download</td>
+    <td><https://zoometh.github.io/thomashuet/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd></td>
+  </tr>
+</tbody>
+</table>
 
 :::
 
 
 ## Practice {#practice}
 
-**1)** Use `1_Rmarkdown_Theory.Rmd` as a model (copy/paste code snippets, Mardown syntax, etc.):
-
--   view: https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd
--   download: https://zoometh.github.io/thomashuet/teachings/stats/R4Archaeo/1_Rmarkdown_Theory.Rmd
 
 **2)** `2_Rmarkdown_Practice.Rmd` gives an example of the desired structure for the Practice part:
 
