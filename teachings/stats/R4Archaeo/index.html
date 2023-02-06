@@ -452,7 +452,7 @@
 </ul>
 </div>
 <div id="tabset-1-2">
-<p>R Markdown extension is <code>.Rmd</code>: <code>R</code> + <code>md</code> for Markdown</p>
+<p>R Markdown = <code>.Rmd</code> = <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png" style="height: 45px;vertical-align: middle;"> + <code>md</code> for Markdown</p>
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 </div>
 <div id="tabset-1-3">
@@ -520,7 +520,15 @@ web oriented
 </section>
 <section id="academic-reporting" class="slide level2">
 <h2>Academic reporting</h2>
-<p><strong>R Markdown</strong> is often enough for academic reporting It uses Markdown syntax, supports HTML/CSS markup languages, LaTeX, BibTex references, 3D plots, interactive maps, etc.</p>
+<p><strong>R Markdown</strong> is often enough for academic reporting. It uses Markdown syntax, it supports:</p>
+<ul>
+<li>HTML/CSS markup languages<br>
+</li>
+<li>LaTeX</li>
+<li>BibTex references</li>
+<li>interactive maps</li>
+<li>etc.</li>
+</ul>
 </section>
 <section id="main-packages" class="slide level2">
 <h2>Main packages</h2>
@@ -539,7 +547,7 @@ description
 <tbody>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" height="70">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 80px;vertical-align: middle;">
 </td>
 <td>
 <a href="https://yihui.org/knitr/">knitr</a> engine for dynamic report generation with R (e.g.&nbsp;convert to LaTeX)
@@ -547,7 +555,7 @@ description
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" height="70">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 90px;vertical-align: middle;">
 </td>
 <td>
 <a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a> convert R Markdown documents into a variety of formats, extension of {<code>knitr</code>}
@@ -555,7 +563,7 @@ description
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" height="70">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="height: 90px;vertical-align: middle;">
 </td>
 <td>
 <a href="https://bookdown.org/">bookdown</a> advanced editing and publishing functions (e.g.&nbsp;cross reference figures)
@@ -565,30 +573,45 @@ description
 
 </table>
 </section>
-<section id="create-a-new-document" class="slide level2">
-<h2>Create a new document</h2>
+<section id="new-document" class="slide level2">
+<h2>New document</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Create</a></li><li><a href="#tabset-2-2">RStudio preview</a></li><li><a href="#tabset-2-3">GitHub preview</a></li><li><a href="#tabset-2-4">Knit</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
 <p>In RStudio: <code>File &gt; New file &gt; R Markdown...</code></p>
+<center>
 <p><img data-src="www/rmd_create.png" width="500"></p>
+</center>
 <p>The options (<code>Title</code>, <code>Author</code>, <code>Date</code>, etc.) can be changed later (YAML header). Choose <strong>PDF</strong> as the default output format.</p>
+<center>
 <p><img data-src="www/rmd_create_rmd.png" width="500"></p>
-</section>
-<section id="new-created-document" class="slide level2">
-<h2>New created document</h2>
-<p>A new document is created:</p>
-<p><img data-src="www/rmd_create_rmd_new.png" width="700"></p>
-<p>Run the new document with <code>knitr</code> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">, it will launch the render</p>
-<p><img data-src="www/rmd_render.png" width="900"></p>
-</section>
-<section id="first-r-markdown-document" class="slide level2">
-<h2>First R Markdown document</h2>
+</center>
+</div>
+<div id="tabset-2-2">
+<p>A new document is created</p>
+<center>
+<p><img data-src="www/rmd_create_rmd_new.png" width="900"></p>
+</center>
+</div>
+<div id="tabset-2-3">
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+</div>
+<div id="tabset-2-4">
+<p>Run the new document with <code>knitr</code> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">, it will launch the render</p>
+<center>
+<p><img data-src="www/rmd_render.png" width="900"></p>
+</center>
+</div>
+</div>
+</div>
 </section>
 <section id="rstudio-tools" class="slide level2">
 <h2>RStudio tools</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Tools</a></li><li><a href="#tabset-2-2">Visual R Markdown</a></li></ul>
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Tools</a></li><li><a href="#tabset-3-2">Visual R Markdown</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1">
+<div id="tabset-3-1">
 <p><img src="www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"></p>
 
 <table>
@@ -671,7 +694,7 @@ run <a href="#/vrm">Visual R Markdown</a>
 
 </table>
 </div>
-<div id="tabset-2-2">
+<div id="tabset-3-2">
 <p><img src="www/rmd_nav_visualMdEditor_bar.png" align="left"><br></p>
 <p><a href="https://rstudio.github.io/visual-markdown-editing/">Visual R Markdown</a> has a Pandoc syntax (extension of Mardown), supports <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-zotero.png" style="height: 45px;vertical-align: middle;">, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/doi-logo.png" style="height: 45px;vertical-align: middle;"> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pubmed.png" style="height: 45px;vertical-align: middle;">, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-crossref.png" style="height: 45px;vertical-align: middle;">, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-datacite.png" style="height: 45px;vertical-align: middle;"></p>
 </div>
@@ -697,20 +720,20 @@ run <a href="#/vrm">Visual R Markdown</a>
 <h2>Markdown syntax</h2>
 <p>Easy-to-write plain text syntax</p>
 <div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Used by</a></li><li><a href="#tabset-3-2">Syntax</a></li><li><a href="#tabset-3-3">Online editor</a></li><li><a href="#tabset-3-4">Online converter</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Used by</a></li><li><a href="#tabset-4-2">Syntax</a></li><li><a href="#tabset-4-3">Online editor</a></li><li><a href="#tabset-4-4">Online converter</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1">
+<div id="tabset-4-1">
 <p>Different code-oriented frameworks: <a href="https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb">Jupyter</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 45px;vertical-align: middle;">, <a href="https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown">GitHub</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, <a href="https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37">Sketchfab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 45px;vertical-align: middle;">, <a href="https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200">Slack</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 45px;vertical-align: middle;">, <a href="https://martinhinz.github.io/smada2021/book/preface.html">bookdown</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="height: 45px;vertical-align: middle;">, <a href="https://stackoverflow.com/a/14747656/2854081">Stackoverflow</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 45px;vertical-align: middle;">, etc.</p>
 </div>
-<div id="tabset-3-2">
+<div id="tabset-4-2">
 <iframe width="900" height="500" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 <p><a href="https://rmarkdown.rstudio.com/authoring_basics.html" class="uri">https://rmarkdown.rstudio.com/authoring_basics.html</a></p>
 </div>
-<div id="tabset-3-3">
+<div id="tabset-4-3">
 <iframe width="900" height="500" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
 <p>https://stackedit.io/app#</p>
 </div>
-<div id="tabset-3-4">
+<div id="tabset-4-4">
 <p>Pandoc is an extension of Markdown, usefull for text conversions (Markdown &lt;-&gt; HTML, LaTeX &lt;-&gt; Markdown, etc.)</p>
 <iframe width="900" height="500" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 <p><a href="https://pandoc.org/try/" class="uri">https://pandoc.org/try/</a></p>
@@ -722,9 +745,9 @@ run <a href="#/vrm">Visual R Markdown</a>
 <section id="styling" class="slide level2">
 <h2>Styling</h2>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Text</a></li><li><a href="#tabset-4-2">Math formula</a></li><li><a href="#tabset-4-3">Others</a></li><li><a href="#tabset-4-4">with HTML and CSS</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Text</a></li><li><a href="#tabset-5-2">Math formula</a></li><li><a href="#tabset-5-3">Others</a></li><li><a href="#tabset-5-4">with HTML and CSS</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1">
+<div id="tabset-5-1">
 <table>
 <colgroup>
 <col style="width: 51%">
@@ -768,7 +791,7 @@ run <a href="#/vrm">Visual R Markdown</a>
 </tbody>
 </table>
 </div>
-<div id="tabset-4-2">
+<div id="tabset-5-2">
 <table>
 <thead>
 <tr class="header">
@@ -788,7 +811,7 @@ run <a href="#/vrm">Visual R Markdown</a>
 </tbody>
 </table>
 </div>
-<div id="tabset-4-3">
+<div id="tabset-5-3">
 <p>blockquotes</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="at">&gt; I am a blockquote</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <blockquote>
@@ -798,7 +821,7 @@ run <a href="#/vrm">Visual R Markdown</a>
 <p>line separator</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="tabset-4-4">
+<div id="tabset-5-4">
 <p>A extended part of the text styling can also be done with HTML/CSS</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;h2</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:blue;"</span><span class="kw">&gt;</span>A Blue Heading<span class="kw">&lt;/h2&gt;</span></span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red;"</span><span class="kw">&gt;</span>A red paragraph.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -815,9 +838,9 @@ A red paragraph.
 <section id="list" class="slide level2">
 <h2>List</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Numbered</a></li><li><a href="#tabset-5-2">Unnumbered</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Numbered</a></li><li><a href="#tabset-6-2">Unnumbered</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1">
+<div id="tabset-6-1">
 <div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="ss">- </span>Numbered  </span>
 <span id="cb4-2"><a href="#cb4-2"></a><span class="ss">  1. </span>first element</span>
 <span id="cb4-3"><a href="#cb4-3"></a><span class="ss">  2. </span>second element</span>
@@ -831,7 +854,7 @@ A red paragraph.
 </ol></li>
 </ul>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-6-2">
 <div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="ss">- </span>Unnumbered</span>
 <span id="cb5-2"><a href="#cb5-2"></a><span class="ss">  * </span>first element</span>
 <span id="cb5-3"><a href="#cb5-3"></a><span class="ss">  * </span>second element</span>
@@ -861,9 +884,9 @@ A red paragraph.
 <section id="tables" class="slide level2 unnumbered">
 <h2>Tables</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Simple table</a></li><li><a href="#tabset-6-2">Alignements</a></li><li><a href="#tabset-6-3">Complex tables</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Simple table</a></li><li><a href="#tabset-7-2">Alignements</a></li><li><a href="#tabset-7-3">Complex tables</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-7-1">
 <center>
 Write
 </center>
@@ -906,7 +929,7 @@ gives the same result:
 </tbody>
 </table>
 </div>
-<div id="tabset-6-2">
+<div id="tabset-7-2">
 <p>Use <code>:----:</code>, <code>:---</code>, or <code>---:</code> to align</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>| Left        |    Center   |         Right |</span>
 <span id="cb8-2"><a href="#cb8-2"></a>| :---        |    :----:   |          ---: |</span>
@@ -934,7 +957,7 @@ gives the same result:
 </tbody>
 </table>
 </div>
-<div id="tabset-6-3">
+<div id="tabset-7-3">
 <p>Table are often data structure difficult to layout. For complex tables you will need to use code chunks, e.g.&nbsp;kable() from {<code>knitr</code>} with <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">kable_styling()</a> from {<code>kableExtra</code>}</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(kableExtra)</span>
@@ -1085,9 +1108,9 @@ gives the same result:
 <section id="images" class="slide level2">
 <h2>Images</h2>
 <div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Online images</a></li><li><a href="#tabset-7-2">Local images</a></li></ul>
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Online images</a></li><li><a href="#tabset-8-2">Local images</a></li></ul>
 <div class="tab-content">
-<div id="tabset-7-1">
+<div id="tabset-8-1">
 <p>Markdown notation</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png" width="100"></p>
@@ -1096,7 +1119,7 @@ gives the same result:
 <div class="sourceCode" id="cb12" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png"</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png" width="100"></p>
 </div>
-<div id="tabset-7-2">
+<div id="tabset-8-2">
 <p>Markdown notation</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="al">![](www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><img data-src="www/logo.png" width="100"></p>
@@ -1111,9 +1134,9 @@ gives the same result:
 <section id="spaces-and-end-of-lines" class="slide level2">
 <h2>Spaces and end of lines</h2>
 <div class="panel-tabset">
-<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Spaces</a></li><li><a href="#tabset-8-2">End of line</a></li></ul>
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Spaces</a></li><li><a href="#tabset-9-2">End of line</a></li></ul>
 <div class="tab-content">
-<div id="tabset-8-1">
+<div id="tabset-9-1">
 <p>Extra spaces (HTML only)</p>
 <ul>
 <li>  <code>&amp;emsp;</code> means 4 spaces (= a tabulation)</li>
@@ -1121,7 +1144,7 @@ gives the same result:
 <li>&nbsp; <code>&amp;nbsp;</code> means 1 space</li>
 </ul>
 </div>
-<div id="tabset-8-2">
+<div id="tabset-9-2">
 <p>End of line (<code>&lt;br&gt;</code> in HTML) with 2 or more spaces and return – or <code>\</code> and return – for example:</p>
 <center>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_eol.png" width="500"></p>
@@ -1176,12 +1199,12 @@ Ton cou Exquis<br>
 <span id="cb17-4"><a href="#cb17-4"></a></span>
 <span id="cb17-5"><a href="#cb17-5"></a><span class="fu">### Header level 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="panel-tabset">
-<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Avoid numbering</a></li><li><a href="#tabset-9-2">.. and add an anchor</a></li></ul>
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Avoid numbering</a></li><li><a href="#tabset-10-2">.. and add an anchor</a></li></ul>
 <div class="tab-content">
-<div id="tabset-9-1">
+<div id="tabset-10-1">
 <div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">### My Header level 3 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="tabset-9-2">
+<div id="tabset-10-2">
 <div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
@@ -1191,13 +1214,13 @@ Ton cou Exquis<br>
 <h2>Hyperlinks</h2>
 <p>Add hyperlinks</p>
 <div class="panel-tabset">
-<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">To text</a></li><li><a href="#tabset-10-2">To images</a></li></ul>
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">To text</a></li><li><a href="#tabset-11-2">To images</a></li></ul>
 <div class="tab-content">
-<div id="tabset-10-1">
+<div id="tabset-11-1">
 <div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>part 2: <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R%20Markdown_Practice">Practice</a></p>
 </div>
-<div id="tabset-10-2">
+<div id="tabset-11-2">
 <div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="co">[</span><span class="al">![](www/logo.png)</span><span class="ot">{width=170px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1233,12 +1256,12 @@ Ton cou Exquis<br>
 <section id="cross-referencing" class="slide level2">
 <h2>Cross-referencing</h2>
 <div class="panel-tabset">
-<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Concept</a></li><li><a href="#tabset-11-2">Variables</a></li><li><a href="#tabset-11-3">Figures</a></li></ul>
+<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">Concept</a></li><li><a href="#tabset-12-2">Variables</a></li><li><a href="#tabset-12-3">Figures</a></li></ul>
 <div class="tab-content">
-<div id="tabset-11-1">
+<div id="tabset-12-1">
 <p>Cite and reuse variables, figures, tables, sections, etc., through your document with dynamic locators</p>
 </div>
-<div id="tabset-11-2">
+<div id="tabset-12-2">
 <p>Variables are calculated inside the code chunks, and called outside, with an inline R code like this one: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_call_var.png" style="height: 45px;vertical-align: middle;"></p>
 <center>
 —
@@ -1262,7 +1285,7 @@ Ton cou Exquis<br>
 <div class="sourceCode" id="cb27"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a href="#cb27-1"></a>Furze Platt dataset counts 'r number.of.axes' described by 'r ncol(Handaxes)'. The maximal length (L = 'r max(Handaxes$L)')</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Furze Platt dataset counts 600 described by 8. The maximal length (L = 242)</p>
 </div>
-<div id="tabset-11-3">
+<div id="tabset-12-3">
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="fu">library</span>(archdata)</span>
 <span id="cb28-2"><a href="#cb28-2"></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
@@ -1286,22 +1309,22 @@ Ton cou Exquis<br>
 <section id="bibliographic-references" class="slide level2">
 <h2>Bibliographic references</h2>
 <div class="panel-tabset">
-<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">BibTex</a></li><li><a href="#tabset-12-2">YAML</a></li><li><a href="#tabset-12-3">references.bib</a></li><li><a href="#tabset-12-4">Cross citation</a></li></ul>
+<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">BibTex</a></li><li><a href="#tabset-13-2">YAML</a></li><li><a href="#tabset-13-3">references.bib</a></li><li><a href="#tabset-13-4">Cross citation</a></li></ul>
 <div class="tab-content">
-<div id="tabset-12-1">
+<div id="tabset-13-1">
 <p>BibTex, or <code>.bib</code>, is a plain text format for bibliographic references. Google Scholar is a nice tool to copy/paste BibTex references, e.g.:</p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1"></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>It’s easy to retrieve <a href="https://scholar.google.fr/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&amp;btnG=">this reference</a></p>
 </div>
-<div id="tabset-12-2">
+<div id="tabset-13-2">
 <p>File <code>.bib</code> referenced in the YAML header</p>
 <p><img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="600"></p>
 <p><img src="www/rmd_bib.png" alt="rmd_bib" width="600"></p>
 </div>
-<div id="tabset-12-3">
+<div id="tabset-13-3">
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
 </div>
-<div id="tabset-12-4">
+<div id="tabset-13-4">
 <table>
 <colgroup>
 <col style="width: 51%">
@@ -1348,13 +1371,13 @@ Ton cou Exquis<br>
 <section id="headers" class="slide level2">
 <h2>Headers</h2>
 <div class="panel-tabset">
-<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">Headers options</a></li><li><a href="#tabset-13-2">Options hierarchy</a></li></ul>
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">Headers options</a></li><li><a href="#tabset-14-2">Options hierarchy</a></li></ul>
 <div class="tab-content">
-<div id="tabset-13-1">
+<div id="tabset-14-1">
 <div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Options are used to show/hide the code, change the size of the output image, set the alignment of the ouptut, etc.</p>
 </div>
-<div id="tabset-13-2">
+<div id="tabset-14-2">
 <p>The first chunk in the document allows to set these options for all other chunks unless you change these options in the following code chunks headers</p>
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 </div>
@@ -1613,12 +1636,12 @@ fix the output exactly here.
 <section id="styling-1" class="slide level2">
 <h2>Styling</h2>
 <div class="panel-tabset">
-<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">HTML/CSS</a></li><li><a href="#tabset-14-2">Directly in the document</a></li><li><a href="#tabset-14-3">In a CSS file</a></li></ul>
+<ul id="tabset-15" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-15-1">HTML/CSS</a></li><li><a href="#tabset-15-2">Directly in the document</a></li><li><a href="#tabset-15-3">In a CSS file</a></li></ul>
 <div class="tab-content">
-<div id="tabset-14-1">
+<div id="tabset-15-1">
 <p>HTML/CSS can be use in all parts of the document (YAML header, code chunks, narrative parts)</p>
 </div>
-<div id="tabset-14-2">
+<div id="tabset-15-2">
 <div class="sourceCode" id="cb42"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb42-1"><a href="#cb42-1"></a><span class="kw">&lt;span</span> <span class="er">style</span><span class="ot">=</span><span class="st">'font-size: 60px'</span><span class="kw">&gt;</span>Big font<span class="kw">&lt;/span&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="font-size: 60px">Big font</span></p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb43-1"><a href="#cb43-1"></a><span class="kw">&lt;b&gt;</span>bolded<span class="kw">&lt;/b&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1626,7 +1649,7 @@ fix the output exactly here.
 <div class="sourceCode" id="cb44"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb44-1"><a href="#cb44-1"></a><span class="kw">&lt;span</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red"</span><span class="kw">&gt;</span>red<span class="kw">&lt;/span&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><span style="color:red">red</span></p>
 </div>
-<div id="tabset-14-3">
+<div id="tabset-15-3">
 <div class="sourceCode" id="cb45"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb45-1"><a href="#cb45-1"></a>Customize with a CSS layouts like <span class="kw">&lt;notes&gt;</span>this **dodgerblue** background <span class="kw">&lt;/notes&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Customize with a CSS layouts like <notes>this <strong>dodgerblue</strong> background </notes></p>
 <script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
@@ -1639,13 +1662,13 @@ fix the output exactly here.
 <section id="html-online-editor" class="slide level2">
 <h2>HTML online editor</h2>
 <div class="panel-tabset">
-<ul id="tabset-15" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-15-1">w3schools.com</a></li><li><a href="#tabset-15-2">tutorialspoint.com</a></li></ul>
+<ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">w3schools.com</a></li><li><a href="#tabset-16-2">tutorialspoint.com</a></li></ul>
 <div class="tab-content">
-<div id="tabset-15-1">
+<div id="tabset-16-1">
 <iframe width="780" height="200" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
 <p><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" class="uri">https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello</a></p>
 </div>
-<div id="tabset-15-2">
+<div id="tabset-16-2">
 <iframe width="780" height="200" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
 <p><a href="https://www.tutorialspoint.com/online_html_editor.php" class="uri">https://www.tutorialspoint.com/online_html_editor.php</a></p>
 </div>
@@ -1655,14 +1678,14 @@ fix the output exactly here.
 <section id="interactivity" class="slide level2">
 <h2>Interactivity</h2>
 <div class="panel-tabset">
-<ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">Shiny</a></li><li><a href="#tabset-16-2">Leaflet</a></li><li><a href="#tabset-16-3">Plotly</a></li></ul>
+<ul id="tabset-17" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-17-1">Shiny</a></li><li><a href="#tabset-17-2">Leaflet</a></li><li><a href="#tabset-17-3">Plotly</a></li></ul>
 <div class="tab-content">
-<div id="tabset-16-1">
+<div id="tabset-17-1">
 <p><a href="https://shiny.rstudio.com/">Shiny</a> offers a framework to create interactive documents</p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb46-1"><a href="#cb46-1"></a><span class="an">runtime:</span><span class="co"> shiny</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Try: <code>File &gt; New File &gt; Rmarkdown &gt; Shiny</code>, or in the YAML header</p>
 </div>
-<div id="tabset-16-2">
+<div id="tabset-17-2">
 <p>Maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 45px;vertical-align: middle;"> package</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="fu">library</span>(dplyr)</span>
@@ -1680,12 +1703,12 @@ fix the output exactly here.
 <span id="cb47-13"><a href="#cb47-13"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb47-14"><a href="#cb47-14"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-1b382b5e2ef07317e29a" style="width:90%;height:300px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1b382b5e2ef07317e29a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-f21df8385c5d82aed73a" style="width:90%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f21df8385c5d82aed73a">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.5695874841292,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.5695874841292,7.5695874841292]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
-<div id="tabset-16-3">
+<div id="tabset-17-3">
 <p>2D plots with the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px;vertical-align: middle;"> package</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a><span class="fu">library</span>(plotly)</span>
@@ -1703,8 +1726,8 @@ fix the output exactly here.
 <span id="cb48-13"><a href="#cb48-13"></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>) <span class="sc">%&gt;%</span> </span>
 <span id="cb48-14"><a href="#cb48-14"></a>  <span class="fu">layout</span>(<span class="at">title =</span> <span class="st">"Munsingen fibulae"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-0b54bfa97057912e04b9" style="width:960px;height:480px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-0b54bfa97057912e04b9">{"x":{"visdat":{"67c7a847565":["function () ","plotlyVisDat"]},"cur_data":"67c7a847565","attrs":{"67c7a847565":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Munsingen fibulae","xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4bc1791018cfaa76ad60" style="width:960px;height:480px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4bc1791018cfaa76ad60">{"x":{"visdat":{"34f857f612ea":["function () ","plotlyVisDat"]},"cur_data":"34f857f612ea","attrs":{"34f857f612ea":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Munsingen fibulae","xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1766,13 +1789,13 @@ fix the output exactly here.
 <section id="publishing" class="slide level2">
 <h2>Publishing</h2>
 <div class="panel-tabset">
-<ul id="tabset-17" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-17-1">On Rpubs</a></li><li><a href="#tabset-17-2">On GitHub and GitLab</a></li></ul>
+<ul id="tabset-18" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-18-1">On Rpubs</a></li><li><a href="#tabset-18-2">On GitHub and GitLab</a></li></ul>
 <div class="tab-content">
-<div id="tabset-17-1">
+<div id="tabset-18-1">
 <p>On <a href="https://rpubs.com/">Rpubs</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;">, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"></p>
 <iframe width="900" height="400" src="https://rpubs.com/"></iframe>
 </div>
-<div id="tabset-17-2">
+<div id="tabset-18-2">
 <p>On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, or GitLab <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;">,</p>
 <p>the same document is accessible by different means:</p>
 
@@ -1822,9 +1845,9 @@ download
 <section id="practice" class="slide level2">
 <h2>Practice</h2>
 <div class="panel-tabset">
-<ul id="tabset-18" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-18-1">Objective</a></li><li><a href="#tabset-18-2">Data</a></li><li><a href="#tabset-18-3">Output</a></li></ul>
+<ul id="tabset-19" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-19-1">Objective</a></li><li><a href="#tabset-19-2">Data</a></li><li><a href="#tabset-19-3">Output</a></li></ul>
 <div class="tab-content">
-<div id="tabset-18-1">
+<div id="tabset-19-1">
 <p>Use R Markdown (code chunks and narrative text) to create a report. Choice between:</p>
 <ul class="task-list">
 <li><input type="checkbox" disabled="">improvement of the existing `.Rmd’ model for the fibulae from the Münsingen cemetery</li>
@@ -1844,12 +1867,12 @@ download
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>The practice part has an estimate duration of 75 minutes</p>
+<p>The practical part has an estimated duration of 75 minutes</p>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-18-2">
+<div id="tabset-19-2">
 <p>Download the <code>practice/</code> files:</p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb53-1"><a href="#cb53-1"></a>https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>using this website:</p>
@@ -1857,7 +1880,7 @@ download
 <p><a href="https://download-directory.github.io/" class="uri">https://download-directory.github.io/</a></p>
 <p>or go <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice">here</a> and download, or copy/paste the <code>.Rmd</code> file and the .<code>bib</code> file.</p>
 </div>
-<div id="tabset-18-3">
+<div id="tabset-19-3">
 <p>Send me your updated <code>.Rmd</code>, and eventually the connected files (e.g.&nbsp;<code>references.bib</code>) here:</p>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png" style="height: 50px;vertical-align: middle;"> <a href="mailto:thomas.huet@arch.ox.ac.uk" class="email">thomas.huet@arch.ox.ac.uk</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 50px;vertical-align: middle;"> <a href="https://github.com/zoometh/thomashuet/issues/1" class="uri">https://github.com/zoometh/thomashuet/issues/1</a></p>
 </div>

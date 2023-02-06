@@ -49,7 +49,7 @@ library(rgl)
 
 ### Example
 
-R Markdown extension is `.Rmd`:  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 40px;vertical-align: middle;'> + `md` for Markdown
+R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 45px;vertical-align: middle;'> + `md` for Markdown
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
@@ -93,7 +93,13 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 
 ## Academic reporting
 
-**R Markdown** is often enough for academic reporting It uses Markdown syntax, supports HTML/CSS markup languages, LaTeX, BibTex references, 3D plots, interactive maps, etc.
+**R Markdown** is often enough for academic reporting. It uses Markdown syntax, it supports:
+
+* HTML/CSS markup languages  
+* LaTeX 
+* BibTex references
+* interactive maps
+* etc.
 
 ## Main packages
 
@@ -106,46 +112,79 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 </thead>
 <tbody>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png){height=70px}</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png' style='height: 80px;vertical-align: middle;'></td>
     <td>[knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX)</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png){height=70px}</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png' style='height: 90px;vertical-align: middle;'></td>
     <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
   </tr>
     <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png){height=70px}</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='height: 90px;vertical-align: middle;'></td>
     <td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross reference figures)</td>
   </tr>
 </tbody>
 </table>
 
 
-## Create a new document
+## New document
+
+  
+::: {.panel-tabset}
+  
+
+### Create
 
 In RStudio: `File > New file > R Markdown...`
 
+<center>
+
 ![](www/rmd_create.png){width="500px"}
+
+</center>
 
 The options (`Title`, `Author`, `Date`, etc.) can be changed later (YAML header). Choose **PDF** as the default output format.
 
+<center>
+
 ![](www/rmd_create_rmd.png){width="500px"}
 
-## New created document
+</center>  
 
-A new document is created:
+::: {.callout-note}
+A new document is created.
+:::
 
-![](www/rmd_create_rmd_new.png){width="700px"}
 
-Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>, it will launch the render
+### RStudio preview
 
-![](www/rmd_render.png){width="900px"}
 
-## First R Markdown document
+
+<center>
+
+![](www/rmd_create_rmd_new.png){width="900px"}
+
+</center>
+
+### GitHub preview
+
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 ```
+
+### Knit
+
+Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>, it will launch the render
+
+<center>
+
+![](www/rmd_render.png){width="900px"}
+
+</center>
+
+:::
+
 
 ## RStudio tools
 
@@ -177,7 +216,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
   </tr>
   <tr>
     <td>![](www/rmd_nav_mdFormatOpt.png){width="60px"}</td>
-    <td>run [Visual R Markdown](#vrm) + other options</td>
+    <td>run Visual R Markdown + other options</td>
   </tr>
   <tr>
     <td>![](www/rmd_nav_newCodeChunk.png){width="60px"}</td>
@@ -193,7 +232,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
   </tr>
   <tr>
     <td>![](www/rmd_nav_visualMdEditor.png){width="60px"}</td>
-    <td>run [Visual R Markdown](#vrm)</td>
+    <td>run Visual R Markdown</td>
   </tr>
 </tbody>
 </table>
