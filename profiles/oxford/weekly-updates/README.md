@@ -875,7 +875,7 @@ DB
 - Continue to develop and improve the [eamenaR](https://github.com/eamena-oxford/eamenaR) package: made it more generic to be able to work with other Arches instances than EAMENA, function that gather data from the Built Component, etc. 
 - Continue to develop [GitHub](https://github.com/eamena-project): renamed it to `eamena-project`, create a `eamena-gee` repository for Leicester, etc.
 - Work with Will to line-up EAMENA cultural (sub)periods with [PeriodO](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/periodo)
-- Attended various mmetings: *Coffee & Arches*, *Sustainibility*, etc.
+- Attended various meetings: *Coffee & Arches*, *Sustainibility*, etc.
 - Prepare a 3 months research stay for a postdoc in ML
 - Created an [Advanced Research Computing project](https://www.arc.ox.ac.uk/creating-a-project) to give access to IT facilities
 - Current business on EAMENA DB administration (BUs with Mohamed, IT support for the `en` -> `ar` translation, etc.)

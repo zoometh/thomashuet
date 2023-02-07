@@ -2,7 +2,7 @@
 > Reporting statistical analysis with Rmarkdown ([*R4Archaeologists* Winter School](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists), Universita di Pisa)  
 > Thomas Huet, University of Oxford, February 2023
 
-This training module consists of two parts and two documents:
+This training module consists of two parts and two main documents:
 
 ---
 
