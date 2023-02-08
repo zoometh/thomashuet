@@ -2,6 +2,18 @@ lp {
   font-family: Helvetica;
 }
 
+.div-code {
+  background-color: #EBEBEB;
+}
+
+.div-text {
+  background-color: #add8e6;
+}
+
+.div-yaml {
+  background-color: #FFCCCB;
+}
+
 
 notes {
   color: white;
