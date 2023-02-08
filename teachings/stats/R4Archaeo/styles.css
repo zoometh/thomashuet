@@ -2,15 +2,15 @@ lp {
   font-family: Helvetica;
 }
 
-div-code {
+.div-code {
   background-color: #EBEBEB;
 }
 
-div-text {
+.div-text {
   background-color: #add8e6;
 }
 
-div-yaml {
+.div-yaml {
   background-color: #FFCCCB;
 }
 
