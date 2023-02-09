@@ -880,3 +880,12 @@ DB
 - Created an [Advanced Research Computing project](https://www.arc.ox.ac.uk/creating-a-project) to give access to IT facilities
 - Current business on EAMENA DB administration (BUs with Mohamed, IT support for the `en` -> `ar` translation, etc.)
 - Current administrative business (consultants' contracts, purchase of hardware, etc.)
+
+#### week 4
+
+- met Galen Mancino. His two main works for Arches are the improvement of the Search, and data import. He offered himself to work on these topics, or to help in the v5 to v7 upgrade, or to develop a plugin for ML.
+- attended the ACD workshop
+- gave a 3-hour lecture on [reporting with R markdown](http://shinyserver.cfs.unipi.it:3838/teach/r4a/_site/#/title-slide) to the University of Pisa's Summer School
+- worked on the eamenaR package
+- about to autorise a reverse proxy in EAMENA DB to access GeoServer
+- BU the last AAA files for Mohamed
