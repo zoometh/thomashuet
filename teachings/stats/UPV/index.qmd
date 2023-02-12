@@ -8,9 +8,9 @@ format:
     chalkboard: true
     scrollable: true
     preview-links: true
-    logo: images/inst-uni-oxford_.png
+    logo: ../images/inst-uni-oxford_.png
     css: styles.css
-    footer: "Statistics & Computer Scripts in Archaeology, UPV 2022 - T. Huet - <https://tinyurl.com/stats-upv>"
+    footer: "Statistics in Archaeology <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 45px;vertical-align: middle;'> CNRS ASM, Université Paul-Valéry, Feb 2023 - Thomas Huet <https://tinyurl.com/stats-upv>"
     # margin: -0.5
     margin: 0
     width: 1200
@@ -59,13 +59,12 @@ This presentation will show you examples of **statistical reasoning** in archaeo
 
 
 
-## Historiography of Archaeology
-
+## Historiography of Archaeology 1/2
 
 
 ::: {.panel-tabset}
 
-### *Timetable*
+### 📅
 
 | Start     | Method | Description |
 |:----------|:-------|:------------|
@@ -80,35 +79,42 @@ This presentation will show you examples of **statistical reasoning** in archaeo
 ### Prehistory
 
 <div class="row">
-<div class="column33">![Boucher de Perthes, 1847, *Antiquités celtiques et  antédiluviennes*](images/hist-archaeo-prehistoire-perthes.jpg){height=350px}</div>
+<div class="column33">![Boucher de Perthes, 1847, *Antiquités celtiques et  antédiluviennes*](../images/hist-archaeo-prehistoire-perthes.jpg){height=350px}</div>
 <div class="column66">Concomitance between biological "species" (C. Darwin) and archaeological "types" (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)</div>
 </div>
 
 ### Culture-Historical
 
 <div class="row">
-<div class="column33">!['Monument druidique près de Gisors': Baron Taylor, 1824, *Voyage pittoresque et romantique dans l’ancienne France*](images/hist-archaeo-romantic.png){height=350px}</div>
+<div class="column33">!['Monument druidique près de Gisors': Baron Taylor, 1824, *Voyage pittoresque et romantique dans l’ancienne France*](../images/hist-archaeo-romantic.png){height=350px}</div>
 <div class="column66">Focused on chronology, rooted in academic/national traditions and develops in parallel with History as a 'scientific' discipline taught in universities. </div>
 </div>
+
+:::
+
+## Historiography of Archaeology 2/2
+
+::: {.panel-tabset}
+
 
 ### New Archaeology
 
 <div class="row">
-<div class="column33">![R. & S. Binford, 1968, *New Perspectives in Archaeology*](images/hist-archaeo-newarchaeo-binford.png){height=350px}</div>
+<div class="column33">![R. & S. Binford, 1968, *New Perspectives in Archaeology*](../images/hist-archaeo-newarchaeo-binford.png){height=350px}</div>
 <div class="column">Advent of statistics and promotion of demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
 </div>
 
 ### Post-Processual
 
 <div class="row">
-<div class="column33">![Laurent Olivier, 2008, *Le sombre abîme du temps*](images/hist-archaeo-postprocess-sombreabime.png){height=350px}</div>
+<div class="column33">![Laurent Olivier, 2008, *Le sombre abîme du temps*](../images/hist-archaeo-postprocess-sombreabime.png){height=350px}</div>
 <div class="column66">*Post-processualism*, or Post-positivism, archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity) </div>
 </div>
 
 ### Tool-driven
 
 <div class="row">
-<div class="column33">![Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer](images/hist-archaeo-ai-ml-angkor.jpg){height=350px}</div>
+<div class="column33">![Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer](../images/hist-archaeo-ai-ml-angkor.jpg){height=350px}</div>
 <div class="column66">With the development of computational archaeology (eg. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
 </div>
 </div>
@@ -128,29 +134,29 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 ### Mean
 
 <div class="row">
-<div class="column">![Parthenon, Greece, 5<sup>th</sup> BC](images/The_Parthenon_in_Athens.jpg){height=350px}</div>
-<div class="column">![The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic (HM)](images/hist-stat-mean-pythagore.png){height=350px}</div>
+<div class="column">![Parthenon, Greece, 5<sup>th</sup> BC](../images/The_Parthenon_in_Athens.jpg){height=350px}</div>
+<div class="column">![The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic (HM)](../images/hist-stat-mean-pythagore.png){height=350px}</div>
 </div>
 
 ### Median
 
 <div class="row">
 <div class="column">![Title page of E. Wright, 1599, '*Certaine Errors in Navigation*'*](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png){height=350px}</div>
-<div class="column">![](images/hist-stat-median-compass-map.png){height=350px}</div>
+<div class="column">![](../images/hist-stat-median-compass-map.png){height=350px}</div>
 </div>
 
 ### Significance test
 
 <div class="row">
-<div class="column">![J. Arbuthnot, 1629-1710 census. Published in 1711, '*Philosophical transactions, 27*' with this statement: '*From whence it follows, that it is Art, not Chance, that governs*'](images/aut-arbuthnot-1629-1710.png){height=350px}</div>
-<div class="column">![*p-value* and *Z-score*, two normalised test thresholds to estimate the significance of an observed distribution *vs* a random distribution](images/stat-pvalue.png){height=350px}</div>
+<div class="column">![J. Arbuthnot, 1629-1710 census. Published in 1711, '*Philosophical transactions, 27*' with this statement: '*From whence it follows, that it is Art, not Chance, that governs*'](../images/aut-arbuthnot-1629-1710.png){height=350px}</div>
+<div class="column">![*p-value* and *Z-score*, two normalised test thresholds to estimate the significance of an observed distribution *vs* a random distribution](../images/stat-pvalue.png){height=350px}</div>
 </div>
 
 
 ### Normal law
 
 <div class="row">
-<div class="column">![A. Quetelet, 1821-1833 census](images/aut-quetelet_1821-33_census.png){height=350px}</div>
+<div class="column">![A. Quetelet, 1821-1833 census](../images/aut-quetelet_1821-33_census.png){height=350px}</div>
 <div class="column">![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=350px}</div>
 </div>
 
@@ -163,13 +169,13 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 ### Expert Systems
 
 <div class="row">
-<div class="column">![Garry Kasparov *vs* Deep Blue, 1996-1997](images/hist-computer-science-expert.jpg){height=300px}</div>
+<div class="column">![Garry Kasparov *vs* Deep Blue, 1996-1997](../images/hist-computer-science-expert.jpg){height=300px}</div>
 </div>
 
 ### Artificial Intelligence & Machine Learning
 
 <div class="row">
-<div class="column">![Prompted image with Midjourney AI, 2022](images/hist-computer-science-ai.png){height=300px}</div>
+<div class="column">![Prompted image with Midjourney AI, 2022](../images/hist-computer-science-ai.png){height=300px}</div>
 </div>
 
 :::
@@ -181,7 +187,7 @@ Statistik (description of a state, a country): collecting population data throug
 *p-value* is a test value, 95% = > .05
 :::
 
-## <span style="color:white;">Glossary of statistics</span> {background-image="images/blackboard.png"}
+## <span style="color:white;">Glossary of statistics</span> {background-image="../images/blackboard.png"}
 
 
 ## Type of statistics
@@ -193,15 +199,15 @@ Statistik (description of a state, a country): collecting population data throug
 :::: {.columns}
 
 ::: {.column width="33%"}
-![Descriptive](images/stat-histogram.png){height=350px}
+![Descriptive](../images/stat-histogram.png){height=350px}
 :::
 
 ::: {.column width="33%"}
-![Explanatory](images/stat-fa.png){height=350px}
+![Explanatory](../images/stat-fa.png){height=350px}
 :::
 
 ::: {.column width="33%"}
-![Confirmatory](images/stat-pvalue-1.png){height=350px}
+![Confirmatory](../images/stat-pvalue-1.png){height=350px}
 :::
 
 ::::
@@ -212,30 +218,30 @@ Statistik (description of a state, a country): collecting population data throug
 **Describe** the population with the mean (&mu;), the median (M) and standard deviation (&sigma;)
 
 ::: {layout-nrow=2}
-![Scatterplot](images/stat-scatterplot.png){height=200px}
+![Scatterplot](../images/stat-scatterplot.png){height=200px}
 
-![Histogram](images/stat-histogram.png){height=200px}
+![Histogram](../images/stat-histogram.png){height=200px}
 
-![Boxplot](images/stat-boxplot.png){height=200px}
+![Boxplot](../images/stat-boxplot.png){height=200px}
 
-![Line chart](images/stat-linechart.png){height=200px}
+![Line chart](../images/stat-linechart.png){height=200px}
 
-![Pie Chart](images/stat-piechart.png){height=200px}
+![Pie Chart](../images/stat-piechart.png){height=200px}
 
-![Radar chart](images/stat-radar.png){height=200px}
+![Radar chart](../images/stat-radar.png){height=200px}
 :::
 
 ### Exploratory
 
 <div class="row">
-<div class="column">![](images/stat-fa.png){height=350px}</div>
+<div class="column">![](../images/stat-fa.png){height=350px}</div>
 <div class="column">**Clustering** method, we move from a description to a modelling identifying central tendencies</div>
 </div>
 
 ### Confirmatory
 
 <div class="row">
-<div class="column">![](images/stat-pvalue-1.png){height=350px}</div>
+<div class="column">![](../images/stat-pvalue-1.png){height=350px}</div>
 <div class="column">**Test** of
 <ul>
 <li>***conformity*** (goodness-of-fit) between the observed population and a theoritical distribution (eg. normal law)</li>
@@ -260,14 +266,14 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### MRT
 
 <div class="row">
-<div class="column33"><center>![Model of archaeological reasoning by Renfrew and Bahn, 2020](images/theo-archaeo-renfrewbahn.jpg){height=300px}</center></div>
+<div class="column33"><center>![Model of archaeological reasoning by Renfrew and Bahn, 2020](../images/theo-archaeo-renfrewbahn.jpg){height=300px}</center></div>
 <div class="column66"><em><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span></em><br><small> Robert K. Merton, 1968</small></center></div>
 </div>
 
 ### Example
 
 <div class="row">
-<div class="column"><center>![](images/conformity--example.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity--example.png){height=350px}</center></div>
 <div class="column">We want to compare groups of settlement of 3 different cultures (or sites): <br>
 <ul>
 <li>A</li>
@@ -280,7 +286,7 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### Singularity
 
 <div class="row">
-<div class="column"><center>![](images/conformity-singularity.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity-singularity.png){height=350px}</center></div>
 <div class="column"><b>None</b> comparisons give the same results<br>
 <div class= smalltext>⚠️ In practice, over-valuing a specific element by giving it a marker character is dangerous, as its originality makes its management uncontrollable.</div></div>
 </div>
@@ -288,7 +294,7 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### Conformity
 
 <div class="row">
-<div class="column"><center>![](images/conformity-conformity.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity-conformity.png){height=350px}</center></div>
 <div class="column"><b>Most</b> comparisons give the same results<br>
 ️<div class= smalltext>💡 Increase the matching success of the model by decreasing its precision, or decrease the matching success of the model by increasing its precision.</div></div>
 </div>
@@ -296,7 +302,7 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### Identity
 
 <div class="row">
-<div class="column"><center>![](images/conformity-identity.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity-identity.png){height=350px}</center></div>
 <div class="column"><b>All</b> the comparison give the same result<br>
 ️<div class= smalltext>⚠️️In practice, a common element in 3 or more different data sets is usually rare. </div></div>
 </div>
@@ -317,7 +323,7 @@ middle range theories
 
 
 <div class="row">
-<div class="column"><center>![Waldo Tobler](images/aut-tobler.jpg){height=250px}</center></div>
+<div class="column"><center>![Waldo Tobler](../images/aut-tobler.jpg){height=250px}</center></div>
 <div class="column"><em><center>"everything is related to everything else, but near things are more related than distant things"</em><br><small> Tobler, 1970</small></center></div>
 </div>
 
@@ -326,24 +332,24 @@ middle range theories
 
 
 <div class="row">
-<div class="column">![Pieter Bruegel the Elder, *The Harversters*, 1565](images/where-bruegel.jpg){height=350px}</div>
-<div class="column">![Kingdom of Macedon at the death of Philip II, 336 BC](images/where-macedonia.png){height=350px}</div>
+<div class="column">![Pieter Bruegel the Elder, *The Harversters*, 1565](../images/where-bruegel.jpg){height=350px}</div>
+<div class="column">![Kingdom of Macedon at the death of Philip II, 336 BC](../images/where-macedonia.png){height=350px}</div>
 </div>
 
 
 ### When
 
 <div class="row">
-<div class="column">![Spiral of geological times](images/when-geology.png){height=350px}</div>
-<div class="column">![Startigraphic log and corresponding Harris matrix](images/when-strati.jpg){height=350px}</div>
+<div class="column">![Spiral of geological times](../images/when-geology.png){height=350px}</div>
+<div class="column">![Startigraphic log and corresponding Harris matrix](../images/when-strati.jpg){height=350px}</div>
 </div>
 
 
 ### What
 
 <div class="row">
-<div class="column">![An American suburb in the 1950s](images/what-1950.jpg){height=350px}</div>
-<div class="column">![Seriation effect of Chassean potteries in the Southern France](images/what-pottery.jpg){height=350px}</div>
+<div class="column">![An American suburb in the 1950s](../images/what-1950.jpg){height=350px}</div>
+<div class="column">![Seriation effect of Chassean potteries in the Southern France](../images/what-pottery.jpg){height=350px}</div>
 </div>
 
 
@@ -351,15 +357,15 @@ middle range theories
 ### How
 
 <div class="row">
-<div class="column">![Assembly line work in a Ford factory](images/how-fordism.jpg){height=350px}</div>
-<div class="column">![*Chaine opératoire* of flint lamellas knapping](images/how-co.jpg){height=350px}</div>
+<div class="column">![Assembly line work in a Ford factory](../images/how-fordism.jpg){height=350px}</div>
+<div class="column">![*Chaine opératoire* of flint lamellas knapping](../images/how-co.jpg){height=350px}</div>
 </div>
 
 ### Who
 
 <div class="row">
-<div class="column">![The British Royal Family](images/who-family.jpg){height=350px}</div>
-<div class="column">![Estimate DNA mixture proportions of Modern Europeans](images/who-haak_afo.jpg){height=350px}</div>
+<div class="column">![The British Royal Family](../images/who-family.jpg){height=350px}</div>
+<div class="column">![Estimate DNA mixture proportions of Modern Europeans](../images/who-haak_afo.jpg){height=350px}</div>
 </div>
 
 
@@ -499,21 +505,21 @@ datatable(df,
 ### Statement
 
 <div class="row">
-<div class="column"><center>![George E. P. Box](images/aut-box.jpg){height=300px}</center></div>
+<div class="column"><center>![George E. P. Box](../images/aut-box.jpg){height=300px}</center></div>
 <div class="column"><em><center>"All models are wrong, but some are useful"</em><br><small> Box, 1976</small></center></div>
 </div>
 
 ### Examples
 
-<!-- <center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](images/mod-know-thyself.jpg){height=200px}</center> -->
+<!-- <center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](../images/mod-know-thyself.jpg){height=200px}</center> -->
 
 <div class="row">
 
 <div class="column">
-<center>![Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*](images/mod-tree-kroeber.png){height=300px}</center></div>
+<center>![Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*](../images/mod-tree-kroeber.png){height=300px}</center></div>
 
 <div class="column">
-<center>![Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philos. Trans. R. Soc. B*, 365(1559), 3923-3933](images/mod-tree-splitgraph.jpg){height=300px}</center></div>
+<center>![Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philos. Trans. R. Soc. B*, 365(1559), 3923-3933](../images/mod-tree-splitgraph.jpg){height=300px}</center></div>
 
 </div>
 
@@ -532,28 +538,28 @@ datatable(df,
 <tr>
 <td>Explanatory</td>
 <td>not over- or under-fitting</td>
-<td><img src="../-images/mod-fitting.png"></td>
-<!-- <td>![](../-images/mod-fitting.png){height=200px}</td> -->
+<td><img src="../-../images/mod-fitting.png"></td>
+<!-- <td>![](../-../images/mod-fitting.png){height=200px}</td> -->
 </tr>
 <tr>
 <td>Regularity</td>
 <td>reproducing data regularity</td>
-<td>![](images/mod-regularity-christaller.jpg){height=200px}</td>
+<td>![](../images/mod-regularity-christaller.jpg){height=200px}</td>
 </tr>
 <tr>
 <td>Robustness</td>
 <td>not sensitive to small changes in data</td>
-<td>![](images/mod-robust.jpg){height=200px}</td>
+<td>![](../images/mod-robust.jpg){height=200px}</td>
 </tr>
 <tr>
 <td>Parsimony</td>
 <td>the simplest possible explanation is also the most probable</td>
-<td>![](images/mod-parsimony-laplace.jpg){height=200px}</td>
+<td>![](../images/mod-parsimony-laplace.jpg){height=200px}</td>
 </tr>
 <tr>
 <td>Versioning</td>
 <td>carry its own story</td>
-<td>![](images/mod-versioning.jpg){height=200px}</td>
+<td>![](../images/mod-versioning.jpg){height=200px}</td>
 </tr>
 </tbody>
 </table>
@@ -576,11 +582,11 @@ controlled vocabulary -> scale
 </div>
 
 <div class="column">
-<center>![✔️ Fitting](images/mod-fitting.png){height=250px}</center><br>
+<center>![✔️ Fitting](../images/mod-fitting.png){height=250px}</center><br>
 </div>
 
 <div class="column">
-<center>![❌ Fitting](images/mod-fittingnot-a.png){height=250x}</center>
+<center>![❌ Fitting](../images/mod-fittingnot-a.png){height=250x}</center>
 </div>
 
 
@@ -590,7 +596,7 @@ controlled vocabulary -> scale
 <div class="row">
 
 <div class="column">
-<center>![](images/mod-regularity-christaller.jpg){height=350px}</center>
+<center>![](../images/mod-regularity-christaller.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -606,7 +612,7 @@ reproducing data regularity (central tendencies)
 <div class="row">
 
 <div class="column">
-<center>![](images/mod-robust.jpg){height=350px}</center>
+<center>![](../images/mod-robust.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -622,7 +628,7 @@ not sensitive to small changes in data (reproducible)
 <div class="row">
 
 <div class="column">
-<center>![](images/mod-parsimony-laplace.jpg){height=350px}</center>
+<center>![](../images/mod-parsimony-laplace.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -639,7 +645,7 @@ all things being equal, the simplest possible explanation for a phenomenon is al
 <div class="row">
 
 <div class="column">
-<center>![](images/mod-versioning.jpg){height=350px}</center>
+<center>![](../images/mod-versioning.jpg){height=350px}</center>
 </div>
 
 <div class="column">
@@ -726,12 +732,12 @@ Metadata<br>
 
 <center>
 
-![](images/data-meta-photo-microliths.jpg){height=300}
+![](../images/data-meta-photo-microliths.jpg){height=300}
 
 </center>
 
 ```{r}
-img <- exiftoolr::exif_read("C:/Rprojects/thomashuet/teachings/stats/UPV/images/data-meta-photo-microliths.jpg")
+img <- exiftoolr::exif_read("C:/Rprojects/thomashuet/teachings/stats/images/data-meta-photo-microliths.jpg")
 
 print(paste0("<b>Caption-Abstract</b>: ", img[["Caption-Abstract"]]))
 print(paste0("<b>Copyright</b>: ", img[["Copyright"]]))
@@ -775,21 +781,21 @@ colSums(df, na.rm = T)
 ### Quantitative
 
 <div class="row">
-<div class="column">![](images/stat-scale-quant.png){height=350px}</div>
+<div class="column">![](../images/stat-scale-quant.png){height=350px}</div>
 <div class="column">**Units of length** (cm, m, km, kg, years, etc.). The statistical unit is quantified by a measure with continuous measurable intervals.</div>
 </div>
 
 ### Ordinal
 
 <div class="row">
-<div class="column">![](images/stat-scale-ord.png){height=350px}</div>
+<div class="column">![](../images/stat-scale-ord.png){height=350px}</div>
 <div class="column">**Ranks** (discrete). Ordered sequence of values (e.g. 'low', 'medium', 'high') without establishing the distance between consecutive values.</div>
 </div>
 
 ### Nominal
 
 <div class="row">
-<div class="column">![](images/stat-scale-nom.png){height=350px}</div>
+<div class="column">![](../images/stat-scale-nom.png){height=350px}</div>
 <div class="column">**Qualitative** categories that cannot be ordered (eg. "Green", "Yellow", "Red").</div>
 </div>
 
@@ -888,7 +894,7 @@ Random patterns <em>versus</em> Clustered patterns
 ### Rock art sites
 
 <div class="row">
-<div class="column">![Cups-and-rings rock art concentration (&#11044;) in Millestone Burn, Northumberland, England (Bradley 1996)](images/dist-rand-ra-millestone.png){height=350px}</div>
+<div class="column">![Cups-and-rings rock art concentration (&#11044;) in Millestone Burn, Northumberland, England (Bradley 1996)](../images/dist-rand-ra-millestone.png){height=350px}</div>
 <div class="column">Engraved rock sites (&#11044;) are concentrated on Millstone Grits (sandstone) with a statistical significance in comparison to a theoretical **random distribution** (&#9675;).</div>
 </div>
 
@@ -896,7 +902,7 @@ Random patterns <em>versus</em> Clustered patterns
 ### Rock art surfaces
 
 <div class="row">
-<div class="column">![Neolithic/Early Bronze Age engraved rock, Mont Bego, France (Chippindale 1988)](images/dist-rand-ra-bego.png){height=350px}</div>
+<div class="column">![Neolithic/Early Bronze Age engraved rock, Mont Bego, France (Chippindale 1988)](../images/dist-rand-ra-bego.png){height=350px}</div>
 <div class="column">On the observed rock surface (A), engravings are arranged in a more orderly manner in a **random process** (B and C), but the former remains far from an orderly arrangement without overlapping engravings.</div>
 </div>
 
@@ -904,7 +910,7 @@ Random patterns <em>versus</em> Clustered patterns
 ### Bronze hoards
 
 <div class="row">
-<div class="column">![Distribution of the Late Bronze Age Ewart Park hoards, Atlantic Europe (Wiseman 2018) ](images/lba-hoards-random.jpg){height=350px}</div>
+<div class="column">![Distribution of the Late Bronze Age Ewart Park hoards, Atlantic Europe (Wiseman 2018) ](../images/lba-hoards-random.jpg){height=350px}</div>
 <div class="column">Hoards from the Ewart Park phase show a **normal distribution** when considering size, fragmentation and number of pieces. The hoards would result from a random accumulation and breaking</div>
 </div>
 
@@ -926,7 +932,7 @@ Regular pattern
 ### Tumulus
 
 <div class="row">
-<div class="column">![Early Bronze Age tumuli in Brittany (Brun 2011)](images/dist-reg-tumulus.jpg){height=350px}</div>
+<div class="column">![Early Bronze Age tumuli in Brittany (Brun 2011)](../images/dist-reg-tumulus.jpg){height=350px}</div>
 <div class="column">The 'princely' tombs are **evenly distributed** in space, separated from each other by a distance of 12.5 km, i.e. less than three hours' walk round trip</div>
 </div>
 
@@ -934,7 +940,7 @@ Regular pattern
 ### Princely sites
 
 <div class="row">
-<div class="column">![Early Iron Age princely sites at the North of the Alps (Brun 2011)](images/dist-reg-centralplace.jpg){height=350px}</div>
+<div class="column">![Early Iron Age princely sites at the North of the Alps (Brun 2011)](../images/dist-reg-centralplace.jpg){height=350px}</div>
 <div class="column">In the 6<sup>th</sup> century BC, the 'princely sites' are separated from each other by an **average distance** of about 50 km. This distance can be covered in a day on horseback.</div>
 </div>
 
@@ -942,14 +948,14 @@ Regular pattern
 ### Emporions
 
 <div class="row">
-<div class="column">![Main *emporions* in the Golfe du Lion, Northwestern Mediterranea (Gailledrat 2005)](images/dist-reg-emporions.jpg){height=350px}</div>
+<div class="column">![Main *emporions* in the Golfe du Lion, Northwestern Mediterranea (Gailledrat 2005)](../images/dist-reg-emporions.jpg){height=350px}</div>
 <div class="column">During the same period (6<sup>th</sup> c. BC) coastal trading posts installed almost systematically at the mouth of river valleys and approximately 40 km from each other (1 day's cabotage)</div>
 </div>
 
 ### Caravanserails
 
 <div class="row">
-<div class="column">![Caravanserails in the Khorasan region, Iran (EAMENA DB)](images/dist-reg-caravanserails.png){height=350px}</div>
+<div class="column">![Caravanserails in the Khorasan region, Iran (EAMENA DB)](../images/dist-reg-caravanserails.png){height=350px}</div>
 <div class="column">During the Late Islamic period (15<sup>th</sup>-18<sup>th</sup> c. AD) trade posts (caravanserails) have been build along trading roads. They are close to water sources and separated from each other by about 20-30 km (1 camel day). </div>
 </div>
 
@@ -965,7 +971,7 @@ regular = competition
 Gradient pattern
 
 <div class="row">
-<div class="column">![Ammerman and Cavalli-Sforza, 1971, *Measuring the rate of spread of early farming in Europe*](images/dist-gradient-spread-neo.jpg){height=300px}</div>
+<div class="column">![Ammerman and Cavalli-Sforza, 1971, *Measuring the rate of spread of early farming in Europe*](../images/dist-gradient-spread-neo.jpg){height=300px}</div>
 <div class="column">**Diffusion** (spatial and temporal). In the case of a linear gradient, the calculation of the centroid of a group of points is a good indicator of its evolution.</div>
 </div>
 
@@ -991,9 +997,9 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <center>Factorial Analysis (FA)</center>
 <br>
 <div class="row">
-<div class="column" style="width: 25%">![](images/stat-fa-camel-1.png){height=300px}</div>
+<div class="column" style="width: 25%">![](../images/stat-fa-camel-1.png){height=300px}</div>
 <div class="column33" style="width: 5%; vertical-align: middle;">➡️</div>
-<div class="column" style="width: 25%">![](images/stat-fa-camel-2.png){height=300px}</div>
+<div class="column" style="width: 25%">![](../images/stat-fa-camel-2.png){height=300px}</div>
 <div class="column" style="width: 45%">Factorial Analysis is the generic term for multivariate (or multifactorial) analysis</div>
 </div>
 
@@ -1005,8 +1011,8 @@ Useful when data are complete (chemical composition, genetics, etc.)
 ### Dataset
 
 <div class="row">
-<div class="column">![Map of NE Iberia with locations of the studied sites](images/stat-plosone-carto-zona.png){height=300px}</div>
-<div class="column">![Chrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity](images/stat-seriat-plosone.png){height=300px}
+<div class="column">![Map of NE Iberia with locations of the studied sites](../images/stat-plosone-carto-zona.png){height=300px}</div>
+<div class="column">![Chrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity](../images/stat-seriat-plosone.png){height=300px}
 </div>
 </div>
 
@@ -1017,7 +1023,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column33">$\ge$ 2 rows,  $\ge$ 2 columns, $\emptyset$ missing data, $\emptyset$ negative values, $\forall$ data with the same scale</div>
-<div class="column66">![CA of sites’ NISP profiles during the LBA](images/stat-fa-ca-plosone-lba-zona.png){height=300px}</div>
+<div class="column66">![CA of sites’ NISP profiles during the LBA](../images/stat-fa-ca-plosone-lba-zona.png){height=300px}</div>
 </div>
 
 
@@ -1027,7 +1033,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column33">quantitative data, $\ge$ 3 rows, $\ge$ 3 columns, nb rows $\ge$ 10x nb of columns</div>
-<div class="column66">![PCA of sites’ NISP profiles during the MIA2](images/stat-fa-pca-plosone-xxx.jpg){height=300px}</div>
+<div class="column66">![PCA of sites’ NISP profiles during the MIA2](../images/stat-fa-pca-plosone-xxx.jpg){height=300px}</div>
 </div>
 
 
@@ -1037,7 +1043,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column33">related to CA, PCA or MFA</div>
-<div class="column66">![HCA of sites’ NISP profiles during the LBA](images/stat-fa-hc-plosone-lba-zona.png){height=300px}</div>
+<div class="column66">![HCA of sites’ NISP profiles during the LBA](../images/stat-fa-hc-plosone-lba-zona.png){height=300px}</div>
 </div>
 
 ### LDA
@@ -1046,7 +1052,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column33">sensitive to outliers and the size of the smallest group must be larger than the number of predictor variables</div>
-<div class="column66">![LDA of sites’ NISP profiles during the LBA](images/stat-fa-lda-plosone-lba-zona.png){height=300px}</div>
+<div class="column66">![LDA of sites’ NISP profiles during the LBA](../images/stat-fa-lda-plosone-lba-zona.png){height=300px}</div>
 </div>
 
 :::
@@ -1089,7 +1095,7 @@ Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Arch
 <tbody>
 <tr>
 <td colspan="2"><a href="https://github.com">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
+<img src="https://github.githubassets.com/../images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a></td>
 </tr>
 </tbody>
@@ -1099,7 +1105,7 @@ Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Arch
 ### GitHub
 
 <a href="https://github.com">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
+<img src="https://github.githubassets.com/../images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
 </a>
 The 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
 

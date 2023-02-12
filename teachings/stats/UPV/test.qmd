@@ -28,8 +28,24 @@ library(dplyr)
 library(archdata)
 ```
 
+```{r include=FALSE}
+library(shiny.i18n)
 
-### background HTML
+i18n <- Translator$new(translation_json_path = "translation.json")
+
+get_translation <- function(translator_object, language_code, content_key) {
+  translator_object$set_translation_language(language_code)
+  translator_object$t(content_key)
+}
+
+```
+
+## Language
+
+`r { get_translation(i18n, "fr", "My house is large") }`
+
+
+## background HTML
 
 ```{=html}
 <iframe width="780" height="500" src="https://www.markdownguide.org/basic-syntax/" title="Markdown basic syntax"></iframe>
@@ -164,6 +180,28 @@ Test under the hypothesis H<sub>0</sub>. The *p-value* is the probability that H
 <div class="column"><em><center>"people think closer things are more similar"</em><br><small> Montello and Fabrikant, 2006</small></center></div>
 <div class="column">An archaeological culture is a polythetic assemblage of features more frequently associated with each other within a given area than outside it</div>
 </div>
+
+# Language {.tabset .tabset-dropdown}
+
+## English
+
+<h1>English Title</h1>
+
+Plot of random points
+
+```{r, echo=FALSE}
+plot(runif(10), runif(10), main = "Random points")
+```
+
+## French
+
+<h1>Titre Français</h1>
+
+Tracé de points aléatoires
+
+```{r, echo=FALSE}
+plot(runif(10), runif(10), main = "Points aléatoires")
+```
 
 ## Code
 

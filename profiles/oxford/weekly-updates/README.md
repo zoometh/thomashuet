@@ -888,4 +888,5 @@ DB
 - gave a 3-hour lecture on [reporting with R markdown](http://shinyserver.cfs.unipi.it:3838/teach/r4a/_site/#/title-slide) to the University of Pisa's Summer School
 - worked on the eamenaR package
 - about to autorise a reverse proxy in EAMENA DB to access GeoServer
+- will prepare my stay in Southampton (next Thursday, Friday)
 - BU the last AAA files for Mohamed
