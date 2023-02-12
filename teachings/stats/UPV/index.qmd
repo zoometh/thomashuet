@@ -7,18 +7,14 @@ format:
     slide-number: true
     chalkboard: true
     scrollable: true
-    preview-links: true
+    preview-links: auto
     reference-location: document
     footnotes-hover: true
     logo: ../images/inst-uni-oxford_.png
     css: styles.css
-    footer: "Statistics in Archaeology <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 45px;vertical-align: middle;'> CNRS ASM, Université Paul-Valéry, Feb 2023 - Thomas Huet <https://tinyurl.com/stats-upv>"
-    # margin: -0.5
+    footer: "Statistics in Archaeology <https://tinyurl.com/stats-upv> CNRS ASM <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 40px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
     margin: 0
     width: 1200
-resources:
-  - demo.pdf
-fig-cap-location: margin
 ---
 
 
@@ -247,14 +243,13 @@ Statistik (description of a state, a country): collecting population data throug
 <div class="column33">**Test** of<br>![](../images/stat-pvalue-1.png){height=350px}</div>
 <div class="column66">
 <ul>
-<li>***conformity***[^1] between the observed population and a theoretical distribution (e.g. normal law)</li>
+<li>***conformity*** (goodness-of-fit) between the observed population and a theoretical distribution (e.g. normal law)</li>
 <li>***homogeneity*** between different populations</li>
 <li>***relation*** between several variables from the same population</li>
 </ul>
 </div>
 </div>
 
-[^1]: goodness-of-fit
 
 :::
 
@@ -284,12 +279,12 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### Example
 
 <div class="row">
-<div class="column"><center>![](../images/conformity--example.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity-conformity-all.png){height=350px}</center></div>
 <div class="column">We want to compare groups of settlement of 3 different cultures (or sites): <br>
 <ul>
-<li>A</li>
-<li>B</li>
-<li>C</li>
+<li><span style="color:blue">A</span></li>
+<li><span style="color:red">B</span></li>
+<li><span style="color:green">C</span></li>
 </ul>
 </div>
 </div>
@@ -297,7 +292,7 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### Singularity
 
 <div class="row">
-<div class="column"><center>![](../images/conformity-singularity.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity-conformity-all.png){height=350px}</center></div>
 <div class="column"><b>None</b> comparisons give the same results<br>
 <div class= smalltext>⚠️ In practice, over-valuing a specific element by giving it a marker character is dangerous, as its originality makes its management uncontrollable.</div></div>
 </div>
@@ -305,7 +300,7 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### Conformity
 
 <div class="row">
-<div class="column"><center>![](../images/conformity-conformity.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity-conformity-all.png){height=350px}</center></div>
 <div class="column"><b>Most</b> comparisons give the same results<br>
 ️<div class= smalltext>💡 Increase the matching success of the model by decreasing its precision, or decrease the matching success of the model by increasing its precision.</div></div>
 </div>
@@ -313,7 +308,7 @@ Archaeology establishes facts and proposes **models** to connect these facts
 ### Identity
 
 <div class="row">
-<div class="column"><center>![](../images/conformity-identity.png){height=350px}</center></div>
+<div class="column"><center>![](../images/conformity-conformity-all.png){height=350px}</center></div>
 <div class="column"><b>All</b> the comparison give the same result<br>
 ️<div class= smalltext>⚠️️In practice, a common element in 3 or more different data sets is usually rare. </div></div>
 </div>
@@ -343,24 +338,24 @@ middle range theories
 
 
 <div class="row">
-<div class="column">![Pieter Bruegel the Elder, *The Harversters*, 1565](../images/where-bruegel.jpg){height=350px}</div>
-<div class="column">![Kingdom of Macedon at the death of Philip II, 336 BC](../images/where-macedonia.png){height=350px}</div>
+<div class="column">![](../images/where-bruegel.jpg){height=350px}<br><span class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</span></div>
+<div class="column">![](../images/where-macedonia.png){height=350px}<br><span class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</span></div>
 </div>
 
 
 ### When
 
 <div class="row">
-<div class="column">![Spiral of geological times](../images/when-geology.png){height=350px}</div>
-<div class="column">![Startigraphic log and corresponding Harris matrix](../images/when-strati.jpg){height=350px}</div>
+<div class="column">![](../images/when-geology.png){height=350px}<br><span class="captiontext">Spiral of geological times</span></div>
+<div class="column">![](../images/when-strati.jpg){height=350px}<br><span class="captiontext">Startigraphic log and corresponding Harris matrix</span></div>
 </div>
 
 
 ### What
 
 <div class="row">
-<div class="column">![An American suburb in the 1950s](../images/what-1950.jpg){height=350px}</div>
-<div class="column">![Seriation effect of Chassean potteries in the Southern France](../images/what-pottery.jpg){height=350px}</div>
+<div class="column">![](../images/what-1950.jpg){height=350px}<br><span class="captiontext">An American suburb in the 1950s</span></div>
+<div class="column">![](../images/what-pottery.jpg){height=350px}<br><span class="captiontext">Seriation of Chassean potteries in South France</span></div>
 </div>
 
 
@@ -368,15 +363,15 @@ middle range theories
 ### How
 
 <div class="row">
-<div class="column">![Assembly line work in a Ford factory](../images/how-fordism.jpg){height=350px}</div>
-<div class="column">![*Chaine opératoire* of flint lamellas knapping](../images/how-co.jpg){height=350px}</div>
+<div class="column">![](../images/how-fordism.jpg){height=350px}<br><span class="captiontext">Assembly line work in a Ford factory</span></div>
+<div class="column">![](../images/how-co.jpg){height=350px}<br><span class="captiontext">*Chaine opératoire* of flint lamellas knapping</span></div>
 </div>
 
 ### Who
 
 <div class="row">
-<div class="column">![The British Royal Family](../images/who-family.jpg){height=350px}</div>
-<div class="column">![Estimate DNA mixture proportions of Modern Europeans](../images/who-haak_afo.jpg){height=350px}</div>
+<div class="column">![](../images/who-family.jpg){height=350px}<br><span class="captiontext">The British Royal Family</span></div>
+<div class="column">![](../images/who-haak_afo.jpg){height=350px}<br><span class="captiontext">Estimate DNA mixture proportions of Modern Europeans</span></div>
 </div>
 
 

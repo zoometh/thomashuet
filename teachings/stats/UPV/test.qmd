@@ -10,6 +10,8 @@ format:
     chalkboard: true
     scrollable: true
     preview-links: auto
+    reference-location: document
+    footnotes-hover: true
     logo: images/inst-uni-oxford_.png
     css: styles.css
     footer: <https://tinyurl.com/goa-oxford>
@@ -28,17 +30,12 @@ library(dplyr)
 library(archdata)
 ```
 
-## Legend size
+## My footnote
 
-<div class="row">
+My footnote[^1]
 
-<div class="column33"><center>
-![](../images/theo-archaeo-renfrewbahn.jpg){height=300px}
-<span class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</span>
-</center></div>
 
-<div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span><br><small> Robert K. Merton, 1968</small></center></div>
-</div>
+[^1]: dewpeuoewufwefew
 
 ## background HTML
 
