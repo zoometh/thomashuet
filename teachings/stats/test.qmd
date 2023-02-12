@@ -6,6 +6,8 @@ author: "zoometh"
 # margin-right: 5.4mm
 format:
   revealjs: 
+    code-fold: true
+    code-summary: "Show the code"
     slide-number: true
     chalkboard: true
     scrollable: true
