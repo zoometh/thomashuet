@@ -28,6 +28,101 @@ library(plotly)
 library(DT)
 library(dplyr)
 library(archdata)
+library(kableExtra)
+```
+
+
+## Quantitative
+
+<div class="row">
+<div class="column">![](../images/stat-scale-quant.png){height=350px}</div>
+<div class="column">**Units of length** (cm, m, km, kg, years, etc.). Statistical units are quantified by continuous measurable intervals.</div>
+</div>
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+ncolors <- 5
+x <- sort(sample.int(100, ncolors))
+colors <- RColorBrewer::brewer.pal(ncolors, name = "YlGn")
+df <- data.frame(values = x,
+                 colors = colors)
+datatable(df, 
+          rownames = TRUE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("colors",
+              backgroundColor = styleEqual(colors, 
+                                           colors)
+  )
+```
+
+## Ordinal
+
+<div class="row">
+<div class="column">![](../images/stat-scale-ord.png){height=350px}</div>
+<div class="column">**Ranks** (discrete). Ordered sequence of values (e.g. 'very cold', 'cold', 'lukewarm', 'hot', 'very hot') without establishing the distance between consecutive values.</div>
+</div>
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+ncolors <- c('very cold', 'cold', 'lukewarm', 'hot', 'very hot')
+colors <- RColorBrewer::brewer.pal(length(ncolors), name = "RdBu")
+df <- data.frame(values = ncolors,
+                 colors = rev(colors))
+datatable(df, 
+          rownames = TRUE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("colors",
+              backgroundColor = styleEqual(colors, 
+                                           colors)
+  )
+```
+### Nominal
+
+<div class="row">
+<div class="column">![](../images/stat-scale-nom.png){height=350px}</div>
+<div class="column">**Qualitative** categories that cannot be ordered (e.g. 'green', 'yellow', 'red').</div>
+</div>
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+ncolors <- c('green', 'yellow', 'red')
+colors <- c('#00FF00', '#FFFF00', '#FF0000')
+df <- data.frame(values = ncolors,
+                 colors = colors)
+datatable(df, 
+          rownames = TRUE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("colors",
+              backgroundColor = styleEqual(colors, 
+                                           colors)
+  )
 ```
 
 ## My footnote
@@ -88,70 +183,6 @@ knitr::kable(
 ::: {.column-screen-inset}
 ![Full screen inset](images/dist-rand-ra-millestone.png)
 :::
-
-
-## Historiography of Archaeology
-
-::: {.panel-tabset}
-
-### *Timetable*
-
-:::{.column-screen-inset}
-
-| Start     | Method | Description |
-|:----------|:-------|:------------|
-| 1850s      | Prehistory  | evolution, geology, anthropology |
-| 1950s      | Culture-Historical  | <span style="color:red;">similarities</span>, typology, <span style="color:blue;">chronology</span> |
-| 1960s      | New archaeology  | chain operative, statistics, <span style="color:blue;">chronology (C14) </span> |
-| 1980s      | Post-processual  | <span style="color:red;">dissimilarities</span>, cultural relativism |
-| 2020s      | Tool-driven  | Big data, ML / DL, aDNA |
-
-: {tbl-colwidths="[15,35,50]"}
-
-:::
-
-### Prehistory
-
-<div class="row">
-<div class="column33">![Boucher de Perthes, 1847, *Antiquités celtiques et  antédiluviennes*](images/hist-archaeo-prehistoire-perthes.jpg){height=350px}</div>
-<div class="column66">Concomitance between biological "species" (C. Darwin) and archaeological "types" (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)</div>
-</div>
-
-### Culture-Historical
-
-<div class="row">
-<div class="column33">!['Monument druidique près de Gisors': Baron Taylor, 1824, *Voyage pittoresque et romantique dans l’ancienne France*](images/hist-archaeo-romantic.png){height=350px}</div>
-<div class="column66">Focused on chronology, rooted in academic/national traditions and develops in parallel with History as a 'scientific' discipline taught in universities. </div>
-</div>
-
-### New Archaeology
-
-<div class="row">
-<div class="column33">![R. & S. Binford, 1968, *New Perspectives in Archaeology*](images/hist-archaeo-newarchaeo-binford.png){height=350px}</div>
-<div class="column">Advent of statistics and promotion of demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
-</div>
-
-### Post-Processual
-
-<div class="row">
-<div class="column33">![Laurent Olivier, 2008, *Le sombre abîme du temps*](images/hist-archaeo-postprocess-sombreabime.png){height=350px}</div>
-<div class="column66">*Post-processualism*, or Post-positivism, archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity) </div>
-</div>
-
-### Tool-driven
-
-<div class="row">
-<div class="column33">![Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer](images/hist-archaeo-ai-ml-angkor.jpg){height=350px}</div>
-<div class="column66">With the development of computational archaeology (eg. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
-</div>
-</div>
-
-:::
-
-::: footer
-Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practice*, p. 39 ff. ](https://ebookcentral.proquest.com/lib/oxford/reader.action?docID=6178544&ppg=39)
-:::
-
 
 ## A classer
 

@@ -14,9 +14,13 @@
 .column33 {
   float: left;
   width: 33%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.column50 {
+  float: left;
+  width: 50%;
   vertical-align: middle;
   align-items: center;
 }
@@ -24,9 +28,6 @@
 .column66 {
   float: left;
   width: 66%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   vertical-align: middle;
   align-items: center;
 }
@@ -47,8 +48,9 @@
 
 /* IDE */
 .captiontext {
+  text-align: center;
   font-style: italic;
-  font-size: 30px;
+  font-size: 25px;
   color: #605b56;
 }
 
@@ -57,7 +59,7 @@
 }
 
 .midtext {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .worldwide {
