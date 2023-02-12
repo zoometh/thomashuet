@@ -597,10 +597,10 @@ controlled vocabulary -> scale
 
 <div class="row">
 <div class="column">✔️ Fitting</div>
-<div class="column">❌ Fitting]</div>
+<div class="column">❌ Fitting</div>
 </div>
 
-### Regularity
+### <span class="midtext">Regularity</span>
 
 <div class="row">
 
@@ -616,7 +616,7 @@ reproducing data regularity (central tendencies)
 
 </div>
 
-### Robustness
+### <span class="midtext">Robustness</span>
 
 <div class="row">
 
@@ -632,7 +632,7 @@ not sensitive to small changes in data (reproducible)
 
 </div>
 
-### Parsimony
+### <span class="midtext">Parsimony</span>
 
 <div class="row">
 
@@ -649,7 +649,7 @@ all things being equal, the simplest possible explanation for a phenomenon is al
 </div>
 
 
-### Versioning
+### <span class="midtext">Versioning</span>
 
 <div class="row">
 
@@ -702,6 +702,10 @@ Mesolithic %>%
 Processed data<br>
 <span class="midtext">Working data (i.e. not definitive)</span>
 
+```{=html}
+<iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/stats/data-processed/data-processed" title="Processed data"></iframe>
+```
+
 ```{r}
 #| echo: false
 #| eval: true
@@ -710,7 +714,7 @@ data("Mesolithic")
 Mesolithic.pers <- round(Mesolithic/rowSums(Mesolithic)*100, 1)
 rownames(Mesolithic.pers) <- paste0("site_", rownames(Mesolithic.pers))
 font.size <- "20pt"
-Mesolithic.pers %>% 
+Mesolithic.pers <- Mesolithic.pers %>% 
   DT::datatable(
     options=list(
       initComplete = htmlwidgets::JS(
@@ -719,13 +723,18 @@ Mesolithic.pers %>%
         "}")
     ) 
   ) %>%
-    formatStyle(
+  formatStyle(
     colnames(Mesolithic.pers),
     background = styleColorBar(Mesolithic.pers$Microliths, 'lightblue'),
     backgroundSize = '100% 90%',
     backgroundRepeat = 'no-repeat',
     backgroundPosition = 'center'
   )
+print(Mesolithic.pers)
+```
+
+```{=html}
+Mesolithic.pers
 ```
 
 
@@ -757,8 +766,8 @@ Metadata<br>
 ```{r}
 img <- exiftoolr::exif_read("C:/Rprojects/thomashuet/teachings/stats/images/data-meta-photo-microliths.jpg")
 
-print(paste0("<b>Caption-Abstract</b>: ", img[["Caption-Abstract"]]))
-print(paste0("<b>Copyright</b>: ", img[["Copyright"]]))
+print(paste0("Caption-Abstract: ", img[["Caption-Abstract"]]))
+print(paste0("Copyright: ", img[["Copyright"]]))
 ```
 
 
