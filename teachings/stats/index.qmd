@@ -580,7 +580,7 @@ controlled vocabulary -> scale
 
 ::: {.panel-tabset}
 
-### <span class="tabsetheadertext">Explanatory</span>
+### <span class="midtext">Explanatory</span>
 
 <div class="row">
 <center>not over- or under-fitting</center>
