@@ -44,6 +44,14 @@
   text-align: center;
 }
 
+
+/* IDE */
+.captiontext {
+  font-style: italic;
+  font-size: 30px;
+  color: #605b56;
+}
+
 .smalltext {
   font-size: 25px;
 }

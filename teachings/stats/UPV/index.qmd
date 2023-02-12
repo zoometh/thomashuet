@@ -8,6 +8,8 @@ format:
     chalkboard: true
     scrollable: true
     preview-links: true
+    reference-location: document
+    footnotes-hover: true
     logo: ../images/inst-uni-oxford_.png
     css: styles.css
     footer: "Statistics in Archaeology <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 45px;vertical-align: middle;'> CNRS ASM, Université Paul-Valéry, Feb 2023 - Thomas Huet <https://tinyurl.com/stats-upv>"
@@ -115,7 +117,7 @@ This presentation will show you examples of **statistical reasoning** in archaeo
 
 <div class="row">
 <div class="column33">![Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer](../images/hist-archaeo-ai-ml-angkor.jpg){height=350px}</div>
-<div class="column66">With the development of computational archaeology (eg. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
+<div class="column66">With the development of computational archaeology (e.g. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
 </div>
 </div>
 
@@ -126,7 +128,7 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 :::
 
 
-## Birth of statistics
+## Birth of statistics 1/2
 
 ::: {.panel-tabset}
 
@@ -134,8 +136,8 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 ### Mean
 
 <div class="row">
-<div class="column">![Parthenon, Greece, 5<sup>th</sup> BC](../images/The_Parthenon_in_Athens.jpg){height=350px}</div>
-<div class="column">![The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic (HM)](../images/hist-stat-mean-pythagore.png){height=350px}</div>
+<div class="column">![Sex ratio at birth](../images/hist-stat-mean-birth-sex-ratio.png){height=350px}</div>
+<div class="column">![The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic](../images/hist-stat-mean-pythagore.png){height=350px}</div>
 </div>
 
 ### Median
@@ -160,11 +162,12 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 <div class="column">![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=350px}</div>
 </div>
 
-### Computing for peace
+:::
 
-### IBM dominion
+## Birth of statistics 2/2
 
-### PC era
+::: {.panel-tabset}
+
 
 ### Expert Systems
 
@@ -175,7 +178,7 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 ### Artificial Intelligence & Machine Learning
 
 <div class="row">
-<div class="column">![Prompted image with Midjourney AI, 2022](../images/hist-computer-science-ai.png){height=300px}</div>
+<div class="column">![Prompted text with ChatGPT, 2023](../images/hist-computer-science-ai-chatGPT.png){height=300px}</div>
 </div>
 
 :::
@@ -187,7 +190,7 @@ Statistik (description of a state, a country): collecting population data throug
 *p-value* is a test value, 95% = > .05
 :::
 
-## <span style="color:white;">Glossary of statistics</span> {background-image="../images/blackboard.png"}
+## <span style="color:white;">Glossary of statistics</span> {background-image="../images/blackboard-fr.png"}
 
 
 ## Type of statistics
@@ -234,22 +237,24 @@ Statistik (description of a state, a country): collecting population data throug
 ### Exploratory
 
 <div class="row">
-<div class="column">![](../images/stat-fa.png){height=350px}</div>
-<div class="column">**Clustering** method, we move from a description to a modelling identifying central tendencies</div>
+<div class="column33">![](../images/stat-fa.png){height=350px}</div>
+<div class="column66">**Clustering** method, we move from a description to a modelling identifying central tendencies</div>
 </div>
 
 ### Confirmatory
 
 <div class="row">
-<div class="column">![](../images/stat-pvalue-1.png){height=350px}</div>
-<div class="column">**Test** of
+<div class="column33">**Test** of<br>![](../images/stat-pvalue-1.png){height=350px}</div>
+<div class="column66">
 <ul>
-<li>***conformity*** (goodness-of-fit) between the observed population and a theoritical distribution (eg. normal law)</li>
+<li>***conformity***[^1] between the observed population and a theoretical distribution (e.g. normal law)</li>
 <li>***homogeneity*** between different populations</li>
 <li>***relation*** between several variables from the same population</li>
 </ul>
 </div>
 </div>
+
+[^1]: goodness-of-fit
 
 :::
 
@@ -265,9 +270,15 @@ Archaeology establishes facts and proposes **models** to connect these facts
 
 ### MRT
 
+
 <div class="row">
-<div class="column33"><center>![Model of archaeological reasoning by Renfrew and Bahn, 2020](../images/theo-archaeo-renfrewbahn.jpg){height=300px}</center></div>
-<div class="column66"><em><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span></em><br><small> Robert K. Merton, 1968</small></center></div>
+
+<div class="column33"><center>
+![](../images/theo-archaeo-renfrewbahn.jpg){height=300px}
+<span class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</span>
+</center></div>
+
+<div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span><br><small> Robert K. Merton, 1968</small></center></div>
 </div>
 
 ### Example
@@ -747,7 +758,7 @@ print(paste0("<b>Copyright</b>: ", img[["Copyright"]]))
 ### Missing
 
 Missing data (`NA`, <em>Not Available</em>)<br>
-<span class="midtext">Lack of knowledge, eg. `NA` (<em>Not Available</em>)</span>
+<span class="midtext">Lack of knowledge, e.g. `NA` (<em>Not Available</em>)</span>
 
 ```{r}
 #| echo: true 
@@ -796,7 +807,7 @@ colSums(df, na.rm = T)
 
 <div class="row">
 <div class="column">![](../images/stat-scale-nom.png){height=350px}</div>
-<div class="column">**Qualitative** categories that cannot be ordered (eg. "Green", "Yellow", "Red").</div>
+<div class="column">**Qualitative** categories that cannot be ordered (e.g. "Green", "Yellow", "Red").</div>
 </div>
 
 

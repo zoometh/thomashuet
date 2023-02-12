@@ -28,22 +28,17 @@ library(dplyr)
 library(archdata)
 ```
 
-```{r include=FALSE}
-library(shiny.i18n)
+## Legend size
 
-i18n <- Translator$new(translation_json_path = "translation.json")
+<div class="row">
 
-get_translation <- function(translator_object, language_code, content_key) {
-  translator_object$set_translation_language(language_code)
-  translator_object$t(content_key)
-}
+<div class="column33"><center>
+![](../images/theo-archaeo-renfrewbahn.jpg){height=300px}
+<span class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</span>
+</center></div>
 
-```
-
-## Language
-
-`r { get_translation(i18n, "fr", "My house is large") }`
-
+<div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span><br><small> Robert K. Merton, 1968</small></center></div>
+</div>
 
 ## background HTML
 
