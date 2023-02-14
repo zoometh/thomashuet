@@ -7,6 +7,8 @@ library(ggplot2)
 library(archdata)
 
 data("Mesolithic")
+# lbl <- paste0("site-", row.names(Mesolithic))
+
 
 ui <- fluidPage(
   h3("British Mesolithic assemblages (n = 33 sites)"),
@@ -30,37 +32,52 @@ server <- function(input, output, session){
   output$graph <- renderPlotly({
     if(input$diagram == "points"){
       x <- Mesolithic[ , input$category]
-      #lbls <- paste0("site-", row.names(Mesolithic), "<br>", as.character(x))
+      df <- data.frame(x = x,
+                       y = rep(0, length(x)),
+                       lbl = paste0("site-", row.names(Mesolithic), "<br> n = ", x)
+      )
+      # print(x)
+      # lbl <- paste0("site-", row.names(Mesolithic))
+      # print(lbl)
       if(input$blockaxe == "No"){
-        gplot <- ggplot() +
-          geom_point(aes(y = rep(0, length(x)), x = x)) +
-          theme_bw()
-      } 
-      else if(input$blockaxe == "Yes"){
-        # print(x)
-        gplot <- ggplot() +
-          geom_point(aes(y = rep(0, length(x)), x = x)) +
+        gplot <- ggplot(df) +
+          geom_point(aes(y = y, x = x, text = lbl)) +
+          # geom_text(aes(y = rep(0, length(x)), x = x), label = lbl) +
           theme_bw() +
-          xlim(0, max(Mesolithic))
+          theme(axis.title.y=element_blank(),
+                axis.text.y=element_blank(),
+                axis.ticks.y=element_blank())
+      } 
+      if(input$blockaxe == "Yes"){
+        # print(x)
+        gplot <- ggplot(df) +
+          geom_point(aes(y = y, x = x, text = lbl)) +
+          # geom_point(aes(y = rep(0, length(x)), x = x)) +
+          theme_bw() +
+          xlim(0, max(Mesolithic)) +
+          theme(axis.title.y=element_blank(),
+                axis.text.y=element_blank(),
+                axis.ticks.y=element_blank())
       }
       # print(ggplotly(gplot))
-      gplot
     }
-    else if(input$diagram == "histogram"){
+    if(input$diagram == "histogram"){
       # x <- input$category
       # bins <- seq(min(x), max(x), length.out = input$bins + 1)
-      print(
-        plot_ly(Mesolithic,
-                x = ~get(input$category),
-                nbinsx = input$bins,
-                type = "histogram") %>%
-          layout(xaxis = list(
-            title = input$category),
-            yaxis = list(
-              title = 'n')
-          )
-      )
+      gplot <- plot_ly(Mesolithic,
+                       x = ~get(input$category),
+                       nbinsx = input$bins,
+                       type = "histogram",
+                       marker = list(color = 'rgb(158,202,225)',
+                                     line = list(color = 'rgb(8,48,107)',
+                                                 width = 1.5))) %>%
+        layout(
+          # line = list(color = 'rgb(8,48,107)', width = 1.5),
+          xaxis = list(title = input$category),
+          yaxis = list(title = 'n')
+        )
     }
+    ggplotly(gplot, tooltip="text")
   })
 }
 

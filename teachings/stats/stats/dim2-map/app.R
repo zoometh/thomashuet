@@ -17,8 +17,8 @@ OxfordPots[OxfordPots$Place == "Gatcombe", "NewForestPct"] <- 0
 
 ## New Forest vs Oxford
 finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
-labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
-finePots <- finePots[ , c("Place", "OxfordPct", "NewForestPct")]
+finePots$labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
+finePots <- finePots[ , c("Place", "labels", "OxfordPct", "NewForestPct")]
 
 ## by transport
 Oxford.water <- subset(OxfordPots, WaterTrans == 1)
@@ -78,38 +78,42 @@ ui <- fluidPage(
     mainPanel(
       tabsetPanel(
         tabPanel("Ratio", 
-                 plotlyOutput('ratioPlot')),
+                 plotlyOutput('ratioPlot', width = 1000, height = 600)),
         tabPanel("Map", 
                  leafletOutput("mymap", width = 800, height = 600)),
         tabPanel("Data", 
-                 DT::dataTableOutput(outputId = "dataframePlot"))
+                 DT::dataTableOutput(outputId = "dataframePlot")),
+        tabPanel("Source", 
+                 uiOutput("sources"))
       )
     )
-  ),
-  HTML("Sources:<br>
-  Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.<br>
-  Hodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119.
-     ")
+  )#,
+  # HTML("Sources:<br>
+  # Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.<br>
+  # Hodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119.
+  #    ")
 )
 
 server <- function(input, output, session) {
-  
+  output$sources <- renderUI({HTML(
+("Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.<br>Hodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119.
+     "))
+  })
   output$ratioPlot <- renderPlotly({
     if(input$pie == "raw"){
       finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
       labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
-      print("edew")
       t <- list(
         family = "sans serif",
         size = 14,
         color = "blue")
       xy.size <- 6
-
+      
       OxfordP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-oxford.jpg"
       NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
       OxfordP.txt <- RCurl::base64Encode(readBin(OxfordP, "raw", file.info(OxfordP)[1, "size"]), "txt")
       NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(NewForP)[1, "size"]), "txt")
-
+      
       m <- list(
         l = 50,
         r = 50,
@@ -117,9 +121,9 @@ server <- function(input, output, session) {
         t = 50,
         pad = 20
       )
-
-      plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels,
-              type = 'scatter', mode = 'markers') %>%
+      
+      fig <- plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels,
+                     type = 'scatter', mode = 'markers') %>%
         add_text(textfont = t, textposition = 'middle right') %>%
         layout(title = paste0('Ratio Oxford pottery/New Forest pottery for ', nrow(finePots),
                               ' Late Roman sites'),
@@ -156,7 +160,7 @@ server <- function(input, output, session) {
       # fig
       # print("dedede")
     }
-    if(input$pie == "pie"){
+    else if(input$pie == "pie"){
       fig <- plot_ly()
       finePots <- OxfordPots[!is.na(OxfordPots$OxfordPct) & !is.na(OxfordPots$NewForestPct), ]
       labels <- paste0(" ", rownames(finePots), ". ", finePots$Place)
@@ -171,13 +175,17 @@ server <- function(input, output, session) {
                                name = labels, domain = list(row = ct, column = 0))
         ct <- ct + 1
       }
-      fig %>% layout(title = "Ratios", showlegend = F,
-                     grid=list(rows=ct, columns=1),
-                     xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-                     yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+      fig <- fig %>% layout(title = "Ratios", showlegend = F,
+                            grid=list(rows=ct, columns=1),
+                            xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+                            yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
     }
+    fig
   })
   output$mymap <- renderLeaflet({
+    finePots$labels.full <- paste0("<b>", finePots$label, "</b><br>",
+                                   "Oxford %: ", finePots$OxfordPct, "<br>",
+                                   "New Forest %: ", finePots$NewForestPct)
     map <- leaflet(Place.coords) %>%
       addProviderTiles(providers$"OpenStreetMap", group = "OSM") %>%
       addProviderTiles(providers$"Esri.WorldImagery", group = "Ortho") %>%
@@ -189,7 +197,7 @@ server <- function(input, output, session) {
                          lat = ~lat,
                          weight = 1,
                          radius = 4,
-                         popup = ~Place,
+                         popup = ~labels.full,
                          color = "blue",
                          fillOpacity = 1,
                          opacity = 1) %>%

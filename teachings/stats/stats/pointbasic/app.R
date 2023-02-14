@@ -34,7 +34,8 @@ ui <- fluidPage(
     ),
     mainPanel(
       fluidRow(plotOutput(outputId = "spatPlot",
-                          height = "600px")
+                          height = "600px",
+                          width = "800px")
       )
     )
   )

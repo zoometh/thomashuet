@@ -1,7 +1,11 @@
 ---
-title: "Statistics & Computer Scripts in Archaeology"
+title: "Statistics in Archaeology"
 # subtitle: "Create beautiful interactive slide decks with Reveal.js"
 author: "Thomas Huet (University of Oxford, EAMENA project)"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/masterteachings/stats/images/stat-fa-camel-2.png"
+    data-background-size: "40%"
+    data-background-opacity: "0.2"
 format:
   revealjs: 
     slide-number: true
@@ -34,31 +38,7 @@ library(dplyr)
 
 data(OxfordPots)
 
-path.img <- "C:/Rprojects/thomashuet/teachings/stats/images/"
 ```
-
-This presentation will show you examples of **statistical reasoning** in archaeology and how **computational archaeology** helps to manage archaeological datasets 
-
-<br>
-
-<table>
-<thead>
-<tr>
-<th rowspan="2">software 💿</th>
-<th>semantic 🖼 📜 🔢 🐫</th>
-</tr>
-<tr>
-<th>logic <span style="background-color:black; color:white;">>_ print('hello')</span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">hardware 💻</td>
-</tr>
-</tbody>
-</table>
-
-
 
 ## Historiography of Archaeology 1/2
 
@@ -87,7 +67,10 @@ This presentation will show you examples of **statistical reasoning** in archaeo
 ### Culture-Historical
 
 <div class="row">
-<div class="column33">!['Monument druidique près de Gisors': Baron Taylor, 1824, *Voyage pittoresque et romantique dans l’ancienne France*](images/hist-archaeo-romantic.png){height=350px}</div>
+<div class="column33">![](images/hist-archaeo-romantic.png){height=350px}
+<div class="captiontext">'Monument druidique près de Gisors': Baron Taylor, 1824, *Voyage pittoresque et </div>
+</div>
+
 <div class="column66">Focused on chronology, rooted in academic/national traditions and develops in parallel with History as a 'scientific' discipline taught in universities. </div>
 </div>
 
@@ -101,21 +84,28 @@ This presentation will show you examples of **statistical reasoning** in archaeo
 ### New Archaeology
 
 <div class="row">
-<div class="column33">![R. & S. Binford, 1968, *New Perspectives in Archaeology*](images/hist-archaeo-newarchaeo-binford.png){height=350px}</div>
+<div class="column33">![](images/hist-archaeo-newarchaeo-binford.png){height=350px}
+<br><div class="captiontext">R. & S. Binford, 1968, *New Perspectives in Archaeology*</div>
+</div>
 <div class="column">Advent of statistics and promotion of demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
 </div>
 
 ### Post-Processual
 
 <div class="row">
-<div class="column33">![Laurent Olivier, 2008, *Le sombre abîme du temps*](images/hist-archaeo-postprocess-sombreabime.png){height=350px}</div>
+<div class="column33">![](images/hist-archaeo-postprocess-sombreabime.png){height=350px}
+<div class="captiontext">Laurent Olivier, 2008, *Le sombre abîme du temps*</div>
+</div>
 <div class="column66">*Post-processualism*, or Post-positivism, archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity) </div>
 </div>
 
 ### Tool-driven
 
 <div class="row">
-<div class="column33">![Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer](images/hist-archaeo-ai-ml-angkor.jpg){height=350px}</div>
+
+<div class="column33">![](images/hist-archaeo-ai-ml-angkor.jpg){height=350px}
+<div class="captiontext">Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer</div>
+</div>
 <div class="column66">With the development of computational archaeology (e.g. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
 </div>
 </div>
@@ -135,33 +125,67 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 ### Mean
 
 <div class="row">
-<div class="column">![Sex ratio at birth](images/hist-stat-mean-birth-sex-ratio.png){height=350px}</div>
-<div class="column">![The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic](images/hist-stat-mean-pythagore.png){height=350px}</div>
+
+<div class="column">
+![](images/hist-stat-mean-birth-sex-ratio.png){height=350px}
+<div class="captiontext">Sex ratio at birth</div>
+</div>
+
+<div class="column">
+![](images/hist-stat-mean-pythagore.png){height=350px}
+<div class="captiontext">The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic</div>
+</div>
+
 </div>
 
 ### Median
 
 <div class="row">
-<div class="column">![Title page of E. Wright, 1599, '*Certaine Errors in Navigation*'*](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png){height=350px}</div>
+
+<div class="column">
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png){height=350px}
+<div class="captiontext">Title page of E. Wright, 1599, '*Certaine Errors in Navigation*'*</div>
+</div>
+
 <div class="column">![](images/hist-stat-median-compass-map.png){height=350px}</div>
+
 </div>
 
 ### Significance test
 
 <div class="row">
-<div class="column">![J. Arbuthnot, 1629-1710 census. Published in 1711, '*Philosophical transactions, 27*' with this statement: '*From whence it follows, that it is Art, not Chance, that governs*'](images/aut-arbuthnot-1629-1710.png){height=350px}</div>
-<div class="column">![*p-value* and *Z-score*, two normalised test thresholds to estimate the significance of an observed distribution *vs* a random distribution](images/stat-pvalue.png){height=350px}</div>
+
+<div class="column">
+![](images/aut-arbuthnot-1629-1710.png){height=350px}
+<div class="captiontext">J. Arbuthnot, 1629-1710 census. Published in 1711, '*Philosophical transactions, 27*' with this statement: '*From whence it follows, that it is Art, not Chance, that governs*'</div>
+</div>
+
+<div class="column">
+![](images/stat-pvalue.png){height=350px}
+<div class="captiontext">*p-value* and *Z-score*, two normalised test thresholds to estimate the significance of an observed distribution *vs* a random distribution</div>
+</div>
+
 </div>
 
 
 ### Normal law
 
 <div class="row">
-<div class="column">![A. Quetelet, 1821-1833 census](images/aut-quetelet_1821-33_census.png){height=350px}</div>
-<div class="column">![A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=350px}</div>
+
+<div class="column">
+![](images/aut-quetelet_1821-33_census.png){height=350px}
+<div class="captiontext">A. Quetelet, 1821-1833 census</div>
+</div>
+
+<div class="column">
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=350px}
+<div class="captiontext">A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied</div>
+</div>
+
 </div>
 
 :::
+
 
 ## Birth of statistics 2/2
 
@@ -171,15 +195,20 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 ### Expert Systems
 
 <div class="row">
-<div class="column">![Garry Kasparov *vs* Deep Blue, 1996-1997](images/hist-computer-science-expert.jpg){height=300px}</div>
+<div class="column">![](images/hist-computer-science-expert.jpg){height=300px}
+<div class="captiontext">Garry Kasparov *vs* Deep Blue, 1996-1997</div>
 </div>
+</div>
+
 
 ### AI/ML
 
 Artificial Intelligence & Machine Learning
 
 <div class="row">
-<div class="column">![Prompted text with ChatGPT, 2023](images/hist-computer-science-ai-chatGPT.png){height=300px}</div>
+<div class="column">![](images/hist-computer-science-ai-chatGPT.png){height=300px}
+<div class="captiontext">Prompted text with ChatGPT, 2023</div>
+</div>
 </div>
 
 :::
@@ -275,7 +304,7 @@ Archaeology establishes facts and proposes **models** to connect these facts
 
 <div class="column33"><center>
 ![](images/theo-archaeo-renfrewbahn.jpg){height=300px}
-<span class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</span>
+<div class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</div>
 </center></div>
 
 <div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span><br><small> Robert K. Merton, 1968</small></center></div>
@@ -330,8 +359,16 @@ middle range theories
 
 
 <div class="row">
-<div class="column"><center>![Waldo Tobler](images/aut-tobler.jpg){height=250px}</center></div>
-<div class="column"><em><center>"everything is related to everything else, but near things are more related than distant things"</em><br><small> Tobler, 1970</small></center></div>
+
+<div class="column">
+![](images/aut-tobler.jpg){height=250px}
+<div class="captiontext">Waldo Tobler</div>
+</div>
+
+<div class="column">
+<em><center>"everything is related to everything else, but near things are more related than distant things"</em><br><small> Tobler, 1970</small></center>
+</div>
+
 </div>
 
 
@@ -339,24 +376,49 @@ middle range theories
 
 
 <div class="row">
-<div class="column">![](images/where-bruegel.jpg){height=350px}<br><span class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</span></div>
-<div class="column">![](images/where-macedonia.png){height=350px}<br><span class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</span></div>
+
+<div class="column">
+![](images/where-bruegel.jpg){height=350px}
+<div class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</div>
+</div>
+
+<div class="column">
+![](images/where-macedonia.png){height=350px}
+<div class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</div>
+</div>
+
 </div>
 
 
 ### When
 
 <div class="row">
-<div class="column">![](images/when-geology.png){height=350px}<br><span class="captiontext">Spiral of geological times</span></div>
-<div class="column">![](images/when-strati.jpg){height=350px}<br><span class="captiontext">Startigraphic log and corresponding Harris matrix</span></div>
+
+<div class="column">
+![](images/when-geology.png){height=350px}
+<div class="captiontext">Spiral of geological times</div>
+</div>
+
+<div class="column">
+![](images/when-strati.jpg){height=350px}
+<div class="captiontext">Startigraphic log and corresponding Harris matrix</div>
+</div>
+
 </div>
 
 
 ### What
 
 <div class="row">
-<div class="column">![](images/what-1950.jpg){height=350px}<br><span class="captiontext">An American suburb in the 1950s</span></div>
-<div class="column">![](images/what-pottery.jpg){height=350px}<br><span class="captiontext">Seriation of Chassean potteries in South France</span></div>
+
+<div class="column">
+![](images/what-1950.jpg){height=350px}
+<div class="captiontext">An American suburb in the 1950s</div>
+</div>
+
+<div class="column">![](images/what-pottery.jpg){height=350px}<br><div class="captiontext">Seriation of Chassean potteries in South France</div>
+</div>
+
 </div>
 
 
@@ -364,15 +426,33 @@ middle range theories
 ### How
 
 <div class="row">
-<div class="column">![](images/how-fordism.jpg){height=350px}<br><span class="captiontext">Assembly line work in a Ford factory</span></div>
-<div class="column">![](images/how-co.jpg){height=350px}<br><span class="captiontext">*Chaine opératoire* of flint lamellas knapping</span></div>
+
+<div class="column">
+![](images/how-fordism.jpg){height=350px}
+<div class="captiontext">Assembly line work in a Ford factory</div>
+</div>
+
+<div class="column">
+![](images/how-co.jpg){height=350px}
+<div class="captiontext">*Chaine opératoire* of flint lamellas knapping</div>
+</div>
+
 </div>
 
 ### Who
 
 <div class="row">
-<div class="column">![](images/who-family.jpg){height=350px}<br><span class="captiontext">The British Royal Family</span></div>
-<div class="column">![](images/who-haak_afo.jpg){height=350px}<br><span class="captiontext">Estimate DNA mixture proportions of Modern Europeans</span></div>
+
+<div class="column">
+![](images/who-family.jpg){height=350px}
+<div class="captiontext">The British Royal Family</div>
+</div>
+
+<div class="column">
+![](images/who-haak_afo.jpg){height=350px}
+<div class="captiontext">Estimate DNA mixture proportions of Modern Europeans</div>
+</div>
+
 </div>
 
 
@@ -390,6 +470,7 @@ middle range theories
 
 ```{r}
 #| fig-width: 8
+
 df <- data.frame(feat = c("A", "B", "C"),
                  where = c(20, 60, 60),
                  when = c(10, 30, 20),
@@ -702,19 +783,15 @@ Mesolithic %>%
 Processed data<br>
 <span class="midtext">Working data (i.e. not definitive)</span>
 
-```{=html}
-<iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/stats/data-processed/data-processed" title="Processed data"></iframe>
-```
 
 ```{r}
-#| echo: false
 #| eval: true
+#| echo: false
 
 data("Mesolithic")
-Mesolithic.pers <- round(Mesolithic/rowSums(Mesolithic)*100, 1)
-rownames(Mesolithic.pers) <- paste0("site_", rownames(Mesolithic.pers))
+rownames(Mesolithic) <- paste0("site_", rownames(Mesolithic))
 font.size <- "20pt"
-Mesolithic.pers <- Mesolithic.pers %>% 
+Mesolithic %>% 
   DT::datatable(
     options=list(
       initComplete = htmlwidgets::JS(
@@ -724,19 +801,13 @@ Mesolithic.pers <- Mesolithic.pers %>%
     ) 
   ) %>%
   formatStyle(
-    colnames(Mesolithic.pers),
-    background = styleColorBar(Mesolithic.pers$Microliths, 'lightblue'),
+    colnames(Mesolithic),
+    background = styleColorBar(Mesolithic$Microliths, 'lightblue'),
     backgroundSize = '100% 90%',
     backgroundRepeat = 'no-repeat',
     backgroundPosition = 'center'
   )
-print(Mesolithic.pers)
 ```
-
-```{=html}
-Mesolithic.pers
-```
-
 
 ### Aggregated
 
@@ -1183,117 +1254,3 @@ Seriation = Guttman effect = horse shoe = arc
 ::: footer
 Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary*](https://ojs.elte.hu/dissarch/article/view/2262/2082)
 :::
-
-## Computers in Archaeology
-
-::: {.panel-tabset}
-
-
-### Stack
-
-<br>
-
-<table class="table">
-<thead>
-<tr>
-<th><a href="https://www.r-project.org/">
-<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
-</a></th>
-<th><a href="https://www.python.org/">
-<img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
-</a></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2"><a href="https://github.com">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
-</a></td>
-</tr>
-</tbody>
-</table>
-
-
-### GitHub
-
-<a href="https://github.com">
-<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
-</a>
-The 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)
-
-### R
-
-<a href="https://www.r-project.org/">
-<img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo">
-</a>
-<p>
-R is a scripting language for data science. It is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> <span class=worldwide>Worldwide</span></p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist and Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
-
-<table class="table">
-<thead>
-<tr>
-<th>R</th>
-<th>description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="it-ide">IDE</td>
-<td>[RStudio](https://www.rstudio.com/) is THE graphical interface for R, Rstudio is also in the cloud ([RStudio.cloud](https://rstudio.cloud/)), [VS Code](https://code.visualstudio.com/) is a standalone source code editor multi-platforms and multi-languages</td>
-</tr>
-<tr>
-<td class="it-layouts">layouts</td>
-<td>[R markdown](https://rmarkdown.rstudio.com/) is a notebook interface for report generation, [Shiny](https://shiny.rstudio.com/) allows the development of web interactive applications, [Quarto](https://quarto.org/) to create Powerpoint-like web interactive documents</td>
-</tr>
-<tr>
-<td class="it-libraries">libraries</td>
-<td>[openxlsx](https://cran.r-project.org/web/packages/openxlsx/index.html) to read/write Excel files, [ggplot2](https://ggplot2.tidyverse.org/) to create plots, [sf](https://cran.r-project.org/web/packages/sf/index.html) makes R a GIS, [igraph](https://igraph.org/r/) for network analysis, [ODBC](https://cran.r-project.org/web/packages/odbc/index.html) to connect SQL databases, [rcarbon](https://cran.r-project.org/web/packages/rcarbon/index.html) for radiocarbon dates calibration, [Momocs](https://cran.r-project.org/web/packages/Momocs/index.html) for geometric morphometric methods, [leaflet](https://cran.r-project.org/web/packages/leaflet/index.html) creates interactive maps, [plotly](https://plotly.com/r/) creates interactive plots, etc.</td>
-</tr>
-<tr>
-<td class="it-resources">resources</td>
-<td>[sthda.com](http://www.sthda.com/english/wiki/ggplot2-line-plot-quick-start-guide-r-software-and-data-visualization) has good tutorials, [stackoverflow](https://stackoverflow.com/) is probably the place where you will find the answer you need, if you need some open software for archaeology go to [open-archaeo](https://open-archaeo.info/)
-</td>
-</tr>
-</tbody>
-</table>
-
-### Python
-
-<a href="https://www.python.org/">
-<img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-</a>
-<p>
-Python is a high-level programming language. It is the 2️⃣<sup>st</sup> programming language used by archaeologists, and the 1️⃣<sup>st</sup> <span class=worldwide>Worldwide</span></p><small>
-</p><small>- [Tiobe index 2022](https://www.tiobe.com/tiobe-index/) + [Batist and Roe, 2022](https://youtu.be/tUhHhzGSgbk?t=7499)</small>
-
-<table class="table">
-<thead>
-<tr>
-<th>Python</th>
-<th>description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="it-ide">IDE</td>
-<td>[VS Code](https://code.visualstudio.com/) is THE best standalone source code editor multi-platforms and multi-languages. The Google colab.research.google.com online platform</td>
-</tr>
-<tr>
-<td class="it-layouts">layouts</td>
-<td>[Jupyter](https://jupyter.org/) is a notebook interface for report generation. [Dash](https://plotly.com/python/getting-started/) allows the development of web interactive applications, [Quarto](https://quarto.org/) to create Powerpoint-like web interactive documents</td>
-</tr>
-<tr>
-<td class="it-libraries">libraries</td>
-<td>[openpyxl](https://openpyxl.readthedocs.io/en/stable/) to read/write Excel files, [matplotlib](https://matplotlib.org/) to create plots, [Geopandas](https://geopandas.org/en/stable/) makes PythonR a GIS, [networkx](https://networkx.org/) for network analysis, [pyodbc](https://pypi.org/project/pyodbc/) to connect SQL databases, [iosacal](https://pypi.org/project/iosacal/) for radiocarbon dates calibration, [folium](https://pypi.org/project/folium/) creates interactive leaflet maps, [plotly](https://plotly.com/python/) creates interactive plots, etc.</td>
-</tr>
-<tr>
-<td class="it-resources">resources</td>
-<td>[stackoverflow](https://stackoverflow.com/) is probably the place where you will find the answer you need, if you need some open software for archaeology go to [open-archaeo](https://open-archaeo.info/)
-</td>
-</tr>
-</tbody>
-</table>
-
-
-:::  
-

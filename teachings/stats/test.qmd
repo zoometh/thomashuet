@@ -33,6 +33,176 @@ library(archdata)
 library(kableExtra)
 ```
 
+## Conformity
+
+::: {.panel-tabset}
+
+### *1<sup>st</sup> law*
+
+
+<div class="row">
+
+<div class="column">
+![Waldo Tobler](images/aut-tobler.jpg){height=250px}
+<div class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</div>
+</div>
+
+<div class="column">
+<em><center>"everything is related to everything else, but near things are more related than distant things"</em><br><small> Tobler, 1970</small></center>
+</div>
+
+</div>
+
+
+### Where
+
+
+<div class="row">
+
+<div class="column">
+![](images/where-bruegel.jpg){height=350px}
+<div class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</div>
+</div>
+
+<div class="column">
+![](images/where-macedonia.png){height=350px}
+<div class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</div>
+</div>
+
+</div>
+
+:::
+
+
+
+## Conformity
+
+::: {.panel-tabset}
+
+### Compare
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+```{r}
+#| fig-width: 8
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+sites <- rownames(df)
+
+ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) + 
+  theme_bw() +
+  geom_point(alpha = 0.5, size = 17) +
+  geom_point(size = 1, color = "black") +
+  theme_showarrows() +
+  theme(legend.position="none")
+```
+
+:::
+
+::: {.column width="30%"}
+
+```{r}
+datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         # pagingType = "numbers",
+                         # PageLength = 1,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
+```
+
+:::
+
+::::
+
+### Regress
+
+```{=html}
+<iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/stats/dim2/oxfordwater" title="Regression"></iframe>
+```
+
+
+### Coefficient
+
+<div class="column">
+<div class="midtext">
+<table class="table">
+<thead>
+<tr>
+<th>cor</th>
+<th>interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>...</td>
+</tr>
+<tr>
+<td>0.9</td>
+<td>oustanding</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>excellent</td>
+</tr>
+<tr>
+<td>0.7</td>
+<td>acceptable</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>weak</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div class="column"> All are between `[-1:1]` <ul class="roman">
+<li>Coefficient of correlation</li>
+<ul class="square">
+<li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
+<li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
+</ul>
+</ul>
+<br>
+<li>Coefficient of determination</li>
+<ul class="square">
+<li>[R <sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination) </li>
+</ul>
+</div>
+
+
+:::
+
+
+
+
 
 ## Quantitative
 

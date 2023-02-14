@@ -14,6 +14,9 @@ ui <- fluidPage(
       selectInput("ppa", 
                   label = "Point Pattern Analysis",
                   choices = c("Random", "Regular", "Clustered")),
+      # sliderInput("grid",
+      #             label = "number of divisions",
+      #             min = 5, max = 20, value = 10)
       # tags$head(tags$style(HTML(".selectize-input {width: 300px;}")))
     ),
     mainPanel(
@@ -82,6 +85,8 @@ server <- function(input, output) {
       E <- envelope(Kpts, Lest, correction="Ripley", nsim = 100, VARIANCE = TRUE, verbose = FALSE)
       # L <- Lest(Kpts, correction = "Ripley")
       plot(E, xlab = "d (units)", ylab = "K(d)", main = "Regular distribution")
+      # axis(1, at=c(0, (max(E$obs)+1)), labels=c("",""), lwd.ticks=0)
+      # axis(1, at=seq(0 , (max(E$obs)+1), by=.5), lwd=0, lwd.ticks=1)
     }
     else if (input$ppa == "Clustered") {
       Kpts <- ppp(coordinates(cluster.pt)[ , 1],

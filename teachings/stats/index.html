@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.1.251">
 
   <meta name="author" content="Thomas Huet (University of Oxford, EAMENA project)">
-  <title>Statistics &amp; Computer Scripts in Archaeology</title>
+  <title>Statistics in Archaeology</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -339,8 +339,8 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="center">
-  <h1 class="title">Statistics &amp; Computer Scripts in Archaeology</h1>
+<section id="title-slide" data-background-image="https://raw.githubusercontent.com/zoometh/thomashuet/masterteachings/stats/images/stat-fa-camel-2.png" data-background-opacity="0.2" data-background-size="40%" class="center">
+  <h1 class="title">Statistics in Archaeology</h1>
   <p class="author">Thomas Huet (University of Oxford, EAMENA project)</p>
 </section>
 
@@ -349,34 +349,6 @@
 <div class="cell">
 
 </div>
-<p>This presentation will show you examples of <strong>statistical reasoning</strong> in archaeology and how <strong>computational archaeology</strong> helps to manage archaeological datasets</p>
-<p><br></p>
-
-<table>
-<thead>
-<tr>
-<th rowspan="2">
-software 💿
-</th>
-<th>
-semantic 🖼 📜 🔢 🐫
-</th>
-</tr>
-<tr>
-<th>
-logic <span style="background-color:black; color:white;">&gt;_ print(‘hello’)</span>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">
-hardware 💻
-</td>
-</tr>
-</tbody>
-
-</table>
 </section>
 <section id="historiography-of-archaeology-12" class="slide level2">
 <h2>Historiography of Archaeology 1/2</h2>
@@ -444,11 +416,9 @@ Concomitance between biological “species” (C. Darwin) and archaeological “
 <div id="tabset-1-3">
 <div class="row">
 <div class="column33">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-archaeo-romantic.png" height="350"></p>
-<p></p><figcaption>‘Monument druidique près de Gisors’: Baron Taylor, 1824, <em>Voyage pittoresque et romantique dans l’ancienne France</em></figcaption><p></p>
-</figure>
+<img data-src="images/hist-archaeo-romantic.png" height="350">
+<div class="captiontext">
+‘Monument druidique près de Gisors’: Baron Taylor, 1824, *Voyage pittoresque et
 </div>
 </div>
 <div class="column66">
@@ -467,11 +437,9 @@ Focused on chronology, rooted in academic/national traditions and develops in pa
 <div id="tabset-2-1">
 <div class="row">
 <div class="column33">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-archaeo-newarchaeo-binford.png" height="350"></p>
-<p></p><figcaption>R. &amp; S. Binford, 1968, <em>New Perspectives in Archaeology</em></figcaption><p></p>
-</figure>
+<img data-src="images/hist-archaeo-newarchaeo-binford.png" height="350"> <br>
+<div class="captiontext">
+R. &amp; S. Binford, 1968, <em>New Perspectives in Archaeology</em>
 </div>
 </div>
 <div class="column">
@@ -482,11 +450,9 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-2-2">
 <div class="row">
 <div class="column33">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-archaeo-postprocess-sombreabime.png" height="350"></p>
-<p></p><figcaption>Laurent Olivier, 2008, <em>Le sombre abîme du temps</em></figcaption><p></p>
-</figure>
+<img data-src="images/hist-archaeo-postprocess-sombreabime.png" height="350">
+<div class="captiontext">
+Laurent Olivier, 2008, <em>Le sombre abîme du temps</em>
 </div>
 </div>
 <div class="column66">
@@ -497,11 +463,9 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-2-3">
 <div class="row">
 <div class="column33">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-archaeo-ai-ml-angkor.jpg" height="350"></p>
-<p></p><figcaption>Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer</figcaption><p></p>
-</figure>
+<img data-src="images/hist-archaeo-ai-ml-angkor.jpg" height="350">
+<div class="captiontext">
+Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer
 </div>
 </div>
 <div class="column66">
@@ -523,19 +487,15 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-3-1">
 <div class="row">
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-stat-mean-birth-sex-ratio.png" height="350"></p>
-<p></p><figcaption>Sex ratio at birth</figcaption><p></p>
-</figure>
+<img data-src="images/hist-stat-mean-birth-sex-ratio.png" height="350">
+<div class="captiontext">
+Sex ratio at birth
 </div>
 </div>
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-stat-mean-pythagore.png" height="350"></p>
-<p></p><figcaption>The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic</figcaption><p></p>
-</figure>
+<img data-src="images/hist-stat-mean-pythagore.png" height="350">
+<div class="captiontext">
+The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic
 </div>
 </div>
 </div>
@@ -543,11 +503,9 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-3-2">
 <div class="row">
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png" height="350"></p>
-<p></p><figcaption>Title page of E. Wright, 1599, ‘<em>Certaine Errors in Navigation</em>’*</figcaption><p></p>
-</figure>
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png" height="350">
+<div class="captiontext">
+Title page of E. Wright, 1599, ‘<em>Certaine Errors in Navigation</em>’*
 </div>
 </div>
 <div class="column">
@@ -558,19 +516,15 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-3-3">
 <div class="row">
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/aut-arbuthnot-1629-1710.png" height="350"></p>
-<p></p><figcaption>J. Arbuthnot, 1629-1710 census. Published in 1711, ‘<em>Philosophical transactions, 27</em>’ with this statement: ‘<em>From whence it follows, that it is Art, not Chance, that governs</em>’</figcaption><p></p>
-</figure>
+<img data-src="images/aut-arbuthnot-1629-1710.png" height="350">
+<div class="captiontext">
+J. Arbuthnot, 1629-1710 census. Published in 1711, ‘<em>Philosophical transactions, 27</em>’ with this statement: ‘<em>From whence it follows, that it is Art, not Chance, that governs</em>’
 </div>
 </div>
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/stat-pvalue.png" height="350"></p>
-<p></p><figcaption><em>p-value</em> and <em>Z-score</em>, two normalised test thresholds to estimate the significance of an observed distribution <em>vs</em> a random distribution</figcaption><p></p>
-</figure>
+<img data-src="images/stat-pvalue.png" height="350">
+<div class="captiontext">
+<em>p-value</em> and <em>Z-score</em>, two normalised test thresholds to estimate the significance of an observed distribution <em>vs</em> a random distribution
 </div>
 </div>
 </div>
@@ -578,19 +532,15 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-3-4">
 <div class="row">
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/aut-quetelet_1821-33_census.png" height="350"></p>
-<p></p><figcaption>A. Quetelet, 1821-1833 census</figcaption><p></p>
-</figure>
+<img data-src="images/aut-quetelet_1821-33_census.png" height="350">
+<div class="captiontext">
+A. Quetelet, 1821-1833 census
 </div>
 </div>
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png" height="350"></p>
-<p></p><figcaption>A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied</figcaption><p></p>
-</figure>
+<img data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png" height="350">
+<div class="captiontext">
+A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied
 </div>
 </div>
 </div>
@@ -606,11 +556,9 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-4-1">
 <div class="row">
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-computer-science-expert.jpg" height="300"></p>
-<p></p><figcaption>Garry Kasparov <em>vs</em> Deep Blue, 1996-1997</figcaption><p></p>
-</figure>
+<img data-src="images/hist-computer-science-expert.jpg" height="300">
+<div class="captiontext">
+Garry Kasparov <em>vs</em> Deep Blue, 1996-1997
 </div>
 </div>
 </div>
@@ -619,11 +567,9 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <p>Artificial Intelligence &amp; Machine Learning</p>
 <div class="row">
 <div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/hist-computer-science-ai-chatGPT.png" height="300"></p>
-<p></p><figcaption>Prompted text with ChatGPT, 2023</figcaption><p></p>
-</figure>
+<img data-src="images/hist-computer-science-ai-chatGPT.png" height="300">
+<div class="captiontext">
+Prompted text with ChatGPT, 2023
 </div>
 </div>
 </div>
@@ -791,7 +737,10 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div class="row">
 <div class="column33">
 <center>
-<img data-src="images/theo-archaeo-renfrewbahn.jpg" height="300"> <span class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</span>
+<img data-src="images/theo-archaeo-renfrewbahn.jpg" height="300">
+<div class="captiontext">
+Model of archaeological reasoning by Renfrew and Bahn, 2020
+</div>
 </center>
 </div>
 <div class="column66">
@@ -882,14 +831,10 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-7-1">
 <div class="row">
 <div class="column">
-<center>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/aut-tobler.jpg" height="250"></p>
-<p></p><figcaption>Waldo Tobler</figcaption><p></p>
-</figure>
+<img data-src="images/aut-tobler.jpg" height="250">
+<div class="captiontext">
+Waldo Tobler
 </div>
-</center>
 </div>
 <div class="column">
 <em>
@@ -902,50 +847,80 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div id="tabset-7-2">
 <div class="row">
 <div class="column">
-<img data-src="images/where-bruegel.jpg" height="350"><br><span class="captiontext">Pieter Bruegel the Elder, <em>The Harversters</em>, 1565</span>
+<img data-src="images/where-bruegel.jpg" height="350">
+<div class="captiontext">
+Pieter Bruegel the Elder, <em>The Harversters</em>, 1565
+</div>
 </div>
 <div class="column">
-<img data-src="images/where-macedonia.png" height="350"><br><span class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</span>
+<img data-src="images/where-macedonia.png" height="350">
+<div class="captiontext">
+Kingdom of Macedon at the death of Philip II, 336 BC
+</div>
 </div>
 </div>
 </div>
 <div id="tabset-7-3">
 <div class="row">
 <div class="column">
-<img data-src="images/when-geology.png" height="350"><br><span class="captiontext">Spiral of geological times</span>
+<img data-src="images/when-geology.png" height="350">
+<div class="captiontext">
+Spiral of geological times
+</div>
 </div>
 <div class="column">
-<img data-src="images/when-strati.jpg" height="350"><br><span class="captiontext">Startigraphic log and corresponding Harris matrix</span>
+<img data-src="images/when-strati.jpg" height="350">
+<div class="captiontext">
+Startigraphic log and corresponding Harris matrix
+</div>
 </div>
 </div>
 </div>
 <div id="tabset-7-4">
 <div class="row">
 <div class="column">
-<img data-src="images/what-1950.jpg" height="350"><br><span class="captiontext">An American suburb in the 1950s</span>
+<img data-src="images/what-1950.jpg" height="350">
+<div class="captiontext">
+An American suburb in the 1950s
+</div>
 </div>
 <div class="column">
-<img data-src="images/what-pottery.jpg" height="350"><br><span class="captiontext">Seriation of Chassean potteries in South France</span>
+<img data-src="images/what-pottery.jpg" height="350"><br>
+<div class="captiontext">
+Seriation of Chassean potteries in South France
+</div>
 </div>
 </div>
 </div>
 <div id="tabset-7-5">
 <div class="row">
 <div class="column">
-<img data-src="images/how-fordism.jpg" height="350"><br><span class="captiontext">Assembly line work in a Ford factory</span>
+<img data-src="images/how-fordism.jpg" height="350">
+<div class="captiontext">
+Assembly line work in a Ford factory
+</div>
 </div>
 <div class="column">
-<img data-src="images/how-co.jpg" height="350"><br><span class="captiontext"><em>Chaine opératoire</em> of flint lamellas knapping</span>
+<img data-src="images/how-co.jpg" height="350">
+<div class="captiontext">
+<em>Chaine opératoire</em> of flint lamellas knapping
+</div>
 </div>
 </div>
 </div>
 <div id="tabset-7-6">
 <div class="row">
 <div class="column">
-<img data-src="images/who-family.jpg" height="350"><br><span class="captiontext">The British Royal Family</span>
+<img data-src="images/who-family.jpg" height="350">
+<div class="captiontext">
+The British Royal Family
+</div>
 </div>
 <div class="column">
-<img data-src="images/who-haak_afo.jpg" height="350"><br><span class="captiontext">Estimate DNA mixture proportions of Modern Europeans</span>
+<img data-src="images/who-haak_afo.jpg" height="350">
+<div class="captiontext">
+Estimate DNA mixture proportions of Modern Europeans
+</div>
 </div>
 </div>
 </div>
@@ -969,8 +944,8 @@ Advent of statistics and promotion of demonstrations based on observations, hypo
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="htmlwidget-1f9426cc66ef4d55187a" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1f9426cc66ef4d55187a">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-e9786b4201d085b492b6" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e9786b4201d085b492b6">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1321,17 +1296,20 @@ carry its own story: abandoned assumptions, alternative versions, etc.
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="htmlwidget-4867015b890f1fa0d2c1" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4867015b890f1fa0d2c1">{"x":{"filter":"none","vertical":false,"data":[["site_1","site_2","site_3","site_4","site_5","site_6","site_7","site_8","site_9","site_10","site_11","site_12","site_13","site_14","site_15","site_16","site_17","site_18","site_19","site_20","site_21","site_22","site_23","site_24","site_25","site_26","site_27","site_28","site_29","site_30","site_31","site_32","site_33"],[97,73,5,37,25,53,68,136,41,690,78,108,41,1283,44,30,28,226,1281,1458,28,69,31,65,30,130,248,285,63,60,21,71,33],[27,15,57,4,28,5,37,95,0,181,165,10,3,217,31,21,12,518,1052,1927,0,88,29,15,2,40,326,129,0,32,12,6,24],[2,1,1,0,2,1,8,3,3,26,19,1,0,18,2,14,1,101,1,0,2,0,1,0,1,2,334,57,4,5,1,0,8],[1,0,0,0,2,0,0,10,0,15,2,0,0,0,0,0,0,0,1,2,0,10,0,0,0,0,7,10,0,0,0,0,0],[0,0,0,0,0,0,1,43,0,1,0,0,0,0,0,0,1,0,444,512,0,8,0,0,0,11,5,19,0,2,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Microliths<\/th>\n      <th>Scrapers<\/th>\n      <th>Burins<\/th>\n      <th>Axes<\/th>\n      <th>Saws<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().container()).css({'font-size': '20pt'});\n}","columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+<div id="htmlwidget-0b83193eb11e45f78bc0" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-0b83193eb11e45f78bc0">{"x":{"filter":"none","vertical":false,"data":[["site_1","site_2","site_3","site_4","site_5","site_6","site_7","site_8","site_9","site_10","site_11","site_12","site_13","site_14","site_15","site_16","site_17","site_18","site_19","site_20","site_21","site_22","site_23","site_24","site_25","site_26","site_27","site_28","site_29","site_30","site_31","site_32","site_33"],[97,73,5,37,25,53,68,136,41,690,78,108,41,1283,44,30,28,226,1281,1458,28,69,31,65,30,130,248,285,63,60,21,71,33],[27,15,57,4,28,5,37,95,0,181,165,10,3,217,31,21,12,518,1052,1927,0,88,29,15,2,40,326,129,0,32,12,6,24],[2,1,1,0,2,1,8,3,3,26,19,1,0,18,2,14,1,101,1,0,2,0,1,0,1,2,334,57,4,5,1,0,8],[1,0,0,0,2,0,0,10,0,15,2,0,0,0,0,0,0,0,1,2,0,10,0,0,0,0,7,10,0,0,0,0,0],[0,0,0,0,0,0,1,43,0,1,0,0,0,0,0,0,1,0,444,512,0,8,0,0,0,11,5,19,0,2,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Microliths<\/th>\n      <th>Scrapers<\/th>\n      <th>Burins<\/th>\n      <th>Axes<\/th>\n      <th>Saws<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().container()).css({'font-size': '20pt'});\n}","columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 <div id="tabset-11-2">
 <p>Processed data<br> <span class="midtext">Working data (i.e.&nbsp;not definitive)</span></p>
 <div class="cell">
+<div class="cell-output-display">
 
+<div id="htmlwidget-aa98e249e9cf0c1031d7" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-aa98e249e9cf0c1031d7">{"x":{"filter":"none","vertical":false,"data":[["site_1","site_2","site_3","site_4","site_5","site_6","site_7","site_8","site_9","site_10","site_11","site_12","site_13","site_14","site_15","site_16","site_17","site_18","site_19","site_20","site_21","site_22","site_23","site_24","site_25","site_26","site_27","site_28","site_29","site_30","site_31","site_32","site_33"],[97,73,5,37,25,53,68,136,41,690,78,108,41,1283,44,30,28,226,1281,1458,28,69,31,65,30,130,248,285,63,60,21,71,33],[27,15,57,4,28,5,37,95,0,181,165,10,3,217,31,21,12,518,1052,1927,0,88,29,15,2,40,326,129,0,32,12,6,24],[2,1,1,0,2,1,8,3,3,26,19,1,0,18,2,14,1,101,1,0,2,0,1,0,1,2,334,57,4,5,1,0,8],[1,0,0,0,2,0,0,10,0,15,2,0,0,0,0,0,0,0,1,2,0,10,0,0,0,0,7,10,0,0,0,0,0],[0,0,0,0,0,0,1,43,0,1,0,0,0,0,0,0,1,0,444,512,0,8,0,0,0,11,5,19,0,2,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Microliths<\/th>\n      <th>Scrapers<\/th>\n      <th>Burins<\/th>\n      <th>Axes<\/th>\n      <th>Saws<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().container()).css({'font-size': '20pt'});\n}","columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'background':isNaN(parseFloat(value)) || value <= 5.000000 ? '' : 'linear-gradient(90.000000deg, transparent ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%, lightblue ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%)','background-size':'100% 90%','background-repeat':'no-repeat','background-position':'center'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background':isNaN(parseFloat(value)) || value <= 5.000000 ? '' : 'linear-gradient(90.000000deg, transparent ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%, lightblue ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%)','background-size':'100% 90%','background-repeat':'no-repeat','background-position':'center'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'background':isNaN(parseFloat(value)) || value <= 5.000000 ? '' : 'linear-gradient(90.000000deg, transparent ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%, lightblue ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%)','background-size':'100% 90%','background-repeat':'no-repeat','background-position':'center'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'background':isNaN(parseFloat(value)) || value <= 5.000000 ? '' : 'linear-gradient(90.000000deg, transparent ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%, lightblue ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%)','background-size':'100% 90%','background-repeat':'no-repeat','background-position':'center'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'background':isNaN(parseFloat(value)) || value <= 5.000000 ? '' : 'linear-gradient(90.000000deg, transparent ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%, lightblue ' + Math.max(1458.000000 - value, 0)/1453.000000 * 100 + '%)','background-size':'100% 90%','background-repeat':'no-repeat','background-position':'center'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
-Mesolithic.pers
+</div>
 </div>
 <div id="tabset-11-3">
 <p>Aggregated data<br> <span class="midtext">Gathered data expressed in a summary form</span></p>
@@ -1434,8 +1412,8 @@ Mesolithic.pers
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="htmlwidget-add390a7f15270dfc9f8" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-add390a7f15270dfc9f8">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],[21,32,39,77,78],["#FFFFCC","#C2E699","#78C679","#31A354","#006837"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":1},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#FFFFCC\" ? \"#FFFFCC\" : value == \"#C2E699\" ? \"#C2E699\" : value == \"#78C679\" ? \"#78C679\" : value == \"#31A354\" ? \"#31A354\" : value == \"#006837\" ? \"#006837\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-d085325bd0744e35f2ba" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d085325bd0744e35f2ba">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],[2,6,53,67,81],["#FFFFCC","#C2E699","#78C679","#31A354","#006837"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":1},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#FFFFCC\" ? \"#FFFFCC\" : value == \"#C2E699\" ? \"#C2E699\" : value == \"#78C679\" ? \"#78C679\" : value == \"#31A354\" ? \"#31A354\" : value == \"#006837\" ? \"#006837\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1451,8 +1429,8 @@ Mesolithic.pers
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="htmlwidget-247dc014dc6c7c357a93" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-247dc014dc6c7c357a93">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],["very cold","cold","lukewarm","hot","very hot"],["#0571B0","#92C5DE","#F7F7F7","#F4A582","#CA0020"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#CA0020\" ? \"#CA0020\" : value == \"#F4A582\" ? \"#F4A582\" : value == \"#F7F7F7\" ? \"#F7F7F7\" : value == \"#92C5DE\" ? \"#92C5DE\" : value == \"#0571B0\" ? \"#0571B0\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-e0a1992043508f149ccd" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e0a1992043508f149ccd">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],["very cold","cold","lukewarm","hot","very hot"],["#0571B0","#92C5DE","#F7F7F7","#F4A582","#CA0020"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#CA0020\" ? \"#CA0020\" : value == \"#F4A582\" ? \"#F4A582\" : value == \"#F7F7F7\" ? \"#F7F7F7\" : value == \"#92C5DE\" ? \"#92C5DE\" : value == \"#0571B0\" ? \"#0571B0\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1468,8 +1446,8 @@ Mesolithic.pers
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="htmlwidget-4abf16006109d133c495" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4abf16006109d133c495">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["green","yellow","red"],["#00FF00","#FFFF00","#FF0000"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#00FF00\" ? \"#00FF00\" : value == \"#FFFF00\" ? \"#FFFF00\" : value == \"#FF0000\" ? \"#FF0000\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-800fad7662b65799c6ba" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-800fad7662b65799c6ba">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["green","yellow","red"],["#00FF00","#FFFF00","#FF0000"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#00FF00\" ? \"#00FF00\" : value == \"#FFFF00\" ? \"#FFFF00\" : value == \"#FF0000\" ? \"#FF0000\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -1949,160 +1927,13 @@ sensitive to outliers and the size of the smallest group must be larger than the
 <div class="footer">
 <p>Current dataset: <a href="https://ojs.elte.hu/dissarch/article/view/2262/2082">Schneider A., 2020, <em>Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary</em></a></p>
 </div>
-</section>
-<section id="computers-in-archaeology" class="slide level2">
-<h2>Computers in Archaeology</h2>
-<div class="panel-tabset">
-<ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">Stack</a></li><li><a href="#tabset-16-2">GitHub</a></li><li><a href="#tabset-16-3">R</a></li><li><a href="#tabset-16-4">Python</a></li></ul>
-<div class="tab-content">
-<div id="tabset-16-1">
-<p><br></p>
-
-<table class="table">
-<thead>
-<tr>
-<th>
-<a href="https://www.r-project.org/"> <img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo"> </a>
-</th>
-<th>
-<a href="https://www.python.org/"> <img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo"> </a>
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td colspan="2">
-<a href="https://github.com"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo"> </a>
-</td>
-</tr>
-</tbody>
-
-</table>
-</div>
-<div id="tabset-16-2">
-<p><a href="https://github.com"> <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo"> </a> The 🔝 popular web-platform for source code management and software development (with over 128 million public repositories)</p>
-</div>
-<div id="tabset-16-3">
-<a href="https://www.r-project.org/"> <img src="https://www.r-project.org/logo/Rlogo.svg" alt="" style="height: 100px; margin: 0 0 0 0; background: transparent;" class="demo-logo"> </a>
-<p>
-R is a scripting language for data science. It is the 1️⃣<sup>st</sup> used by archaeologists, and the 18<sup>th</sup> <span class="worldwide">Worldwide</span>
-</p>
-<p><small>- <a href="https://www.tiobe.com/tiobe-index/">Tiobe index 2022</a> + <a href="https://youtu.be/tUhHhzGSgbk?t=7499">Batist and Roe, 2022</a></small></p>
-
-<table class="table">
-<thead>
-<tr>
-<th>
-R
-</th>
-<th>
-description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="it-ide">
-IDE
-</td>
-<td>
-<a href="https://www.rstudio.com/">RStudio</a> is THE graphical interface for R, Rstudio is also in the cloud (<a href="https://rstudio.cloud/">RStudio.cloud</a>), <a href="https://code.visualstudio.com/">VS Code</a> is a standalone source code editor multi-platforms and multi-languages
-</td>
-</tr>
-<tr>
-<td class="it-layouts">
-layouts
-</td>
-<td>
-<a href="https://rmarkdown.rstudio.com/">R markdown</a> is a notebook interface for report generation, <a href="https://shiny.rstudio.com/">Shiny</a> allows the development of web interactive applications, <a href="https://quarto.org/">Quarto</a> to create Powerpoint-like web interactive documents
-</td>
-</tr>
-<tr>
-<td class="it-libraries">
-libraries
-</td>
-<td>
-<a href="https://cran.r-project.org/web/packages/openxlsx/index.html">openxlsx</a> to read/write Excel files, <a href="https://ggplot2.tidyverse.org/">ggplot2</a> to create plots, <a href="https://cran.r-project.org/web/packages/sf/index.html">sf</a> makes R a GIS, <a href="https://igraph.org/r/">igraph</a> for network analysis, <a href="https://cran.r-project.org/web/packages/odbc/index.html">ODBC</a> to connect SQL databases, <a href="https://cran.r-project.org/web/packages/rcarbon/index.html">rcarbon</a> for radiocarbon dates calibration, <a href="https://cran.r-project.org/web/packages/Momocs/index.html">Momocs</a> for geometric morphometric methods, <a href="https://cran.r-project.org/web/packages/leaflet/index.html">leaflet</a> creates interactive maps, <a href="https://plotly.com/r/">plotly</a> creates interactive plots, etc.
-</td>
-</tr>
-<tr>
-<td class="it-resources">
-resources
-</td>
-<td>
-<a href="http://www.sthda.com/english/wiki/ggplot2-line-plot-quick-start-guide-r-software-and-data-visualization">sthda.com</a> has good tutorials, <a href="https://stackoverflow.com/">stackoverflow</a> is probably the place where you will find the answer you need, if you need some open software for archaeology go to <a href="https://open-archaeo.info/">open-archaeo</a>
-</td>
-</tr>
-</tbody>
-
-</table>
-</div>
-<div id="tabset-16-4">
-<a href="https://www.python.org/"> <img src="https://www.python.org/static/img/python-logo@2x.png" alt="" style="height: 100px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"> </a>
-<p>
-Python is a high-level programming language. It is the 2️⃣<sup>st</sup> programming language used by archaeologists, and the 1️⃣<sup>st</sup> <span class="worldwide">Worldwide</span>
-</p>
-<small>
-<p></p>
-<p><small>- <a href="https://www.tiobe.com/tiobe-index/">Tiobe index 2022</a> + <a href="https://youtu.be/tUhHhzGSgbk?t=7499">Batist and Roe, 2022</a></small></p>
-
-<table class="table">
-<thead>
-<tr>
-<th>
-Python
-</th>
-<th>
-description
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="it-ide">
-IDE
-</td>
-<td>
-<a href="https://code.visualstudio.com/">VS Code</a> is THE best standalone source code editor multi-platforms and multi-languages. The Google colab.research.google.com online platform
-</td>
-</tr>
-<tr>
-<td class="it-layouts">
-layouts
-</td>
-<td>
-<a href="https://jupyter.org/">Jupyter</a> is a notebook interface for report generation. <a href="https://plotly.com/python/getting-started/">Dash</a> allows the development of web interactive applications, <a href="https://quarto.org/">Quarto</a> to create Powerpoint-like web interactive documents
-</td>
-</tr>
-<tr>
-<td class="it-libraries">
-libraries
-</td>
-<td>
-<a href="https://openpyxl.readthedocs.io/en/stable/">openpyxl</a> to read/write Excel files, <a href="https://matplotlib.org/">matplotlib</a> to create plots, <a href="https://geopandas.org/en/stable/">Geopandas</a> makes PythonR a GIS, <a href="https://networkx.org/">networkx</a> for network analysis, <a href="https://pypi.org/project/pyodbc/">pyodbc</a> to connect SQL databases, <a href="https://pypi.org/project/iosacal/">iosacal</a> for radiocarbon dates calibration, <a href="https://pypi.org/project/folium/">folium</a> creates interactive leaflet maps, <a href="https://plotly.com/python/">plotly</a> creates interactive plots, etc.
-</td>
-</tr>
-<tr>
-<td class="it-resources">
-resources
-</td>
-<td>
-<a href="https://stackoverflow.com/">stackoverflow</a> is probably the place where you will find the answer you need, if you need some open software for archaeology go to <a href="https://open-archaeo.info/">open-archaeo</a>
-</td>
-</tr>
-</tbody>
-
-</table>
-</small></div><small>
-</small></div><small>
-</small></div><small>
 <p><img src="images/inst-uni-oxford_.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>Statistics in Archaeology <a href="https://tinyurl.com/stats-upv" class="uri">https://tinyurl.com/stats-upv</a> CNRS ASM <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png" style="height: 40px;vertical-align: middle;"> Université Paul-Valéry, Feb 2023 - Thomas Huet</p>
 </div>
-</small></section><small>
-    </small></div><small>
-  </small></div><small>
+</section>
+    </div>
+  </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
   <script src="index_files/libs/revealjs/dist/reveal.js"></script>
@@ -2455,4 +2286,4 @@ resources
     </script>
     
 
-</small></body></html>
+</body></html>
