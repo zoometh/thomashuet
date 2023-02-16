@@ -893,7 +893,7 @@ DB
 
 #### week 5
 
-- gave a talk on 'Analysing the network of caravan routes and caravanserais using the EAMENA database and R package', with Bijan and Hamed, in the AMESS seminar
+- gave a talk on '*Analysing the network of caravan routes and caravanserais using the EAMENA database and R package*', with Bijan and Hamed, in the AMESS seminar
 - allowed a GeoServer to work with the DB
 - work on Arches v7
 - prepared my travels to Amsterdam and Nice (April), with Mel
