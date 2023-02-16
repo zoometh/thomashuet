@@ -897,6 +897,6 @@ DB
 - allowed a GeoServer to work with the DB
 - work on Arches v7
 - prepared my travels to Amsterdam and Nice (April), with Mel
-- had a chat with the IT Services, about the [Interactive Data Network](https://idn.it.ox.ac.uk/home) service (interactive data documents)
+- had a chat with the IT Services, about the [Interactive Data Network](https://idn.it.ox.ac.uk/home) service (interactive data documents, mostlty R Shiny, but soon Python Shiny, PyScript)
 - scheduled a presentation of [eamenaR](https://github.com/eamena-oxford/eamenaR) for Monday 6 March at 11am
 - in contact with Reuben and Ash (Arches v7), Will and the PeriodO team (PeriodO), Maria Castiello (ML)
