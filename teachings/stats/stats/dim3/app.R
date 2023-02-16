@@ -70,7 +70,7 @@ ui <- fluidPage(
              ),
              mainPanel(#"Relative percentages of lead isotops", 
                plotlyOutput("graph",
-                            height = "600px")
+                            height = "800px")
              )
            )
   )

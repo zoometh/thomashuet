@@ -8,6 +8,7 @@ title-slide-attributes:
     data-background-opacity: "0.2"
 format:
   revealjs: 
+    css: styles.css
     slide-number: true
     chalkboard: true
     scrollable: true
@@ -15,11 +16,13 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/inst-uni-oxford_.png
-    css: https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/styles.css
     footer: "Statistics in Archaeology <https://tinyurl.com/stats-upv> CNRS ASM <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 40px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
     margin: 0
     width: 1200
 ---
+
+ 
+
 
 
 ## Introduction
@@ -39,6 +42,8 @@ library(dplyr)
 data(OxfordPots)
 
 ```
+
+
 
 ## Historiography of Archaeology 1/2
 
@@ -591,7 +596,7 @@ datatable(df,
 ### Statement
 
 <div class="row">
-<div class="column50"><center>![George E. P. Box](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/aut-box.jpg){height=300px}</center></div>
+<div class="column50"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/aut-box.jpg){height=300px}</center><div class="captiontext">George E. P. Box</div></div>
 <div class="column50"><em><center>"All models are wrong, but some are useful"</em><br><small> Box, 1976</small></center></div>
 </div>
 
@@ -602,10 +607,10 @@ datatable(df,
 <div class="row">
 
 <div class="column">
-<center>![Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-kroeber.png){height=300px}</center></div>
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-kroeber.png){height=300px}</center><div class="captiontext">Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*</div></div>
 
 <div class="column">
-<center>![Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philos. Trans. R. Soc. B*, 365(1559), 3923-3933](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-splitgraph.jpg){height=300px}</center></div>
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-splitgraph.jpg){height=300px}</center><div class="captiontext">Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philos. Trans. R. Soc. B*, 365(1559), 3923-3933</div></div>
 
 </div>
 
@@ -842,6 +847,7 @@ print(paste0("Caption-Abstract: ", img[["Caption-Abstract"]]))
 print(paste0("Copyright: ", img[["Copyright"]]))
 ```
 
+\
 
 ### Missing
 
@@ -866,7 +872,9 @@ Sums by column (with `NA`)
 #| code-fold: true
 #| code-summary: "Show the code"
 
-colSums(df)
+sum.df.with.na <- as.data.frame(t(colSums(df)))
+kable(sum.df.with.na) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
 ```
 
 Sums by column (without `NA`)
@@ -875,7 +883,9 @@ Sums by column (without `NA`)
 #| code-fold: true
 #| code-summary: "Show the code"
 
-colSums(df, na.rm = T)
+sum.df.with.na <- as.data.frame(t(colSums(df, na.rm = T)))
+kable(sum.df.with.na) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
 ```
 
 
@@ -1078,7 +1088,8 @@ Random patterns <em>versus</em> Clustered patterns
 ### Rock art sites
 
 <div class="row">
-<div class="column">![Cups-and-rings rock art concentration (&#11044;) in Millestone Burn, Northumberland, England (Bradley 1996)](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-rand-ra-millestone.png){height=350px}</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-rand-ra-millestone.png){height=350px}<div class="captiontext">Cups-and-rings rock art concentration (&#11044;) in Millestone Burn, Northumberland, England (Bradley 1996)</div>
+</div>
 <div class="column">Engraved rock sites (&#11044;) are concentrated on Millstone Grits (sandstone) with a statistical significance in comparison to a theoretical **random distribution** (&#9675;).</div>
 </div>
 
@@ -1086,7 +1097,7 @@ Random patterns <em>versus</em> Clustered patterns
 ### Rock art surfaces
 
 <div class="row">
-<div class="column">![Neolithic/Early Bronze Age engraved rock, Mont Bego, France (Chippindale 1988)](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-rand-ra-bego.png){height=350px}</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-rand-ra-bego.png){height=350px}<div class="captiontext">Neolithic/Early Bronze Age engraved rock, Mont Bego, France (Chippindale 1988)</div></div>
 <div class="column">On the observed rock surface (A), engravings are arranged in a more orderly manner in a **random process** (B and C), but the former remains far from an orderly arrangement without overlapping engravings.</div>
 </div>
 
@@ -1094,7 +1105,7 @@ Random patterns <em>versus</em> Clustered patterns
 ### Bronze hoards
 
 <div class="row">
-<div class="column">![Distribution of the Late Bronze Age Ewart Park hoards, Atlantic Europe (Wiseman 2018) ](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/lba-hoards-random.jpg){height=350px}</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/lba-hoards-random.jpg){height=350px}<div class="captiontext">Distribution of the Late Bronze Age Ewart Park hoards, Atlantic Europe (Wiseman 2018)</div></div>
 <div class="column">Hoards from the Ewart Park phase show a **normal distribution** when considering size, fragmentation and number of pieces. The hoards would result from a random accumulation and breaking</div>
 </div>
 
@@ -1116,7 +1127,7 @@ Regular pattern
 ### Tumulus
 
 <div class="row">
-<div class="column">![Early Bronze Age tumuli in Brittany (Brun 2011)](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-tumulus.jpg){height=350px}</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-tumulus.jpg){height=350px}<div class="captiontext">Early Bronze Age tumuli in Brittany (Brun 2011)</div></div>
 <div class="column">The 'princely' tombs are **evenly distributed** in space, separated from each other by a distance of 12.5 km, i.e. less than three hours' walk round trip</div>
 </div>
 
@@ -1124,7 +1135,7 @@ Regular pattern
 ### Princely sites
 
 <div class="row">
-<div class="column">![Early Iron Age princely sites at the North of the Alps (Brun 2011)](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-centralplace.jpg){height=350px}</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-centralplace.jpg){height=350px}<div class="captiontext">Early Iron Age princely sites at the North of the Alps (Brun 2011)</div></div>
 <div class="column">In the 6<sup>th</sup> century BC, the 'princely sites' are separated from each other by an **average distance** of about 50 km. This distance can be covered in a day on horseback.</div>
 </div>
 
@@ -1132,14 +1143,14 @@ Regular pattern
 ### Emporions
 
 <div class="row">
-<div class="column">![Main *emporions* in the Golfe du Lion, Northwestern Mediterranea (Gailledrat 2005)](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-emporions.jpg){height=350px}</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-emporions.jpg){height=350px}<div class="captiontext"></div>Main *emporions* in the Golfe du Lion, Northwestern Mediterranea (Gailledrat 2005)</div>
 <div class="column">During the same period (6<sup>th</sup> c. BC) coastal trading posts installed almost systematically at the mouth of river valleys and approximately 40 km from each other (1 day's cabotage)</div>
 </div>
 
 ### Caravanserails
 
 <div class="row">
-<div class="column">![Caravanserails in the Khorasan region, Iran (EAMENA DB)](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-caravanserails.png){height=350px}</div>
+<div class="column">![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/caravanserail/maps/20220324124352647-1.jpg){height=350px}<div class="captiontext">Caravanserails in Iran (Kleiss 1996 )</div></div>
 <div class="column">During the Late Islamic period (15<sup>th</sup>-18<sup>th</sup> c. AD) trade posts (caravanserails) have been build along trading roads. They are close to water sources and separated from each other by about 20-30 km (1 camel day). </div>
 </div>
 
@@ -1155,7 +1166,7 @@ regular = competition
 Gradient pattern
 
 <div class="row">
-<div class="column">![Ammerman and Cavalli-Sforza, 1971, *Measuring the rate of spread of early farming in Europe*](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-gradient-spread-neo.jpg){height=300px}</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-gradient-spread-neo.jpg){height=300px}<div class="captiontext">Ammerman and Cavalli-Sforza, 1971, *Measuring the rate of spread of early farming in Europe*</div></div>
 <div class="column">**Diffusion** (spatial and temporal). In the case of a linear gradient, the calculation of the centroid of a group of points is a good indicator of its evolution.</div>
 </div>
 
@@ -1182,7 +1193,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column" style="width: 25%">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-camel-1.png){height=300px}</div>
-<div class="column33" style="width: 5%; vertical-align: middle;">➡️</div>
+<div class="column33" style="width: 5%; vertical-align: middle; align-items: center;">➡️</div>
 <div class="column" style="width: 25%">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-camel-2.png){height=300px}</div>
 <div class="column" style="width: 45%">Factorial Analysis is the generic term for multivariate (or multifactorial) analysis</div>
 </div>

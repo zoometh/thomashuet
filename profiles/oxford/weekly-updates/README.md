@@ -886,7 +886,17 @@ DB
 - met Galen Mancino. His two main works for Arches are the improvement of the Search, and data import. He offered himself to work on these topics, or to help in the v5 to v7 upgrade, or to develop a plugin for ML.
 - attended the ACD workshop
 - gave a 3-hour lecture on [reporting with R markdown](http://shinyserver.cfs.unipi.it:3838/teach/r4a/_site/#/title-slide) to the University of Pisa's Summer School
-- worked on the eamenaR package
+- worked on the [eamenaR](https://github.com/eamena-oxford/eamenaR) package
 - about to autorise a reverse proxy in EAMENA DB to access GeoServer
 - will prepare my stay in Southampton (next Thursday, Friday)
 - BU the last AAA files for Mohamed
+
+#### week 5
+
+- gave a talk on 'Analysing the network of caravan routes and caravanserais using the EAMENA database and R package', with Bijan and Hamed, in the AMESS seminar
+- allowed a GeoServer to work with the DB
+- work on Arches v7
+- prepared my travels to Amsterdam and Nice (April), with Mel
+- had a chat with the IT Services, about the [Interactive Data Network](https://idn.it.ox.ac.uk/home) service (interactive data documents)
+- scheduled a presentation of [eamenaR](https://github.com/eamena-oxford/eamenaR) for Monday 6 March at 11am
+- in contact with Reuben and Ash (Arches v7), Will and the PeriodO team (PeriodO), Maria Castiello (ML)
