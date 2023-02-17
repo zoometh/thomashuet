@@ -15,7 +15,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: images/inst-uni-oxford_.png
-    css: styles.css
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
     footer: <https://tinyurl.com/goa-oxford>
     # margin: 0
     # width: 1400
