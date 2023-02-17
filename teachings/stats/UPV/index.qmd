@@ -4,7 +4,7 @@ title: "Statistics in Archaeology"
 author: "Thomas Huet (University of Oxford, EAMENA project)"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-camel-2.png"
-    data-background-size: "40%"
+    data-background-size: "20%"
     data-background-opacity: "0.2"
 format:
   revealjs: 
@@ -50,7 +50,6 @@ data(OxfordPots)
 
 ## Historiography of Archaeology 1/2
 
-
 ::: {.panel-tabset}
 
 ### 📅
@@ -68,7 +67,7 @@ data(OxfordPots)
 ### Prehistory
 
 <div class="row">
-<div class="column33">![Boucher de Perthes, 1847, *Antiquités celtiques et  antédiluviennes*](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-prehistoire-perthes.jpg){height=350px}</div>
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-prehistoire-perthes.jpg){height=350px}<div class="captiontext">Boucher de Perthes, 1847, Antiquités celtiques et  antédiluviennes</div></div>
 <div class="column66">Concomitance between biological "species" (C. Darwin) and archaeological "types" (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)</div>
 </div>
 
@@ -95,7 +94,7 @@ data(OxfordPots)
 <div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-newarchaeo-binford.png){height=350px}
 <br><div class="captiontext">R. & S. Binford, 1968, *New Perspectives in Archaeology*</div>
 </div>
-<div class="column">Advent of statistics and promotion of demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
+<div class="column">*Processualism*, the advancement of statistics favors demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
 </div>
 
 ### Post-Processual
@@ -104,8 +103,10 @@ data(OxfordPots)
 <div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-postprocess-sombreabime.png){height=350px}
 <div class="captiontext">Laurent Olivier, 2008, *Le sombre abîme du temps*</div>
 </div>
-<div class="column66">*Post-processualism*, or Post-positivism, archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity) </div>
+<div class="column66">*Post-processualism*[^2], archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity) </div>
 </div>
+
+[^2]: i.e. Post-positivism
 
 ### Tool-driven
 
@@ -189,7 +190,7 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 
 <div class="column">
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=350px}
-<div class="captiontext">A selection of Normal Distribution Probability Density Functions (PDFs). Both the mean, μ, and variance, σ², are varied</div>
+<div class="captiontext">A selection of Normal Distribution Probability Density Functions</div>
 </div>
 
 </div>
@@ -197,7 +198,7 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 :::
 
 
-## Birth of statistics 2/2
+## Advanced statistics
 
 ::: {.panel-tabset}
 
@@ -217,11 +218,18 @@ Artificial Intelligence & Machine Learning
 
 <div class="row">
 <div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-computer-science-ai-chatGPT.png){height=300px}
-<div class="captiontext">Prompted text with ChatGPT, 2023</div>
+<div class="captiontext">Natural language processing (NLP), prompted text with ChatGPT, 2023</div>
 </div>
+
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/prog-ml-dl-cv-example.jpg){height=300px}
+<div class="captiontext">Computer vision, Deep Neural Network model</div>
+</div>
+
 </div>
 
 :::
+
+
 
 
 ::: {.notes}
@@ -287,13 +295,14 @@ Statistik (description of a state, a country): collecting population data throug
 <div class="column33">**Test** of<br>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-pvalue-1.png){height=350px}</div>
 <div class="column66">
 <ul>
-<li>***conformity*** (goodness-of-fit) between the observed population and a theoretical distribution (e.g. normal law)</li>
+<li>***conformity***[^1] between the observed population and a theoretical distribution (e.g. normal law)</li>
 <li>***homogeneity*** between different populations</li>
 <li>***relation*** between several variables from the same population</li>
 </ul>
 </div>
 </div>
 
+[^1]: i.e. goodness-of-fit
 
 :::
 
@@ -384,7 +393,7 @@ middle range theories
 </div>
 
 
-###<span class="tabsetheadertext">Where 🗺️</span>
+### <span class="tabsetheadertext">Where 🗺️</span>
 
 
 <div class="row">
@@ -402,7 +411,7 @@ middle range theories
 </div>
 
 
-###<span class="tabsetheadertext">When ⏰</span>
+### <span class="tabsetheadertext">When ⏰</span>
 <div class="row">
 
 <div class="column">
@@ -418,7 +427,7 @@ middle range theories
 </div>
 
 
-###<span class="tabsetheadertext">What 🏺</span>
+### <span class="tabsetheadertext">What 🏺</span>
 
 <div class="row">
 
@@ -434,7 +443,7 @@ middle range theories
 
 
 
-###<span class="tabsetheadertext">How ⚙️</span>
+### <span class="tabsetheadertext">How ⚙️</span>
 
 <div class="row">
 
@@ -450,7 +459,7 @@ middle range theories
 
 </div>
 
-###<span class="tabsetheadertext">Who 🤰🏽</span>
+### <span class="tabsetheadertext">Who 🤰🏽</span>
 
 <div class="row">
 
@@ -473,7 +482,7 @@ middle range theories
 
 ::: {.panel-tabset}
 
-###<span class="tabsetheadertext">Compare 1/3<span class="tabsetheadertext">
+### <span class="tabsetheadertext">Compare 1/3<span class="tabsetheadertext">
 
 :::: {.columns}
 
@@ -537,7 +546,7 @@ ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) +
 
 ::::
 
-###<span class="tabsetheadertext">Compare 2/3<span class="tabsetheadertext">
+### <span class="tabsetheadertext">Compare 2/3<span class="tabsetheadertext">
 
 :::: {.columns}
 
@@ -545,6 +554,7 @@ ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) +
 
 ```{r}
 print(dt)
+dt
 ```
 
 :::
@@ -564,14 +574,15 @@ res.ca <- CA(df[ , c(2,3,4)])
 
 ::::
 
-###<span class="tabsetheadertext">Compare 3/3<span class="tabsetheadertext">
+### <span class="tabsetheadertext">Compare 3/3<span class="tabsetheadertext">
 
 :::: {.columns}
 
 ::: {.column width="30%"}
 
 ```{r}
-print(dt)
+print(dt) # don't work?
+dt
 ```
 
 :::
@@ -616,8 +627,6 @@ kable(dend.h.dist) %>%
 ::::
 
 \
-
-
 
 ### Regress
 
@@ -674,11 +683,10 @@ kable(dend.h.dist) %>%
 <li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
 <li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
 </ul>
-</ul>
 <br>
-<li>Coefficient of determination</li>
+<li>Coefficient of determination 
 <ul class="square">
-<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination) </li>
+<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
 </ul>
 </div>
 
@@ -763,7 +771,7 @@ controlled vocabulary -> scale
 
 ::: {.panel-tabset}
 
-###<span class="midtext">Explanatory</span>
+### <span class="midtext">Explanatory</span>
 
 <div class="row">
 <center>not over- or under-fitting</center>
@@ -783,7 +791,7 @@ controlled vocabulary -> scale
 <div class="column">❌ Fitting</div>
 </div>
 
-###<span class="midtext">Regularity</span>
+### <span class="midtext">Regularity</span>
 
 <div class="row">
 
@@ -799,7 +807,7 @@ reproducing data regularity (central tendencies)
 
 </div>
 
-###<span class="midtext">Robustness</span>
+### <span class="midtext">Robustness</span>
 
 <div class="row">
 
@@ -815,7 +823,7 @@ not sensitive to small changes in data (reproducible)
 
 </div>
 
-###<span class="midtext">Parsimony</span>
+### <span class="midtext">Parsimony</span>
 
 <div class="row">
 
@@ -832,7 +840,7 @@ all things being equal, the simplest possible explanation for a phenomenon is al
 </div>
 
 
-###<span class="midtext">Versioning</span>
+### <span class="midtext">Versioning</span>
 
 <div class="row">
 
@@ -859,7 +867,8 @@ carry its own story: abandoned assumptions, alternative versions, etc.
 
 ### Raw
 
-Raw data <span class="midtext">Primary data acquired via a device</span>
+Raw data - <span class="midtext">Primary data acquired via a device</span>
+
 
 ```{r}
 #| eval: true
@@ -879,10 +888,11 @@ Mesolithic %>%
     ) 
   )
 ```
+\
 
 ### Processed
 
-Processed data <span class="midtext">Working data (i.e. not definitive)</span>
+Processed data - <span class="midtext">Working data (i.e. not definitive)</span>
 
 
 ```{r}
@@ -908,12 +918,13 @@ meso <- Mesolithic %>%
     backgroundRepeat = 'no-repeat',
     backgroundPosition = 'center'
   )
-print(meso)
+print(meso) # don't work?
+meso
 ```
 
 ### Aggregated
 
-Aggregated data <span class="midtext">Gathered data expressed in a summary form</span>
+Aggregated data - <span class="midtext">Gathered data expressed in a summary form</span>
 
 ```{r}
 #| echo: false
@@ -926,7 +937,7 @@ pie(percent)
 
 ### Meta
 
-Metadata <span class="midtext"><em>data about data</em></span>
+Metadata - <span class="midtext"><em>data about data</em></span>
 
 <center>
 
@@ -938,9 +949,7 @@ Metadata <span class="midtext"><em>data about data</em></span>
 #| echo: true
 #| code-fold: true
 
-# img <- exiftoolr::exif_read("https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/data-meta-photo-microliths.jpg")
 img <- exiftoolr::exif_read("C:/Rprojects/thomashuet/teachings/stats/images/data-meta-photo-microliths.jpg")
-
 print(paste0("Caption-Abstract: ", img[["Caption-Abstract"]]))
 print(paste0("Copyright: ", img[["Copyright"]]))
 ```
@@ -950,7 +959,7 @@ print(paste0("Copyright: ", img[["Copyright"]]))
 
 ### Missing
 
-Missing data <span class="midtext">Lack of knowledge, e.g. `NA` (<em>Not Available</em>)</span>
+Missing data - <span class="midtext">Lack of knowledge, e.g. `NA` (<em>Not Available</em>)</span>
 
 ```{r}
 #| echo: true
@@ -1068,7 +1077,7 @@ x <- sort(sample.int(100, ncolors))
 colors <- RColorBrewer::brewer.pal(ncolors, name = "YlGn")
 df <- data.frame(values = x,
                  colors = colors)
-datatable(df, 
+dt <- datatable(df, 
           rownames = TRUE,
           width = '20%',
           options = list(searching = FALSE,
@@ -1082,6 +1091,7 @@ datatable(df,
               backgroundColor = styleEqual(colors, 
                                            colors)
   )
+dt
 ```
 
 :::
@@ -1095,7 +1105,7 @@ ncolors <- c('very cold', 'cold', 'lukewarm', 'hot', 'very hot')
 colors <- RColorBrewer::brewer.pal(length(ncolors), name = "RdBu")
 df <- data.frame(values = ncolors,
                  colors = rev(colors))
-datatable(df, 
+dt <- datatable(df, 
           rownames = TRUE,
           width = '20%',
           options = list(searching = FALSE,
@@ -1109,6 +1119,7 @@ datatable(df,
               backgroundColor = styleEqual(colors, 
                                            colors)
   )
+dt
 ```
 
 :::
@@ -1122,7 +1133,7 @@ ncolors <- c('green', 'yellow', 'red')
 colors <- c('#00FF00', '#FFFF00', '#FF0000')
 df <- data.frame(values = ncolors,
                  colors = colors)
-datatable(df, 
+dt <- datatable(df, 
           rownames = TRUE,
           width = '20%',
           options = list(searching = FALSE,
@@ -1136,6 +1147,7 @@ datatable(df,
               backgroundColor = styleEqual(colors, 
                                            colors)
   )
+dt
 ```
 
 :::
@@ -1147,7 +1159,7 @@ datatable(df,
 \
 
 
-## 1-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim1/" background-interactive="true"}
+## 1-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim1/" background-interactive="true"}
 
 
 ::: {.notes}
@@ -1160,7 +1172,7 @@ Histogram = discretization = bins = change of scale
 Dataset: [`archdata` R package - `Mesolithic` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
 :::
 
-## 2-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim2-map/"}
+## 2-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim2-map/"}
 
 ::: {.notes}
 TODO: show coeff value
@@ -1182,14 +1194,14 @@ Dataset: [`archdata` R package - `OxfordPots` dataset](https://rdrr.io/cran/arch
 
 
 
-## 2-dim data spatial {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointbasic/"}
+## 2-dim data spatial {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/pointbasic/"}
 
 ::: {.notes}
 spatial dataset
 "everything is related to everything else, but near things are more related than distant things"  Tobler, 1970
 :::
 
-## 2-dim data spatial {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/pointpattern/"}
+## 2-dim data spatial {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/pointpattern/"}
 
 ::: {.notes}
 :::
@@ -1258,15 +1270,15 @@ Regular pattern
 ### Emporions
 
 <div class="row">
-<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-emporions.jpg){height=350px}<div class="captiontext"></div>Main *emporions* in the Golfe du Lion, Northwestern Mediterranea (Gailledrat 2005)</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-emporions.jpg){height=350px}<div class="captiontext">Main emporions in the Gulf of Lion, NW Mediterranean (Gailledrat 2005)</div></div>
 <div class="column">During the same period (6<sup>th</sup> c. BC) coastal trading posts installed almost systematically at the mouth of river valleys and approximately 40 km from each other (1 day's cabotage)</div>
 </div>
 
-### Caravanserails
+### Caravanserais
 
 <div class="row">
-<div class="column">![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/caravanserail/maps/20220324124352647-1.jpg){height=350px}<div class="captiontext">Caravanserails in Iran (Kleiss 1996 )</div></div>
-<div class="column">During the Late Islamic period (15<sup>th</sup>-18<sup>th</sup> c. AD) trade posts (caravanserails) have been build along trading roads. They are close to water sources and separated from each other by about 20-30 km (1 camel day). </div>
+<div class="column">![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/caravanserail/maps/20220324124352647-1.jpg){height=350px}<div class="captiontext">Caravanserais in Iran (Kleiss 1996 )</div></div>
+<div class="column">During the Late Islamic period (15<sup>th</sup>-18<sup>th</sup> c. AD) trade posts (caravanserais) have been build along trading roads. They are close to water sources and separated from each other by about 20-30 km (1 day's transport).</div>
 </div>
 
 
@@ -1286,13 +1298,13 @@ Gradient pattern
 </div>
 
 
-## 2-dim data shape {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/gmm/"}
+## 2-dim data shape {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/gmm/"}
 
 ::: footer
 Current dataset: [Matzig, D.N., Hussain, S.T. and Riede, F. *Design Space Constraints and the Cultural Taxonomy of European Final Palaeolithic Large Tanged Points (...)*](https://doi.org/10.1007/s41982-021-00097-2)
 :::
 
-## 3-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/dim3/" background-interactive="true"}
+## 3-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/" background-interactive="true"}
 
 ::: footer
 Current dataset: [ANR Itineris](https://github.com/zoometh/itineRis/blob/main/inst/extdata/dfisotops.csv)
@@ -1321,8 +1333,8 @@ Useful when data are complete (chemical composition, genetics, etc.)
 ### Dataset
 
 <div class="row">
-<div class="column">![Map of NE Iberia with locations of the studied sites](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-plosone-carto-zona.png){height=300px}</div>
-<div class="column">![Chrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-seriat-plosone.png){height=300px}
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-plosone-carto-zona.png){height=300px}<div class="captiontext">Map of NE Iberia with locations of the studied sites</div></div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-seriat-plosone.png){height=300px}<div class="captiontext">Chrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity</div>
 </div>
 </div>
 
@@ -1333,7 +1345,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column33">$\ge$ 2 rows,  $\ge$ 2 columns, $\emptyset$ missing data, $\emptyset$ negative values, $\forall$ data with the same scale</div>
-<div class="column66">![CA of sites’ NISP profiles during the LBA](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-ca-plosone-lba-zona.png){height=300px}</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-ca-plosone-lba-zona.png){height=300px}<div class="captiontext">CA of sites’ NISP profiles during the LBA</div></div>
 </div>
 
 
@@ -1343,7 +1355,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column33">quantitative data, $\ge$ 3 rows, $\ge$ 3 columns, nb rows $\ge$ 10x nb of columns</div>
-<div class="column66">![PCA of sites’ NISP profiles during the MIA2](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-pca-plosone-xxx.jpg){height=300px}</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-pca-plosone-xxx.jpg){height=300px}<div class="captiontext">PCA of sites’ NISP profiles during the MIA2</div></div>
 </div>
 
 
@@ -1353,7 +1365,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <br>
 <div class="row">
 <div class="column33">related to CA, PCA or MFA</div>
-<div class="column66">![HCA of sites’ NISP profiles during the LBA](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-hc-plosone-lba-zona.png){height=300px}</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-hc-plosone-lba-zona.png){height=300px}<div class="captiontext">HCA of sites’ NISP profiles during the LBA</div></div>
 </div>
 
 ### LDA
@@ -1361,17 +1373,25 @@ Useful when data are complete (chemical composition, genetics, etc.)
 <center>Linear Discriminant Analysis (LDA)</center>
 <br>
 <div class="row">
-<div class="column33">sensitive to outliers and the size of the smallest group must be larger than the number of predictor variables</div>
-<div class="column66">![LDA of sites’ NISP profiles during the LBA](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-lda-plosone-lba-zona.png){height=300px}</div>
+<div class="column33">sensitive to outliers, the size of the smallest group must be larger than the number of predictor variables</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-lda-plosone-lba-zona.png){height=300px}<div class="captiontext">LDA of sites’ NISP profiles during the LBA</div></div>
 </div>
 
+### Source
+
+```{=html}
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB 3619 Resilience.pdf" width="1000px" height="2100px" />
+```
+
 :::
+
+
 
 ::: footer
 [Espinet et al., "Resilience and livestock adaptations to demographic growth and technological change (...)" *PloS one 16.2 (2021)*](https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0246201)
 :::
 
-## Seriation {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/seriation/"}
+## Seriation {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/seriation/"}
 
 ::: {.notes}
 Seriation = Guttman effect = horse shoe = arc

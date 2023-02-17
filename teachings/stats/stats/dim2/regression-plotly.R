@@ -23,7 +23,7 @@ m <- list(
   t = 50,
   pad = 20
 )
-reg.example <- plot_ly(Oxford.water, x = ~OxfordDst, width = 1200, height = 500) %>% 
+reg.example <- plot_ly(Oxford.water, x = ~OxfordDst, width = 1200, height = 700) %>% 
   add_trace(name = "Oxford Pottery", y = ~OxfordPct,
             #mode = 'scatter',
             marker = list(color = 'black'), 
@@ -53,7 +53,7 @@ reg.example <- plot_ly(Oxford.water, x = ~OxfordDst, width = 1200, height = 500)
          margin = m,
          legend = list(orientation = "h",   
                        xanchor = "center",  
-                       y = -0.2,
+                       y = -0.5,
                        x = 0.5))
 reg.example
 htmlwidgets::saveWidget(reg.example, "C:/Rprojects/thomashuet/teachings/stats/stats/dim2/oxfordwater.html")
