@@ -44,7 +44,7 @@ ui <- fluidPage(
                  htmlOutput('pdfviewer')),
         tabPanel("Publication2", 
                  tags$iframe(style="height:2000px; width:100%", 
-                             src="http://shinyserver.cfs.unipi.it:3838/bib/BIB_3570_Multivariate.pdf"))
+                             src="http://shinyserver.cfs.unipi.it:3838/teach/bib/BIB-3570-Multivariate.pdf"))
       )
     )
   )

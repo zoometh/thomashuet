@@ -12,7 +12,7 @@ ui <- fluidPage(
   sidebarLayout(
     sidebarPanel(width = 2,
       selectInput("ppa", 
-                  label = "Point Pattern Analysis",
+                  label = "Point Distribution",
                   choices = c("Random", "Regular", "Clustered")),
       # sliderInput("grid",
       #             label = "number of divisions",

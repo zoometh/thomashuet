@@ -60,7 +60,7 @@ df.water <- merge(Oxford.water, Place.coords, by = "Place")
 colors <- c("green", "red")
 
 ui <- fluidPage(
-  br(), br(), br(), br(), br(), br(), br(), br(), br(),
+  br(), br(), br(), br(), br(), br(), br(),
   h3("Distribution of Late Romano-British Fine Ware"),
   # fluidRow(column(3, radioButtons("residuals", "show residuals",
   #                                 choices = c("Yes", "No"), selected = "No"))

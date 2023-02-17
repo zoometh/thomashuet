@@ -31,57 +31,51 @@ library(DT)
 library(dplyr)
 library(archdata)
 library(kableExtra)
+library(FactoMineR)
 ```
 
 ## Conformity
 
 ::: {.panel-tabset}
 
-### *1<sup>st</sup> law*
+### <span class="tabsetheadertext">Compare 1/3<span class="tabsetheadertext">
 
+:::: {.columns}
 
-<div class="row">
+::: {.column width="30%"}
 
-<div class="column">
-![Waldo Tobler](images/aut-tobler.jpg){height=250px}
-<div class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</div>
-</div>
+```{r}
 
-<div class="column">
-<em><center>"everything is related to everything else, but near things are more related than distant things"</em><br><small> Tobler, 1970</small></center>
-</div>
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
 
-</div>
-
-
-### Where
-
-
-<div class="row">
-
-<div class="column">
-![](images/where-bruegel.jpg){height=350px}
-<div class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</div>
-</div>
-
-<div class="column">
-![](images/where-macedonia.png){height=350px}
-<div class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</div>
-</div>
-
-</div>
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         # pagingType = "numbers",
+                         # PageLength = 1,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
+dt
+```
 
 :::
 
-
-
-## Conformity
-
-::: {.panel-tabset}
-
-### Compare
-
-:::: {.columns}
 
 ::: {.column width="60%"}
 
@@ -106,33 +100,90 @@ ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) +
 
 :::
 
+::::
+
+### <span class="tabsetheadertext">Compare 2/3<span class="tabsetheadertext">
+
+:::: {.columns}
+
 ::: {.column width="30%"}
 
 ```{r}
-datatable(df, 
-          rownames = FALSE,
-          width = '20%',
-          options = list(searching = FALSE,
-                         lengthChange = FALSE,
-                         paging = FALSE,
-                         # pagingType = "numbers",
-                         # PageLength = 1,
-                         scrollX = F,
-                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
-                         info = FALSE,
-                         # language = list(lengthMenu = "_MENU_"),
-                         filter = "none")) %>% 
-  formatStyle("feat",
-              backgroundColor = styleEqual(c("A", "B", "C"), 
-                                           c('#FF000070', '#00800070', '#0000FF70'))
-  ) %>%
-  formatStyle(columns = c(1, 2, 3, 4),
-              fontSize = '20px')
+#| eval: true
+print(dt)
+dt
+```
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+res.ca <- CA(df[ , c(2,3,4)])
 ```
 
 :::
 
 ::::
+
+### <span class="tabsetheadertext">Compare 3/3<span class="tabsetheadertext">
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+```{r}
+print(dt) # don't work?
+dt
+```
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+dend.h <- df[ , c(2,3,4)] %>%
+  scale %>% 
+  dist %>% 
+  hclust
+plot(as.dendrogram(dend.h))
+```
+
+\
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+dend.h.dist <- df[ , c(2,3,4)] %>%
+  scale %>% 
+  dist
+dend.h.dist <- as.data.frame(as.matrix(dend.h.dist))
+dend.h.dist <- round(dend.h.dist, 2)
+kable(dend.h.dist) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+```
+
+\
+
+
+:::
+
+::::
+
+\
 
 ### Regress
 
@@ -183,119 +234,22 @@ datatable(df,
 </div>
 
 
-<div class="column"> All are between `[-1:1]` <ul class="roman">
+<div class="column"> 
+All are between `[-1:1]`
 <li>Coefficient of correlation</li>
 <ul class="square">
 <li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
 <li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
 </ul>
-</ul>
 <br>
 <li>Coefficient of determination</li>
 <ul class="square">
-<li>[R <sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination) </li>
+<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
 </ul>
 </div>
 
 
 :::
-
-
-
-
-
-## Quantitative
-
-<div class="row">
-<div class="column">![](../images/stat-scale-quant.png){height=350px}</div>
-<div class="column">**Units of length** (cm, m, km, kg, years, etc.). Statistical units are quantified by continuous measurable intervals.</div>
-</div>
-
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
-
-ncolors <- 5
-x <- sort(sample.int(100, ncolors))
-colors <- RColorBrewer::brewer.pal(ncolors, name = "YlGn")
-df <- data.frame(values = x,
-                 colors = colors)
-datatable(df, 
-          rownames = TRUE,
-          width = '20%',
-          options = list(searching = FALSE,
-                         lengthChange = FALSE,
-                         paging = FALSE,
-                         scrollX = F,
-                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
-                         info = FALSE,
-                         filter = "none")) %>% 
-  formatStyle("colors",
-              backgroundColor = styleEqual(colors, 
-                                           colors)
-  )
-```
-
-## Ordinal
-
-<div class="row">
-<div class="column">![](../images/stat-scale-ord.png){height=350px}</div>
-<div class="column">**Ranks** (discrete). Ordered sequence of values (e.g. 'very cold', 'cold', 'lukewarm', 'hot', 'very hot') without establishing the distance between consecutive values.</div>
-</div>
-
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
-
-ncolors <- c('very cold', 'cold', 'lukewarm', 'hot', 'very hot')
-colors <- RColorBrewer::brewer.pal(length(ncolors), name = "RdBu")
-df <- data.frame(values = ncolors,
-                 colors = rev(colors))
-datatable(df, 
-          rownames = TRUE,
-          width = '20%',
-          options = list(searching = FALSE,
-                         lengthChange = FALSE,
-                         paging = FALSE,
-                         scrollX = F,
-                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
-                         info = FALSE,
-                         filter = "none")) %>% 
-  formatStyle("colors",
-              backgroundColor = styleEqual(colors, 
-                                           colors)
-  )
-```
-### Nominal
-
-<div class="row">
-<div class="column">![](../images/stat-scale-nom.png){height=350px}</div>
-<div class="column">**Qualitative** categories that cannot be ordered (e.g. 'green', 'yellow', 'red').</div>
-</div>
-
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
-
-ncolors <- c('green', 'yellow', 'red')
-colors <- c('#00FF00', '#FFFF00', '#FF0000')
-df <- data.frame(values = ncolors,
-                 colors = colors)
-datatable(df, 
-          rownames = TRUE,
-          width = '20%',
-          options = list(searching = FALSE,
-                         lengthChange = FALSE,
-                         paging = FALSE,
-                         scrollX = F,
-                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
-                         info = FALSE,
-                         filter = "none")) %>% 
-  formatStyle("colors",
-              backgroundColor = styleEqual(colors, 
-                                           colors)
-  )
-```
 
 ## My footnote
 

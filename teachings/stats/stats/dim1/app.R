@@ -9,8 +9,8 @@ library(archdata)
 data("Mesolithic")
 # lbl <- paste0("site-", row.names(Mesolithic))
 
-
 ui <- fluidPage(
+  br(), br(), br(), br(), br(), br(), br(),
   h3("British Mesolithic assemblages (n = 33 sites)"),
   fluidRow(column(3, selectInput("category", "category", 
                                  choices = colnames(Mesolithic), selected = "Microliths")),

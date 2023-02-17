@@ -332,6 +332,8 @@
   <script src="test_files/libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
   <link href="test_files/libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
   <script src="test_files/libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+  <script src="test_files/libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="test_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -351,76 +353,111 @@
 <section id="conformity" class="slide level2">
 <h2>Conformity</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1"><em>1<sup>st</sup> law</em></a></li><li><a href="#tabset-1-2">Where</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1"><span class="tabsetheadertext">Compare 1/3<span class="tabsetheadertext"></span></span></a></li><li><a href="#tabset-1-2"><span class="tabsetheadertext">Compare 2/3<span class="tabsetheadertext"></span></span></a></li><li><a href="#tabset-1-3"><span class="tabsetheadertext">Compare 3/3<span class="tabsetheadertext"></span></span></a></li><li><a href="#tabset-1-4">Regress</a></li><li><a href="#tabset-1-5">Coefficient</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<div class="row">
-<div class="column">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/aut-tobler.jpg" height="250"></p>
-<p></p><figcaption>Waldo Tobler</figcaption><p></p>
-</figure>
-</div>
-<div class="captiontext">
-Pieter Bruegel the Elder, <em>The Harversters</em>, 1565
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="htmlwidget-c4ed12fafdd718c07097" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c4ed12fafdd718c07097">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
-<div class="column">
-<em>
-</em><center><em>
-“everything is related to everything else, but near things are more related than distant things”</em><br><small> Tobler, 1970</small>
-</center>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="test_files/figure-revealjs/unnamed-chunk-3-1.png" width="768"></p>
+</div>
+</div>
 </div>
 </div>
 </div>
 <div id="tabset-1-2">
-<div class="row">
-<div class="column">
-<img data-src="images/where-bruegel.jpg" height="350">
-<div class="captiontext">
-Pieter Bruegel the Elder, <em>The Harversters</em>, 1565
-</div>
-</div>
-<div class="column">
-<img data-src="images/where-macedonia.png" height="350">
-<div class="captiontext">
-Kingdom of Macedon at the death of Philip II, 336 BC
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="conformity-1" class="slide level2">
-<h2>Conformity</h2>
-<div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Compare</a></li><li><a href="#tabset-2-2">Regress</a></li><li><a href="#tabset-2-3">Coefficient</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1">
 <div class="columns">
-<div class="column" style="width:60%;">
-<div class="cell">
-<div class="cell-output-display">
-<p><img data-src="test_files/figure-revealjs/unnamed-chunk-2-1.png" width="768"></p>
-</div>
-</div>
-</div><div class="column" style="width:30%;">
+<div class="column" style="width:30%;">
 <div class="cell">
 <div class="cell-output-display">
 
-<div id="htmlwidget-66543a88962e979cb604" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-66543a88962e979cb604">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+<div id="htmlwidget-3c62a6eb10602d9d2f62" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3c62a6eb10602d9d2f62">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="test_files/figure-revealjs/unnamed-chunk-5-1.png" width="960"></p>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-2-2">
+<div id="tabset-1-3">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="htmlwidget-f0c36e93d01fe1ff7815" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f0c36e93d01fe1ff7815">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="test_files/figure-revealjs/unnamed-chunk-7-1.png" width="960"></p>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> A </th>
+   <th style="text-align:right;"> B </th>
+   <th style="text-align:right;"> C </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 3.24 </td>
+   <td style="text-align:right;"> 2.53 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:right;"> 3.24 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 1.05 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:right;"> 2.53 </td>
+   <td style="text-align:right;"> 1.05 </td>
+   <td style="text-align:right;"> 0.00 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p><br>
+</p>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-1-4">
 <iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/stats/dim2/oxfordwater" title="Regression"></iframe>
 </div>
-<div id="tabset-2-3">
+<div id="tabset-1-5">
 <div class="column">
 <div class="midtext">
 
@@ -491,7 +528,6 @@ weak
 </div>
 <div class="column">
 All are between <code>[-1:1]</code>
-<ul class="roman">
 <li>
 Coefficient of correlation
 </li>
@@ -503,70 +539,17 @@ Coefficient of correlation
 <a href="https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman’s ρ</a>
 </li>
 </ul>
-</ul>
 <br>
 <li>
 Coefficient of determination
 </li>
 <ul class="square">
 <li>
-<a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">R <sup>2</sup></a>
+<a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">R<sup>2</sup></a>
 </li>
 </ul>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="quantitative" class="slide level2">
-<h2>Quantitative</h2>
-<div class="row">
-<div class="column">
-<img data-src="../images/stat-scale-quant.png" height="350">
-</div>
-<div class="column">
-<strong>Units of length</strong> (cm, m, km, kg, years, etc.). Statistical units are quantified by continuous measurable intervals.
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-
-<div id="htmlwidget-659cf16ea8e6528b68a2" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-659cf16ea8e6528b68a2">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],[9,23,47,59,85],["#FFFFCC","#C2E699","#78C679","#31A354","#006837"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":1},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#FFFFCC\" ? \"#FFFFCC\" : value == \"#C2E699\" ? \"#C2E699\" : value == \"#78C679\" ? \"#78C679\" : value == \"#31A354\" ? \"#31A354\" : value == \"#006837\" ? \"#006837\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
-</div>
-</div>
-</section>
-<section id="ordinal" class="slide level2">
-<h2>Ordinal</h2>
-<div class="row">
-<div class="column">
-<img data-src="../images/stat-scale-ord.png" height="350">
-</div>
-<div class="column">
-<strong>Ranks</strong> (discrete). Ordered sequence of values (e.g.&nbsp;‘very cold’, ‘cold’, ‘lukewarm’, ‘hot’, ‘very hot’) without establishing the distance between consecutive values.
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-
-<div id="htmlwidget-4bb32cb1fde73aaa2e1e" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4bb32cb1fde73aaa2e1e">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],["very cold","cold","lukewarm","hot","very hot"],["#0571B0","#92C5DE","#F7F7F7","#F4A582","#CA0020"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#CA0020\" ? \"#CA0020\" : value == \"#F4A582\" ? \"#F4A582\" : value == \"#F7F7F7\" ? \"#F7F7F7\" : value == \"#92C5DE\" ? \"#92C5DE\" : value == \"#0571B0\" ? \"#0571B0\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
-</div>
-</div>
-<h3 id="nominal">Nominal</h3>
-<div class="row">
-<div class="column">
-<img data-src="../images/stat-scale-nom.png" height="350">
-</div>
-<div class="column">
-<strong>Qualitative</strong> categories that cannot be ordered (e.g.&nbsp;‘green’, ‘yellow’, ‘red’).
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-
-<div id="htmlwidget-cde417632b4a3f82aa60" style="width:20%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cde417632b4a3f82aa60">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["green","yellow","red"],["#00FF00","#FFFF00","#FF0000"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#00FF00\" ? \"#00FF00\" : value == \"#FFFF00\" ? \"#FFFF00\" : value == \"#FF0000\" ? \"#FF0000\" : null});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -598,7 +581,7 @@ Coefficient of determination
 <section id="dewpiwep" class="slide level2">
 <h2>dewpiwep</h2>
 
-<img data-src="test_files/figure-revealjs/unnamed-chunk-7-1.png" style="width:150.0%" class="r-stretch"></section>
+<img data-src="test_files/figure-revealjs/unnamed-chunk-9-1.png" style="width:150.0%" class="r-stretch"></section>
 <section id="gggjglj" class="slide level2">
 <h2>GGGJGLJ</h2>
 <div class="cell">
@@ -749,7 +732,7 @@ English Title
 </h1>
 <p>Plot of random points</p>
 
-<img data-src="test_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
+<img data-src="test_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
 <section id="french" class="slide level2">
 <h2>French</h2>
 <h1>
@@ -757,7 +740,7 @@ Titre Français
 </h1>
 <p>Tracé de points aléatoires</p>
 
-<img data-src="test_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<img data-src="test_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
 <section id="code" class="slide level2">
 <h2>Code</h2>
 <p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>

@@ -218,11 +218,11 @@ Artificial Intelligence & Machine Learning
 
 <div class="row">
 <div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-computer-science-ai-chatGPT.png){height=300px}
-<div class="captiontext">Natural language processing (NLP), prompted text with ChatGPT, 2023</div>
+<div class="captiontext">Natural language processing (NLP), prompted by ChatGPT, 2023</div>
 </div>
 
 <div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/prog-ml-dl-cv-example.jpg){height=300px}
-<div class="captiontext">Computer vision, Deep Neural Network model</div>
+<div class="captiontext">Computer vision (CV), Deep Neural Network model</div>
 </div>
 
 </div>
@@ -553,6 +553,7 @@ ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) +
 ::: {.column width="30%"}
 
 ```{r}
+#| eval: true
 print(dt)
 dt
 ```
@@ -581,6 +582,8 @@ res.ca <- CA(df[ , c(2,3,4)])
 ::: {.column width="30%"}
 
 ```{r}
+#| eval: true
+
 print(dt) # don't work?
 dt
 ```
@@ -605,6 +608,8 @@ plot(as.dendrogram(dend.h))
 \
 
 ```{r}
+#| eval: true
+
 df <- data.frame(feat = c("A", "B", "C"),
                  where = c(20, 60, 60),
                  when = c(10, 30, 20),
@@ -677,14 +682,16 @@ kable(dend.h.dist) %>%
 </div>
 
 
-<div class="column"> All are between `[-1:1]` <ul class="roman">
-<li>Coefficient of correlation</li>
+<div class="column"> 
+All are between `[-1:1]`
+<hr>
+Coefficient of correlation
 <ul class="square">
 <li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
 <li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
 </ul>
 <br>
-<li>Coefficient of determination 
+Coefficient of determination
 <ul class="square">
 <li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
 </ul>
@@ -977,6 +984,7 @@ kable(df) %>%
 Sums by column (with `NA`)
 
 ```{r}
+#| echo: true
 #| code-fold: true
 #| code-summary: "Show the code"
 
@@ -988,6 +996,7 @@ kable(sum.df.with.na) %>%
 Sums by column (without `NA`)
 
 ```{r}
+#| echo: true
 #| code-fold: true
 #| code-summary: "Show the code"
 
@@ -1072,6 +1081,8 @@ kable(sum.df.with.na) %>%
 Quantitative
 
 ```{r}
+#| echo: true
+
 ncolors <- 5
 x <- sort(sample.int(100, ncolors))
 colors <- RColorBrewer::brewer.pal(ncolors, name = "YlGn")
@@ -1092,6 +1103,7 @@ dt <- datatable(df,
                                            colors)
   )
 dt
+print(dt)
 ```
 
 :::
@@ -1120,6 +1132,7 @@ dt <- datatable(df,
                                            colors)
   )
 dt
+print(dt)
 ```
 
 :::
@@ -1148,6 +1161,7 @@ dt <- datatable(df,
                                            colors)
   )
 dt
+print(dt)
 ```
 
 :::
@@ -1380,7 +1394,7 @@ Useful when data are complete (chemical composition, genetics, etc.)
 ### Source
 
 ```{=html}
-<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB 3619 Resilience.pdf" width="1000px" height="2100px" />
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/bib/BIB-3619-Resilience.pdf" width="1000px" height="2100px" />
 ```
 
 :::
