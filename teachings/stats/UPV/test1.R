@@ -1,3 +1,25 @@
+library(FactoMineR)
+library(Factoshiny)
+data(children)
+# Correspondance Analysis with Factoshiny:
+
+seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_Statistics_Szentloerinc/master/DATA/fibulae.csv", row.name = 1)
+
+res.shiny=CAshiny(seriat)
+
+# Find your app the way you left it (by clicking on the "Quit the app" button)
+res.shiny2=CAshiny(res.shiny)
+
+#CAshiny on a result of a CA
+data(children)
+res.ca <- CA (children, row.sup = 15:18, col.sup = 6:8)
+res.shiny=CAshiny(res.ca)
+
+## End(Not run)
+
+
+
+
 ######################### kernel 3d ##########################
 
 library(misc3d)

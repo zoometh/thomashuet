@@ -12,9 +12,9 @@ seriat <- read.csv("https://raw.githubusercontent.com/keltoskytoi/Multivariate_S
 datas <- datatable(
   seriat, extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
-    buttons = c('copy', 'csv', 'excel', 'pdf'),
-    lengthMenu = list(c(10,30, 50, -1), 
-                      c('10', '30', '50', 'All')),
+    buttons = c('copy', 'csv', 'excel'),
+    lengthMenu = list(c(30, 50, -1), 
+                      c('30', '50', 'All')),
     paging = T)
 )
 
@@ -39,7 +39,12 @@ ui <- fluidPage(
                  plotOutput(outputId = "seriatePlot",
                             height = "700px")),
         tabPanel("Dataframe", 
-                 DT::dataTableOutput(outputId = "dataframePlot"))
+                 DT::dataTableOutput(outputId = "dataframePlot")),
+        tabPanel("Publication", 
+                 htmlOutput('pdfviewer')),
+        tabPanel("Publication2", 
+                 tags$iframe(style="height:2000px; width:100%", 
+                             src="http://shinyserver.cfs.unipi.it:3838/bib/BIB_3570_Multivariate.pdf"))
       )
     )
   )
