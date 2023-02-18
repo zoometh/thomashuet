@@ -1,0 +1,97 @@
+.border {
+  border: 1px solid #dee2e6;
+}
+
+.border-thick {
+  border-width: 3px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.column33 {
+  float: left;
+  width: 33%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.column50 {
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.column66 {
+  float: left;
+  width: 66%;
+  vertical-align: middle;
+  align-items: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.table, table, th, td {
+  border: 1px solid;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/* IDE */
+.captiontext {
+  text-align: center;
+  font-style: italic;
+  font-size: 25px;
+  color: #808080;
+}
+
+.smalltext {
+  font-size: 25px;
+}
+
+.midtext {
+  font-size: 35px;
+}
+
+.tabsetheadertext {
+  font-size: 45px;
+}
+
+.worldwide {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #FFBB7D;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+
+/* IDE */
+.it-ide{
+  color: #e31a1c;
+}
+
+/* layouts */
+.it-layouts{
+  color: #fd8d3c;
+}
+
+/* libraries and packges */
+.it-libraries{
+  color: #fecc5c;
+}
+
+/* outside links */
+.it-resources{
+  color: #ffffb2;
+}

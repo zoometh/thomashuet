@@ -1,0 +1,179 @@
+---
+title: "TEST"
+# subtitle: "Create beautiful interactive slide decks with Reveal.js"
+author: "zoometh"
+# margin-left: 5.4mm
+# margin-right: 5.4mm
+format:
+  revealjs: 
+    code-fold: true
+    code-summary: "Show the code"
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: images/inst-uni-oxford_.png
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    footer: <https://tinyurl.com/goa-oxford>
+    # margin: 0
+    # width: 1400
+---
+
+```{r, echo=FALSE}
+library(shiny)
+library(rmarkdown)
+library(plotly)
+library(ggtern)
+library(plotly)
+library(DT)
+library(dplyr)
+library(archdata)
+library(kableExtra)
+library(FactoMineR)
+library(archdata)
+```
+
+## Processed
+
+Processed data - <span class="midtext">Working data (i.e. not definitive)</span>
+
+
+```{r}
+#| eval: true
+#| echo: false
+
+data("Mesolithic")
+rownames(Mesolithic) <- paste0("site_", rownames(Mesolithic))
+font.size <- "20pt"
+meso <- Mesolithic %>% 
+  DT::datatable(
+    options=list(
+      initComplete = htmlwidgets::JS(
+        "function(settings, json) {",
+        paste0("$(this.api().table().container()).css({'font-size': '", font.size, "'});"),
+        "}")
+    ) 
+  ) %>%
+  formatStyle(
+    colnames(Mesolithic),
+    background = styleColorBar(Mesolithic$Microliths, 'lightblue'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  )
+print(meso) # don't work?
+htmlwidgets::saveWidget(meso, "C:/Rprojects/thomashuet/teachings/stats/stats/data-processed/dt.html")
+# meso
+```
+
+
+## My footnote
+
+My footnote[^1]
+
+
+[^1]: dewpeuoewufwefew
+
+## background HTML
+
+```{=html}
+<iframe width="780" height="500" src="https://www.markdownguide.org/basic-syntax/" title="Markdown basic syntax"></iframe>
+```
+
+## Insert PDF
+
+
+<img src="C:/Rprojects/thomashuet/teachings/stats/stats/z-references/fulford-hodder-74.pdf" alt="this is a PDF"  width="4200" height="4200">
+
+<img src="C:/Rprojects/thomashuet/teachings/stats/stats/z-references/fulford-hodder-74.pdf" alt="this is a PDF"  width="4200" height="4200">
+
+
+## COLO
+
+:::{.column-body-outset}
+Outset content...
+:::
+
+## More sspace
+
+:::{.column-page}
+![](images/dist-rand-ra-millestone.png)
+:::
+
+## dewpiwep
+
+```{r}
+#| column: screen
+#| out-width: 150%
+#| fig-format: svg
+plot(pressure)
+```
+
+
+## GGGJGLJ
+
+```{r}
+#| column: page
+
+knitr::kable(
+  mtcars[1:6, 1:10]
+)
+```
+
+## frwef
+
+::: {.column-screen-inset}
+![Full screen inset](images/dist-rand-ra-millestone.png)
+:::
+
+## A classer
+
+For I. Herzog, there is a difference between validation and verification: validation of the model is when it is consistent with the facts (BIB I. Herzog, S28-09, CAA 2016). 
+
+
+"In short, identifying the existence of discrete cultural groups is not trivial." 
+(Shennan et al. 2015)
+
+chefferie simple
+chefferie complexe: sites principiers: En moyenne une distance d’une centaine de kilomètres entre chacune de ces résidences
+
+Test under the hypothesis H<sub>0</sub>. The *p-value* is the probability that H<sub>0</sub> is true, so the lower the *p-value*, the more likely H<sub>1</sub> is to exist<br>
+
+## 💡
+
+<div class="row">
+<div class="column"><em><center>"people think closer things are more similar"</em><br><small> Montello and Fabrikant, 2006</small></center></div>
+<div class="column">An archaeological culture is a polythetic assemblage of features more frequently associated with each other within a given area than outside it</div>
+</div>
+
+# Language {.tabset .tabset-dropdown}
+
+## English
+
+<h1>English Title</h1>
+
+Plot of random points
+
+```{r, echo=FALSE}
+plot(runif(10), runif(10), main = "Random points")
+```
+
+## French
+
+<h1>Titre Français</h1>
+
+Tracé de points aléatoires
+
+```{r, echo=FALSE}
+plot(runif(10), runif(10), main = "Points aléatoires")
+```
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```

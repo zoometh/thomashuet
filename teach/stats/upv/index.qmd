@@ -1,0 +1,1515 @@
+---
+title: "Statistics in Archaeology"
+# subtitle: "Create beautiful interactive slide decks with Reveal.js"
+author: "Thomas Huet (University of Oxford, EAMENA project)"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-camel-2.png"
+    data-background-size: "20%"
+    data-background-opacity: "0.2"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    code-fold: true
+    code-summary: "<small>Code</small>"
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/inst-uni-oxford_.png
+    footer: "Statistics in Archaeology <https://tinyurl.com/stats-upv> CNRS ASM <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 40px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
+    margin: 0
+    width: 1200
+---
+
+ 
+
+
+
+## Introduction
+
+```{r, echo=FALSE}
+library(shiny)
+library(rmarkdown)
+library(knitr)
+library(kableExtra)
+library(plotly)
+library(archdata)
+library(ggtern)
+library(ggplot2)
+library(DT)
+library(dplyr)
+library(FactoMineR)
+library(spatstat)
+library(spatialEco)
+library(sf)
+library(sp)
+
+# library(Factoshiny)
+
+data(OxfordPots)
+```
+
+
+
+## Historiography of Archaeology 1/2
+
+::: {.panel-tabset}
+
+### 📅
+
+| Start     | Method | Description |
+|:----------|:-------|:------------|
+| 1850s      | Prehistory  | evolution, geology, anthropology |
+| 1950s      | Culture-Historical  | <span style="color:red;">similarities</span>, typology, <span style="color:blue;">chronology</span> |
+| 1960s      | New archaeology  | chain operative, statistics, <span style="color:blue;">chronology (C14) </span> |
+| 1980s      | Post-processual  | <span style="color:red;">dissimilarities</span>, cultural relativism |
+| 2020s      | Tool-driven  | Big data, ML / DL, aDNA |
+
+: {tbl-colwidths="[15,35,50]"}
+
+### Prehistory
+
+<div class="row">
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-prehistoire-perthes.jpg){height=350px}<div class="captiontext">Boucher de Perthes, 1847, Antiquités celtiques et  antédiluviennes</div></div>
+<div class="column66">Concomitance between biological "species" (C. Darwin) and archaeological "types" (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)</div>
+</div>
+
+### Culture-Historical
+
+<div class="row">
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-romantic.png){height=350px}
+<div class="captiontext">'Monument druidique près de Gisors': Baron Taylor, 1824, <em>Voyages pittoresques et romantiques dans l'ancienne France</em></div>
+</div>
+
+<div class="column66">Focused on chronology, rooted in academic/national traditions and develops in parallel with History as a 'scientific' discipline taught in universities. </div>
+</div>
+
+:::
+
+## Historiography of Archaeology 2/2
+
+::: {.panel-tabset}
+
+
+### New Archaeology
+
+<div class="row">
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-newarchaeo-binford.png){height=350px}
+<br><div class="captiontext">R. & S. Binford, 1968, *New Perspectives in Archaeology*</div>
+</div>
+<div class="column">*Processualism*, the advancement of statistics favors demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.</div>
+</div>
+
+### Post-Processual
+
+<div class="row">
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-postprocess-sombreabime.png){height=350px}
+<div class="captiontext">Laurent Olivier, 2008, *Le sombre abîme du temps*</div>
+</div>
+<div class="column66">*Post-processualism*[^2], archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity) </div>
+</div>
+
+[^2]: i.e. Post-positivism
+
+### Tool-driven
+
+<div class="row">
+
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-archaeo-ai-ml-angkor.jpg){height=350px}
+<div class="captiontext">Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer</div>
+</div>
+<div class="column66">With the development of computational archaeology (e.g. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
+</div>
+</div>
+
+:::
+
+::: footer
+Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practice*, p. 39 ff. ](https://ebookcentral.proquest.com/lib/oxford/reader.action?docID=6178544&ppg=39)
+:::
+
+
+## Birth of statistics 1/2
+
+::: {.panel-tabset}
+
+
+### Mean
+
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-stat-mean-birth-sex-ratio.png){height=350px}
+<div class="captiontext">Sex ratio at birth</div>
+</div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-stat-mean-pythagore.png){height=350px}
+<div class="captiontext">The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic</div>
+</div>
+
+</div>
+
+### Median
+
+<div class="row">
+
+<div class="column">
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png){height=350px}
+<div class="captiontext">Title page of E. Wright, 1599, 'Certaine Errors in Navigation'</div>
+</div>
+
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-stat-median-compass-map.png){height=350px}</div>
+
+</div>
+
+### Significance test
+
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/aut-arbuthnot-1629-1710.png){height=350px}
+<div class="captiontext">J. Arbuthnot, 1629-1710 census. Published in 1711, 'Philosophical transactions, 27'</div>
+</div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-pvalue.png){height=350px}
+<div class="captiontext">*p-value* and *Z-score*, two normalised test thresholds to estimate the significance of an observed distribution *vs* a random distribution</div>
+</div>
+
+</div>
+
+\
+
+
+### Normal law
+
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/aut-quetelet_1821-33_census.png){height=350px}
+<div class="captiontext">A. Quetelet, 1821-1833 census</div>
+</div>
+
+<div class="column">
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png){height=350px}
+<div class="captiontext">A selection of Normal Distribution Probability Density Functions</div>
+</div>
+
+</div>
+
+:::
+
+
+## Advanced statistics
+
+::: {.panel-tabset}
+
+
+### Expert Systems
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-computer-science-expert.jpg){height=300px}
+<div class="captiontext">Garry Kasparov *vs* Deep Blue, 1996-1997</div>
+</div>
+</div>
+
+
+### AI/ML
+
+Artificial Intelligence & Machine Learning
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/hist-computer-science-ai-chatGPT.png){height=300px}
+<div class="captiontext">Natural language processing (NLP), prompted by ChatGPT, 2023</div>
+</div>
+
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/prog-ml-dl-cv-example.jpg){height=300px}
+<div class="captiontext">Computer vision (CV), Deep Neural Network model</div>
+</div>
+
+</div>
+
+:::
+
+
+
+
+::: {.notes}
+Statistik (description of a state, a country): collecting population data through census, surveys 
+!= probability. Based on social data (!= mathematics). Statistics need to analyse large amount of data (dataset), Statistics are manded by institutions, to be interesting they need to be realised over the long term to allow comparisons.
+*p-value* is a test value, 95% = > .05
+:::
+
+## <span style="color:white;">Glossary of statistics</span> {background-image="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/blackboard-fr.png"}
+
+
+## Type of statistics
+
+::: {.panel-tabset}
+
+### *Families*
+
+:::: {.columns}
+
+::: {.column width="33%"}
+![Descriptive](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-histogram.png){height=350px}
+:::
+
+::: {.column width="33%"}
+![Explanatory](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa.png){height=350px}
+:::
+
+::: {.column width="33%"}
+![Confirmatory](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-pvalue-1.png){height=350px}
+:::
+
+::::
+
+
+### Descriptive
+
+**Describe** the population with the mean (&mu;), the median (M) and standard deviation (&sigma;)
+
+::: {layout-nrow=2}
+![Scatterplot](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-scatterplot.png){height=200px}
+
+![Histogram](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-histogram.png){height=200px}
+
+![Boxplot](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-boxplot.png){height=200px}
+
+![Line chart](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-linechart.png){height=200px}
+
+![Pie Chart](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-piechart.png){height=200px}
+
+![Radar chart](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-radar.png){height=200px}
+:::
+
+### Exploratory
+
+<div class="row">
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa.png){height=350px}</div>
+<div class="column66">**Clustering** method, we move from a description to a modelling identifying central tendencies</div>
+</div>
+
+### Confirmatory
+
+<div class="row">
+<div class="column33">**Test** of<br>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-pvalue-1.png){height=350px}</div>
+<div class="column66">
+<ul>
+<li>***conformity***[^1] between the observed population and a theoretical distribution (e.g. normal law)</li>
+<li>***homogeneity*** between different populations</li>
+<li>***relation*** between several variables from the same population</li>
+</ul>
+</div>
+</div>
+
+[^1]: i.e. goodness-of-fit
+
+:::
+
+::: {.notes}
+Explanatory -> New Archaeology
+:::
+
+## Middle Range Theories 
+
+<span class="midtext">Archaeology establishes *facts* and proposes **models** to connect these facts</span>
+
+::: {.panel-tabset}
+
+### MRT
+
+
+<div class="row">
+
+<div class="column33"><center>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/theo-archaeo-renfrewbahn.jpg){height=300px}
+<div class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</div>
+</center></div>
+
+<div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span><br><small> Robert K. Merton, 1968</small></center></div>
+</div>
+
+### Example
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column">We want to compare groups of settlement of 3 different cultures (or sites): 
+<span style="color:blue">A</span>, <span style="color:red">B</span>, and <span style="color:green">C</span>
+</div>
+</div>
+
+### Singularity
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column"><b>None</b> of the comparisons gives the same results<br>
+<div class= smalltext>⚠️ In practice, over-valuing a specific element by giving it a marker character is dangerous, as its originality makes its management uncontrollable.</div></div>
+</div>
+
+### Conformity
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column"><b>Most</b> comparisons give the same results<br>
+️<div class= smalltext>💡 Increase the matching success of the model by decreasing its precision, or decrease the matching success of the model by increasing its precision.</div></div>
+</div>
+
+### Identity
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column"><b>All</b> the comparison give the same result<br>
+️<div class= smalltext>⚠️️In practice, a common element in 3 or more different data sets is usually rare. </div></div>
+</div>
+
+:::
+
+
+::: {.notes}
+middle range theories
+= comparisons
+:::
+
+## Conformity
+
+::: {.panel-tabset}
+
+### *1<sup>st</sup> law*
+
+
+<div class="row">
+
+<div class="column">
+<center>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/aut-tobler.jpg){height=250px}
+</center>
+<div class="captiontext">Waldo Tobler</div>
+</div>
+
+<div class="column">
+<em><center>"everything is related to everything else, but near things are more related than distant things"</em><br><small> Tobler, 1970</small></center>
+</div>
+
+</div>
+
+
+### <span class="tabsetheadertext">Where 🗺️</span>
+
+
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/where-bruegel.jpg){height=350px}
+<div class="captiontext">Pieter Bruegel the Elder, *The Harversters*, 1565</div>
+</div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/where-macedonia.png){height=350px}
+<div class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</div>
+</div>
+
+</div>
+
+
+### <span class="tabsetheadertext">When ⏰</span>
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/when-geology.png){height=350px}
+<div class="captiontext">Spiral of geological times</div>
+</div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/when-strati.jpg){height=350px}
+<div class="captiontext">Startigraphic log and corresponding Harris matrix</div>
+</div>
+
+</div>
+
+
+### <span class="tabsetheadertext">What 🏺</span>
+
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/what-1950.jpg){height=350px}
+<div class="captiontext">An American suburb in the 1950s</div>
+</div>
+
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/what-pottery.jpg){height=350px}<br><div class="captiontext">Seriation of Chassean potteries in South France</div>
+</div>
+
+</div>
+
+
+
+### <span class="tabsetheadertext">How ⚙️</span>
+
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/how-fordism.jpg){height=350px}
+<div class="captiontext">Assembly line work in a Ford factory</div>
+</div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/how-co.jpg){height=350px}
+<div class="captiontext">*Chaine opératoire* of flint lamellas knapping</div>
+</div>
+
+</div>
+
+### <span class="tabsetheadertext">Who 🤰🏽</span>
+
+<div class="row">
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/who-family.jpg){height=350px}
+<div class="captiontext">The British Royal Family</div>
+</div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/who-haak_afo.jpg){height=350px}
+<div class="captiontext">Estimate DNA mixture proportions of Modern Europeans</div>
+</div>
+
+</div>
+
+
+:::
+
+## Conformity
+
+::: {.panel-tabset}
+
+### <span class="tabsetheadertext">Compare 1/3<span class="tabsetheadertext">
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+```{r}
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         # pagingType = "numbers",
+                         # PageLength = 1,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
+dt
+```
+
+:::
+
+
+::: {.column width="60%"}
+
+```{r}
+#| fig-width: 8
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+sites <- rownames(df)
+
+ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) + 
+  theme_bw() +
+  geom_point(alpha = 0.5, size = 17) +
+  geom_point(size = 1, color = "black") +
+  theme_showarrows() +
+  theme(legend.position="none")
+```
+
+:::
+
+::::
+
+### <span class="tabsetheadertext">Compare 2/3<span class="tabsetheadertext">
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+```{r}
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         # pagingType = "numbers",
+                         # PageLength = 1,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
+dt
+```
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+res.ca <- CA(df[ , c(2,3,4)])
+```
+
+:::
+
+::::
+
+### <span class="tabsetheadertext">Compare 3/3<span class="tabsetheadertext">
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+```{r}
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         # pagingType = "numbers",
+                         # PageLength = 1,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
+dt
+```
+
+:::
+
+::: {.column width="60%"}
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+dend.h <- df[ , c(2,3,4)] %>%
+  scale %>% 
+  dist %>% 
+  hclust
+plot(as.dendrogram(dend.h))
+```
+
+\
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+dend.h.dist <- df[ , c(2,3,4)] %>%
+  scale %>% 
+  dist
+dend.h.dist <- as.data.frame(as.matrix(dend.h.dist))
+dend.h.dist <- round(dend.h.dist, 2)
+kable(dend.h.dist) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+```
+
+\
+
+
+:::
+
+::::
+
+\
+
+### Regress
+
+```{=html}
+<iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/stats/dim2/oxfordwater" title="Regression"></iframe>
+```
+
+
+### Coefficient
+
+<div class="column">
+<div class="midtext">
+<table class="table">
+<thead>
+<tr>
+<th>cor</th>
+<th>interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>...</td>
+</tr>
+<tr>
+<td>0.9</td>
+<td>oustanding</td>
+</tr>
+<tr>
+<td>0.8</td>
+<td>excellent</td>
+</tr>
+<tr>
+<td>0.7</td>
+<td>acceptable</td>
+</tr>
+<tr>
+<td>0.6</td>
+<td>weak</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div class="column"> 
+All are between `[-1:1]`
+<hr>
+Coefficient of correlation
+<ul class="square">
+<li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
+<li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
+</ul>
+<br>
+Coefficient of determination
+<ul class="square">
+<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
+</ul>
+</div>
+
+
+:::
+
+
+## Models
+
+::: {.panel-tabset}
+
+### Statement
+
+<div class="row">
+<div class="column50"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/aut-box.jpg){height=300px}</center><div class="captiontext">George E. P. Box</div></div>
+<div class="column50"><em><center>"All models are wrong, but some are useful"</em><br><small> Box, 1976</small></center></div>
+</div>
+
+### Examples
+
+<!-- <center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-know-thyself.jpg){height=200px}</center> -->
+
+<div class="row">
+
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-kroeber.png){height=300px}</center><div class="captiontext">Kroeber, A. L., 1923, *Anthropology: culture patterns & processes*</div></div>
+
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-splitgraph.jpg){height=300px}</center><div class="captiontext">Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philos. Trans. R. Soc. B*, 365(1559), 3923-3933</div></div>
+
+</div>
+
+
+### Proprieties
+
+<table class = "table">
+<thead>
+<tr>
+<th>propriety</th>
+<th>description</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Explanatory</td>
+<td>not over- or under-fitting</td>
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-fitting.png"></td>
+<!-- <td>![](../-https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-fitting.png){height=200px}</td> -->
+</tr>
+<tr>
+<td>Regularity</td>
+<td>reproducing data regularity</td>
+<td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-regularity-christaller.jpg){height=200px}</td>
+</tr>
+<tr>
+<td>Robustness</td>
+<td>not sensitive to small changes in data</td>
+<td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-robust.jpg){height=200px}</td>
+</tr>
+<tr>
+<td>Parsimony</td>
+<td>the simplest possible explanation is also the most probable</td>
+<td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-parsimony-laplace.jpg){height=200px}</td>
+</tr>
+<tr>
+<td>Versioning</td>
+<td>carry its own story</td>
+<td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-versioning.jpg){height=200px}</td>
+</tr>
+</tbody>
+</table>
+
+:::
+
+::: {.notes}
+(abandoned hypotheses, alternative versions, etc.)
+controlled vocabulary -> scale
+:::
+
+## Models - Proprieties
+
+::: {.panel-tabset}
+
+### <span class="midtext">Explanatory</span>
+
+<div class="row">
+<center>not over- or under-fitting</center>
+</div>
+
+<div class="row">
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-fitting.png){height=250px}</center>
+</div>
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-fittingnot-a.png){height=250x}</center>
+</div>
+</div>
+
+<div class="row">
+<div class="column">✔️ Fitting</div>
+<div class="column">❌ Fitting</div>
+</div>
+
+### <span class="midtext">Regularity</span>
+
+<div class="row">
+
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-regularity-christaller.jpg){height=350px}</center>
+</div>
+
+<div class="column">
+<center>
+reproducing data regularity (central tendencies)
+</center>
+</div>
+
+</div>
+
+### <span class="midtext">Robustness</span>
+
+<div class="row">
+
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-robust.jpg){height=350px}</center>
+</div>
+
+<div class="column">
+<center>
+not sensitive to small changes in data (reproducible)
+</center>
+</div>
+
+</div>
+
+### <span class="midtext">Parsimony</span>
+
+<div class="row">
+
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-parsimony-laplace.jpg){height=350px}</center>
+</div>
+
+<div class="column">
+<center>
+all things being equal, the simplest possible explanation for a phenomenon is also the most probable
+</center>
+</div>
+
+</div>
+
+
+### <span class="midtext">Versioning</span>
+
+<div class="row">
+
+<div class="column">
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-versioning.jpg){height=350px}</center>
+</div>
+
+<div class="column">
+<center>
+carry its own story: abandoned assumptions, alternative versions, etc.
+</center>
+</div>
+
+</div>
+
+
+:::
+
+
+## Data
+
+
+::: {.panel-tabset}
+
+### Raw
+
+Raw data - <span class="midtext">Primary data acquired via a device</span>
+
+
+```{r}
+#| eval: true
+#| echo: false
+
+data("Mesolithic")
+rownames(Mesolithic) <- paste0("site_", rownames(Mesolithic))
+font.size <- "20pt"
+Mesolithic %>% 
+  DT::datatable(
+    width = "60%",
+    options=list(
+      initComplete = htmlwidgets::JS(
+        "function(settings, json) {",
+        paste0("$(this.api().table().container()).css({'font-size': '", font.size, "'});"),
+        "}")
+    ) 
+  )
+```
+\
+
+### Processed
+
+Processed data - <span class="midtext">Working data (i.e. not definitive)</span>
+
+```{=html}
+<iframe width="780" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/stats/data-processed/dt.html" title="Processed data"></iframe>
+```
+
+
+```{r}
+#| eval: false
+#| echo: false
+
+data("Mesolithic")
+rownames(Mesolithic) <- paste0("site_", rownames(Mesolithic))
+font.size <- "20pt"
+meso <- Mesolithic %>% 
+  DT::datatable(
+    options=list(
+      initComplete = htmlwidgets::JS(
+        "function(settings, json) {",
+        paste0("$(this.api().table().container()).css({'font-size': '", font.size, "'});"),
+        "}")
+    ) 
+  ) %>%
+  formatStyle(
+    colnames(Mesolithic),
+    background = styleColorBar(Mesolithic$Microliths, 'lightblue'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  )
+print(meso) # don't work?
+meso
+```
+
+### Aggregated
+
+Aggregated data - <span class="midtext">Gathered data expressed in a summary form</span>
+
+```{r}
+#| echo: false
+
+percent <- colSums(Mesolithic)/sum(Mesolithic)*100
+names(percent) <- colnames(Mesolithic)
+pie(percent)
+```
+
+
+### Meta
+
+Metadata - <span class="midtext"><em>data about data</em></span>
+
+<center>
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/data-meta-photo-microliths.jpg){height=300}
+
+</center>
+
+```{r}
+#| echo: true
+#| code-fold: true
+
+img <- exiftoolr::exif_read("C:/Rprojects/thomashuet/teachings/stats/images/data-meta-photo-microliths.jpg")
+print(paste0("Caption-Abstract: ", img[["Caption-Abstract"]]))
+print(paste0("Copyright: ", img[["Copyright"]]))
+```
+
+\
+
+
+### Missing
+
+Missing data - <span class="midtext">Lack of knowledge, e.g. `NA` (<em>Not Available</em>)</span>
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "<small>Show the code</small>"
+
+df <- data.frame(row.names = c("site_A", "site_B", "site_C", "site_D"),
+                 Microliths =  c(10, 5, NA, 2),
+                 Scrapers =  c(7, 6, 10, 5),
+                 Burins =  c(13, 7, 4, NA))
+kable(df) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+```
+
+Sums by column (with `NA`)
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Show the code"
+
+sum.df.with.na <- as.data.frame(t(colSums(df)))
+kable(sum.df.with.na) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+```
+
+Sums by column (without `NA`)
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: "Show the code"
+
+sum.df.with.na <- as.data.frame(t(colSums(df, na.rm = T)))
+kable(sum.df.with.na) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+```
+
+
+:::
+
+
+## Scales
+
+::: {.panel-tabset}
+
+
+### <span class="tabsetheadertext">Quantitative</span>
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-scale-quant.png){height=350px}</div>
+<div class="column">**Units of length** (cm, m, km, kg, years, etc.). Statistical units are quantified by continuous measurable intervals.</div>
+</div>
+
+
+### <span class="tabsetheadertext">Ordinal</span>
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-scale-ord.png){height=350px}</div>
+<div class="column">**Ranks** (discrete). Ordered sequence of values (e.g. 'very cold', 'cold', 'lukewarm', 'hot', 'very hot') without establishing the distance between consecutive values.</div>
+</div>
+
+
+
+### <span class="tabsetheadertext">Nominal</span>
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-scale-nom.png){height=350px}</div>
+<div class="column">**Qualitative** categories that cannot be ordered (e.g. 'green', 'yellow', 'red').</div>
+</div>
+
+
+### <span class="tabsetheadertext">Change of scale</span>
+
+<table class="table">
+<thead>
+<tr>
+<th>from</th>
+<th>to</th>
+<th>transformation</th>
+<th>example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Quantitative</td>
+<td>Ordinal</td>
+<td>discretization</td>
+<td>`[1:10], [11:20], etc.`</td>
+</tr>
+<tr>
+<td>Ordinal</td>
+<td>Quantitative</td>
+<td>`as.numeric()`</td>
+<td>`"low" = 1, "medium" = 2`</td>
+</tr>
+<tr>
+<td>Ordinal</td>
+<td>Nominal</td>
+<td>`as.factor()`</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+### <span class="tabsetheadertext">Color ramps</span>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+Quantitative
+
+```{r}
+#| echo: true
+
+ncolors <- 5
+x <- sort(sample.int(100, ncolors))
+colors <- RColorBrewer::brewer.pal(ncolors, name = "YlGn")
+df <- data.frame(values = x,
+                 colors = colors)
+dt <- datatable(df, 
+          rownames = TRUE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("colors",
+              backgroundColor = styleEqual(colors, 
+                                           colors)
+  )
+dt
+```
+
+:::
+
+::: {.column width="33%"}
+
+Ordinal
+
+```{r}
+ncolors <- c('very cold', 'cold', 'lukewarm', 'hot', 'very hot')
+colors <- RColorBrewer::brewer.pal(length(ncolors), name = "RdBu")
+df <- data.frame(values = ncolors,
+                 colors = rev(colors))
+datatable(df, 
+          rownames = TRUE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("colors",
+              backgroundColor = styleEqual(colors, 
+                                           colors)
+  )
+```
+
+:::
+
+::: {.column width="33%"}
+
+Nominal
+
+```{r}
+ncolors <- c('green', 'yellow', 'red')
+colors <- c('#00FF00', '#FFFF00', '#FF0000')
+df <- data.frame(values = ncolors,
+                 colors = colors)
+dt <- datatable(df, 
+          rownames = TRUE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         filter = "none")) %>% 
+  formatStyle("colors",
+              backgroundColor = styleEqual(colors, 
+                                           colors)
+  )
+dt
+```
+
+:::
+
+::::
+
+:::
+
+\
+
+
+## 1-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim1/" background-interactive="true"}
+
+
+::: {.notes}
+univariate
+Data with 1 dimension = 1 measure
+Histogram = discretization = bins = change of scale
+:::
+
+::: footer
+Dataset: [`archdata` R package - `Mesolithic` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
+:::
+
+## 2-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim2-map/"}
+
+::: {.notes}
+TODO: show coeff value
+bi-variate
+utiliser la regression de 
+Renfrew, C., & Bahn, P. (2012). Archaeology: theories, methods and practice. Thames and Hudson
+regression = parcimonious = RMS
+SD, standardize residuals: standard deviation. The SD represents the "distance" between the mean value and the value under consideration, expressed as a number of standard deviations. In the context of a regression, the SD gives an idea of the "distance" of an individual (described by one or more variables) from the value estimated if the model were perfect (R2=1, i.e. all points aligned on the least squares line) (SS BIB). 
+The standard deviation between the value that the variable characterising an individual takes and its expected value (normal distribution). The standard deviation (or standardised residuals) makes it possible to avoid the size effect. The latter would not allow working with individuals with extremely different numbers (BIB 1526). 
+If the series studied is normal, the standard deviations of the values of this series follow a normal distribution of mean 0 and standard deviation 1, i.e. a centred-reduced normal distribution (internet)
+:::
+
+::: footer
+Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.
+
+Hodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119.
+Dataset: [`archdata` R package - `OxfordPots` dataset](https://rdrr.io/cran/archdata/man/archdata-package.html)
+:::
+
+
+
+## 2-dim data spatial {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim2-neighbor/"}
+
+
+## 2-dim data spatial NNI
+
+Average Nearest Neighbor Index (NNI)
+
+::: {.panel-tabset}
+
+### Results
+
+
+```{r}
+x3 <- seq(1:10) - 0.5
+w <- as.owin(c(min(x3), max(x3),
+               min(x3), max(x3)))
+x4 <- x3
+grid <- expand.grid(x3, x4)
+names(grid) <- c("x3", "x4")
+coordinates(grid) <- ~x3 + x4
+gridded(grid) <- TRUE
+random.pt <- spsample(x = grid, n = 20, type = 'random')
+regular.pt <- spsample(x = grid, n = 20, type = 'regular')
+ori <- data.frame(spsample(x = grid, n = 1, type = 'random'))
+n.point <- 20 
+h <- rnorm(n.point, 1:2) 
+dxy <- data.frame(matrix(nrow = n.point, ncol = 2))
+angle <- runif(n = n.point, min = 0, max = 2*pi)
+dxy[ , 1] <- h*sin(angle)
+dxy[ , 2] <- h*cos(angle)
+cluster.pt <- data.frame(x = rep(NA, 20), y = rep(NA, 20))
+cluster.pt$x <- ori$coords.x1 + dxy$X1
+cluster.pt$y <- ori$coords.x2 + dxy$X2
+coordinates(cluster.pt)<-  ~ x+y
+# NNIs
+random.pt.sf <- sf::st_as_sf(random.pt)
+rnd <- as.data.frame(nni(random.pt.sf))
+regular.pt.sf <- sf::st_as_sf(regular.pt)
+reg <- as.data.frame(nni(regular.pt.sf))
+cluster.pt.sf <- sf::st_as_sf(cluster.pt)
+clust <- as.data.frame(nni(cluster.pt.sf))
+# merge
+res.nni <- rbind(rnd, clust, reg)
+rownames(res.nni) <- c("random", "cluster", "regular")
+colnames(res.nni) <- c("NNI", "z.score", "p.value", "expect.mean.dist", "observ.mean.dist")
+kable(round(res.nni, 2)) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+```
+
+### Documentation
+
+```{=html}
+<iframe width="900" height="300" src="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/average-nearest-neighbor.htm#:~:text=The%20Nearest%20Neighbor%20Index%20is,in%20a%20hypothetical%20random%20distribution" title="YAML for R Markdown"></iframe>
+```
+<small><https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/average-nearest-neighbor.htm></small>
+\
+
+## 2-dim data spatial {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/spat-nearest/"}
+
+
+## {}
+
+Random patterns <em>versus</em> Clustered patterns
+
+::: {.panel-tabset}
+
+### Rock art sites
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-rand-ra-millestone.png){height=350px}<div class="captiontext">Cups-and-rings rock art concentration (&#11044;) in Millestone Burn, Northumberland, England (Bradley 1996)</div>
+</div>
+<div class="column">Engraved rock sites (&#11044;) are concentrated on Millstone Grits (sandstone) with a statistical significance in comparison to a theoretical **random distribution** (&#9675;).</div>
+</div>
+
+
+### Rock art surfaces
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-rand-ra-bego.png){height=350px}<div class="captiontext">Neolithic/Early Bronze Age engraved rock, Mont Bego, France (Chippindale 1988)</div></div>
+<div class="column">On the observed rock surface (A), engravings are arranged in a more orderly manner in a **random process** (B and C), but the former remains far from an orderly arrangement without overlapping engravings.</div>
+</div>
+
+
+### Bronze hoards
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/lba-hoards-random.jpg){height=350px}<div class="captiontext">Distribution of the Late Bronze Age Ewart Park hoards, Atlantic Europe (Wiseman 2018)</div></div>
+<div class="column">Hoards from the Ewart Park phase show a **normal distribution** when considering size, fragmentation and number of pieces. The hoards would result from a random accumulation and breaking</div>
+</div>
+
+
+:::
+
+
+::: {.notes}
+random = 
+clustered = 
+:::
+
+## {}
+
+Regular pattern
+
+::: {.panel-tabset}
+
+### Tumulus
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-tumulus.jpg){height=350px}<div class="captiontext">Early Bronze Age tumuli in Brittany (Brun 2011)</div></div>
+<div class="column">The 'princely' tombs are **evenly distributed** in space, separated from each other by a distance of 12.5 km, i.e. less than three hours' walk round trip</div>
+</div>
+
+
+### Princely sites
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-centralplace.jpg){height=350px}<div class="captiontext">Early Iron Age princely sites at the North of the Alps (Brun 2011)</div></div>
+<div class="column">In the 6<sup>th</sup> century BC, the 'princely sites' are separated from each other by an **average distance** of about 50 km. This distance can be covered in a day on horseback.</div>
+</div>
+
+
+### Emporions
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-reg-emporions.jpg){height=350px}<div class="captiontext">Main emporions in the Gulf of Lion, NW Mediterranean (Gailledrat 2005)</div></div>
+<div class="column">During the same period (6<sup>th</sup> c. BC) coastal trading posts installed almost systematically at the mouth of river valleys and approximately 40 km from each other (1 day's cabotage)</div>
+</div>
+
+### Caravanserais
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/caravanserail/maps/20220324124352647-1.jpg){height=350px}<div class="captiontext">Caravanserais in Iran (Kleiss 1996 )</div></div>
+<div class="column">During the Late Islamic period (15<sup>th</sup>-18<sup>th</sup> c. AD) trade posts (caravanserais) have been build along trading roads. They are close to water sources and separated from each other by about 20-30 km (1 day's transport).</div>
+</div>
+
+
+:::
+
+::: {.notes}
+regular = competition
+:::
+
+## {}
+
+Gradient pattern
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/dist-gradient-spread-neo.jpg){height=300px}<div class="captiontext">Ammerman and Cavalli-Sforza, 1971, *Measuring the rate of spread of early farming in Europe*</div></div>
+<div class="column">**Diffusion** (spatial and temporal). In the case of a linear gradient, the calculation of the centroid of a group of points is a good indicator of its evolution.</div>
+</div>
+
+
+## 2-dim data shape {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/gmm/"}
+
+::: footer
+Current dataset: [Matzig, D.N., Hussain, S.T. and Riede, F. *Design Space Constraints and the Cultural Taxonomy of European Final Palaeolithic Large Tanged Points (...)*](https://doi.org/10.1007/s41982-021-00097-2)
+:::
+
+## 3-dim data {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/" background-interactive="true"}
+
+::: footer
+Current dataset: [ANR Itineris](https://github.com/zoometh/itineRis/blob/main/inst/extdata/dfisotops.csv)
+:::
+
+::: {.notes}
+Useful when data are complete (chemical composition, genetics, etc.)
+:::
+
+## 3-dim or more data
+
+<center>Factorial Analysis (FA)</center>
+<br>
+<div class="row">
+<div class="column" style="width: 25%">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-camel-1.png){height=300px}</div>
+<div class="column33" style="width: 5%; vertical-align: middle; align-items: center;">➡️</div>
+<div class="column" style="width: 25%">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-camel-2.png){height=300px}</div>
+<div class="column" style="width: 45%">Factorial Analysis is the generic term for multivariate (or multifactorial) analysis</div>
+</div>
+
+
+## 3-dim or more data
+
+::: {.panel-tabset}
+
+### Dataset
+
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-plosone-carto-zona.png){height=300px}<div class="captiontext">Map of NE Iberia with locations of the studied sites</div></div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-seriat-plosone.png){height=300px}<div class="captiontext">Chrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity</div>
+</div>
+</div>
+
+
+### CA
+
+<center>Correspondence Analysis (CA)</center>
+<br>
+<div class="row">
+<div class="column33">$\ge$ 2 rows,  $\ge$ 2 columns, $\emptyset$ missing data, $\emptyset$ negative values, $\forall$ data with the same scale</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-ca-plosone-lba-zona.png){height=300px}<div class="captiontext">CA of sites’ NISP profiles during the LBA</div></div>
+</div>
+
+
+### PCA
+
+<center>Principal Component Analysis (PCA)</center>
+<br>
+<div class="row">
+<div class="column33">quantitative data, $\ge$ 3 rows, $\ge$ 3 columns, nb rows $\ge$ 10x nb of columns</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-pca-plosone-xxx.jpg){height=300px}<div class="captiontext">PCA of sites’ NISP profiles during the MIA2</div></div>
+</div>
+
+
+### HCA
+
+<center>Hierachical Clustering Analysis (HCA)</center>
+<br>
+<div class="row">
+<div class="column33">related to CA, PCA or MFA</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-hc-plosone-lba-zona.png){height=300px}<div class="captiontext">HCA of sites’ NISP profiles during the LBA</div></div>
+</div>
+
+### LDA
+
+<center>Linear Discriminant Analysis (LDA)</center>
+<br>
+<div class="row">
+<div class="column33">sensitive to outliers, the size of the smallest group must be larger than the number of predictor variables</div>
+<div class="column66">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/stat-fa-lda-plosone-lba-zona.png){height=300px}<div class="captiontext">LDA of sites’ NISP profiles during the LBA</div></div>
+</div>
+
+### Source
+
+```{=html}
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/bib/BIB-3619-Resilience.pdf" width="1000px" height="2100px" />
+```
+
+:::
+
+
+
+::: footer
+[Espinet et al., "Resilience and livestock adaptations to demographic growth and technological change (...)" *PloS one 16.2 (2021)*](https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0246201)
+:::
+
+## Seriation {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/seriation/"}
+
+::: {.notes}
+Seriation = Guttman effect = horse shoe = arc
+= relation directe sur la sphere
+:::
+
+::: footer
+Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary*](https://ojs.elte.hu/dissarch/article/view/2262/2082)
+:::
