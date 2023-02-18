@@ -35,38 +35,6 @@ library(FactoMineR)
 library(archdata)
 ```
 
-## Processed
-
-Processed data - <span class="midtext">Working data (i.e. not definitive)</span>
-
-
-```{r}
-#| eval: true
-#| echo: false
-
-data("Mesolithic")
-rownames(Mesolithic) <- paste0("site_", rownames(Mesolithic))
-font.size <- "20pt"
-meso <- Mesolithic %>% 
-  DT::datatable(
-    options=list(
-      initComplete = htmlwidgets::JS(
-        "function(settings, json) {",
-        paste0("$(this.api().table().container()).css({'font-size': '", font.size, "'});"),
-        "}")
-    ) 
-  ) %>%
-  formatStyle(
-    colnames(Mesolithic),
-    background = styleColorBar(Mesolithic$Microliths, 'lightblue'),
-    backgroundSize = '100% 90%',
-    backgroundRepeat = 'no-repeat',
-    backgroundPosition = 'center'
-  )
-print(meso) # don't work?
-htmlwidgets::saveWidget(meso, "C:/Rprojects/thomashuet/teachings/stats/stats/data-processed/dt.html")
-# meso
-```
 
 
 ## My footnote

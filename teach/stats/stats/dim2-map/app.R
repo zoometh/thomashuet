@@ -47,8 +47,8 @@ nowater.residuals <- paste0("<b>", Oxford.nowater$Place, "</b><br>",
                             "Observed: ", round(Oxford.nowater$predicted, 2))
 
 
-Place.coords.path <- read.csv("oxfordpots_data.csv")
-Place.coords <- openxlsx::read.xlsx(Place.coords.path, 1)
+Place.coords <- read.csv("https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/stats/dim2-map/oxfordpots_data.csv")
+names(Place.coords) <- c("Place", "lat", "lon")
 Place.coords <- Place.coords[ , c("Place", "lon", "lat")]
 Place.coords[, c("lon", "lat")] <- sapply(Place.coords[, c("lon", "lat")], as.numeric)
 
@@ -83,8 +83,11 @@ ui <- fluidPage(
                  leafletOutput("mymap", width = 800, height = 600)),
         tabPanel("Data", 
                  DT::dataTableOutput(outputId = "dataframePlot")),
-        tabPanel("Source", 
-                 uiOutput("sources"))
+        tabPanel("Publication", 
+                 tags$iframe(style="height:2000px; width:100%", 
+                             src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-3588-Regression.pdf"))
+        # tabPanel("Source", 
+        #          uiOutput("sources"))
       )
     )
   )#,
@@ -109,18 +112,18 @@ server <- function(input, output, session) {
         color = "blue")
       xy.size <- 6
       
-      OxfordP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-oxford.jpg"
-      NewForP <- "C:/Rprojects/thomashuet/teachings/stats/UPV/images/art-pottery-newforest.jpg"
-      OxfordP.txt <- RCurl::base64Encode(readBin(OxfordP, "raw", file.info(OxfordP)[1, "size"]), "txt")
-      NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(NewForP)[1, "size"]), "txt")
-      
-      m <- list(
-        l = 50,
-        r = 50,
-        b = 100,
-        t = 50,
-        pad = 20
-      )
+      # OxfordP <- "C:/Rprojects/thomashuet/teach/stats/images/art-pottery-oxford.jpg"
+      # NewForP <- "C:/Rprojects/thomashuet/teach/stats/images/art-pottery-newforest.jpg"
+      # OxfordP.txt <- RCurl::base64Encode(readBin(OxfordP, "raw", file.info(OxfordP)[1, "size"]), "txt")
+      # NewForP.txt <- RCurl::base64Encode(readBin(NewForP, "raw", file.info(NewForP)[1, "size"]), "txt")
+      # 
+      # m <- list(
+      #   l = 50,
+      #   r = 50,
+      #   b = 100,
+      #   t = 50,
+      #   pad = 20
+      # )
       
       fig <- plot_ly(finePots, x = ~OxfordPct, y = ~NewForestPct, text = labels,
                      type = 'scatter', mode = 'markers') %>%
@@ -129,33 +132,33 @@ server <- function(input, output, session) {
                               ' Late Roman sites'),
                xaxis = list(title = "% Oxford pottery", showgrid = FALSE),
                yaxis = list(title = "% New Forest pottery", showgrid = FALSE),
-               margin = m,
-               images = list(
-                 list(
-                   source =  paste('data:image/jpg;base64', NewForP.txt, sep=','),
-                   xref = "x",
-                   yref = "y",
-                   x = 15,
-                   y = 18,
-                   sizex = xy.size,
-                   sizey = xy.size,
-                   # sizing = "stretch",
-                   opacity = 1,
-                   layer = "below"
-                 ),
-                 list(
-                   source =  paste('data:image/jpg;base64', OxfordP.txt, sep=','),
-                   xref = "x",
-                   yref = "y",
-                   x = 18,
-                   y = 9,
-                   sizex = xy.size,
-                   sizey = xy.size,
-                   # sizing = "stretch",
-                   opacity = 1,
-                   layer = "below"
-                 )
-               )
+               margin = m
+               # images = list(
+               #   list(
+               #     source =  paste('data:image/jpg;base64', NewForP.txt, sep=','),
+               #     xref = "x",
+               #     yref = "y",
+               #     x = 15,
+               #     y = 18,
+               #     sizex = xy.size,
+               #     sizey = xy.size,
+               #     # sizing = "stretch",
+               #     opacity = 1,
+               #     layer = "below"
+               #   ),
+               #   list(
+               #     source =  paste('data:image/jpg;base64', OxfordP.txt, sep=','),
+               #     xref = "x",
+               #     yref = "y",
+               #     x = 18,
+               #     y = 9,
+               #     sizex = xy.size,
+               #     sizey = xy.size,
+               #     # sizing = "stretch",
+               #     opacity = 1,
+               #     layer = "below"
+               #   )
+               # )
         )
       # fig
       # print("dedede")

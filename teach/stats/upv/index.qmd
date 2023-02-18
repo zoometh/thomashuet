@@ -640,6 +640,25 @@ dt <- datatable(df,
 dt
 ```
 
+\
+
+<center>⬇️ distance matrix</center>
+
+```{r}
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+dend.h.dist <- df[ , c(2,3,4)] %>%
+  scale %>% 
+  dist
+dend.h.dist <- as.data.frame(as.matrix(dend.h.dist))
+dend.h.dist <- round(dend.h.dist, 2)
+kable(dend.h.dist) %>%
+  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+```
+
 :::
 
 ::: {.column width="60%"}
@@ -657,31 +676,10 @@ dend.h <- df[ , c(2,3,4)] %>%
 plot(as.dendrogram(dend.h))
 ```
 
-\
-
-```{r}
-df <- data.frame(feat = c("A", "B", "C"),
-                 where = c(20, 60, 60),
-                 when = c(10, 30, 20),
-                 what = c(70, 10, 20),
-                 row.names = c("A", "B", "C"))
-dend.h.dist <- df[ , c(2,3,4)] %>%
-  scale %>% 
-  dist
-dend.h.dist <- as.data.frame(as.matrix(dend.h.dist))
-dend.h.dist <- round(dend.h.dist, 2)
-kable(dend.h.dist) %>%
-  kable_styling(full_width = FALSE, position = "center", font_size = 24)
-```
-
-\
-
-
 :::
 
 ::::
 
-\
 
 ### Regress
 
@@ -689,8 +687,9 @@ kable(dend.h.dist) %>%
 <iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teach/stats/stats/dim2/oxfordwater" title="Regression"></iframe>
 ```
 
+:::
 
-### Coefficient
+## Coefficient
 
 <div class="column">
 <div class="midtext">
@@ -747,8 +746,6 @@ Coefficient of determination
 </ul>
 </div>
 
-
-:::
 
 
 ## Models
@@ -1135,6 +1132,7 @@ kable(sum.df.with.na) %>%
 Quantitative
 
 ```{r}
+#| eval: true
 #| echo: true
 
 ncolors <- 5
