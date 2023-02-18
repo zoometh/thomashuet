@@ -553,8 +553,32 @@ ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) +
 ::: {.column width="30%"}
 
 ```{r}
-#| eval: true
-print(dt)
+
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         # pagingType = "numbers",
+                         # PageLength = 1,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
 dt
 ```
 
@@ -582,9 +606,32 @@ res.ca <- CA(df[ , c(2,3,4)])
 ::: {.column width="30%"}
 
 ```{r}
-#| eval: true
 
-print(dt) # don't work?
+df <- data.frame(feat = c("A", "B", "C"),
+                 where = c(20, 60, 60),
+                 when = c(10, 30, 20),
+                 what = c(70, 10, 20),
+                 row.names = c("A", "B", "C"))
+
+dt <- datatable(df, 
+          rownames = FALSE,
+          width = '20%',
+          options = list(searching = FALSE,
+                         lengthChange = FALSE,
+                         paging = FALSE,
+                         # pagingType = "numbers",
+                         # PageLength = 1,
+                         scrollX = F,
+                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
+                         info = FALSE,
+                         # language = list(lengthMenu = "_MENU_"),
+                         filter = "none")) %>% 
+  formatStyle("feat",
+              backgroundColor = styleEqual(c("A", "B", "C"), 
+                                           c('#FF000070', '#00800070', '#0000FF70'))
+  ) %>%
+  formatStyle(columns = c(1, 2, 3, 4),
+              fontSize = '20px')
 dt
 ```
 
@@ -608,8 +655,6 @@ plot(as.dendrogram(dend.h))
 \
 
 ```{r}
-#| eval: true
-
 df <- data.frame(feat = c("A", "B", "C"),
                  where = c(20, 60, 60),
                  when = c(10, 30, 20),
@@ -719,7 +764,7 @@ Coefficient of determination
 <div class="row">
 
 <div class="column">
-<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-kroeber.png){height=300px}</center><div class="captiontext">Kroeber, A. L., 1923, *Anthropology; culture patterns & processes*</div></div>
+<center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-kroeber.png){height=300px}</center><div class="captiontext">Kroeber, A. L., 1923, *Anthropology: culture patterns & processes*</div></div>
 
 <div class="column">
 <center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/images/mod-tree-splitgraph.jpg){height=300px}</center><div class="captiontext">Gray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. *Philos. Trans. R. Soc. B*, 365(1559), 3923-3933</div></div>

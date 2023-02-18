@@ -34,222 +34,38 @@ library(kableExtra)
 library(FactoMineR)
 ```
 
-## Conformity
+## Processed
 
-::: {.panel-tabset}
+Processed data - <span class="midtext">Working data (i.e. not definitive)</span>
 
-### <span class="tabsetheadertext">Compare 1/3<span class="tabsetheadertext">
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-```{r}
-
-df <- data.frame(feat = c("A", "B", "C"),
-                 where = c(20, 60, 60),
-                 when = c(10, 30, 20),
-                 what = c(70, 10, 20),
-                 row.names = c("A", "B", "C"))
-
-dt <- datatable(df, 
-          rownames = FALSE,
-          width = '20%',
-          options = list(searching = FALSE,
-                         lengthChange = FALSE,
-                         paging = FALSE,
-                         # pagingType = "numbers",
-                         # PageLength = 1,
-                         scrollX = F,
-                         initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
-                         info = FALSE,
-                         # language = list(lengthMenu = "_MENU_"),
-                         filter = "none")) %>% 
-  formatStyle("feat",
-              backgroundColor = styleEqual(c("A", "B", "C"), 
-                                           c('#FF000070', '#00800070', '#0000FF70'))
-  ) %>%
-  formatStyle(columns = c(1, 2, 3, 4),
-              fontSize = '20px')
-dt
-```
-
-:::
-
-
-::: {.column width="60%"}
-
-```{r}
-#| fig-width: 8
-
-df <- data.frame(feat = c("A", "B", "C"),
-                 where = c(20, 60, 60),
-                 when = c(10, 30, 20),
-                 what = c(70, 10, 20),
-                 row.names = c("A", "B", "C"))
-
-sites <- rownames(df)
-
-ggtern(data = df, aes(x = where, y = when, z = what, col = sites)) + 
-  theme_bw() +
-  geom_point(alpha = 0.5, size = 17) +
-  geom_point(size = 1, color = "black") +
-  theme_showarrows() +
-  theme(legend.position="none")
-```
-
-:::
-
-::::
-
-### <span class="tabsetheadertext">Compare 2/3<span class="tabsetheadertext">
-
-:::: {.columns}
-
-::: {.column width="30%"}
 
 ```{r}
 #| eval: true
-print(dt)
-dt
+#| echo: false
+
+data("Mesolithic")
+rownames(Mesolithic) <- paste0("site_", rownames(Mesolithic))
+font.size <- "20pt"
+meso <- Mesolithic %>% 
+  DT::datatable(
+    options=list(
+      initComplete = htmlwidgets::JS(
+        "function(settings, json) {",
+        paste0("$(this.api().table().container()).css({'font-size': '", font.size, "'});"),
+        "}")
+    ) 
+  ) %>%
+  formatStyle(
+    colnames(Mesolithic),
+    background = styleColorBar(Mesolithic$Microliths, 'lightblue'),
+    backgroundSize = '100% 90%',
+    backgroundRepeat = 'no-repeat',
+    backgroundPosition = 'center'
+  )
+print(meso) # don't work?
+# meso
 ```
 
-:::
-
-::: {.column width="60%"}
-
-```{r}
-df <- data.frame(feat = c("A", "B", "C"),
-                 where = c(20, 60, 60),
-                 when = c(10, 30, 20),
-                 what = c(70, 10, 20),
-                 row.names = c("A", "B", "C"))
-res.ca <- CA(df[ , c(2,3,4)])
-```
-
-:::
-
-::::
-
-### <span class="tabsetheadertext">Compare 3/3<span class="tabsetheadertext">
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
-```{r}
-print(dt) # don't work?
-dt
-```
-
-:::
-
-::: {.column width="60%"}
-
-```{r}
-df <- data.frame(feat = c("A", "B", "C"),
-                 where = c(20, 60, 60),
-                 when = c(10, 30, 20),
-                 what = c(70, 10, 20),
-                 row.names = c("A", "B", "C"))
-dend.h <- df[ , c(2,3,4)] %>%
-  scale %>% 
-  dist %>% 
-  hclust
-plot(as.dendrogram(dend.h))
-```
-
-\
-
-```{r}
-df <- data.frame(feat = c("A", "B", "C"),
-                 where = c(20, 60, 60),
-                 when = c(10, 30, 20),
-                 what = c(70, 10, 20),
-                 row.names = c("A", "B", "C"))
-dend.h.dist <- df[ , c(2,3,4)] %>%
-  scale %>% 
-  dist
-dend.h.dist <- as.data.frame(as.matrix(dend.h.dist))
-dend.h.dist <- round(dend.h.dist, 2)
-kable(dend.h.dist) %>%
-  kable_styling(full_width = FALSE, position = "center", font_size = 24)
-```
-
-\
-
-
-:::
-
-::::
-
-\
-
-### Regress
-
-```{=html}
-<iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teachings/stats/stats/dim2/oxfordwater" title="Regression"></iframe>
-```
-
-
-### Coefficient
-
-<div class="column">
-<div class="midtext">
-<table class="table">
-<thead>
-<tr>
-<th>cor</th>
-<th>interpretation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>...</td>
-</tr>
-<tr>
-<td>0.9</td>
-<td>oustanding</td>
-</tr>
-<tr>
-<td>0.8</td>
-<td>excellent</td>
-</tr>
-<tr>
-<td>0.7</td>
-<td>acceptable</td>
-</tr>
-<tr>
-<td>0.6</td>
-<td>weak</td>
-</tr>
-<tr>
-<td>...</td>
-<td>...</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-
-<div class="column"> 
-All are between `[-1:1]`
-<li>Coefficient of correlation</li>
-<ul class="square">
-<li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
-<li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
-</ul>
-<br>
-<li>Coefficient of determination</li>
-<ul class="square">
-<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
-</ul>
-</div>
-
-
-:::
 
 ## My footnote
 
