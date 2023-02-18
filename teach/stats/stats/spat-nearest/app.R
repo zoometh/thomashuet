@@ -4,6 +4,7 @@ library(shiny)
 library(spatstat)
 library(DT)
 library(ggrepel)
+library(sp)
 
 ui <- fluidPage(
   br(), br(), br(), br(), br(), br(), br(), br(), br(), br(),
@@ -27,7 +28,7 @@ ui <- fluidPage(
                  DT::dataTableOutput(outputId = "dataframePlot", width = "50%")),
         tabPanel("Example", 
                  tags$iframe(style="height:2000px; width:100%", 
-                             src="http://shinyserver.cfs.unipi.it:3838/teach/bib/BIB-2167-Bego-Kruskal.pdf"))
+                             src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-2167-Bego-Kruskal.pdf"))
       )
     )
   )

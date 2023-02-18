@@ -6,7 +6,7 @@ Sys.setlocale("LC_ALL", "C")
 library(plotly)
 # library(NbClust)
 
-dfisotops <- read.csv2("https://raw.githubusercontent.com/zoometh/thomashuet/main/teachings/stats/stats/dim3/dfisotops.csv", sep = ";") # GH
+dfisotops <- read.csv2("https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/stats/dim3/dfisotops.csv", sep = ";") # GH
 # dfisotops$X <- NULL
 # dfisotops <- read.csv2(paste0(getwd(), "/dfisotops.csv"), sep = ";") # server
 # dfisotops <- read.csv2(paste0(getwd(), "/dfisotops.csv"),  sep = ";") # locally

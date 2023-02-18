@@ -42,10 +42,10 @@ ui <- fluidPage(
                  DT::dataTableOutput(outputId = "dataframePlot")),
         tabPanel("Publication", 
                  tags$iframe(style="height:2000px; width:100%", 
-                             src="http://shinyserver.cfs.unipi.it:3838/teach/bib/BIB-3570-Multivariate.pdf")),
+                             src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-3570-Multivariate.pdf")),
         tabPanel("Other example", 
                  tags$iframe(style="height:2000px; width:100%", 
-                             src="http://shinyserver.cfs.unipi.it:3838/teach/bib/BIB-1396-Seriation-Duraton.pdf"))
+                             src="http://shinyserver.cfs.unipi.it:3838/teachstats/stats/bib/BIB-1396-Seriation-Duraton.pdf"))
       )
     )
   )
