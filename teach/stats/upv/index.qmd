@@ -239,15 +239,15 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 ### Expert Systems
 
 <div class="row">
-<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert.jpg){height=300px}
-<div class="captiontext">Garry Kasparov *vs* Deep Blue, 1996-1997</div>
-</div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert.jpg){height=300px}<div class="captiontext">Garry Kasparov *vs* Deep Blue, 1996-1997</div>
 </div>
 
-<div class="row">
-<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert-galan.jpg){height=300px}
-<div class="captiontext">Hierachical clustering of the Iberian LBA "Warrior stelae", Galàn 1993</div>
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert-galan.jpg){height=300px}<div class="captiontext">Hierachical clustering of the Iberian LBA "Warrior stelae", Galàn 1993</div>
 </div>
+
 </div>
 
 
@@ -778,10 +778,7 @@ Coefficient of correlation
 <li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
 </ul>
 <hr>
-Coefficient of determination
-<ul class="square">
-<li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
-</ul>
+Coefficient of determination: [R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)
 </div>
 
 
@@ -852,7 +849,7 @@ Coefficient of determination
 </tbody>
 </table>
 
-### Source
+### Example
 
 ```{=html}
 <embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-2683-Human-History.pdf" width="1000px" height="2100px" />
@@ -1066,7 +1063,7 @@ Missing data - <span class="midtext">Lack of knowledge, e.g. `NA` (<em>Not Avail
 ```{r}
 #| echo: true
 #| code-fold: true
-#| code-summary: "<small>Show the code</small>"
+#| code-summary: "<small>Code</small>"
 
 df <- data.frame(row.names = c("site_A", "site_B", "site_C", "site_D"),
                  Microliths =  c(10, 5, NA, 2),
@@ -1081,7 +1078,7 @@ Sums by column (with `NA`)
 ```{r}
 #| echo: true
 #| code-fold: true
-#| code-summary: "<small>Show the code</small>"
+#| code-summary: "<small>Code</small>"
 
 sum.df.with.na <- as.data.frame(t(colSums(df)))
 kable(sum.df.with.na) %>%
@@ -1093,7 +1090,7 @@ Sums by column (without `NA`)
 ```{r}
 #| echo: true
 #| code-fold: true
-#| code-summary: "<small>Show the code</small>"
+#| code-summary: "<small>Code</small>"
 
 sum.df.with.na <- as.data.frame(t(colSums(df, na.rm = T)))
 kable(sum.df.with.na) %>%
@@ -1101,6 +1098,113 @@ kable(sum.df.with.na) %>%
 ```
 
 \
+
+:::
+
+
+## Boolean operators
+
+::: {.panel-tabset}
+
+### OR
+
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE | TRUE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE | FALSE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE | NA
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+FALSE | NA
+```
+\
+
+### AND
+
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE & TRUE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE & FALSE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE & NA
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+FALSE & NA
+```
+\
+
+### NOT
+
+```{r}
+#| echo: true
+#| code-fold: false
+!TRUE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+!FALSE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+!NA
+```
+\
+
+### Example
+
+<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=450px}</center></div>
+
+
+:::
+
+## Binary Topological Relationships
+
+::: {.panel-tabset}
+
+### Spatial
+
+<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg){height=400px}</center></div>
+
+### Temporal
+
+<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg){height=400px}</center><div class="captiontext">Interval Temporal Logic, Allen, 1984</div></div>
+
+### Example
+
+```{=html}
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-1750-OH-FET.pdf" width="1000px" height="2100px" />
+```
 
 :::
 
@@ -1561,3 +1665,10 @@ Seriation = Guttman effect = horse shoe = arc
 ::: footer
 Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary*](https://ojs.elte.hu/dissarch/article/view/2262/2082)
 :::
+
+## Contact
+
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png' style='height: 50px;vertical-align: middle;'> <thomas.huet@arch.ox.ac.uk>
+
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/1>
+
