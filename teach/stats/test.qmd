@@ -35,6 +35,83 @@ library(FactoMineR)
 library(archdata)
 ```
 
+## Middle Range Theories 
+
+<span class="midtext">Archaeology establishes *facts* and proposes **models** to connect these facts</span>
+
+::: {.panel-tabset}
+
+### MRT
+
+
+<div class="row">
+
+<div class="column33"><center>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/theo-archaeo-renfrewbahn.jpg){height=300px}
+<div class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</div>
+</center></div>
+
+<div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes"[^5]</span><br><small> Robert K. Merton, 1968</small></center></div>
+
+[^5]: "Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories" Robert K. Merton, 1968
+
+</div>
+
+### Example
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column">We want to compare 3 different **archaeological cultures**[^6] (groups of settlements, sites, geographical regions, chronological periods, etc.): 
+<span style="color:blue">A</span>, <span style="color:red">B</span>, and <span style="color:green">C</span>
+</div>
+</div>
+
+[^6]: An archaeological culture is a polythetic assemblage of features more frequently associated with each other within a given area than outside it (Clarke 1968, Brun 1988, Shennan *et al.* 2015, etc.)
+
+### Singularity
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column">
+<b>None</b> of the comparisons gives the same results<br>
+<hr>
+x &cap; &#937; = &empty;
+<hr>
+<div class= smalltext>⚠️ In practice, over-valuing a specific element by giving it a marker character is dangerous, as its originality makes its management uncontrollable.</div></div>
+</div>
+
+### Conformity
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column">
+<b>Some</b> comparisons give the same results<br>
+<hr>
+x &cap; &#937; = {1, 4, 12, ...}
+<hr>
+️<div class= smalltext>💡 Increase the matching success of the model by decreasing its precision, or decrease the matching success of the model by increasing its precision.</div></div>
+</div>
+
+### Identity
+
+<div class="row">
+<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+<div class="column">
+<b>All</b> the comparison give the same result<br>
+<hr>
+x &cap; &#937; = $&#937;
+<hr>
+️<div class= smalltext>⚠️️In practice, a common element in 3 or more different data sets is usually rare. </div></div>
+</div>
+
+:::
+
+
+::: {.notes}
+middle range theories
+= comparisons
+:::
+
 
 ## My footnote
 
@@ -44,6 +121,55 @@ My footnote[^1]
 
 
 [^1]: dewpeuoewufwefew
+
+
+## Binary Topological Relationships
+
+::: {.panel-tabset}
+
+### Spatial
+
+<div class="row">
+
+<div class="column66">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg){height=400px}
+<div class="captiontext"></div>
+</div>
+
+<div class="column33">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-macedonia.png){height=350px}
+<div class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</div>
+</div>
+
+</div>
+
+### Temporal
+
+<div class="row">
+
+<div class="column66">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg)
+<div class="captiontext"></div>
+</div>
+
+<div class="column33">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-macedonia.png){height=350px}
+<div class="captiontext">Interval Temporal Logic, Allen, 1984</div>
+</div>
+
+</div>
+
+
+
+### Example
+
+```{=html}
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-1750-OH-FET.pdf" width="1000px" height="2100px" />
+```
+
+:::
+
+
 
 ## background HTML
 

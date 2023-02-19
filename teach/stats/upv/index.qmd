@@ -376,7 +376,7 @@ Explanatory -> New Archaeology
 
 <div class="row">
 <div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</center></div>
-<div class="column">We want to compare 3 different **archaeological culture**[^6] (groups of settlements, sites, geographical regions, chronological periods, etc.): 
+<div class="column">We want to compare 3 different **archaeological cultures**[^6] (groups of settlements, sites, geographical regions, chronological periods, etc.): 
 <span style="color:blue">A</span>, <span style="color:red">B</span>, and <span style="color:green">C</span>
 </div>
 </div>
