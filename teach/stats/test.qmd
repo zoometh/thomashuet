@@ -35,12 +35,110 @@ library(FactoMineR)
 library(archdata)
 ```
 
-## Introduction
+## Boolean operators
+
+::: {.panel-tabset}
+
+### OR
+
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE | TRUE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE | FALSE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE | NA
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+FALSE | NA
+```
+\
+
+### AND
+
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE & TRUE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE & FALSE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+TRUE & NA
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+FALSE & NA
+```
+\
+
+### NOT
+
+```{r}
+#| echo: true
+#| code-fold: false
+!TRUE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+!FALSE
+```
+\
+```{r}
+#| echo: true
+#| code-fold: false
+!NA
+```
+\
+
+### Example
+
+<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=450px}</center></div>
 
 
+:::
+
+## Binary Topological Relationships
+
+::: {.panel-tabset}
+
+### Spatial
+
+<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg){height=450px}</center></div>
+
+### Temporal
+
+<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg){height=450px}</center><div class="captiontext">Interval Temporal Logic, Allen, 1984</div></div>
+
+, 
 
 
 ## My footnote
+
+:::
 
 My footnote[^1]
 
@@ -112,12 +210,7 @@ chefferie complexe: sites principiers: En moyenne une distance d’une centaine 
 
 Test under the hypothesis H<sub>0</sub>. The *p-value* is the probability that H<sub>0</sub> is true, so the lower the *p-value*, the more likely H<sub>1</sub> is to exist<br>
 
-## 💡
 
-<div class="row">
-<div class="column"><em><center>"people think closer things are more similar"</em><br><small> Montello and Fabrikant, 2006</small></center></div>
-<div class="column">An archaeological culture is a polythetic assemblage of features more frequently associated with each other within a given area than outside it</div>
-</div>
 
 # Language {.tabset .tabset-dropdown}
 
