@@ -727,6 +727,8 @@ plot(as.dendrogram(dend.h))
 
 ## Coefficient
 
+\
+
 <div class="column">
 <div class="midtext">
 <table class="table">
@@ -775,7 +777,7 @@ Coefficient of correlation
 <li>[Pearson's r](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</li>
 <li>[Spearman's &rho;](https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient)</li>
 </ul>
-<br>
+<hr>
 Coefficient of determination
 <ul class="square">
 <li>[R<sup>2</sup>](https://en.wikipedia.org/wiki/Coefficient_of_determination)</li>
