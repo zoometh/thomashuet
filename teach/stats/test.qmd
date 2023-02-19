@@ -95,13 +95,17 @@ x &cap; &#937; = {1, 4, 12, ...}
 ### Identity
 
 <div class="row">
-<div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</center></div>
+
+<div class="column">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</div>
+
 <div class="column">
 <b>All</b> the comparison give the same result<br>
 <hr>
 x &cap; &#937; = $&#937;
 <hr>
 ️<div class= smalltext>⚠️️In practice, a common element in 3 or more different data sets is usually rare. </div></div>
+
 </div>
 
 :::
@@ -115,59 +119,35 @@ middle range theories
 
 ## My footnote
 
-:::
 
 My footnote[^1]
 
 
 [^1]: dewpeuoewufwefew
 
+## Resources bibliographic
 
-## Binary Topological Relationships
-
-::: {.panel-tabset}
-
-### Spatial
 
 <div class="row">
-
-<div class="column66">
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg){height=400px}
-<div class="captiontext"></div>
+<div class="column">Renfrew, C., & Bahn, P. (2012). *Archaeology: theories, methods and practice*. Thames and Hudson.</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-renfrew.jpg)</div>
 </div>
-
-<div class="column33">
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-macedonia.png){height=350px}
-<div class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</div>
-</div>
-
-</div>
-
-### Temporal
 
 <div class="row">
-
-<div class="column66">
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg)
-<div class="captiontext"></div>
+<div class="column">Djindjian, F., & Gardin, J. C. (1991). *Méthodes pour l'archéologie*. Paris: A. Colin.</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-djinjian.jpg)</div>
 </div>
 
-<div class="column33">
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-macedonia.png){height=350px}
-<div class="captiontext">Interval Temporal Logic, Allen, 1984</div>
+<div class="row">
+<div class="column">Chenorkian R. (1996). *Pratique archéologique statistique et graphique*. Paris: Errance et Adam.</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-chenorkian.jpg)</div>
 </div>
 
+<div class="row">
+<div class="column">Barceló, J. A. (2007). *Introducción al estudio de la variabilidad de las evidencias arqueológicas*. Bellaterra: Universitat Autònoma de Barcelona.</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-barcelo.jpg)</div>
 </div>
 
-
-
-### Example
-
-```{=html}
-<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-1750-OH-FET.pdf" width="1000px" height="2100px" />
-```
-
-:::
 
 
 

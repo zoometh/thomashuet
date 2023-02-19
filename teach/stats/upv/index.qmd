@@ -1191,17 +1191,44 @@ FALSE & NA
 
 :::
 
+
 ## Binary Topological Relationships
 
 ::: {.panel-tabset}
 
 ### Spatial
 
-<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg){height=400px}</center></div>
+<div class="row">
+
+<div class="column66">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg){height=400px}
+<div class="captiontext"></div>
+</div>
+
+<div class="column33">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-macedonia.png){height=350px}
+<div class="captiontext">Kingdom of Macedon at the death of Philip II, 336 BC</div>
+</div>
+
+</div>
 
 ### Temporal
 
-<div><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg){height=400px}</center><div class="captiontext">Interval Temporal Logic, Allen, 1984</div></div>
+<div class="row">
+
+<div class="column66">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg)
+<div class="captiontext">Interval Temporal Logic, Allen, 1984</div>
+</div>
+
+<div class="column33">
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temporal-rtb-neo.jpg){height=350px}
+<div class="captiontext">Central and North-Western Mediterranean Impressed Wares chronologies, 2022, Binder et al.</div>
+</div>
+
+</div>
+
+
 
 ### Example
 
@@ -1210,6 +1237,8 @@ FALSE & NA
 ```
 
 :::
+
+
 
 
 
