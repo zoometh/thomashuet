@@ -73,6 +73,24 @@
     font-weight: 700;
     font-size: 50px;
   }
+
+  .div-code {
+    background-color: #EBEBEB;
+  }
+  
+  .div-text {
+    background-color: #add8e6;
+  }
+  
+  .div-yaml {
+    background-color: #FFCCCB;
+  }
+  
+  
+  notes {
+    color: white;
+    background-color: dodgerblue;
+  }
   
   /* IDE */
   .it-ide{

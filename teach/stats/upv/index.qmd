@@ -45,6 +45,7 @@ library(spatstat)
 library(spatialEco)
 library(sf)
 library(sp)
+library(reshape2)
 
 # library(Factoshiny)
 
@@ -159,7 +160,7 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 :::
 
 
-## Birth of statistics 1/2
+## Birth of statistics
 
 ::: {.panel-tabset}
 
@@ -415,7 +416,7 @@ middle range theories
 = comparisons
 :::
 
-## Conformity
+## Entities
 
 ::: {.panel-tabset}
 
@@ -1697,6 +1698,28 @@ Seriation = Guttman effect = horse shoe = arc
 ::: footer
 Current dataset: [Schneider A., 2020, *Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary*](https://ojs.elte.hu/dissarch/article/view/2262/2082)
 :::
+
+## Bibliographic resources
+
+<div class="row">
+<div class="column66">Renfrew, C., & Bahn, P. (2012). *Archaeology: theories, methods and practice*. Thames and Hudson.</div>
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-renfrew.jpg){height=250px}</div>
+</div>
+
+<div class="row">
+<div class="column66">Djindjian, F., & Gardin, J. C. (1991). *Méthodes pour l'archéologie*. Paris: A. Colin.</div>
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-djinjian.jpg){height=250px}</div>
+</div>
+
+<div class="row">
+<div class="column66">Chenorkian R. (1996). *Pratique archéologique statistique et graphique*. Paris: Errance et Adam.</div>
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-chenorkian.jpg){height=250px}</div>
+</div>
+
+<div class="row">
+<div class="column66">Barceló, J. A. (2007). *Introducción al estudio de la variabilidad de las evidencias arqueológicas*. Bellaterra: Universitat Autònoma de Barcelona.</div>
+<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-barcelo.jpg){height=250px}</div>
+</div>
 
 ## Contact
 
