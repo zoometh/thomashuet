@@ -53,7 +53,7 @@ reg.example <- plot_ly(Oxford.water, x = ~OxfordDst, width = 1200, height = 700)
          margin = m,
          legend = list(orientation = "h",   
                        xanchor = "center",  
-                       y = -0.5,
+                       #y = -0.5,
                        x = 0.5))
 reg.example
-htmlwidgets::saveWidget(reg.example, "C:/Rprojects/thomashuet/teachings/stats/stats/dim2/oxfordwater.html")
+htmlwidgets::saveWidget(reg.example, "C:/Rprojects/thomashuet/teach/stats/stats/dim2/oxfordwater.html")

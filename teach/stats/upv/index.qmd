@@ -18,7 +18,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/inst-uni-oxford_.png
-    footer: "<em>Statistics in Archaeology</em> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 40px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
+    footer: "<em>Statistics in Archaeology</em> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 35px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
     margin: 0
     width: 1200
 ---
@@ -285,7 +285,7 @@ Statistik (description of a state, a country): collecting population data throug
 
 ::: {.panel-tabset}
 
-### *Families*
+### 📅
 
 :::: {.columns}
 
@@ -366,17 +366,22 @@ Explanatory -> New Archaeology
 <div class="captiontext">Model of archaeological reasoning by Renfrew and Bahn, 2020</div>
 </center></div>
 
-<div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories"</span><br><small> Robert K. Merton, 1968</small></center></div>
+<div class="column66"><center><span class= midtext>"Sociological theory, if it is to advance significantly, must proceed on these interconnected planes"[^5]</span><br><small> Robert K. Merton, 1968</small></center></div>
+
+[^5]: "Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories" Robert K. Merton, 1968
+
 </div>
 
 ### Example
 
 <div class="row">
 <div class="column"><center>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png){height=350px}</center></div>
-<div class="column">We want to compare groups of settlement of 3 different cultures (or sites): 
+<div class="column">We want to compare 3 different **archaeological culture**[^6] (groups of settlements, sites, geographical regions, chronological periods, etc.): 
 <span style="color:blue">A</span>, <span style="color:red">B</span>, and <span style="color:green">C</span>
 </div>
 </div>
+
+[^6]: An archaeological culture is a polythetic assemblage of features more frequently associated with each other within a given area than outside it (Clarke 1968, Brun 1988, Shennan *et al.* 2015, etc.)
 
 ### Singularity
 
@@ -505,7 +510,7 @@ middle range theories
 
 <div class="column">
 ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/who-family.jpg){height=350px}
-<div class="captiontext">The British Royal Family</div>
+<div class="captiontext">The British Royal Family[^7]</div>
 </div>
 
 <div class="column">
@@ -515,6 +520,7 @@ middle range theories
 
 </div>
 
+[^7]: "people think closer things are more similar", Montello et Fabrikant, 2006.
 
 :::
 
@@ -542,12 +548,9 @@ dt <- datatable(df,
           options = list(searching = FALSE,
                          lengthChange = FALSE,
                          paging = FALSE,
-                         # pagingType = "numbers",
-                         # PageLength = 1,
                          scrollX = F,
                          initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
                          info = FALSE,
-                         # language = list(lengthMenu = "_MENU_"),
                          filter = "none")) %>% 
   formatStyle("feat",
               backgroundColor = styleEqual(c("A", "B", "C"), 
@@ -659,12 +662,9 @@ dt <- datatable(df,
           options = list(searching = FALSE,
                          lengthChange = FALSE,
                          paging = FALSE,
-                         # pagingType = "numbers",
-                         # PageLength = 1,
                          scrollX = F,
                          initComplete = JS("function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"),
                          info = FALSE,
-                         # language = list(lengthMenu = "_MENU_"),
                          filter = "none")) %>% 
   formatStyle("feat",
               backgroundColor = styleEqual(c("A", "B", "C"), 
@@ -685,13 +685,14 @@ df <- data.frame(feat = c("A", "B", "C"),
                  when = c(10, 30, 20),
                  what = c(70, 10, 20),
                  row.names = c("A", "B", "C"))
-dend.h.dist <- df[ , c(2,3,4)] %>%
+dend.h.dist <- df[ , c(2, 3, 4)] %>%
   scale %>% 
   dist
 dend.h.dist <- as.data.frame(as.matrix(dend.h.dist))
 dend.h.dist <- round(dend.h.dist, 2)
 kable(dend.h.dist) %>%
-  kable_styling(full_width = FALSE, position = "center", font_size = 24)
+  kable_styling(full_width = FALSE, position = "center", font_size = 20) %>%
+  column_spec(1, bold = TRUE)
 ```
 
 :::
