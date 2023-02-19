@@ -45,3 +45,8 @@ ggplot(df.copy4, aes(x = variable, y = value,
   geom_path() +
   theme_bw()
 
+df.khi2 <- df %>%
+  melt() %>%
+  group_by(patient, variable) %>%
+  summarise(count = sum(value)) %>%
+  summarise(pvalue= round(chisq.test(count)$p.value, 2))

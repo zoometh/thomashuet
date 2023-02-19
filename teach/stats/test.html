@@ -497,47 +497,78 @@ In practice, a common element in 3 or more different data sets is usually rare.
 <section id="khi-square" class="slide level2">
 <h2>Khi-square</h2>
 <p>χ <sup>2</sup></p>
+<hr>
 <ul>
 <li>Observed numbers</li>
 </ul>
 <div class="cell">
 <details>
-<summary>Show the code</summary>
+<summary><small>Code</small></summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">library</span>(dplyr)</span>
 <span id="cb1-2"><a href="#cb1-2"></a><span class="fu">library</span>(tibble)</span>
 <span id="cb1-3"><a href="#cb1-3"></a></span>
 <span id="cb1-4"><a href="#cb1-4"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">patient =</span> <span class="fu">c</span>(<span class="st">"Mal.1"</span>, <span class="st">"Mal.2"</span>, <span class="st">"Mal.3"</span>),</span>
-<span id="cb1-5"><a href="#cb1-5"></a>                 <span class="at">virus.A =</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">18</span>, <span class="dv">14</span>),</span>
+<span id="cb1-5"><a href="#cb1-5"></a>                 <span class="at">virus.A =</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">19</span>, <span class="dv">13</span>),</span>
 <span id="cb1-6"><a href="#cb1-6"></a>                 <span class="at">virus.B =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">10</span>),</span>
-<span id="cb1-7"><a href="#cb1-7"></a>                 <span class="at">virus.C =</span> <span class="fu">c</span>(<span class="dv">11</span>, <span class="dv">5</span>, <span class="dv">6</span>))</span>
-<span id="cb1-8"><a href="#cb1-8"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-7"><a href="#cb1-7"></a>                 <span class="at">virus.C =</span> <span class="fu">c</span>(<span class="dv">11</span>, <span class="dv">4</span>, <span class="dv">5</span>))</span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="fu">kable</span>(df) <span class="sc">%&gt;%</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code>  patient virus.A virus.B virus.C
-1   Mal.1      12       7      11
-2   Mal.2      18       7       5
-3   Mal.3      14      10       6</code></pre>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> patient </th>
+   <th style="text-align:right;"> virus.A </th>
+   <th style="text-align:right;"> virus.B </th>
+   <th style="text-align:right;"> virus.C </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Mal.1 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mal.2 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mal.3 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+</tbody>
+</table>
+
 </div>
 </div>
+<hr>
 <ul>
 <li>Calculation of rows and columns sums</li>
 </ul>
 <div class="cell">
 <details>
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>df.copy <span class="ot">&lt;-</span> df</span>
-<span id="cb3-2"><a href="#cb3-2"></a>df.copy <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df.copy, <span class="fu">colSums</span>(df.copy[ , <span class="sc">-</span><span class="dv">1</span>]))</span>
-<span id="cb3-3"><a href="#cb3-3"></a>df.copy[<span class="fu">nrow</span>(df.copy), <span class="st">"patient"</span>] <span class="ot">&lt;-</span> <span class="st">"col.sum"</span></span>
-<span id="cb3-4"><a href="#cb3-4"></a>df.copy <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df.copy, <span class="fu">rowSums</span>(df.copy[ , <span class="sc">-</span><span class="dv">1</span>]))</span>
-<span id="cb3-5"><a href="#cb3-5"></a><span class="fu">colnames</span>(df.copy)[<span class="fu">ncol</span>(df.copy)] <span class="ot">&lt;-</span> <span class="st">"row.sum"</span></span>
-<span id="cb3-6"><a href="#cb3-6"></a><span class="fu">kable</span>(df.copy) <span class="sc">%&gt;%</span></span>
-<span id="cb3-7"><a href="#cb3-7"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-8"><a href="#cb3-8"></a>  <span class="fu">column_spec</span>(<span class="fu">ncol</span>(df.copy), <span class="at">bold =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-9"><a href="#cb3-9"></a>  <span class="fu">row_spec</span>(<span class="fu">nrow</span>(df.copy), <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>df.copy <span class="ot">&lt;-</span> df</span>
+<span id="cb2-2"><a href="#cb2-2"></a>df.copy <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df.copy, <span class="fu">colSums</span>(df.copy[ , <span class="sc">-</span><span class="dv">1</span>]))</span>
+<span id="cb2-3"><a href="#cb2-3"></a>df.copy[<span class="fu">nrow</span>(df.copy), <span class="st">"patient"</span>] <span class="ot">&lt;-</span> <span class="st">"col.sum"</span></span>
+<span id="cb2-4"><a href="#cb2-4"></a>df.copy <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df.copy, <span class="fu">rowSums</span>(df.copy[ , <span class="sc">-</span><span class="dv">1</span>]))</span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="fu">colnames</span>(df.copy)[<span class="fu">ncol</span>(df.copy)] <span class="ot">&lt;-</span> <span class="st">"row.sum"</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="fu">kable</span>(df.copy) <span class="sc">%&gt;%</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-8"><a href="#cb2-8"></a>  <span class="fu">column_spec</span>(<span class="fu">ncol</span>(df.copy), <span class="at">bold =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb2-9"><a href="#cb2-9"></a>  <span class="fu">row_spec</span>(<span class="fu">nrow</span>(df.copy), <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
-<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;"> patient </th>
@@ -557,45 +588,46 @@ In practice, a common element in 3 or more different data sets is usually rare.
   </tr>
   <tr>
    <td style="text-align:left;"> Mal.2 </td>
-   <td style="text-align:right;"> 18 </td>
+   <td style="text-align:right;"> 19 </td>
    <td style="text-align:right;"> 7 </td>
-   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;font-weight: bold;"> 30 </td>
   </tr>
   <tr>
    <td style="text-align:left;"> Mal.3 </td>
-   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 13 </td>
    <td style="text-align:right;"> 10 </td>
-   <td style="text-align:right;"> 6 </td>
-   <td style="text-align:right;font-weight: bold;"> 30 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;font-weight: bold;"> 28 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;"> col.sum </td>
    <td style="text-align:right;font-weight: bold;"> 24 </td>
-   <td style="text-align:right;font-weight: bold;"> 22 </td>
+   <td style="text-align:right;font-weight: bold;"> 20 </td>
    <td style="text-align:right;font-weight: bold;"> 44 </td>
-   <td style="text-align:right;font-weight: bold;font-weight: bold;"> 90 </td>
+   <td style="text-align:right;font-weight: bold;font-weight: bold;"> 88 </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
+<hr>
 <ul>
 <li>Calculation of expected numbers (E)</li>
 </ul>
 <div class="cell">
 <details>
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>chisq <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(df[ , <span class="sc">-</span><span class="dv">1</span>])</span>
-<span id="cb4-2"><a href="#cb4-2"></a>df.copy2 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">round</span>(chisq<span class="sc">$</span>expected, <span class="dv">2</span>))</span>
-<span id="cb4-3"><a href="#cb4-3"></a>df.copy2<span class="sc">$</span>patient <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
-<span id="cb4-4"><a href="#cb4-4"></a><span class="fu">kable</span>(df.copy2) <span class="sc">%&gt;%</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a>chisq <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(df[ , <span class="sc">-</span><span class="dv">1</span>])</span>
+<span id="cb3-2"><a href="#cb3-2"></a>df.copy2 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">round</span>(chisq<span class="sc">$</span>expected, <span class="dv">2</span>))</span>
+<span id="cb3-3"><a href="#cb3-3"></a>df.copy2<span class="sc">$</span>patient <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="fu">kable</span>(df.copy2) <span class="sc">%&gt;%</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
-<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;"> virus.A </th>
@@ -606,21 +638,21 @@ In practice, a common element in 3 or more different data sets is usually rare.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 14.67 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 7.33 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 8.18 </td>
+   <td style="text-align:right;"> 6.82 </td>
    <td style="text-align:left;"> Mal.1 </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 14.67 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 7.33 </td>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 8.18 </td>
+   <td style="text-align:right;"> 6.82 </td>
    <td style="text-align:left;"> Mal.2 </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 14.67 </td>
-   <td style="text-align:right;"> 8 </td>
-   <td style="text-align:right;"> 7.33 </td>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 7.64 </td>
+   <td style="text-align:right;"> 6.36 </td>
    <td style="text-align:left;"> Mal.3 </td>
   </tr>
 </tbody>
@@ -628,20 +660,21 @@ In practice, a common element in 3 or more different data sets is usually rare.
 
 </div>
 </div>
+<hr>
 <ul>
 <li>Differences between expected (E) and observed (O) numbers</li>
 </ul>
 <div class="cell">
 <details>
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>df.copy3 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">round</span>(chisq<span class="sc">$</span>residuals, <span class="dv">2</span>))</span>
-<span id="cb5-2"><a href="#cb5-2"></a>df.copy3<span class="sc">$</span>patient <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="fu">kable</span>(df.copy3) <span class="sc">%&gt;%</span></span>
-<span id="cb5-4"><a href="#cb5-4"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a>df.copy3 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">round</span>(chisq<span class="sc">$</span>residuals, <span class="dv">2</span>))</span>
+<span id="cb4-2"><a href="#cb4-2"></a>df.copy3<span class="sc">$</span>patient <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">kable</span>(df.copy3) <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output-display">
 
-<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;"> virus.A </th>
@@ -652,21 +685,21 @@ In practice, a common element in 3 or more different data sets is usually rare.
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:right;"> -0.70 </td>
-   <td style="text-align:right;"> -0.35 </td>
-   <td style="text-align:right;"> 1.35 </td>
+   <td style="text-align:right;"> -0.77 </td>
+   <td style="text-align:right;"> -0.41 </td>
+   <td style="text-align:right;"> 1.60 </td>
    <td style="text-align:left;"> Mal.1 </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> 0.87 </td>
-   <td style="text-align:right;"> -0.35 </td>
-   <td style="text-align:right;"> -0.86 </td>
+   <td style="text-align:right;"> 1.03 </td>
+   <td style="text-align:right;"> -0.41 </td>
+   <td style="text-align:right;"> -1.08 </td>
    <td style="text-align:left;"> Mal.2 </td>
   </tr>
   <tr>
-   <td style="text-align:right;"> -0.17 </td>
-   <td style="text-align:right;"> 0.71 </td>
-   <td style="text-align:right;"> -0.49 </td>
+   <td style="text-align:right;"> -0.27 </td>
+   <td style="text-align:right;"> 0.86 </td>
+   <td style="text-align:right;"> -0.54 </td>
    <td style="text-align:left;"> Mal.3 </td>
   </tr>
 </tbody>
@@ -679,34 +712,72 @@ In practice, a common element in 3 or more different data sets is usually rare.
 <p><img data-src="test_files/figure-revealjs/unnamed-chunk-6-1.png" width="960"></p>
 </div>
 </div>
+<hr>
 <ul>
 <li>Khi-2 calculation</li>
 </ul>
 <div class="cell">
 <details>
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>df <span class="sc">%&gt;%</span> </span>
-<span id="cb6-2"><a href="#cb6-2"></a>  <span class="fu">melt</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb6-3"><a href="#cb6-3"></a>  <span class="fu">group_by</span>(patient, variable) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-4"><a href="#cb6-4"></a>  <span class="fu">summarise</span>(<span class="at">count =</span> <span class="fu">sum</span>(value)) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-5"><a href="#cb6-5"></a>  <span class="fu">summarise</span>(<span class="at">pvalue=</span> <span class="fu">chisq.test</span>(count)<span class="sc">$</span>p.value)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a>khi2.df <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">nrow =</span> <span class="fu">length</span>(df<span class="sc">$</span>patient),</span>
+<span id="cb5-2"><a href="#cb5-2"></a>                                <span class="at">ncol =</span> <span class="fu">length</span>(df<span class="sc">$</span>patient))</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="fu">colnames</span>(khi2.df) <span class="ot">&lt;-</span> <span class="fu">rownames</span>(khi2.df) <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
+<span id="cb5-4"><a href="#cb5-4"></a>khi2.df[<span class="dv">1</span> , <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb5-5"><a href="#cb5-5"></a>khi2.df[<span class="dv">2</span> , <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb5-6"><a href="#cb5-6"></a>khi2.df[<span class="dv">1</span> , <span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb5-7"><a href="#cb5-7"></a>khi2.df[<span class="dv">3</span> , <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb5-8"><a href="#cb5-8"></a>khi2.df[<span class="dv">2</span> , <span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb5-9"><a href="#cb5-9"></a>khi2.df[<span class="dv">3</span> , <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb5-10"><a href="#cb5-10"></a>khi2.df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(khi2.df)</span>
+<span id="cb5-11"><a href="#cb5-11"></a>color.me <span class="ot">&lt;-</span> <span class="fu">which</span>(khi2.df <span class="sc">&lt;</span> .<span class="dv">1</span>)</span>
+<span id="cb5-12"><a href="#cb5-12"></a><span class="fu">kable</span>(khi2.df) <span class="sc">%&gt;%</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a>  <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
-<div class="cell-output cell-output-stdout">
-<pre><code># A tibble: 3 x 2
-  patient  pvalue
-  &lt;chr&gt;     &lt;dbl&gt;
-1 Mal.1   0.497  
-2 Mal.2   0.00745
-3 Mal.3   0.202  </code></pre>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> Mal.1 </th>
+   <th style="text-align:right;"> Mal.2 </th>
+   <th style="text-align:right;"> Mal.3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Mal.1 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> 0.08 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Mal.2 </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.22 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Mal.3 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+</tbody>
+</table>
+
 </div>
 </div>
-<p>H<sub>0</sub>: accept homogeneity hypothesis<br> H<sub>1</sub>: reject homogeneity hypothesis</p>
+<p><br>
+</p>
 <div class="column">
 <img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-pvalue.png" height="350">
 <div class="captiontext">
 <em>p-value</em> and <em>Z-score</em>, two normalised test thresholds to estimate the significance of an observed distribution <em>vs</em> a random distribution
 </div>
 </div>
+<p>H<sub>0</sub>: ✔️ accept homogeneity hypothesis<br> H<sub>1</sub>: ❌ reject homogeneity hypothesis</p>
 <p><br>
 </p>
 </section>
