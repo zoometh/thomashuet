@@ -23,7 +23,7 @@ m <- list(
   t = 50,
   pad = 20
 )
-reg.example <- plot_ly(Oxford.water, x = ~OxfordDst, width = 1200, height = 700) %>% 
+reg.example <- plot_ly(Oxford.water, x = ~OxfordDst, width = 1200, height = 600) %>% 
   add_trace(name = "Oxford Pottery", y = ~OxfordPct,
             #mode = 'scatter',
             marker = list(color = 'black'), 
@@ -49,11 +49,12 @@ reg.example <- plot_ly(Oxford.water, x = ~OxfordDst, width = 1200, height = 700)
                visible = "legendonly") %>%
   layout(title = paste0('Oxford pottery with a probable water transportation <br> (R<sup>2</sup> = ', r2, ")"),
          xaxis = list(title = "Distance (miles)"), 
-         yaxis = list(title = "Percentage of Oxford Pottery"),
-         margin = m,
-         legend = list(orientation = "h",   
-                       xanchor = "center",  
-                       #y = -0.5,
-                       x = 0.5))
+         yaxis = list(title = "Percentage of Oxford Pottery")#,
+         # margin = m,
+         # legend = list(orientation = "h",   
+         #               xanchor = "center",  
+         #               #y = -0.5,
+         #               x = 0.5)
+         )
 reg.example
 htmlwidgets::saveWidget(reg.example, "C:/Rprojects/thomashuet/teach/stats/stats/dim2/oxfordwater.html")

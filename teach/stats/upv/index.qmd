@@ -241,11 +241,11 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 <div class="row">
 
 <div class="column">
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert.jpg){height=300px}<div class="captiontext">Garry Kasparov *vs* Deep Blue, 1996-1997</div>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert.jpg){height=400px}<div class="captiontext">Garry Kasparov *vs* Deep Blue, 1996-1997</div>
 </div>
 
 <div class="column">
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert-galan.jpg){height=300px}<div class="captiontext">Hierachical clustering of the Iberian LBA "Warrior stelae", Galàn 1993</div>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert-galan.jpg){height=400px}<div class="captiontext">Hierachical clustering of the Iberian LBA "Warrior stelae", Galàn 1993</div>
 </div>
 
 </div>
@@ -724,6 +724,9 @@ plot(as.dendrogram(dend.h))
 ```
 
 :::
+
+\
+
 
 ## Coefficient
 
