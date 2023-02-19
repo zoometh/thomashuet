@@ -37,26 +37,7 @@ library(archdata)
 
 ## Introduction
 
-<div class="row">
-<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-gremy.png){height=350px}
-<div class="captiontext">Grémy et Salmon, 1967</div>
-</div>
-<div class="column66">"Le but de la statistique est d’étudier un certain nombre d’objets de même nature, mais qui présentent des caractéristiques variables susceptibles de mesure ou de classement"</div>
-</div>
 
-<div class="row">
-<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-staline.jpg){height=350px}
-<div class="captiontext">Joseph Staline, 1953</div>
-</div>
-<div class="column66">"Смерть одного человека — трагедия, смерть миллионов — статистика"</div>
-</div>
-
-<div class="row">
-<div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-churchill.jpg){height=350px}
-<div class="captiontext">Winston Churchill, 1941</div>
-</div>
-<div class="column66">"the only statistics you can trust are the ones you have falsified yourself"</div>
-</div>
 
 
 ## My footnote

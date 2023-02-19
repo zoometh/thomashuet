@@ -18,7 +18,7 @@ format:
     reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/inst-uni-oxford_.png
-    footer: "Statistics in Archaeology <https://tinyurl.com/stats-upv> CNRS ASM <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 40px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
+    footer: "<em>Statistics in Archaeology</em> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 40px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
     margin: 0
     width: 1200
 ---
@@ -58,12 +58,16 @@ data(OxfordPots)
 <div class="column66">"Le but de la statistique est d’étudier un certain nombre d’objets de même nature, mais qui présentent des caractéristiques variables susceptibles de mesure ou de classement"</div>
 </div>
 
+\
+
 <div class="row">
 <div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-staline.jpg){height=350px}
 <div class="captiontext">Joseph Staline, 1953</div>
 </div>
 <div class="column66">"Смерть одного человека — трагедия, смерть миллионов — статистика"</div>
 </div>
+
+\
 
 <div class="row">
 <div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-churchill.jpg){height=350px}
@@ -72,7 +76,7 @@ data(OxfordPots)
 <div class="column66">"the only statistics you can trust are the ones you have falsified yourself"</div>
 </div>
 
-
+## Inequalities {background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/gini/" background-interactive="true"}
 
 
 ## Historiography of Archaeology 1/2
@@ -142,9 +146,11 @@ data(OxfordPots)
 <div class="column33">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-ai-ml-angkor.jpg){height=350px}
 <div class="captiontext">Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer</div>
 </div>
-<div class="column66">With the development of computational archaeology (e.g. AI/ML) and data oceans, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed (DMP) and made FAIR to produce serendipity over the long term.
+<div class="column66">With the development of computational archaeology (e.g. AI/ML, aDNA) and *oceans of data*, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed and made FAIR[^4] to produce serendipity over the long term.
 </div>
 </div>
+
+[^4]: Findable, Accessible, Reusable, Interoperable
 
 :::
 
@@ -168,8 +174,8 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 </div>
 
 <div class="column">
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-stat-mean-pythagore.png){height=350px}
-<div class="captiontext">The 4 Pythagorean means: quadratic, arithmetic, geometric, and harmonic</div>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-average-man.jpg){height=350px}
+<div class="captiontext">"Anthropométrie ou mesure des différentes facultés de l'homme", 1870, by A. Quetelet</div>
 </div>
 
 </div>
@@ -193,7 +199,7 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 
 <div class="column">
 ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-arbuthnot-1629-1710.png){height=350px}
-<div class="captiontext">J. Arbuthnot, 1629-1710 census. Published in 1711, 'Philosophical transactions, 27'</div>
+<div class="captiontext">J. Arbuthnott, 1629-1710 census. Published in 1711, 'Philosophical transactions, 27'</div>
 </div>
 
 <div class="column">
@@ -238,6 +244,13 @@ Learn more: [Renfrew and Bahn, 2020, *Archaeology : Theories, Methods and Practi
 </div>
 </div>
 
+<div class="row">
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert-galan.jpg){height=300px}
+<div class="captiontext">Hierachical clustering of the Iberian LBA "Warrior stelae", Galàn 1993</div>
+</div>
+</div>
+
+
 
 ### AI/ML
 
@@ -248,8 +261,8 @@ Artificial Intelligence & Machine Learning
 <div class="captiontext">Natural language processing (NLP), prompted by ChatGPT, 2023</div>
 </div>
 
-<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/prog-ml-dl-cv-example.jpg){height=300px}
-<div class="captiontext">Computer vision (CV), Deep Neural Network model</div>
+<div class="column">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-ai-cv-archaeo.png){height=300px}
+<div class="captiontext">Example of ML workflow applied to ceramics, S.H. Bickler, 2021</div>
 </div>
 
 </div>
