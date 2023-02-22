@@ -12,7 +12,7 @@ Use the `OxfordPots` dataset from the [archdata](https://cran.r-project.org/web/
 <em> Regression analysis of Late Roman fine ware (Oxford pots) presumably transported by river (black circles) or land (hollow circles)</em>
 </p>
   
-The R script is there: 
+The R script is there: https://github.com/zoometh/thomashuet/blob/main/teach/stats/stats/dim2/regression-basic.R
 
 ## Partager vos données pour dans le cadre de cet atelier
 
