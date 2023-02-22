@@ -10,7 +10,7 @@ Use the `OxfordPots` dataset from the {archdata} R package, to reproduce the lin
 <center>
   
 <img src="../images/art-pottery-OxfordPots.jpg" height='500px' align="center"/>
-<em> Regression analysis of Late Roman fine earthenware (Oxford pots) presumably transported by river or land (y-axis: logarithmic scale)</em>
+<em> Regression analysis of Late Roman fine ware (Oxford pots) presumably transported by river (black circles) or land (hollow circles)</em>
   
 </center>
   
