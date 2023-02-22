@@ -3,6 +3,19 @@
 
 Cours du 21/02/23 au 23/02/23 à l'Université Paul Valéry, Montpellier. Niveau Master
 
+## Pratique
+
+Use the `OxfordPots` dataset from the {archdata} R package, to reproduce the linear regression by Fulford and Hodder[^1]
+
+<center>
+
+![](../images/art-pottery-OxfordPots.jpg)
+<em> Regression analysis of Late Roman fine earthenware (Oxford pots) presumably transported by river or land (y-axis: logarithmic scale)</em>
+
+</center>
+
+The R script is there: 
+
 ## Partager vos données pour dans le cadre de cet atelier
 
 Cette plateforme, GitHub, facilite le partage des données et leur [*versioning*](https://docs.github.com/en/get-started/using-git/about-git) en assurant donc la réplicabilité des analyses.  
@@ -32,3 +45,5 @@ Pour toutes questions:
 - **contact**: thomas.huet@arch.ox.ac.uk
 
 ---
+
+[^1]: Fulford, M. G., & Hodder, I. (1974). *A regression analysis of some Late Romano-British pottery: a case study*. Oxoniensia, 39, 26-33.

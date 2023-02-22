@@ -1,0 +1,2978 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.251">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Thomas Huet (University of Oxford, EAMENA project)">
+
+<title>UPV - Statistics in Archaeology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./images/inst-asm-cnrs.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
+<script src="site_libs/datatables-binding-0.22/datatables.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet">
+<link href="site_libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet">
+<script src="site_libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">UPV</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page">Home</a>
+  </li>  
+  <li class="dropdown-header">
+ about.qmd</li>
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#inequalities" id="toc-inequalities" class="nav-link" data-scroll-target="#inequalities">Inequalities</a></li>
+  <li><a href="#historiography-of-archaeology-12" id="toc-historiography-of-archaeology-12" class="nav-link" data-scroll-target="#historiography-of-archaeology-12">Historiography of Archaeology 1/2</a></li>
+  <li><a href="#historiography-of-archaeology-22" id="toc-historiography-of-archaeology-22" class="nav-link" data-scroll-target="#historiography-of-archaeology-22">Historiography of Archaeology 2/2</a></li>
+  <li><a href="#birth-of-statistics" id="toc-birth-of-statistics" class="nav-link" data-scroll-target="#birth-of-statistics">Birth of statistics</a></li>
+  <li><a href="#advanced-statistics" id="toc-advanced-statistics" class="nav-link" data-scroll-target="#advanced-statistics">Advanced statistics</a></li>
+  <li><a href="#glossary-of-statistics" id="toc-glossary-of-statistics" class="nav-link" data-scroll-target="#glossary-of-statistics"><span style="color:white;">Glossary of statistics</span></a></li>
+  <li><a href="#type-of-statistics" id="toc-type-of-statistics" class="nav-link" data-scroll-target="#type-of-statistics">Type of statistics</a></li>
+  <li><a href="#middle-range-theories" id="toc-middle-range-theories" class="nav-link" data-scroll-target="#middle-range-theories">Middle Range Theories</a></li>
+  <li><a href="#entities" id="toc-entities" class="nav-link" data-scroll-target="#entities">Entities</a></li>
+  <li><a href="#conformity-1" id="toc-conformity-1" class="nav-link" data-scroll-target="#conformity-1">Conformity</a></li>
+  <li><a href="#khi-square" id="toc-khi-square" class="nav-link" data-scroll-target="#khi-square">Khi-square</a></li>
+  <li><a href="#coefficient" id="toc-coefficient" class="nav-link" data-scroll-target="#coefficient">Coefficient</a></li>
+  <li><a href="#models" id="toc-models" class="nav-link" data-scroll-target="#models">Models</a></li>
+  <li><a href="#models---proprieties" id="toc-models---proprieties" class="nav-link" data-scroll-target="#models---proprieties">Models - Proprieties</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#boolean-operators" id="toc-boolean-operators" class="nav-link" data-scroll-target="#boolean-operators">Boolean operators</a></li>
+  <li><a href="#binary-topological-relationships" id="toc-binary-topological-relationships" class="nav-link" data-scroll-target="#binary-topological-relationships">Binary Topological Relationships</a></li>
+  <li><a href="#scales" id="toc-scales" class="nav-link" data-scroll-target="#scales">Scales</a></li>
+  <li><a href="#dim-data" id="toc-dim-data" class="nav-link" data-scroll-target="#dim-data">1-dim data</a></li>
+  <li><a href="#dim-data-1" id="toc-dim-data-1" class="nav-link" data-scroll-target="#dim-data-1">2-dim data</a></li>
+  <li><a href="#dim-data-spatial-13" id="toc-dim-data-spatial-13" class="nav-link" data-scroll-target="#dim-data-spatial-13">2-dim data spatial 1/3</a></li>
+  <li><a href="#dim-data-spatial-23" id="toc-dim-data-spatial-23" class="nav-link" data-scroll-target="#dim-data-spatial-23">2-dim data spatial 2/3</a></li>
+  <li><a href="#dim-data-spatial-33" id="toc-dim-data-spatial-33" class="nav-link" data-scroll-target="#dim-data-spatial-33">2-dim data spatial 3/3</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3"></a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4"></a></li>
+  <li><a href="#dim-data-shape" id="toc-dim-data-shape" class="nav-link" data-scroll-target="#dim-data-shape">2-dim data shape</a></li>
+  <li><a href="#dim-data-2" id="toc-dim-data-2" class="nav-link" data-scroll-target="#dim-data-2">3-dim data</a></li>
+  <li><a href="#dim-or-more-data" id="toc-dim-or-more-data" class="nav-link" data-scroll-target="#dim-or-more-data">3-dim or more data</a></li>
+  <li><a href="#dim-or-more-data-1" id="toc-dim-or-more-data-1" class="nav-link" data-scroll-target="#dim-or-more-data-1">3-dim or more data</a></li>
+  <li><a href="#seriation" id="toc-seriation" class="nav-link" data-scroll-target="#seriation">Seriation</a></li>
+  <li><a href="#bibliographic-resources" id="toc-bibliographic-resources" class="nav-link" data-scroll-target="#bibliographic-resources">Bibliographic resources</a></li>
+  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Statistics in Archaeology</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Thomas Huet (University of Oxford, EAMENA project) </p>
+          </div>
+  </div>
+    
+    
+  </div>
+  
+
+</header>
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'rmarkdown' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'knitr' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: ggplot2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'plotly'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:ggplot2':
+
+    last_plot</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:stats':
+
+    filter</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:graphics':
+
+    layout</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggtern' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Registered S3 methods overwritten by 'ggtern':
+  method           from   
+  grid.draw.ggplot ggplot2
+  plot.ggplot      ggplot2
+  print.ggplot     ggplot2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>--
+Remember to cite, run citation(package = 'ggtern') for further info.
+--</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'ggtern'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:ggplot2':
+
+    aes, annotate, ggplot, ggplot_build, ggplot_gtable, ggplotGrob,
+    ggsave, layer_data, theme_bw, theme_classic, theme_dark,
+    theme_gray, theme_light, theme_linedraw, theme_minimal, theme_void</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'DT' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'DT'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:shiny':
+
+    dataTableOutput, renderDataTable</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:kableExtra':
+
+    group_rows</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'spatstat' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: spatstat.data</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'spatstat.data' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: spatstat.geom</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'spatstat.geom' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>spatstat.geom 3.0-3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'spatstat.geom'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:ggtern':
+
+    rgb2hex</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: spatstat.random</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'spatstat.random' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>spatstat.random 3.0-1</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: spatstat.core</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'spatstat.core' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: nlme</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'nlme'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
+
+    collapse</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: rpart</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>spatstat.core 2.4-2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: spatstat.linnet</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'spatstat.linnet' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>spatstat.linnet 2.3-2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+spatstat 2.3-4       (nickname: 'Watch this space') 
+For an introduction to spatstat, type 'beginner' </code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'spatialEco' was built under R version 4.1.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'spatialEco'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:spatstat.geom':
+
+    is.empty, quadrats, shift</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:spatstat.data':
+
+    ants</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following object is masked from 'package:dplyr':
+
+    combine</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.10.2, GDAL 3.4.1, PROJ 7.2.1; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'sp' was built under R version 4.1.3</code></pre>
+</div>
+</div>
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-gremy.png" height="350">
+<div class="captiontext">
+Grémy et Salmon, 1967
+</div>
+</div>
+<div class="column66">
+“Le but de la statistique est d’étudier un certain nombre d’objets de même nature, mais qui présentent des caractéristiques variables susceptibles de mesure ou de classement”
+</div>
+</div>
+<p><br>
+</p>
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-staline.jpg" height="350">
+<div class="captiontext">
+Joseph Staline, 1953
+</div>
+</div>
+<div class="column66">
+“Смерть одного человека — трагедия, смерть миллионов — статистика”
+</div>
+</div>
+<p><br>
+</p>
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-churchill.jpg" height="350">
+<div class="captiontext">
+Winston Churchill, 1941
+</div>
+</div>
+<div class="column66">
+“the only statistics you can trust are the ones you have falsified yourself”
+</div>
+</div>
+</section>
+<section id="inequalities" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/gini/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/gini/" data-background-interactive="true" class="anchored" data-anchor-id="inequalities">Inequalities</h2>
+</section>
+<section id="historiography-of-archaeology-12" class="level2">
+<h2 class="anchored" data-anchor-id="historiography-of-archaeology-12">Historiography of Archaeology 1/2</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">📅</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Prehistory</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Culture-Historical</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<table class="table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 35%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Start</th>
+<th style="text-align: left;">Method</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1850s</td>
+<td style="text-align: left;">Prehistory</td>
+<td style="text-align: left;">evolution, geology, anthropology</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1950s</td>
+<td style="text-align: left;">Culture-Historical</td>
+<td style="text-align: left;"><span style="color:red;">similarities</span>, typology, <span style="color:blue;">chronology</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">1960s</td>
+<td style="text-align: left;">New archaeology</td>
+<td style="text-align: left;">chain operative, statistics, <span style="color:blue;">chronology (C14) </span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1980s</td>
+<td style="text-align: left;">Post-processual</td>
+<td style="text-align: left;"><span style="color:red;">dissimilarities</span>, cultural relativism</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2020s</td>
+<td style="text-align: left;">Tool-driven</td>
+<td style="text-align: left;">Big data, ML / DL, aDNA</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-prehistoire-perthes.jpg" height="350">
+<div class="captiontext">
+Boucher de Perthes, 1847, Antiquités celtiques et antédiluviennes
+</div>
+</div>
+<div class="column66">
+Concomitance between biological “species” (C. Darwin) and archaeological “types” (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-romantic.png" height="350">
+<div class="captiontext">
+‘Monument druidique près de Gisors’: Baron Taylor, 1824, <em>Voyages pittoresques et romantiques dans l’ancienne France</em>
+</div>
+</div>
+<div class="column66">
+Focused on chronology, rooted in academic/national traditions and develops in parallel with History as a ‘scientific’ discipline taught in universities.
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="historiography-of-archaeology-22" class="level2">
+<h2 class="anchored" data-anchor-id="historiography-of-archaeology-22">Historiography of Archaeology 2/2</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true">New Archaeology</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false">Post-Processual</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false">Tool-driven</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-newarchaeo-binford.png" height="350"> <br>
+<div class="captiontext">
+R. &amp; S. Binford, 1968, <em>New Perspectives in Archaeology</em>
+</div>
+</div>
+<div class="column">
+<em>Processualism</em>, the advancement of statistics favors demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.
+</div>
+</div>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-postprocess-sombreabime.png" height="350">
+<div class="captiontext">
+Laurent Olivier, 2008, <em>Le sombre abîme du temps</em>
+</div>
+</div>
+<div class="column66">
+<em>Post-processualism</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity)
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-archaeo-ai-ml-angkor.jpg" height="350">
+<div class="captiontext">
+Automatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer
+</div>
+</div>
+<div class="column66">
+<p>With the development of computational archaeology (e.g.&nbsp;AI/ML, aDNA) and <em>oceans of data</em>, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed and made FAIR<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> to produce serendipity over the long term.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<p>Learn more: <a href="https://ebookcentral.proquest.com/lib/oxford/reader.action?docID=6178544&amp;ppg=39">Renfrew and Bahn, 2020, <em>Archaeology : Theories, Methods and Practice</em>, p.&nbsp;39 ff.&nbsp;</a></p>
+</div>
+</section>
+<section id="birth-of-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="birth-of-statistics">Birth of statistics</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true">Mean</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false">Median</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false">Significance test</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false">Normal law</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-stat-mean-birth-sex-ratio.png" height="350">
+<div class="captiontext">
+Sex ratio at birth
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-average-man.jpg" height="350">
+<div class="captiontext">
+“Anthropométrie ou mesure des différentes facultés de l’homme”, 1870, by A. Quetelet
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div class="row">
+<div class="column">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/EdwardWright-CertaineErrorsinNavigation-1599.png/800px-EdwardWright-CertaineErrorsinNavigation-1599.png" height="350">
+<div class="captiontext">
+Title page of E. Wright, 1599, ‘Certaine Errors in Navigation’
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-stat-median-compass-map.png" height="350">
+</div>
+</div>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-arbuthnot-1629-1710.png" height="350">
+<div class="captiontext">
+J. Arbuthnott, 1629-1710 census. Published in 1711, ‘Philosophical transactions, 27’
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-pvalue.png" height="350">
+<div class="captiontext">
+<em>p-value</em> and <em>Z-score</em>, two normalised test thresholds to estimate the significance of an observed distribution <em>vs</em> a random distribution
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-quetelet_1821-33_census.png" height="350">
+<div class="captiontext">
+A. Quetelet, 1821-1833 census
+</div>
+</div>
+<div class="column">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Normal_Distribution_PDF.svg/1280px-Normal_Distribution_PDF.svg.png" height="350">
+<div class="captiontext">
+A selection of Normal Distribution Probability Density Functions
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="advanced-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="advanced-statistics">Advanced statistics</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true">Expert Systems</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false">AI/ML</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert.jpg" height="400">
+<div class="captiontext">
+Garry Kasparov <em>vs</em> Deep Blue, 1996-1997
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-expert-galan.jpg" height="400">
+<div class="captiontext">
+Hierachical clustering of the Iberian LBA “Warrior stelae”, Galàn 1993
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>Artificial Intelligence &amp; Machine Learning</p>
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-ai-chatGPT.png" height="300">
+<div class="captiontext">
+Natural language processing (NLP), prompted by ChatGPT, 2023
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/hist-computer-science-ai-cv-archaeo.png" height="300">
+<div class="captiontext">
+Example of ML workflow applied to ceramics, S.H. Bickler, 2021
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>Statistik (description of a state, a country): collecting population data through census, surveys != probability. Based on social data (!= mathematics). Statistics need to analyse large amount of data (dataset), Statistics are manded by institutions, to be interesting they need to be realised over the long term to allow comparisons. <em>p-value</em> is a test value, 95% = &gt; .05</p>
+</div>
+</section>
+<section id="glossary-of-statistics" class="level2" data-background-image="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/blackboard-fr.png">
+<h2 data-background-image="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/blackboard-fr.png" class="anchored" data-anchor-id="glossary-of-statistics"><span style="color:white;">Glossary of statistics</span></h2>
+</section>
+<section id="type-of-statistics" class="level2">
+<h2 class="anchored" data-anchor-id="type-of-statistics">Type of statistics</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true">📅</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false">Descriptive</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false">Exploratory</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false">Confirmatory</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<div class="columns">
+<div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-histogram.png" height="350" class="figure-img"></p>
+<p></p><figcaption class="figure-caption">Descriptive</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa.png" height="350" class="figure-img"></p>
+<p></p><figcaption class="figure-caption">Explanatory</figcaption><p></p>
+</figure>
+</div>
+</div><div class="column" style="width:33%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-pvalue-1.png" height="350" class="figure-img"></p>
+<p></p><figcaption class="figure-caption">Confirmatory</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<p><strong>Describe</strong> the population with the mean (μ), the median (M) and standard deviation (σ)</p>
+<div class="quarto-layout-panel">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-scatterplot.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Scatterplot</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-histogram.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Histogram</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-boxplot.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Boxplot</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-linechart.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Line chart</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-piechart.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Pie Chart</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-radar.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Radar chart</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<div class="row">
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa.png" height="350">
+</div>
+<div class="column66">
+<strong>Clustering</strong> method, we move from a description to a modelling identifying central tendencies
+</div>
+</div>
+</div>
+<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<div class="row">
+<div class="column33">
+<strong>Test</strong> of<br><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-pvalue-1.png" height="350">
+</div>
+<div class="column66">
+<ul>
+<li>
+<strong><em>conformity</em></strong><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> between the observed population and a theoretical distribution (e.g.&nbsp;normal law)
+</li>
+<li>
+<strong><em>homogeneity</em></strong> between different populations
+</li>
+<li>
+<strong><em>relation</em></strong> between several variables from the same population
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>Explanatory -&gt; New Archaeology</p>
+</div>
+</section>
+<section id="middle-range-theories" class="level2">
+<h2 class="anchored" data-anchor-id="middle-range-theories">Middle Range Theories</h2>
+<p><span class="midtext">Archaeology establishes <em>facts</em> and proposes <strong>models</strong> to connect these facts</span></p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true">MRT</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false">Example</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false">Singularity</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false">Conformity</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false">Identity</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<div class="row">
+<div class="column33">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/theo-archaeo-renfrewbahn.jpg" height="300">
+<div class="captiontext">
+Model of archaeological reasoning by Renfrew and Bahn, 2020
+</div>
+</center>
+</div>
+<div class="column66">
+<center>
+<span class="midtext">“Sociological theory, if it is to advance significantly, must proceed on these interconnected planes”<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></span><br><small> Robert K. Merton, 1968</small>
+</center>
+</div>
+</div>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png" height="350">
+</center>
+</div>
+<div class="column">
+<p>We want to compare 3 different <strong>archaeological cultures</strong><a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> (groups of settlements, sites, geographical regions, chronological periods, etc.): <span style="color:blue">A</span>, <span style="color:red">B</span>, and <span style="color:green">C</span></p>
+</div>
+</div>
+</div>
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png" height="350">
+</center>
+</div>
+<div class="column">
+<b>None</b> of the comparisons gives the same results<br>
+<div class="smalltext">
+⚠️ In practice, over-valuing a specific element by giving it a marker character is dangerous, as its originality makes its management uncontrollable.
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png" height="350">
+</center>
+</div>
+<div class="column">
+<b>Most</b> comparisons give the same results<br> ️
+<div class="smalltext">
+💡 Increase the matching success of the model by decreasing its precision, or decrease the matching success of the model by increasing its precision.
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-5-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png" height="350">
+</center>
+</div>
+<div class="column">
+<b>All</b> the comparison give the same result<br> ️
+<div class="smalltext">
+⚠️️In practice, a common element in 3 or more different data sets is usually rare.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>middle range theories = comparisons</p>
+</div>
+</section>
+<section id="entities" class="level2">
+<h2 class="anchored" data-anchor-id="entities">Entities</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true"><em>1<sup>st</sup> law</em></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false"><span class="tabsetheadertext">Where 🗺️</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false"><span class="tabsetheadertext">When ⏰</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-4" role="tab" aria-controls="tabset-7-4" aria-selected="false"><span class="tabsetheadertext">What 🏺</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-5" role="tab" aria-controls="tabset-7-5" aria-selected="false"><span class="tabsetheadertext">How ⚙️</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-6" role="tab" aria-controls="tabset-7-6" aria-selected="false"><span class="tabsetheadertext">Who 🤰🏽</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-tobler.jpg" height="250">
+</center>
+<div class="captiontext">
+Waldo Tobler
+</div>
+</div>
+<div class="column">
+<em>
+</em><center><em>
+“everything is related to everything else, but near things are more related than distant things”</em><br><small> Tobler, 1970</small>
+</center>
+</div>
+</div>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-bruegel.jpg" height="350">
+<div class="captiontext">
+Pieter Bruegel the Elder, <em>The Harversters</em>, 1565
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-macedonia.png" height="350">
+<div class="captiontext">
+Kingdom of Macedon at the death of Philip II, 336 BC
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-geology.png" height="350">
+<div class="captiontext">
+Spiral of geological times
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/when-strati.jpg" height="350">
+<div class="captiontext">
+Startigraphic log and corresponding Harris matrix
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-7-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-4-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/what-1950.jpg" height="350">
+<div class="captiontext">
+An American suburb in the 1950s
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/what-pottery.jpg" height="350"><br>
+<div class="captiontext">
+Seriation of Chassean potteries in South France
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-7-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-5-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/how-fordism.jpg" height="350">
+<div class="captiontext">
+Assembly line work in a Ford factory
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/how-co.jpg" height="350">
+<div class="captiontext">
+<em>Chaine opératoire</em> of flint lamellas knapping
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-7-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-6-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/who-family.jpg" height="350">
+<div class="captiontext">
+The British Royal Family<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/who-haak_afo.jpg" height="350">
+<div class="captiontext">
+Estimate DNA mixture proportions of Modern Europeans
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="conformity-1" class="level2">
+<h2 class="anchored" data-anchor-id="conformity-1">Conformity</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true"><span class="tabsetheadertext">Compare 1/3<span class="tabsetheadertext"></span></span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false"><span class="tabsetheadertext">Compare 2/3<span class="tabsetheadertext"></span></span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false"><span class="tabsetheadertext">Compare 3/3<span class="tabsetheadertext"></span></span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-4" role="tab" aria-controls="tabset-8-4" aria-selected="false">Regress</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">feat =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">where =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">60</span>),</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">when =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">20</span>),</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">what =</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">10</span>, <span class="dv">20</span>),</span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">datatable</span>(df, </span>
+<span id="cb51-8"><a href="#cb51-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">rownames =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb51-9"><a href="#cb51-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">width =</span> <span class="st">'20%'</span>,</span>
+<span id="cb51-10"><a href="#cb51-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">options =</span> <span class="fu">list</span>(<span class="at">searching =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb51-11"><a href="#cb51-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">lengthChange =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb51-12"><a href="#cb51-12" aria-hidden="true" tabindex="-1"></a>                         <span class="at">paging =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb51-13"><a href="#cb51-13" aria-hidden="true" tabindex="-1"></a>                         <span class="at">scrollX =</span> F,</span>
+<span id="cb51-14"><a href="#cb51-14" aria-hidden="true" tabindex="-1"></a>                         <span class="at">initComplete =</span> <span class="fu">JS</span>(<span class="st">"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"</span>),</span>
+<span id="cb51-15"><a href="#cb51-15" aria-hidden="true" tabindex="-1"></a>                         <span class="at">info =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb51-16"><a href="#cb51-16" aria-hidden="true" tabindex="-1"></a>                         <span class="at">filter =</span> <span class="st">"none"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb51-17"><a href="#cb51-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="st">"feat"</span>,</span>
+<span id="cb51-18"><a href="#cb51-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">backgroundColor =</span> <span class="fu">styleEqual</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>), </span>
+<span id="cb51-19"><a href="#cb51-19" aria-hidden="true" tabindex="-1"></a>                                           <span class="fu">c</span>(<span class="st">'#FF000070'</span>, <span class="st">'#00800070'</span>, <span class="st">'#0000FF70'</span>))</span>
+<span id="cb51-20"><a href="#cb51-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb51-21"><a href="#cb51-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="at">columns =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>),</span>
+<span id="cb51-22"><a href="#cb51-22" aria-hidden="true" tabindex="-1"></a>              <span class="at">fontSize =</span> <span class="st">'20px'</span>)</span>
+<span id="cb51-23"><a href="#cb51-23" aria-hidden="true" tabindex="-1"></a>dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="htmlwidget-a08bd2089e457a076446" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a08bd2089e457a076446">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">feat =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">where =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">60</span>),</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">when =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">20</span>),</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">what =</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">10</span>, <span class="dv">20</span>),</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-7"><a href="#cb52-7" aria-hidden="true" tabindex="-1"></a>sites <span class="ot">&lt;-</span> <span class="fu">rownames</span>(df)</span>
+<span id="cb52-8"><a href="#cb52-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-9"><a href="#cb52-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ggtern</span>(<span class="at">data =</span> df, <span class="fu">aes</span>(<span class="at">x =</span> where, <span class="at">y =</span> when, <span class="at">z =</span> what, <span class="at">col =</span> sites)) <span class="sc">+</span> </span>
+<span id="cb52-10"><a href="#cb52-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb52-11"><a href="#cb52-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="dv">17</span>) <span class="sc">+</span></span>
+<span id="cb52-12"><a href="#cb52-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">1</span>, <span class="at">color =</span> <span class="st">"black"</span>) <span class="sc">+</span></span>
+<span id="cb52-13"><a href="#cb52-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_showarrows</span>() <span class="sc">+</span></span>
+<span id="cb52-14"><a href="#cb52-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position=</span><span class="st">"none"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="768"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">feat =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">where =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">60</span>),</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">when =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">20</span>),</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">what =</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">10</span>, <span class="dv">20</span>),</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">datatable</span>(df, </span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">rownames =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb53-9"><a href="#cb53-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">width =</span> <span class="st">'20%'</span>,</span>
+<span id="cb53-10"><a href="#cb53-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">options =</span> <span class="fu">list</span>(<span class="at">searching =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb53-11"><a href="#cb53-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">lengthChange =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb53-12"><a href="#cb53-12" aria-hidden="true" tabindex="-1"></a>                         <span class="at">paging =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb53-13"><a href="#cb53-13" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># pagingType = "numbers",</span></span>
+<span id="cb53-14"><a href="#cb53-14" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># PageLength = 1,</span></span>
+<span id="cb53-15"><a href="#cb53-15" aria-hidden="true" tabindex="-1"></a>                         <span class="at">scrollX =</span> F,</span>
+<span id="cb53-16"><a href="#cb53-16" aria-hidden="true" tabindex="-1"></a>                         <span class="at">initComplete =</span> <span class="fu">JS</span>(<span class="st">"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"</span>),</span>
+<span id="cb53-17"><a href="#cb53-17" aria-hidden="true" tabindex="-1"></a>                         <span class="at">info =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb53-18"><a href="#cb53-18" aria-hidden="true" tabindex="-1"></a>                         <span class="co"># language = list(lengthMenu = "_MENU_"),</span></span>
+<span id="cb53-19"><a href="#cb53-19" aria-hidden="true" tabindex="-1"></a>                         <span class="at">filter =</span> <span class="st">"none"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb53-20"><a href="#cb53-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="st">"feat"</span>,</span>
+<span id="cb53-21"><a href="#cb53-21" aria-hidden="true" tabindex="-1"></a>              <span class="at">backgroundColor =</span> <span class="fu">styleEqual</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>), </span>
+<span id="cb53-22"><a href="#cb53-22" aria-hidden="true" tabindex="-1"></a>                                           <span class="fu">c</span>(<span class="st">'#FF000070'</span>, <span class="st">'#00800070'</span>, <span class="st">'#0000FF70'</span>))</span>
+<span id="cb53-23"><a href="#cb53-23" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb53-24"><a href="#cb53-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="at">columns =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>),</span>
+<span id="cb53-25"><a href="#cb53-25" aria-hidden="true" tabindex="-1"></a>              <span class="at">fontSize =</span> <span class="st">'20px'</span>)</span>
+<span id="cb53-26"><a href="#cb53-26" aria-hidden="true" tabindex="-1"></a>dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="htmlwidget-c5c4d9200b465499b779" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c5c4d9200b465499b779">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">feat =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">where =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">60</span>),</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">when =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">20</span>),</span>
+<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">what =</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">10</span>, <span class="dv">20</span>),</span>
+<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a>res.ca <span class="ot">&lt;-</span> <span class="fu">CA</span>(df[ , <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
+<div class="columns">
+<div class="column" style="width:30%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">feat =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">where =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">60</span>),</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">when =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">20</span>),</span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">what =</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">10</span>, <span class="dv">20</span>),</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">datatable</span>(df, </span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">rownames =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb55-9"><a href="#cb55-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">width =</span> <span class="st">'20%'</span>,</span>
+<span id="cb55-10"><a href="#cb55-10" aria-hidden="true" tabindex="-1"></a>          <span class="at">options =</span> <span class="fu">list</span>(<span class="at">searching =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb55-11"><a href="#cb55-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">lengthChange =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb55-12"><a href="#cb55-12" aria-hidden="true" tabindex="-1"></a>                         <span class="at">paging =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb55-13"><a href="#cb55-13" aria-hidden="true" tabindex="-1"></a>                         <span class="at">scrollX =</span> F,</span>
+<span id="cb55-14"><a href="#cb55-14" aria-hidden="true" tabindex="-1"></a>                         <span class="at">initComplete =</span> <span class="fu">JS</span>(<span class="st">"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}"</span>),</span>
+<span id="cb55-15"><a href="#cb55-15" aria-hidden="true" tabindex="-1"></a>                         <span class="at">info =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb55-16"><a href="#cb55-16" aria-hidden="true" tabindex="-1"></a>                         <span class="at">filter =</span> <span class="st">"none"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb55-17"><a href="#cb55-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="st">"feat"</span>,</span>
+<span id="cb55-18"><a href="#cb55-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">backgroundColor =</span> <span class="fu">styleEqual</span>(<span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>), </span>
+<span id="cb55-19"><a href="#cb55-19" aria-hidden="true" tabindex="-1"></a>                                           <span class="fu">c</span>(<span class="st">'#FF000070'</span>, <span class="st">'#00800070'</span>, <span class="st">'#0000FF70'</span>))</span>
+<span id="cb55-20"><a href="#cb55-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb55-21"><a href="#cb55-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="at">columns =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>),</span>
+<span id="cb55-22"><a href="#cb55-22" aria-hidden="true" tabindex="-1"></a>              <span class="at">fontSize =</span> <span class="st">'20px'</span>)</span>
+<span id="cb55-23"><a href="#cb55-23" aria-hidden="true" tabindex="-1"></a>dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="htmlwidget-be4c802f7f528eb12cfe" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-be4c802f7f528eb12cfe">{"x":{"filter":"none","vertical":false,"data":[["A","B","C"],[20,60,60],[10,30,20],[70,10,20]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>feat<\/th>\n      <th>where<\/th>\n      <th>when<\/th>\n      <th>what<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '20px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'background-color':value == \"A\" ? \"#FF000070\" : value == \"B\" ? \"#00800070\" : value == \"C\" ? \"#0000FF70\" : null});\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'20px'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'20px'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br>
+</p>
+<center>
+⬇️ distance matrix
+</center>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">feat =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">where =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">60</span>),</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">when =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">20</span>),</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">what =</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">10</span>, <span class="dv">20</span>),</span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>dend.h.dist <span class="ot">&lt;-</span> df[ , <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>)] <span class="sc">%&gt;%</span></span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>  scale <span class="sc">%&gt;%</span> </span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>  dist</span>
+<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a>dend.h.dist <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">as.matrix</span>(dend.h.dist))</span>
+<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a>dend.h.dist <span class="ot">&lt;-</span> <span class="fu">round</span>(dend.h.dist, <span class="dv">2</span>)</span>
+<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(dend.h.dist) <span class="sc">%&gt;%</span></span>
+<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">20</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> A </th>
+   <th style="text-align:right;"> B </th>
+   <th style="text-align:right;"> C </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> A </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 3.24 </td>
+   <td style="text-align:right;"> 2.53 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> B </td>
+   <td style="text-align:right;"> 3.24 </td>
+   <td style="text-align:right;"> 0.00 </td>
+   <td style="text-align:right;"> 1.05 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> C </td>
+   <td style="text-align:right;"> 2.53 </td>
+   <td style="text-align:right;"> 1.05 </td>
+   <td style="text-align:right;"> 0.00 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div><div class="column" style="width:60%;">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">feat =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>),</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">where =</span> <span class="fu">c</span>(<span class="dv">20</span>, <span class="dv">60</span>, <span class="dv">60</span>),</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">when =</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">30</span>, <span class="dv">20</span>),</span>
+<span id="cb57-4"><a href="#cb57-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">what =</span> <span class="fu">c</span>(<span class="dv">70</span>, <span class="dv">10</span>, <span class="dv">20</span>),</span>
+<span id="cb57-5"><a href="#cb57-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>))</span>
+<span id="cb57-6"><a href="#cb57-6" aria-hidden="true" tabindex="-1"></a>dend.h <span class="ot">&lt;-</span> df[ , <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)] <span class="sc">%&gt;%</span></span>
+<span id="cb57-7"><a href="#cb57-7" aria-hidden="true" tabindex="-1"></a>  scale <span class="sc">%&gt;%</span> </span>
+<span id="cb57-8"><a href="#cb57-8" aria-hidden="true" tabindex="-1"></a>  dist <span class="sc">%&gt;%</span> </span>
+<span id="cb57-9"><a href="#cb57-9" aria-hidden="true" tabindex="-1"></a>  hclust</span>
+<span id="cb57-10"><a href="#cb57-10" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">as.dendrogram</span>(dend.h))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-8-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-4-tab">
+<iframe width="1000" height="500" src="https://zoometh.github.io/thomashuet/teach/stats/stats/dim2/oxfordwater" title="Regression"></iframe>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="khi-square" class="level2">
+<h2 class="anchored" data-anchor-id="khi-square">Khi-square</h2>
+<p>χ <sup>2</sup></p>
+<hr>
+<ul>
+<li>Observed numbers</li>
+</ul>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'tibble' was built under R version 4.1.3</code></pre>
+</div>
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">patient =</span> <span class="fu">c</span>(<span class="st">"Mal.1"</span>, <span class="st">"Mal.2"</span>, <span class="st">"Mal.3"</span>),</span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">virus.A =</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">19</span>, <span class="dv">13</span>),</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">virus.B =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">7</span>, <span class="dv">10</span>),</span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">virus.C =</span> <span class="fu">c</span>(<span class="dv">11</span>, <span class="dv">4</span>, <span class="dv">5</span>))</span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df) <span class="sc">%&gt;%</span></span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> patient </th>
+   <th style="text-align:right;"> virus.A </th>
+   <th style="text-align:right;"> virus.B </th>
+   <th style="text-align:right;"> virus.C </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Mal.1 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mal.2 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mal.3 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 5 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<hr>
+<ul>
+<li>Calculation of rows and columns sums</li>
+</ul>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>df.copy <span class="ot">&lt;-</span> df</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>df.copy <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df.copy, <span class="fu">colSums</span>(df.copy[ , <span class="sc">-</span><span class="dv">1</span>]))</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>df.copy[<span class="fu">nrow</span>(df.copy), <span class="st">"patient"</span>] <span class="ot">&lt;-</span> <span class="st">"col.sum"</span></span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>df.copy <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df.copy, <span class="fu">rowSums</span>(df.copy[ , <span class="sc">-</span><span class="dv">1</span>]))</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(df.copy)[<span class="fu">ncol</span>(df.copy)] <span class="ot">&lt;-</span> <span class="st">"row.sum"</span></span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df.copy) <span class="sc">%&gt;%</span></span>
+<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="fu">ncol</span>(df.copy), <span class="at">bold =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">row_spec</span>(<span class="fu">nrow</span>(df.copy), <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> patient </th>
+   <th style="text-align:right;"> virus.A </th>
+   <th style="text-align:right;"> virus.B </th>
+   <th style="text-align:right;"> virus.C </th>
+   <th style="text-align:right;"> row.sum </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Mal.1 </td>
+   <td style="text-align:right;"> 12 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 11 </td>
+   <td style="text-align:right;font-weight: bold;"> 30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mal.2 </td>
+   <td style="text-align:right;"> 19 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;font-weight: bold;"> 30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Mal.3 </td>
+   <td style="text-align:right;"> 13 </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;font-weight: bold;"> 28 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> col.sum </td>
+   <td style="text-align:right;font-weight: bold;"> 24 </td>
+   <td style="text-align:right;font-weight: bold;"> 20 </td>
+   <td style="text-align:right;font-weight: bold;"> 44 </td>
+   <td style="text-align:right;font-weight: bold;font-weight: bold;"> 88 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<hr>
+<ul>
+<li>Calculation of expected numbers (E)</li>
+</ul>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>chisq <span class="ot">&lt;-</span> <span class="fu">chisq.test</span>(df[ , <span class="sc">-</span><span class="dv">1</span>])</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>df.copy2 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">round</span>(chisq<span class="sc">$</span>expected, <span class="dv">2</span>))</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>df.copy2<span class="sc">$</span>patient <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df.copy2) <span class="sc">%&gt;%</span></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> virus.A </th>
+   <th style="text-align:right;"> virus.B </th>
+   <th style="text-align:right;"> virus.C </th>
+   <th style="text-align:left;"> patient </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 8.18 </td>
+   <td style="text-align:right;"> 6.82 </td>
+   <td style="text-align:left;"> Mal.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 15 </td>
+   <td style="text-align:right;"> 8.18 </td>
+   <td style="text-align:right;"> 6.82 </td>
+   <td style="text-align:left;"> Mal.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 14 </td>
+   <td style="text-align:right;"> 7.64 </td>
+   <td style="text-align:right;"> 6.36 </td>
+   <td style="text-align:left;"> Mal.3 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<hr>
+<ul>
+<li>Differences between expected (E) and observed (O) numbers</li>
+</ul>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a>df.copy3 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">round</span>(chisq<span class="sc">$</span>residuals, <span class="dv">2</span>))</span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>df.copy3<span class="sc">$</span>patient <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
+<span id="cb63-3"><a href="#cb63-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df.copy3) <span class="sc">%&gt;%</span></span>
+<span id="cb63-4"><a href="#cb63-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> virus.A </th>
+   <th style="text-align:right;"> virus.B </th>
+   <th style="text-align:right;"> virus.C </th>
+   <th style="text-align:left;"> patient </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> -0.77 </td>
+   <td style="text-align:right;"> -0.41 </td>
+   <td style="text-align:right;"> 1.60 </td>
+   <td style="text-align:left;"> Mal.1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 1.03 </td>
+   <td style="text-align:right;"> -0.41 </td>
+   <td style="text-align:right;"> -1.08 </td>
+   <td style="text-align:left;"> Mal.2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> -0.27 </td>
+   <td style="text-align:right;"> 0.86 </td>
+   <td style="text-align:right;"> -0.54 </td>
+   <td style="text-align:left;"> Mal.3 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>df.copy4 <span class="ot">&lt;-</span> <span class="fu">melt</span>(df.copy3, <span class="at">id.vars =</span> <span class="st">"patient"</span>)</span>
+<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(df.copy4, <span class="fu">aes</span>(<span class="at">x =</span> variable, <span class="at">y =</span> value,</span>
+<span id="cb64-3"><a href="#cb64-3" aria-hidden="true" tabindex="-1"></a>                     <span class="at">colour =</span> patient, </span>
+<span id="cb64-4"><a href="#cb64-4" aria-hidden="true" tabindex="-1"></a>                     <span class="at">group =</span> patient)) <span class="sc">+</span> </span>
+<span id="cb64-5"><a href="#cb64-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>) <span class="sc">+</span></span>
+<span id="cb64-6"><a href="#cb64-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb64-7"><a href="#cb64-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="fu">aes</span>(<span class="at">label =</span> value), <span class="at">vjust =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
+<span id="cb64-8"><a href="#cb64-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_path</span>() <span class="sc">+</span></span>
+<span id="cb64-9"><a href="#cb64-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<hr>
+<ul>
+<li>Khi-2 calculation</li>
+</ul>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a>khi2.df <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="at">nrow =</span> <span class="fu">length</span>(df<span class="sc">$</span>patient),</span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>                                <span class="at">ncol =</span> <span class="fu">length</span>(df<span class="sc">$</span>patient))</span>
+<span id="cb65-3"><a href="#cb65-3" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(khi2.df) <span class="ot">&lt;-</span> <span class="fu">rownames</span>(khi2.df) <span class="ot">&lt;-</span> df<span class="sc">$</span>patient</span>
+<span id="cb65-4"><a href="#cb65-4" aria-hidden="true" tabindex="-1"></a>khi2.df[<span class="dv">1</span> , <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb65-5"><a href="#cb65-5" aria-hidden="true" tabindex="-1"></a>khi2.df[<span class="dv">2</span> , <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb65-6"><a href="#cb65-6" aria-hidden="true" tabindex="-1"></a>khi2.df[<span class="dv">1</span> , <span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb65-7"><a href="#cb65-7" aria-hidden="true" tabindex="-1"></a>khi2.df[<span class="dv">3</span> , <span class="dv">1</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb65-8"><a href="#cb65-8" aria-hidden="true" tabindex="-1"></a>khi2.df[<span class="dv">2</span> , <span class="dv">3</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb65-9"><a href="#cb65-9" aria-hidden="true" tabindex="-1"></a>khi2.df[<span class="dv">3</span> , <span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="fu">round</span>(<span class="fu">chisq.test</span>(df[, <span class="fu">c</span>(<span class="dv">3</span>, <span class="dv">4</span>)])<span class="sc">$</span>p.value, <span class="dv">2</span>)</span>
+<span id="cb65-10"><a href="#cb65-10" aria-hidden="true" tabindex="-1"></a>khi2.df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(khi2.df)</span>
+<span id="cb65-11"><a href="#cb65-11" aria-hidden="true" tabindex="-1"></a>color.me <span class="ot">&lt;-</span> <span class="fu">which</span>(khi2.df <span class="sc">&lt;</span> .<span class="dv">1</span>)</span>
+<span id="cb65-12"><a href="#cb65-12" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(khi2.df) <span class="sc">%&gt;%</span></span>
+<span id="cb65-13"><a href="#cb65-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb65-14"><a href="#cb65-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">column_spec</span>(<span class="dv">1</span>, <span class="at">bold =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> Mal.1 </th>
+   <th style="text-align:right;"> Mal.2 </th>
+   <th style="text-align:right;"> Mal.3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Mal.1 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> 0.08 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Mal.2 </td>
+   <td style="text-align:right;"> 0.47 </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 0.22 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Mal.3 </td>
+   <td style="text-align:right;"> 0.08 </td>
+   <td style="text-align:right;"> 0.22 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p><br>
+</p>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-pvalue.png" height="350">
+<div class="captiontext">
+<em>p-value</em> and <em>Z-score</em>, two normalised test thresholds to estimate the significance of an observed distribution <em>vs</em> a random distribution
+</div>
+</div>
+<p>H<sub>0</sub>: ✔️ accept homogeneity hypothesis<br> H<sub>1</sub>: ❌ reject homogeneity hypothesis</p>
+<p><br>
+</p>
+</section>
+<section id="coefficient" class="level2">
+<h2 class="anchored" data-anchor-id="coefficient">Coefficient</h2>
+<p><br>
+</p>
+<div class="column">
+<div class="midtext">
+
+<table class="table">
+<thead>
+<tr>
+<th>
+cor
+</th>
+<th>
+interpretation
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+1
+</td>
+<td>
+…
+</td>
+</tr>
+<tr>
+<td>
+0.9
+</td>
+<td>
+oustanding
+</td>
+</tr>
+<tr>
+<td>
+0.8
+</td>
+<td>
+excellent
+</td>
+</tr>
+<tr>
+<td>
+0.7
+</td>
+<td>
+acceptable
+</td>
+</tr>
+<tr>
+<td>
+0.6
+</td>
+<td>
+weak
+</td>
+</tr>
+<tr>
+<td>
+…
+</td>
+<td>
+…
+</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+</div>
+<div class="column">
+All are between <code>[-1:1]</code>
+<hr>
+Coefficient of correlation
+<ul class="square">
+<li>
+<a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient">Pearson’s r</a>
+</li>
+<li>
+<a href="https://en.wikipedia.org/wiki/Spearman's_rank_correlation_coefficient">Spearman’s ρ</a>
+</li>
+</ul>
+<hr>
+Coefficient of determination: <a href="https://en.wikipedia.org/wiki/Coefficient_of_determination">R<sup>2</sup></a>
+</div>
+</section>
+<section id="models" class="level2">
+<h2 class="anchored" data-anchor-id="models">Models</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true">Statement</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false">Examples</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false">Proprieties</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-4" role="tab" aria-controls="tabset-9-4" aria-selected="false">Example</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
+<div class="row">
+<div class="column50">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/aut-box.jpg" height="300">
+</center>
+<div class="captiontext">
+George E. P. Box
+</div>
+</div>
+<div class="column50">
+<em>
+</em><center><em>
+“All models are wrong, but some are useful”</em><br><small> Box, 1976</small>
+</center>
+</div>
+</div>
+</div>
+<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
+<!-- <center>![A *memento mori* mosaic ('know thyself'), Convent of San Gregorio, Rome](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-know-thyself.jpg){height=200px}</center> -->
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-tree-kroeber.png" height="300">
+</center>
+<div class="captiontext">
+Kroeber, A. L., 1923, <em>Anthropology: culture patterns &amp; processes</em>
+</div>
+</div>
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-tree-splitgraph.jpg" height="300">
+</center>
+<div class="captiontext">
+Gray, R. D., Bryant, D., &amp; Greenhill, S. J., 2010, On the shape and fabric of human history. <em>Philos. Trans. R. Soc. B</em>, 365(1559), 3923-3933
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-9-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-3-tab">
+
+<table class="table">
+<thead>
+<tr>
+<th>
+propriety
+</th>
+<th>
+description
+</th>
+<th>
+example
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Explanatory
+</td>
+<td>
+not over- or under-fitting
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-fitting.png">
+</td>
+<!-- <td>![](../-https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-fitting.png){height=200px}</td> -->
+</tr>
+<tr>
+<td>
+Regularity
+</td>
+<td>
+reproducing data regularity
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-regularity-christaller.jpg" height="200">
+</td>
+</tr>
+<tr>
+<td>
+Robustness
+</td>
+<td>
+not sensitive to small changes in data
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-robust.jpg" height="200">
+</td>
+</tr>
+<tr>
+<td>
+Parsimony
+</td>
+<td>
+the simplest possible explanation is also the most probable
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-parsimony-laplace.jpg" height="200">
+</td>
+</tr>
+<tr>
+<td>
+Versioning
+</td>
+<td>
+carry its own story
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-versioning.jpg" height="200">
+</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<div id="tabset-9-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-4-tab">
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-2683-Human-History.pdf" width="1000px" height="2100px">
+</div>
+</div>
+</div>
+<div class="notes">
+<p>(abandoned hypotheses, alternative versions, etc.) controlled vocabulary -&gt; scale</p>
+</div>
+</section>
+<section id="models---proprieties" class="level2">
+<h2 class="anchored" data-anchor-id="models---proprieties">Models - Proprieties</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true"><span class="midtext">Explanatory</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false"><span class="midtext">Regularity</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-3" role="tab" aria-controls="tabset-10-3" aria-selected="false"><span class="midtext">Robustness</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-4" role="tab" aria-controls="tabset-10-4" aria-selected="false"><span class="midtext">Parsimony</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-5" role="tab" aria-controls="tabset-10-5" aria-selected="false"><span class="midtext">Versioning</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-10-1-tab">
+<div class="row">
+<center>
+not over- or under-fitting
+</center>
+</div>
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-fitting.png" height="250">
+</center>
+</div>
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-fittingnot-a.png">
+</center>
+</div>
+</div>
+<div class="row">
+<div class="column">
+✔️ Fitting
+</div>
+<div class="column">
+❌ Fitting
+</div>
+</div>
+</div>
+<div id="tabset-10-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-2-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-regularity-christaller.jpg" height="350">
+</center>
+</div>
+<div class="column">
+<center>
+reproducing data regularity (central tendencies)
+</center>
+</div>
+</div>
+</div>
+<div id="tabset-10-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-3-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-robust.jpg" height="350">
+</center>
+</div>
+<div class="column">
+<center>
+not sensitive to small changes in data (reproducible)
+</center>
+</div>
+</div>
+</div>
+<div id="tabset-10-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-4-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-parsimony-laplace.jpg" height="350">
+</center>
+</div>
+<div class="column">
+<center>
+all things being equal, the simplest possible explanation for a phenomenon is also the most probable
+</center>
+</div>
+</div>
+</div>
+<div id="tabset-10-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-5-tab">
+<div class="row">
+<div class="column">
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-versioning.jpg" height="350">
+</center>
+</div>
+<div class="column">
+<center>
+carry its own story: abandoned assumptions, alternative versions, etc.
+</center>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-11-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-1" role="tab" aria-controls="tabset-11-1" aria-selected="true">Raw</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-2" role="tab" aria-controls="tabset-11-2" aria-selected="false">Processed</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-3" role="tab" aria-controls="tabset-11-3" aria-selected="false">Aggregated</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-4" role="tab" aria-controls="tabset-11-4" aria-selected="false">Meta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-5" role="tab" aria-controls="tabset-11-5" aria-selected="false">Missing</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-11-1-tab">
+<p>Raw data - <span class="midtext">Primary data acquired via a device</span></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<div id="htmlwidget-1a16faa597e11c372bfb" style="width:60%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1a16faa597e11c372bfb">{"x":{"filter":"none","vertical":false,"data":[["site_1","site_2","site_3","site_4","site_5","site_6","site_7","site_8","site_9","site_10","site_11","site_12","site_13","site_14","site_15","site_16","site_17","site_18","site_19","site_20","site_21","site_22","site_23","site_24","site_25","site_26","site_27","site_28","site_29","site_30","site_31","site_32","site_33"],[97,73,5,37,25,53,68,136,41,690,78,108,41,1283,44,30,28,226,1281,1458,28,69,31,65,30,130,248,285,63,60,21,71,33],[27,15,57,4,28,5,37,95,0,181,165,10,3,217,31,21,12,518,1052,1927,0,88,29,15,2,40,326,129,0,32,12,6,24],[2,1,1,0,2,1,8,3,3,26,19,1,0,18,2,14,1,101,1,0,2,0,1,0,1,2,334,57,4,5,1,0,8],[1,0,0,0,2,0,0,10,0,15,2,0,0,0,0,0,0,0,1,2,0,10,0,0,0,0,7,10,0,0,0,0,0],[0,0,0,0,0,0,1,43,0,1,0,0,0,0,0,0,1,0,444,512,0,8,0,0,0,11,5,19,0,2,0,0,0]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>Microliths<\/th>\n      <th>Scrapers<\/th>\n      <th>Burins<\/th>\n      <th>Axes<\/th>\n      <th>Saws<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"initComplete":"function(settings, json) {\n$(this.api().table().container()).css({'font-size': '20pt'});\n}","columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.initComplete"],"jsHooks":[]}</script>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-11-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-2-tab">
+<p>Processed data - <span class="midtext">Working data (i.e.&nbsp;not definitive)</span></p>
+<iframe width="780" height="500" src="https://zoometh.github.io/thomashuet/teach/stats/stats/data-processed/dt.html" title="Processed data"></iframe>
+<div class="cell">
+
+</div>
+</div>
+<div id="tabset-11-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-3-tab">
+<p>Aggregated data - <span class="midtext">Gathered data expressed in a summary form</span></p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-17-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</div>
+<div id="tabset-11-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-4-tab">
+<p>Metadata - <span class="midtext"><em>data about data</em></span></p>
+<center>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/data-meta-photo-microliths.jpg" height="300"></p>
+</center>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>img <span class="ot">&lt;-</span> exiftoolr<span class="sc">::</span><span class="fu">exif_read</span>(<span class="st">"C:/Rprojects/thomashuet/teach/stats/images/data-meta-photo-microliths.jpg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>Using ExifTool version 12.52</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Caption-Abstract: "</span>, img[[<span class="st">"Caption-Abstract"</span>]]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Caption-Abstract: Microliths (narrow blade type): Conistone Moor (Late Mesolithic c. 6000 BC) "</code></pre>
+</div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">paste0</span>(<span class="st">"Copyright: "</span>, img[[<span class="st">"Copyright"</span>]]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Copyright: The Yorkshire Archaeological &amp; Historical Society"</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-11-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-5-tab">
+<p>Missing data - <span class="midtext">Lack of knowledge, e.g.&nbsp;<code>NA</code> (<em>Not Available</em>)</span></p>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">row.names =</span> <span class="fu">c</span>(<span class="st">"site_A"</span>, <span class="st">"site_B"</span>, <span class="st">"site_C"</span>, <span class="st">"site_D"</span>),</span>
+<span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">Microliths =</span>  <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">5</span>, <span class="cn">NA</span>, <span class="dv">2</span>),</span>
+<span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">Scrapers =</span>  <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">6</span>, <span class="dv">10</span>, <span class="dv">5</span>),</span>
+<span id="cb72-4"><a href="#cb72-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">Burins =</span>  <span class="fu">c</span>(<span class="dv">13</span>, <span class="dv">7</span>, <span class="dv">4</span>, <span class="cn">NA</span>))</span>
+<span id="cb72-5"><a href="#cb72-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(df) <span class="sc">%&gt;%</span></span>
+<span id="cb72-6"><a href="#cb72-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> Microliths </th>
+   <th style="text-align:right;"> Scrapers </th>
+   <th style="text-align:right;"> Burins </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> site_A </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 7 </td>
+   <td style="text-align:right;"> 13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> site_B </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 7 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> site_C </td>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 10 </td>
+   <td style="text-align:right;"> 4 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> site_D </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p>Sums by column (with <code>NA</code>)</p>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb73"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1" aria-hidden="true" tabindex="-1"></a>sum.df.with.na <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">colSums</span>(df)))</span>
+<span id="cb73-2"><a href="#cb73-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(sum.df.with.na) <span class="sc">%&gt;%</span></span>
+<span id="cb73-3"><a href="#cb73-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Microliths </th>
+   <th style="text-align:right;"> Scrapers </th>
+   <th style="text-align:right;"> Burins </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> NA </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> NA </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p>Sums by column (without <code>NA</code>)</p>
+<div class="cell">
+<details>
+<summary><small>Code</small></summary>
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>sum.df.with.na <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">t</span>(<span class="fu">colSums</span>(df, <span class="at">na.rm =</span> T)))</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(sum.df.with.na) <span class="sc">%&gt;%</span></span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> Microliths </th>
+   <th style="text-align:right;"> Scrapers </th>
+   <th style="text-align:right;"> Burins </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 17 </td>
+   <td style="text-align:right;"> 28 </td>
+   <td style="text-align:right;"> 24 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p><br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="boolean-operators" class="level2">
+<h2 class="anchored" data-anchor-id="boolean-operators">Boolean operators</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-12-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-1" role="tab" aria-controls="tabset-12-1" aria-selected="true">OR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-2" role="tab" aria-controls="tabset-12-2" aria-selected="false">AND</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-3" role="tab" aria-controls="tabset-12-3" aria-selected="false">NOT</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-4" role="tab" aria-controls="tabset-12-4" aria-selected="false">Example</a></li></ul>
+<div class="tab-content">
+<div id="tabset-12-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-12-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb75"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">|</span> <span class="cn">TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb77"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">|</span> <span class="cn">FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">|</span> <span class="cn">NA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">|</span> <span class="cn">NA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-12-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-2-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">&amp;</span> <span class="cn">TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">&amp;</span> <span class="cn">FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="cn">TRUE</span> <span class="sc">&amp;</span> <span class="cn">NA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="cn">FALSE</span> <span class="sc">&amp;</span> <span class="cn">NA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-12-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-3-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span><span class="cn">TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span><span class="cn">FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a><span class="sc">!</span><span class="cn">NA</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] NA</code></pre>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-12-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-4-tab">
+<div>
+<center>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/conformity-conformity-all.png" height="450">
+</center>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="binary-topological-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="binary-topological-relationships">Binary Topological Relationships</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-13-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-1" role="tab" aria-controls="tabset-13-1" aria-selected="true">Spatial</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-2" role="tab" aria-controls="tabset-13-2" aria-selected="false">Temporal</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-3" role="tab" aria-controls="tabset-13-3" aria-selected="false">Example</a></li></ul>
+<div class="tab-content">
+<div id="tabset-13-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-13-1-tab">
+<div class="row">
+<div class="column66">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-spatial-rtb.jpg" height="400">
+<div class="captiontext">
+
+</div>
+</div>
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/where-macedonia.png" height="350">
+<div class="captiontext">
+Kingdom of Macedon at the death of Philip II, 336 BC
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-13-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-2-tab">
+<div class="row">
+<div class="column66">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temopral-allen.jpg" class="img-fluid">
+<div class="captiontext">
+Interval Temporal Logic, Allen, 1984
+</div>
+</div>
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/mod-temporal-rtb-neo.jpg" height="350">
+<div class="captiontext">
+Central and North-Western Mediterranean Impressed Wares chronologies, 2022, Binder et al.
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-13-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-3-tab">
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-1750-OH-FET.pdf" width="1000px" height="2100px">
+</div>
+</div>
+</div>
+</section>
+<section id="scales" class="level2">
+<h2 class="anchored" data-anchor-id="scales">Scales</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-14-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-1" role="tab" aria-controls="tabset-14-1" aria-selected="true"><span class="tabsetheadertext">Quantitative</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-2" role="tab" aria-controls="tabset-14-2" aria-selected="false"><span class="tabsetheadertext">Ordinal</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-3" role="tab" aria-controls="tabset-14-3" aria-selected="false"><span class="tabsetheadertext">Nominal</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-4" role="tab" aria-controls="tabset-14-4" aria-selected="false"><span class="tabsetheadertext">Change of scale</span></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-14-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-14-5" role="tab" aria-controls="tabset-14-5" aria-selected="false"><span class="tabsetheadertext">Color ramps</span></a></li></ul>
+<div class="tab-content">
+<div id="tabset-14-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-14-1-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-scale-quant.png" height="350">
+</div>
+<div class="column">
+<strong>Units of length</strong> (cm, m, km, kg, years, etc.). Statistical units are quantified by continuous measurable intervals.
+</div>
+</div>
+</div>
+<div id="tabset-14-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-2-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-scale-ord.png" height="350">
+</div>
+<div class="column">
+<strong>Ranks</strong> (discrete). Ordered sequence of values (e.g.&nbsp;‘very cold’, ‘cold’, ‘lukewarm’, ‘hot’, ‘very hot’) without establishing the distance between consecutive values.
+</div>
+</div>
+</div>
+<div id="tabset-14-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-3-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-scale-nom.png" height="350">
+</div>
+<div class="column">
+<strong>Qualitative</strong> categories that cannot be ordered (e.g.&nbsp;‘green’, ‘yellow’, ‘red’).
+</div>
+</div>
+</div>
+<div id="tabset-14-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-4-tab">
+
+<table class="table">
+<thead>
+<tr>
+<th>
+from
+</th>
+<th>
+to
+</th>
+<th>
+transformation
+</th>
+<th>
+example
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+Quantitative
+</td>
+<td>
+Ordinal
+</td>
+<td>
+discretization
+</td>
+<td>
+<code>[1:10], [11:20], etc.</code>
+</td>
+</tr>
+<tr>
+<td>
+Ordinal
+</td>
+<td>
+Quantitative
+</td>
+<td>
+<code>as.numeric()</code>
+</td>
+<td>
+<code>"low" = 1, "medium" = 2</code>
+</td>
+</tr>
+<tr>
+<td>
+Ordinal
+</td>
+<td>
+Nominal
+</td>
+<td>
+<code>as.factor()</code>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+
+</table>
+</div>
+<div id="tabset-14-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-14-5-tab">
+<div class="columns">
+<div class="column" style="width:33%;">
+<p>Quantitative</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>ncolors <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">sort</span>(<span class="fu">sample.int</span>(<span class="dv">100</span>, ncolors))</span>
+<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a>colors <span class="ot">&lt;-</span> RColorBrewer<span class="sc">::</span><span class="fu">brewer.pal</span>(ncolors, <span class="at">name =</span> <span class="st">"YlGn"</span>)</span>
+<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">values =</span> x,</span>
+<span id="cb97-5"><a href="#cb97-5" aria-hidden="true" tabindex="-1"></a>                 <span class="at">colors =</span> colors)</span>
+<span id="cb97-6"><a href="#cb97-6" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">datatable</span>(df, </span>
+<span id="cb97-7"><a href="#cb97-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">rownames =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb97-8"><a href="#cb97-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">width =</span> <span class="st">'20%'</span>,</span>
+<span id="cb97-9"><a href="#cb97-9" aria-hidden="true" tabindex="-1"></a>          <span class="at">options =</span> <span class="fu">list</span>(<span class="at">searching =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb97-10"><a href="#cb97-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">lengthChange =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb97-11"><a href="#cb97-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">paging =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb97-12"><a href="#cb97-12" aria-hidden="true" tabindex="-1"></a>                         <span class="at">scrollX =</span> F,</span>
+<span id="cb97-13"><a href="#cb97-13" aria-hidden="true" tabindex="-1"></a>                         <span class="at">initComplete =</span> <span class="fu">JS</span>(<span class="st">"function(settings, json) {$(this.api().table().header()).css({'font-size' : '16px'});}"</span>),</span>
+<span id="cb97-14"><a href="#cb97-14" aria-hidden="true" tabindex="-1"></a>                         <span class="at">info =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb97-15"><a href="#cb97-15" aria-hidden="true" tabindex="-1"></a>                         <span class="at">filter =</span> <span class="st">"none"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb97-16"><a href="#cb97-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="st">"colors"</span>,</span>
+<span id="cb97-17"><a href="#cb97-17" aria-hidden="true" tabindex="-1"></a>              <span class="at">columns =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</span>
+<span id="cb97-18"><a href="#cb97-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">fontSize =</span> <span class="st">'20px'</span>,</span>
+<span id="cb97-19"><a href="#cb97-19" aria-hidden="true" tabindex="-1"></a>              <span class="at">backgroundColor =</span> <span class="fu">styleEqual</span>(colors, </span>
+<span id="cb97-20"><a href="#cb97-20" aria-hidden="true" tabindex="-1"></a>                                           colors)</span>
+<span id="cb97-21"><a href="#cb97-21" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb97-22"><a href="#cb97-22" aria-hidden="true" tabindex="-1"></a>dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="htmlwidget-03b329328e9f7d07748c" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-03b329328e9f7d07748c">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],[15,27,45,50,83],["#FFFFCC","#C2E699","#78C679","#31A354","#006837"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '16px'});}","info":false,"filter":"none","columnDefs":[{"className":"dt-right","targets":1},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 1).node()).css({'background-color':value == \"#FFFFCC\" ? \"#FFFFCC\" : value == \"#C2E699\" ? \"#C2E699\" : value == \"#78C679\" ? \"#78C679\" : value == \"#31A354\" ? \"#31A354\" : value == \"#006837\" ? \"#006837\" : null,'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#FFFFCC\" ? \"#FFFFCC\" : value == \"#C2E699\" ? \"#C2E699\" : value == \"#78C679\" ? \"#78C679\" : value == \"#31A354\" ? \"#31A354\" : value == \"#006837\" ? \"#006837\" : null,'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<p>Ordinal</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a>ncolors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'very cold'</span>, <span class="st">'cold'</span>, <span class="st">'lukewarm'</span>, <span class="st">'hot'</span>, <span class="st">'very hot'</span>)</span>
+<span id="cb98-2"><a href="#cb98-2" aria-hidden="true" tabindex="-1"></a>colors <span class="ot">&lt;-</span> RColorBrewer<span class="sc">::</span><span class="fu">brewer.pal</span>(<span class="fu">length</span>(ncolors), <span class="at">name =</span> <span class="st">"RdBu"</span>)</span>
+<span id="cb98-3"><a href="#cb98-3" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">values =</span> ncolors,</span>
+<span id="cb98-4"><a href="#cb98-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">colors =</span> <span class="fu">rev</span>(colors))</span>
+<span id="cb98-5"><a href="#cb98-5" aria-hidden="true" tabindex="-1"></a><span class="fu">datatable</span>(df, </span>
+<span id="cb98-6"><a href="#cb98-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">rownames =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb98-7"><a href="#cb98-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">width =</span> <span class="st">'20%'</span>,</span>
+<span id="cb98-8"><a href="#cb98-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">options =</span> <span class="fu">list</span>(<span class="at">searching =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb98-9"><a href="#cb98-9" aria-hidden="true" tabindex="-1"></a>                         <span class="at">lengthChange =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb98-10"><a href="#cb98-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">paging =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb98-11"><a href="#cb98-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">scrollX =</span> F,</span>
+<span id="cb98-12"><a href="#cb98-12" aria-hidden="true" tabindex="-1"></a>                         <span class="at">initComplete =</span> <span class="fu">JS</span>(<span class="st">"function(settings, json) {$(this.api().table().header()).css({'font-size' : '16px'});}"</span>),</span>
+<span id="cb98-13"><a href="#cb98-13" aria-hidden="true" tabindex="-1"></a>                         <span class="at">info =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb98-14"><a href="#cb98-14" aria-hidden="true" tabindex="-1"></a>                         <span class="at">filter =</span> <span class="st">"none"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb98-15"><a href="#cb98-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="st">"colors"</span>,</span>
+<span id="cb98-16"><a href="#cb98-16" aria-hidden="true" tabindex="-1"></a>              <span class="at">columns =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</span>
+<span id="cb98-17"><a href="#cb98-17" aria-hidden="true" tabindex="-1"></a>              <span class="at">fontSize =</span> <span class="st">'20px'</span>,</span>
+<span id="cb98-18"><a href="#cb98-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">backgroundColor =</span> <span class="fu">styleEqual</span>(colors, </span>
+<span id="cb98-19"><a href="#cb98-19" aria-hidden="true" tabindex="-1"></a>                                           colors)</span>
+<span id="cb98-20"><a href="#cb98-20" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="htmlwidget-efd88e426ca6c8f6516a" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-efd88e426ca6c8f6516a">{"x":{"filter":"none","vertical":false,"data":[["1","2","3","4","5"],["very cold","cold","lukewarm","hot","very hot"],["#0571B0","#92C5DE","#F7F7F7","#F4A582","#CA0020"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '16px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 1).node()).css({'background-color':value == \"#CA0020\" ? \"#CA0020\" : value == \"#F4A582\" ? \"#F4A582\" : value == \"#F7F7F7\" ? \"#F7F7F7\" : value == \"#92C5DE\" ? \"#92C5DE\" : value == \"#0571B0\" ? \"#0571B0\" : null,'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#CA0020\" ? \"#CA0020\" : value == \"#F4A582\" ? \"#F4A582\" : value == \"#F7F7F7\" ? \"#F7F7F7\" : value == \"#92C5DE\" ? \"#92C5DE\" : value == \"#0571B0\" ? \"#0571B0\" : null,'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div><div class="column" style="width:33%;">
+<p>Nominal</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a>ncolors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'green'</span>, <span class="st">'yellow'</span>, <span class="st">'red'</span>)</span>
+<span id="cb99-2"><a href="#cb99-2" aria-hidden="true" tabindex="-1"></a>colors <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">'#00FF00'</span>, <span class="st">'#FFFF00'</span>, <span class="st">'#FF0000'</span>)</span>
+<span id="cb99-3"><a href="#cb99-3" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">values =</span> ncolors,</span>
+<span id="cb99-4"><a href="#cb99-4" aria-hidden="true" tabindex="-1"></a>                 <span class="at">colors =</span> colors)</span>
+<span id="cb99-5"><a href="#cb99-5" aria-hidden="true" tabindex="-1"></a>dt <span class="ot">&lt;-</span> <span class="fu">datatable</span>(df, </span>
+<span id="cb99-6"><a href="#cb99-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">rownames =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb99-7"><a href="#cb99-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">width =</span> <span class="st">'20%'</span>,</span>
+<span id="cb99-8"><a href="#cb99-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">options =</span> <span class="fu">list</span>(<span class="at">searching =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb99-9"><a href="#cb99-9" aria-hidden="true" tabindex="-1"></a>                         <span class="at">lengthChange =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb99-10"><a href="#cb99-10" aria-hidden="true" tabindex="-1"></a>                         <span class="at">paging =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb99-11"><a href="#cb99-11" aria-hidden="true" tabindex="-1"></a>                         <span class="at">scrollX =</span> F,</span>
+<span id="cb99-12"><a href="#cb99-12" aria-hidden="true" tabindex="-1"></a>                         <span class="at">initComplete =</span> <span class="fu">JS</span>(<span class="st">"function(settings, json) {$(this.api().table().header()).css({'font-size' : '16px'});}"</span>),</span>
+<span id="cb99-13"><a href="#cb99-13" aria-hidden="true" tabindex="-1"></a>                         <span class="at">info =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb99-14"><a href="#cb99-14" aria-hidden="true" tabindex="-1"></a>                         <span class="at">filter =</span> <span class="st">"none"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb99-15"><a href="#cb99-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">formatStyle</span>(<span class="st">"colors"</span>,</span>
+<span id="cb99-16"><a href="#cb99-16" aria-hidden="true" tabindex="-1"></a>              <span class="at">columns =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>),</span>
+<span id="cb99-17"><a href="#cb99-17" aria-hidden="true" tabindex="-1"></a>              <span class="at">fontSize =</span> <span class="st">'20px'</span>,</span>
+<span id="cb99-18"><a href="#cb99-18" aria-hidden="true" tabindex="-1"></a>              <span class="at">backgroundColor =</span> <span class="fu">styleEqual</span>(colors, </span>
+<span id="cb99-19"><a href="#cb99-19" aria-hidden="true" tabindex="-1"></a>                                           colors)</span>
+<span id="cb99-20"><a href="#cb99-20" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb99-21"><a href="#cb99-21" aria-hidden="true" tabindex="-1"></a>dt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="htmlwidget-eae751c7e05d33a36ece" style="width:20%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eae751c7e05d33a36ece">{"x":{"filter":"none","vertical":false,"data":[["1","2","3"],["green","yellow","red"],["#00FF00","#FFFF00","#FF0000"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>values<\/th>\n      <th>colors<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"searching":false,"lengthChange":false,"paging":false,"scrollX":false,"initComplete":"function(settings, json) {$(this.api().table().header()).css({'font-size' : '16px'});}","info":false,"filter":"none","columnDefs":[{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"rowCallback":"function(row, data, displayNum, displayIndex, dataIndex) {\nvar value=data[2]; $(this.api().cell(row, 1).node()).css({'background-color':value == \"#00FF00\" ? \"#00FF00\" : value == \"#FFFF00\" ? \"#FFFF00\" : value == \"#FF0000\" ? \"#FF0000\" : null,'font-size':'20px'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'background-color':value == \"#00FF00\" ? \"#00FF00\" : value == \"#FFFF00\" ? \"#FFFF00\" : value == \"#FF0000\" ? \"#FF0000\" : null,'font-size':'20px'});\n}"}},"evals":["options.initComplete","options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="dim-data" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim1/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim1/" data-background-interactive="true" class="anchored" data-anchor-id="dim-data">1-dim data</h2>
+<div class="notes">
+<p>univariate Data with 1 dimension = 1 measure Histogram = discretization = bins = change of scale</p>
+</div>
+<div class="footer">
+<p>Dataset: <a href="https://rdrr.io/cran/archdata/man/archdata-package.html"><code>archdata</code> R package - <code>Mesolithic</code> dataset</a></p>
+</div>
+</section>
+<section id="dim-data-1" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim2-map/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim2-map/" data-background-interactive="true" class="anchored" data-anchor-id="dim-data-1">2-dim data</h2>
+<div class="notes">
+<p>TODO: show coeff value bi-variate utiliser la regression de Renfrew, C., &amp; Bahn, P. (2012). Archaeology: theories, methods and practice. Thames and Hudson regression = parcimonious = RMS SD, standardize residuals: standard deviation. The SD represents the “distance” between the mean value and the value under consideration, expressed as a number of standard deviations. In the context of a regression, the SD gives an idea of the “distance” of an individual (described by one or more variables) from the value estimated if the model were perfect (R2=1, i.e.&nbsp;all points aligned on the least squares line) (SS BIB). The standard deviation between the value that the variable characterising an individual takes and its expected value (normal distribution). The standard deviation (or standardised residuals) makes it possible to avoid the size effect. The latter would not allow working with individuals with extremely different numbers (BIB 1526). If the series studied is normal, the standard deviations of the values of this series follow a normal distribution of mean 0 and standard deviation 1, i.e.&nbsp;a centred-reduced normal distribution (internet)</p>
+</div>
+<div class="footer">
+<p>Hodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.</p>
+<p>Hodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119. Dataset: <a href="https://rdrr.io/cran/archdata/man/archdata-package.html"><code>archdata</code> R package - <code>OxfordPots</code> dataset</a></p>
+</div>
+</section>
+<section id="dim-data-spatial-13" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim2-neighbor/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim2-neighbor/" data-background-interactive="true" class="anchored" data-anchor-id="dim-data-spatial-13">2-dim data spatial 1/3</h2>
+</section>
+<section id="dim-data-spatial-23" class="level2">
+<h2 class="anchored" data-anchor-id="dim-data-spatial-23">2-dim data spatial 2/3</h2>
+<p>Average Nearest Neighbor Index (NNI)</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-15-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-1" role="tab" aria-controls="tabset-15-1" aria-selected="true">Results</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-15-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-15-2" role="tab" aria-controls="tabset-15-2" aria-selected="false">Documentation</a></li></ul>
+<div class="tab-content">
+<div id="tabset-15-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-15-1-tab">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb100"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a>x3 <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>) <span class="sc">-</span> <span class="fl">0.5</span></span>
+<span id="cb100-2"><a href="#cb100-2" aria-hidden="true" tabindex="-1"></a>w <span class="ot">&lt;-</span> <span class="fu">as.owin</span>(<span class="fu">c</span>(<span class="fu">min</span>(x3), <span class="fu">max</span>(x3),</span>
+<span id="cb100-3"><a href="#cb100-3" aria-hidden="true" tabindex="-1"></a>               <span class="fu">min</span>(x3), <span class="fu">max</span>(x3)))</span>
+<span id="cb100-4"><a href="#cb100-4" aria-hidden="true" tabindex="-1"></a>x4 <span class="ot">&lt;-</span> x3</span>
+<span id="cb100-5"><a href="#cb100-5" aria-hidden="true" tabindex="-1"></a>grid <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(x3, x4)</span>
+<span id="cb100-6"><a href="#cb100-6" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(grid) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"x3"</span>, <span class="st">"x4"</span>)</span>
+<span id="cb100-7"><a href="#cb100-7" aria-hidden="true" tabindex="-1"></a><span class="fu">coordinates</span>(grid) <span class="ot">&lt;-</span> <span class="er">~</span>x3 <span class="sc">+</span> x4</span>
+<span id="cb100-8"><a href="#cb100-8" aria-hidden="true" tabindex="-1"></a><span class="fu">gridded</span>(grid) <span class="ot">&lt;-</span> <span class="cn">TRUE</span></span>
+<span id="cb100-9"><a href="#cb100-9" aria-hidden="true" tabindex="-1"></a>random.pt <span class="ot">&lt;-</span> <span class="fu">spsample</span>(<span class="at">x =</span> grid, <span class="at">n =</span> <span class="dv">20</span>, <span class="at">type =</span> <span class="st">'random'</span>)</span>
+<span id="cb100-10"><a href="#cb100-10" aria-hidden="true" tabindex="-1"></a>regular.pt <span class="ot">&lt;-</span> <span class="fu">spsample</span>(<span class="at">x =</span> grid, <span class="at">n =</span> <span class="dv">20</span>, <span class="at">type =</span> <span class="st">'regular'</span>)</span>
+<span id="cb100-11"><a href="#cb100-11" aria-hidden="true" tabindex="-1"></a>ori <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">spsample</span>(<span class="at">x =</span> grid, <span class="at">n =</span> <span class="dv">1</span>, <span class="at">type =</span> <span class="st">'random'</span>))</span>
+<span id="cb100-12"><a href="#cb100-12" aria-hidden="true" tabindex="-1"></a>n.point <span class="ot">&lt;-</span> <span class="dv">20</span> </span>
+<span id="cb100-13"><a href="#cb100-13" aria-hidden="true" tabindex="-1"></a>h <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n.point, <span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>) </span>
+<span id="cb100-14"><a href="#cb100-14" aria-hidden="true" tabindex="-1"></a>dxy <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="fu">matrix</span>(<span class="at">nrow =</span> n.point, <span class="at">ncol =</span> <span class="dv">2</span>))</span>
+<span id="cb100-15"><a href="#cb100-15" aria-hidden="true" tabindex="-1"></a>angle <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="at">n =</span> n.point, <span class="at">min =</span> <span class="dv">0</span>, <span class="at">max =</span> <span class="dv">2</span><span class="sc">*</span>pi)</span>
+<span id="cb100-16"><a href="#cb100-16" aria-hidden="true" tabindex="-1"></a>dxy[ , <span class="dv">1</span>] <span class="ot">&lt;-</span> h<span class="sc">*</span><span class="fu">sin</span>(angle)</span>
+<span id="cb100-17"><a href="#cb100-17" aria-hidden="true" tabindex="-1"></a>dxy[ , <span class="dv">2</span>] <span class="ot">&lt;-</span> h<span class="sc">*</span><span class="fu">cos</span>(angle)</span>
+<span id="cb100-18"><a href="#cb100-18" aria-hidden="true" tabindex="-1"></a>cluster.pt <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">x =</span> <span class="fu">rep</span>(<span class="cn">NA</span>, <span class="dv">20</span>), <span class="at">y =</span> <span class="fu">rep</span>(<span class="cn">NA</span>, <span class="dv">20</span>))</span>
+<span id="cb100-19"><a href="#cb100-19" aria-hidden="true" tabindex="-1"></a>cluster.pt<span class="sc">$</span>x <span class="ot">&lt;-</span> ori<span class="sc">$</span>coords.x1 <span class="sc">+</span> dxy<span class="sc">$</span>X1</span>
+<span id="cb100-20"><a href="#cb100-20" aria-hidden="true" tabindex="-1"></a>cluster.pt<span class="sc">$</span>y <span class="ot">&lt;-</span> ori<span class="sc">$</span>coords.x2 <span class="sc">+</span> dxy<span class="sc">$</span>X2</span>
+<span id="cb100-21"><a href="#cb100-21" aria-hidden="true" tabindex="-1"></a><span class="fu">coordinates</span>(cluster.pt)<span class="ot">&lt;-</span>  <span class="er">~</span> x<span class="sc">+</span>y</span>
+<span id="cb100-22"><a href="#cb100-22" aria-hidden="true" tabindex="-1"></a><span class="co"># NNIs</span></span>
+<span id="cb100-23"><a href="#cb100-23" aria-hidden="true" tabindex="-1"></a>random.pt.sf <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_as_sf</span>(random.pt)</span>
+<span id="cb100-24"><a href="#cb100-24" aria-hidden="true" tabindex="-1"></a>rnd <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">nni</span>(random.pt.sf))</span>
+<span id="cb100-25"><a href="#cb100-25" aria-hidden="true" tabindex="-1"></a>regular.pt.sf <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_as_sf</span>(regular.pt)</span>
+<span id="cb100-26"><a href="#cb100-26" aria-hidden="true" tabindex="-1"></a>reg <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">nni</span>(regular.pt.sf))</span>
+<span id="cb100-27"><a href="#cb100-27" aria-hidden="true" tabindex="-1"></a>cluster.pt.sf <span class="ot">&lt;-</span> sf<span class="sc">::</span><span class="fu">st_as_sf</span>(cluster.pt)</span>
+<span id="cb100-28"><a href="#cb100-28" aria-hidden="true" tabindex="-1"></a>clust <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">nni</span>(cluster.pt.sf))</span>
+<span id="cb100-29"><a href="#cb100-29" aria-hidden="true" tabindex="-1"></a><span class="co"># merge</span></span>
+<span id="cb100-30"><a href="#cb100-30" aria-hidden="true" tabindex="-1"></a>res.nni <span class="ot">&lt;-</span> <span class="fu">rbind</span>(rnd, clust, reg)</span>
+<span id="cb100-31"><a href="#cb100-31" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(res.nni) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"random"</span>, <span class="st">"cluster"</span>, <span class="st">"regular"</span>)</span>
+<span id="cb100-32"><a href="#cb100-32" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(res.nni) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"NNI"</span>, <span class="st">"z.score"</span>, <span class="st">"p.value"</span>, <span class="st">"expect.mean.dist"</span>, <span class="st">"observ.mean.dist"</span>)</span>
+<span id="cb100-33"><a href="#cb100-33" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">round</span>(res.nni, <span class="dv">2</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb100-34"><a href="#cb100-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable_styling</span>(<span class="at">full_width =</span> <span class="cn">FALSE</span>, <span class="at">position =</span> <span class="st">"center"</span>, <span class="at">font_size =</span> <span class="dv">24</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 24px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> NNI </th>
+   <th style="text-align:right;"> z.score </th>
+   <th style="text-align:right;"> p.value </th>
+   <th style="text-align:right;"> expect.mean.dist </th>
+   <th style="text-align:right;"> observ.mean.dist </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> random </td>
+   <td style="text-align:right;"> 1.49 </td>
+   <td style="text-align:right;"> 4.23 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0.79 </td>
+   <td style="text-align:right;"> 1.18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> cluster </td>
+   <td style="text-align:right;"> 1.36 </td>
+   <td style="text-align:right;"> 3.08 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0.41 </td>
+   <td style="text-align:right;"> 0.56 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> regular </td>
+   <td style="text-align:right;"> 2.58 </td>
+   <td style="text-align:right;"> 13.53 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0.87 </td>
+   <td style="text-align:right;"> 2.24 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="tabset-15-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-15-2-tab">
+<iframe width="900" height="1000" src="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/average-nearest-neighbor.htm#:~:text=The%20Nearest%20Neighbor%20Index%20is,in%20a%20hypothetical%20random%20distribution" title="YAML for R Markdown"></iframe>
+<p><small><a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/average-nearest-neighbor.htm" class="uri">https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/average-nearest-neighbor.htm</a></small></p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="dim-data-spatial-33" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/spat-nearest/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/spat-nearest/" data-background-interactive="true" class="anchored" data-anchor-id="dim-data-spatial-33">2-dim data spatial 3/3</h2>
+</section>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2"></h2>
+<p>Random patterns <em>versus</em> Clustered patterns</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-16-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-1" role="tab" aria-controls="tabset-16-1" aria-selected="true">Rock art sites</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-2" role="tab" aria-controls="tabset-16-2" aria-selected="false">Rock art surfaces</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-16-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-16-3" role="tab" aria-controls="tabset-16-3" aria-selected="false">Bronze hoards</a></li></ul>
+<div class="tab-content">
+<div id="tabset-16-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-16-1-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/dist-rand-ra-millestone.png" height="350">
+<div class="captiontext">
+Cups-and-rings rock art concentration (⬤) in Millestone Burn, Northumberland, England (Bradley 1996)
+</div>
+</div>
+<div class="column">
+Engraved rock sites (⬤) are concentrated on Millstone Grits (sandstone) with a statistical significance in comparison to a theoretical <strong>random distribution</strong> (○).
+</div>
+</div>
+</div>
+<div id="tabset-16-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-16-2-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/dist-rand-ra-bego.png" height="350">
+<div class="captiontext">
+Neolithic/Early Bronze Age engraved rock, Mont Bego, France (Chippindale 1988)
+</div>
+</div>
+<div class="column">
+On the observed rock surface (A), engravings are arranged in a more orderly manner in a <strong>random process</strong> (B and C), but the former remains far from an orderly arrangement without overlapping engravings.
+</div>
+</div>
+</div>
+<div id="tabset-16-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-16-3-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/lba-hoards-random.jpg" height="350">
+<div class="captiontext">
+Distribution of the Late Bronze Age Ewart Park hoards, Atlantic Europe (Wiseman 2018)
+</div>
+</div>
+<div class="column">
+Hoards from the Ewart Park phase show a <strong>normal distribution</strong> when considering size, fragmentation and number of pieces. The hoards would result from a random accumulation and breaking
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>random = clustered =</p>
+</div>
+</section>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3"></h2>
+<p>Regular pattern</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-17-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-1" role="tab" aria-controls="tabset-17-1" aria-selected="true">Tumulus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-2" role="tab" aria-controls="tabset-17-2" aria-selected="false">Princely sites</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-3" role="tab" aria-controls="tabset-17-3" aria-selected="false">Emporions</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-17-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-17-4" role="tab" aria-controls="tabset-17-4" aria-selected="false">Caravanserais</a></li></ul>
+<div class="tab-content">
+<div id="tabset-17-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-17-1-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/dist-reg-tumulus.jpg" height="350">
+<div class="captiontext">
+Early Bronze Age tumuli in Brittany (Brun 2011)
+</div>
+</div>
+<div class="column">
+The ‘princely’ tombs are <strong>evenly distributed</strong> in space, separated from each other by a distance of 12.5 km, i.e.&nbsp;less than three hours’ walk round trip
+</div>
+</div>
+</div>
+<div id="tabset-17-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-17-2-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/dist-reg-centralplace.jpg" height="350">
+<div class="captiontext">
+Early Iron Age princely sites at the North of the Alps (Brun 2011)
+</div>
+</div>
+<div class="column">
+In the 6<sup>th</sup> century BC, the ‘princely sites’ are separated from each other by an <strong>average distance</strong> of about 50 km. This distance can be covered in a day on horseback.
+</div>
+</div>
+</div>
+<div id="tabset-17-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-17-3-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/dist-reg-emporions.jpg" height="350">
+<div class="captiontext">
+Main emporions in the Gulf of Lion, NW Mediterranean (Gailledrat 2005)
+</div>
+</div>
+<div class="column">
+During the same period (6<sup>th</sup> c.&nbsp;BC) coastal trading posts installed almost systematically at the mouth of river valleys and approximately 40 km from each other (1 day’s cabotage)
+</div>
+</div>
+</div>
+<div id="tabset-17-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-17-4-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/eamena-project/eamena-arches-dev/master/projects/caravanserail/maps/20220324124352647-1.jpg" height="350">
+<div class="captiontext">
+Caravanserais in Iran (Kleiss 1996 )
+</div>
+</div>
+<div class="column">
+During the Late Islamic period (15<sup>th</sup>-18<sup>th</sup> c.&nbsp;AD) trade posts (caravanserais) have been build along trading roads. They are close to water sources and separated from each other by about 20-30 km (1 day’s transport).
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="notes">
+<p>regular = competition</p>
+</div>
+</section>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4"></h2>
+<p>Gradient pattern</p>
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/dist-gradient-spread-neo.jpg" height="300">
+<div class="captiontext">
+Ammerman and Cavalli-Sforza, 1971, <em>Measuring the rate of spread of early farming in Europe</em>
+</div>
+</div>
+<div class="column">
+<strong>Diffusion</strong> (spatial and temporal). In the case of a linear gradient, the calculation of the centroid of a group of points is a good indicator of its evolution.
+</div>
+</div>
+</section>
+<section id="dim-data-shape" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/gmm/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/gmm/" data-background-interactive="true" class="anchored" data-anchor-id="dim-data-shape">2-dim data shape</h2>
+<div class="footer">
+<p>Current dataset: <a href="https://doi.org/10.1007/s41982-021-00097-2">Matzig, D.N., Hussain, S.T. and Riede, F. <em>Design Space Constraints and the Cultural Taxonomy of European Final Palaeolithic Large Tanged Points (…)</em></a></p>
+</div>
+</section>
+<section id="dim-data-2" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/dim3/" data-background-interactive="true" class="anchored" data-anchor-id="dim-data-2">3-dim data</h2>
+<div class="footer">
+<p>Current dataset: <a href="https://github.com/zoometh/itineRis/blob/main/inst/extdata/dfisotops.csv">ANR Itineris</a></p>
+</div>
+<div class="notes">
+<p>Useful when data are complete (chemical composition, genetics, etc.)</p>
+</div>
+</section>
+<section id="dim-or-more-data" class="level2">
+<h2 class="anchored" data-anchor-id="dim-or-more-data">3-dim or more data</h2>
+<center>
+Factorial Analysis (FA)
+</center>
+<br>
+<div class="row">
+<div class="column" style="width: 25%">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa-camel-1.png" height="300">
+</div>
+<div class="column33" style="width: 5%; vertical-align: middle; align-items: center;">
+➡️
+</div>
+<div class="column" style="width: 25%">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa-camel-2.png" height="300">
+</div>
+<div class="column" style="width: 45%">
+Factorial Analysis is the generic term for multivariate (or multifactorial) analysis
+</div>
+</div>
+</section>
+<section id="dim-or-more-data-1" class="level2">
+<h2 class="anchored" data-anchor-id="dim-or-more-data-1">3-dim or more data</h2>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-18-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-1" role="tab" aria-controls="tabset-18-1" aria-selected="true">Dataset</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-2" role="tab" aria-controls="tabset-18-2" aria-selected="false">CA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-3" role="tab" aria-controls="tabset-18-3" aria-selected="false">PCA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-4" role="tab" aria-controls="tabset-18-4" aria-selected="false">HCA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-5" role="tab" aria-controls="tabset-18-5" aria-selected="false">LDA</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-18-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-18-6" role="tab" aria-controls="tabset-18-6" aria-selected="false">Source</a></li></ul>
+<div class="tab-content">
+<div id="tabset-18-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-18-1-tab">
+<div class="row">
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-plosone-carto-zona.png" height="300">
+<div class="captiontext">
+Map of NE Iberia with locations of the studied sites
+</div>
+</div>
+<div class="column">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-seriat-plosone.png" height="300">
+<div class="captiontext">
+Chrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-18-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-2-tab">
+<center>
+Correspondence Analysis (CA)
+</center>
+<br>
+<div class="row">
+<div class="column33">
+<span class="math inline">\(\ge\)</span> 2 rows, <span class="math inline">\(\ge\)</span> 2 columns, <span class="math inline">\(\emptyset\)</span> missing data, <span class="math inline">\(\emptyset\)</span> negative values, <span class="math inline">\(\forall\)</span> data with the same scale
+</div>
+<div class="column66">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa-ca-plosone-lba-zona.png" height="300">
+<div class="captiontext">
+CA of sites’ NISP profiles during the LBA
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-18-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-3-tab">
+<center>
+Principal Component Analysis (PCA)
+</center>
+<br>
+<div class="row">
+<div class="column33">
+quantitative data, <span class="math inline">\(\ge\)</span> 3 rows, <span class="math inline">\(\ge\)</span> 3 columns, nb rows <span class="math inline">\(\ge\)</span> 10x nb of columns
+</div>
+<div class="column66">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa-pca-plosone-xxx.jpg" height="300">
+<div class="captiontext">
+PCA of sites’ NISP profiles during the MIA2
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-18-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-4-tab">
+<center>
+Hierachical Clustering Analysis (HCA)
+</center>
+<br>
+<div class="row">
+<div class="column33">
+related to CA, PCA or MFA
+</div>
+<div class="column66">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa-hc-plosone-lba-zona.png" height="300">
+<div class="captiontext">
+HCA of sites’ NISP profiles during the LBA
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-18-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-5-tab">
+<center>
+Linear Discriminant Analysis (LDA)
+</center>
+<br>
+<div class="row">
+<div class="column33">
+sensitive to outliers, the size of the smallest group must be larger than the number of predictor variables
+</div>
+<div class="column66">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa-lda-plosone-lba-zona.png" height="300">
+<div class="captiontext">
+LDA of sites’ NISP profiles during the LBA
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-18-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-18-6-tab">
+<embed src="http://shinyserver.cfs.unipi.it:3838/teach/stats/bib/BIB-3619-Resilience.pdf" width="1000px" height="2100px">
+</div>
+</div>
+</div>
+<div class="footer">
+<p><a href="https://journals.plos.org/plosone/article/comments?id=10.1371/journal.pone.0246201">Espinet et al., “Resilience and livestock adaptations to demographic growth and technological change (…)” <em>PloS one 16.2 (2021)</em></a></p>
+</div>
+</section>
+<section id="seriation" class="level2" data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/seriation/" data-background-interactive="true">
+<h2 data-background-iframe="http://shinyserver.cfs.unipi.it:3838/teach/stats/stats/seriation/" data-background-interactive="true" class="anchored" data-anchor-id="seriation">Seriation</h2>
+<div class="notes">
+<p>Seriation = Guttman effect = horse shoe = arc = relation directe sur la sphere</p>
+</div>
+<div class="footer">
+<p>Current dataset: <a href="https://ojs.elte.hu/dissarch/article/view/2262/2082">Schneider A., 2020, <em>Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary</em></a></p>
+</div>
+</section>
+<section id="bibliographic-resources" class="level2">
+<h2 class="anchored" data-anchor-id="bibliographic-resources">Bibliographic resources</h2>
+<div class="row">
+<div class="column66">
+Renfrew, C., &amp; Bahn, P. (2012). <em>Archaeology: theories, methods and practice</em>. Thames and Hudson.
+</div>
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-renfrew.jpg" height="250">
+</div>
+</div>
+<div class="row">
+<div class="column66">
+Djindjian, F., &amp; Gardin, J. C. (1991). <em>Méthodes pour l’archéologie</em>. Paris: A. Colin.
+</div>
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-djinjian.jpg" height="250">
+</div>
+</div>
+<div class="row">
+<div class="column66">
+Chenorkian R. (1996). <em>Pratique archéologique statistique et graphique</em>. Paris: Errance et Adam.
+</div>
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-chenorkian.jpg" height="250">
+</div>
+</div>
+<div class="row">
+<div class="column66">
+Barceló, J. A. (2007). <em>Introducción al estudio de la variabilidad de las evidencias arqueológicas</em>. Bellaterra: Universitat Autònoma de Barcelona.
+</div>
+<div class="column33">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/bib-arch-method-barcelo.jpg" height="250">
+</div>
+</div>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact">Contact</h2>
+<ul>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png" style="height: 50px;vertical-align: middle;"> <a href="mailto:thomas.huet@arch.ox.ac.uk" class="email">thomas.huet@arch.ox.ac.uk</a></p></li>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 50px;vertical-align: middle;"> <a href="https://github.com/zoometh/thomashuet/issues/1" class="uri">https://github.com/zoometh/thomashuet/issues/1</a></p></li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>i.e.&nbsp;Post-positivism<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Findable, Accessible, Reusable, Interoperable<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>i.e.&nbsp;goodness-of-fit<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>“Sociological theory, if it is to advance significantly, must proceed on these interconnected planes: (1) by developing special theories from which to derive hypotheses that can be empirically investigated and (2) by evolving a progressively more general conceptual scheme that is adequate to consolidate groups of special theories” Robert K. Merton, 1968<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>An archaeological culture is a polythetic assemblage of features more frequently associated with each other within a given area than outside it (Clarke 1968, Brun 1988, Shennan <em>et al.</em> 2015, etc.)<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>“people think closer things are more similar”, Montello et Fabrikant, 2006.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/quarto-dev/quarto-cli">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
