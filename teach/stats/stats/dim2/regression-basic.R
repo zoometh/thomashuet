@@ -1,4 +1,6 @@
-## Reproduce the linear regression of 
+## Reproduce the linear regression of Oxford potteries by Fulford and Hodder (1974)
+## see: https://github.com/zoometh/thomashuet/tree/main/teach/stats/upv#pratique
+## see: http://shinyserver.cfs.unipi.it:3838/teach/stats/upv3/_site/#/dim-data-1
 
 # install.packages(archdata)
 
