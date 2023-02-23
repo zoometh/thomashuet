@@ -887,7 +887,7 @@ DB
 - attended the ACD workshop
 - gave a 3-hour lecture on [reporting with R markdown](http://shinyserver.cfs.unipi.it:3838/teach/r4a/_site/#/title-slide) to the University of Pisa's Summer School
 - worked on the [eamenaR](https://github.com/eamena-oxford/eamenaR) package
-- about to autorise a reverse proxy in EAMENA DB to access GeoServer
+- about to autorise a *reverse proxy* in EAMENA DB to access GeoServer
 - will prepare my stay in Southampton (next Thursday, Friday)
 - BU the last AAA files for Mohamed
 
@@ -900,3 +900,18 @@ DB
 - had a chat with the IT Services, about the [Interactive Data Network](https://idn.it.ox.ac.uk/home) service (interactive data documents, mostlty R Shiny, but soon Python Shiny, PyScript)
 - scheduled a presentation of [eamenaR](https://github.com/eamena-oxford/eamenaR) for Monday 6 March at 11am
 - in contact with Reuben and Ash (Arches v7), Will and the PeriodO team (PeriodO), Maria Castiello (ML)
+
+#### week 6
+
+- worked:
+    - on the *reverse geocoding* (i.e. get location from coordinates /= from placename)
+    - with Will on PeridO cultural periods and subperiods aligment
+- in contact with Reuben on the [detailed program](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#training-by-r-osborne) of the training he will give
+- gave 6 hours of teaching on statistics to undergraduate students
+- in contact with Amy Bogaard with the idea of developing computational archaeology in the SoA. She referred me to John Pouncett
+- will work on the [eamenaR](https://github.com/eamena-oxford/eamenaR) documentation with Michael, to prepare the 2 presentations I will give:
+    - EAMENA team: Monday 6 March at 11am
+    - Mickael Heyworth: 10 March
+- will work on the script prepared by Ahmed Mahmoud, for the extraction of the Sentinel 2 satellite imagery underlying the spatial footprint of the heritage sites
+
+
