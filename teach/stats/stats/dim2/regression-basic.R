@@ -2,7 +2,7 @@
 ## see: https://github.com/zoometh/thomashuet/tree/main/teach/stats/upv#pratique
 ## see: http://shinyserver.cfs.unipi.it:3838/teach/stats/upv3/_site/#/dim-data-1
 
-# install.packages(archdata)
+# install.packages("archdata")
 
 library(archdata)
 
