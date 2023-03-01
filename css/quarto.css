@@ -90,6 +90,10 @@
     color: white;
     background-color: dodgerblue;
   }
+
+  pre {
+    font-size: 20px
+  }
   
   /* IDE */
   .it-ide{

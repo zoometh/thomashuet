@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  27 FEB 2023 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  27 FEB 2023 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -274,6 +274,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
+ (./cv_english.out) (./cv_english.out)
 \@outlinefile=\write3
 \openout3 = `cv_english.out'.
 
@@ -331,42 +332,42 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-<../img//id-r.png, id=4, 327.2225pt x 327.2225pt>
+<../img//id-r.png, id=32, 327.2225pt x 327.2225pt>
 File: ../img//id-r.png Graphic file (type png)
 <use ../img//id-r.png>
 Package pdftex.def Info: ../img//id-r.png  used on input line 44.
 (pdftex.def)             Requested size: 99.58464pt x 99.58551pt.
-<../img//gmail.png, id=6, 385.44pt x 385.44pt>
+<../img//gmail.png, id=34, 385.44pt x 385.44pt>
 File: ../img//gmail.png Graphic file (type png)
 <use ../img//gmail.png>
 Package pdftex.def Info: ../img//gmail.png  used on input line 45.
 (pdftex.def)             Requested size: 9.63362pt x 9.63362pt.
-<../img//webpro.png, id=9, 923.45pt x 983.675pt>
+<../img//webpro.png, id=37, 923.45pt x 983.675pt>
 File: ../img//webpro.png Graphic file (type png)
 <use ../img//webpro.png>
 Package pdftex.def Info: ../img//webpro.png  used on input line 46.
 (pdftex.def)             Requested size: 9.2294pt x 9.83131pt.
-<../img//orcid.png, id=12, 1204.5pt x 1204.5pt>
+<../img//orcid.png, id=40, 1204.5pt x 1204.5pt>
 File: ../img//orcid.png Graphic file (type png)
 <use ../img//orcid.png>
 Package pdftex.def Info: ../img//orcid.png  used on input line 47.
 (pdftex.def)             Requested size: 8.43604pt x 8.43604pt.
-<../img//github.png, id=14, 1606.0pt x 1606.0pt>
+<../img//github.png, id=42, 1606.0pt x 1606.0pt>
 File: ../img//github.png Graphic file (type png)
 <use ../img//github.png>
 Package pdftex.def Info: ../img//github.png  used on input line 48.
 (pdftex.def)             Requested size: 11.24805pt x 11.24805pt.
-<../img//gscholar.png, id=16, 513.92pt x 513.92pt>
+<../img//gscholar.png, id=44, 513.92pt x 513.92pt>
 File: ../img//gscholar.png Graphic file (type png)
 <use ../img//gscholar.png>
 Package pdftex.def Info: ../img//gscholar.png  used on input line 49.
 (pdftex.def)             Requested size: 12.84482pt x 12.84482pt.
-<../img//rgate.png, id=18, 225.84375pt x 225.84375pt>
+<../img//rgate.png, id=46, 225.84375pt x 225.84375pt>
 File: ../img//rgate.png Graphic file (type png)
 <use ../img//rgate.png>
 Package pdftex.def Info: ../img//rgate.png  used on input line 50.
 (pdftex.def)             Requested size: 11.29285pt x 11.29285pt.
-<../img//phone.png, id=20, 2409.0pt x 2409.0pt>
+<../img//phone.png, id=48, 2409.0pt x 2409.0pt>
 File: ../img//phone.png Graphic file (type png)
 <use ../img//phone.png>
 Package pdftex.def Info: ../img//phone.png  used on input line 51.
@@ -410,162 +411,6 @@ Overfull \hbox (18.29958pt too wide) in paragraph at lines 76--77
 
 [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//id-r.png> <../img//gmail.png> <../img//webpro.png> <../img//orcid.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>]
-<../img//link_darkblue.png, id=47, 602.25pt x 342.27875pt>
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 115.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 120.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 146.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 152.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
- [2 <../img//link_darkblue.png>]
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 157.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 159.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 163.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 166.
- (c:/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
-<../img//icon_youtube.png, id=74, 53.7207pt x 37.5804pt>
-File: ../img//icon_youtube.png Graphic file (type png)
-<use ../img//icon_youtube.png>
-Package pdftex.def Info: ../img//icon_youtube.png  used on input line 192.
-(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
- [3 <../img//icon_youtube.png>]
-File: ../img//icon_youtube.png Graphic file (type png)
-<use ../img//icon_youtube.png>
-Package pdftex.def Info: ../img//icon_youtube.png  used on input line 200.
-(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
-File: ../img//icon_youtube.png Graphic file (type png)
-<use ../img//icon_youtube.png>
-Package pdftex.def Info: ../img//icon_youtube.png  used on input line 204.
-(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
- [4]
-<../img//github-rect.png, id=89, 225.84375pt x 59.22125pt>
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 244.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 246.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 250.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 252.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 254.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--280
-
- []
-
-[5 <../img//github-rect.png>]
-<../img//prog-r.png, id=103, 250.9375pt x 194.7275pt>
-File: ../img//prog-r.png Graphic file (type png)
-<use ../img//prog-r.png>
-Package pdftex.def Info: ../img//prog-r.png  used on input line 298.
-(pdftex.def)             Requested size: 10.03578pt x 7.78777pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 298.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-<../img//neonet-blue.png, id=107, 1045.9075pt x 237.88875pt>
-File: ../img//neonet-blue.png Graphic file (type png)
-<use ../img//neonet-blue.png>
-Package pdftex.def Info: ../img//neonet-blue.png  used on input line 304.
-(pdftex.def)             Requested size: 41.82916pt x 9.51392pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 313.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-
-c:/Rprojects/thomashuet/cv/cv_english.tex:315: Too many }'s.
-<recently read> }
-                 
-l.315 \textbf{2022 }\textbf{Multiscale 3D}}
-                                           , \textsf{R} + \textsf{Markdown} ...
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 315.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 317.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 319.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 321.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 323.
-(pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 329.
-[6 <../img//prog-r.png> <../img//neonet-blue.png>] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 460--465
-
- []
-
-[8] (./cv_english.aux)
-
-Package rerunfilecheck Warning: File `cv_english.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cv_english.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  2A761FD0C53FD1487F7FD74C900A6AFC;1344.
- ) 
-Here is how much of TeX's memory you used:
- 10676 strings out of 478278
- 168997 string characters out of 5850546
- 483731 words of memory out of 5000000
- 28737 multiletter control sequences out of 15000+600000
- 473669 words of font info for 42 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 60i,7n,65p,743b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_english.pdf (8 pages, 712709 bytes).
-PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 16 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+!pdfTeX error: pdflatex.exe (file c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map): fflush() failed (Invalid argument)
+ ==> Fatal error occurred, no output PDF file produced!
