@@ -917,15 +917,14 @@ DB
 #### EAMENA team meeting
 > 7/3/23
 
-- finished the Algerian Arachaeological Atlas (AAA) bulk upload with Mohammed: ca 5,000 HPs. I'd like to review it to evaluate the data quality and, eventually, missing part that can be filled
-- removed ca 6,000 Iraqis HPs using the listing provided by Will D.
-- setup a GeoServer beside the EAMENA DB (serve online GeoTIFFs, etc.)
-- setup a *reverse geocoding* on a training DB (it allows to find places from coordinates)
-- start to work with Ash on Arches v7
-- work on the PeriodO alignment with Will
+- I have completed the bulk download of the Algerian Archaeological Atlas (AAA) with Mohammed: about 5,000 HPs. I would like to review it to assess the quality of the data and possibly the missing parts that can be filled in.
+- deleting about 6,000 Iraqi HPs using the list provided by Will D.
+- set up a GeoServer next to the EAMENA database (serve GeoTIFFs online, etc.)
+- set up *reverse geocoding* on a training database (it allows you to find places from coordinates)
+- start working with Ash on Arches v7
+- work on PeriodO alignment with Will
 - attended the ACD workshop organised by Nichole, in Leicester
-- gave a ~ 1 hour presentation of the [eamenaR](https://github.com/eamena-oxford/eamenaR) package. Ash and Mahmoud attended it.
-    - will adapt this talk for the Arcadia meeting Friday 10 March
-- attended a one-to-one meeting with Yassamine Mather, from the Advanced Research Computing (ARC, Computer Science Dpt.), about the ARC facilities (my project: `arc-oca`)
+- about 1 hour presentation of the package [eamenaR](https://github.com/eamena-oxford/eamenaR). Ash and Mahmoud were present.
+    - I will adapt this presentation for the Arcadia meeting on Friday 10 March.
+- Attended a one-on-one meeting with Yassamine Mather, from Advanced Research Computing (ARC, Computer Science Dpt.), about ARC facilities (my project: `arc-oca`).
 - met Galen Mancino, in contact with Reuben, active on the Arches Forum
-
