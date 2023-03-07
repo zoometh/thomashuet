@@ -855,7 +855,7 @@ DB
 
 #### week 3
 
-- Created a [ARC project](https://www.arc.ox.ac.uk/creating-a-project) called `arc-oca` to host Maria Castiello project, but also other computational archaeological project
+- Created a [ARC project](https://www.arc.ox.ac.uk/creating-a-project) called `arc-oca` (Advanced Research Computing Oxford Computational Archaeology) to host Maria Castiello project, but also other computational archaeological project
 - Installed a GeoServer on the same server as EAMENA prod. I need to solve an IT issue (Mixed content) to display Overlays in EAMENA DB. Once done, this could be the basis for:
     - archiving georeferenced maps (GeoTIFF)
     - volunteers/project-based works (starting with the Atlas of caravanserais)
@@ -914,4 +914,18 @@ DB
     - Mickael Heyworth: 10 March
 - will work on the script prepared by Ahmed Mahmoud, for the extraction of the Sentinel 2 satellite imagery underlying the spatial footprint of the heritage sites
 
+#### EAMENA team meeting
+> 7/3/23
+
+- finished the Algerian Arachaeological Atlas (AAA) bulk upload with Mohammed: ca 5,000 HPs. I'd like to review it to evaluate the data quality and, eventually, missing part that can be filled
+- removed ca 6,000 Iraqis HPs using the listing provided by Will D.
+- setup a GeoServer beside the EAMENA DB (serve online GeoTIFFs, etc.)
+- setup a *reverse geocoding* on a training DB (it allows to find places from coordinates)
+- start to work with Ash on Arches v7
+- work on the PeriodO alignment with Will
+- attended the ACD workshop organised by Nichole, in Leicester
+- gave a ~ 1 hour presentation of the [eamenaR](https://github.com/eamena-oxford/eamenaR) package. Ash and Mahmoud attended it.
+    - will adapt this talk for the Arcadia meeting Friday 10 March
+- attended a one-to-one meeting with Yassamine Mather, from the Advanced Research Computing (ARC, Computer Science Dpt.), about the ARC facilities (my project: `arc-oca`)
+- met Galen Mancino, in contact with Reuben, active on the Arches Forum
 
