@@ -928,3 +928,14 @@ DB
     - I will adapt this presentation for the Arcadia meeting on Friday 10 March.
 - Attended a one-on-one meeting with Yassamine Mather, from Advanced Research Computing (ARC, Computer Science Dpt.), about ARC facilities (my project: `arc-oca`).
 - met Galen Mancino, in contact with Reuben, active on the Arches Forum
+
+#### week 8
+
+- two days of work with Ash on EAMENA v4.0 Arches v7 http://34.243.20.92:8000/:
+    - same settings as EAMENA v3.0
+    - all RMs
+    - data for Grid Squares and Persons/Organisation
+- attended the ACD workshop organised by Nichole, in Leicester
+- gave a 1-hour talk about the eamenaR package
+- working on the eamenaR package and eamenaR package presentation for the Arcadia meeting:
+    - work with Michael whom review the quality and consitency of the package documentation
