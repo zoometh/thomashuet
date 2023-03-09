@@ -939,3 +939,4 @@ DB
 - gave a 1-hour talk about the eamenaR package
 - working on the eamenaR package and eamenaR package presentation for the Arcadia meeting:
     - work with Michael whom review the quality and consitency of the package documentation
+- attend the Arches & Coffee informal meeting
