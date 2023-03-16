@@ -34,7 +34,61 @@ library(kableExtra)
 library(FactoMineR)
 library(archdata)
 library(reshape2)
+library(eamenaR)
 ```
+
+## Flow
+
+
+```{mermaid}
+flowchart LR
+    subgraph ide1 [Arches v5.2];
+    A[(EAMENA<br>DB)];
+    end;
+    A <--data<br>exchange--> B{{eamenaR}}:::eamenaRpkg;
+    A --data<br>export--> E[GeoJSON<br>...];
+    E --input--> B;
+    B --data<br>analysis & management--> B;
+    B <--data<br>exchange--> C((3<sup>rd</sup> part<br>app));
+    B -- output--> D[maps<br>charts<br>listings<br>...];
+    classDef eamenaRpkg fill:#e3c071;
+```
+
+
+
+## readthedocs {data-background-iframe="https://arches.readthedocs.io/en/stable/import-export/#view-creation-functions"}
+
+HI BUD'
+
+## Try to change my output size (default)
+
+```{.r }
+geojson_stat(stat = "list_ids")
+```
+
+```{r }
+#| echo: false
+
+geojson_stat(stat = "list_ids")
+```
+
+## Try to change my output size (small)
+
+```{.r }
+geojson_stat(stat = "list_ids")
+```
+
+
+:::{.smaller}
+
+```{r }
+#| echo: false
+
+geojson_stat(stat = "list_ids")
+```
+
+:::
+
 
 ## I'm here
 

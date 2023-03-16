@@ -939,4 +939,16 @@ DB
 - gave a 1-hour talk about the eamenaR package
 - working on the eamenaR package and eamenaR package presentation for the Arcadia meeting:
     - work with Michael whom review the quality and consitency of the package documentation
-- attend the Arches & Coffee informal meeting
+- attend the *Arches & Coffee* informal meeting
+
+#### week 9
+
+- participated in the Arcadia meeting on Friday in London.
+    - presented eamenaR for 10 min
+- day off on Monday
+- turned off the new Arches v7 (to save money)
+- helped Bill with basic statistics (counts, area measurements, etc.)
+    - developed eamenaR functions
+- attended the informal *Arches & Coffee* meeting
+- attended a meeting with Will and Sayantani about training
+- will meet with Mohamed in the morning to discuss AAA in EAMENA
