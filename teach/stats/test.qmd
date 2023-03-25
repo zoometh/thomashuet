@@ -21,7 +21,7 @@ format:
     # width: 1400
 ---
 
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(shiny)
 library(rmarkdown)
 library(plotly)
@@ -35,7 +35,55 @@ library(FactoMineR)
 library(archdata)
 library(reshape2)
 library(eamenaR)
+library(geojsonsf)
+library(stringi)
 ```
+
+## Duplicates
+
+> avoid arabic letters to be transformed into: <U+06A9><U+0627><U+0631><U+0648>.. See the eamenaR function `ref_are_duplicates`, use it in Quarto slideshow
+
+v. https://stackoverflow.com/questions/21238631/reading-arabic-data-text-in-r-and-plot
+v. https://stackoverflow.com/questions/49739800/convert-unicode-to-readable-characters-in-r
+
+
+```{r}
+#| echo: false
+# options(encoding = 'UTF-8')
+
+selected.fields = c("Assessment Investigator - Actor",
+                    "Assessment Activity Date",
+                    "Resource Name",
+                    "geometry")
+hp.list = c("EAMENA-0207209", "EAMENA-0182057")
+geojson.path = paste0(system.file(package = "eamenaR"), "/extdata/caravanserail.geojson")
+ids <- eamenaR::ref_ids(concept.name = "hp.id")
+selected.fields <- c(ids, selected.fields, "resourceid")
+ea.geojson <- geojsonsf::geojson_sf(geojson.path)
+ea.geojson[["Resource Name"]] <- stringi::stri_unescape_unicode(gsub("<U\\+(....)>", "\\\\u\\1", 
+                                                                     ea.geojson[["Resource Name"]]))
+ea.geojson <- ea.geojson[ea.geojson[[ids]] %in% hp.list, selected.fields]
+# ar <- c("سليم", "سعيد", "مجدى")
+# ar.unicode <- "<U+06A9>"
+# cat(stri_unescape_unicode(gsub("<U\\+(....)>", "\\\\u\\1", ea.geojson[["Resource Name"]])))
+ea.geojson
+```
+
+
+## Middle Range Theories
+
+<hr>
+x &cap; &#937; = &empty;
+<hr>
+
+<hr>
+x &cap; &#937; = {1, 4, 12, ...}
+<hr>
+
+<hr>
+x &cap; &#937; = &#937;
+<hr>
+
 
 ## Flow
 

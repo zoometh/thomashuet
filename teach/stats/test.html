@@ -386,6 +386,9 @@
       margin-right: 0; 
     }
   </style>
+  
+  <script src="test_files/libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="test_files/libs/lightable-0.0.1/lightable.css" rel="stylesheet">
   <script src="test_files/libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
   <script src="test_files/libs/d3-3.3.8/d3.min.js"></script>
   <script src="test_files/libs/dagre-0.4.0/dagre-d3.min.js"></script>
@@ -412,6 +415,77 @@
 <div class="cell">
 
 </div>
+</section>
+<section id="duplicates" class="slide level2">
+<h2>Duplicates</h2>
+<div class="sourceCode" id="cb1" data-code-line-numbers="2-7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>d <span class="ot">&lt;-</span> hash<span class="sc">::</span><span class="fu">hash</span>()</span>
+<span id="cb1-2"><a href="#cb1-2"></a>d <span class="ot">&lt;-</span> <span class="fu">ref_are_duplicates</span>(<span class="at">d =</span> d,</span>
+<span id="cb1-3"><a href="#cb1-3"></a>                        <span class="at">hp.list =</span> <span class="fu">c</span>(<span class="st">"EAMENA-0207209"</span>, <span class="st">"EAMENA-0182057"</span>),</span>
+<span id="cb1-4"><a href="#cb1-4"></a>                        <span class="at">selected.fields =</span> <span class="fu">c</span>(<span class="st">"Assessment Investigator - Actor"</span>,</span>
+<span id="cb1-5"><a href="#cb1-5"></a>                                            <span class="st">"Assessment Activity Date"</span>,</span>
+<span id="cb1-6"><a href="#cb1-6"></a>                                            <span class="st">"Resource Name"</span>,</span>
+<span id="cb1-7"><a href="#cb1-7"></a>                                            <span class="st">"geometry"</span>))</span>
+<span id="cb1-8"><a href="#cb1-8"></a>d<span class="sc">$</span>are_duplicates</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="font-size: 20px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> field </th>
+   <th style="text-align:left;"> fb0a2ef4-023f-4d13-b931-132799bb7a6c </th>
+   <th style="text-align:left;"> 563567f7-eef0-4683-9e88-5e4be2452f80 </th>
+   <th style="text-align:left;"> dist </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EAMENA ID </td>
+   <td style="text-align:left;"> EAMENA-0182057 </td>
+   <td style="text-align:left;"> EAMENA-0207209 </td>
+   <td style="text-align:left;"> - </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Assessment Investigator - Actor </td>
+   <td style="text-align:left;"> Hamed Rahnama </td>
+   <td style="text-align:left;"> Hamed Rahnama, Bijan Rouhani </td>
+   <td style="text-align:left;"> 0.18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Assessment Activity Date </td>
+   <td style="text-align:left;"> 2021-05-25 </td>
+   <td style="text-align:left;"> 2022-08-21, 2022-08-30 </td>
+   <td style="text-align:left;"> 0.32 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> Resource Name </td>
+   <td style="text-align:left;"> Bedasht Caravanserai, &lt;U+06A9&gt;&lt;U+0627&gt;&lt;U+0631&gt;&lt;U+0648&gt;&lt;U+0646&gt;&lt;U+0633&gt;&lt;U+0631&gt;&lt;U+0627&gt;&lt;U+06CC&gt; &lt;U+0628&gt;&lt;U+062F&gt;&lt;U+0634&gt;&lt;U+062A&gt;, CVNS-IR </td>
+   <td style="text-align:left;"> CVNS-IR, Bedasht Caravanserai, &lt;U+06A9&gt;&lt;U+0627&gt;&lt;U+0631&gt;&lt;U+0648&gt;&lt;U+0627&gt;&lt;U+0646&gt;&lt;U+0633&gt;&lt;U+0631&gt;&lt;U+0627&gt;&lt;U+06CC&gt; &lt;U+0628&gt;&lt;U+062F&gt;&lt;U+0634&gt;&lt;U+062A&gt; </td>
+   <td style="text-align:left;"> 0.26 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> geometry </td>
+   <td style="text-align:left;"> c(55.05059, 36.42466) </td>
+   <td style="text-align:left;"> c(55.05059, 36.42466) </td>
+   <td style="text-align:left;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+<section id="middle-range-theories" class="slide level2">
+<h2>Middle Range Theories</h2>
+<hr>
+x ∩ Ω = ∅
+<hr>
+<hr>
+x ∩ Ω = {1, 4, 12, …}
+<hr>
+<hr>
+x ∩ Ω = Ω
+<hr>
 </section>
 <section id="flow" class="slide level2">
 <h2>Flow</h2>
@@ -445,7 +519,7 @@
 </section>
 <section id="try-to-change-my-output-size-default" class="slide level2">
 <h2>Try to change my output size (default)</h2>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"list_ids"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"list_ids"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell">
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "Ids list: \n"
@@ -455,7 +529,7 @@
 </section>
 <section id="try-to-change-my-output-size-small" class="slide level2">
 <h2>Try to change my output size (small)</h2>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"list_ids"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">geojson_stat</span>(<span class="at">stat =</span> <span class="st">"list_ids"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="smaller">
 <div class="cell">
 <div class="cell-output cell-output-stdout">
@@ -536,15 +610,15 @@ classDef eamenaRpkg fill:#e3c071;
 <p>Without <code>(</code> and <code>)</code></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-b3c3da422788c6c70f5e" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b3c3da422788c6c70f5e">{"x":{"diagram":"\nflowchart LR\n    A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> E(geojson_shp):::eamenaRfunction;\n    E --2. SHP--> F((GIS));\n    F --3. create<br><b>POLYGON<\/b>--> F;\n    F --4. SHP--> E;\n    E --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n    D --6. append<br>new geometries--> A;\n    classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4014b9434c26931ca2d2" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4014b9434c26931ca2d2">{"x":{"diagram":"\nflowchart LR\n    A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> E(geojson_shp):::eamenaRfunction;\n    E --2. SHP--> F((GIS));\n    F --3. create<br><b>POLYGON<\/b>--> F;\n    F --4. SHP--> E;\n    E --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n    D --6. append<br>new geometries--> A;\n    classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>With or whitout <code>DiagrammeR</code></p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-53982d359fb8a40e3c83" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-53982d359fb8a40e3c83">{"x":{"diagram":"\nflowchart LR\n  A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> C(geojson_kml):::eamenaRfunction;\n  C --2. KML/KMZ--> B((Google<br>Earth));\n  B --3. create<br><b>POLYGON<\/b>--> B;\n  B --4. KML/KMZ--> C;\n  C --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n  D --6. append<br>new geometries--> A;\n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-900e4534eeb1f756cc9e" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-900e4534eeb1f756cc9e">{"x":{"diagram":"\nflowchart LR\n  A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> C(geojson_kml):::eamenaRfunction;\n  C --2. KML/KMZ--> B((Google<br>Earth));\n  B --3. create<br><b>POLYGON<\/b>--> B;\n  B --4. KML/KMZ--> C;\n  C --5. GeoJSON<br><b>POLYGON<\/b>--> D(geojson_csv):::eamenaRfunction;\n  D --6. append<br>new geometries--> A;\n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <div class="cell" data-reveal="true">
@@ -570,15 +644,15 @@ classDef eamenaRpkg fill:#e3c071;
 <p>Indentation 0, 2, 4 spaces: OK</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-5d28ac16e7f83628ac85" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5d28ac16e7f83628ac85">{"x":{"diagram":"\nflowchart LR\n  A[structured file<br><em>source<\/em>] ----> B(list_mapping_bu):::eamenaRfunction;\n  A -. a. get MBR .-> D(geom_bbox):::eamenaRfunction;\n  B --1. mapping file--> B;\n  B --2. export--> C[BU file<br><em>target<\/em>];\n  D -. b. creates .-> E[mbr.geojson];\n  E -- add GRID ID --> B; \n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-c1fbe2fee291aad25965" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c1fbe2fee291aad25965">{"x":{"diagram":"\nflowchart LR\n  A[structured file<br><em>source<\/em>] ----> B(list_mapping_bu):::eamenaRfunction;\n  A -. a. get MBR .-> D(geom_bbox):::eamenaRfunction;\n  B --1. mapping file--> B;\n  B --2. export--> C[BU file<br><em>target<\/em>];\n  D -. b. creates .-> E[mbr.geojson];\n  E -- add GRID ID --> B; \n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p>Simple quotes: ~ OK</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-706faa5181fd4a9c03ea" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
-<script type="application/json" data-for="htmlwidget-706faa5181fd4a9c03ea">{"x":{"diagram":"\nflowchart LR\n  A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> C('geojson_kml'):::eamenaRfunction;\n  C --2. KML/KMZ--> B((Google<br>Earth));\n  B --3. create<br><b>POLYGON<\/b>--> B;\n  B --4. KML/KMZ--> C;\n  C --5. GeoJSON<br><b>POLYGON<\/b>--> D('geojson_csv'):::eamenaRfunction;\n  D --6. append<br>new geometries--> A;\n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-9a8fd6b3fe0f1a753127" style="width:960px;height:480px;" class="DiagrammeR html-widget"></div>
+<script type="application/json" data-for="htmlwidget-9a8fd6b3fe0f1a753127">{"x":{"diagram":"\nflowchart LR\n  A[(EAMENA<br>DB)] --1. GeoJSON<br><b>POINT<\/b>--> C('geojson_kml'):::eamenaRfunction;\n  C --2. KML/KMZ--> B((Google<br>Earth));\n  B --3. create<br><b>POLYGON<\/b>--> B;\n  B --4. KML/KMZ--> C;\n  C --5. GeoJSON<br><b>POLYGON<\/b>--> D('geojson_csv'):::eamenaRfunction;\n  D --6. append<br>new geometries--> A;\n  classDef eamenaRfunction fill:#e7deca;\n"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -613,7 +687,7 @@ classDef eamenaRpkg fill:#e3c071;
 <section id="dewpiwep" class="slide level2">
 <h2>dewpiwep</h2>
 
-<img data-src="test_files/figure-revealjs/unnamed-chunk-13-1.png" style="width:150.0%" class="r-stretch"></section>
+<img data-src="test_files/figure-revealjs/unnamed-chunk-14-1.png" style="width:150.0%" class="r-stretch"></section>
 <section id="gggjglj" class="slide level2">
 <h2>GGGJGLJ</h2>
 <div class="cell">
@@ -750,7 +824,7 @@ English Title
 </h1>
 <p>Plot of random points</p>
 
-<img data-src="test_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<img data-src="test_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
 <section id="french" class="slide level2">
 <h2>French</h2>
 <h1>
@@ -758,7 +832,7 @@ Titre Français
 </h1>
 <p>Tracé de points aléatoires</p>
 
-<img data-src="test_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
+<img data-src="test_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"></section>
 <section id="code" class="slide level2">
 <h2>Code</h2>
 <p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>

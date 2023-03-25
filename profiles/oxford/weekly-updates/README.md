@@ -952,3 +952,7 @@ DB
 - attended the informal *Arches & Coffee* meeting
 - attended a meeting with Will and Sayantani about training
 - will meet with Mohamed in the morning to discuss AAA in EAMENA
+
+#### week 10
+
+ -[Gantt diagram](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/dbs/database.eamena/README.md)
