@@ -113,9 +113,12 @@ server <- function(input, output, session){
                        nstart = 20)
     df.isotop.filtered$cluster <- dfkmeans$cluster
     df.isotop.filtered$lbl <- paste0(df.isotop.filtered$num, "\n", 
-                                     "<sup>206/204</sup>Pb: ", round(df.isotop.filtered$Pb206_Pb204.perc, 2), "% \n",
-                                     "<sup>207/204</sup>Pb: ", round(df.isotop.filtered$Pb207_Pb204.perc, 2), "% \n",
-                                     "<sup>208/204</sup>Pb: ", round(df.isotop.filtered$Pb208_Pb204.perc, 2), "%")
+                                     "<sup>206/204</sup>Pb: ", 
+                                     round(df.isotop.filtered$Pb206_Pb204.perc, 2), "% \n",
+                                     "<sup>207/204</sup>Pb: ", 
+                                     round(df.isotop.filtered$Pb207_Pb204.perc, 2), "% \n",
+                                     "<sup>208/204</sup>Pb: ", 
+                                     round(df.isotop.filtered$Pb208_Pb204.perc, 2), "%")
     fig <- plot_ly(data = df.isotop.filtered, 
                    name = ~object, 
                    color = ~color.object) %>%
