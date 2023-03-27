@@ -1,0 +1,144 @@
+---
+title: "General Introduction to S12"
+# subtitle: "Make (re)usable the ANRJCJC Itineris data"
+author: "Levy, Huet, Allard, Thierry"
+# title-slide-attributes:
+#     data-background-image: "https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png"
+#     data-background-size: "40%"
+#     data-background-opacity: "0.2"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/ANR-Itineris/itineris/master/www/logo.png
+    footer: "<em>S12. Chronological modelling: formal methods and research software</em> <img src='https://raw.githubusercontent.com/archaeochrono/caa23/master/www/logo-caa23.svg' style='height: 40px;vertical-align: middle;'> <https://github.com/archaeochrono/caa23>  CAA23, Amsterdam, 2023"
+    margin: 0
+    width: 1200
+---
+
+## Forewords {background-color="#f3e7b3"}
+
+```{r, echo=FALSE}
+library(plotly)
+```
+
+::: {.notes}
+We welcome papers dealing with new theoretical, methodological and research software developments in any of the above fields, in order to promote shared practices and the discovery of new ideas and paradigms.
+:::
+
+## Bayesian modelling
+
+
+```{=html}
+<iframe width="1200" height="700" src="https://c14.arch.ox.ac.uk/oxcal/OxCal.html"></iframe>
+```
+
+
+## Stratigraphic modelling
+
+Harris matrix
+
+
+```{=html}
+<iframe width="1200" height="700" src="https://harrismatrixcomposer.com/#/"></iframe>
+```
+
+## Temporal logics
+
+
+::: {.notes}
+"The archaeological research community has otherwise only brought too little attention to recent research results in temporal logics." 
+:::
+
+## Seriation techniques
+
+
+## Chronological networks
+
+
+## Linked Open Time Data (LOTD)
+
+
+
+## Conclusive words
+
+
+## Running Order
+
+<table>
+    <thead>
+      <tr>
+        <th>Paper</th>
+        <th>authors</th>
+        <th>hour</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>General introduction</td>
+        <td>Levy et al.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Aoristic temporal study of heterogeneous amphora data in Roman Germania reveals centuries-long change in regional patterns of production and consumption</td>
+        <td>Brughmans et al.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Temporal Modelling of the Roman Marble Trade</td>
+        <td>Taelman</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Right on time: Chronological and stratigraphic modelling of the occupational surfaces at the lacustrine site of La Draga (Lake Banyoles, Spain). Bayesian analysis of C14 dates, tree-ring data and stratigraphical information</td>
+        <td>Andreaki and Barcelo</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Beyond chronological networks: a comparison of formal models for archaeological chronology</td>
+        <td>Levy</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>BREAK HERE</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>An Alternative Method for Sequence Matching in Dendrochronology using Dynamic Time Warping</td>
+        <td>Ochocki and Bronk Ramsey</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Dendrochronological networks: from time series to networks and back to spatio-temporal patterns again</td>
+        <td>Visser</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>EXTENDING THE EXTENDED MATRIX (EM) with CIDOC-CRM: A FORMAL METHOD and RESEARCH SOFTWARE for VIRTUAL RECONSTRUCTION PROCESSES and beyond</td>
+        <td>Giovannini and Demetrescu</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Conventions for Archaeological Stratigraphic and Chronological Data</td>
+        <td>May and Taylor</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Automating chronology construction and archiving (FAIR)ly along the way</td>
+        <td>Buck et al.</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ChronOntology for periodisations in Entangled Africa</td>
+        <td>Schmidle et al.</td>
+        <td></td>
+      </tr>
+    </tbody>
+    </table>
+
