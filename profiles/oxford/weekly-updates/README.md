@@ -929,7 +929,7 @@ DB
 - Attended a one-on-one meeting with Yassamine Mather, from Advanced Research Computing (ARC, Computer Science Dpt.), about ARC facilities (my project: `arc-oca`).
 - met Galen Mancino, in contact with Reuben, active on the Arches Forum
 
-#### week 8
+#### week 7
 
 - two days of work with Ash on EAMENA v4.0 Arches v7 http://34.243.20.92:8000/:
     - same settings as EAMENA v3.0
@@ -941,7 +941,7 @@ DB
     - work with Michael whom review the quality and consitency of the package documentation
 - attend the *Arches & Coffee* informal meeting
 
-#### week 9
+#### week 8
 
 - participated in the Arcadia meeting on Friday in London.
     - presented eamenaR for 10 min
@@ -953,6 +953,22 @@ DB
 - attended a meeting with Will and Sayantani about training
 - will meet with Mohamed in the morning to discuss AAA in EAMENA
 
-#### week 10
+#### week 9
 
- -[Gantt diagram](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/dbs/database.eamena/README.md)
+- completing the AAA as missing records have been identified
+- fixing an issue with the YMHP database
+    - meeting with Galen scheduled Friday (1-hour IT consultancy)
+- attended the informal *Arches & Coffee* meeting
+- scheduling the Arches v7 deployment, sys admin trainings, etc., see the [Gantt diagram](https://github.com/eamena-oxford/eamena-arches-dev/blob/main/dbs/database.eamena/README.md)
+
+ #### week 10
+
+- fixed the YMHP database
+- upload the whole AAA (50 georeferenced historical maps) to the EAMENA GeoServer
+- attended the meeting on sharing data (chaired by Stefania Merlo)
+    - creating a GitHub organization [Arches Cultural Heritage Partners](https://github.com/achp-project) to host data from different Arches projects. With have registered users so far from: MaREA, MAPHSA, CAAL, ...
+    - uploaded EAMENA [reference_data](https://github.com/achp-project/prj-eamena/tree/main/reference_data)
+    - working on a new function in eamenaR to read the Concepts and map its structure as an interactive tree
+    - suggested by Mike Fisher: to send a general message to the <heritage.sites@arcadiafund.org.uk> mailing list to ainform advice project on that
+- attended the informal *Arches & Coffee* meeting
+- will meet Reuben to discuss the training material and online delivery
