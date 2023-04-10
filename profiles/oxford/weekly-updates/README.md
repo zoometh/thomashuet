@@ -83,7 +83,6 @@
 ------------------------------------------------------------------------
 
 ### ManCom Monthly report
-
 > 3rd Nov - 16th Dec
 
 - integration of the BU process in Oxford
@@ -972,3 +971,11 @@ DB
     - suggested by Mike Fisher: to send a general message to the <heritage.sites@arcadiafund.org.uk> mailing list to ainform advice project on that
 - attended the informal *Arches & Coffee* meeting
 - will meet Reuben to discuss the training material and online delivery
+
+
+### ManCom Monthly report
+> 12/04/23
+
+- Create a GH organisation to group Arches-based meta/para/reference data: https://github.com/achp-project
+    - 8 members so far: CAAL (Marco, Bryan), MAESaM (Mahmoud), MAHSA (Junaid), MAPHSA (Jonas), MAPSS (Mike), MaREA (Ash)
+    - pending invitations: MAESaM (Manoj), NHDP (Elias)
