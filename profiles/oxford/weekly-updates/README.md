@@ -980,6 +980,12 @@ DB
     - we are on time: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena
     - the upgraded DB will be showcased to the team Tuesday 25th April between 2pm and 3pm
     - all data were downloaded with a calculation time of 4 days: EAMENA v3 will be turned off, and no data entry between 28th of April - 4th of May
+- Created a GeoServer and uploaded the *Algerian Archaeological Atlas*
+    - There are still missing HP after Mohamed enter the data, this is probably an index issue. To solve after the upgrade to Arches v7. 
+- System administrator training organisation
+- Development of the eamenaR R package
+    - presented during the Arcadia meeting in London
+- In contact with Historic England about the *ring-fencing* function
 - Create a GH organisation to group Arches-based meta/para/reference data: https://github.com/achp-project
     - 8 members so far: CAAL (Marco, Bryan), MAESaM (Manoj, Mahmoud), MAHSA (Junaid), MAPHSA (Jonas), MAPSS (Mike), MaREA (Ash)
     - pending invitations: NHDP (Elias)
