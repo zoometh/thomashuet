@@ -976,6 +976,10 @@ DB
 ### ManCom Monthly report
 > 12/04/23
 
+- Ash worked on the Arches v7 deployement
+    - we are on time: https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena
+    - all data were downloaded with a calculation time of 4 days
+    - the upgraded DB will be showcased to the team Tuesday 25th between 2pm and 3pm
 - Create a GH organisation to group Arches-based meta/para/reference data: https://github.com/achp-project
-    - 8 members so far: CAAL (Marco, Bryan), MAESaM (Mahmoud), MAHSA (Junaid), MAPHSA (Jonas), MAPSS (Mike), MaREA (Ash)
-    - pending invitations: MAESaM (Manoj), NHDP (Elias)
+    - 8 members so far: CAAL (Marco, Bryan), MAESaM (Manoj, Mahmoud), MAHSA (Junaid), MAPHSA (Jonas), MAPSS (Mike), MaREA (Ash)
+    - pending invitations: NHDP (Elias)
