@@ -984,7 +984,7 @@ DB
     - There are still missing HP after Mohamed enter the data, this is probably an index issue. To solve after the upgrade to Arches v7. 
 - System administrator training organisation
 - Development of the eamenaR R package
-    - presented during the Arcadia meeting in London
+    - presented during the Arcadia meeting in London (Friday 10th March)
 - In contact with Historic England about the *ring-fencing* function
 - Create a GH organisation to group Arches-based meta/para/reference data: https://github.com/achp-project
     - 8 members so far: CAAL (Marco, Bryan), MAESaM (Manoj, Mahmoud), MAHSA (Junaid), MAPHSA (Jonas), MAPSS (Mike), MaREA (Ash)
