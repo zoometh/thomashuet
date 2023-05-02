@@ -994,9 +994,10 @@ DB
 > 3/5/23
 
 - worked (mostlty with Ash) for the Arches v7 upgrade. Ash released on GitHub the Arches v7 install task flow [description](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Arches%207%.md) and [flow chart](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/docs/notes/Routes.md)
-- progressing one at a time on the GoDaddy issue to recover the YHMP DB domain name (`database.yhmp.online` after its IP has changed)
 - Preparing the sys admin, db manager and user trainings
 - updating the [Arches Cultural Heritage Partners](https://github.com/achp-project) GitHub organisation:
      - updating projects and users as more are added (so far 10 members from 7 projects)
      - developping functions to map Arches-based project, or visualize Arches-based thesauri in a form of an interactive collapsible tree: https://github.com/achp-project/cultural-heritage
-- updating GitHub documentation
+- updating EAMENA GitHub documentation
+- progressing one at a time on the GoDaddy issue to recover the YHMP DB domain name (`database.yhmp.online` after its IP has changed)
+- usual business: reviewing Arcadia bid, DB Open Access policies, etc.
