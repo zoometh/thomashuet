@@ -1014,7 +1014,14 @@ DB
     - got the KAHD (Iraqi Kurdistan) installed and data imported
 - YHMP database
     - made some progess with GoDaddy
-    - prospective on the feasability to install this DB on a local server in Yemen (duration = 10 full days; requirements = SSH connexion; etc.)
+    - prospective on the feasability to install this DB on a local server in Yemen:
+        + *What are the severe specs they need to prepare for YHMP?* see [Arches v3 requirements](https://arches.readthedocs.io/en/3.1/getting-started/#system-requirements)
+        + *Is this transfer technically possible?* Yes
+        + *Can we remotely help them to install the YHMP on a local server?* Yes. We need a SSH connection
+        + *And if yes, what will be the process and its timeline?* 10 full days (according to Mike F, using the case of Al-Ula DB)
+        + *how much is the cost of keeping/hosting YHMP online in a cloud (AWS)* currently (per month) EC2: $73.70 ; S3: ...; back-up: ...;
 - continuing the preparation of the sys admin training
 - in contact with Cathy Giangrande (City of Dead, *aka* Cairo project) for exteranl data import into EAMENA
+    - preparing a workflow
 - attended the informal *Arches & Coffee* meeting
+- will work on AWS (clean-up, backups, etc.)
