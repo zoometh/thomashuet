@@ -990,6 +990,8 @@ DB
     - 8 members so far: CAAL (Marco, Bryan), MAESaM (Manoj, Mahmoud), MAHSA (Junaid), MAPHSA (Jonas), MAPSS (Mike), MaREA (Ash)
     - pending invitations: NHDP (Elias)
 
+### Trinity Term
+
 #### EAMENA team meeting
 > 3/5/23
 
@@ -1000,4 +1002,19 @@ DB
      - developping functions to map Arches-based project, or visualize Arches-based thesauri in a form of an interactive collapsible tree: https://github.com/achp-project/cultural-heritage
 - updating EAMENA GitHub documentation
 - progressing one at a time on the GoDaddy issue to recover the YHMP DB domain name (`database.yhmp.online` after its IP has changed)
+- Presented EAMENA paper at GMPCA Conference in Nice (France): https://eamena-project.github.io/eamena-arches-dev/talks/2023-gmpca/pres/#/title-slide
 - usual business: reviewing Arcadia bid, DB Open Access policies, etc.
+
+#### week 3
+
+- working with Ash: 
+    - got the Arches v7 (EA v4) installed
+    - solved some issues
+- working with Will:
+    - got the KAHD (Iraqi Kurdistan) installed and data imported
+- YHMP database
+    - made some progess with GoDaddy
+    - prospective on the feasability to install this DB on a local server in Yemen (duration = 10 full days; requirements = SSH connexion; etc.)
+- continuing the preparation of the sys admin training
+- in contact with Cathy Giangrande (City of Dead, *aka* Cairo project) for exteranl data import into EAMENA
+- attended the informal *Arches & Coffee* meeting
