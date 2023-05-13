@@ -1019,9 +1019,9 @@ DB
         + *Is this transfer technically possible?* Yes
         + *Can we remotely help them to install the YHMP on a local server?* Yes. We need a SSH connection
         + *And if yes, what will be the process and its timeline?* 10 full days (according to Mike F, using the case of Al-Ula DB)
-        + *how much is the cost of keeping/hosting YHMP online in a cloud (AWS)* currently (per month) EC2: $73.70 ; S3: ...; back-up: ...;
+        + *How much is the cost of keeping/hosting YHMP online in a cloud (AWS)* currently (per month) EC2: $73.70 ; S3: ~$10; back-up: ~$10;
 - continuing the preparation of the sys admin training
-- in contact with Cathy Giangrande (City of Dead, *aka* Cairo project) for exteranl data import into EAMENA
+- in contact with Cathy Giangrande (City of Dead, *aka* Cairo project) for external data import into EAMENA
     - preparing a workflow
 - attended the informal *Arches & Coffee* meeting
 - will work on AWS (clean-up, backups, etc.)
