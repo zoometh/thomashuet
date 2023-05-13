@@ -1,11 +1,12 @@
 # Fdb version 3
-["pdflatex"] 1683988415 "c:/Rprojects/thomashuet/cv/cv_english.tex" "cv_english.pdf" "cv_english" 1683988415
+["pdflatex"] 1683992672 "c:/Rprojects/thomashuet/cv/cv_english.tex" "cv_english.pdf" "cv_english" 1683992672
   "../img//github-rect.png" 1645991413 8957 37bbc299b6c610447386375fcf8ad8e0 ""
   "../img//github.png" 1642839263 23729 21fa9344e32cd2efdc7d66119c7656e7 ""
   "../img//gmail.png" 1642839263 11074 90c4d618f2e87060b30d035a6b9299ac ""
   "../img//gscholar.png" 1642839263 20833 66d4b546fed90af2e0af85d34a2106e1 ""
   "../img//icon_youtube.png" 1642839263 3236 06e0fe531736996de37519d44aaac1e5 ""
   "../img//id-r.png" 1642839263 126875 a6c47d95d56d35cce57bd2fac55e7cd3 ""
+  "../img//leapfrog-blue.png" 1683989248 32253 4c3825081f91daac7a0ba6d7a003c457 ""
   "../img//link_darkblue.png" 1645987707 23240 44cde55ffae6d75c931bebdeafbca2f9 ""
   "../img//neonet-blue.png" 1645993162 17942 10b1ec99d4b8b8e519a5ac58eb78ca0d ""
   "../img//orcid.png" 1642839263 47200 816ccfd7a384a9f68ac98b1f4be4e973 ""
@@ -13,7 +14,7 @@
   "../img//prog-r.png" 1645991435 11220 36e7e52a00e3d5ccde871065bc9807dc ""
   "../img//rgate.png" 1642839263 2308 57b26b7f408443ae4637fcff0b673db0 ""
   "../img//webpro.png" 1642839263 11205 72060200832633aa15a585cb6e1e2155 ""
-  "c:/Rprojects/thomashuet/cv/cv_english.tex" 1683988404 47362 76b3f2b676793d96532d1cfa5fbb2f27 ""
+  "c:/Rprojects/thomashuet/cv/cv_english.tex" 1683992663 51014 54701a58448d6b278be2fc9170501900 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1645734374 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm" 1645732743 1116 4e6ba9d7914baa6482fd69f67d126380 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1645732743 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -103,9 +104,9 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1645741295 4422994 d6fc1c83c919dc5940022c50ba2a8cfc ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1645741546 2797899 a615a785223ba7ec35cb7313f6654786 ""
   "c:/texlive/2021/texmf.cnf" 1645741257 713 e69b156964470283e0530f5060668171 ""
-  "cv_english.aux" 1683988415 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "cv_english.aux" 1683992672 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "cv_english.out" 0 -1 0 "pdflatex"
-  "cv_english.tex" 1683988404 47362 76b3f2b676793d96532d1cfa5fbb2f27 ""
+  "cv_english.tex" 1683992663 51014 54701a58448d6b278be2fc9170501900 ""
   (generated)
   "cv_english.aux"
   "cv_english.log"
