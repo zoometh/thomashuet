@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  13 MAY 2023 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  13 MAY 2023 17:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -455,30 +455,25 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 184.
-(pdftex.def)             Requested size: 120.44786pt x 68.45453pt.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 188.
-(pdftex.def)             Requested size: 120.44786pt x 68.45453pt.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 191.
-(pdftex.def)             Requested size: 120.44786pt x 68.45453pt.
- [3]
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 193.
-(pdftex.def)             Requested size: 120.44786pt x 68.45453pt.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 195.
-(pdftex.def)             Requested size: 120.44786pt x 68.45453pt.
-
-Overfull \hbox (5.48207pt too wide) in paragraph at lines 195--196
-\OT1/cmr/m/it/10 tions and Quan-ti-ta-tive Meth-ods in Ar-chae-ol-ogy \OT1/cmr/m/n/10 (CAA2023), Am-s-ter-dam, 3-6 April [][][][][]
- []
-
-<../img//icon_youtube.png, id=84, 53.7207pt x 37.5804pt>
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+ [3]
+<../img//icon_youtube.png, id=85, 53.7207pt x 37.5804pt>
 File: ../img//icon_youtube.png Graphic file (type png)
 <use ../img//icon_youtube.png>
 Package pdftex.def Info: ../img//icon_youtube.png  used on input line 205.
@@ -491,8 +486,8 @@ File: ../img//icon_youtube.png Graphic file (type png)
 <use ../img//icon_youtube.png>
 Package pdftex.def Info: ../img//icon_youtube.png  used on input line 217.
 (pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
-[4 <../img//icon_youtube.png>]
-<../img//github-rect.png, id=93, 225.84375pt x 59.22125pt>
+ [4 <../img//icon_youtube.png>]
+<../img//github-rect.png, id=94, 225.84375pt x 59.22125pt>
 File: ../img//github-rect.png Graphic file (type png)
 <use ../img//github-rect.png>
 Package pdftex.def Info: ../img//github-rect.png  used on input line 261.
@@ -513,11 +508,12 @@ File: ../img//github-rect.png Graphic file (type png)
 <use ../img//github-rect.png>
 Package pdftex.def Info: ../img//github-rect.png  used on input line 271.
 (pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
- [5 <../img//github-rect.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 291--297
 
  []
 
+[5 <../img//github-rect.png>]
 File: ../img//github-rect.png Graphic file (type png)
 <use ../img//github-rect.png>
 Package pdftex.def Info: ../img//github-rect.png  used on input line 318.
@@ -526,7 +522,7 @@ File: ../img//github-rect.png Graphic file (type png)
 <use ../img//github-rect.png>
 Package pdftex.def Info: ../img//github-rect.png  used on input line 319.
 (pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-<../img//prog-r.png, id=113, 250.9375pt x 194.7275pt>
+<../img//prog-r.png, id=114, 250.9375pt x 194.7275pt>
 File: ../img//prog-r.png Graphic file (type png)
 <use ../img//prog-r.png>
 Package pdftex.def Info: ../img//prog-r.png  used on input line 320.
@@ -535,17 +531,16 @@ File: ../img//github-rect.png Graphic file (type png)
 <use ../img//github-rect.png>
 Package pdftex.def Info: ../img//github-rect.png  used on input line 320.
 (pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
-<../img//leapfrog-blue.png, id=117, 140.77594pt x 108.405pt>
+<../img//leapfrog-blue.png, id=118, 140.77594pt x 108.405pt>
 File: ../img//leapfrog-blue.png Graphic file (type png)
 <use ../img//leapfrog-blue.png>
 Package pdftex.def Info: ../img//leapfrog-blue.png  used on input line 326.
 (pdftex.def)             Requested size: 5.63007pt x 4.33545pt.
-<../img//neonet-blue.png, id=119, 1045.9075pt x 237.88875pt>
+<../img//neonet-blue.png, id=120, 1045.9075pt x 237.88875pt>
 File: ../img//neonet-blue.png Graphic file (type png)
 <use ../img//neonet-blue.png>
 Package pdftex.def Info: ../img//neonet-blue.png  used on input line 328.
 (pdftex.def)             Requested size: 41.82916pt x 9.51392pt.
-[6 <../img//prog-r.png> <../img//leapfrog-blue.png> <../img//neonet-blue.png>]
 File: ../img//github-rect.png Graphic file (type png)
 <use ../img//github-rect.png>
 Package pdftex.def Info: ../img//github-rect.png  used on input line 337.
@@ -579,9 +574,10 @@ File: ../img//github-rect.png Graphic file (type png)
 <use ../img//github-rect.png>
 Package pdftex.def Info: ../img//github-rect.png  used on input line 347.
 (pdftex.def)             Requested size: 27.10007pt x 7.10623pt.
+[6 <../img//prog-r.png> <../img//leapfrog-blue.png> <../img//neonet-blue.png>]
 LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 353.
-[7] [8]
+ [7] [8]
 Underfull \hbox (badness 10000) in paragraph at lines 484--489
 
  []
@@ -597,15 +593,15 @@ Package rerunfilecheck Info: Checksums for `cv_english.out':
 (rerunfilecheck)             After:  2A761FD0C53FD1487F7FD74C900A6AFC;1344.
  ) 
 Here is how much of TeX's memory you used:
- 10690 strings out of 478278
- 169322 string characters out of 5850546
+ 10686 strings out of 478278
+ 169238 string characters out of 5850546
  483731 words of memory out of 5000000
- 28749 multiletter control sequences out of 15000+600000
+ 28745 multiletter control sequences out of 15000+600000
  473669 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,65p,743b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,65p,869b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_english.pdf (9 pages, 734474 bytes).
+Output written on cv_english.pdf (9 pages, 734166 bytes).
 PDF statistics:
  226 PDF objects out of 1000 (max. 8388607)
  155 compressed objects within 2 object streams
