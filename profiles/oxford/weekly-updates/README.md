@@ -1007,21 +1007,32 @@ DB
 
 #### week 3
 
-- working with Ash: 
+- working with Ash
     - got the Arches v7 (EA v4) installed
     - solved some issues
-- working with Will:
-    - got the KAHD (Iraqi Kurdistan) installed and data imported
+- KAHD database
+    - working with Will on the KAHD (Iraqi Kurdistan) database: installed and data imported
 - YHMP database
     - made some progess with GoDaddy
-    - prospective on the feasability to install this DB on a local server in Yemen:
-        + *What are the severe specs they need to prepare for YHMP?* see [Arches v3 requirements](https://arches.readthedocs.io/en/3.1/getting-started/#system-requirements)
-        + *Is this transfer technically possible?* Yes
-        + *Can we remotely help them to install the YHMP on a local server?* Yes. We need a SSH connection
-        + *And if yes, what will be the process and its timeline?* 10 full days (according to Mike F, using the case of Al-Ula DB)
-        + *How much is the cost of keeping/hosting YHMP online in a cloud (AWS)* currently (per month) EC2: $73.70 ; S3: ~$10; back-up: ~$10;
+    - prospective on the feasability to install this DB on a local server in Yemen with Bijan
 - continuing the preparation of the sys admin training
 - in contact with Cathy Giangrande (City of Dead, *aka* Cairo project) for external data import into EAMENA
     - preparing a workflow
 - attended the informal *Arches & Coffee* meeting
 - will work on AWS (clean-up, backups, etc.)
+
+#### week 4
+
+<center> Cancelled </center>
+
+#### week 5
+
+- Solving issues on Arches v7
+    - internationalisation
+    - export > 2,000
+- Cleaning AWS
+    - Optimizing compute
+- Working with SSL to get an HTTP**S** connection to KAHD and YHMP
+- Parsing the AAA
+- 
+
