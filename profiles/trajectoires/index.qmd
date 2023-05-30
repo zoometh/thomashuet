@@ -1,0 +1,52 @@
+---
+title: "IR Trajectoire"
+# subtitle: "Create beautiful interactive slide decks with Reveal.js"
+author: "Thomas Huet (University of Oxford, EAMENA project)"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/stat-fa-camel-2.png"
+    data-background-size: "20%"
+    data-background-opacity: "0.2"
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    code-fold: true
+    code-summary: "<small>Code</small>"
+    slide-number: true
+    # chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    # self-contained: true
+    # embed-resources: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/images/inst-uni-oxford_.png
+    footer: "<em>Trajectoires</em> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-asm-cnrs.png' style='height: 35px;vertical-align: middle;'> Université Paul-Valéry, Feb 2023 - Thomas Huet"
+    margin: 0
+    width: 1200
+---
+
+ 
+
+
+
+## Introduction
+
+```{r, echo=FALSE}
+library(shiny)
+library(rmarkdown)
+library(knitr)
+library(kableExtra)
+library(plotly)
+library(ggplot2)
+library(DT)
+library(dplyr)
+library(sf)
+library(sp)
+```
+
+
+## <font color="#ffffff"> 3D </font> {background-iframe="https://zoometh.github.io/reveal.js/projects/caa_3dlithic#/17" background-interactive="true"}
+
+## IIIF
+
+
