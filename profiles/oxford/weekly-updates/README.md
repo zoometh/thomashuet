@@ -1027,12 +1027,22 @@ DB
 
 #### week 5
 
-- Solving issues on Arches v7
-    - internationalisation
-    - export > 2,000
+- Arches v7
+    - solved issues
+        - internationalisation
+        - export > 2,000
+    - ongoing issues 
+        - geometry edition
+        - disordered columns during the export
 - Cleaning AWS
     - Optimizing compute
+- [KAHD database](http://18.203.169.24/) has been released
 - Working with SSL to get an HTTP**S** connection to KAHD and YHMP
-- Parsing the AAA
-- 
+- finished the ['sys admin' training'](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#sys-admin-training) for Mohammad Tabanjah (MoTA) and Omar Alhuniti (DoA), organised by Reuben Osborne
+- finished the AAA with Mohamed K.
+- filled the Grid Square number of 175 HP in the [Egyptian Western Desert](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/gs.geojson) with Mohamed K. and Fransesca S.
+- attended the informal *Arches & Coffee* meeting 
+    - on going development from Alan Tapscott Baltar (MAPHSA) on reference data
+- sheduled:
+    - presentation -- among other things -- of our ongoing work on EAMENA cultural periods to the [Pelagios Time Activity](https://github.com/historical-time) today at 1600
 
