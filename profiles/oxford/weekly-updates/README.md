@@ -1051,17 +1051,16 @@ DB
 
 - Arches v7:
     - solving issues (internationalisation, export > 2,000, etc.)
-- trainings:
-    - gave the ["sys admin' training"](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#sys-admin-training) under the lead of Reuben O.
-    - released the [KAHD database](http://18.203.169.24/) for KRG
-    - updating the [dedicated GitHub file](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2023)
-- AWS: clean-up, backups, optimizing, etc.
-- DB current business:
     - finished the AAA with Mohammed K.
     - help to fil the [Egyptian Western Desert](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/gs.geojson) BU with Mohamed K. and Fransesca S.
     - some progress with GoDaddy
     - attended the weekly *Arches & Coffee* meetings
     - contributing to GitHub with Ash
+- AWS: clean-up, backups, optimizing, etc.
+- trainings:
+    - gave the ["sys admin' training"](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#sys-admin-training) under the lead of Reuben O.
+    - released the [KAHD database](http://18.203.169.24/) for KRG
+    - updating the [dedicated GitHub file](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2023)
 - contributing to the [Arches Cultural Heritage Partners](https://github.com/achp-project) on reference data for Arches-based projects
 - attending some workshops (*Ethics and Decolonisation in Post-Conflict Archaeology* in Leicester; *Historical time* online, etc.)
 - upcoming work:
