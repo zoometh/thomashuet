@@ -1049,7 +1049,7 @@ DB
 #### EAMENA team meeting
 > 7/6/23
 
-- Arches v7:
+- Arches v7 current business:
     - solving issues (internationalisation, export > 2,000, etc.)
     - finished the AAA with Mohammed K.
     - help to fil the [Egyptian Western Desert](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/gs.geojson) BU with Mohamed K. and Fransesca S.
