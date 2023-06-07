@@ -916,7 +916,7 @@ DB
 #### EAMENA team meeting
 > 7/3/23
 
-- I have completed the bulk download of the Algerian Archaeological Atlas (AAA) with Mohammed: about 5,000 HPs. I would like to review it to assess the quality of the data and possibly the missing parts that can be filled in.
+- Completed the bulk download of the Algerian Archaeological Atlas (AAA) with Mohammed: about 5,000 HPs. I would like to review it to assess the quality of the data and possibly the missing parts that can be filled in.
 - deleting about 6,000 Iraqi HPs using the list provided by Will D.
 - set up a GeoServer next to the EAMENA database (serve GeoTIFFs online, etc.)
 - set up *reverse geocoding* on a training database (it allows you to find places from coordinates)
@@ -1046,3 +1046,32 @@ DB
 - sheduled:
     - presentation -- among other things -- of our ongoing work on EAMENA cultural periods to the [Pelagios Time Activity](https://github.com/historical-time) today at 1600
 
+#### EAMENA team meeting
+> 7/6/23
+
+- Arches v7:
+    - solving issues (internationalisation, export > 2,000, etc.)
+- trainings:
+    - gave the ["sys admin' training"](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#sys-admin-training) under the lead of Reuben O.
+    - released the [KAHD database](http://18.203.169.24/) for KRG
+    - updating the [dedicated GitHub file](https://github.com/eamena-project/eamena-arches-dev/tree/main/training#2023)
+- AWS: clean-up, backups, optimizing, etc.
+- DB current business:
+    - finished the AAA with Mohammed K.
+    - help to fil the [Egyptian Western Desert](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/gs.geojson) BU with Mohamed K. and Fransesca S.
+    - some progress with GoDaddy
+    - attended the weekly *Arches & Coffee* meetings
+    - contributing to GitHub with Ash
+- contributing to the [Arches Cultural Heritage Partners](https://github.com/achp-project) on reference data for Arches-based projects
+- attending some workshops (*Ethics and Decolonisation in Post-Conflict Archaeology* in Leicester; *Historical time* online, etc.)
+- upcoming work:
+    - permission issues
+    - upgrade the AWS instance to get more CPUs resources
+    - creating a stage instance of Arches v7
+    - steering the data integration of the ["City of Dead" project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cairo#cairo-project) into EAMENA
+- drop out project:
+    - AI/ML postdoc research stay for automated site recognition in desert areas
+- postponed works:
+    - cluster zooming
+    - getting HTTP**S** for KAHD and YHMP
+    - PeriodO alignement with Will D.
