@@ -1051,8 +1051,7 @@ DB
 
 - Arches v7 current business:
     - solving issues (internationalisation, export > 2,000, etc.)
-    - finished the AAA with Mohammed K.
-    - help to fil the [Egyptian Western Desert](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/gs.geojson) BU with Mohamed K. and Fransesca S.
+    - finished the AAA with Mohammed K. ; help to fil the [Egyptian Western Desert](https://github.com/eamena-project/eamena-arches-dev/blob/main/data/grids/gs.geojson) BU with Mohamed K. and Fransesca S.
     - some progress with GoDaddy
     - attended the weekly *Arches & Coffee* meetings
     - contributing to GitHub with Ash
