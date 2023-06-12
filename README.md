@@ -6,7 +6,7 @@ University of Oxford, School of Archaeology
 
 	- Associate Researcher, UMR 5140, ASM-CNRS, Université Montpellier 3
 
-<br><br>
+<br>
 
 <img align="left" width="22" height="22" src="img/gmail.png">  thomas.huet@arch.ox.ac.uk | thomashuet7@gmail.com |  
 
