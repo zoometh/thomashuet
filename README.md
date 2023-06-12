@@ -4,7 +4,7 @@
 University of Oxford, School of Archaeology
 <font size="2">2 South Parks Road, Oxford OX1 3TG, United Kingdom</font>
 
-- Associate Researcher, UMR 5140, ASM-CNRS, Université Montpellier 3
+	- Associate Researcher, UMR 5140, ASM-CNRS, Université Montpellier 3
 
 <br><br>
 
