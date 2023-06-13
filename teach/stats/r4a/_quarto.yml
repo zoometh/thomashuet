@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: pres
 
 website:
   title: "R4arch"
