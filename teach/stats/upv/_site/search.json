@@ -1,0 +1,247 @@
+[
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Statistics in Archaeology",
+    "section": "Introduction",
+    "text": "Introduction\n\n\n\n\n\n\n\nGrémy et Salmon, 1967\n\n\n\n“Le but de la statistique est d’étudier un certain nombre d’objets de même nature, mais qui présentent des caractéristiques variables susceptibles de mesure ou de classement”\n\n\n\n\n\n\n\n\nJoseph Staline, 1953\n\n\n\n“Смерть одного человека — трагедия, смерть миллионов — статистика”\n\n\n\n\n\n\n\n\nWinston Churchill, 1941\n\n\n\n“the only statistics you can trust are the ones you have falsified yourself”"
+  },
+  {
+    "objectID": "index.html#inequalities",
+    "href": "index.html#inequalities",
+    "title": "Statistics in Archaeology",
+    "section": "Inequalities",
+    "text": "Inequalities"
+  },
+  {
+    "objectID": "index.html#historiography-of-archaeology-12",
+    "href": "index.html#historiography-of-archaeology-12",
+    "title": "Statistics in Archaeology",
+    "section": "Historiography of Archaeology 1/2",
+    "text": "Historiography of Archaeology 1/2\n\n📅PrehistoryCulture-Historical\n\n\n\n\n\n\n\n\n\n\nStart\nMethod\nDescription\n\n\n\n\n1850s\nPrehistory\nevolution, geology, anthropology\n\n\n1950s\nCulture-Historical\nsimilarities, typology, chronology\n\n\n1960s\nNew archaeology\nchain operative, statistics, chronology (C14) \n\n\n1980s\nPost-processual\ndissimilarities, cultural relativism\n\n\n2020s\nTool-driven\nBig data, ML / DL, aDNA\n\n\n\n\n\n\n\n\n\nBoucher de Perthes, 1847, Antiquités celtiques et antédiluviennes\n\n\n\nConcomitance between biological “species” (C. Darwin) and archaeological “types” (O. Montelius). Unity of the history of Nature with that of Man (C. Lyell, geology)\n\n\n\n\n\n\n\n\n‘Monument druidique près de Gisors’: Baron Taylor, 1824, Voyages pittoresques et romantiques dans l’ancienne France\n\n\n\nFocused on chronology, rooted in academic/national traditions and develops in parallel with History as a ‘scientific’ discipline taught in universities."
+  },
+  {
+    "objectID": "index.html#historiography-of-archaeology-22",
+    "href": "index.html#historiography-of-archaeology-22",
+    "title": "Statistics in Archaeology",
+    "section": "Historiography of Archaeology 2/2",
+    "text": "Historiography of Archaeology 2/2\n\nNew ArchaeologyPost-ProcessualTool-driven\n\n\n\n\n \n\nR. & S. Binford, 1968, New Perspectives in Archaeology\n\n\n\nProcessualism, the advancement of statistics favors demonstrations based on observations, hypotheses, models and tests. With the development of anthropology, archaeology focuses on the recent past. Chronologies have an anthropological and explanatory purpose.\n\n\n\n\n\n\n\n\nLaurent Olivier, 2008, Le sombre abîme du temps\n\n\n\nPost-processualism1, archaeology adopts a qualitative point of view and insists on the importance of context and the variability of possible interpretations (relativism, multivocity)\n\n\n\n\n\n\n\n\nAutomatic detection of water basins in Angkor Bath with ML/AI, by Jürgen Landauer\n\n\n\nWith the development of computational archaeology (e.g. AI/ML, aDNA) and oceans of data, the archaeologist becomes a research software engineer. A single project probably cannot exploit the full potential of the data at hand. Data is managed and made FAIR2 to produce serendipity over the long term.\n\n\n\n\n\n\nLearn more: Renfrew and Bahn, 2020, Archaeology : Theories, Methods and Practice, p. 39 ff."
+  },
+  {
+    "objectID": "index.html#birth-of-statistics",
+    "href": "index.html#birth-of-statistics",
+    "title": "Statistics in Archaeology",
+    "section": "Birth of statistics",
+    "text": "Birth of statistics\n\nMeanMedianSignificance testNormal law\n\n\n\n\n\n\nSex ratio at birth\n\n\n\n\n\n“Anthropométrie ou mesure des différentes facultés de l’homme”, 1870, by A. Quetelet\n\n\n\n\n\n\n\n\n\nTitle page of E. Wright, 1599, ‘Certaine Errors in Navigation’\n\n\n\n\n\n\n\n\n\n\n\n\nJ. Arbuthnott, 1629-1710 census. Published in 1711, ‘Philosophical transactions, 27’\n\n\n\n\n\np-value and Z-score, two normalised test thresholds to estimate the significance of an observed distribution vs a random distribution\n\n\n\n\n\n\n\n\n\n\n\nA. Quetelet, 1821-1833 census\n\n\n\n\n\nA selection of Normal Distribution Probability Density Functions"
+  },
+  {
+    "objectID": "index.html#advanced-statistics",
+    "href": "index.html#advanced-statistics",
+    "title": "Statistics in Archaeology",
+    "section": "Advanced statistics",
+    "text": "Advanced statistics\n\nExpert SystemsAI/ML\n\n\n\n\n\n\nGarry Kasparov vs Deep Blue, 1996-1997\n\n\n\n\n\nHierachical clustering of the Iberian LBA “Warrior stelae”, Galàn 1993\n\n\n\n\n\nArtificial Intelligence & Machine Learning\n\n\n\n\nNatural language processing (NLP), prompted by ChatGPT, 2023\n\n\n\n\n\nExample of ML workflow applied to ceramics, S.H. Bickler, 2021\n\n\n\n\n\n\n\nStatistik (description of a state, a country): collecting population data through census, surveys != probability. Based on social data (!= mathematics). Statistics need to analyse large amount of data (dataset), Statistics are manded by institutions, to be interesting they need to be realised over the long term to allow comparisons. p-value is a test value, 95% = > .05"
+  },
+  {
+    "objectID": "index.html#glossary-of-statistics",
+    "href": "index.html#glossary-of-statistics",
+    "title": "Statistics in Archaeology",
+    "section": "Glossary of statistics",
+    "text": "Glossary of statistics"
+  },
+  {
+    "objectID": "index.html#type-of-statistics",
+    "href": "index.html#type-of-statistics",
+    "title": "Statistics in Archaeology",
+    "section": "Type of statistics",
+    "text": "Type of statistics\n\n📅DescriptiveExploratoryConfirmatory\n\n\n\n\n\n\n\nDescriptive\n\n\n\n\n\n\nExplanatory\n\n\n\n\n\n\nConfirmatory\n\n\n\n\n\n\nDescribe the population with the mean (μ), the median (M) and standard deviation (σ)\n\n\n\n\n\n\nScatterplot\n\n\n\n\n\n\n\nHistogram\n\n\n\n\n\n\n\nBoxplot\n\n\n\n\n\n\n\n\n\nLine chart\n\n\n\n\n\n\n\nPie Chart\n\n\n\n\n\n\n\nRadar chart\n\n\n\n\n\n\n\n\n\n\n\n\nClustering method, we move from a description to a modelling identifying central tendencies\n\n\n\n\n\n\nTest of\n\n\n\n\nconformity3 between the observed population and a theoretical distribution (e.g. normal law)\n\n\nhomogeneity between different populations\n\n\nrelation between several variables from the same population\n\n\n\n\n\n\n\n\nExplanatory -> New Archaeology"
+  },
+  {
+    "objectID": "index.html#middle-range-theories",
+    "href": "index.html#middle-range-theories",
+    "title": "Statistics in Archaeology",
+    "section": "Middle Range Theories",
+    "text": "Middle Range Theories\nArchaeology establishes facts and proposes models to connect these facts\n\nMRTExampleSingularityConformityIdentity\n\n\n\n\n\n\n\nModel of archaeological reasoning by Renfrew and Bahn, 2020\n\n\n\n\n\n“Sociological theory, if it is to advance significantly, must proceed on these interconnected planes”4 Robert K. Merton, 1968\n\n\n\n\n\n\n\n\n\n\n\n\nWe want to compare 3 different archaeological cultures5 (groups of settlements, sites, geographical regions, chronological periods, etc.): A, B, and C\n\n\n\n\n\n\n\n\n\n\n\nNone of the comparisons gives the same results\n\n⚠️ In practice, over-valuing a specific element by giving it a marker character is dangerous, as its originality makes its management uncontrollable.\n\n\n\n\n\n\n\n\n\n\n\n\nMost comparisons give the same results ️\n\n💡 Increase the matching success of the model by decreasing its precision, or decrease the matching success of the model by increasing its precision.\n\n\n\n\n\n\n\n\n\n\n\n\nAll the comparison give the same result ️\n\n⚠️️In practice, a common element in 3 or more different data sets is usually rare.\n\n\n\n\n\n\n\nmiddle range theories = comparisons"
+  },
+  {
+    "objectID": "index.html#entities",
+    "href": "index.html#entities",
+    "title": "Statistics in Archaeology",
+    "section": "Entities",
+    "text": "Entities\n\n1st lawWhere 🗺️When ⏰What 🏺How ⚙️Who 🤰🏽\n\n\n\n\n\n\n\n\nWaldo Tobler\n\n\n\n\n\n“everything is related to everything else, but near things are more related than distant things” Tobler, 1970\n\n\n\n\n\n\n\n\n\nPieter Bruegel the Elder, The Harversters, 1565\n\n\n\n\n\nKingdom of Macedon at the death of Philip II, 336 BC\n\n\n\n\n\n\n\n\n\nSpiral of geological times\n\n\n\n\n\nStartigraphic log and corresponding Harris matrix\n\n\n\n\n\n\n\n\n\nAn American suburb in the 1950s\n\n\n\n\n\nSeriation of Chassean potteries in South France\n\n\n\n\n\n\n\n\n\nAssembly line work in a Ford factory\n\n\n\n\n\nChaine opératoire of flint lamellas knapping\n\n\n\n\n\n\n\n\n\nThe British Royal Family6\n\n\n\n\n\nEstimate DNA mixture proportions of Modern Europeans"
+  },
+  {
+    "objectID": "index.html#conformity-1",
+    "href": "index.html#conformity-1",
+    "title": "Statistics in Archaeology",
+    "section": "Conformity",
+    "text": "Conformity\n\nCompare 1/3Compare 2/3Compare 3/3Regress\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n⬇️ distance matrix\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n  \n \n\n  \n    A \n    0.00 \n    3.24 \n    2.53 \n  \n  \n    B \n    3.24 \n    0.00 \n    1.05 \n  \n  \n    C \n    2.53 \n    1.05 \n    0.00"
+  },
+  {
+    "objectID": "index.html#khi-square",
+    "href": "index.html#khi-square",
+    "title": "Statistics in Archaeology",
+    "section": "Khi-square",
+    "text": "Khi-square\nχ 2\n\n\nObserved numbers\n\n\n\nCode\nlibrary(dplyr)\nlibrary(tibble)\n\ndf <- data.frame(patient = c(\"Mal.1\", \"Mal.2\", \"Mal.3\"),\n                 virus.A = c(12, 19, 13),\n                 virus.B = c(7, 7, 10),\n                 virus.C = c(11, 4, 5))\nkable(df) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24)\n\n\n\n\n \n  \n    patient \n    virus.A \n    virus.B \n    virus.C \n  \n \n\n  \n    Mal.1 \n    12 \n    7 \n    11 \n  \n  \n    Mal.2 \n    19 \n    7 \n    4 \n  \n  \n    Mal.3 \n    13 \n    10 \n    5 \n  \n\n\n\n\n\n\n\nCalculation of rows and columns sums\n\n\n\nCode\ndf.copy <- df\ndf.copy <- rbind(df.copy, colSums(df.copy[ , -1]))\ndf.copy[nrow(df.copy), \"patient\"] <- \"col.sum\"\ndf.copy <- cbind(df.copy, rowSums(df.copy[ , -1]))\ncolnames(df.copy)[ncol(df.copy)] <- \"row.sum\"\nkable(df.copy) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24) %>%\n  column_spec(ncol(df.copy), bold = TRUE) %>%\n  row_spec(nrow(df.copy), bold = TRUE)\n\n\n\n\n \n  \n    patient \n    virus.A \n    virus.B \n    virus.C \n    row.sum \n  \n \n\n  \n    Mal.1 \n    12 \n    7 \n    11 \n    30 \n  \n  \n    Mal.2 \n    19 \n    7 \n    4 \n    30 \n  \n  \n    Mal.3 \n    13 \n    10 \n    5 \n    28 \n  \n  \n    col.sum \n    24 \n    20 \n    44 \n    88 \n  \n\n\n\n\n\n\n\nCalculation of expected numbers (E)\n\n\n\nCode\nchisq <- chisq.test(df[ , -1])\ndf.copy2 <- as.data.frame(round(chisq$expected, 2))\ndf.copy2$patient <- df$patient\nkable(df.copy2) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24)\n\n\n\n\n \n  \n    virus.A \n    virus.B \n    virus.C \n    patient \n  \n \n\n  \n    15 \n    8.18 \n    6.82 \n    Mal.1 \n  \n  \n    15 \n    8.18 \n    6.82 \n    Mal.2 \n  \n  \n    14 \n    7.64 \n    6.36 \n    Mal.3 \n  \n\n\n\n\n\n\n\nDifferences between expected (E) and observed (O) numbers\n\n\n\nCode\ndf.copy3 <- as.data.frame(round(chisq$residuals, 2))\ndf.copy3$patient <- df$patient\nkable(df.copy3) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24)\n\n\n\n\n \n  \n    virus.A \n    virus.B \n    virus.C \n    patient \n  \n \n\n  \n    -0.77 \n    -0.41 \n    1.60 \n    Mal.1 \n  \n  \n    1.03 \n    -0.41 \n    -1.08 \n    Mal.2 \n  \n  \n    -0.27 \n    0.86 \n    -0.54 \n    Mal.3 \n  \n\n\n\n\n\n\n\n\n\n\n\n\nKhi-2 calculation\n\n\n\nCode\nkhi2.df <- matrix(nrow = length(df$patient),\n                                ncol = length(df$patient))\ncolnames(khi2.df) <- rownames(khi2.df) <- df$patient\nkhi2.df[1 , 2] <- round(chisq.test(df[, c(2, 3)])$p.value, 2)\nkhi2.df[2 , 1] <- round(chisq.test(df[, c(2, 3)])$p.value, 2)\nkhi2.df[1 , 3] <- round(chisq.test(df[, c(2, 4)])$p.value, 2)\nkhi2.df[3 , 1] <- round(chisq.test(df[, c(2, 4)])$p.value, 2)\nkhi2.df[2 , 3] <- round(chisq.test(df[, c(3, 4)])$p.value, 2)\nkhi2.df[3 , 2] <- round(chisq.test(df[, c(3, 4)])$p.value, 2)\nkhi2.df <- as.data.frame(khi2.df)\ncolor.me <- which(khi2.df < .1)\nkable(khi2.df) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24) %>%\n  column_spec(1, bold = TRUE)\n\n\n\n\n \n  \n      \n    Mal.1 \n    Mal.2 \n    Mal.3 \n  \n \n\n  \n    Mal.1 \n    NA \n    0.47 \n    0.08 \n  \n  \n    Mal.2 \n    0.47 \n    NA \n    0.22 \n  \n  \n    Mal.3 \n    0.08 \n    0.22 \n    NA \n  \n\n\n\n\n\n\n\n\n\n\np-value and Z-score, two normalised test thresholds to estimate the significance of an observed distribution vs a random distribution\n\n\nH0: ✔️ accept homogeneity hypothesis H1: ❌ reject homogeneity hypothesis"
+  },
+  {
+    "objectID": "index.html#coefficient",
+    "href": "index.html#coefficient",
+    "title": "Statistics in Archaeology",
+    "section": "Coefficient",
+    "text": "Coefficient\n\n\n\n\n\n\n\n\n\ncor\n\n\ninterpretation\n\n\n\n\n\n\n1\n\n\n…\n\n\n\n\n0.9\n\n\noustanding\n\n\n\n\n0.8\n\n\nexcellent\n\n\n\n\n0.7\n\n\nacceptable\n\n\n\n\n0.6\n\n\nweak\n\n\n\n\n…\n\n\n…\n\n\n\n\n\n\n\n\nAll are between [-1:1]\n\nCoefficient of correlation\n\n\nPearson’s r\n\n\nSpearman’s ρ\n\n\n\nCoefficient of determination: R2"
+  },
+  {
+    "objectID": "index.html#models",
+    "href": "index.html#models",
+    "title": "Statistics in Archaeology",
+    "section": "Models",
+    "text": "Models\n\nStatementExamplesProprietiesExample\n\n\n\n\n\n\n\n\nGeorge E. P. Box\n\n\n\n\n\n“All models are wrong, but some are useful” Box, 1976\n\n\n\n\n\n\n\n\n\n\n\n\nKroeber, A. L., 1923, Anthropology: culture patterns & processes\n\n\n\n\n\n\n\nGray, R. D., Bryant, D., & Greenhill, S. J., 2010, On the shape and fabric of human history. Philos. Trans. R. Soc. B, 365(1559), 3923-3933\n\n\n\n\n\n\n\n\n\n\npropriety\n\n\ndescription\n\n\nexample\n\n\n\n\n\n\nExplanatory\n\n\nnot over- or under-fitting\n\n\n\n\n\n\n\n\nRegularity\n\n\nreproducing data regularity\n\n\n\n\n\n\n\nRobustness\n\n\nnot sensitive to small changes in data\n\n\n\n\n\n\n\nParsimony\n\n\nthe simplest possible explanation is also the most probable\n\n\n\n\n\n\n\nVersioning\n\n\ncarry its own story\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(abandoned hypotheses, alternative versions, etc.) controlled vocabulary -> scale"
+  },
+  {
+    "objectID": "index.html#models---proprieties",
+    "href": "index.html#models---proprieties",
+    "title": "Statistics in Archaeology",
+    "section": "Models - Proprieties",
+    "text": "Models - Proprieties\n\nExplanatoryRegularityRobustnessParsimonyVersioning\n\n\n\n\nnot over- or under-fitting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n✔️ Fitting\n\n\n❌ Fitting\n\n\n\n\n\n\n\n\n\n\n\n\nreproducing data regularity (central tendencies)\n\n\n\n\n\n\n\n\n\n\n\n\n\nnot sensitive to small changes in data (reproducible)\n\n\n\n\n\n\n\n\n\n\n\n\n\nall things being equal, the simplest possible explanation for a phenomenon is also the most probable\n\n\n\n\n\n\n\n\n\n\n\n\n\ncarry its own story: abandoned assumptions, alternative versions, etc."
+  },
+  {
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "Statistics in Archaeology",
+    "section": "Data",
+    "text": "Data\n\nRawProcessedAggregatedMetaMissing\n\n\nRaw data - Primary data acquired via a device\n\n\n\n\n\n\n\n\n\n\n\nProcessed data - Working data (i.e. not definitive)\n\n\n\n\n\n\nAggregated data - Gathered data expressed in a summary form\n\n\n\n\n\n\n\nMetadata - data about data\n\n\n\n\n\nCode\nimg <- exiftoolr::exif_read(\"C:/Rprojects/thomashuet/teach/stats/images/data-meta-photo-microliths.jpg\")\nprint(paste0(\"Caption-Abstract: \", img[[\"Caption-Abstract\"]]))\n\n\n[1] \"Caption-Abstract: Microliths (narrow blade type): Conistone Moor (Late Mesolithic c. 6000 BC) \"\n\n\nCode\nprint(paste0(\"Copyright: \", img[[\"Copyright\"]]))\n\n\n[1] \"Copyright: The Yorkshire Archaeological & Historical Society\"\n\n\n\n\n\n\nMissing data - Lack of knowledge, e.g. NA (Not Available)\n\n\nCode\ndf <- data.frame(row.names = c(\"site_A\", \"site_B\", \"site_C\", \"site_D\"),\n                 Microliths =  c(10, 5, NA, 2),\n                 Scrapers =  c(7, 6, 10, 5),\n                 Burins =  c(13, 7, 4, NA))\nkable(df) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24)\n\n\n\n\n \n  \n      \n    Microliths \n    Scrapers \n    Burins \n  \n \n\n  \n    site_A \n    10 \n    7 \n    13 \n  \n  \n    site_B \n    5 \n    6 \n    7 \n  \n  \n    site_C \n    NA \n    10 \n    4 \n  \n  \n    site_D \n    2 \n    5 \n    NA \n  \n\n\n\n\n\nSums by column (with NA)\n\n\nCode\nsum.df.with.na <- as.data.frame(t(colSums(df)))\nkable(sum.df.with.na) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24)\n\n\n\n\n \n  \n    Microliths \n    Scrapers \n    Burins \n  \n \n\n  \n    NA \n    28 \n    NA \n  \n\n\n\n\n\nSums by column (without NA)\n\n\nCode\nsum.df.with.na <- as.data.frame(t(colSums(df, na.rm = T)))\nkable(sum.df.with.na) %>%\n  kable_styling(full_width = FALSE, position = \"center\", font_size = 24)\n\n\n\n\n \n  \n    Microliths \n    Scrapers \n    Burins \n  \n \n\n  \n    17 \n    28 \n    24"
+  },
+  {
+    "objectID": "index.html#boolean-operators",
+    "href": "index.html#boolean-operators",
+    "title": "Statistics in Archaeology",
+    "section": "Boolean operators",
+    "text": "Boolean operators\n\nORANDNOTExample\n\n\n\nTRUE | TRUE\n\n[1] TRUE\n\n\n\n\n\nTRUE | FALSE\n\n[1] TRUE\n\n\n\n\n\nTRUE | NA\n\n[1] TRUE\n\n\n\n\n\nFALSE | NA\n\n[1] NA\n\n\n\n\n\n\n\nTRUE & TRUE\n\n[1] TRUE\n\n\n\n\n\nTRUE & FALSE\n\n[1] FALSE\n\n\n\n\n\nTRUE & NA\n\n[1] NA\n\n\n\n\n\nFALSE & NA\n\n[1] FALSE\n\n\n\n\n\n\n\n!TRUE\n\n[1] FALSE\n\n\n\n\n\n!FALSE\n\n[1] TRUE\n\n\n\n\n\n!NA\n\n[1] NA"
+  },
+  {
+    "objectID": "index.html#binary-topological-relationships",
+    "href": "index.html#binary-topological-relationships",
+    "title": "Statistics in Archaeology",
+    "section": "Binary Topological Relationships",
+    "text": "Binary Topological Relationships\n\nSpatialTemporalExample\n\n\n\n\n\n\n\n\n\n\n\n\nKingdom of Macedon at the death of Philip II, 336 BC\n\n\n\n\n\n\n\n\n\nInterval Temporal Logic, Allen, 1984\n\n\n\n\n\nCentral and North-Western Mediterranean Impressed Wares chronologies, 2022, Binder et al."
+  },
+  {
+    "objectID": "index.html#scales",
+    "href": "index.html#scales",
+    "title": "Statistics in Archaeology",
+    "section": "Scales",
+    "text": "Scales\n\nQuantitativeOrdinalNominalChange of scaleColor ramps\n\n\n\n\n\n\n\nUnits of length (cm, m, km, kg, years, etc.). Statistical units are quantified by continuous measurable intervals.\n\n\n\n\n\n\n\n\n\nRanks (discrete). Ordered sequence of values (e.g. ‘very cold’, ‘cold’, ‘lukewarm’, ‘hot’, ‘very hot’) without establishing the distance between consecutive values.\n\n\n\n\n\n\n\n\n\nQualitative categories that cannot be ordered (e.g. ‘green’, ‘yellow’, ‘red’).\n\n\n\n\n\n\n\n\n\nfrom\n\n\nto\n\n\ntransformation\n\n\nexample\n\n\n\n\n\n\nQuantitative\n\n\nOrdinal\n\n\ndiscretization\n\n\n[1:10], [11:20], etc.\n\n\n\n\nOrdinal\n\n\nQuantitative\n\n\nas.numeric()\n\n\n\"low\" = 1, \"medium\" = 2\n\n\n\n\nOrdinal\n\n\nNominal\n\n\nas.factor()\n\n\n\n\n\n\n\n\n\n\n\nQuantitative\n\n\n\n\n\n\n\n\nOrdinal\n\n\n\n\n\n\n\n\nNominal"
+  },
+  {
+    "objectID": "index.html#dim-data",
+    "href": "index.html#dim-data",
+    "title": "Statistics in Archaeology",
+    "section": "1-dim data",
+    "text": "1-dim data\n\nunivariate Data with 1 dimension = 1 measure Histogram = discretization = bins = change of scale\n\n\nDataset: archdata R package - Mesolithic dataset"
+  },
+  {
+    "objectID": "index.html#dim-data-1",
+    "href": "index.html#dim-data-1",
+    "title": "Statistics in Archaeology",
+    "section": "2-dim data",
+    "text": "2-dim data\n\nTODO: show coeff value bi-variate utiliser la regression de Renfrew, C., & Bahn, P. (2012). Archaeology: theories, methods and practice. Thames and Hudson regression = parcimonious = RMS SD, standardize residuals: standard deviation. The SD represents the “distance” between the mean value and the value under consideration, expressed as a number of standard deviations. In the context of a regression, the SD gives an idea of the “distance” of an individual (described by one or more variables) from the value estimated if the model were perfect (R2=1, i.e. all points aligned on the least squares line) (SS BIB). The standard deviation between the value that the variable characterising an individual takes and its expected value (normal distribution). The standard deviation (or standardised residuals) makes it possible to avoid the size effect. The latter would not allow working with individuals with extremely different numbers (BIB 1526). If the series studied is normal, the standard deviations of the values of this series follow a normal distribution of mean 0 and standard deviation 1, i.e. a centred-reduced normal distribution (internet)\n\n\nHodder, I. 1974. A Regression Analysis of Some Trade and Marketing Patterns. World Archaeology 6: 172-189.\nHodder, I. and C. Orton. 1976. Spatial Analysis in Archaeology, pp 117-119. Dataset: archdata R package - OxfordPots dataset"
+  },
+  {
+    "objectID": "index.html#dim-data-spatial-13",
+    "href": "index.html#dim-data-spatial-13",
+    "title": "Statistics in Archaeology",
+    "section": "2-dim data spatial 1/3",
+    "text": "2-dim data spatial 1/3"
+  },
+  {
+    "objectID": "index.html#dim-data-spatial-23",
+    "href": "index.html#dim-data-spatial-23",
+    "title": "Statistics in Archaeology",
+    "section": "2-dim data spatial 2/3",
+    "text": "2-dim data spatial 2/3\nAverage Nearest Neighbor Index (NNI)\n\nResultsDocumentation\n\n\n\n\n\n\n \n  \n      \n    NNI \n    z.score \n    p.value \n    expect.mean.dist \n    observ.mean.dist \n  \n \n\n  \n    random \n    1.69 \n    5.91 \n    0 \n    0.85 \n    1.43 \n  \n  \n    cluster \n    1.64 \n    5.51 \n    0 \n    0.39 \n    0.64 \n  \n  \n    regular \n    2.67 \n    12.75 \n    0 \n    0.84 \n    2.24 \n  \n\n\n\n\n\n\n\n\nhttps://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-statistics/average-nearest-neighbor.htm"
+  },
+  {
+    "objectID": "index.html#dim-data-spatial-33",
+    "href": "index.html#dim-data-spatial-33",
+    "title": "Statistics in Archaeology",
+    "section": "2-dim data spatial 3/3",
+    "text": "2-dim data spatial 3/3"
+  },
+  {
+    "objectID": "index.html#section-2",
+    "href": "index.html#section-2",
+    "title": "Statistics in Archaeology",
+    "section": "",
+    "text": "Random patterns versus Clustered patterns\n\nRock art sitesRock art surfacesBronze hoards\n\n\n\n\n\n\nCups-and-rings rock art concentration (⬤) in Millestone Burn, Northumberland, England (Bradley 1996)\n\n\n\nEngraved rock sites (⬤) are concentrated on Millstone Grits (sandstone) with a statistical significance in comparison to a theoretical random distribution (○).\n\n\n\n\n\n\n\n\nNeolithic/Early Bronze Age engraved rock, Mont Bego, France (Chippindale 1988)\n\n\n\nOn the observed rock surface (A), engravings are arranged in a more orderly manner in a random process (B and C), but the former remains far from an orderly arrangement without overlapping engravings.\n\n\n\n\n\n\n\n\nDistribution of the Late Bronze Age Ewart Park hoards, Atlantic Europe (Wiseman 2018)\n\n\n\nHoards from the Ewart Park phase show a normal distribution when considering size, fragmentation and number of pieces. The hoards would result from a random accumulation and breaking\n\n\n\n\n\n\nrandom = clustered ="
+  },
+  {
+    "objectID": "index.html#section-3",
+    "href": "index.html#section-3",
+    "title": "Statistics in Archaeology",
+    "section": "",
+    "text": "Regular pattern\n\nTumulusPrincely sitesEmporionsCaravanserais\n\n\n\n\n\n\nEarly Bronze Age tumuli in Brittany (Brun 2011)\n\n\n\nThe ‘princely’ tombs are evenly distributed in space, separated from each other by a distance of 12.5 km, i.e. less than three hours’ walk round trip\n\n\n\n\n\n\n\n\nEarly Iron Age princely sites at the North of the Alps (Brun 2011)\n\n\n\nIn the 6th century BC, the ‘princely sites’ are separated from each other by an average distance of about 50 km. This distance can be covered in a day on horseback.\n\n\n\n\n\n\n\n\nMain emporions in the Gulf of Lion, NW Mediterranean (Gailledrat 2005)\n\n\n\nDuring the same period (6th c. BC) coastal trading posts installed almost systematically at the mouth of river valleys and approximately 40 km from each other (1 day’s cabotage)\n\n\n\n\n\n\n\n\nCaravanserais in Iran (Kleiss 1996 )\n\n\n\nDuring the Late Islamic period (15th-18th c. AD) trade posts (caravanserais) have been build along trading roads. They are close to water sources and separated from each other by about 20-30 km (1 day’s transport).\n\n\n\n\n\n\nregular = competition"
+  },
+  {
+    "objectID": "index.html#section-4",
+    "href": "index.html#section-4",
+    "title": "Statistics in Archaeology",
+    "section": "",
+    "text": "Gradient pattern\n\n\n\n\nAmmerman and Cavalli-Sforza, 1971, Measuring the rate of spread of early farming in Europe\n\n\n\nDiffusion (spatial and temporal). In the case of a linear gradient, the calculation of the centroid of a group of points is a good indicator of its evolution."
+  },
+  {
+    "objectID": "index.html#dim-data-shape",
+    "href": "index.html#dim-data-shape",
+    "title": "Statistics in Archaeology",
+    "section": "2-dim data shape",
+    "text": "2-dim data shape\n\nCurrent dataset: Matzig, D.N., Hussain, S.T. and Riede, F. Design Space Constraints and the Cultural Taxonomy of European Final Palaeolithic Large Tanged Points (…)"
+  },
+  {
+    "objectID": "index.html#dim-data-2",
+    "href": "index.html#dim-data-2",
+    "title": "Statistics in Archaeology",
+    "section": "3-dim data",
+    "text": "3-dim data\n\nCurrent dataset: ANR Itineris\n\n\nUseful when data are complete (chemical composition, genetics, etc.)"
+  },
+  {
+    "objectID": "index.html#dim-or-more-data",
+    "href": "index.html#dim-or-more-data",
+    "title": "Statistics in Archaeology",
+    "section": "3-dim or more data",
+    "text": "3-dim or more data\n\nFactorial Analysis (FA)\n\n\n\n\n\n\n\n➡️\n\n\n\n\n\nFactorial Analysis is the generic term for multivariate (or multifactorial) analysis"
+  },
+  {
+    "objectID": "index.html#dim-or-more-data-1",
+    "href": "index.html#dim-or-more-data-1",
+    "title": "Statistics in Archaeology",
+    "section": "3-dim or more data",
+    "text": "3-dim or more data\n\nDatasetCAPCAHCALDASource\n\n\n\n\n\n\nMap of NE Iberia with locations of the studied sites\n\n\n\n\n\nChrono-typology seriation of the 127 studied assemblages from Late Bronze Age to Late Antiquity\n\n\n\n\n\n\nCorrespondence Analysis (CA)\n\n\n\n\n\\(\\ge\\) 2 rows, \\(\\ge\\) 2 columns, \\(\\emptyset\\) missing data, \\(\\emptyset\\) negative values, \\(\\forall\\) data with the same scale\n\n\n\n\nCA of sites’ NISP profiles during the LBA\n\n\n\n\n\n\nPrincipal Component Analysis (PCA)\n\n\n\n\nquantitative data, \\(\\ge\\) 3 rows, \\(\\ge\\) 3 columns, nb rows \\(\\ge\\) 10x nb of columns\n\n\n\n\nPCA of sites’ NISP profiles during the MIA2\n\n\n\n\n\n\nHierachical Clustering Analysis (HCA)\n\n\n\n\nrelated to CA, PCA or MFA\n\n\n\n\nHCA of sites’ NISP profiles during the LBA\n\n\n\n\n\n\nLinear Discriminant Analysis (LDA)\n\n\n\n\nsensitive to outliers, the size of the smallest group must be larger than the number of predictor variables\n\n\n\n\nLDA of sites’ NISP profiles during the LBA\n\n\n\n\n\n\n\n\n\n\nEspinet et al., “Resilience and livestock adaptations to demographic growth and technological change (…)” PloS one 16.2 (2021)"
+  },
+  {
+    "objectID": "index.html#seriation",
+    "href": "index.html#seriation",
+    "title": "Statistics in Archaeology",
+    "section": "Seriation",
+    "text": "Seriation\n\nSeriation = Guttman effect = horse shoe = arc = relation directe sur la sphere\n\n\nCurrent dataset: Schneider A., 2020, Multivariate Statistical Analysis of Archaeological Contexts: The case study of the Early La Tène Cemetery of Szentlőrinc, Hungary"
+  },
+  {
+    "objectID": "index.html#practice",
+    "href": "index.html#practice",
+    "title": "Statistics in Archaeology",
+    "section": "Practice ",
+    "text": "Practice \nUse of the OxfordPots dataset (archdata R package), to reproduce the linear regression of Oxford potteries distribution by Fulford and Hodder7\n\n\n\nRegression analysis of Late Roman fine ware (Oxford pots) presumably transported by river (black circles) or land (hollow circles)\n\n\nR code:\ninstall.packages(\"archdata\")\nlibrary(archdata)\ndata(\"OxfordPots\")\nOxfordPots$OxfordPct.log <- log(OxfordPots$OxfordPct)\nOxford.water.transport <- subset(OxfordPots, WaterTrans == 1)\nOxford.water.transport.no <- subset(OxfordPots, WaterTrans == 0)\nplot(x = Oxford.water.transport$OxfordDst,\n     y = Oxford.water.transport$OxfordPct.log,\n     xlim = c(0, max(Oxford.water.transport$OxfordDst)),\n     ylim = c(0, max(Oxford.water.transport$OxfordPct.log)),\n     pch = 16,\n     xlab = \"Distance from Oxford kilns (miles)\", \n     ylab = \"Percentage of Oxford pottery (Logarithmic scale)\")\npoints(x = Oxford.water.transport.no$OxfordDst,\n       y = Oxford.water.transport.no$OxfordPct.log)\nabline(lm(OxfordPct.log ~ OxfordDst, data = Oxford.water.transport))\nabline(lm(OxfordPct.log ~ OxfordDst, data = Oxford.water.transport.no))\n\n\n\n\n\nhttps://github.com/zoometh/thomashuet/blob/main/teach/stats/stats/dim2/regression-basic.R"
+  },
+  {
+    "objectID": "index.html#bibliographic-resources",
+    "href": "index.html#bibliographic-resources",
+    "title": "Statistics in Archaeology",
+    "section": "Bibliographic resources",
+    "text": "Bibliographic resources\n\n\nRenfrew, C., & Bahn, P. (2012). Archaeology: theories, methods and practice. Thames and Hudson.\n\n\n\n\n\n\n\nDjindjian, F., & Gardin, J. C. (1991). Méthodes pour l’archéologie. Paris: A. Colin.\n\n\n\n\n\n\n\nChenorkian R. (1996). Pratique archéologique statistique et graphique. Paris: Errance et Adam.\n\n\n\n\n\n\n\nBarceló, J. A. (2007). Introducción al estudio de la variabilidad de las evidencias arqueológicas. Bellaterra: Universitat Autònoma de Barcelona."
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Statistics in Archaeology",
+    "section": "Contact",
+    "text": "Contact\n\n thomas.huet@arch.ox.ac.uk\n https://github.com/zoometh/thomashuet/issues/1\n\n\n\n\nStatistics in Archaeology  Université Paul-Valéry, Feb 2023 - Thomas Huet"
+  }
+]

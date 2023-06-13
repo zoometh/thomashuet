@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "index.html#forewords",
+    "href": "index.html#forewords",
+    "title": "General Introduction to S12",
+    "section": "Forewords",
+    "text": "Forewords\n\n\n\n\nWe welcome papers dealing with new theoretical, methodological and research software developments in any of the above fields, in order to promote shared practices and the discovery of new ideas and paradigms."
+  },
+  {
+    "objectID": "index.html#bayesian-modelling",
+    "href": "index.html#bayesian-modelling",
+    "title": "General Introduction to S12",
+    "section": "Bayesian modelling",
+    "text": "Bayesian modelling"
+  },
+  {
+    "objectID": "index.html#stratigraphic-modelling",
+    "href": "index.html#stratigraphic-modelling",
+    "title": "General Introduction to S12",
+    "section": "Stratigraphic modelling",
+    "text": "Stratigraphic modelling\nHarris matrix"
+  },
+  {
+    "objectID": "index.html#temporal-logics",
+    "href": "index.html#temporal-logics",
+    "title": "General Introduction to S12",
+    "section": "Temporal logics",
+    "text": "Temporal logics\n\n“The archaeological research community has otherwise only brought too little attention to recent research results in temporal logics.”"
+  },
+  {
+    "objectID": "index.html#seriation-techniques",
+    "href": "index.html#seriation-techniques",
+    "title": "General Introduction to S12",
+    "section": "Seriation techniques",
+    "text": "Seriation techniques"
+  },
+  {
+    "objectID": "index.html#chronological-networks",
+    "href": "index.html#chronological-networks",
+    "title": "General Introduction to S12",
+    "section": "Chronological networks",
+    "text": "Chronological networks"
+  },
+  {
+    "objectID": "index.html#linked-open-time-data-lotd",
+    "href": "index.html#linked-open-time-data-lotd",
+    "title": "General Introduction to S12",
+    "section": "Linked Open Time Data (LOTD)",
+    "text": "Linked Open Time Data (LOTD)"
+  },
+  {
+    "objectID": "index.html#conclusive-words",
+    "href": "index.html#conclusive-words",
+    "title": "General Introduction to S12",
+    "section": "Conclusive words",
+    "text": "Conclusive words"
+  },
+  {
+    "objectID": "index.html#running-order",
+    "href": "index.html#running-order",
+    "title": "General Introduction to S12",
+    "section": "Running Order",
+    "text": "Running Order\n\n\n\n\n\nPaper\n\n\nauthors\n\n\nhour\n\n\n\n\n\n\nGeneral introduction\n\n\nLevy et al.\n\n\n\n\n\n\nAoristic temporal study of heterogeneous amphora data in Roman Germania reveals centuries-long change in regional patterns of production and consumption\n\n\nBrughmans et al.\n\n\n\n\n\n\nTemporal Modelling of the Roman Marble Trade\n\n\nTaelman\n\n\n\n\n\n\nRight on time: Chronological and stratigraphic modelling of the occupational surfaces at the lacustrine site of La Draga (Lake Banyoles, Spain). Bayesian analysis of C14 dates, tree-ring data and stratigraphical information\n\n\nAndreaki and Barcelo\n\n\n\n\n\n\nBeyond chronological networks: a comparison of formal models for archaeological chronology\n\n\nLevy\n\n\n\n\n\n\nBREAK HERE\n\n\n\n\n\n\n\n\nAn Alternative Method for Sequence Matching in Dendrochronology using Dynamic Time Warping\n\n\nOchocki and Bronk Ramsey\n\n\n\n\n\n\nDendrochronological networks: from time series to networks and back to spatio-temporal patterns again\n\n\nVisser\n\n\n\n\n\n\nEXTENDING THE EXTENDED MATRIX (EM) with CIDOC-CRM: A FORMAL METHOD and RESEARCH SOFTWARE for VIRTUAL RECONSTRUCTION PROCESSES and beyond\n\n\nGiovannini and Demetrescu\n\n\n\n\n\n\nConventions for Archaeological Stratigraphic and Chronological Data\n\n\nMay and Taylor\n\n\n\n\n\n\nAutomating chronology construction and archiving (FAIR)ly along the way\n\n\nBuck et al.\n\n\n\n\n\n\nChronOntology for periodisations in Entangled Africa\n\n\nSchmidle et al.\n\n\n\n\n\n\n\n\n\n\nS12. Chronological modelling: formal methods and research software  https://github.com/archaeochrono/caa23 CAA23, Amsterdam, 2023"
+  }
+]
