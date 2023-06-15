@@ -2,7 +2,7 @@
 title: "Report with R Markdown"
 author: "Thomas Huet, University of Oxford "
 title-slide-attributes:
-    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png"
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/R4Archaeo/www/logo.png"
     data-background-size: "33%"
     data-background-opacity: "0.2"
 format:
@@ -15,7 +15,7 @@ format:
     margin: 0.01
 bibliography: references.bib
 pagetitle: Report with R Markdown
-footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teachings/stats/R4Archaeo/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2023 - <em>presented by </em> Thomas Huet"
+footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/R4Archaeo/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2023 - <em>presented by </em> Thomas Huet"
 ---
 
 ## Introduction

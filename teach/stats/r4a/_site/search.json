@@ -186,7 +186,7 @@
     "href": "index.html#yaml-dates",
     "title": "Report with R Markdown",
     "section": "YAML dates",
-    "text": "YAML dates\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%D')'\"\n---\n\n05/25/23\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%d %B %Y')'\"\n---\n\n25 May 2023\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
+    "text": "YAML dates\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%D')'\"\n---\n\n06/13/23\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%d %B %Y')'\"\n---\n\n13 June 2023\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
   },
   {
     "objectID": "index.html#yaml-output",
@@ -207,7 +207,7 @@
     "href": "index.html#yaml-references",
     "title": "Report with R Markdown",
     "section": "YAML references",
-    "text": "YAML references\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"25 May 2023\"\nbibliography: references.bib\n---\n\nReference the bibliographic file (e.g. references.bib). Here in the same folder as the .Rmd file.\n\nsee Xie et al. (2018)"
+    "text": "YAML references\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"13 June 2023\"\nbibliography: references.bib\n---\n\nReference the bibliographic file (e.g. references.bib). Here in the same folder as the .Rmd file.\n\nsee Xie et al. (2018)"
   },
   {
     "objectID": "index.html#styling-1",

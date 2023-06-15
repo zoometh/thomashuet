@@ -1073,3 +1073,16 @@ DB
     - cluster zooming
     - getting HTTP**S** for KAHD and YHMP
     - PeriodO alignement with Will D.
+
+#### week 8
+
+- in contact with Sayantani and Will about the CPF training ("CPF catch-up", Slack, mails, etc.)
+- working, testing and documenting [EAMENA user profiles](dbs/database.eamena/docs/users)
+- GitHub:
+    - updating the [eamena-arches-dev](https://github.com/eamena-project) repository
+    - updating the [Arches Cultural Heritage Partners](https://github.com/achp-project)
+- working on optimizing the [KAHD database](http://18.203.169.24/) on AWS
+- ["City of Dead" project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cairo#cairo-project) meeting with Cathy Giangrande, Bill & Bijan
+- attended:
+    - *Arches & Coffee* meeting
+    - Open Access Steering Group (OASG)
