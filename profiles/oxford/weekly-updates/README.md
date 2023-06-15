@@ -1086,3 +1086,4 @@ DB
 - attended:
     - *Arches & Coffee* meeting
     - Open Access Steering Group (OASG)
+    - SPECTRA HT meeting
