@@ -102,11 +102,12 @@ University of Oxford, School of Archaeology
 			<a href="https://zoometh.github.io/rockart" target="_blank">
 				<img src="img/prj_rockart.png" width='150px' />
 			</a>
-		</td><td>
+		</td>https://github.com/zoometh/Rdev<td>
 		</td>
 	</tr><tr>
 		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, artifacts, etc., with open-source apps</th>
-		<th style="padding:10px"></th>
+		<th style="padding:10px">Miscellaneous of test files and functions for R, Python, JavaScript, HTML, etc.
+</th>
 </table>
 </font>
   
