@@ -10,7 +10,7 @@ University of Oxford, School of Archaeology
 
 <img align="left" width="22" height="22" src="img/gmail.png">  thomas.huet@arch.ox.ac.uk | thomashuet7@gmail.com |  
 
-<img align="left" width="22" height="22" src="img/webpro.png">  [School of Archaeology](https://archit.web.ox.ac.uk/people/dr-thomas-huet), [EAMENA project](https://eamena.web.ox.ac.uk/user)
+<img align="left" width="22" height="22" src="img/webpro.png">  [School of Archaeology](https://archit.web.ox.ac.uk/people/dr-thomas-huet) | [EAMENA project](https://eamena.web.ox.ac.uk/user)
 
 <img align="left" width="22" height="22" src="img/phone.png">  +44 (0)1865 611660
 
@@ -37,7 +37,7 @@ University of Oxford, School of Archaeology
 
 <ul>
   <li>project: https://eamena.web.ox.ac.uk</li>
-  <li>GitHub: https://github.com/eamena-oxford </li>
+  <li>GitHub: https://github.com/eamena-project </li>
 </ul>
 
 ### OTHER PROJECTS
@@ -103,13 +103,10 @@ University of Oxford, School of Archaeology
 				<img src="img/prj_rockart.png" width='150px' />
 			</a>
 		</td><td>
-			<a href="https://github.com/zoometh/zoowork" target="_blank">
-				<img src="img/prj_zoowork.png" width='150px' />
-			</a>
 		</td>
 	</tr><tr>
 		    <th style="padding:10px">Multi-paradigm and multi-scale 3D management of rock-art, artifacts, etc., with open-source apps</th>
-		<th style="padding:10px">R package Zoowork : Methods for Zooarchaeology</th>
+		<th style="padding:10px"></th>
 </table>
 </font>
   
