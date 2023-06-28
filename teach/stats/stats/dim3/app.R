@@ -6,7 +6,25 @@ Sys.setlocale("LC_ALL", "C")
 library(plotly)
 # library(NbClust)
 
-dfisotops <- read.csv2("https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/stats/dim3/dfisotops.csv", sep = ";") # GH
+iti <- T
+
+if(iti){
+  # Itineris dataset
+  df.iso <- "https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/stats/dim3/dfisotops.csv"
+  dfisotops <- read.csv2(df.iso, sep = ";") # GH
+  cols <- c("Pb206_Pb204", "Pb207_Pb204", "Pb208_Pb204")
+} else {
+  # Shadreck dataset
+  df.iso <- "C:/Users/Thomas Huet/Desktop/Shadreck data/XRF_Majors.csv"
+  dfisotops <- read.csv2(df.iso, sep = ";") 
+  rownames(dfisotops) <- dfisotops[,1]
+  dfisotops[,1] <- NULL
+  cols <- colnames(dfisotops[1:14])
+}
+
+
+# dfisotops <- read.csv2(df.iso, sep = ";") # GH
+
 # dfisotops$X <- NULL
 # dfisotops <- read.csv2(paste0(getwd(), "/dfisotops.csv"), sep = ";") # server
 # dfisotops <- read.csv2(paste0(getwd(), "/dfisotops.csv"),  sep = ";") # locally
@@ -17,7 +35,7 @@ dfisotops <- read.csv2("https://raw.githubusercontent.com/zoometh/thomashuet/mai
 # nb.centers.best <- centers.best$Best.nc[1, "Gap"]
 
 
-dfkmeans <- kmeans(x = dfisotops[, c("Pb206_Pb204", "Pb207_Pb204", "Pb208_Pb204")],
+dfkmeans <- kmeans(x = dfisotops[, cols],
                    centers = 3,
                    nstart = 20)
 dfisotops$cluster <- dfkmeans$cluster
