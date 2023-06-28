@@ -114,10 +114,10 @@ University of Oxford, School of Archaeology
   
 ### GITHUB ORGANISATIONS
 
-<img src="https://avatars.githubusercontent.com/u/48350246?s=400&u=2ca5ec5fae595ec22b8008a24b07dd97f920141d&v=4" width='30px' /><https://github.com/eamena-project><br>
-<img src="https://avatars.githubusercontent.com/u/49449374?s=200&v=4" width='30px' /><https://github.com/sslarch><br>
-<img src="https://avatars.githubusercontent.com/u/118306692?s=200&v=4" width='30px' /><https://github.com/historical-time><br>
-<img src="https://avatars.githubusercontent.com/u/128705097?s=200&v=4" width='30px' /><https://github.com/achp-project><br>
-<img src="https://avatars.githubusercontent.com/u/133908146?s=200&v=4" width='30px' /><https://github.com/sauri-gravats><br>
+<img src="https://avatars.githubusercontent.com/u/48350246?s=400&u=2ca5ec5fae595ec22b8008a24b07dd97f920141d&v=4" width='30px' /> <https://github.com/eamena-project><br>
+<img src="https://avatars.githubusercontent.com/u/49449374?s=200&v=4" width='30px' /> <https://github.com/sslarch><br>
+<img src="https://avatars.githubusercontent.com/u/118306692?s=200&v=4" width='30px' /> <https://github.com/historical-time><br>
+<img src="https://avatars.githubusercontent.com/u/128705097?s=200&v=4" width='30px' /> <https://github.com/achp-project><br>
+<img src="https://avatars.githubusercontent.com/u/133908146?s=200&v=4" width='30px' /> <https://github.com/sauri-gravats><br>
 
 ---
