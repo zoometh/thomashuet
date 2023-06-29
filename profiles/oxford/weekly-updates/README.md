@@ -1092,6 +1092,7 @@ DB
 #### week 10
 
 - finished the CPF training last Thursday
+    - plan a Palestinian DB ready by the beginning of December 2023
 - tracking errors identified during the training:
     - refering to Ash and other members of the team
     - searching answers on the Arches forum
@@ -1104,3 +1105,7 @@ DB
 - will work on the deployement of a training of Arches v7 from mid-July
 - attended:
     - *Arches & Coffee* meeting
+- plan to prepare a talk on big data, with Ash as one of the first author: https://bhdc.earth/
+- will work on:
+    - different DB issues, with Ash
+    - the network issue we faced during the training
