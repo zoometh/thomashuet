@@ -1092,10 +1092,10 @@ DB
 #### week 10
 
 - finished the CPF training last Thursday
-- tracking troubles identified during the training:
+- tracking errors identified during the training:
     - refering to Ash and other members of the team
     - searching answers on the Arches forum
-- DB v7 current business (EA permissions, KRG, etc.)
+- DB v7 current business (EA permissions, Clustering, KRG, etc.)
 - will work on the deployement of a training of Arches v7 from mid-July
 - attended:
     - *Arches & Coffee* meeting
