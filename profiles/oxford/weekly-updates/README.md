@@ -1105,7 +1105,7 @@ DB
 - will work on the deployement of a training of Arches v7 from mid-July
 - attended:
     - *Arches & Coffee* meeting
-- plan to prepare a talk on big data, with Ash as one of the first author: https://bhdc.earth/
+- plan to prepare a talk on big data, cultural and environment, with Ash as one of the first author: https://bhdc.earth/
 - will work on:
     - different DB issues, with Ash
     - the network issue we faced during the training
