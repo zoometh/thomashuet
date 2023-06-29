@@ -1096,6 +1096,11 @@ DB
     - refering to Ash and other members of the team
     - searching answers on the Arches forum
 - DB v7 current business (EA permissions, Clustering, KRG, etc.)
+    - training
+        - deletion of trainees' data?
+        - update of trainees' permissions (currently: read/write)
+    - Guest profile
+        - can read the coordinates
 - will work on the deployement of a training of Arches v7 from mid-July
 - attended:
     - *Arches & Coffee* meeting
