@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  30 JUN 2023 11:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  30 JUN 2023 11:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -685,35 +685,35 @@ Overfull \hbox (40.46342pt too wide) in paragraph at lines 422--423
  []
 
 
-Overfull \hbox (1.35399pt too wide) in paragraph at lines 434--435
+Overfull \hbox (1.35399pt too wide) in paragraph at lines 430--431
 []\OT1/cmr/bx/n/10 2016 \OT1/cmr/m/n/10 "\OT1/cmr/m/it/10 Cloud-Com-pare \OT1/cmr/m/n/10 - ma-nip-u-la-tion of 3D clouds", work-shop in par-al-lel of the \OT1/cmr/m/it/10 Journ^^Sees in-for-ma-tique et arch^^Seologies
  []
 
 [7]
 
-c:/Rprojects/thomashuet/cv/cv_english.tex:450: LaTeX Error: Unicode character ̀ (U+0300)
+c:/Rprojects/thomashuet/cv/cv_english.tex:458: LaTeX Error: Unicode character ̀ (U+0300)
                not set up for use with LaTeX.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.450 ...avades del Sud-oest de la Peninsula ibè
+l.458 ...avades del Sud-oest de la Peninsula ibè
                                                   rica)", training at the IM...
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Overfull \hbox (23.43324pt too wide) in paragraph at lines 450--451
+Overfull \hbox (23.43324pt too wide) in paragraph at lines 458--459
 \OT1/cmr/bx/n/10 2017-8  \OT1/cmr/m/n/10 "Record-ing tech-niques of rock-art and en-graved ste-les of South-West iberic penin-sula (Tec-niques d'enregistrament
  []
 
-[8]
+
 Underfull \hbox (badness 10000) in paragraph at lines 503--508
 
  []
 
-[9] (./cv_english.aux)
+[8] [9] (./cv_english.aux)
 
 Package rerunfilecheck Warning: File `cv_english.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -732,7 +732,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  60i,7n,65p,914b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_english.pdf (9 pages, 769813 bytes).
+Output written on cv_english.pdf (9 pages, 769697 bytes).
 PDF statistics:
  252 PDF objects out of 1000 (max. 8388607)
  173 compressed objects within 2 object streams
