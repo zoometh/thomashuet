@@ -616,8 +616,8 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
+INPUT c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT ../img//link_darkblue.png
 INPUT ../img//link_darkblue.png
 INPUT ../img//link_darkblue.png
