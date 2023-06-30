@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  11 JUN 2023 17:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  30 JUN 2023 14:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -286,15 +286,15 @@ LaTeX Info: Redefining \nameref on input line 29.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 867.24002pt, 72.26999pt)
+* h-part:(L,W,R)=(56.9055pt, 500.484pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 897.969pt, 56.9055pt)
 * \paperwidth=614.295pt
 * \paperheight=1011.78pt
-* \textwidth=469.75502pt
-* \textheight=867.24002pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
+* \textwidth=500.484pt
+* \textheight=897.969pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -332,54 +332,54 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 35.
+(Font)              <9> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
+(Font)              <6> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 35.
+(Font)              <5> on input line 36.
 <../img//id-r.png, id=4, 327.2225pt x 327.2225pt>
 File: ../img//id-r.png Graphic file (type png)
 <use ../img//id-r.png>
-Package pdftex.def Info: ../img//id-r.png  used on input line 42.
+Package pdftex.def Info: ../img//id-r.png  used on input line 44.
 (pdftex.def)             Requested size: 99.58464pt x 99.58551pt.
 <../img//gmail.png, id=6, 385.44pt x 385.44pt>
 File: ../img//gmail.png Graphic file (type png)
 <use ../img//gmail.png>
-Package pdftex.def Info: ../img//gmail.png  used on input line 43.
+Package pdftex.def Info: ../img//gmail.png  used on input line 45.
 (pdftex.def)             Requested size: 9.63362pt x 9.63362pt.
 <../img//webpro.png, id=9, 923.45pt x 983.675pt>
 File: ../img//webpro.png Graphic file (type png)
 <use ../img//webpro.png>
-Package pdftex.def Info: ../img//webpro.png  used on input line 44.
+Package pdftex.def Info: ../img//webpro.png  used on input line 46.
 (pdftex.def)             Requested size: 9.2294pt x 9.83131pt.
 <../img//orcid.png, id=12, 1204.5pt x 1204.5pt>
 File: ../img//orcid.png Graphic file (type png)
 <use ../img//orcid.png>
-Package pdftex.def Info: ../img//orcid.png  used on input line 45.
+Package pdftex.def Info: ../img//orcid.png  used on input line 47.
 (pdftex.def)             Requested size: 8.43604pt x 8.43604pt.
 <../img//github.png, id=14, 1606.0pt x 1606.0pt>
 File: ../img//github.png Graphic file (type png)
 <use ../img//github.png>
-Package pdftex.def Info: ../img//github.png  used on input line 46.
+Package pdftex.def Info: ../img//github.png  used on input line 48.
 (pdftex.def)             Requested size: 11.24805pt x 11.24805pt.
 <../img//gscholar.png, id=16, 513.92pt x 513.92pt>
 File: ../img//gscholar.png Graphic file (type png)
 <use ../img//gscholar.png>
-Package pdftex.def Info: ../img//gscholar.png  used on input line 47.
+Package pdftex.def Info: ../img//gscholar.png  used on input line 49.
 (pdftex.def)             Requested size: 12.84482pt x 12.84482pt.
 <../img//rgate.png, id=18, 225.84375pt x 225.84375pt>
 File: ../img//rgate.png Graphic file (type png)
 <use ../img//rgate.png>
-Package pdftex.def Info: ../img//rgate.png  used on input line 48.
+Package pdftex.def Info: ../img//rgate.png  used on input line 50.
 (pdftex.def)             Requested size: 11.29285pt x 11.29285pt.
 <../img//phone.png, id=20, 2409.0pt x 2409.0pt>
 File: ../img//phone.png Graphic file (type png)
 <use ../img//phone.png>
-Package pdftex.def Info: ../img//phone.png  used on input line 49.
+Package pdftex.def Info: ../img//phone.png  used on input line 51.
 (pdftex.def)             Requested size: 12.05673pt x 12.05673pt.
 
-c:/Rprojects/thomashuet/cv/cv_french.tex:49: Undefined control sequence.
-l.49 ...ludegraphics[scale=0.005]{phone} \quad  \+
+c:/Rprojects/thomashuet/cv/cv_french.tex:51: Undefined control sequence.
+l.51 ...ludegraphics[scale=0.005]{phone} \quad  \+
                                                    44 (0)7 518 152 642 \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -388,31 +388,361 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--50
+Underfull \hbox (badness 10000) in paragraph at lines 31--52
 
  []
 
 
-c:/Rprojects/thomashuet/cv/cv_french.tex:52: LaTeX Error: There's no line here to end.
+c:/Rprojects/thomashuet/cv/cv_french.tex:54: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 
+l.54 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-Overfull \hbox (10.71895pt too wide) in paragraph at lines 62--63
-\OT1/cmr/bx/n/10 depuis 2021 \OT1/cmr/m/n/10 Chercheur et ges-tion-naire de base de donn^^Sees EA-MENA, Uni-ver-sit^^Se d'Oxford, []Ecole d'arch^^Seologie,
- []
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 111.
 [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//id-r.png> <../img//gmail.png> <../img//webpro.png> <../img//orcid.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>] [2] (./cv_french.aux)
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//id-r.png> <../img//gmail.png> <../img//webpro.png> <../img//orcid.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>]
+<../img//link_darkblue.png, id=55, 602.25pt x 342.27875pt>
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 136.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 142.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 147.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 153.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+ [2 <../img//link_darkblue.png>]
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 157.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 166.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 173.
+ (c:/texlive/2021/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 173.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 178.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 180.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 192.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 204.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+<../img//link_grey.png, id=81, 602.25pt x 342.27875pt>
+File: ../img//link_grey.png Graphic file (type png)
+<use ../img//link_grey.png>
+Package pdftex.def Info: ../img//link_grey.png  used on input line 206.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 208.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+ [3]
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 210.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 212.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 214.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 216.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+<../img//icon_youtube.png, id=92, 53.7207pt x 37.5804pt>
+File: ../img//icon_youtube.png Graphic file (type png)
+<use ../img//icon_youtube.png>
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 219.
+(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
+File: ../img//icon_youtube.png Graphic file (type png)
+<use ../img//icon_youtube.png>
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 227.
+(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
+File: ../img//icon_youtube.png Graphic file (type png)
+<use ../img//icon_youtube.png>
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 231.
+(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
+
+Overfull \hbox (9.02327pt too wide) in paragraph at lines 251--252
+\OT1/cmr/m/n/10 ca-tions sup-pos^^Sees", \OT1/cmr/m/it/10 L'art n^^Seolithique du Proche-Orient ^^Sa l'Europe : nou-velles, ap-proches th^^Seoriques et m^^Sethodologiques\OT1/cmr/m/n/10 ,
+ []
+
+[4 <../img//link_grey.png> <../img//icon_youtube.png>]
+c:/Rprojects/thomashuet/cv/cv_french.tex:262: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.262 ...HE \textit{&} ACADÉMIQUES (depuis 2014)}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `alignment tab' on input line 262.
+
+File: ../img//link_grey.png Graphic file (type png)
+<use ../img//link_grey.png>
+Package pdftex.def Info: ../img//link_grey.png  used on input line 277.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
+
+ []
+
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 283.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 284.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 285.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 286.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 287.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 288.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 289.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+
+Overfull \hbox (0.14198pt too wide) in paragraph at lines 283--290
+\OT1/cmr/m/n/10 - Groupe d'arch^^Seologie de haute mon-tagne (Grup d'Arqueologia de l'Alta Muntanya, GAAM), Uni-ver-si-tat Aut^^Sonoma
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--296
+
+ []
+
+[5]
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 309.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 311.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 313.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 315.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 317.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 333.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 334.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 335.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 333--336
+
+ []
+
+<../img//github-rect.png, id=124, 225.84375pt x 59.22125pt>
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 343.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 345.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 346.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+<../img//prog-r.png, id=128, 250.9375pt x 194.7275pt>
+File: ../img//prog-r.png Graphic file (type png)
+<use ../img//prog-r.png>
+Package pdftex.def Info: ../img//prog-r.png  used on input line 348.
+(pdftex.def)             Requested size: 10.03578pt x 7.78777pt.
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 348.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+<../img//neonet-blue.png, id=131, 1045.9075pt x 237.88875pt>
+File: ../img//neonet-blue.png Graphic file (type png)
+<use ../img//neonet-blue.png>
+Package pdftex.def Info: ../img//neonet-blue.png  used on input line 355.
+(pdftex.def)             Requested size: 41.82916pt x 9.51392pt.
+<../img//leapfrog-blue.png, id=133, 140.77594pt x 108.405pt>
+File: ../img//leapfrog-blue.png Graphic file (type png)
+<use ../img//leapfrog-blue.png>
+Package pdftex.def Info: ../img//leapfrog-blue.png  used on input line 357.
+(pdftex.def)             Requested size: 14.07841pt x 10.84113pt.
+<../img//app-nakala.png, id=135, 401.5pt x 401.5pt>
+File: ../img//app-nakala.png Graphic file (type png)
+<use ../img//app-nakala.png>
+Package pdftex.def Info: ../img//app-nakala.png  used on input line 357.
+(pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
+
+Overfull \hbox (10.16946pt too wide) in paragraph at lines 357--359
+\OT1/cmr/bx/n/10 2018 [][]\OT1/cmr/m/n/10 Ap-pli-ca-tion EpiS-pat[][] \OT1/cmss/m/n/10 RShiny \OT1/cmr/m/n/10 in-ter-ac-tive pour le re-groupe-ment mul-ti-fac-to-riel en temps r^^Seel des st^^Reles ^^Sepigraphiques
+ []
+
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 363.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 365.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+[6 <../img//github-rect.png> <../img//prog-r.png> <../img//neonet-blue.png> <../img//leapfrog-blue.png> <../img//app-nakala.png>]
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 367.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 369.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 371.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+File: ../img//github-rect.png Graphic file (type png)
+<use ../img//github-rect.png>
+Package pdftex.def Info: ../img//github-rect.png  used on input line 373.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 379.
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:385: Misplaced alignment tab character &.
+<argument> ... de développement intégré (IDE) &
+                                                   Système de contrôle de ...
+l.385 ...e de version Git & Intégration continue}
+                                                  : Visual Studio Code \text...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:385: Misplaced alignment tab character &.
+<argument> ...stème de contrôle de version Git &
+                                                   Intégration continue
+l.385 ...e de version Git & Intégration continue}
+                                                  : Visual Studio Code \text...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:387: Misplaced alignment tab character &.
+<argument> Création de sites web &
+                                    Documents dynamiques {\textbar } Publica...
+l.387 ...ar ordinateur {\textbar} Plateformes web}
+                                                  : \textsf{Sweave}, \textsf...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (1.74161pt too wide) in paragraph at lines 391--392
+[]\OT1/cmr/bx/n/10 Images 3D (Pho-togramm^^Setrie/RTI \OMS/cmsy/b/n/10 j \OT1/cmr/bx/n/10 Cr^^Seation 3D \OMS/cmsy/b/n/10 j \OT1/cmr/bx/n/10 Web 3D)\OT1/cmr/m/n/10 : Pho-to-Scan, Meshroom$[]$, MicMac$[]$, RTIBuilder$[]$
+ []
+
+
+Overfull \hbox (11.68373pt too wide) in paragraph at lines 402--403
+\OT1/cmr/bx/n/10 2022 \OT1/cmr/m/n/10 "\OT1/cmss/m/n/10 R \OT1/cmr/m/n/10 useR 2022 - Docker for R Work-shop", R Foun-da-tion, en ligne, 20 Juin. https://github.com/rsangole/user2022-
+ []
+
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 424.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+[7] [8]
+c:/Rprojects/thomashuet/cv/cv_french.tex:502: Misplaced alignment tab character &.
+<recently read> &
+                 
+l.502 ...\textit{&} INFORMATIONS COMPLÉMENTAIRES}
+                                                  
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[9] (./cv_french.aux)
 
 Package rerunfilecheck Warning: File `cv_french.out' has changed.
 (rerunfilecheck)                Rerun to get outlines right
@@ -420,21 +750,21 @@ Package rerunfilecheck Warning: File `cv_french.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `cv_french.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  91C0EEF6870BA8AFE51601DBC0300D68;567.
+(rerunfilecheck)             After:  604E9A6190A57228799E7D34AC668F6F;1619.
  ) 
 Here is how much of TeX's memory you used:
- 10598 strings out of 478278
- 167413 string characters out of 5850546
- 484729 words of memory out of 5000000
- 28675 multiletter control sequences out of 15000+600000
- 473254 words of font info for 41 fonts, out of 8000000 for 9000
+ 10719 strings out of 478278
+ 169797 string characters out of 5850546
+ 484757 words of memory out of 5000000
+ 28769 multiletter control sequences out of 15000+600000
+ 475169 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,65p,557b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv_french.pdf (2 pages, 562872 bytes).
+ 60i,7n,65p,910b,379s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on cv_french.pdf (9 pages, 768152 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 253 PDF objects out of 1000 (max. 8388607)
+ 174 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
