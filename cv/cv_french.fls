@@ -613,6 +613,7 @@ INPUT ../img//phone.png
 INPUT ../img//phone.png
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
@@ -698,7 +699,6 @@ INPUT ../img//icon_youtube.png
 INPUT ../img//icon_youtube.png
 INPUT ../img//icon_youtube.png
 INPUT ../img//icon_youtube.png
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT ../img//link_grey.png
 INPUT ../img//link_grey.png
 INPUT ../img//link_grey.png
