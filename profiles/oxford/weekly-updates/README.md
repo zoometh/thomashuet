@@ -1109,3 +1109,15 @@ DB
 - will work on:
     - different DB issues, with Ash
     - the network issue we faced during the training
+
+---
+⏰ TODO:
+
+* AWS
+- [ ] ...
+
+* [ACHP](https://github.com/achp-project)
+- [ ] merge RMs' graphs from different projects to understand common edges
+
+* PeriodO
+- [ ] alignment periods
