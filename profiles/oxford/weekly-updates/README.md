@@ -1110,8 +1110,29 @@ DB
     - different DB issues, with Ash
     - the network issue we faced during the training
 
+#### week 11
+
+- work with Ash on DB issues
+- waiting for Mike Fischer answer on how to hide coordinates to Guest users 
+- added SHPs to GeoServer (grids and count of HP by grids)
+    - exists a list of all Grids recorded in HP, and some have typos..
+- updated the [ref_hps()](https://github.com/eamena-project/eamenaR#grids) eamenaR function for count of HP by grids 
+- updated EA GitHub: grids, geoserver, dev, etc.
+- in touch with Reuben
+- work on :
+    - the ECHOES declaration of interest with Bill and Bijan
+    - Globalkites possible partnership with Bill and Michael
+- attended:
+    - *Arches & Coffee* meeting
+    - Leicester meeting about the AAA
+
+
 ---
 ⏰ TODO:
+
+* EAMENA
+- [ ] hide coordinates for Guest users
+- [ ] correct the Grid Ids in HPs
 
 * AWS
 - [ ] ...
