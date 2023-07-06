@@ -1124,7 +1124,7 @@ DB
     - Globalkites possible partnership with Bill and Michael
 - attended:
     - *Arches & Coffee* meeting
-    - Leicester meeting about the AAA
+    - Leicester meeting about the AAA, with Andrew
 
 
 ---
@@ -1135,7 +1135,7 @@ DB
 - [ ] correct the Grid Ids in HPs
 
 * AWS
-- [ ] ...
+- [ ] tuning the KRG DB
 
 * [ACHP](https://github.com/achp-project)
 - [ ] merge RMs' graphs from different projects to understand common edges
