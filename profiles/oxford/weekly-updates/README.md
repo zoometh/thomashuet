@@ -1064,7 +1064,7 @@ DB
 - attending some workshops (*Ethics and Decolonisation in Post-Conflict Archaeology* in Leicester; *Historical time* online, etc.)
 - upcoming work:
     - permission issues
-    - upgrade the AWS instance to get more CPUs resources
+    - upgrade the AWS instance to get more CPUs resources from [m6g.2xlarge](https://instances.vantage.sh/aws/ec2/r6g.2xlarge) to [m6g.4xlarge](https://instances.vantage.sh/aws/ec2/m6g.4xlarge)
     - creating a stage instance of Arches v7
     - steering the data integration of the ["City of Dead" project](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cairo#cairo-project) into EAMENA
 - drop out project:
@@ -1126,6 +1126,32 @@ DB
     - *Arches & Coffee* meeting
     - Leicester meeting about the AAA, with Andrew
 
+### ManCom Monthly report
+> 26/07/23
+
+- developping EAMENA GitHub:
+    - folder structure
+    - documentation: [grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids), etc.
+- developping the GeoServer
+    - added SHPs to GeoServer: grids and count of HP by grids
+    - exists a list of all Grids recorded in HP, and some have typos..
+- developping the [eamenaR](https://github.com/eamena-project/eamenaR) package
+    - grids statistics: [ref_hps()](https://github.com/eamena-project/eamenaR#grids)
+    - subgrids creation: [geojson_grid()](https://github.com/eamena-project/eamenaR#subgrids)
+    - work with Reuben Osborne to open a Read-only access to the back-end Postgres DB for statistical analysis
+- developping the [ACHP](https://github.com/achp-project)
+    - developpement of the [graph_parser](https://github.com/achp-project/cultural-heritage/tree/main/graph-parser) function
+    - leading a collective talk on comparing HP resource models using graph theory (see, [here](https://github.com/achp-project/cultural-heritage/tree/main/test-projects))
+- tracking issues with the DB
+- the IIIF plug-in seems to have been fixed (Arches)
+- worked on:
+    - the ECHOES declaration of interest with Bill and Bijan
+    - Globalkites possible partnership with Bill and Michael
+- attended:
+    - *Arches & Coffee* meeting
+- TODO:
+    - duplicate the HP Resource Model and let access to only Guests (to hide coordinates)
+    - PeriodO, with Will, in the frame of the ACHP organisation ([here](https://github.com/achp-project/cultural-heritage/tree/main/periodo-projects))
 
 ---
 ⏰ TODO:
