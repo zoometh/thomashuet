@@ -1135,13 +1135,14 @@ DB
 - developping the GeoServer
     - added SHPs to GeoServer: grids and count of HP by grids
     - exists a list of all Grids recorded in HP, and some have typos..
+- Ash as developped the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages
 - developping the [eamenaR](https://github.com/eamena-project/eamenaR) package
     - grids statistics: [ref_hps()](https://github.com/eamena-project/eamenaR#grids)
     - subgrids creation: [geojson_grid()](https://github.com/eamena-project/eamenaR#subgrids)
     - work with Reuben Osborne to open a Read-only access to the back-end Postgres DB for statistical analysis
 - developping the [ACHP](https://github.com/achp-project)
     - developpement of the [graph_parser](https://github.com/achp-project/cultural-heritage/tree/main/graph-parser) function
-    - leading a collective talk on comparing HP resource models using graph theory (see, [here](https://github.com/achp-project/cultural-heritage/tree/main/test-projects))
+    - proposed a collective talk on comparing HP resource models using graph theory (see, [here](https://github.com/achp-project/cultural-heritage/tree/main/test-projects)) to the https://bhdc.earth/ conference
 - tracking issues with the DB
 - the IIIF plug-in seems to have been fixed (Arches)
 - worked on:
@@ -1152,6 +1153,8 @@ DB
 - TODO:
     - duplicate the HP Resource Model and let access to only Guests (to hide coordinates)
     - PeriodO, with Will, in the frame of the ACHP organisation ([here](https://github.com/achp-project/cultural-heritage/tree/main/periodo-projects))
+    - audit the format of the "*City of the Dead*" dataset for its BU
+    - 7 and 8 August, setup of an Arches v7 training DB + documentation
 
 ---
 ⏰ TODO:
