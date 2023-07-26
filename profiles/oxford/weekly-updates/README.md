@@ -1129,13 +1129,14 @@ DB
 ### ManCom Monthly report
 > 26/07/23
 
+- tracking issues with the DB
 - developping EAMENA GitHub:
     - folder structure
     - documentation: [grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids), etc.
 - developping the GeoServer
     - added SHPs to GeoServer: grids and count of HP by grids
     - exists a list of all Grids recorded in HP, and some have typos..
-- Ash as developped the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages
+- Ash has developped the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages
 - developping the [eamenaR](https://github.com/eamena-project/eamenaR) package
     - grids statistics: [ref_hps()](https://github.com/eamena-project/eamenaR#grids)
     - subgrids creation: [geojson_grid()](https://github.com/eamena-project/eamenaR#subgrids)
@@ -1143,7 +1144,6 @@ DB
 - developping the [ACHP](https://github.com/achp-project)
     - developpement of the [graph_parser](https://github.com/achp-project/cultural-heritage/tree/main/graph-parser) function
     - proposed a collective talk on comparing HP resource models using graph theory (see, [here](https://github.com/achp-project/cultural-heritage/tree/main/test-projects)) to the https://bhdc.earth/ conference
-- tracking issues with the DB
 - the IIIF plug-in seems to have been fixed (Arches)
 - worked on:
     - the ECHOES declaration of interest with Bill and Bijan
