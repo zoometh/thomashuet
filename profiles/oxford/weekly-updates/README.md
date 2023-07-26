@@ -1148,13 +1148,15 @@ DB
 - worked on:
     - the ECHOES declaration of interest with Bill and Bijan
     - Globalkites possible partnership with Bill and Michael
+    - auditing the format of the "*City of the Dead*" dataset for its BU
+    - integration of APAAME 
 - attended:
     - *Arches & Coffee* meeting
 - TODO:
     - duplicate the HP Resource Model and let access to only Guests (to hide coordinates)
     - PeriodO, with Will, in the frame of the ACHP organisation ([here](https://github.com/achp-project/cultural-heritage/tree/main/periodo-projects))
-    - audit the format of the "*City of the Dead*" dataset for its BU
     - 7 and 8 August, setup of an Arches v7 training DB + documentation
+    - develop a national instance for Palestine
 
 ---
 ⏰ TODO:
