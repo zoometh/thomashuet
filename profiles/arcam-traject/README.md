@@ -25,7 +25,8 @@ Audition (oral) débutant par un exposé de la candidate et du candidat sur son 
 
 20 minutes de questions
 
-## Profil Ingénieur-e de recherche (IR) CNRS
+---
+# Profil Ingénieur-e de recherche (IR) CNRS
 
 * Exerce des responsabilités dans les domaines scientifiques, techniques et administratifs des établissements publics scientifiques et technologiques. 
 * Assure des missions de conception et de coordination d'activités et de conduite de projets d'envergure. 
