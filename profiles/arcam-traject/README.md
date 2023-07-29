@@ -1,21 +1,29 @@
 # IR ArchAm-Trajectoires
+> 2023
 
-Poste d'Ingenieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) en production, traitement et analyse de données, mutualisé entre [ArchAm](https://archam.cnrs.fr/) (50%) et [Trajectoires](https://trajectoires.cnrs.fr) (50%).
+Poste d'Ingénieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) en production, traitement et analyse de données, mutualisé entre [ArchAm](https://archam.cnrs.fr/) (50%) et [Trajectoires](https://trajectoires.cnrs.fr) (50%). Concours n 52
 
 ![](images/fiche-poste-1.jpg)
 ![](images/fiche-poste-2.jpg)
 
-# Dossier
+## Admissibilité
+> Coefficient: 1/3
 
-PDF: 
-Coefficient: 1/3
+Étude par le jury du dossier de candidature comprenant un relevé des diplômes, titres et travaux
 
+Mon dossier: https://github.com/zoometh/thomashuet/blob/main/profiles/arcam-traject/images/dossier_TH.PDF
 
-# Oral
+## Admission
+> Coefficient: 2/3
+
+Audition (oral) débutant par un exposé de la candidate et du candidat sur son cursus et ses motivations et se poursuivant par un entretien avec le jury. L'entretien est destiné à apprécier les aptitudes et les compétences dela candidate et du candidat à occuper l’emploi mis au concours. Il tient compte de la spécificité des emplois à pourvoir
+
+## Exposé
 
 10 minutes présentation: cursus et ses motivations
+## Entretien
 
-Coefficient: 2/3
+20 minutes de questions
 
 ## Profil Ingénieur-e de recherche (IR) CNRS
 
