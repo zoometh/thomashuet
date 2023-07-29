@@ -1,8 +1,21 @@
-# IR 
+# IR ArchAm-Trajectoires
 
-## Poste
+Poste d'Ingenieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) en production, traitement et analyse de données, mutualisé entre [ArchAm](https://archam.cnrs.fr/) (50%) et [Trajectoires](https://trajectoires.cnrs.fr) (50%).
 
-Ingenieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) en production, traitement et analyse de données, mutualisé entre [ArchAm](https://archam.cnrs.fr/) (50%) et [Trajectoires](https://trajectoires.cnrs.fr) (50%).
+![](images/fiche-poste-1.jpg)
+![](images/fiche-poste-2.jpg)
+
+# Dossier
+
+PDF: 
+Coefficient: 1/3
+
+
+# Oral
+
+10 minutes présentation: cursus et ses motivations
+
+Coefficient: 2/3
 
 ## Profil Ingénieur-e de recherche (IR) CNRS
 
@@ -14,7 +27,7 @@ Ingenieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) en produc
 * Peut être chargé de toute étude ou mission de coopération internationale, d'enseignement ou d'administration de la recherche.
 
 ### Production, traitement et analyse de données - D1A41
-
+> https://metiersit.dsi.cnrs.fr/index.php?page=ficheemploitype&codeEmploi=D1A41&idFamillePro=14&codeBAP=D&codeFamille=A
 #### Mission
 
 * Concevoir (en lien avec l'équipe de recherche en science humaine et sociale ou en réponse à une demande externe) et piloter des dispositifs de recherche ou d'études ; développer et conduire des méthodes d'exploitation, d'analyse de bases de données ou de corpus et en assurer la valorisation ; garantir la qualité et la validité des données produites et des traitements réalisés.
@@ -74,19 +87,3 @@ Ingenieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) en produc
 #### Conditions particulières d'exercice
 * Obligation de respecter le secret statistique ou professionnel dans le cadre législatif existant
 * Déplacements en France et à l'étranger
-
-#### Profil 
-
-![](images/fiche-poste-1.jpg)
-![](images/fiche-poste-2.jpg)
-
-# Dossier
-
-Coefficient: 1/3
-
-
-# Oral
-
-10 minutes présentation: cursus et ses motivations
-
-Coefficient: 2/3
