@@ -1,3 +1,5 @@
+<!-- -*- coding: utf-8 -*- -->
+
 # Week/Month Updates
 
 ## *Michaelmas* term 2021
@@ -54,7 +56,7 @@
 
 #### Week 8
 
-- installing Arches locally on Windows & Windows\VirtualBox\Ubuntu (*failed*), remotely on AWS (*success*)
+- installing Arches locally on Windows & Windows/VirtualBox/Ubuntu (*failed*), remotely on AWS (*success*)
 
 - preparing the CPF Jordan (5-10 Dec)
     - contact with Galen Mancico, and other CPF trainers (Sayantani, Will)
@@ -422,7 +424,7 @@
 - Processed some bulks, added some basemaps
 
 - Worked on:
-    - the translation from `en` ➡ `ar`, and `en` ➡ `fr`, for the Arches v7 with Crystal, Ash and Stefania Merlo
+    - the translation from `en` to `ar`, and `en` to `fr`, for the Arches v7 with Crystal, Ash and Stefania Merlo
     - the ring-fencing function with Kristen and Ash
     - French-language MOOC comments with the University of Durham
 
@@ -598,9 +600,9 @@ Database Development
 - recontact KI on a Business data migration from Arches v3 data to Arches v5 issue 
     - Reuben is out, new contact: Samuel (without further information)
 - meet Ash to discuss: 
-    - Arches v7 ➡️ today: v7.1.1
-    - Transifex new lines to translate with [transifex](https://www.transifex.com/archesproject/arches-70/translate/#fr/djangopo/355132719)➡️ OK
-    - a Python 2.7 script hosted on AWS that creates daily backups ➡️ need to be translated to Python 3 + send snapshots to Glacier
+    - Arches v7 upgrade to v7.1.1
+    - Transifex new lines to translate with [transifex](https://www.transifex.com/archesproject/arches-70/translate/fr/djangopo/355132719)
+    - a Python 2.7 script hosted on AWS that creates daily backups needs to be translated to Python 3 + send snapshots to Glacier
 - EAMENA DB current business:
     - readibility of Condition Assessment (via Bijan, Mel)
     - BU for Mohamed
@@ -1159,7 +1161,7 @@ DB
     - develop a national instance for Palestine
 
 ---
-⏰ TODO:
+TODO:
 
 * EAMENA
 - [ ] hide coordinates for Guest users
