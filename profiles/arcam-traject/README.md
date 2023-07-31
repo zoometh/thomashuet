@@ -6,12 +6,12 @@ Poste d'Ingénieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) 
 ![](images/fiche-poste-1.jpg)
 ![](images/fiche-poste-2.jpg)
 
+[Profil IR en production, traitement et analyse de données](https://github.com/zoometh/thomashuet/tree/main/profiles/arcam-traject#production-traitement-et-analyse-de-donn%C3%A9es---d1a41)
+
 ## Admissibilité
 > Coefficient: 1/3
 
 Étude par le jury du dossier de candidature comprenant un relevé des diplômes, titres et travaux
-
-Mon dossier: https://github.com/zoometh/thomashuet/blob/main/profiles/arcam-traject/images/dossier_TH.PDF
 
 ## Admission
 > Coefficient: 2/3
