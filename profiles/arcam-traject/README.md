@@ -16,7 +16,7 @@ Poste d'Ingénieur de Recherche (IR) CNRS BAP D (Sciences humaines et sociales) 
 ## Admission
 > Coefficient: 2/3
 
-Audition (oral) débutant par un [exposé](https://github.com/zoometh/thomashuet/tree/main/profiles/arcam-traject#expos%C3%A9) de la candidate et du candidat sur son cursus et ses motivations et se poursuivant par un entretien avec le jury. L'[entretien](https://github.com/zoometh/thomashuet/tree/main/profiles/arcam-traject#entretien) est destiné à apprécier les aptitudes et les compétences dela candidate et du candidat à occuper l’emploi mis au concours. Il tient compte de la spécificité des emplois à pourvoir
+Audition (oral) débutant par un [exposé](https://github.com/zoometh/thomashuet/tree/main/profiles/arcam-traject#expos%C3%A9) de la candidate et du candidat sur son cursus et ses motivations et se poursuivant par un entretien avec le jury. L'[entretien](https://github.com/zoometh/thomashuet/tree/main/profiles/arcam-traject#entretien) est destiné à apprécier les aptitudes et les compétences de la candidate et du candidat à occuper l’emploi mis au concours. Il tient compte de la spécificité des emplois à pourvoir
 
 ## Exposé
 

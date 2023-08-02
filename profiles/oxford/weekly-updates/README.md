@@ -1129,36 +1129,39 @@ DB
     - Leicester meeting about the AAA, with Andrew
 
 ### ManCom Monthly report
-> 26/07/23
+> 26/07/23, and Team meeting 02/08/23
 
-- tracking issues with the DB
+- training in Amman (Jordan + Palestine), on Arches v7
+- tracking DB's issues
 - developping EAMENA GitHub:
     - folder structure
     - documentation: [grids](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/grids), etc.
 - developping the GeoServer
-    - added SHPs to GeoServer: grids and count of HP by grids
+    - added WFS (grids and count of HP by grids) and WMS (Koppen climate classification) + GitHub documentation
     - exists a list of all Grids recorded in HP, and some have typos..
-- Ash has developped the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages
+- Ash has developped the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages<sup>1</sup>
+- developped a Python script that splits the sheets of the (latest) BU template into several TSV files that can be shared/visible on GitHub ([read doc](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#referenced-individual-sheets))
 - developping the [eamenaR](https://github.com/eamena-project/eamenaR) package
-    - grids statistics: [ref_hps()](https://github.com/eamena-project/eamenaR#grids)
-    - subgrids creation: [geojson_grid()](https://github.com/eamena-project/eamenaR#subgrids)
+    - grids statistics: [ref_hps()](https://github.com/eamena-project/eamenaR#grids), and subgrids creation: [geojson_grid()](https://github.com/eamena-project/eamenaR#subgrids)
     - work with Reuben Osborne to open a Read-only access to the back-end Postgres DB for statistical analysis
 - developping the [ACHP](https://github.com/achp-project)
-    - developpement of the [graph_parser](https://github.com/achp-project/cultural-heritage/tree/main/graph-parser) function
-    - proposed a collective talk on comparing HP resource models using graph theory (see, [here](https://github.com/achp-project/cultural-heritage/tree/main/test-projects)) to the https://bhdc.earth/ conference
-- the IIIF plug-in seems to have been fixed (Arches)
+    - developpement of the `graph_parser.py` and `graph_comparator.py` functions, with Alan Tapscott (see [here](https://github.com/achp-project/cultural-heritage/tree/main/graph-parser) and [there](https://github.com/achp-project/cultural-heritage/tree/main/test-projects))
+    - proposed a collective talk to to the https://bhdc.earth/ conference on this topic: comparing HP Resource Models using graph theory 
 - worked on:
     - the ECHOES declaration of interest with Bill and Bijan
     - Globalkites possible partnership with Bill and Michael
     - auditing the format of the "*City of the Dead*" dataset for its BU
-    - integration of APAAME 
+    - integration of APAAME / solving Image issue in EAMENA
+        - the IIIF plug-in seems to have been fixed (Arches)
 - attended:
     - *Arches & Coffee* meeting
 - TODO:
-    - duplicate the HP Resource Model and let access to only Guests (to hide coordinates)
+    - duplicate the EAMENA card, and let access to only Guests (to hide coordinates)*
     - PeriodO, with Will, in the frame of the ACHP organisation ([here](https://github.com/achp-project/cultural-heritage/tree/main/periodo-projects))
     - 7 and 8 August, setup of an Arches v7 training DB + documentation
     - develop a national instance for Palestine
+
+
 
 ---
 TODO:
