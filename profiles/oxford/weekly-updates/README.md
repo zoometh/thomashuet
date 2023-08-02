@@ -1132,6 +1132,7 @@ DB
 > 26/07/23, and Team meeting 02/08/23
 
 - training in Amman (Jordan + Palestine), on Arches v7
+- working on the [BD citation and authorship](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref)
 - tracking DB's issues
 - developping EAMENA GitHub:
     - folder structure
