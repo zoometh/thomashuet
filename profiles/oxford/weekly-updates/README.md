@@ -1139,7 +1139,7 @@ DB
 - developping the GeoServer
     - added WFS (grids and count of HP by grids) and WMS (Koppen climate classification) + GitHub documentation
     - exists a list of all Grids recorded in HP, and some have typos..
-- Ash has developped the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages<sup>1</sup>
+- Ash has developped the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages<sup>a</sup>
 - developped a Python script that splits the sheets of the (latest) BU template into several TSV files that can be shared/visible on GitHub ([read doc](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bulk#referenced-individual-sheets))
 - developping the [eamenaR](https://github.com/eamena-project/eamenaR) package
     - grids statistics: [ref_hps()](https://github.com/eamena-project/eamenaR#grids), and subgrids creation: [geojson_grid()](https://github.com/eamena-project/eamenaR#subgrids)
@@ -1156,11 +1156,13 @@ DB
 - attended:
     - *Arches & Coffee* meeting
 - TODO:
-    - duplicate the EAMENA card, and let access to only Guests (to hide coordinates)*
+    - duplicate the EAMENA card, and let access to only Guests (to hide coordinates)<sup>a</sup>
+    - work on the translated (`en` -> `fr`) vocabulatory (IT and proofreading)<sup>a</sup>
     - PeriodO, with Will, in the frame of the ACHP organisation ([here](https://github.com/achp-project/cultural-heritage/tree/main/periodo-projects))
     - 7 and 8 August, setup of an Arches v7 training DB + documentation
     - develop a national instance for Palestine
 
+<sup>a</sup> On the Arches v7 training instance, and after the 7 and 8 August
 
 
 ---
