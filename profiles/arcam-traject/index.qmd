@@ -42,7 +42,13 @@ library(DT)
 library(dplyr)
 library(sf)
 library(sp)
+library(archdata)
 ```
+
+## Read data
+
+
+https://docs.google.com/spreadsheets/d/1SZ5CFxWAeGax1oKZBkyeq8aslZdQ1luS8n1hJwRPVrk/edit#gid=0
 
 
 ## <font color="#ffffff"> 3D </font> {background-iframe="https://zoometh.github.io/reveal.js/projects/caa_3dlithic#/17" background-interactive="true"}

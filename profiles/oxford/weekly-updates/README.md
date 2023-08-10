@@ -1166,6 +1166,18 @@ DB
 <sup>a</sup> On the Arches v7 training instance, and after the 7 and 8 August
 
 
+### week 16
+
+- working on:
+    - Conceptual model of the citation workflow
+    - APAAME IT settings / EAMENA integration
+    - EAMENA install documentation for future national instance deployments
+- install a new training instance with Ash (Monday, Tuesday)
+- attended:
+    - *Arches & Coffee* meeting
+    - *Arches Webinar: Introduction to Open-Source Software Projects*
+- in-person meeting with Jeremy, to work on the APAAME archive, has been postponed to Wed 23
+
 ---
 TODO:
 
