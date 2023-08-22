@@ -112,5 +112,5 @@ flowchart LR
     B <-- "échange<br>de données" --> C((application<br>tiers));
     B -- résultats --> D[cartes<br>graphiques<br>listes<br>fichiers<br>...]:::output;;
     classDef logic fill:#e3c071;
-	classDef output fill:#1C3F8E;
+	classDef output fill:#3eedb3;
 ```
