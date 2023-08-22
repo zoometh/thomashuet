@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  3 JUL 2023 11:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  18 AUG 2023 12:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -352,32 +352,41 @@ File: ../img//webpro.png Graphic file (type png)
 <use ../img//webpro.png>
 Package pdftex.def Info: ../img//webpro.png  used on input line 46.
 (pdftex.def)             Requested size: 9.2294pt x 9.83131pt.
-<../img//orcid.png, id=12, 1204.5pt x 1204.5pt>
-File: ../img//orcid.png Graphic file (type png)
-<use ../img//orcid.png>
-Package pdftex.def Info: ../img//orcid.png  used on input line 47.
-(pdftex.def)             Requested size: 8.43604pt x 8.43604pt.
-<../img//github.png, id=14, 1606.0pt x 1606.0pt>
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:47: LaTeX Error: File `orcid' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \includegraphics[scale=0.007]{orcid}
+                                          \quad \href{https://orcid.org/0000...
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img//github.png, id=13, 1606.0pt x 1606.0pt>
 File: ../img//github.png Graphic file (type png)
 <use ../img//github.png>
 Package pdftex.def Info: ../img//github.png  used on input line 48.
 (pdftex.def)             Requested size: 11.24805pt x 11.24805pt.
-<../img//gscholar.png, id=16, 513.92pt x 513.92pt>
+<../img//gscholar.png, id=15, 513.92pt x 513.92pt>
 File: ../img//gscholar.png Graphic file (type png)
 <use ../img//gscholar.png>
 Package pdftex.def Info: ../img//gscholar.png  used on input line 49.
 (pdftex.def)             Requested size: 12.84482pt x 12.84482pt.
-<../img//rgate.png, id=18, 225.84375pt x 225.84375pt>
+<../img//rgate.png, id=17, 225.84375pt x 225.84375pt>
 File: ../img//rgate.png Graphic file (type png)
 <use ../img//rgate.png>
 Package pdftex.def Info: ../img//rgate.png  used on input line 50.
 (pdftex.def)             Requested size: 11.29285pt x 11.29285pt.
-<../img//phone.png, id=20, 2409.0pt x 2409.0pt>
+<../img//phone.png, id=19, 2409.0pt x 2409.0pt>
 File: ../img//phone.png Graphic file (type png)
 <use ../img//phone.png>
 Package pdftex.def Info: ../img//phone.png  used on input line 51.
 (pdftex.def)             Requested size: 12.05673pt x 12.05673pt.
-
 c:/Rprojects/thomashuet/cv/cv_french.tex:51: Undefined control sequence.
 l.51 ...ludegraphics[scale=0.005]{phone} \quad  \+
                                                    44 (0)7 518 152 642 \\
@@ -405,14 +414,14 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<../img//link_darkblue.png, id=24, 602.25pt x 342.27875pt>
+<../img//link_darkblue.png, id=23, 602.25pt x 342.27875pt>
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 105.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//id-r.png> <../img//gmail.png> <../img//webpro.png> <../img//orcid.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>]
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//id-r.png> <../img//gmail.png> <../img//webpro.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>]
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 127.
 File: ../img//link_darkblue.png Graphic file (type png)
@@ -438,77 +447,206 @@ Overfull \hbox (1.74161pt too wide) in paragraph at lines 187--188
 []\OT1/cmr/bx/n/10 Images 3D (Pho-togramm^^Setrie/RTI \OMS/cmsy/b/n/10 j \OT1/cmr/bx/n/10 Cr^^Seation 3D \OMS/cmsy/b/n/10 j \OT1/cmr/bx/n/10 Web 3D)\OT1/cmr/m/n/10 : Pho-to-Scan, Meshroom$[]$, MicMac$[]$, RTIBuilder$[]$
  []
 
-<../img//github-rect.png, id=57, 225.84375pt x 59.22125pt>
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 198.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 200.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 201.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-<../img//prog-r.png, id=61, 250.9375pt x 194.7275pt>
+
+LaTeX Warning: File `github-rect.png' not found on input line 198.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:198: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.198 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 200.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:200: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 201.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:201: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.201 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../img//prog-r.png, id=58, 250.9375pt x 194.7275pt>
 File: ../img//prog-r.png Graphic file (type png)
 <use ../img//prog-r.png>
 Package pdftex.def Info: ../img//prog-r.png  used on input line 203.
 (pdftex.def)             Requested size: 10.03578pt x 7.78777pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 203.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-<../img//neonet-blue.png, id=64, 1045.9075pt x 237.88875pt>
-File: ../img//neonet-blue.png Graphic file (type png)
-<use ../img//neonet-blue.png>
-Package pdftex.def Info: ../img//neonet-blue.png  used on input line 210.
-(pdftex.def)             Requested size: 31.37587pt x 7.13635pt.
 
-Overfull \hbox (4.53607pt too wide) in paragraph at lines 210--211
-\OT1/cmr/bx/n/10 2022 [][][][][] \OT1/cmr/m/n/10 Ap-pli-ca-tion web in-ter-ac-tive \OT1/cmss/m/n/10 RShiny \OT1/cmr/m/n/10 NeoNet, ver-sion sta-ble. S^^Selection, cal-i-bra-tion, cu-mul et mod^^Selisation
- []
+LaTeX Warning: File `github-rect.png' not found on input line 203.
 
 
-Overfull \hbox (11.76689pt too wide) in paragraph at lines 210--211
-\OT1/cmr/m/n/10 ^^Ra la vol^^See des dates ra-dio-car-bones de la tran-si-tion du M^^Sesolithique fi-nal/N^^Seolithique an-cien dans le bassin m^^Sediterran^^Seen
- []
+c:/Rprojects/thomashuet/cv/cv_french.tex:203: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
 
-<../img//leapfrog-blue.png, id=66, 140.77594pt x 108.405pt>
-File: ../img//leapfrog-blue.png Graphic file (type png)
-<use ../img//leapfrog-blue.png>
-Package pdftex.def Info: ../img//leapfrog-blue.png  used on input line 212.
-(pdftex.def)             Requested size: 14.07841pt x 10.84113pt.
-<../img//app-nakala.png, id=68, 401.5pt x 401.5pt>
-File: ../img//app-nakala.png Graphic file (type png)
-<use ../img//app-nakala.png>
-Package pdftex.def Info: ../img//app-nakala.png  used on input line 212.
-(pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 218.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 220.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 222.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 224.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 226.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-File: ../img//github-rect.png Graphic file (type png)
-<use ../img//github-rect.png>
-Package pdftex.def Info: ../img//github-rect.png  used on input line 228.
-(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.203 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `neonet-blue.png' not found on input line 210.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:210: Package pdftex.def Error: File `neonet-blue.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210 ...udegraphics[scale=0.03]{neonet-blue.png}}
+                                                   Application web interacti...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `leapfrog-blue.png' not found on input line 212.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:212: Package pdftex.def Error: File `leapfrog-blue.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 ...egraphics[scale=0.10]{leapfrog-blue.png}}
+                                                   \textsf{RShiny} Leapfrog,...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `app-nakala.png' not found on input line 212.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:212: Package pdftex.def Error: File `app-nakala.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.212 ...3]{app-nakala.png} 10.34847/nkl.fbd6t845}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 218.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:218: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 220.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:220: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.220 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 222.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:222: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.222 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 224.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:224: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  , DOI : \href{https://doi....
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 226.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:226: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `github-rect.png' not found on input line 228.
+
+
+c:/Rprojects/thomashuet/cv/cv_french.tex:228: Package pdftex.def Error: File `github-rect.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.228 ...ludegraphics[scale=0.1]{github-rect.png}}
+                                                  .
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 241.
@@ -542,7 +680,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 241--248
 
  []
 
-[3 <../img//github-rect.png> <../img//prog-r.png> <../img//neonet-blue.png> <../img//leapfrog-blue.png> <../img//app-nakala.png>]
+[3 <../img//prog-r.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 251--255
 
  []
@@ -564,7 +702,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 258--261
 
  []
 
-<../img//link_grey.png, id=104, 602.25pt x 342.27875pt>
+<../img//link_grey.png, id=95, 602.25pt x 342.27875pt>
 File: ../img//link_grey.png Graphic file (type png)
 <use ../img//link_grey.png>
 Package pdftex.def Info: ../img//link_grey.png  used on input line 270.
@@ -639,15 +777,11 @@ Package pdftex.def Info: ../img//link_darkblue.png  used on input line 429.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 441.
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 443.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img//link_grey.png Graphic file (type png)
 <use ../img//link_grey.png>
-Package pdftex.def Info: ../img//link_grey.png  used on input line 443.
-(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-File: ../img//link_darkblue.png Graphic file (type png)
-<use ../img//link_darkblue.png>
-Package pdftex.def Info: ../img//link_darkblue.png  used on input line 445.
+Package pdftex.def Info: ../img//link_grey.png  used on input line 445.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
@@ -657,30 +791,34 @@ File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 449.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+ [7]
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 451.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
- [7]
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 453.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-<../img//icon_youtube.png, id=161, 53.7207pt x 37.5804pt>
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 455.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+<../img//icon_youtube.png, id=152, 53.7207pt x 37.5804pt>
 File: ../img//icon_youtube.png Graphic file (type png)
 <use ../img//icon_youtube.png>
-Package pdftex.def Info: ../img//icon_youtube.png  used on input line 456.
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 458.
 (pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
 File: ../img//icon_youtube.png Graphic file (type png)
 <use ../img//icon_youtube.png>
-Package pdftex.def Info: ../img//icon_youtube.png  used on input line 464.
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 466.
 (pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
 File: ../img//icon_youtube.png Graphic file (type png)
 <use ../img//icon_youtube.png>
-Package pdftex.def Info: ../img//icon_youtube.png  used on input line 468.
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 470.
 (pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
 
-Overfull \hbox (9.02327pt too wide) in paragraph at lines 488--489
+Overfull \hbox (9.02327pt too wide) in paragraph at lines 490--491
 \OT1/cmr/m/n/10 ca-tions sup-pos^^Sees", \OT1/cmr/m/it/10 L'art n^^Seolithique du Proche-Orient ^^Sa l'Europe : nou-velles, ap-proches th^^Seoriques et m^^Sethodologiques\OT1/cmr/m/n/10 ,
  []
 
@@ -695,18 +833,18 @@ Package rerunfilecheck Info: Checksums for `cv_french.out':
 (rerunfilecheck)             After:  1E3F3B3099DE02E8AD4948E63A33FF49;1438.
  ) 
 Here is how much of TeX's memory you used:
- 10718 strings out of 478278
- 169787 string characters out of 5850546
+ 10843 strings out of 478278
+ 172345 string characters out of 5850546
  484757 words of memory out of 5000000
- 28770 multiletter control sequences out of 15000+600000
- 475169 words of font info for 47 fonts, out of 8000000 for 9000
+ 28882 multiletter control sequences out of 15000+600000
+ 475337 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,65p,910b,387s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on cv_french.pdf (9 pages, 769294 bytes).
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on cv_french.pdf (9 pages, 702059 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
+ 247 PDF objects out of 1000 (max. 8388607)
+ 176 compressed objects within 2 object streams
  16 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

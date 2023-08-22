@@ -97,3 +97,19 @@ Audition (oral) débutant par un [exposé](https://github.com/zoometh/thomashuet
 #### Conditions particulières d'exercice
 * Obligation de respecter le secret statistique ou professionnel dans le cadre législatif existant
 * Déplacements en France et à l'étranger
+
+---
+
+## En +
+
+
+
+```mermaid
+flowchart LR
+    A[(BD)] --est lue par--> B{{logique}}:::eamenaRpkg;
+	A <-. écrit .- B;
+    B --manipulation<br>de données--> B;
+    B <--échange<br>de données--> C((third part<br>app));
+    B --résultats--> D[cartes<br>graphiques<br>listes<br>fichiers<br>...];
+    classDef eamenaRpkg fill:#e3c071;
+```
