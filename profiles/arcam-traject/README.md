@@ -106,7 +106,7 @@ Audition (oral) débutant par un [exposé](https://github.com/zoometh/thomashuet
 
 ```mermaid
 flowchart LR
-    A[(BD)] --est lue par--> B{{logique}}:::eamenaRpkg;
+    A[(Base<br>de données)] --est lue par--> B{{logique}}:::eamenaRpkg;
 	A <-. écrit .- B;
     B --manipulation<br>de données--> B;
     B <--échange<br>de données--> C((third part<br>app));
