@@ -124,8 +124,8 @@ flowchart LR
     B -- manipulation<br>de données --> B;
     B <-- "échange<br>de données" --> C((application<br>tiers)):::third;
     B -- résultats --> D[cartes<br>graphiques<br>listes<br>fichiers<br>...]:::output;;
-    style A stroke:#440154,stroke-width:4px
-    style B stroke:#31688E,stroke-width:4px
-    style C stroke:#35B779,stroke-width:4px
-    style D stroke:#FDE725,stroke-width:4px
+    style A fill:#440154,color:#fff
+    style B fill:#31688E
+    style C fill:#35B779
+    style D fill:#FDE725
 ```
