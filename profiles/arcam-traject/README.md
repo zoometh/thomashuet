@@ -111,10 +111,10 @@ flowchart LR
     B -- manipulation<br>de données --> B;
     B <-- "échange<br>de données" --> C((application<br>tiers)):::third;
     B -- résultats --> D[cartes<br>graphiques<br>listes<br>fichiers<br>...]:::output;;
-    classDef semantic fill:#440154;
-    classDef logic fill:#31688E;
-    classDef third fill:#35B779;
-    classDef output fill:#FDE725;
+    classDef semantic fill:#44015488;
+    classDef logic fill:#31688E88;
+    classDef third fill:#35B77988;
+    classDef output fill:#FDE72588;
 ```
 
 ```mermaid
