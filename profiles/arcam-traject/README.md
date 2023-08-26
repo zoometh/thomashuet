@@ -111,8 +111,8 @@ flowchart LR
     B -- manipulation<br>de données --> B;
     B <-- "échange<br>de données" --> C((application<br>tiers)):::third;
     B -- résultats --> D[cartes<br>graphiques<br>listes<br>fichiers<br>...]:::output;;
+    classDef semantic fill:#AEC6CF;
     classDef logic fill:#FFC0CB;
-	classDef semantic fill:#AEC6CF;
     classDef third fill:#98FB98;
     classDef output fill:#FFFF99;
 ```
@@ -124,5 +124,5 @@ flowchart LR
     B -- manipulation<br>de données --> B;
     B <-- "échange<br>de données" --> C((application<br>tiers)):::third;
     B -- résultats --> D[cartes<br>graphiques<br>listes<br>fichiers<br>...]:::output;;
-    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style A fill:#f9f,stroke:#AEC6CF,stroke-width:4px
 ```
