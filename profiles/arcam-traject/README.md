@@ -116,3 +116,13 @@ flowchart LR
     classDef third fill:#98FB98;
     classDef output fill:#FFFF99;
 ```
+
+```mermaid
+flowchart LR
+    A[(Base<br>de<br>données)]:::semantic -- est lue par --> B{{logique}}:::logic;
+    B -- "écrit dans" --> A;
+    B -- manipulation<br>de données --> B;
+    B <-- "échange<br>de données" --> C((application<br>tiers)):::third;
+    B -- résultats --> D[cartes<br>graphiques<br>listes<br>fichiers<br>...]:::output;;
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+```
