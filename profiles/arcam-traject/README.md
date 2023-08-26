@@ -106,11 +106,13 @@ Audition (oral) débutant par un [exposé](https://github.com/zoometh/thomashuet
 
 ```mermaid
 flowchart LR
-    A[(Base<br>de<br>données)] -- est lue par --> B{{logique}}:::logic;
+    A[(Base<br>de<br>données)]:::semantic -- est lue par --> B{{logique}}:::logic;
     B -- "écrit dans" --> A;
     B -- manipulation<br>de données --> B;
-    B <-- "échange<br>de données" --> C((application<br>tiers));
+    B <-- "échange<br>de données" --> C((application<br>tiers)):::third;
     B -- résultats --> D[cartes<br>graphiques<br>listes<br>fichiers<br>...]:::output;;
-    classDef logic fill:#e3c071;
-	classDef output fill:#3eedb3;
+    classDef logic fill:#FFC0CB;
+	classDef semantic fill:#AEC6CF;
+    classDef third fill:#98FB98;
+    classDef output fill:#FFFF99;
 ```
