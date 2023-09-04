@@ -119,7 +119,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A[(Base<br>de<br>données)]:::semantic -- est lue par --> B{{logique}}:::logic;
+    A[(Base<br>de<br>données)]:::semantic -- est lue par --> B{{script<br>informatique}}:::logic;
     B -- "écrit dans" --> A;
     B -- manipulation<br>de données --> B;
     B <-- "échange<br>de données" --> C((application<br>tiers)):::third;
