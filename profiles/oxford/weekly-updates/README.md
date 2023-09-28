@@ -1178,6 +1178,56 @@ DB
     - *Arches Webinar: Introduction to Open-Source Software Projects*
 - in-person meeting with Jeremy, to work on the APAAME archive, has been postponed to Wed 23
 
+## *Michaelmas* term 2023
+
+### week -3
+
+- working on:
+    - Related resources
+        - *part of*: Conceptual model of the citation workflow
+    - Translation of the thesaurus
+        - working with the test instance
+    - APAAME IT settings / EAMENA integration
+        - Asked a meeting with Jeremy next week
+    - EAMENA install documentation for future national instance deployments
+    - In contact with Reuben for the Postgres direct access
+- Will and Ishiba asked for us to create an AWS EC2 instance they will use to install an Arches v7 following the doc Ash and I have created
+- Fixing bugs on our website (reCAPTCHA)
+- attended:
+    - *Arches & Coffee* meeting
+- Our common communication (ACHP organisation) has been accepted to the https://bhdc.earth/ conference (22-25 November)
+- News from GlobalKites?
+- Schedule my 10 days "career development" days during the second half of October
+
+### week -2
+
+- 
+- preparing the Big Historical Data conference
+    - use of Jupyter notebooks (interactive, open source, etc.) ~ GitHub 
+- working on fixing a bug in EAMENA
+- attended:
+    - *Arches & Coffee* meeting
+
+### week -1
+
+- Test with a new user named `eamenar` in read-only mode, developed by Reuben
+- Development of a workflow integrating Jupyter notebooks
+- quick proofreading of the French text of MOOC2 for the socials 
+- working on fixing a bugs in EAMENA
+- the BU uploader, that previously accepted NA values in Disturbances is now fixed on Ash's VM. Ash will run other tests. Plan to udpdate the online version this end of the week. 
+    - after what will discuss the best/fastest way to retrieve missing data
+- Durham asked for a new AWS instance for Syria
+- work on the BHDC paper with, mostly Alan (MAPHSA) and Ash
+- Recommended a paper submitted to our Oxford CAA session: Bijan is one of the reviewers.
+- attended:
+    - Chris Gosden retirement day
+    - *Arches & Coffee* meeting
+- will meet:
+    - Marie-Pier this afternoon (leaves, pension scheme)
+    - Rachel Smith, about Sistan / remote sensing, Friday 29 September
+    - Jeremy for the APAAME DB, Tuesday 10 October
+
+
 ---
 TODO:
 
