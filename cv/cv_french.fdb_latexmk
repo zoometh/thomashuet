@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1696325819 "c:/Rprojects/thomashuet/cv/cv_french.tex" "cv_french.pdf" "cv_french" 1696325819
+["pdflatex"] 1696325985 "c:/Rprojects/thomashuet/cv/cv_french.tex" "cv_french.pdf" "cv_french" 1696325985
   "../img//app-github-rect.png" 1645991413 8957 37bbc299b6c610447386375fcf8ad8e0 ""
   "../img//github.png" 1642839263 23729 21fa9344e32cd2efdc7d66119c7656e7 ""
   "../img//gmail.png" 1642839263 11074 90c4d618f2e87060b30d035a6b9299ac ""
@@ -9,11 +9,13 @@
   "../img//link_darkblue.png" 1645987707 23240 44cde55ffae6d75c931bebdeafbca2f9 ""
   "../img//link_grey.png" 1685039961 12789 cdd4dcb5d6d4c206e4983ef9f3e55e2c ""
   "../img//phone.png" 1642839263 169327 da49c71365863f5cc2a2e616761fb8ba ""
+  "../img//prj_leapfrog-blue.png" 1683989248 32253 4c3825081f91daac7a0ba6d7a003c457 ""
+  "../img//prj_neonet-blue.png" 1645993162 17942 10b1ec99d4b8b8e519a5ac58eb78ca0d ""
   "../img//prog-r.png" 1645991435 11220 36e7e52a00e3d5ccde871065bc9807dc ""
   "../img//rgate.png" 1642839263 2308 57b26b7f408443ae4637fcff0b673db0 ""
   "../img//webpro.png" 1642839263 11205 72060200832633aa15a585cb6e1e2155 ""
   "app-nakala.png" 0 -1 0 ""
-  "c:/Rprojects/thomashuet/cv/cv_french.tex" 1696325807 58588 31068e3fc4f33e61c3205277f535067d ""
+  "c:/Rprojects/thomashuet/cv/cv_french.tex" 1696325975 58596 adb0b793bbc521c72e65359dd1bb0853 ""
   "c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1645732760 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1645734374 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1645733678 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -114,11 +116,9 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1645741295 4422994 d6fc1c83c919dc5940022c50ba2a8cfc ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1645741546 2797899 a615a785223ba7ec35cb7313f6654786 ""
   "c:/texlive/2021/texmf.cnf" 1645741257 713 e69b156964470283e0530f5060668171 ""
-  "cv_french.aux" 1696325819 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "cv_french.aux" 1696325985 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "cv_french.out" 0 -1 0 "pdflatex"
-  "cv_french.tex" 1696325807 58588 31068e3fc4f33e61c3205277f535067d ""
-  "leapfrog-blue.png" 0 -1 0 ""
-  "neonet-blue.png" 0 -1 0 ""
+  "cv_french.tex" 1696325975 58596 adb0b793bbc521c72e65359dd1bb0853 ""
   "orcid" 0 -1 0 ""
   (generated)
   "cv_french.aux"
