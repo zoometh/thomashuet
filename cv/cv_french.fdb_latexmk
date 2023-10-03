@@ -1,5 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1695750889 "c:/Rprojects/thomashuet/cv/cv_french.tex" "cv_french.pdf" "cv_french" 1695750889
+["pdflatex"] 1696325819 "c:/Rprojects/thomashuet/cv/cv_french.tex" "cv_french.pdf" "cv_french" 1696325819
+  "../img//app-github-rect.png" 1645991413 8957 37bbc299b6c610447386375fcf8ad8e0 ""
   "../img//github.png" 1642839263 23729 21fa9344e32cd2efdc7d66119c7656e7 ""
   "../img//gmail.png" 1642839263 11074 90c4d618f2e87060b30d035a6b9299ac ""
   "../img//gscholar.png" 1642839263 20833 66d4b546fed90af2e0af85d34a2106e1 ""
@@ -12,7 +13,7 @@
   "../img//rgate.png" 1642839263 2308 57b26b7f408443ae4637fcff0b673db0 ""
   "../img//webpro.png" 1642839263 11205 72060200832633aa15a585cb6e1e2155 ""
   "app-nakala.png" 0 -1 0 ""
-  "c:/Rprojects/thomashuet/cv/cv_french.tex" 1695750861 58548 2aa31d11433880c54e7b0d71c7b48c1b ""
+  "c:/Rprojects/thomashuet/cv/cv_french.tex" 1696325807 58588 31068e3fc4f33e61c3205277f535067d ""
   "c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1645732760 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1645734374 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1645733678 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -113,10 +114,9 @@
   "c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1645741295 4422994 d6fc1c83c919dc5940022c50ba2a8cfc ""
   "c:/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1645741546 2797899 a615a785223ba7ec35cb7313f6654786 ""
   "c:/texlive/2021/texmf.cnf" 1645741257 713 e69b156964470283e0530f5060668171 ""
-  "cv_french.aux" 1695750889 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "cv_french.aux" 1696325819 34 3985256e7290058c681f74d7a3565a19 "pdflatex"
   "cv_french.out" 0 -1 0 "pdflatex"
-  "cv_french.tex" 1695750861 58548 2aa31d11433880c54e7b0d71c7b48c1b ""
-  "github-rect.png" 0 -1 0 ""
+  "cv_french.tex" 1696325807 58588 31068e3fc4f33e61c3205277f535067d ""
   "leapfrog-blue.png" 0 -1 0 ""
   "neonet-blue.png" 0 -1 0 ""
   "orcid" 0 -1 0 ""
