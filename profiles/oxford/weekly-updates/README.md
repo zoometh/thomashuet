@@ -1214,7 +1214,7 @@ DB
 - Development of a workflow integrating Jupyter notebooks
 - quick proofreading of the French text of MOOC2 for the socials 
 - working on fixing a bugs in EAMENA
-- the BU uploader, that previously accepted NA values in Disturbances is now fixed on Ash's VM. Ash will run other tests. Plan to udpdate the online version this end of the week. 
+- the BU uploader, that previously accepted `NA` values in Disturbances is now fixed on Ash's VM. Ash will run other tests. Plan to udpdate the online version this end of the week. 
     - after what will discuss the best/fastest way to retrieve missing data
 - Durham asked for a new AWS instance for Syria
 - work on the BHDC paper with, mostly Alan (MAPHSA) and Ash
@@ -1227,7 +1227,18 @@ DB
     - Rachel Smith, about Sistan / remote sensing, Friday 29 September
     - Jeremy for the APAAME DB, Tuesday 10 October
 
+### week 0
 
+- developped a Jupyter Notebook on E[nhanced record minimum standard compliance of Heritage Places](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/data-quality.ipynb) (ERMS)
+- was on leave Tuesday 3 October
+- met:
+    - Ash to solve:
+        - the BU issue (accepted `NA` values in Disturbances)
+        - the re-build of the Webpack (GUI interface)
+    - Rachel Smith, Friday, to talk about her PhD on Sistan
+- attended:
+    - *Arches & Coffee* meeting: working for our presentation in the BHDC
+    - OASG 
 ---
 TODO:
 
