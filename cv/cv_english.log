@@ -274,7 +274,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 29.
 LaTeX Info: Redefining \pageref on input line 29.
 LaTeX Info: Redefining \nameref on input line 29.
- (./cv_english.out) (./cv_english.out)
 \@outlinefile=\write3
 \openout3 = `cv_english.out'.
 
@@ -338,17 +337,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 36.
-<../img//id-r.png, id=36, 327.2225pt x 327.2225pt>
+<../img//id-r.png, id=4, 327.2225pt x 327.2225pt>
 File: ../img//id-r.png Graphic file (type png)
 <use ../img//id-r.png>
 Package pdftex.def Info: ../img//id-r.png  used on input line 44.
 (pdftex.def)             Requested size: 99.58464pt x 99.58551pt.
-<../img//gmail.png, id=38, 385.44pt x 385.44pt>
+<../img//gmail.png, id=6, 385.44pt x 385.44pt>
 File: ../img//gmail.png Graphic file (type png)
 <use ../img//gmail.png>
 Package pdftex.def Info: ../img//gmail.png  used on input line 45.
 (pdftex.def)             Requested size: 9.63362pt x 9.63362pt.
-<../img//webpro.png, id=41, 923.45pt x 983.675pt>
+<../img//webpro.png, id=9, 923.45pt x 983.675pt>
 File: ../img//webpro.png Graphic file (type png)
 <use ../img//webpro.png>
 Package pdftex.def Info: ../img//webpro.png  used on input line 46.
@@ -368,22 +367,22 @@ I could not locate the file with any of these extensions:
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<../img//github.png, id=45, 1606.0pt x 1606.0pt>
+<../img//github.png, id=13, 1606.0pt x 1606.0pt>
 File: ../img//github.png Graphic file (type png)
 <use ../img//github.png>
 Package pdftex.def Info: ../img//github.png  used on input line 48.
 (pdftex.def)             Requested size: 11.24805pt x 11.24805pt.
-<../img//gscholar.png, id=47, 513.92pt x 513.92pt>
+<../img//gscholar.png, id=15, 513.92pt x 513.92pt>
 File: ../img//gscholar.png Graphic file (type png)
 <use ../img//gscholar.png>
 Package pdftex.def Info: ../img//gscholar.png  used on input line 49.
 (pdftex.def)             Requested size: 12.84482pt x 12.84482pt.
-<../img//rgate.png, id=49, 225.84375pt x 225.84375pt>
+<../img//rgate.png, id=17, 225.84375pt x 225.84375pt>
 File: ../img//rgate.png Graphic file (type png)
 <use ../img//rgate.png>
 Package pdftex.def Info: ../img//rgate.png  used on input line 50.
 (pdftex.def)             Requested size: 11.29285pt x 11.29285pt.
-<../img//phone.png, id=51, 2409.0pt x 2409.0pt>
+<../img//phone.png, id=19, 2409.0pt x 2409.0pt>
 File: ../img//phone.png Graphic file (type png)
 <use ../img//phone.png>
 Package pdftex.def Info: ../img//phone.png  used on input line 51.
@@ -420,7 +419,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//id-r.png> <../img//gmail.png> <../img//webpro.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>]
-<../img//link_darkblue.png, id=83, 602.25pt x 342.27875pt>
+<../img//link_darkblue.png, id=55, 602.25pt x 342.27875pt>
 File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 135.
@@ -468,7 +467,7 @@ File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 202.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-<../img//link_grey.png, id=106, 602.25pt x 342.27875pt>
+<../img//link_grey.png, id=78, 602.25pt x 342.27875pt>
 File: ../img//link_grey.png Graphic file (type png)
 <use ../img//link_grey.png>
 Package pdftex.def Info: ../img//link_grey.png  used on input line 204.
@@ -494,7 +493,7 @@ File: ../img//link_darkblue.png Graphic file (type png)
 <use ../img//link_darkblue.png>
 Package pdftex.def Info: ../img//link_darkblue.png  used on input line 214.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
-<../img//icon_youtube.png, id=118, 53.7207pt x 37.5804pt>
+<../img//icon_youtube.png, id=90, 53.7207pt x 37.5804pt>
 File: ../img//icon_youtube.png Graphic file (type png)
 <use ../img//icon_youtube.png>
 Package pdftex.def Info: ../img//icon_youtube.png  used on input line 217.
@@ -650,7 +649,7 @@ l.343 ...ludegraphics[scale=0.1]{github-rect.png}}
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<../img//prog-r.png, id=151, 250.9375pt x 194.7275pt>
+<../img//prog-r.png, id=124, 250.9375pt x 194.7275pt>
 File: ../img//prog-r.png Graphic file (type png)
 <use ../img//prog-r.png>
 Package pdftex.def Info: ../img//prog-r.png  used on input line 345.
@@ -864,22 +863,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 503--508
  []
 
 [8] (./cv_english.aux)
-Package rerunfilecheck Info: File `cv_english.out' has not changed.
-(rerunfilecheck)             Checksum: 41AC58B455513F8C768C8ACBAF36CFAE;1450.
+
+Package rerunfilecheck Warning: File `cv_english.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv_english.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  41AC58B455513F8C768C8ACBAF36CFAE;1450.
  ) 
 Here is how much of TeX's memory you used:
- 10853 strings out of 478278
- 172473 string characters out of 5850546
- 484876 words of memory out of 5000000
- 28888 multiletter control sequences out of 15000+600000
+ 10840 strings out of 478278
+ 172323 string characters out of 5850546
+ 484759 words of memory out of 5000000
+ 28879 multiletter control sequences out of 15000+600000
  475361 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  60i,7n,65p,914b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on cv_english.pdf (8 pages, 702832 bytes).
+Output written on cv_english.pdf (8 pages, 702049 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 198 compressed objects within 2 object streams
+ 243 PDF objects out of 1000 (max. 8388607)
+ 173 compressed objects within 2 object streams
  17 named destinations out of 1000 (max. 500000)
- 120 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

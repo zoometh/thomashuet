@@ -1201,7 +1201,6 @@ DB
 
 ### week -2
 
-- 
 - preparing the Big Historical Data conference
     - use of Jupyter notebooks (interactive, open source, etc.) ~ GitHub 
 - working on fixing a bug in EAMENA
@@ -1229,7 +1228,7 @@ DB
 
 ### week 0
 
-- developped a Jupyter Notebook on E[nhanced record minimum standard compliance of Heritage Places](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/data-quality.ipynb) (ERMS)
+- developped a Jupyter Notebook on [Enhanced record minimum standard compliance of Heritage Places](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/data-quality.ipynb) (ERMS)
 - was on leave Tuesday 3 October
 - met:
     - Ash to solve:
@@ -1238,7 +1237,22 @@ DB
     - Rachel Smith, Friday, to talk about her PhD on Sistan
 - attended:
     - *Arches & Coffee* meeting: working for our presentation in the BHDC
-    - OASG 
+    - OASG
+
+### week 1
+
+- received documents from:
+    - Reuben: Postgres user
+    - Galen: LLM, NLP, AI/ML
+- worked on:
+    - APAAME: need to find someone for the transfer. This is the job for one person (student placement?) ; Jeremy will manage the metadata correctness.
+    - PeriodO, with Will
+- chating with AWS for the billing of 2 new instances (Durham)
+- met:
+    - Jeremy (APPAME server)
+- attended:
+    - *Arches & Coffee* meeting: working for our presentation in the BHDC
+
 ---
 TODO:
 
@@ -1248,9 +1262,6 @@ TODO:
 
 * AWS
 - [ ] tuning the KRG DB
-
-* [ACHP](https://github.com/achp-project)
-- [ ] merge RMs' graphs from different projects to understand common edges
 
 * PeriodO
 - [ ] alignment periods
