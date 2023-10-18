@@ -1245,6 +1245,7 @@ DB
     - Reuben: Postgres user
     - Galen: LLM, NLP, AI/ML
 - worked on:
+    - BU issue, with Ash
     - APAAME: need to find someone for the transfer. This is the job for one person (student placement?) ; Jeremy will manage the metadata correctness.
     - PeriodO, with Will
 - chating with AWS for the billing of 2 new instances (Durham)
@@ -1252,6 +1253,22 @@ DB
     - Jeremy (APPAME server)
 - attended:
     - *Arches & Coffee* meeting: working for our presentation in the BHDC
+
+### ManCom
+
+- EAMENA glitches:
+    - Ash has fixed the BU validation process (ex: `Disturbances` field) and is working on a BU append
+- EAMENA developments:
+    - `eamenar` read-only user
+    - [erms](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/erms.ipynb)
+    - [citation-generator](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/citations/citation-generator.ipynb) to dump searches into Zenodo
+    - working on PeriodO periods with Will
+    - reviewed a scope note on LLM, NLP, AI/ML, made by Galen Mancino, to facilitate the query of EAMENA
+- gave an online demo on Jupyter and [erms](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dev/data_quality/erms.ipynb)
+- budgetising two new AWS instances for Durham
+- working on APAAME with Jeremy Worth
+- working on the collective of the [ACHP](https://github.com/achp-project) BHDC presentation on [RM comparisons](https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/presentation/bhdc/graph_parser_comparator_example.ipynb)
+- attended *Arches & Coffee* meetings
 
 ---
 TODO:
