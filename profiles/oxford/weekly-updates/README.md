@@ -1270,7 +1270,14 @@ DB
 - working on APAAME with Jeremy Worth
 - working on the collective of the [ACHP](https://github.com/achp-project) BHDC presentation on [RM comparisons](https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/presentation/bhdc/graph_parser_comparator_example.ipynb)
 - attended *Arches & Coffee* meetings
-
+- TODO:
+    - "refresh" the database Webpack (ie the EAMENA GUI)
+        - run the [skos2excel](https://github.com/ads04r/skos2excel) Python script (twin of [po2excel](https://github.com/ads04r/po2excel)) to translate EAMENA concepts from `en` to any foreign languages (here: `fr`)
+        - duplicate the EAMENA card, and let access to only Guests (to hide coordinates)
+    - supervise:
+        - the installation of Durham's AWS instances and update the documentation
+        - the installation of the Palestinian database on their physical server
+        - APAAME transfer
 ---
 TODO:
 
