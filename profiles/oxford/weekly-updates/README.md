@@ -1255,6 +1255,7 @@ DB
     - *Arches & Coffee* meeting: working for our presentation in the BHDC
 
 ### ManCom
+> 18/10/23
 
 - EAMENA glitches:
     - Ash has fixed the BU validation process (ex: `Disturbances` field) and is working on a BU append
