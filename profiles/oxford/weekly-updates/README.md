@@ -1278,6 +1278,23 @@ DB
         - the installation of Durham's AWS instances and update the documentation
         - the installation of the Palestinian database on their physical server
         - APAAME transfer
+
+### Week 3
+> career development week 1
+
+- work on:
+    - fixing BU issues with Ash
+    - selecting AWS instances for Durham
+    - PeriodO (almost done)
+- developping a workflow integrating Python, Jupyter NB, GitHub and Google Colab to:
+    - ERMS assessement
+    - citation of the DB
+    - ... potentially (almost) anything
+- attended:
+    - *Arches & Coffee* meeting 
+    - SPECTRA annual general meeting
+    - seminar on "What is a museum object according to a museum database?"
+
 ---
 TODO:
 
