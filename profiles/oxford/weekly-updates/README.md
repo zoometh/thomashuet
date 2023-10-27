@@ -1290,6 +1290,8 @@ DB
     - ERMS assessement
     - citation of the DB
     - ... potentially (almost) anything
+- send the ML/AI concept note to one of my friend (Freddie Kalaitzis - OATML - said he hasn't time to review it)
+- pick up the external hard drive for APAAAME
 - attended:
     - *Arches & Coffee* meeting 
     - SPECTRA annual general meeting

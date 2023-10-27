@@ -1,3 +1,8 @@
+.quarto-title-author-name {
+  font-size: 100px;
+  color: blue !important;
+}
+
 .tablebordernones {
   border-spacing:0 
 }
