@@ -5,25 +5,24 @@
 
 /* not working */
 .quarto-title-author-affiliation {
-  font-size: 20px;
+  font-size: 10px;
   color: grey !important;
 }
 
 .quarto-title-authors-affiliations {
-  font-size: 20px;
+  font-size: 10px;
   color: grey !important;
 }
 
 .quarto-title-authors-affiliation {
-  font-size: 20px;
+  font-size: 10px;
   color: grey !important;
 }
 
 .quarto-title-author-affiliations {
-  font-size: 20px;
+  font-size: 10px;
   color: grey !important;
 }
-
 
 .img {
   display: block;
