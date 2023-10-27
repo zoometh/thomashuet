@@ -1,0 +1,20 @@
+#title-slide {
+	text-align: left;
+  
+	.quarto-title-authors {
+	  justify-content: left;
+	
+	  .quarto-title-author { // optional, test it for yourself
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 10px;
+		// width: 100%;
+	  }
+
+	  .quarto-title-author-affiliation {
+		font-size: 20px;
+		color: grey !important;
+	  }	  
+
+	}
+  }
