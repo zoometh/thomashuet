@@ -8,6 +8,12 @@
   color: grey !important;
 }
 
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .tablebordernones {
   border-spacing:0 
 }
