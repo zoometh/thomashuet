@@ -85,7 +85,7 @@
 
 .captiontext {
   text-align: center;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 20px;
   color: #808080;
 }
