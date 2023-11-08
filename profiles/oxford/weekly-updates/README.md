@@ -1297,15 +1297,49 @@ DB
     - SPECTRA annual general meeting
     - seminar on "What is a museum object according to a museum database?"
 
+
+### Week 3
+> career development week 2
+
+- work on:
+    - AWS instances for Durham
+    - fixing BU issues with Ash and Bijan
+    - finished the creation of PeriodO's EAMENA periods
+- developping a workflow integrating Python, Jupyter NB, GitHub and Google Colab to:
+    - ERMS assessement (almost done)
+    - citation of the DB (up to come)
+- had feedback from my friend (Clément) about the AI/ML concept note (*resumed here*): 
+    - intelligent use of Large Language Models (LLMs) and shows promise for preliminary database exploration
+    - but:
+        - it heavily relies on "prompting," requiring operators to communicate effectively with LLMs. Paradoxically, this solution targets those who may not be skilled in querying databases, yet effective prompting is a skill possessed by those who are familiar with LLMs. Training in prompting may be necessary to address this issue.
+        - practical use may be limited to English due to the lower effectiveness of LLMs in languages other than English. This may result in more iterations or increased ambiguity.
+        - depth of the solution. Whitout feedback it is hard to say but: accumulating layers of abstraction can possibly lower access to "complete" and precise results.
+- attended:
+    - *Arches & Coffee* meeting 
+    - Biometric visa
+
+### Team meeting
+> 08/11/23
+
+- with Ash: solving remaining issues with the bulk-uploader
+- development of IT tools (Python dev, GitHub hosted, Jupyter NB interface) for EAMENA: ERMS assessment, citation-generator
+- working with Ash and Reuben to carry out these developments in an appropriate framework (Django functions, *vs* Arches plugins, etc.)
+- publication of PeriodO's EAMENA periods (almost) with the contribution of Will
+    - this is LOD compliant. Something similar should be done with the Grids
+- worked on integration of Arches-based projects (MASHA, MAPSS, etc.)
+- worked on selecting AWS instances for Durham
+- planned work:
+    - recieved the APAAME external hard drive with the copy of photographs from Jeremy Worth 10 days ago. Need to upload them in the new APAAME server
+    - work on the back-end of EAMENA (GUI interface, etc.)
+- attending:
+    - *Arches & Coffee* meetings 
+    - few other seminars or meetings
+
 ---
 TODO:
 
-* EAMENA
+- [ ] AWS: Attention: Extended Deadline for Updating Your Access Permissions - December 11, 2023
+AWS has discontinued use of old IAM permissions for Billing, Cost Management, and Accounts consoles. If you do not take action, you may lose access to these consoles. We are granting an extension until December 11, 2023 for you to update your IAM policies. Update your policies or contact your organization's access administrator. For assistance, please visit the blog, or review the policy migration utilities- Bulk Policy Migrator, action mapping guide.
 - [ ] hide coordinates for Guest users
 - [ ] correct the Grid Ids in HPs
-
-* AWS
-- [ ] tuning the KRG DB
-
-* PeriodO
-- [ ] alignment periods
+- [ ] AWS: tuning the KRG DB
