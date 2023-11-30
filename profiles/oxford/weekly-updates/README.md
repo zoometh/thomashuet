@@ -1335,6 +1335,31 @@ DB
     - *Arches & Coffee* meetings 
     - few other seminars or meetings
 
+### Week 6
+
+- EAMENA PeriodO periods have been uploaded
+- meeting with Ash and Reuben to develop the citation workflow
+    - working on this workflow
+- working on the ACHP and RMs comparisons
+- working on MDS (Minimun Data Standards, ex-ERMS) with Bijan
+- attended:
+    - "The Gaza War and Academic Freedom" seminar 
+    - "Reporting Heritage Destruction: A Double-Edged Sword?"
+    - *Arches & Coffee* meeting
+
+### Week 8
+
+- working with Bijan on the Sistan datapaper, including:
+- creation of the [eamena](https://zenodo.org/communities/eamena) Zenodo community
+    - Zenodo deposit
+- Two talks at the [BHDC](https://bhdc.earth/), including one on Arches projects:
+    - EAMENA/Arches-based project reference data: https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/presentation/bhdc/rm_compar.ipynb
+- meeting with Durham about the KRG database
+    - joined by Mel, and AWS support
+- 1-to-1 meeting with Chritopher B. Ramsey
+- ~~*Arches & Coffee* meeting~~
+- TODO: convert https://docs.google.com/spreadsheets/d/1r2VLLiyJMaCl8l7C4sKilQ4ZMqEfAwhQAwYC7wGzmk0/edit?usp=sharing to XLSX/TSV and hosted these files to GitHub?
+
 ---
 TODO:
 

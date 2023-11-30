@@ -6,7 +6,7 @@ Sys.setlocale("LC_ALL", "C")
 library(plotly)
 # library(NbClust)
 
-iti <- T
+iti <- F
 
 if(iti){
   # Itineris dataset
@@ -43,10 +43,13 @@ dfisotops$cluster <- dfkmeans$cluster
 #TODO: pass this assignations to itineRis 'symbol' calculation
 dfisotops$symbol <- NULL
 symbols.default <- c('circle', 'square', 'triangle', 'diamond', 'star', 'cross')
+if(iti){
 objects.used <- as.character(unique(dfisotops$object))
 symbols.used <- symbols.default[c(1:length(objects.used))]
 symbols.objects <- data.frame(object = objects.used,
                               symbol = symbols.used)
+}
+
 
 dfisotops <- merge(dfisotops, symbols.objects, by = "object", all.x = TRUE)
 
