@@ -1360,6 +1360,21 @@ DB
 - ~~*Arches & Coffee* meeting~~
 - TODO: convert https://docs.google.com/spreadsheets/d/1r2VLLiyJMaCl8l7C4sKilQ4ZMqEfAwhQAwYC7wGzmk0/edit?usp=sharing to XLSX/TSV and hosted these files to GitHub?
 
+## Team meeting
+> 07/12/2023
+
+- developping EAMENA GitHub, reference data, workflow, etc.
+- developping Python programming (functions and Jupyter Notebook) for automated or semi-automated workflows
+- updating the eamenaR package
+- realeased EAMENA's periods into PeriodO, with Will
+- created a Zenodo community named 'eamena', link to the Google account 'eamenadatabase@gmail.com'
+- working on a citation workflow with an automated upload into Zenodo
+- updating the EAMENA website
+- working on interoperability between several Arches-based project (MAPSS, MAHSA, MAEASaM, etc.), see the [BHDC presentation](https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/presentation/bhdc/rm_compar.ipynb)
+- start to work on the new APAAME ResourceSpace server, and direct links to EAMENA
+- working on deploying an Arches instance for KRG, with Durham
+
+
 ---
 TODO:
 
