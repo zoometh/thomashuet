@@ -1369,10 +1369,20 @@ DB
 - realeased EAMENA's periods into PeriodO, with Will
 - created a Zenodo community named 'eamena', link to the Google account 'eamenadatabase@gmail.com'
 - working on a citation workflow with an automated upload into Zenodo
+    - currently hosted on GitHub/Jupyter NB, in a next future directly on the database
 - updating the EAMENA website
+- working with Bijan on a seminal data paper, for a dataset located in Sistan, to showcase the publication data into the DB
 - working on interoperability between several Arches-based project (MAPSS, MAHSA, MAEASaM, etc.), see the [BHDC presentation](https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/presentation/bhdc/rm_compar.ipynb)
+- reviewed a concept note on deploying a ML/AI Large Language Models (LLMs) for the DB exploration
+    - pros: intelligent use of LLMs
+    - cons:
+        - it heavily relies on "prompting," requiring operators to communicate effectively with LLMs. Paradoxically, this solution targets those who may not be skilled in querying databases, yet effective prompting is a skill possessed by those who are familiar with LLMs. Training in prompting may be necessary to address this issue.
+        - practical use may be limited to English due to the lower effectiveness of LLMs in languages other than English. This may result in more iterations or increased ambiguity.
+        - depth of the solution. Whitout feedback it is hard to say but: accumulating layers of abstraction can possibly lower access to "complete" and precise results.
 - start to work on the new APAAME ResourceSpace server, and direct links to EAMENA
 - working on deploying an Arches instance for KRG, with Durham
+- created an automated translation of the EAMENA 'menu' from English to Kurdish for Durham
+- attended several seminars related to cultural heritage, and *Arches and Coffee* 
 
 
 ---
