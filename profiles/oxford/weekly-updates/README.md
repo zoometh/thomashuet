@@ -1384,6 +1384,14 @@ DB
 - created an automated translation of the EAMENA 'menu' from English to Kurdish for Durham
 - attended several seminars related to cultural heritage, and *Arches and Coffee* 
 
+## week 10
+
+- moved the AWS account from the EAMENA project to the Univeristy of Oxford, with Mel
+- submitted the Sistan data paper to the JOAD, with Bijan
+- prepared the Arcadia annual report
+    - wrote the part for the database
+    - computed statistics
+    - updated the GeoServer
 
 ---
 TODO:
