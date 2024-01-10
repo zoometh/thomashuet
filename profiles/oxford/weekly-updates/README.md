@@ -1386,12 +1386,24 @@ DB
 
 ## week 10
 
-- moved the AWS account from the EAMENA project to the Univeristy of Oxford, with Mel
+- moved the AWS account from the EAMENA project to the Univeristy of Oxford, with Mel and the IT services
+- finished the workflow for publishing EAMENA data (Zenodo DOI, "how-to-cite", etc.)
 - submitted the Sistan data paper to the JOAD, with Bijan
 - prepared the Arcadia annual report
     - wrote the part for the database
     - computed statistics
     - updated the GeoServer
+
+
+## 
+
+- in touch with Will for the deployement of the KRG AWS instance. Start to deploy?
+- heard from the last Arches/UK user group (*via* Bryan Alvey, UCL):
+    - [Helen Thomas](https://www.ucl.ac.uk/bartlett/heritage/people/helen-thomas) (UCL), with Phil Carlisle (Historic England), is working on a RM for climate hasards (to be completed in Feb/Mar 2024)
+- Arches developper meeting (20-22 March 2024) at the Getty Center, LA, US - estimate costs for a 7 days journey:
+    - [flight](https://www.google.com/search?q=london+los+angeles+flight&oq=London+Los+&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDcxMDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8): €600
+    - [lodging](https://www.airbnb.es/s/Getty-Center-South-Building--North-Church-Lane--Los-Angeles--California--EE.-UU./homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=0&channel=EXPLORE&query=Getty%20Center%20South%20Building%2C%20Los%20Angeles%2C%20California%2C%20EE.%20UU.&place_id=ChIJQ3zOwsa8woARvn7LmZd5iv4&date_picker_type=calendar&checkin=2024-03-18&checkout=2024-03-24&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=6&ne_lat=34.02162345635933&ne_lng=-117.99592753263414&sw_lat=33.4316612028&sw_lng=-118.5311239517547&zoom=10.403016506279975&zoom_level=10.403016506279975&search_by_map=true): €800
+    - food + transport ([Metro bus line 761](https://www.getty.edu/visit/center/parking-and-transportation/)): €700
 
 ---
 TODO:
