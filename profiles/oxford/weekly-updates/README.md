@@ -1394,22 +1394,32 @@ DB
     - computed statistics
     - updated the GeoServer
 
+# Hilary Term 2024
 
-## 
+## week 0
 
-- in touch with Will for the deployement of the KRG AWS instance. Start to deploy?
+- prepared stats for the Arcadia annual report and updated the eamenaR function
+- various GitHub updates
+- updated the risk assessment form for Kurdistan
+- in touch with Will:
+    - for the deployement of the KRG AWS instance. Start to deploy?
+    - to correct the Grid Ids in HPs
+- in touch with Ash:
+    - to upload Afghanistan grids
+- in touch with Ash and Reuben (meeting the next week) to schedule the citation-generator GUI
+- need to have spare time to work on APAAME
 - heard from the last Arches/UK user group (*via* Bryan Alvey, UCL):
     - [Helen Thomas](https://www.ucl.ac.uk/bartlett/heritage/people/helen-thomas) (UCL), with Phil Carlisle (Historic England), is working on a RM for climate hasards (to be completed in Feb/Mar 2024)
-- Arches developper meeting (20-22 March 2024) at the Getty Center, LA, US - estimate costs for a 7 days journey:
-    - [flight](https://www.google.com/search?q=london+los+angeles+flight&oq=London+Los+&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDcxMDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8): €600
-    - [lodging](https://www.airbnb.es/s/Getty-Center-South-Building--North-Church-Lane--Los-Angeles--California--EE.-UU./homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=0&channel=EXPLORE&query=Getty%20Center%20South%20Building%2C%20Los%20Angeles%2C%20California%2C%20EE.%20UU.&place_id=ChIJQ3zOwsa8woARvn7LmZd5iv4&date_picker_type=calendar&checkin=2024-03-18&checkout=2024-03-24&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=6&ne_lat=34.02162345635933&ne_lng=-117.99592753263414&sw_lat=33.4316612028&sw_lng=-118.5311239517547&zoom=10.403016506279975&zoom_level=10.403016506279975&search_by_map=true): €800
-    - food + transport ([Metro bus line 761](https://www.getty.edu/visit/center/parking-and-transportation/)): €700
+- would like to attend the [Arches developper meeting](https://community.archesproject.org/t/developer-meeting-2024/1998/11) (20-22 March 2024) at the Getty Center, LA, US.
 
 ---
 TODO:
 
-- [ ] AWS: Attention: Extended Deadline for Updating Your Access Permissions - December 11, 2023
-AWS has discontinued use of old IAM permissions for Billing, Cost Management, and Accounts consoles. If you do not take action, you may lose access to these consoles. We are granting an extension until December 11, 2023 for you to update your IAM policies. Update your policies or contact your organization's access administrator. For assistance, please visit the blog, or review the policy migration utilities- Bulk Policy Migrator, action mapping guide.
+- [ ] AWS: Attention: Extended Deadline for Updating Your Access Permissions - December 11, 2023. AWS has discontinued use of old IAM permissions for Billing, Cost Management, and Accounts consoles. If you do not take action, you may lose access to these consoles. We are granting an extension until December 11, 2023 for you to update your IAM policies. Update your policies or contact your organization's access administrator. For assistance, please visit the blog, or review the policy migration utilities- Bulk Policy Migrator, action mapping guide.
 - [ ] hide coordinates for Guest users
 - [ ] correct the Grid Ids in HPs
 - [ ] AWS: tuning the KRG DB
+- [ ] [Arches developper meeting](https://community.archesproject.org/t/developer-meeting-2024/1998/11) (20-22 March 2024) at the Getty Center, LA, US - estimate costs for a 7 days journey:
+    - [flight](https://www.google.com/search?q=london+los+angeles+flight&oq=London+Los+&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDcxMDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8): €600
+    - [lodging](https://www.airbnb.es/s/Getty-Center-South-Building--North-Church-Lane--Los-Angeles--California--EE.-UU./homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=0&channel=EXPLORE&query=Getty%20Center%20South%20Building%2C%20Los%20Angeles%2C%20California%2C%20EE.%20UU.&place_id=ChIJQ3zOwsa8woARvn7LmZd5iv4&date_picker_type=calendar&checkin=2024-03-18&checkout=2024-03-24&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=6&ne_lat=34.02162345635933&ne_lng=-117.99592753263414&sw_lat=33.4316612028&sw_lng=-118.5311239517547&zoom=10.403016506279975&zoom_level=10.403016506279975&search_by_map=true): €800
+    - food + transport ([Metro bus line 761](https://www.getty.edu/visit/center/parking-and-transportation/)): €700
