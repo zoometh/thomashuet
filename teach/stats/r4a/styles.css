@@ -14,7 +14,8 @@ lp {
   background-color: #FFCCCB;
 }
 
-.r-markdown {
+.r-md {
+  /* for the text: "R Markdown" */
   background-color: blue;
   color: white;
   padding: 5px;

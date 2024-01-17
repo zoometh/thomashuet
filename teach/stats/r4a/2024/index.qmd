@@ -44,14 +44,14 @@ library(rgl)
 
 ### R Markdown
 
-**R Markdown** is an authoring framework for data science (AFDS). It combines : 
+<span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines : 
 
 * R code chunks
 
 * Narrative parts with -- mainly -- Markdown syntax
 
 ::: {.callout-note}
-R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-r.png' style='height: 45px;vertical-align: middle;'> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-markdown.png' style='height: 45px;vertical-align: middle;'> for Markdown
+R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> for Markdown
 :::
 
 ### Example
