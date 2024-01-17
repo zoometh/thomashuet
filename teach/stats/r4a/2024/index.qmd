@@ -1,5 +1,5 @@
 ---
-title: "Authoring, writing and publishing<br>with Rmarkdown"
+title: "Authoring, writing and publishing with<br>Rmarkdown"
 author: "Thomas Huet, University of Oxford "
 title-slide-attributes:
     data-background-image: "../../../www/logo.png"
@@ -11,11 +11,12 @@ format:
     chalkboard: true
     scrollable: true
     logo: ../../../www/inst-uni-oxford_.png
-    css: ../styles.css
+    # css: ../styles.css
+    css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
     margin: 0.01
 bibliography: references.bib
 pagetitle: Report with R Markdown
-footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2024 - <em>presented by </em> Thomas Huet"
+footer: "Report with R Markdown - R4Rchaeologists <img src='../../../www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2024 - <em>presented by </em> Thomas Huet"
 ---
 
 ## Introduction
@@ -46,9 +47,15 @@ library(rgl)
 
 <span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines : 
 
-* R code chunks
+<div class="div-code"> 
+<small>code chunk</small>
+R code chunks
+</div>
 
-* Narrative parts with -- mainly -- Markdown syntax
+<div class="div-text"> 
+<small>narrative part</small>
+Narrative parts with -- mainly -- Markdown syntax
+</div>
 
 ::: {.callout-note}
 R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> for Markdown
@@ -76,7 +83,7 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 </thead>
 <tbody>
   <tr>
-    <td>Rmarkdown</td>
+    <td><span class="r-md">R Markdown</span></td>
     <td>R</td>
     <td>front-end oriented</td>
   </tr>
@@ -100,14 +107,11 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 
 ## Academic reporting
 
-**R Markdown** is often enough for academic reporting. It supports:
+<span class="r-md">R Markdown</span> is often enough for academic reporting. It supports:
 
-* HTML/CSS markup languages  
-* LaTeX writing
-* BibTex references
-* interactive maps
-* 3D plots
-* etc.
+* HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
+* interactive maps, 3D plots, etc.
 
 ## Main packages
 
@@ -118,7 +122,7 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
     <td>[knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX)</td>
   </tr>
   <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png' style='width: 100px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-rmarkdown.png' style='width: 100px;vertical-align: middle;'></td>
     <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
   </tr>
     <tr>
@@ -141,7 +145,7 @@ In RStudio: `File > New file > R Markdown...`
 
 <center>
 
-![](www/rmd_create.png){width="500px"}
+![](../../../www/rmd_create.png){width="500px"}
 
 </center>
 
@@ -149,7 +153,7 @@ Options (`Title`, `Author`, `Date`, etc.) can be changed later ([YAML header](#y
 
 <center>
 
-![](www/rmd_create_rmd.png){width="500px"}
+![](../../../www/rmd_create_rmd.png){width="500px"}
 
 </center>  
 
@@ -161,10 +165,9 @@ A new document is created.
 ### RStudio <small>preview</small>
 
 
-
 <center>
 
-![](www/rmd_create_rmd_new.png){width="900px"}
+![](../../../www/rmd_create_rmd_new.png){width="900px"}
 
 </center>
 
@@ -181,7 +184,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 <center>
 
-![](www/rmd_render.png){width="900px"}
+![](../../../www/rmd_render.png){width="900px"}
 
 </center>
 \
@@ -207,35 +210,35 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 </thead>
 <tbody>
   <tr>
-    <td>![](www/rmd_nav_knitOnSave.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_knitOnSave.png){width="60px"}</td>
     <td>knit automatically when save the document</td>
   </tr>
   <tr>
-    <td>![](www/rmd_nav_checkSpelling.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_checkSpelling.png){width="60px"}</td>
     <td>check spelling</td>
   </tr>
   <tr>
-    <td>![](www/rmd_nav_knit.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_knit.png){width="60px"}</td>
     <td>knit the document</td>
   </tr>
   <tr>
-    <td>![](www/rmd_nav_mdFormatOpt.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_mdFormatOpt.png){width="60px"}</td>
     <td>run Visual R Markdown + other options</td>
   </tr>
   <tr>
-    <td>![](www/rmd_nav_newCodeChunk.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_newCodeChunk.png){width="60px"}</td>
     <td>new code chunk (R, Bash, D3, Python, etc.)</td>
   </tr>
   <tr>
-    <td>![](www/rmd_nav_run.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_run.png){width="60px"}</td>
     <td>run a part or the whole document</td>
   </tr>
   <tr>
-    <td>![](www/rmd_nav_publish.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_publish.png){width="60px"}</td>
     <td>publish the document</td>
   </tr>
   <tr>
-    <td>![](www/rmd_nav_visualMdEditor.png){width="60px"}</td>
+    <td>![](../../../www/rmd_nav_visualMdEditor.png){width="60px"}</td>
     <td>run Visual R Markdown</td>
   </tr>
 </tbody>
@@ -245,10 +248,12 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 <img src="www/rmd_nav_visualMdEditor_bar.png" align="left"/><br>
   
-[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax (extension of Mardown), supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/doi-logo.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-datacite.png" style="height: 45px;vertical-align: middle;"/>
+[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax[^2], supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"/>
 
 
 :::
+
+[^2]: extension of Mardown
 
 ## Document structure
 
@@ -276,7 +281,7 @@ Markdown [narrative parts](#text)
 
 ::: {.column width="40%"}
 
-![](www/rmd_create_rmd_new_skrinked.png){width="500px"}
+![](../../../www/rmd_create_rmd_new_skrinked.png){width="500px"}
 
 :::
 
@@ -290,7 +295,9 @@ Easy-to-write plain text syntax
 
 ### Used by
 
-Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-slack.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, etc.
+Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, etc.
+
+It means that you can copy/paste R Mardown though different app without losing the typesetting
 
 ### Syntax
 
@@ -377,17 +384,18 @@ line separator
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
+⬇️ This is a line separator
 ---
 ```
 </div>  
 
-
+⬇️ This is a line separator
 ---
   
 
 ### with HTML and CSS
 
-A extended part of the text styling can also be done with HTML/CSS
+Text styling can be extended done with HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
 
 <div class="div-text"> 
 <small>narrative part</small><br>
@@ -604,11 +612,11 @@ Markdown notation
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-![](www/logo.png){width=100px}
+![](../../../www/logo.png){width=100px}
 ```
 </div>
 
-![](www/logo.png){width=100px}
+![](../../../www/logo.png){width=100px}
 
 ---
 
@@ -771,10 +779,10 @@ part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/sta
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-[![](www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
+[![](../../../www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
 ```
 </div>
-[![](www/logo.png){width="170px"}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
+[![](../../../www/logo.png){width="170px"}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
 
 
 :::
@@ -840,7 +848,7 @@ Locators to cite and reuse variables (figures, sections, etc.)
 
 <center>
 
-![](www/rmd-cross-ref-example.png){width="600px"}
+![](../../../www/rmd-cross-ref-example.png){width="600px"}
 
 </center>
 
@@ -1009,7 +1017,7 @@ It's easy to retrieve [this reference in Google Scholar](https://scholar.google.
 
 R code chunks are placeholders for the coding part of the document, expressed with a local header, and a body part.
 
-![](www/rmd_codechunk_header.png)
+![](../../../www/rmd_codechunk_header.png)
 
 ## Headers
 
@@ -1028,7 +1036,7 @@ Options are used to show/hide the code, change the size of the output image, set
 
 <center>
 
-![](www/rmd_create_rmd_new.png){width="900px"}
+![](../../../www/rmd_create_rmd_new.png){width="900px"}
 
 </center>
 
@@ -1060,7 +1068,7 @@ The 🔝 chunk in the document allows to set these options for all other chunks 
 
 ::: {.column width="50%"}
 
-![](www/rmd_create_rmd_new_skrinked.png){width="700px"}
+![](../../../www/rmd_create_rmd_new_skrinked.png){width="700px"}
 
 :::
 
@@ -1619,7 +1627,7 @@ bibliography: references.bib
   
 These temporary files are creates:
   
-![](www/rmd_knit_pdf.png){width="400px"}
+![](../../../www/rmd_knit_pdf.png){width="400px"}
 
 At the end of the rendering, these files are deleted.
 
@@ -1702,7 +1710,7 @@ Use R Markdown (code chunks and narrative text) to create a report. Choice betwe
 
 <center>
 
-![](www/munsingen_fib_measures.png){width="400px"}
+![](../../../www/munsingen_fib_measures.png){width="400px"}
 
 </center>
 
