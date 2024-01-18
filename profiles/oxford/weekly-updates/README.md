@@ -1412,6 +1412,25 @@ DB
     - [Helen Thomas](https://www.ucl.ac.uk/bartlett/heritage/people/helen-thomas) (UCL), with Phil Carlisle (Historic England), is working on a RM for climate hasards (to be completed in Feb/Mar 2024)
 - would like to attend the [Arches developper meeting](https://community.archesproject.org/t/developer-meeting-2024/1998/11) (20-22 March 2024) at the Getty Center, LA, US.
 
+## week 1
+
+- working on duplicated EAMENA IDs with a mishandling that removed ~ 500 HPs from the DB when doing a BU append
+    - worked and restored the morning backup with Ash
+    - raised up the issue on the Arches forum
+- AWS deployement of the KAHD (Iraqi Kurdistan) DB: deployed instance
+    - meeting with Mel and Kam (IT services)
+    - AWS support (reserved instance <-> running instance)
+    - infrastructuring the workflow (new GitHub section, new Slack channel, etc.)
+- reported the extension of EAMENA Grid Squares to Afghanistan
+- investigate on how to set up a round-trip to the BU (Upload - Retrieve) and compare it with native functions of Arches last release (v7.5)  
+- citation-generator
+    - meeting with Ash and Reuben
+- completed the AAA on the GeoServer
+- PCI Archaeology, submitted paper in the frame of our CAA22 session on CH (with Bijan, Crystal, etc.): refused
+    - Bijan, among others, has reviewed this paper twice, asking for major revisions
+- start to work on the AAA paper
+- *Arches and Coffee* 
+
 ---
 TODO:
 
