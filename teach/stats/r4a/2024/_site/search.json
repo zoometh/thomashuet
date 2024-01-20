@@ -74,7 +74,7 @@
     "href": "index.html#images",
     "title": "Authoring, writing and publishing withRmarkdown",
     "section": "Images",
-    "text": "Images\n\nOnline imagesLocal images\n\n\nMarkdown notation\n\nnarrative part\n![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png\" width=100&gt;\n\n\n\n\nMarkdown notation\n\nnarrative part\n![](../../../www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"www/logo.png\" alt=\"\" width=100&gt;"
+    "text": "Images\n\nOnline imagesLocal images\n\n\nMarkdown notation\n\nnarrative part\n![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png\" width=100&gt;\n\n\n\n\nMarkdown notation\n\nnarrative part\n![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"www/logo.png\" alt=\"\" width=100&gt;"
   },
   {
     "objectID": "index.html#spaces-and-end-of-lines",
@@ -95,7 +95,7 @@
     "href": "index.html#hyperlinks",
     "title": "Authoring, writing and publishing withRmarkdown",
     "section": "Hyperlinks",
-    "text": "Hyperlinks\nAdd hyperlinks\n\nTo textTo images\n\n\n\nnarrative part\npart 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)\n\npart 2: Practice\n\n\n\nnarrative part\n[![](../../../www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)"
+    "text": "Hyperlinks\nAdd hyperlinks\n\nTo textTo images\n\n\n\nnarrative part\npart 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)\n\npart 2: Practice\n\n\n\nnarrative part\n[![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)"
   },
   {
     "objectID": "index.html#bookmarks",
@@ -172,7 +172,7 @@
     "href": "index.html#images-1",
     "title": "Authoring, writing and publishing withRmarkdown",
     "section": "Images",
-    "text": "Images\nImages can be render inside a code chunk:\n\ncode chunk\nknitr::include_graphics(\"../../../www/munsingen_fib_measures.png\")"
+    "text": "Images\nImages can be render inside a code chunk:\n\ncode chunk\nknitr::include_graphics(\"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png\")"
   },
   {
     "objectID": "index.html#yaml",
@@ -186,7 +186,7 @@
     "href": "index.html#yaml-dates",
     "title": "Authoring, writing and publishing withRmarkdown",
     "section": "YAML dates",
-    "text": "YAML dates\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%D')'\"\n---\n\n01/17/24\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%d %B %Y')'\"\n---\n\n17 January 2024\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
+    "text": "YAML dates\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%D')'\"\n---\n\n01/19/24\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%d %B %Y')'\"\n---\n\n19 January 2024\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
   },
   {
     "objectID": "index.html#yaml-output",
@@ -207,7 +207,7 @@
     "href": "index.html#yaml-references",
     "title": "Authoring, writing and publishing withRmarkdown",
     "section": "YAML references",
-    "text": "YAML references\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"17 January 2024\"\nbibliography: references.bib\n---\n\nReference the bibliographic file (e.g. references.bib). Here in the same folder as the .Rmd file.\n\nsee Xie et al. (2018)"
+    "text": "YAML references\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"19 January 2024\"\nbibliography: references.bib\n---\n\nReference the bibliographic file (e.g. references.bib). Here in the same folder as the .Rmd file.\n\nsee Xie et al. (2018)"
   },
   {
     "objectID": "index.html#styling-1",

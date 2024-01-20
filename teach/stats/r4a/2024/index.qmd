@@ -2,21 +2,22 @@
 title: "Authoring, writing and publishing with<br>Rmarkdown"
 author: "Thomas Huet, University of Oxford "
 title-slide-attributes:
-    data-background-image: "../../../www/logo.png"
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"
     data-background-size: "33%"
     data-background-opacity: "0.2"
 format:
   revealjs: 
+    controls: true
     slide-number: true
     chalkboard: true
     scrollable: true
-    logo: ../../../www/inst-uni-oxford_.png
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/inst-uni-oxford_.png
     # css: ../styles.css
     css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
     margin: 0.01
 bibliography: references.bib
 pagetitle: Report with R Markdown
-footer: "Report with R Markdown - R4Rchaeologists <img src='../../../www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2024 - <em>presented by </em> Thomas Huet"
+footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2024 - <em>presented by </em> Thomas Huet"
 ---
 
 ## Introduction
@@ -145,7 +146,7 @@ In RStudio: `File > New file > R Markdown...`
 
 <center>
 
-![](../../../www/rmd_create.png){width="500px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create.png){width="500px"}
 
 </center>
 
@@ -153,7 +154,7 @@ Options (`Title`, `Author`, `Date`, etc.) can be changed later ([YAML header](#y
 
 <center>
 
-![](../../../www/rmd_create_rmd.png){width="500px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd.png){width="500px"}
 
 </center>  
 
@@ -167,7 +168,7 @@ A new document is created.
 
 <center>
 
-![](../../../www/rmd_create_rmd_new.png){width="900px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png){width="900px"}
 
 </center>
 
@@ -184,7 +185,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 <center>
 
-![](../../../www/rmd_render.png){width="900px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_render.png){width="900px"}
 
 </center>
 \
@@ -210,35 +211,35 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 </thead>
 <tbody>
   <tr>
-    <td>![](../../../www/rmd_nav_knitOnSave.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png){width="60px"}</td>
     <td>knit automatically when save the document</td>
   </tr>
   <tr>
-    <td>![](../../../www/rmd_nav_checkSpelling.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png){width="60px"}</td>
     <td>check spelling</td>
   </tr>
   <tr>
-    <td>![](../../../www/rmd_nav_knit.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png){width="60px"}</td>
     <td>knit the document</td>
   </tr>
   <tr>
-    <td>![](../../../www/rmd_nav_mdFormatOpt.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png){width="60px"}</td>
     <td>run Visual R Markdown + other options</td>
   </tr>
   <tr>
-    <td>![](../../../www/rmd_nav_newCodeChunk.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png){width="60px"}</td>
     <td>new code chunk (R, Bash, D3, Python, etc.)</td>
   </tr>
   <tr>
-    <td>![](../../../www/rmd_nav_run.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png){width="60px"}</td>
     <td>run a part or the whole document</td>
   </tr>
   <tr>
-    <td>![](../../../www/rmd_nav_publish.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_publish.png){width="60px"}</td>
     <td>publish the document</td>
   </tr>
   <tr>
-    <td>![](../../../www/rmd_nav_visualMdEditor.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_visualMdEditor.png){width="60px"}</td>
     <td>run Visual R Markdown</td>
   </tr>
 </tbody>
@@ -281,7 +282,7 @@ Markdown [narrative parts](#text)
 
 ::: {.column width="40%"}
 
-![](../../../www/rmd_create_rmd_new_skrinked.png){width="500px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
 
 :::
 
@@ -612,11 +613,11 @@ Markdown notation
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-![](../../../www/logo.png){width=100px}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}
 ```
 </div>
 
-![](../../../www/logo.png){width=100px}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}
 
 ---
 
@@ -779,10 +780,10 @@ part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/sta
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-[![](../../../www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
+[![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
 ```
 </div>
-[![](../../../www/logo.png){width="170px"}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
+[![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width="170px"}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
 
 
 :::
@@ -848,7 +849,7 @@ Locators to cite and reuse variables (figures, sections, etc.)
 
 <center>
 
-![](../../../www/rmd-cross-ref-example.png){width="600px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd-cross-ref-example.png){width="600px"}
 
 </center>
 
@@ -1017,7 +1018,7 @@ It's easy to retrieve [this reference in Google Scholar](https://scholar.google.
 
 R code chunks are placeholders for the coding part of the document, expressed with a local header, and a body part.
 
-![](../../../www/rmd_codechunk_header.png)
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_codechunk_header.png)
 
 ## Headers
 
@@ -1036,7 +1037,7 @@ Options are used to show/hide the code, change the size of the output image, set
 
 <center>
 
-![](../../../www/rmd_create_rmd_new.png){width="900px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png){width="900px"}
 
 </center>
 
@@ -1068,7 +1069,7 @@ The 🔝 chunk in the document allows to set these options for all other chunks 
 
 ::: {.column width="50%"}
 
-![](../../../www/rmd_create_rmd_new_skrinked.png){width="700px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="700px"}
 
 :::
 
@@ -1215,7 +1216,7 @@ Images can be render inside a code chunk:
 <div class="div-code"> 
 <small>code chunk</small>
 ```{.r}
-knitr::include_graphics("../../../www/munsingen_fib_measures.png")
+knitr::include_graphics("https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png")
 ```
 </div>
   
@@ -1223,7 +1224,7 @@ knitr::include_graphics("../../../www/munsingen_fib_measures.png")
 ```{r }
 #| out-width: "50%"
 
-knitr::include_graphics("../../../www/munsingen_fib_measures.png")
+knitr::include_graphics("https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png")
 ```
 
 
@@ -1627,7 +1628,7 @@ bibliography: references.bib
   
 These temporary files are creates:
   
-![](../../../www/rmd_knit_pdf.png){width="400px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_knit_pdf.png){width="400px"}
 
 At the end of the rendering, these files are deleted.
 
@@ -1710,7 +1711,7 @@ Use R Markdown (code chunks and narrative text) to create a report. Choice betwe
 
 <center>
 
-![](../../../www/munsingen_fib_measures.png){width="400px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png){width="400px"}
 
 </center>
 
