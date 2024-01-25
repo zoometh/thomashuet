@@ -1431,9 +1431,38 @@ DB
 - start to work on the AAA paper
 - *Arches and Coffee* 
 
+### ManCom
+> 25/01/24
+
+- Database
+    - various fixes (duplicates, BU, etc.)
+    - grid extension to Afghanistan
+- citation-generator plugin
+    - Reuben, then Ash 
+    - -> Arches plugin, paper method
+- data-paper with Bijan
+- GeoServer work
+    - start to work on the AAA paper
+- AWS deployement of the KAHD (Iraqi Kurdistan) DB
+- GitHub development
+    - creating/structuring the documentation
+- assessment of the last Arches v7.5 by Ash
+    - BU feature (plugin)
+- APAAME <-> EA DB
+    - with Jeremy Worth (ICT So2)
+- *Arches and Coffee*, 
+    - ACHP GitHub organisation -> RDF
+        - > 5 years fundings
+    - UCL/HE climate RM
+    - Kubernetes/Docker (containerisation)
+
 ---
 TODO:
 
+- [ ] clustering
+- [ ] reverse geocoding
+- [ ] localisation in French
+- [ ] create IAM user account for Will KAHD
 - [ ] AWS: Attention: Extended Deadline for Updating Your Access Permissions - December 11, 2023. AWS has discontinued use of old IAM permissions for Billing, Cost Management, and Accounts consoles. If you do not take action, you may lose access to these consoles. We are granting an extension until December 11, 2023 for you to update your IAM policies. Update your policies or contact your organization's access administrator. For assistance, please visit the blog, or review the policy migration utilities- Bulk Policy Migrator, action mapping guide.
 - [ ] hide coordinates for Guest users
 - [ ] correct the Grid Ids in HPs
