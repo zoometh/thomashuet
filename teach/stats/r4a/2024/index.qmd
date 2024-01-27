@@ -16,6 +16,7 @@ format:
     # css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
     css: https://zoometh.github.io/thomashuet/css/quarto.css
     margin: 0.01
+    width: 2000
 bibliography: references.bib
 pagetitle: Report with R Markdown
 footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2024 - <em>presented by </em> Thomas Huet"
@@ -104,10 +105,22 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
   </tr>
 </tbody>
 </table>
+
+
+### About this document
+
+A Quarto document (`.qmd`) using reveal.js (JavaScript) hosted on GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index.qmd))
+
+```
+https://quarto.org/docs/presentations/revealjs/
+```
+
 :::
 \
 
-## Academic reporting
+## Why R Markdown?
+
+### Academic reporting
 
 <span class="r-md">R Markdown</span> is often enough for academic reporting. It supports:
 
@@ -115,20 +128,32 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 * <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
 * interactive maps, 3D plots, etc.
 
+### Ubiquity of Markdown
+
+
+
+| Column 1       | Column 2       |
+| -------------- | -------------- |
+| XXX | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum' style='height: 45px;vertical-align: middle;'> |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 45px;vertical-align: middle;'> | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 45px;vertical-align: middle;'> |
+
+
+:::
+
 ## Main packages
 
 <table>
 <tbody>
   <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png' style='width: 100px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png' style='width: 150px;vertical-align: middle;'></td>
     <td>[knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX)</td>
   </tr>
   <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-rmarkdown.png' style='width: 100px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-rmarkdown.png' style='width: 150px;vertical-align: middle;'></td>
     <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
   </tr>
     <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 150px;vertical-align: middle;'></td>
     <td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross referencing)</td>
   </tr>
 </tbody>

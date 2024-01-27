@@ -16,9 +16,10 @@ lp {
 
 .r-md {
   /* for the text: "R Markdown" */
-  background-color: #2a76dd;
+  background-color: #2a75dd87;
   color: white;
-  padding: 5px;
+  padding: 3px; /* Adjust the padding value as needed */
+  border-radius: 4px; /* Adjust the border radius for roundness of corners */
 }
 
 notes {
