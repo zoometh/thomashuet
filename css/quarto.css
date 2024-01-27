@@ -18,8 +18,8 @@ lp {
   /* for the text: "R Markdown" */
   background-color: #2a75dd87;
   color: white;
-  padding: 3px; /* Adjust the padding value as needed */
-  border-radius: 4px; /* Adjust the border radius for roundness of corners */
+  padding: 2px; /* Adjust the padding value as needed */
+  border-radius: 10px; /* Adjust the border radius for roundness of corners */
 }
 
 notes {

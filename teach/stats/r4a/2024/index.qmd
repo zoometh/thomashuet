@@ -11,12 +11,13 @@ format:
     slide-number: true
     chalkboard: true
     scrollable: true
+    footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/inst-uni-oxford_.png
     # css: ../styles.css
     # css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
     css: https://zoometh.github.io/thomashuet/css/quarto.css
     margin: 0.01
-    width: 2000
+    width: 1200
 bibliography: references.bib
 pagetitle: Report with R Markdown
 footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2024 - <em>presented by </em> Thomas Huet"
@@ -64,13 +65,6 @@ Narrative parts with -- mainly -- Markdown syntax
 R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> for Markdown
 :::
 
-### Example
-
-
-```{=html}
-<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
-```
-
 
 ### AFDS
 
@@ -111,7 +105,7 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 
 A Quarto document (`.qmd`) using reveal.js (JavaScript) hosted on GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index.qmd))
 
-```
+```{=html}
 https://quarto.org/docs/presentations/revealjs/
 ```
 
@@ -119,6 +113,8 @@ https://quarto.org/docs/presentations/revealjs/
 \
 
 ## Why R Markdown?
+
+::: {.panel-tabset}
 
 ### Academic reporting
 
@@ -134,8 +130,9 @@ https://quarto.org/docs/presentations/revealjs/
 
 | Column 1       | Column 2       |
 | -------------- | -------------- |
-| XXX | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum' style='height: 45px;vertical-align: middle;'> |
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 45px;vertical-align: middle;'> | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 45px;vertical-align: middle;'> |
+| Copy/paste can be done over numerous code-oriented platforms without losing the typesetting
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png' style='height: 150px;vertical-align: middle;'> |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 150px;vertical-align: middle;'> | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 150px;vertical-align: middle;'> |
 
 
 :::
@@ -145,15 +142,15 @@ https://quarto.org/docs/presentations/revealjs/
 <table>
 <tbody>
   <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png' style='width: 150px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png' style='width: 100px;vertical-align: middle;'></td>
     <td>[knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX)</td>
   </tr>
   <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-rmarkdown.png' style='width: 150px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-rmarkdown.png' style='width: 100px;vertical-align: middle;'></td>
     <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
   </tr>
     <tr>
-    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 150px;vertical-align: middle;'></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'></td>
     <td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross referencing)</td>
   </tr>
 </tbody>
@@ -176,7 +173,7 @@ In RStudio: `File > New file > R Markdown...`
 
 </center>
 
-Options (`Title`, `Author`, `Date`, etc.) can be changed later ([YAML header](#yaml)). Choose **PDF** as the default output format.
+Options (`Title`, `Author`, `Date`, etc.) can be changed later. Choose **PDF** as the default output format.
 
 <center>
 
@@ -226,7 +223,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 ### Tools
 
-<img src="www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"/>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"/>
 
 <table>
 <thead>
@@ -237,35 +234,35 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 </thead>
 <tbody>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png){width="60px"}</td>
-    <td>knit automatically when save the document</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png){width="80px"}</td>
+    <td>knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>automatically when save the document</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png){width="80px"}</td>
     <td>check spelling</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png){width="60px"}</td>
-    <td>knit the document</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png){width="80px"}</td>
+    <td>knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>the document</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png){width="80px"}</td>
     <td>run Visual R Markdown + other options</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png){width="80px"}</td>
     <td>new code chunk (R, Bash, D3, Python, etc.)</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png){width="80px"}</td>
     <td>run a part or the whole document</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_publish.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_publish.png){width="80px"}</td>
     <td>publish the document</td>
   </tr>
   <tr>
-    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_visualMdEditor.png){width="60px"}</td>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_visualMdEditor.png){width="80px"}</td>
     <td>run Visual R Markdown</td>
   </tr>
 </tbody>
@@ -322,19 +319,27 @@ Easy-to-write plain text syntax
 
 ### Used by
 
-Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, etc.
+Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [GitLab](https://about.gitlab.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;"/>, [Wordpress](https://wordpress.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-wordpress.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, [Reddit](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-reddit.png" style="height: 45px;vertical-align: middle;"/>, etc.
 
-It means that you can copy/paste R Mardown though different app without losing the typesetting
 
 ### Syntax
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+Rules
 
 ```{=html}
 <iframe width="900" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 ```
 <small><https://rmarkdown.rstudio.com/authoring_basics.html></small>
 \
+:::
 
-### Online editor
+::: {.column width="40%"}
+
+Online editor
 
 ```{=html}
 <iframe width="900" height="300" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
@@ -342,9 +347,20 @@ It means that you can copy/paste R Mardown though different app without losing t
 <small><https://stackedit.io/app#></small>
 \
 
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
+
+:::
+
+::::
+
 ### Online converter
 
-Pandoc is an extension of Markdown, usefull for text conversions (Markdown <-> HTML, LaTeX <-> Markdown, etc.)
+* HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
+* writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
+* interactive maps, 3D plots, etc.
+
+
+Pandoc is an extension of Markdown, useful for text conversions (Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.)
 
 ```{=html}
 <iframe width="900" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
@@ -728,7 +744,7 @@ Ton cou Exquis\
 ```
 </div>
 
-Reconnais-to1\
+Reconnais-toi\
 Cette adorable personne c'est toi\
 Sous le grand chapeau canotier\
 Oeil\
@@ -774,11 +790,23 @@ Ton cou Exquis\
 ```
 </div>
 
-### .. and add an anchor
+### .. add an anchor
 
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md}
+### My Header level 3 {-#bookmarks}
+```
+</div>
+
+### .. add an hyperlink to the anchor
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua (**see [My Header level 3](#bookmarks)). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
 ### My Header level 3 {-#bookmarks}
 ```
 </div>
@@ -796,10 +824,10 @@ Add hyperlinks
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)
+part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2024/2_R Markdown_Practice)
 ```
 </div>
-part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)
+part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2024/2_R Markdown_Practice)
 
 ### To images
 
@@ -955,17 +983,13 @@ abline(lm(model))
 the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients[2], 2)',  Fig. \@ref(fig:maxLmaxB))
 ```
 </div>
+the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
 
-🗘the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
-
-
-::: {.callout-note}
-Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose
-:::
 
 ::: {.callout-note}
-Here the figure callout `\@ref(fig:maxLmaxB))` is not rendered because this document is a Quarto presentation using {`revealjs`} instead of {`bookdown`}
+Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose. Here the figure callout `\@ref(fig:maxLmaxB))` is not rendered because this document is a Quarto presentation using {`revealjs`} instead of {`bookdown`}
 :::
+
 
 \
 
