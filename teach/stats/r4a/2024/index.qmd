@@ -304,7 +304,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 :::
 
 ::: {.callout-note}
-Use the R package <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'> [bookdown](https://bookdown.org/) for advanced editing and publishing functions (e.g. cross referencing)</td
+Use the R package <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'> [bookdown](https://bookdown.org/) for advanced editing and publishing functions (e.g. cross referencing)
 :::
 
 
@@ -358,32 +358,26 @@ a [YAML header](#yaml) with metadata
 
 <div class="div-code"> 
 <small>code chunk</small><br>
-R [code chunks](#chunks)
 </div>
 
 <div class="div-text"> 
 <small>narrative part</small><br>
-Markdown [narrative parts](#text)
 </div>
 
 <div class="div-code"> 
 <small>code chunk</small><br>
-R [code chunks](#chunks)
 </div>
 
 <div class="div-text"> 
 <small>narrative part</small><br>
-Markdown [narrative parts](#text)
 </div>
 
 <div class="div-code"> 
 <small>code chunk</small><br>
-R [code chunks](#chunks)
 </div>
 
 <div class="div-text"> 
 <small>narrative part</small><br>
-Markdown [narrative parts](#text)
 </div>
 
 etc.
@@ -424,11 +418,10 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 <small><https://stackedit.io/app#></small>
 \
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
 
 ### Converter
 
-Pandoc is an extension of Markdown, useful for text conversions (Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.)
+Text conversions (Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.) using Pandoc
 
 ```{=html}
 <iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
@@ -436,12 +429,7 @@ Pandoc is an extension of Markdown, useful for text conversions (Markdown <-> <i
 <small><https://pandoc.org/try/></small>
 \
 
-::: {.callout-tip}
-## Converters
 
-With [Pandoc](https://pandoc.org/try/), exists a lot of online apps making the conversions easier (e.g. [Word to HTML](https://wordtohtml.net/)).
-:::
-\
 
 :::
 
@@ -449,7 +437,7 @@ With [Pandoc](https://pandoc.org/try/), exists a lot of online apps making the c
 
 ::: {.panel-tabset}
 
-### Text
+### Text and paragraphs
 
 +---------------------------------------+-------------------------------------+
 | Markdown                              | Rendered                            |
@@ -469,15 +457,6 @@ With [Pandoc](https://pandoc.org/try/), exists a lot of online apps making the c
 | ...                                   | ...                                 |
 +---------------------------------------+-------------------------------------+
 
-### Math formula
-
-| Markdown                   | Rendered                 |
-|----------------------------|--------------------------|
-| `$$\sum_{i=1}^{n} X^3_i$$` | $$\sum_{i=1}^{n} X^3_i$$ |
-| ...                        | ...                      |
-
-### Others
-
 blockquotes 
 
 <div class="div-text"> 
@@ -495,18 +474,28 @@ line separator
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-⬇️ This is a line separator
+Below this text there's a line separator
 ---
 ```
 </div>  
 
-⬇️ This is a line separator
+Below this text there's a line separator
 ---
-  
+\
+\
 
-### with HTML and CSS
 
-Text styling can be extended done with HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
+### Math formula
+
+| Markdown                   | Rendered                 |
+|----------------------------|--------------------------|
+| `$$\sum_{i=1}^{n} X^3_i$$` | $$\sum_{i=1}^{n} X^3_i$$ |
+| ...                        | ...                      |
+
+
+### with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
+
+Text styling can be extended done with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'> markup languages
 
 <div class="div-text"> 
 <small>narrative part</small><br>
@@ -723,11 +712,11 @@ Markdown notation
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}
+![](../../../www/logo.png)){width=100px}
 ```
 </div>
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}
+![](../../../www/logo.png){width=100px}
 
 ---
 
@@ -838,9 +827,7 @@ Ton cou Exquis\
 
 ## Header level 2
 
-### Header level 3
-
-#### ...
+### ...
 
 ```
 </div>
@@ -867,7 +854,7 @@ Ton cou Exquis\
 ```
 </div>
 
-### .. add an hyperlink to the anchor
+### .. and a hyperlink
 
 <div class="div-text"> 
 <small>narrative part</small><br>
@@ -950,7 +937,7 @@ After this theoretical part, you will do a [practice](#practice)
 A simple footnote[^1]
 ...
 ...
-[^1]: This is the first footnote.
+[^16]: This is a footnote.
 ```
 </div>
 
@@ -958,7 +945,7 @@ A simple footnote[^1]
 ...  
 ...  
   
-[^1]: This is the first footnote.
+[^16]: This is a footnote.
 
 
 ## Cross-referencing
@@ -1003,7 +990,7 @@ Variables can be also be calculated outside code chunks (*not recommended*),  wi
 <div class="div-text"> 
 <small>narrative part</small>
 ```{.md}
-Furze Platt dataset counts 'r number.of.axes' axes described BY 'r ncol(Handaxes)' variables. The maximal length (L = 'r max(Handaxes$L)')
+Furze Platt dataset counts 'r number.of.axes' axes described by 'r ncol(Handaxes)' variables. The maximal length (L = 'r max(Handaxes$L)')
 ```
 </div>
 Furze Platt dataset counts `r number.of.axes` axes described by `r ncol(Handaxes)` variables. The maximal length (L = `r max(Handaxes$L)`)
