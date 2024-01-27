@@ -5,12 +5,21 @@ title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"
     data-background-size: "33%"
     data-background-opacity: "0.2"
+include-in-header: 
+  text: |
+    <style>
+      .custom-small table {
+        font-size: .5em
+      }
+    </style>
 format:
   revealjs: 
     controls: true
     slide-number: true
     chalkboard: true
     scrollable: true
+    preview-links: auto
+    reference-location: document
     footnotes-hover: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/inst-uni-oxford_.png
     # css: ../styles.css
@@ -49,20 +58,12 @@ library(rgl)
 
 ### R Markdown
 
-<span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines : 
+<span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines R code chunks and narrative parts with -- mainly -- Markdown syntax
 
-<div class="div-code"> 
-<small>code chunk</small>
-R code chunks
-</div>
-
-<div class="div-text"> 
-<small>narrative part</small>
-Narrative parts with -- mainly -- Markdown syntax
-</div>
+\
 
 ::: {.callout-note}
-R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> for Markdown
+R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> `.R` + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> `.md` for Markdown
 :::
 
 
@@ -103,11 +104,12 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 
 ### About this document
 
-A Quarto document (`.qmd`) using reveal.js (JavaScript) hosted on GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index.qmd))
+A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png' style='height: 45px;vertical-align: middle;'> Quarto document (`.qmd`) using <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png' style='height: 45px;vertical-align: middle;'> reveal.js (JavaScript) hosted on <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png' style='height: 45px;vertical-align: middle;'> GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index.qmd))
 
 ```{=html}
-https://quarto.org/docs/presentations/revealjs/
+<script src="https://quarto.org/docs/presentations/revealjs/"></script>
 ```
+
 
 :::
 \
@@ -121,18 +123,43 @@ https://quarto.org/docs/presentations/revealjs/
 <span class="r-md">R Markdown</span> is often enough for academic reporting. It supports:
 
 * HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
+* cross-referencing, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
 * interactive maps, 3D plots, etc.
 
-### Ubiquity of Markdown
+### Popularity of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'>
 
 
+::: custom-small
 
-| Column 1       | Column 2       |
-| -------------- | -------------- |
-| Copy/paste can be done over numerous code-oriented platforms without losing the typesetting
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png' style='height: 150px;vertical-align: middle;'> |
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 150px;vertical-align: middle;'> | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 150px;vertical-align: middle;'> |
+
+| Language    | User Community | Learning Curve | Statistics                          | 3D                          | AI/ML                | GIS/DB                  | Data-driven doc                                  | Web App Framework                 |
+|-------------|-----------------|-----------------|-------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
+| Python      | Large and diverse | Relatively easy  | Strong support  | Blender, libraries[^1] | Leading language[^2] | Leading language[^8] | Jupyter Notebook                                  | Popular frameworks[^4] |
+| Java        | Large and established | Moderate  | Limited   | Java 3D API   | Used in enterprise | Java-based tools available  | Apache POI                                  | Various frameworks[^5] |
+| JavaScript  | Ubiquitous in web dev | Easy for web dev | Limited | WebGL | web-based apps | Limited  | D3.js                                  | Numerous frameworks[^6] |
+| MATLAB      | Academia, industry | Steeper  | Comprehensive support | Poor texture mapping | Academia, industry | Limited   |  Live scripts but hard to share  | Limited   |
+| R           | Strong community | Steeper         | Leading language | Poor texture mapping  | Extensively used | R packages for GIS[^7] | Rmarkdown, Shiny                           | Limited   | Many free packages |
+
+:::
+
+[^1]: PyOpenGL
+[^2]: TensorFlow, PyTorch
+
+[^4]: Django
+[^5]: Spring
+[^6]: React 
+[^7]: sf 
+[^8]: QGIS, ArcGIS, libraries: geopandas
+
+### Ubiquity of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>
+
+Copy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):
+
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png' style='height: 250px;'>
+
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 250px;'>
+
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 250px;'>
 
 
 :::
@@ -270,21 +297,25 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 ### Visual R Markdown {#vrm}
 
-<img src="www/rmd_nav_visualMdEditor_bar.png" align="left"/><br>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www//rmd_nav_visualMdEditor_bar.png" align="left"/><br>
   
 [Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax[^2], supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"/>
 
-
 :::
 
-[^2]: extension of Mardown
+::: {.callout-note}
+Use the R package <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'> [bookdown](https://bookdown.org/) for advanced editing and publishing functions (e.g. cross referencing)</td
+:::
 
-## Document structure
 
-R Markdown combines
+[^2]: extension of Markdown
+
+## Document structure {auto-animate=true}
+
+<span class="r-md">R Markdown</span> combines
 
 :::: {.columns}
-::: {.column width="60%"}
+::: {.column width="50%"}
 
 <div class="div-yaml"> 
 <small>header YAML</small><br>
@@ -303,7 +334,63 @@ Markdown [narrative parts](#text)
 
 :::
 
-::: {.column width="40%"}
+::: {.column width="50%"}
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
+
+:::
+
+::::
+
+## Document structure {auto-animate=true}
+
+<span class="r-md">R Markdown</span> combines
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<div class="div-yaml"> 
+<small>header YAML</small><br>
+a [YAML header](#yaml) with metadata
+</div>
+
+<br>
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+R [code chunks](#chunks)
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+Markdown [narrative parts](#text)
+</div>
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+R [code chunks](#chunks)
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+Markdown [narrative parts](#text)
+</div>
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+R [code chunks](#chunks)
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+Markdown [narrative parts](#text)
+</div>
+
+etc.
+
+:::
+
+::: {.column width="50%"}
 
 ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
 
@@ -312,8 +399,6 @@ Markdown [narrative parts](#text)
 ::::
 
 ## Markdown syntax {#text}
-
-Easy-to-write plain text syntax
 
 ::: {.panel-tabset}
 
@@ -324,46 +409,29 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 
 ### Syntax
 
-:::: {.columns}
-
-::: {.column width="60%"}
-
-Rules
 
 ```{=html}
-<iframe width="900" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+<iframe width="1000" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 ```
 <small><https://rmarkdown.rstudio.com/authoring_basics.html></small>
 \
-:::
 
-::: {.column width="40%"}
-
-Online editor
+### Editor
 
 ```{=html}
-<iframe width="900" height="300" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+<iframe width="1000" height="300" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
 ```
 <small><https://stackedit.io/app#></small>
 \
 
 ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
 
-:::
-
-::::
-
-### Online converter
-
-* HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
-* writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
-* interactive maps, 3D plots, etc.
-
+### Converter
 
 Pandoc is an extension of Markdown, useful for text conversions (Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, Markdown <-> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.)
 
 ```{=html}
-<iframe width="900" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 ```
 <small><https://pandoc.org/try/></small>
 \
@@ -608,7 +676,7 @@ dtt
 Use a table converter
 
 ```{=html}
-<iframe width="900" height="400" src="https://tableconvert.com/" title="Online table convertor"></iframe>
+<iframe width="1000" height="400" src="https://tableconvert.com/" title="Online table convertor"></iframe>
 ```
 
 <small><https://tableconvert.com/></small>
@@ -985,9 +1053,11 @@ the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ 
 </div>
 the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
 
+see: [native Rmd](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd) and [rendered PDF](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf)
+
 
 ::: {.callout-note}
-Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose. Here the figure callout `\@ref(fig:maxLmaxB))` is not rendered because this document is a Quarto presentation using {`revealjs`} instead of {`bookdown`}
+Here, in the syntax, the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose. Here the figure callout `\@ref(fig:maxLmaxB))` is not rendered because this document is a Quarto presentation using {`revealjs`} instead of {`bookdown`}.
 :::
 
 
@@ -1397,7 +1467,7 @@ Reference the bibliographic file (e.g.  [`references.bib`](https://github.com/zo
 
 
 ```{=html}
-<iframe width="900" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
+<iframe width="1000" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
 ```
 
 see [Xie <em>et al.</em>](https://bookdown.org/yihui/rmarkdown/html-document.html#html-document) [-@Xie18]
@@ -1517,7 +1587,7 @@ Customize with CSS like this <notes>**dodgerblue** background</notes>.
 ### w3schools.com
 
 ```{=html}
-<iframe width="900" height="300" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
+<iframe width="1000" height="300" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
 ```
 <small><https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello></small>
 \
@@ -1525,7 +1595,7 @@ Customize with CSS like this <notes>**dodgerblue** background</notes>.
 ### tutorialspoint.com
 
 ```{=html}
-<iframe width="900" height="300" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
+<iframe width="1000" height="300" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
 ```
 <small><https://www.tutorialspoint.com/online_html_editor.php></small>
 \
@@ -1607,7 +1677,7 @@ plot_ly(data = Fibulae.ex,
 Export R Markdown in: HTML, PDF, LaTeX, Word, ODT, RTF, Markdown, etc. 
 
 ```{=html}
-<iframe width="900" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
+<iframe width="1000" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
 ```
 
 
@@ -1710,7 +1780,7 @@ On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app
 
 
 ```{=html}
-<iframe width="900" height="400" src="https://rpubs.com/"></iframe>
+<iframe width="1000" height="400" src="https://rpubs.com/"></iframe>
 ```
 <small><https://rpubs.com/></small>
 
@@ -1777,7 +1847,7 @@ https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practi
 
 You can use this website: 
 ```{=html}
-<iframe width="900" height="200" src="https://download-directory.github.io/"></iframe>
+<iframe width="1000" height="200" src="https://download-directory.github.io/"></iframe>
 ```
 <small><https://download-directory.github.io/></small>
 

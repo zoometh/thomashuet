@@ -428,6 +428,12 @@
   <script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
   <link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
   <script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+  
+  <style>
+    .custom-small table {
+      font-size: .5em
+    }
+  </style>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -448,7 +454,7 @@ Thomas Huet, University of Oxford
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">Example</a></li><li><a href="#tabset-1-3">AFDS</a></li><li><a href="#tabset-1-4">About this document</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">AFDS</a></li><li><a href="#tabset-1-3">About this document</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p><span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines :</p>
@@ -467,15 +473,12 @@ Thomas Huet, University of Oxford
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>R Markdown = <code>.Rmd</code> = <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 45px;vertical-align: middle;"> + <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"> for Markdown</p>
+<p>R Markdown = <code>.Rmd</code> = <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 45px;vertical-align: middle;"> <code>.R</code> + <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"> <code>.md</code> for Markdown</p>
 </div>
 </div>
 </div>
 </div>
 <div id="tabset-1-2">
-<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
-</div>
-<div id="tabset-1-3">
 <p>AFDS are used to create data-driven documents (reports) with a notebook interface</p>
 
 <table>
@@ -535,9 +538,9 @@ web oriented
 
 </table>
 </div>
-<div id="tabset-1-4">
-<p>A Quarto document (<code>.qmd</code>) using reveal.js (JavaScript) hosted on GitHub (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index.qmd">here</a>)</p>
-<pre><code>https://quarto.org/docs/presentations/revealjs/</code></pre>
+<div id="tabset-1-3">
+<p>A <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png" style="height: 45px;vertical-align: middle;"> Quarto document (<code>.qmd</code>) using <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png" style="height: 45px;vertical-align: middle;"> reveal.js (JavaScript) hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png" style="height: 45px;vertical-align: middle;"> GitHub (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index.qmd">here</a>)</p>
+<script src="https://quarto.org/docs/presentations/revealjs/"></script>
 </div>
 </div>
 </div>
@@ -546,38 +549,115 @@ web oriented
 </section>
 <section id="why-r-markdown" class="slide level2">
 <h2>Why R Markdown?</h2>
-<h3 id="academic-reporting">Academic reporting</h3>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Academic reporting</a></li><li><a href="#tabset-2-2">Popularity of <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 45px;vertical-align: middle;"></a></li><li><a href="#tabset-2-3">Ubiquity of <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"></a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
 <p><span class="r-md">R Markdown</span> is often enough for academic reporting. It supports:</p>
 <ul>
 <li>HTML/CSS markup languages <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"></li>
-<li><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;"> writing and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png" style="height: 45px;vertical-align: middle;"> bibliographic references</li>
+<li>cross-referencing, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;"> writing and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png" style="height: 45px;vertical-align: middle;"> bibliographic references</li>
 <li>interactive maps, 3D plots, etc.</li>
 </ul>
-<h3 id="ubiquity-of-markdown">Ubiquity of Markdown</h3>
-<table>
+</div>
+<div id="tabset-2-2">
+<div class="custom-small">
+<table style="width:100%;">
 <colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
+<col style="width: 4%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Column 1</th>
-<th>Column 2</th>
+<th>Language</th>
+<th>User Community</th>
+<th>Learning Curve</th>
+<th>Statistics</th>
+<th>3D</th>
+<th>AI/ML</th>
+<th>GIS/DB</th>
+<th>Data-driven doc</th>
+<th>Web App Framework</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>XXX</td>
-<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum" style="height: 45px;vertical-align: middle;"></td>
+<td>Python</td>
+<td>Large and diverse</td>
+<td>Relatively easy</td>
+<td>Strong support</td>
+<td>Blender, libraries<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a></td>
+<td>Leading language<a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a></td>
+<td>Leading language<a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a></td>
+<td>Jupyter Notebook</td>
+<td>Popular frameworks<a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a></td>
 </tr>
 <tr class="even">
-<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png" style="height: 45px;vertical-align: middle;"></td>
-<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png" style="height: 45px;vertical-align: middle;"></td>
+<td>Java</td>
+<td>Large and established</td>
+<td>Moderate</td>
+<td>Limited</td>
+<td>Java 3D API</td>
+<td>Used in enterprise</td>
+<td>Java-based tools available</td>
+<td>Apache POI</td>
+<td>Various frameworks<a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a></td>
+</tr>
+<tr class="odd">
+<td>JavaScript</td>
+<td>Ubiquitous in web dev</td>
+<td>Easy for web dev</td>
+<td>Limited</td>
+<td>WebGL</td>
+<td>web-based apps</td>
+<td>Limited</td>
+<td>D3.js</td>
+<td>Numerous frameworks<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a></td>
+</tr>
+<tr class="even">
+<td>MATLAB</td>
+<td>Academia, industry</td>
+<td>Steeper</td>
+<td>Comprehensive support</td>
+<td>Poor texture mapping</td>
+<td>Academia, industry</td>
+<td>Limited</td>
+<td>Live scripts but hard to share</td>
+<td>Limited</td>
+</tr>
+<tr class="odd">
+<td>R</td>
+<td>Strong community</td>
+<td>Steeper</td>
+<td>Leading language</td>
+<td>Poor texture mapping</td>
+<td>Extensively used</td>
+<td>R packages for GIS<a href="#/footnotes" class="footnote-ref" id="fnref7" role="doc-noteref" data-footnote-href="#/fn7" onclick=""><sup>7</sup></a></td>
+<td>Rmarkdown, Shiny</td>
+<td>Limited</td>
 </tr>
 </tbody>
 </table>
-<p>:::</p>
-</section>
+</div>
+</div>
+<div id="tabset-2-3">
+<p>Copy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):</p>
+<ul>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png" style="height: 250px;"></p></li>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png" style="height: 250px;"></p></li>
+<li><p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png" style="height: 250px;"></p></li>
+</ul>
+</div>
+</div>
+</div>
+<aside></aside></section>
 <section id="main-packages" class="slide level2">
 <h2>Main packages</h2>
 
@@ -585,7 +665,7 @@ web oriented
 <tbody>
 <tr>
 <td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="width: 150px;vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="width: 100px;vertical-align: middle;">
 </td>
 <td>
 <a href="https://yihui.org/knitr/">knitr</a> engine for dynamic report generation with R (e.g.&nbsp;convert to LaTeX)
@@ -593,7 +673,7 @@ web oriented
 </tr>
 <tr>
 <td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-rmarkdown.png" style="width: 150px;vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-rmarkdown.png" style="width: 100px;vertical-align: middle;">
 </td>
 <td>
 <a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a> convert R Markdown documents into a variety of formats, extension of {<code>knitr</code>}
@@ -601,7 +681,7 @@ web oriented
 </tr>
 <tr>
 <td>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="width: 150px;vertical-align: middle;">
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="width: 100px;vertical-align: middle;">
 </td>
 <td>
 <a href="https://bookdown.org/">bookdown</a> advanced editing and publishing functions (e.g.&nbsp;cross referencing)
@@ -614,14 +694,14 @@ web oriented
 <section id="new-document" class="slide level2">
 <h2>New document</h2>
 <div class="panel-tabset">
-<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Create</a></li><li><a href="#tabset-2-2">RStudio <small>preview</small></a></li><li><a href="#tabset-2-3">GitHub <small>preview</small></a></li><li><a href="#tabset-2-4">Knit</a></li></ul>
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Create</a></li><li><a href="#tabset-3-2">RStudio <small>preview</small></a></li><li><a href="#tabset-3-3">GitHub <small>preview</small></a></li><li><a href="#tabset-3-4">Knit</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1">
+<div id="tabset-3-1">
 <p>In RStudio: <code>File &gt; New file &gt; R Markdown...</code></p>
 <center>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create.png" width="500"></p>
 </center>
-<p>Options (<code>Title</code>, <code>Author</code>, <code>Date</code>, etc.) can be changed later (<a href="#/yaml">YAML header</a>). Choose <strong>PDF</strong> as the default output format.</p>
+<p>Options (<code>Title</code>, <code>Author</code>, <code>Date</code>, etc.) can be changed later. Choose <strong>PDF</strong> as the default output format.</p>
 <center>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd.png" width="500"></p>
 </center>
@@ -639,15 +719,15 @@ web oriented
 </div>
 </div>
 </div>
-<div id="tabset-2-2">
+<div id="tabset-3-2">
 <center>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png" width="900"></p>
 </center>
 </div>
-<div id="tabset-2-3">
+<div id="tabset-3-3">
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 </div>
-<div id="tabset-2-4">
+<div id="tabset-3-4">
 <p>Run the new document with <code>knitr</code> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">, it will launch the render</p>
 <center>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_render.png" width="900"></p>
@@ -662,10 +742,10 @@ web oriented
 <section id="rstudio-tools" class="slide level2">
 <h2>RStudio tools</h2>
 <div class="panel-tabset">
-<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Tools</a></li><li><a href="#tabset-3-2">Visual R Markdown</a></li></ul>
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Tools</a></li><li><a href="#tabset-4-2">Visual R Markdown</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1">
-<p><img src="www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"></p>
+<div id="tabset-4-1">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"></p>
 
 <table>
 <thead>
@@ -681,15 +761,15 @@ description
 <tbody>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png" width="80">
 </td>
 <td>
-knit automatically when save the document
+knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">automatically when save the document
 </td>
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png" width="80">
 </td>
 <td>
 check spelling
@@ -697,15 +777,15 @@ check spelling
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png" width="80">
 </td>
 <td>
-knit the document
+knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">the document
 </td>
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png" width="80">
 </td>
 <td>
 run Visual R Markdown + other options
@@ -713,7 +793,7 @@ run Visual R Markdown + other options
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png" width="80">
 </td>
 <td>
 new code chunk (R, Bash, D3, Python, etc.)
@@ -721,7 +801,7 @@ new code chunk (R, Bash, D3, Python, etc.)
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png" width="80">
 </td>
 <td>
 run a part or the whole document
@@ -729,7 +809,7 @@ run a part or the whole document
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_publish.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_publish.png" width="80">
 </td>
 <td>
 publish the document
@@ -737,7 +817,7 @@ publish the document
 </tr>
 <tr>
 <td>
-<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_visualMdEditor.png" width="60">
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_visualMdEditor.png" width="80">
 </td>
 <td>
 run Visual R Markdown
@@ -747,18 +827,17 @@ run Visual R Markdown
 
 </table>
 </div>
-<div id="tabset-3-2">
-<p><img src="www/rmd_nav_visualMdEditor_bar.png" align="left"><br></p>
-<p><a href="https://rstudio.github.io/visual-markdown-editing/">Visual R Markdown</a> has a Pandoc syntax<sup>1</sup>, supports <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;">, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;">, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;">, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"></p>
+<div id="tabset-4-2">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www//rmd_nav_visualMdEditor_bar.png" align="left"><br></p>
+<p><a href="https://rstudio.github.io/visual-markdown-editing/">Visual R Markdown</a> has a Pandoc syntax<a href="#/footnotes" class="footnote-ref" id="fnref8" role="doc-noteref" data-footnote-href="#/fn8" onclick=""><sup>8</sup></a>, supports <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;">, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;">, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;">, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"></p>
 </div>
 </div>
 </div>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>extension of Mardown</p></li></ol></aside></section>
-<section id="document-structure" class="slide level2">
-<h2>Document structure</h2>
+::: {.callout-note} Use the R package <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="width: 100px;vertical-align: middle;"> <a href="https://bookdown.org/">bookdown</a> for advanced editing and publishing functions (e.g.&nbsp;cross referencing)
+
 <p>R Markdown combines</p>
 <div class="columns">
-<div class="column" style="width:60%;">
+<div class="column" style="width:50%;">
 <div class="div-yaml">
 <p><small>header YAML</small><br> a <a href="#/yaml">YAML header</a> with metadata</p>
 </div>
@@ -768,34 +847,66 @@ run Visual R Markdown
 <div class="div-text">
 <p><small>narrative part</small><br> Markdown <a href="#/text">narrative parts</a></p>
 </div>
-</div><div class="column" style="width:40%;">
+</div><div class="column" style="width:50%;">
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png" width="500"></p>
+</div>
+</div>
+<aside></aside></section>
+<section id="document-structure" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Document structure</h2>
+<p><span class="r-md">R Markdown</span> combines</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="div-yaml">
+<p><small>header YAML</small><br> a <a href="#/yaml">YAML header</a> with metadata</p>
+</div>
+<p><br></p>
+<div class="div-code">
+<p><small>code chunk</small><br> R <a href="#/chunks">code chunks</a></p>
+</div>
+<div class="div-text">
+<p><small>narrative part</small><br> Markdown <a href="#/text">narrative parts</a></p>
+</div>
+<div class="div-code">
+<p><small>code chunk</small><br> R <a href="#/chunks">code chunks</a></p>
+</div>
+<div class="div-text">
+<p><small>narrative part</small><br> Markdown <a href="#/text">narrative parts</a></p>
+</div>
+<div class="div-code">
+<p><small>code chunk</small><br> R <a href="#/chunks">code chunks</a></p>
+</div>
+<div class="div-text">
+<p><small>narrative part</small><br> Markdown <a href="#/text">narrative parts</a></p>
+</div>
+<p>etc.</p>
+</div><div class="column" style="width:50%;">
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png" width="500"></p>
 </div>
 </div>
 </section>
 <section id="text" class="slide level2">
 <h2>Markdown syntax</h2>
-<p>Easy-to-write plain text syntax</p>
 <div class="panel-tabset">
-<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Used by</a></li><li><a href="#tabset-4-2">Syntax</a></li><li><a href="#tabset-4-3">Online editor</a></li><li><a href="#tabset-4-4">Online converter</a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Used by</a></li><li><a href="#tabset-5-2">Syntax</a></li><li><a href="#tabset-5-3">Editor</a></li><li><a href="#tabset-5-4">Converter</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1">
-<p>Different code-oriented frameworks: <a href="https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb">Jupyter</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;">, <a href="https://github.com/zoometh/oxford/tree/main/R4Archaeologists#rmarkdown">GitHub</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, <a href="https://www.google.co.uk/docs/about/">Google Doc</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;">, <a href="https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37">Sketchfab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;">, <a href="https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200">Slack</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;">, <a href="https://stackoverflow.com/a/14747656/2854081">Stackoverflow</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;">, etc.</p>
-<p>It means that you can copy/paste R Mardown though different app without losing the typesetting</p>
+<div id="tabset-5-1">
+<p>Different code-oriented frameworks: <a href="https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb">Jupyter</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;">, <a href="https://github.com/">GitHub</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, <a href="https://about.gitlab.com/">GitLab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;">, <a href="https://wordpress.com/">Wordpress</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-wordpress.png" style="height: 45px;vertical-align: middle;">, <a href="https://www.google.co.uk/docs/about/">Google Doc</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;">, <a href="https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37">Sketchfab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;">, <a href="https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200">Slack</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;">, <a href="https://stackoverflow.com/a/14747656/2854081">Stackoverflow</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;">, <a href="https://www.reddit.com/">Reddit</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-reddit.png" style="height: 45px;vertical-align: middle;">, etc.</p>
 </div>
-<div id="tabset-4-2">
-<iframe width="900" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+<div id="tabset-5-2">
+<iframe width="1000" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 <p><small><a href="https://rmarkdown.rstudio.com/authoring_basics.html" class="uri">https://rmarkdown.rstudio.com/authoring_basics.html</a></small><br>
 </p>
 </div>
-<div id="tabset-4-3">
-<iframe width="900" height="300" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+<div id="tabset-5-3">
+<iframe width="1000" height="300" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
 <p><small><a href="https://stackedit.io/app#" class="uri">https://stackedit.io/app#</a></small><br>
 </p>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png" width="500"></p>
 </div>
-<div id="tabset-4-4">
-<p>Pandoc is an extension of Markdown, usefull for text conversions (Markdown &lt;-&gt; HTML, LaTeX &lt;-&gt; Markdown, etc.)</p>
-<iframe width="900" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<div id="tabset-5-4">
+<p>Pandoc is an extension of Markdown, useful for text conversions (Markdown &lt;-&gt; <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png" style="height: 45px;vertical-align: middle;">, Markdown &lt;-&gt; <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;">, Markdown &lt;-&gt; <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;">, etc.)</p>
+<iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 <p><small><a href="https://pandoc.org/try/" class="uri">https://pandoc.org/try/</a></small><br>
 </p>
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -820,9 +931,9 @@ run Visual R Markdown
 <section id="styling" class="slide level2">
 <h2>Styling</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Text</a></li><li><a href="#tabset-5-2">Math formula</a></li><li><a href="#tabset-5-3">Others</a></li><li><a href="#tabset-5-4">with HTML and CSS</a></li></ul>
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Text</a></li><li><a href="#tabset-6-2">Math formula</a></li><li><a href="#tabset-6-3">Others</a></li><li><a href="#tabset-6-4">with HTML and CSS</a></li></ul>
 <div class="tab-content">
-<div id="tabset-5-1">
+<div id="tabset-6-1">
 <table>
 <colgroup>
 <col style="width: 51%">
@@ -866,7 +977,7 @@ run Visual R Markdown
 </tbody>
 </table>
 </div>
-<div id="tabset-5-2">
+<div id="tabset-6-2">
 <table>
 <thead>
 <tr class="header">
@@ -886,11 +997,11 @@ run Visual R Markdown
 </tbody>
 </table>
 </div>
-<div id="tabset-5-3">
+<div id="tabset-6-3">
 <p>blockquotes</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a><span class="at">&gt; I am a blockquote</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1"></a><span class="at">&gt; I am a blockquote</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote>
 <p>I am a blockquote</p>
@@ -898,18 +1009,18 @@ run Visual R Markdown
 <p>line separator</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href="#cb3-1"></a>⬇️ This is a line separator</span>
-<span id="cb3-2"><a href="#cb3-2"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1"></a>⬇️ This is a line separator</span>
+<span id="cb2-2"><a href="#cb2-2"></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>⬇️ This is a line separator</p>
 <hr>
 </div>
-<div id="tabset-5-4">
+<div id="tabset-6-4">
 <p>Text styling can be extended done with HTML/CSS markup languages <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"></p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">&lt;h2</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:blue;"</span><span class="kw">&gt;</span>A Blue Heading<span class="kw">&lt;/h2&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red;"</span><span class="kw">&gt;</span>A red paragraph.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;h2</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:blue;"</span><span class="kw">&gt;</span>A Blue Heading<span class="kw">&lt;/h2&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">&lt;p</span> <span class="er">style</span><span class="ot">=</span><span class="st">"color:red;"</span><span class="kw">&gt;</span>A red paragraph.<span class="kw">&lt;/p&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <h1 style="color:blue;">
 A Blue Heading
@@ -924,14 +1035,14 @@ A red paragraph.
 <section id="list" class="slide level2">
 <h2>List</h2>
 <div class="panel-tabset">
-<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Numbered</a></li><li><a href="#tabset-6-2">Unnumbered</a></li></ul>
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Numbered</a></li><li><a href="#tabset-7-2">Unnumbered</a></li></ul>
 <div class="tab-content">
-<div id="tabset-6-1">
+<div id="tabset-7-1">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="ss">- </span>Numbered  </span>
-<span id="cb5-2"><a href="#cb5-2"></a><span class="ss">  1. </span>first element</span>
-<span id="cb5-3"><a href="#cb5-3"></a><span class="ss">  2. </span>second element</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a><span class="ss">- </span>Numbered  </span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="ss">  1. </span>first element</span>
+<span id="cb4-3"><a href="#cb4-3"></a><span class="ss">  2. </span>second element</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Numbered
@@ -943,16 +1054,16 @@ A red paragraph.
 <p><br>
 </p>
 </div>
-<div id="tabset-6-2">
+<div id="tabset-7-2">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a><span class="ss">- </span>Unnumbered</span>
-<span id="cb6-2"><a href="#cb6-2"></a><span class="ss">  * </span>first element</span>
-<span id="cb6-3"><a href="#cb6-3"></a><span class="ss">  * </span>second element</span>
-<span id="cb6-4"><a href="#cb6-4"></a><span class="ss">  * </span>third element</span>
-<span id="cb6-5"><a href="#cb6-5"></a><span class="ss">    - </span>third element - sub 1</span>
-<span id="cb6-6"><a href="#cb6-6"></a><span class="ss">      + </span>third element - sub 1 - subsub 1</span>
-<span id="cb6-7"><a href="#cb6-7"></a><span class="ss">      + </span>third element - sub 1 - subsub 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1"></a><span class="ss">- </span>Unnumbered</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="ss">  * </span>first element</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="ss">  * </span>second element</span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="ss">  * </span>third element</span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="ss">    - </span>third element - sub 1</span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="ss">      + </span>third element - sub 1 - subsub 1</span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="ss">      + </span>third element - sub 1 - subsub 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Unnumbered
@@ -976,17 +1087,17 @@ A red paragraph.
 <section id="tables" class="slide level2 unnumbered">
 <h2>Tables</h2>
 <div class="panel-tabset">
-<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Simple table</a></li><li><a href="#tabset-7-2">Alignements</a></li><li><a href="#tabset-7-3">Complex tables</a></li><li><a href="#tabset-7-4">Hint</a></li></ul>
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Simple table</a></li><li><a href="#tabset-8-2">Alignements</a></li><li><a href="#tabset-8-3">Complex tables</a></li><li><a href="#tabset-8-4">Hint</a></li></ul>
 <div class="tab-content">
-<div id="tabset-7-1">
+<div id="tabset-8-1">
 <div class="columns">
 <div class="column" style="width:40%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a>| Header 1 | Header 2 |</span>
-<span id="cb7-2"><a href="#cb7-2"></a>| --- | ----------- |</span>
-<span id="cb7-3"><a href="#cb7-3"></a>| Row 1 | Text |</span>
-<span id="cb7-4"><a href="#cb7-4"></a>| Row 2 | Another text |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1"></a>| Header 1 | Header 2 |</span>
+<span id="cb6-2"><a href="#cb6-2"></a>| --- | ----------- |</span>
+<span id="cb6-3"><a href="#cb6-3"></a>| Row 1 | Text |</span>
+<span id="cb6-4"><a href="#cb6-4"></a>| Row 2 | Another text |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:10%;">
 <center>
@@ -995,10 +1106,10 @@ or
 </div><div class="column" style="width:50%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>| Header 1    | Header 2    |</span>
-<span id="cb8-2"><a href="#cb8-2"></a>| ----------- | ----------- |</span>
-<span id="cb8-3"><a href="#cb8-3"></a>| Row 1       | Text        |</span>
-<span id="cb8-4"><a href="#cb8-4"></a>| Row 2       | Another text|</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1"></a>| Header 1    | Header 2    |</span>
+<span id="cb7-2"><a href="#cb7-2"></a>| ----------- | ----------- |</span>
+<span id="cb7-3"><a href="#cb7-3"></a>| Row 1       | Text        |</span>
+<span id="cb7-4"><a href="#cb7-4"></a>| Row 2       | Another text|</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1026,14 +1137,14 @@ gives the same result :
 </tbody>
 </table>
 </div>
-<div id="tabset-7-2">
+<div id="tabset-8-2">
 <p>Use <code>:----:</code>, <code>:---</code>, or <code>---:</code> to align</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1"></a>| Left        |    Center   |         Right |</span>
-<span id="cb9-2"><a href="#cb9-2"></a>| :---        |    :----:   |          ---: |</span>
-<span id="cb9-3"><a href="#cb9-3"></a>| Header      | Title       | Here's this   |</span>
-<span id="cb9-4"><a href="#cb9-4"></a>| Paragraph   | Text        | And more      |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1"></a>| Left        |    Center   |         Right |</span>
+<span id="cb8-2"><a href="#cb8-2"></a>| :---        |    :----:   |          ---: |</span>
+<span id="cb8-3"><a href="#cb8-3"></a>| Header      | Title       | Here's this   |</span>
+<span id="cb8-4"><a href="#cb8-4"></a>| Paragraph   | Text        | And more      |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <table>
 <thead>
@@ -1057,15 +1168,15 @@ gives the same result :
 </tbody>
 </table>
 </div>
-<div id="tabset-7-3">
+<div id="tabset-8-3">
 <p>Complex tables needs are created inside code chunks, e.g.&nbsp;<a href="https://bookdown.org/yihui/rmarkdown-cookbook/kable.html">kable()</a> from {<code>knitr</code>} with <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">kable_styling()</a> from {<code>kableExtra</code>}</p>
 <div class="div-code">
 <p><small>code chunk</small><br> ::: {.cell}</p>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb10-2"><a href="#cb10-2"></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
-<span id="cb10-3"><a href="#cb10-3"></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
-<span id="cb10-4"><a href="#cb10-4"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb10-5"><a href="#cb10-5"></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb9-2"><a href="#cb9-2"></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
+<span id="cb9-3"><a href="#cb9-3"></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb9-5"><a href="#cb9-5"></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>:::</p>
 </div>
 <div class="cell">
@@ -1136,9 +1247,9 @@ gives the same result :
 </div>
 <div class="div-code">
 <p><small>code chunk</small><br> ::: {.cell}</p>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
-<span id="cb11-2"><a href="#cb11-2"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Recreating booktabs style table"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb11-3"><a href="#cb11-3"></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F, <span class="at">html_font =</span> <span class="st">"Cambria"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
+<span id="cb10-2"><a href="#cb10-2"></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"Recreating booktabs style table"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb10-3"><a href="#cb10-3"></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F, <span class="at">html_font =</span> <span class="st">"Cambria"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>:::</p>
 </div>
 <div class="cell">
@@ -1212,10 +1323,10 @@ gives the same result :
 <br>
 </p>
 </div>
-<div id="tabset-7-4">
+<div id="tabset-8-4">
 <p>Use a table converter</p>
 
-<iframe width="900" height="400" src="https://tableconvert.com/" title="Online table convertor"></iframe>
+<iframe width="1000" height="400" src="https://tableconvert.com/" title="Online table convertor"></iframe>
 <p><small><a href="https://tableconvert.com/" class="uri">https://tableconvert.com/</a></small></p>
 </div>
 </div>
@@ -1224,35 +1335,35 @@ gives the same result :
 <section id="images" class="slide level2">
 <h2>Images</h2>
 <div class="panel-tabset">
-<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Online images</a></li><li><a href="#tabset-8-2">Local images</a></li></ul>
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Online images</a></li><li><a href="#tabset-9-2">Local images</a></li></ul>
 <div class="tab-content">
-<div id="tabset-8-1">
+<div id="tabset-9-1">
 <p>Markdown notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1"></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="100"></p>
 <hr>
 <p>HTML notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb13" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12" data-code-line-numbers="1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="100"></p>
 </div>
-<div id="tabset-8-2">
+<div id="tabset-9-2">
 <p>Markdown notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1"></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1"></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="100"></p>
 <hr>
 <p>HTML notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"www/logo.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">""</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1"></a><span class="kw">&lt;img</span> <span class="er">src</span><span class="ot">=</span><span class="st">"www/logo.png"</span> <span class="er">alt</span><span class="ot">=</span><span class="st">""</span> <span class="er">width</span><span class="ot">=</span><span class="st">100</span><span class="kw">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="www/logo.png" alt="" width="100"></p>
 </div>
@@ -1262,9 +1373,9 @@ gives the same result :
 <section id="spaces-and-end-of-lines" class="slide level2">
 <h2>Spaces and end of lines</h2>
 <div class="panel-tabset">
-<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Spaces</a></li><li><a href="#tabset-9-2">End of line</a></li></ul>
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Spaces</a></li><li><a href="#tabset-10-2">End of line</a></li></ul>
 <div class="tab-content">
-<div id="tabset-9-1">
+<div id="tabset-10-1">
 <p>Extra spaces (HTML only)</p>
 <ul>
 <li>  <code>&amp;emsp;</code> means 4 spaces (= a tabulation)</li>
@@ -1272,21 +1383,21 @@ gives the same result :
 <li>&nbsp; <code>&amp;nbsp;</code> means 1 space</li>
 </ul>
 </div>
-<div id="tabset-9-2">
+<div id="tabset-10-2">
 <p>End of line (<code>&lt;br&gt;</code> in HTML) with 2 or more spaces and return – or <code>\</code> and return – for example:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1"></a>Reconnais-toi  </span>
-<span id="cb16-2"><a href="#cb16-2"></a>Cette adorable personne c'est toi  </span>
-<span id="cb16-3"><a href="#cb16-3"></a>Sous le grand chapeau canotier  </span>
-<span id="cb16-4"><a href="#cb16-4"></a>Oeil</span>
-<span id="cb16-5"><a href="#cb16-5"></a>Nez  </span>
-<span id="cb16-6"><a href="#cb16-6"></a>Ta Bouche  </span>
-<span id="cb16-7"><a href="#cb16-7"></a>Voici l’ovale de ta figure  </span>
-<span id="cb16-8"><a href="#cb16-8"></a>Ton cou Exquis  </span>
-<span id="cb16-9"><a href="#cb16-9"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1"></a>Reconnais-toi  </span>
+<span id="cb15-2"><a href="#cb15-2"></a>Cette adorable personne c'est toi  </span>
+<span id="cb15-3"><a href="#cb15-3"></a>Sous le grand chapeau canotier  </span>
+<span id="cb15-4"><a href="#cb15-4"></a>Oeil</span>
+<span id="cb15-5"><a href="#cb15-5"></a>Nez  </span>
+<span id="cb15-6"><a href="#cb15-6"></a>Ta Bouche  </span>
+<span id="cb15-7"><a href="#cb15-7"></a>Voici l’ovale de ta figure  </span>
+<span id="cb15-8"><a href="#cb15-8"></a>Ton cou Exquis  </span>
+<span id="cb15-9"><a href="#cb15-9"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Reconnais-toi<br>
 Cette adorable personne c’est toi<br>
@@ -1299,17 +1410,17 @@ Ton cou Exquis<br>
 </div><div class="column" style="width:50%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1"></a>Reconnais-toi\</span>
-<span id="cb17-2"><a href="#cb17-2"></a>Cette adorable personne c'est toi\</span>
-<span id="cb17-3"><a href="#cb17-3"></a>Sous le grand chapeau canotier\</span>
-<span id="cb17-4"><a href="#cb17-4"></a>Oeil\ </span>
-<span id="cb17-5"><a href="#cb17-5"></a>Nez\</span>
-<span id="cb17-6"><a href="#cb17-6"></a>Ta Bouche\</span>
-<span id="cb17-7"><a href="#cb17-7"></a>Voici l'ovale de ta figure\</span>
-<span id="cb17-8"><a href="#cb17-8"></a>Ton cou Exquis\</span>
-<span id="cb17-9"><a href="#cb17-9"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a href="#cb16-1"></a>Reconnais-toi\</span>
+<span id="cb16-2"><a href="#cb16-2"></a>Cette adorable personne c'est toi\</span>
+<span id="cb16-3"><a href="#cb16-3"></a>Sous le grand chapeau canotier\</span>
+<span id="cb16-4"><a href="#cb16-4"></a>Oeil\ </span>
+<span id="cb16-5"><a href="#cb16-5"></a>Nez\</span>
+<span id="cb16-6"><a href="#cb16-6"></a>Ta Bouche\</span>
+<span id="cb16-7"><a href="#cb16-7"></a>Voici l'ovale de ta figure\</span>
+<span id="cb16-8"><a href="#cb16-8"></a>Ton cou Exquis\</span>
+<span id="cb16-9"><a href="#cb16-9"></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Reconnais-to1<br>
+<p>Reconnais-toi<br>
 Cette adorable personne c’est toi<br>
 Sous le grand chapeau canotier<br>
 Oeil<br>
@@ -1328,27 +1439,36 @@ Ton cou Exquis<br>
 <h2>Titles</h2>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu"># Header level 1</span></span>
-<span id="cb18-2"><a href="#cb18-2"></a></span>
-<span id="cb18-3"><a href="#cb18-3"></a><span class="fu">## Header level 2</span></span>
-<span id="cb18-4"><a href="#cb18-4"></a></span>
-<span id="cb18-5"><a href="#cb18-5"></a><span class="fu">### Header level 3</span></span>
-<span id="cb18-6"><a href="#cb18-6"></a></span>
-<span id="cb18-7"><a href="#cb18-7"></a><span class="fu">#### ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu"># Header level 1</span></span>
+<span id="cb17-2"><a href="#cb17-2"></a></span>
+<span id="cb17-3"><a href="#cb17-3"></a><span class="fu">## Header level 2</span></span>
+<span id="cb17-4"><a href="#cb17-4"></a></span>
+<span id="cb17-5"><a href="#cb17-5"></a><span class="fu">### Header level 3</span></span>
+<span id="cb17-6"><a href="#cb17-6"></a></span>
+<span id="cb17-7"><a href="#cb17-7"></a><span class="fu">#### ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="panel-tabset">
-<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Avoid numbering</a></li><li><a href="#tabset-10-2">.. and add an anchor</a></li></ul>
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Avoid numbering</a></li><li><a href="#tabset-11-2">.. add an anchor</a></li><li><a href="#tabset-11-3">.. add an hyperlink to the anchor</a></li></ul>
 <div class="tab-content">
-<div id="tabset-10-1">
+<div id="tabset-11-1">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">### My Header level 3 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">### My Header level 3 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
-<div id="tabset-10-2">
+<div id="tabset-11-2">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1"></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-11-3">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a href="#cb20-1"></a></span>
+<span id="cb20-2"><a href="#cb20-2"></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua (**see <span class="co">[</span><span class="ot">My Header level 3</span><span class="co">](#bookmarks)</span>). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+<span id="cb20-3"><a href="#cb20-3"></a></span>
+<span id="cb20-4"><a href="#cb20-4"></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1358,16 +1478,16 @@ Ton cou Exquis<br>
 <h2>Hyperlinks</h2>
 <p>Add hyperlinks</p>
 <div class="panel-tabset">
-<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">To text</a></li><li><a href="#tabset-11-2">To images</a></li></ul>
+<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">To text</a></li><li><a href="#tabset-12-2">To images</a></li></ul>
 <div class="tab-content">
-<div id="tabset-11-1">
+<div id="tabset-12-1">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a href="#cb21-1"></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2024/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>part 2: <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/2_R%20Markdown_Practice">Practice</a></p>
+<p>part 2: <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2024/2_R%20Markdown_Practice">Practice</a></p>
 </div>
-<div id="tabset-11-2">
+<div id="tabset-12-2">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
 <div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a href="#cb22-1"></a><span class="co">[</span><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span><span class="ot">{width=170px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1411,22 +1531,22 @@ Ton cou Exquis<br>
 <span id="cb25-3"><a href="#cb25-3"></a>...</span>
 <span id="cb25-4"><a href="#cb25-4"></a><span class="ot">[^1]: </span>This is the first footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>A simple footnote<sup>1</sup><br>
+<p>A simple footnote<a href="#/footnotes" class="footnote-ref" id="fnref9" role="doc-noteref" data-footnote-href="#/fn9" onclick=""><sup>9</sup></a><br>
 …<br>
 …</p>
-<aside><ol class="aside-footnotes"><li id="fn2"><p>This is the first footnote.</p></li></ol></aside></section>
+<aside></aside></section>
 <section id="cross-referencing" class="slide level2">
 <h2>Cross-referencing</h2>
 <div class="panel-tabset">
-<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">Concept</a></li><li><a href="#tabset-12-2">Variables</a></li><li><a href="#tabset-12-3">Figures</a></li></ul>
+<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">Concept</a></li><li><a href="#tabset-13-2">Variables</a></li><li><a href="#tabset-13-3">Figures</a></li></ul>
 <div class="tab-content">
-<div id="tabset-12-1">
+<div id="tabset-13-1">
 <p>Locators to cite and reuse variables (figures, sections, etc.)</p>
 <center>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd-cross-ref-example.png" width="600"></p>
 </center>
 </div>
-<div id="tabset-12-2">
+<div id="tabset-13-2">
 <p>Variables calculated inside the code chunks can be called in the narrative part: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png" style="height: 45px;vertical-align: middle;"></p>
 <div class="div-code">
 <p><small>code chunk</small></p>
@@ -1467,7 +1587,7 @@ Ton cou Exquis<br>
 <p><br>
 </p>
 </div>
-<div id="tabset-12-3">
+<div id="tabset-13-3">
 <div class="div-code">
 <p><small>code chunk</small></p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a>{r maxLmaxB, echo<span class="ot">=</span><span class="cn">TRUE</span>, fig.align<span class="ot">=</span><span class="st">"center"</span>, fig.cap<span class="ot">=</span> <span class="st">"Axes L/B ratio"</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1501,7 +1621,8 @@ Ton cou Exquis<br>
 <p><small>narrative part</small></p>
 <div class="sourceCode" id="cb31"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1"></a>the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients<span class="co">[</span><span class="ot">2</span><span class="co">]</span>, 2)',  Fig. \@ref(fig:maxLmaxB))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>🗘the distribution of the maximum length (L) and maximum breadth (B) shows a R<sup>2</sup> = 0.42, Fig. @ref(fig:maxLmaxB))</p>
+<p>the distribution of the maximum length (L) and maximum breadth (B) shows a R<sup>2</sup> = 0.42, Fig. @ref(fig:maxLmaxB))</p>
+<p>see: <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd">native Rmd</a> and <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf">rendered PDF</a></p>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1511,20 +1632,7 @@ Ton cou Exquis<br>
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>Here the <notes>`</notes> quote has been changed to a <notes>’</notes> quote for display purpose</p>
-</div>
-</div>
-</div>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>Here the figure callout <code>\@ref(fig:maxLmaxB))</code> is not rendered because this document is a Quarto presentation using {<code>revealjs</code>} instead of {<code>bookdown</code>}</p>
+<p>Here, in the syntax, the <notes><code>&lt;/notes&gt; quote has been changed to a &lt;notes&gt;'&lt;/notes&gt; quote for display purpose. Here the figure callout</code>@ref(fig:maxLmaxB))<code>is not rendered because this document is a Quarto presentation using {</code>revealjs<code>} instead of {</code>bookdown`}.</notes></p>
 </div>
 </div>
 </div>
@@ -1537,9 +1645,9 @@ Ton cou Exquis<br>
 <section id="bibliographic-references" class="slide level2">
 <h2>Bibliographic references</h2>
 <div class="panel-tabset">
-<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">in YAML</a></li><li><a href="#tabset-13-2">references.bib</a></li><li><a href="#tabset-13-3">Cross citation</a></li><li><a href="#tabset-13-4">BibTex</a></li></ul>
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">in YAML</a></li><li><a href="#tabset-14-2">references.bib</a></li><li><a href="#tabset-14-3">Cross citation</a></li><li><a href="#tabset-14-4">BibTex</a></li></ul>
 <div class="tab-content">
-<div id="tabset-13-1">
+<div id="tabset-14-1">
 <p>BibTex, or <code>.bib</code>, is a plain text format for bibliographic references.</p>
 <center>
 <p><img src="www/rmd_bib.png" alt="rmd_bib" width="700"></p>
@@ -1549,10 +1657,10 @@ Ton cou Exquis<br>
 <p><img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"></p>
 </center>
 </div>
-<div id="tabset-13-2">
+<div id="tabset-14-2">
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
 </div>
-<div id="tabset-13-3">
+<div id="tabset-14-3">
 <table>
 <colgroup>
 <col style="width: 51%">
@@ -1588,7 +1696,7 @@ Ton cou Exquis<br>
 </tbody>
 </table>
 </div>
-<div id="tabset-13-4">
+<div id="tabset-14-4">
 <div class="div-text">
 <p><small>narrative part</small></p>
 <div class="sourceCode" id="cb32"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1"></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1607,9 +1715,9 @@ Ton cou Exquis<br>
 <section id="headers" class="slide level2">
 <h2>Headers</h2>
 <div class="panel-tabset">
-<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">Headers options</a></li><li><a href="#tabset-14-2">Options hierarchy</a></li></ul>
+<ul id="tabset-15" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-15-1">Headers options</a></li><li><a href="#tabset-15-2">Options hierarchy</a></li></ul>
 <div class="tab-content">
-<div id="tabset-14-1">
+<div id="tabset-15-1">
 <div class="div-code">
 <p><small>code chunk</small></p>
 <div class="sourceCode" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1620,7 +1728,7 @@ Ton cou Exquis<br>
 </center>
 <p><a href="https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/temp.pdf" class="uri">https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/temp.pdf</a></p>
 </div>
-<div id="tabset-14-2">
+<div id="tabset-15-2">
 <div class="div-code">
 <p><small>code chunk</small></p>
 <div class="sourceCode" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1"></a>{r setup, include<span class="ot">=</span><span class="cn">FALSE</span>}</span>
@@ -1923,15 +2031,15 @@ fix the output exactly here.
 <span id="cb44-6"><a href="#cb44-6"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Reference the bibliographic file (e.g.&nbsp;<a href="https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/references.bib"><code>references.bib</code></a>). Here in the same folder as the <code>.Rmd</code> file.</p>
-<iframe width="900" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
+<iframe width="1000" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
 <p>see <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document">Xie <em>et al.</em></a> <span class="citation" data-cites="Xie18">(<a href="#/references" role="doc-biblioref" onclick="">2018</a>)</span></p>
 </section>
 <section id="styling-1" class="slide level2">
 <h2>Styling</h2>
 <div class="panel-tabset">
-<ul id="tabset-15" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-15-1">HTML/CSS</a></li><li><a href="#tabset-15-2">In the document</a></li><li><a href="#tabset-15-3">In a CSS file</a></li></ul>
+<ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">HTML/CSS</a></li><li><a href="#tabset-16-2">In the document</a></li><li><a href="#tabset-16-3">In a CSS file</a></li></ul>
 <div class="tab-content">
-<div id="tabset-15-1">
+<div id="tabset-16-1">
 <p>HTML/CSS can be use in all parts of the document</p>
 <div class="div-code">
 <p><small>code chunk</small></p>
@@ -1953,7 +2061,7 @@ fix the output exactly here.
 <p><br>
 </p>
 </div>
-<div id="tabset-15-2">
+<div id="tabset-16-2">
 <div class="div-text">
 <p><small>narrative part</small></p>
 <div class="sourceCode" id="cb46"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb46-1"><a href="#cb46-1"></a><span class="kw">&lt;span</span> <span class="er">style</span><span class="ot">=</span><span class="st">'font-size: 60px'</span><span class="kw">&gt;</span>Big font<span class="kw">&lt;/span&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1970,7 +2078,7 @@ fix the output exactly here.
 </div>
 <p><span style="color:red">red</span></p>
 </div>
-<div id="tabset-15-3">
+<div id="tabset-16-3">
 <p>Use a CSS file to customize styles</p>
 <script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
 <p><small><a href="https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/styles.css" class="uri">https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/styles.css</a></small></p>
@@ -2008,15 +2116,15 @@ fix the output exactly here.
 <section id="html-online-editor" class="slide level2">
 <h2>HTML online editor</h2>
 <div class="panel-tabset">
-<ul id="tabset-16" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-16-1">w3schools.com</a></li><li><a href="#tabset-16-2">tutorialspoint.com</a></li></ul>
+<ul id="tabset-17" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-17-1">w3schools.com</a></li><li><a href="#tabset-17-2">tutorialspoint.com</a></li></ul>
 <div class="tab-content">
-<div id="tabset-16-1">
-<iframe width="900" height="300" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
+<div id="tabset-17-1">
+<iframe width="1000" height="300" src="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" title="YAML for R Markdown"></iframe>
 <p><small><a href="https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello" class="uri">https://www.w3schools.com/tryit/tryit.asp?filename=tryhtml_hello</a></small><br>
 </p>
 </div>
-<div id="tabset-16-2">
-<iframe width="900" height="300" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
+<div id="tabset-17-2">
+<iframe width="1000" height="300" src="https://www.tutorialspoint.com/online_html_editor.php"></iframe>
 <p><small><a href="https://www.tutorialspoint.com/online_html_editor.php" class="uri">https://www.tutorialspoint.com/online_html_editor.php</a></small><br>
 </p>
 </div>
@@ -2026,9 +2134,9 @@ fix the output exactly here.
 <section id="interactivity" class="slide level2">
 <h2>Interactivity</h2>
 <div class="panel-tabset">
-<ul id="tabset-17" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-17-1">Shiny</a></li><li><a href="#tabset-17-2">Leaflet</a></li><li><a href="#tabset-17-3">Plotly</a></li></ul>
+<ul id="tabset-18" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-18-1">Shiny</a></li><li><a href="#tabset-18-2">Leaflet</a></li><li><a href="#tabset-18-3">Plotly</a></li></ul>
 <div class="tab-content">
-<div id="tabset-17-1">
+<div id="tabset-18-1">
 <p><a href="https://shiny.rstudio.com/">Shiny</a> offers a framework to create interactive documents</p>
 <div class="div-yaml">
 <p><small>header YAML</small></p>
@@ -2050,7 +2158,7 @@ fix the output exactly here.
 <p><br>
 </p>
 </div>
-<div id="tabset-17-2">
+<div id="tabset-18-2">
 <p>Maps with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-leaflet.png" style="height: 45px;vertical-align: middle;"> package</p>
 <div class="div-code">
 <p><small>code chunk</small></p>
@@ -2070,13 +2178,13 @@ fix the output exactly here.
 <span id="cb52-13"><a href="#cb52-13"></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb52-14"><a href="#cb52-14"></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-f383aada0d460ff05719" style="width:90%;height:300px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-f383aada0d460ff05719">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.569587484129203,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.569587484129203,7.569587484129203]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3d970928763dad02cfa3" style="width:90%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3d970928763dad02cfa3">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.569587484129203,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.569587484129203,7.569587484129203]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-17-3">
+<div id="tabset-18-3">
 <p>2D plots with the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-plotly.png" style="height: 45px;vertical-align: middle;"> package</p>
 <div class="div-code">
 <p><small>code chunk</small></p>
@@ -2095,8 +2203,8 @@ fix the output exactly here.
 <span id="cb53-12"><a href="#cb53-12"></a>        <span class="at">text =</span> <span class="sc">~</span>lbl,</span>
 <span id="cb53-13"><a href="#cb53-13"></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-0cef672bbfabe9c5600a" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-0cef672bbfabe9c5600a">{"x":{"visdat":{"41745a4320b0":["function () ","plotlyVisDat"]},"cur_data":"41745a4320b0","attrs":{"41745a4320b0":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-3d61abd0ca8f8da16eb6" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-3d61abd0ca8f8da16eb6">{"x":{"visdat":{"2630652658f3":["function () ","plotlyVisDat"]},"cur_data":"2630652658f3","attrs":{"2630652658f3":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -2107,7 +2215,7 @@ fix the output exactly here.
 <section id="export-document" class="slide level2">
 <h2>Export document</h2>
 <p>Export R Markdown in: HTML, PDF, LaTeX, Word, ODT, RTF, Markdown, etc.</p>
-<iframe width="900" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
+<iframe width="1000" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
 </section>
 <section id="html" class="slide level2">
 <h2>HTML</h2>
@@ -2188,14 +2296,14 @@ fix the output exactly here.
 <section id="publishing" class="slide level2">
 <h2>Publishing</h2>
 <div class="panel-tabset">
-<ul id="tabset-18" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-18-1">On Rpubs</a></li><li><a href="#tabset-18-2">On GitHub and GitLab</a></li></ul>
+<ul id="tabset-19" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-19-1">On Rpubs</a></li><li><a href="#tabset-19-2">On GitHub and GitLab</a></li></ul>
 <div class="tab-content">
-<div id="tabset-18-1">
+<div id="tabset-19-1">
 <p>On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;">, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"></p>
-<iframe width="900" height="400" src="https://rpubs.com/"></iframe>
+<iframe width="1000" height="400" src="https://rpubs.com/"></iframe>
 <p><small><a href="https://rpubs.com/" class="uri">https://rpubs.com/</a></small></p>
 </div>
-<div id="tabset-18-2">
+<div id="tabset-19-2">
 <p>On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, or GitLab <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;">, the same document, or related documents, are accessibles by different means:</p>
 
 <table>
@@ -2244,9 +2352,9 @@ PDF
 <section id="practice" class="slide level2">
 <h2>Practice</h2>
 <div class="panel-tabset">
-<ul id="tabset-19" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-19-1">Objective</a></li><li><a href="#tabset-19-2">Data</a></li><li><a href="#tabset-19-3">Output</a></li></ul>
+<ul id="tabset-20" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-20-1">Objective</a></li><li><a href="#tabset-20-2">Data</a></li><li><a href="#tabset-20-3">Output</a></li></ul>
 <div class="tab-content">
-<div id="tabset-19-1">
+<div id="tabset-20-1">
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -2271,17 +2379,17 @@ PDF
 <li><input type="checkbox">select another dataset from the {<code>archdata</code>} package (e.g.&nbsp;‘Handaxes’), to improve the <code>.Rmd</code> template</li>
 </ul>
 </div>
-<div id="tabset-19-2">
+<div id="tabset-20-2">
 <p>Download the files from the <code>practice/</code> folder:</p>
 <div class="sourceCode" id="cb59"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb59-1"><a href="#cb59-1"></a>https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>You can use this website:</p>
-<iframe width="900" height="200" src="https://download-directory.github.io/"></iframe>
+<iframe width="1000" height="200" src="https://download-directory.github.io/"></iframe>
 <p><small><a href="https://download-directory.github.io/" class="uri">https://download-directory.github.io/</a></small></p>
 <p>or go <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice">here</a> and download, or copy/paste the <code>.Rmd</code> file and the .<code>bib</code> file.</p>
 <p><br>
 </p>
 </div>
-<div id="tabset-19-3">
+<div id="tabset-20-3">
 <p>Contact me here 👋</p>
 <center>
 or
@@ -2317,7 +2425,20 @@ Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbo
 </div>
 </div>
 </section>
+<section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
 
+<ol>
+<li id="fn1"><p>This is the first footnote.</p></li>
+<li id="fn2"><p>TensorFlow, PyTorch</p></li>
+<li id="fn3"><p>QGIS, ArcGIS, libraries: geopandas</p></li>
+<li id="fn4"><p>Django</p></li>
+<li id="fn5"><p>Spring</p></li>
+<li id="fn6"><p>React</p></li>
+<li id="fn7"><p>sf</p></li>
+<li id="fn8"><p>TensorFlow, PyTorch</p></li>
+<li id="fn9"><p>This is the first footnote.</p></li>
+</ol>
+</section>
     </div>
   </div>
 
@@ -2344,7 +2465,7 @@ Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbo
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': false,
-'previewLinksAuto': false,
+'previewLinksAuto': true,
 'smaller': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -2497,7 +2618,7 @@ Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbo
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 2000,
+        width: 1200,
 
         height: 700,
 
