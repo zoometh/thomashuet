@@ -1,3 +1,35 @@
+lp {
+  font-family: Helvetica;
+}
+
+.div-code {
+  background-color: #EBEBEB;
+}
+
+.div-text {
+  background-color: #add8e6;
+}
+
+.div-yaml {
+  background-color: #FFCCCB;
+}
+
+.r-md {
+  /* for the text: "R Markdown" */
+  background-color: #2a76dd;
+  color: white;
+  padding: 5px;
+}
+
+notes {
+  color: white;
+  background-color: dodgerblue;
+}
+
+
+
+/* Quarto natives */
+
 .quarto-title-author-name {
   font-size: 30px;
   /* color: blue !important; */

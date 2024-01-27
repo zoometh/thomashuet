@@ -186,7 +186,7 @@
     "href": "index.html#yaml-dates",
     "title": "Authoring, writing and publishing withRmarkdown",
     "section": "YAML dates",
-    "text": "YAML dates\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%D')'\"\n---\n\n01/19/24\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%d %B %Y')'\"\n---\n\n19 January 2024\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
+    "text": "YAML dates\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%D')'\"\n---\n\n01/27/24\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(), '%d %B %Y')'\"\n---\n\n27 January 2024\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
   },
   {
     "objectID": "index.html#yaml-output",
@@ -207,7 +207,7 @@
     "href": "index.html#yaml-references",
     "title": "Authoring, writing and publishing withRmarkdown",
     "section": "YAML references",
-    "text": "YAML references\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"19 January 2024\"\nbibliography: references.bib\n---\n\nReference the bibliographic file (e.g. references.bib). Here in the same folder as the .Rmd file.\n\nsee Xie et al. (2018)"
+    "text": "YAML references\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"27 January 2024\"\nbibliography: references.bib\n---\n\nReference the bibliographic file (e.g. references.bib). Here in the same folder as the .Rmd file.\n\nsee Xie et al. (2018)"
   },
   {
     "objectID": "index.html#styling-1",

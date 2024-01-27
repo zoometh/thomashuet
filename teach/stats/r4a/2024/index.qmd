@@ -1,5 +1,5 @@
 ---
-title: "Authoring, writing and publishing with<br>Rmarkdown"
+title: "Authoring, writing and publishing with<br>R Markdown"
 author: "Thomas Huet, University of Oxford "
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"
@@ -13,7 +13,8 @@ format:
     scrollable: true
     logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/inst-uni-oxford_.png
     # css: ../styles.css
-    css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
+    # css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
     margin: 0.01
 bibliography: references.bib
 pagetitle: Report with R Markdown
