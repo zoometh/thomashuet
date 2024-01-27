@@ -952,19 +952,10 @@ A simple footnote[^1]
 
 ::: {.panel-tabset}
 
-### Concept
-
-Locators to cite and reuse variables (figures, sections, etc.)
-
-<center>
-
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd-cross-ref-example.png){width="600px"}
-
-</center>
 
 ### Variables
 
-Variables calculated inside the code chunks can be called in the narrative part: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
+Variables calculated inside the <span class="r-code">code chunks</span> can be called in the <span class="r-text">narrative parts<span>: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
 
 <div class="div-code"> 
 <small>code chunk</small>
@@ -983,19 +974,6 @@ Furze Platt dataset counts 'r number.of.axes' axes
 </div>
 Furze Platt dataset counts `r number.of.axes` axes
 
-<center>---</center>
-
-Variables can be also be calculated outside code chunks (*not recommended*),  with an inline R code:
-
-<div class="div-text"> 
-<small>narrative part</small>
-```{.md}
-Furze Platt dataset counts 'r number.of.axes' axes described by 'r ncol(Handaxes)' variables. The maximal length (L = 'r max(Handaxes$L)')
-```
-</div>
-Furze Platt dataset counts `r number.of.axes` axes described by `r ncol(Handaxes)` variables. The maximal length (L = `r max(Handaxes$L)`)
-\
-
 ::: {.callout-warning}
 Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose
 :::
@@ -1007,14 +985,10 @@ Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for
 <div class="div-code"> 
 <small>code chunk</small>
 ```{.r}
-{r maxLmaxB, echo=TRUE, fig.align="center", fig.cap= "Axes L/B ratio"}
+{r maxLmaxB, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
 ```
 </div>
-  
-
-```{r maxLmaxB, echo=TRUE, fig.align="center", fig.cap= "Axes L/B ratio"}
-#| out-width: "70%"
-
+```{.r}
 library(archdata)
 data("Handaxes")
 plot(Handaxes$L, Handaxes$B)
@@ -1022,7 +996,7 @@ model <- lm(B ~ L, data = Handaxes)
 abline(lm(model))
 ```
 
-```{r ddd, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
+```{r maxLmaxB, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
 #| out-width: "70%"
 
 library(archdata)
@@ -1034,23 +1008,14 @@ abline(lm(model))
   
 <div class="div-text"> 
 <small>narrative part</small>
-```{.md }
-the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients[2], 2)',  Fig. \@ref(fig:maxLmaxB))
+```
+The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
 ```
 </div>
-the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
 
 see: [native Rmd](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd) and [rendered PDF](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf)
 
-
-::: {.callout-note}
-Here, in the syntax, the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose. Here the figure callout `\@ref(fig:maxLmaxB))` is not rendered because this document is a Quarto presentation using {`revealjs`} instead of {`bookdown`}.
-:::
-
-
 \
-
-
 
 :::
 
@@ -1061,11 +1026,11 @@ Here, in the syntax, the <notes>`</notes> quote has been changed to a <notes>'</
 
 ### in YAML
 
-BibTex, or `.bib`, is a plain text format for bibliographic references.
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> (`.bib`) is a plain text format for bibliographic references.
 
 <center>
 
-<img src="www/rmd_bib.png" alt="rmd_bib" width="700"/>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="700"/>
 
 </center>
   
@@ -1075,7 +1040,7 @@ This file is referenced in the YAML header.
   
 <center>
 
-<img src="www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"/>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"/>
 
 </center>
 
