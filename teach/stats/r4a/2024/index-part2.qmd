@@ -716,7 +716,7 @@ output:
 ### On Rpubs
 
 
-On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-rpubs.png" style="height: 45px;vertical-align: middle;"/>, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"/>
+On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-rpubs.png" style="height: 45px;vertical-align: middle;"/>, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"/>
 
 
 ```{=html}
@@ -724,6 +724,7 @@ On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app
 ```
 <small><https://rpubs.com/></small>
 
+\
 
 ### On GitHub and GitLab
 
@@ -739,15 +740,15 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 <tbody>
   <tr>
     <td>raw</td>
-    <td><small><https://raw.githubusercontent.com/zoometh/thomashuet/main/teachings/stats/R4Archaeo/practice/2_Rmarkdown_Practice.Rmd></small></td>
+    <td><small><https://raw.githubusercontent.com/zoometh/thomashuet/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
     <td>Rmd</td>
-    <td><small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/practice/2_Rmarkdown_Practice.Rmd></small></td>
+    <td><small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
     <td>PDF</td>
-    <td><small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/practice/2_Rmarkdown_Practice.pdf></small></td>
+    <td><small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.pdf></small></td>
   </tr>
 </tbody>
 </table>
