@@ -340,7 +340,7 @@
     "href": "index-part2.html#yaml",
     "title": "Authoring, writing and publishing withR Markdown - part 2",
     "section": "YAML",
-    "text": "YAML\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: '2023-02-05'\n---\n\nThis is the document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on key - value pairs:"
+    "text": "YAML\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: '2023-02-05'\n---\n\nYAML header is the document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on key - value pairs:"
   },
   {
     "objectID": "index-part2.html#yaml-dates",
