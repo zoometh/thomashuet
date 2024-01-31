@@ -433,8 +433,9 @@ water.residuals <- paste0("<b>", Oxford.water$Place, "</b><br>",
 </div>
 \
 
-### In the document
+### In the `.Rmd` document
 
+Use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> markup.
 
 <div class="div-text"> 
 <small>narrative part</small>
@@ -465,9 +466,9 @@ water.residuals <- paste0("<b>", Oxford.water$Place, "</b><br>",
 
 \
 
-### In a CSS file
+### In an external CSS file
 
-Use a CSS file to customize styles
+Use a <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'> file to customize styles
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
@@ -541,7 +542,7 @@ Customize with CSS like this <notes>**dodgerblue** background</notes>.
 
 ### Shiny
 
-[Shiny](https://shiny.rstudio.com/) offers a framework to create interactive documents
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 45px;vertical-align: middle;'> offers a framework to create interactive documents
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -551,7 +552,7 @@ runtime: shiny
 </div>        
         
 ::: {.callout-note}
-Try: `File > New File > Rmarkdown > Shiny`, or in the <span class="r-yaml">YAML header</span>. There are different ways to use Shiny in R Markdown, for example by embedding an HTML widget created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.
+Try: `File > New File > Rmarkdown > Shiny`, or in the <span class="r-yaml">YAML header</span>. There are different ways to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 45px;vertical-align: middle;'> in R Markdown, for example by embedding an <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> widget created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.
 ::: 
 \
 
@@ -621,7 +622,7 @@ Export R Markdown in: <img src='https://raw.githubusercontent.com/zoometh/thomas
 
 ## HTML
 
-HTML export is the default option of a R Markdown document.
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> export is the default option of a R Markdown document.
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -782,9 +783,9 @@ Use R Markdown (<span class="r-code">code chunks</span> and <span class="r-text"
 
 ### Data
 
-Download the entire `r4a/2024/` folder and locate the file `2_Rmarkdown_Practice.Rmd`: 
+Download the entire `r4a/2024/practice/` folder and locate the file `2_Rmarkdown_Practice.Rmd`: 
 ```{.html}
-https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024
+https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024/practice/
 ```
 
 You can use this website: 
@@ -793,7 +794,7 @@ You can use this website:
 ```
 <small><https://download-directory.github.io/></small>
 
-or go here: [https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/2_Rmarkdown_Practice.Rmd](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024) and download, or copy/paste this `.Rmd` file and the .`bib` file.
+or go here: [https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.Rmd](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024) and download, or copy/paste this `.Rmd` file and the .`bib` file.
 
 \
 
