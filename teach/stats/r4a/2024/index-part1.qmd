@@ -634,7 +634,7 @@ Use `:----:`, `:---`, or `---:` to align
 
 ### Complex tables
 
-Complex tables have to be created inside code chunks, e.g. [kable()](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html) from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
+Complex tables have to be created inside <span class="r-code">code chunks</span>, e.g. [kable()](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html) from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
 
 <div class="div-code"> 
 <small>code chunk</small><br>
@@ -1020,7 +1020,11 @@ The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ 
 ```
 </div>
 
-see: [native Rmd](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd) and [rendered PDF](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf)
+::: {.callout-note}
+Need to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 50px;vertical-align: middle;'> [bookdown](https://bookdown.org/), see: the [native `.Rmd`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd) and the [rendered PDF](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf)
+:::
+
+
 
 \
 
@@ -1044,12 +1048,23 @@ see: [native Rmd](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4
   
 This file is referenced in the YAML header.
   
+<div class="div-yaml"> 
+<small>narrative part</small>
+```{.yml}
+title: temp
+output: pdf_document
+date: '2023-02-05'
+bibliography: references.bib
+```
+</div>
   
 <center>
 
 <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"/>
 
 </center>
+
+\
 
 
 ### references.bib
@@ -1060,8 +1075,18 @@ This file is referenced in the YAML header.
 
 ### Cross citation
 
+<div class="div-text"> 
+<small>narrative part</small>
+```{.md}
+published by Yihui Xie [-@Xie19]
+```
+</div>
+published by Yihui Xie [-@Xie19]
+
+\
+
 +---------------------------------------------+-------------------------------------------+
-| code in R Markdown                          | Render                                    |
+| code in the narrative parts                 | Render                                    |
 +=============================================+===========================================+
 | `@Xie22`                                    | @Xie22                                    |
 +---------------------------------------------+-------------------------------------------+
@@ -1074,17 +1099,12 @@ This file is referenced in the YAML header.
 | ...                                         | ...                                       |
 +---------------------------------------------+-------------------------------------------+
 
-### BibTex
+::: {.callout-note}
+It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and paste it in the `.bib` file. Remember that you can also use [Visual R Markdown](#vrm) bibliographical references add-on.
+:::
 
-<div class="div-text"> 
-<small>narrative part</small>
-```{.md}
-published by Yihui Xie [-@Xie19]
-```
-</div>
-published by Yihui Xie [-@Xie19]
-  
-It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and paste it in the `.bib` file.
+\
+
 
 :::
 

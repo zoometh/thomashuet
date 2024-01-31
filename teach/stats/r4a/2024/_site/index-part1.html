@@ -1579,7 +1579,19 @@ Ton cou Exquis<br>
 <p><small>narrative part</small></p>
 <pre><code>The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 0.42,  Fig. \@ref(fig:maxLmaxB))</code></pre>
 </div>
-<p>see: <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd">native Rmd</a> and <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf">rendered PDF</a></p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Need to use <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="width: 50px;vertical-align: middle;"> <a href="https://bookdown.org/">bookdown</a>, see: the <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd">native <code>.Rmd</code></a> and the <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf">rendered PDF</a></p>
+</div>
+</div>
+</div>
 <p><br>
 </p>
 </div>
@@ -1589,7 +1601,7 @@ Ton cou Exquis<br>
 <section id="bibliographic-references" class="slide level2">
 <h2>Bibliographic references</h2>
 <div class="panel-tabset">
-<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">in YAML</a></li><li><a href="#tabset-14-2">references.bib</a></li><li><a href="#tabset-14-3">Cross citation</a></li><li><a href="#tabset-14-4">BibTex</a></li></ul>
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">in YAML</a></li><li><a href="#tabset-14-2">references.bib</a></li><li><a href="#tabset-14-3">Cross citation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-14-1">
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png" style="height: 45px;vertical-align: middle;"> (<code>.bib</code>) is a plain text format for bibliographic references.</p>
@@ -1597,14 +1609,28 @@ Ton cou Exquis<br>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="700"></p>
 </center>
 <p>This file is referenced in the YAML header.</p>
+<div class="div-yaml">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb31-1"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> temp</span></span>
+<span id="cb31-2"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb31-3"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb31-4"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <center>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"></p>
 </center>
+<p><br>
+</p>
 </div>
 <div id="tabset-14-2">
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
 </div>
 <div id="tabset-14-3">
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>published by Yihui Xie <span class="citation" data-cites="Xie19">(<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span></p>
 <table>
 <colgroup>
 <col style="width: 51%">
@@ -1612,7 +1638,7 @@ Ton cou Exquis<br>
 </colgroup>
 <thead>
 <tr class="header">
-<th>code in R Markdown</th>
+<th>code in the narrative parts</th>
 <th>Render</th>
 </tr>
 </thead>
@@ -1639,14 +1665,19 @@ Ton cou Exquis<br>
 </tr>
 </tbody>
 </table>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<div id="tabset-14-4">
-<div class="div-text">
-<p><small>narrative part</small></p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Note</strong></p>
 </div>
-<p>published by Yihui Xie <span class="citation" data-cites="Xie19">(<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span></p>
-<p>It’s easy to retrieve <a href="https://scholar.google.fr/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&amp;btnG=">this reference in Google Scholar</a>, and paste it in the <code>.bib</code> file.</p>
+<div class="callout-content">
+<p>It’s easy to retrieve <a href="https://scholar.google.fr/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&amp;btnG=">this reference in Google Scholar</a>, and paste it in the <code>.bib</code> file. Remember that you can also use <a href="#/vrm">Visual R Markdown</a> bibliographical references add-on.</p>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
