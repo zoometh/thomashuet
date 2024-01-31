@@ -611,13 +611,13 @@ plot_ly(data = Fibulae.ex,
 
 ## Export document
 
-Export R Markdown in: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-adobe-pdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-odt.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-rdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>HTML, PDF, LaTeX, Word, ODT, RTF, Markdown, etc. 
+Export R Markdown in: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-adobe-pdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-odt.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-rdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>, etc. 
 
 ```{=html}
-<iframe width="1000" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
+<iframe width="1100" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
 ```
 
-
+\
 
 ## HTML
 
@@ -649,11 +649,11 @@ output: pdf_document
 
 
 ::: {.callout-note}
-For advanced editing, read below
+For advanced editing, read below ⬇️
 ::: 
 
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='height: 70px;vertical-align: middle;'> is useful in R Markdown for chunk calls, and more generally for cross-referencing. PDF uses LaTeX syntax, if you don't have [MiKTeX](https://miktex.org/) installed, you need to install the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" style="height: 70px;vertical-align: middle;"/> package [@Xie19].
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='height: 70px;vertical-align: middle;'> is useful in R Markdown for chunk calls, and more generally for cross-referencing. PDF uses <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> syntax, if you don't have [MiKTeX](https://miktex.org/) installed, you need to install the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" style="height: 70px;vertical-align: middle;"/> package [@Xie19].
   
 
 ```{r eval=FALSE, echo=TRUE}
@@ -689,9 +689,12 @@ These temporary files are creates:
 
 At the end of the rendering, these files are deleted.
 
+\
+
 ## LaTeX
 
-LaTeX (extension of TeX) is a rich plain text syntax for academic writing. To export in TeX, select in the YAML header a PDF export + keep tex:
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> (extension of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>) is a rich plain text syntax for academic writing. To export in <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>, select in the YAML header a PDF export + keep tex:
+
 
 <div class="div-yaml"> 
 <small>header YAML</small>
