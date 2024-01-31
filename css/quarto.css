@@ -14,6 +14,13 @@ lp {
   background-color: #FFCCCB;
 }
 
+.r-yaml {
+  background-color: #FFCCCB;
+  color: black;
+  padding: 2px; /* Adjust the padding value as needed */
+  border-radius: 10px; /* Adjust the border radius for roundness of corners */
+}
+
 .r-code {
   background-color: #EBEBEB;
   color: black;

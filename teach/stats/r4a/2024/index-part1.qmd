@@ -1046,7 +1046,7 @@ Need to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/maste
 </center>
   
   
-This file is referenced in the YAML header.
+This file is referenced in the <span class="r-yaml">YAML header</span>.
   
 <div class="div-yaml"> 
 <small>narrative part</small>

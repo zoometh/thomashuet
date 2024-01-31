@@ -292,7 +292,7 @@ date: '2023-02-05'
 ```
 </div>
 
-This is the document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on **key - value** pairs:
+<span class="r-yaml">YAML header</span> is the document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on **key - value** pairs:
 
 
 ```{=html}
@@ -474,7 +474,7 @@ Use a CSS file to customize styles
 ```
 <small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/r4a/styles.css></small>
 
-This file is called inside the YAML header of the document:
+This file is called inside the <span class="r-yaml">YAML header</span> of the document:
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -551,7 +551,7 @@ runtime: shiny
 </div>        
         
 ::: {.callout-note}
-Try: `File > New File > Rmarkdown > Shiny`, or in the YAML header. There are different ways to use Shiny in R Markdown, for example by embedding an HTML widget created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.
+Try: `File > New File > Rmarkdown > Shiny`, or in the <span class="r-yaml">YAML header</span>. There are different ways to use Shiny in R Markdown, for example by embedding an HTML widget created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.
 ::: 
 \
 
@@ -693,7 +693,7 @@ At the end of the rendering, these files are deleted.
 
 ## LaTeX
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> (extension of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>) is a rich plain text syntax for academic writing. To export in <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>, select in the YAML header a PDF export + keep tex:
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> (extension of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>) is a rich plain text syntax for academic writing. To export in <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>, select in the <span class="r-yaml">YAML header</span> a PDF export + keep tex:
 
 
 <div class="div-yaml"> 
@@ -743,7 +743,7 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
     <td><small><https://raw.githubusercontent.com/zoometh/thomashuet/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
-    <td>Rmd</td>
+    <td>`.Rmd`</td>
     <td><small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
@@ -766,24 +766,25 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 The practical part has an estimated duration of 60 minutes
 :::
 
-Use R Markdown (code chunks and narrative text) to create a report. Choice between:
+Use R Markdown (<span class="r-code">code chunks</span> and <span class="r-text">narrative parts</span>) to create a report. Choice between:
 
 - [ ] improvement of the existing `.Rmd` model for the fibulae from the Münsingen cemetery
 
 <center>
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png){width="400px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png){width="300px"}
 
 </center>
 
 - [ ] select another dataset from the {`archdata`} package (e.g. 'Handaxes'), to improve the `.Rmd` template
 
+\
 
 ### Data
 
-Download the files from the `practice/` folder: 
+Download the entire `r4a/2024/` folder and locate the file `2_Rmarkdown_Practice.Rmd`: 
 ```{.html}
-https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice
+https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024
 ```
 
 You can use this website: 
@@ -792,7 +793,7 @@ You can use this website:
 ```
 <small><https://download-directory.github.io/></small>
 
-or go [here](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/R4Archaeo/practice) and download, or copy/paste the `.Rmd` file and the .`bib` file.
+or go here: [https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/2_Rmarkdown_Practice.Rmd](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024) and download, or copy/paste this `.Rmd` file and the .`bib` file.
 
 \
 
@@ -805,9 +806,9 @@ Contact me here 👋
 
 Send me your updated `.Rmd`, and eventually the connected files (e.g. `references.bib`) here:
 
-  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png' style='height: 50px;vertical-align: middle;'> <thomas.huet@arch.ox.ac.uk>
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/2>
 
-  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/1>
+  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png' style='height: 50px;vertical-align: middle;'> <thomas.huet@arch.ox.ac.uk>
 
 
 :::
