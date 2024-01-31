@@ -132,15 +132,14 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 
 | Language    | User Community | Learning Curve | Statistics                          | 3D                          | AI/ML                | GIS/DB                  | Data-driven doc                                  | Web App Framework                 |
 |-------------|-----------------|-----------------|-------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png' style='height: 45px;vertical-align: middle;'>
-      | Large and diverse | Relatively easy  | Strong support  | Blender, libraries[^1] | Leading language[^2] | Leading language[^8] | Jupyter Notebook                                  | Popular frameworks[^4] |
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-java.png' style='height: 45px;vertical-align: middle;'>
-        | Large and established | Moderate  | Limited   | Java 3D API   | Used in enterprise | Java-based tools available  | Apache POI                                  | Various frameworks[^5] |
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'>
-  | Ubiquitous in web dev | Easy for web dev | Limited | WebGL | web-based apps | Limited  | D3.js                                  | Numerous frameworks[^6] |
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-matlab.png' style='height: 45px;vertical-align: middle;'>
-      | Academia, industry | Steeper  | Comprehensive support | Poor texture mapping | Academia, industry | Limited   |  Live scripts but hard to share  | Limited   |
-| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'>           | Strong community | Steeper         | Leading language | Poor texture mapping  | Extensively used | R packages for GIS[^7] | Rmarkdown, Shiny                           | Limited   | Many free packages |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png' style='height: 45px;vertical-align: middle;'> | Large and diverse | Relatively easy  | Strong support  | Blender, libraries[^1] | Leading language[^2] | Leading language[^8] | Jupyter Notebook                                  | Popular frameworks[^4] |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-java.png' style='height: 45px;vertical-align: middle;'> | Large and established | Moderate  | Limited   | Java 3D API   | Used in enterprise | Java-based tools available  | Apache POI                                  | Various frameworks[^5] |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'> | Ubiquitous in web dev | Easy for web dev | Limited | WebGL | web-based apps | Limited  | D3.js                                  | Numerous frameworks[^6] |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-matlab.png' style='height: 45px;vertical-align: middle;'> | Academia, industry | Steeper  | Comprehensive support | Poor texture mapping | Academia, industry | Limited   |  Live scripts but hard to share  | Limited   |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'>  | Strong community | Steeper         | Leading language | Poor texture mapping  | Extensively used | R packages for GIS[^7] | Rmarkdown, Shiny                           | Limited   | Many free packages |
+
+\
+\
 
 :::
 
@@ -302,7 +301,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www//rmd_nav_visualMdEditor_bar.png" align="left"/><br>
   
-[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax[^21], supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"/>
+[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax[^9], supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"/>
 
 :::
 
@@ -311,7 +310,7 @@ Use the R package <img src='https://raw.githubusercontent.com/zoometh/thomashuet
 :::
 
 
-[^21]: extension of Markdown
+[^9]: extension of Markdown
 
 ## Document structure {auto-animate=true}
 
@@ -937,7 +936,23 @@ After this theoretical part, you will do a [practice](#practice)
 
 ## Footnotes 
 
-TODO
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md code-line-numbers="1|4"}
+A simple footnote[^10]. *Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.*
+
+[^10]: This is a footnote.
+```
+</div>
+
+A simple footnote[^10]. *Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.* 
+
+[^10]: This is a footnote.
+
+::: {.callout-note}
+Footnotes numbering are automatically updated/incremented
+:::
+
 
 
 ## Cross-referencing
@@ -947,7 +962,7 @@ TODO
 
 ### Variables
 
-Variables calculated inside the <span class="r-code">code chunks</span> can be called in the <span class="r-text">narrative parts<span>: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
+Variables calculated inside the <span class="r-code">code chunks</span> can be called in the <span class="r-text">narrative parts</span>: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
 
 <div class="div-code"> 
 <small>code chunk</small>
