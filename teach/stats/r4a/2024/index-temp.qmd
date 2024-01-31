@@ -1,0 +1,36 @@
+---
+title: "Why <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 100px;vertical-align: middle;'> ?"
+# subtitle: "Create beautiful interactive slide decks with Reveal.js"
+author: "Thomas Huet (University of Oxford, EAMENA project)"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-research-areas.png"
+    data-background-size: "80%"
+    data-background-opacity: "0.3"
+include-in-header: 
+  text: |
+    <style>
+      .custom-small table {
+        font-size: .5em
+      }
+    </style>
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    controls: true
+    code-fold: true
+    code-summary: "<small>Code</small>"
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    # self-contained: true
+    # embed-resources: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-eamena.png
+    footer: "<em>Workshop on the use of 'R' at the School of Archaeology</em> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford.png' style='height: 50px;vertical-align: middle;'> Univesity of Oxford, School of Archaeology, 5 December 2023 - Thomas Huet"
+    margin: 0
+    width: 1200
+---
+
+## Introduction
