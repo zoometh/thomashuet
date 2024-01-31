@@ -17,6 +17,7 @@ In this R Markdown document
   - For each block of instructions there is an estimation of the average duration in minutes 
   - Overall duration estimation: 60 min
   - Do basic improvements for the layouts (colors, size, etc.), but stay focused on data  
+  - Install needed packages if not yet installed ({`archdata`}, {`knitr`}, etc.)
   - Select a dataset from the {`archdata`} package (here: 'Fibulae') 
   - Read the documentation of the package (`?archdata`) and dataset (`?Fibulae`)
   - You will have to update the `references.bib` file with your own references
@@ -27,6 +28,7 @@ In this R Markdown document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(fig.pos = "H")
 knitr::opts_chunk$set(warning = FALSE)
+# install.packages("archdata")
 library(archdata)
 data(Fibulae)
 ```
@@ -76,6 +78,10 @@ Mardown + Descriptive statistics ca (10 minutes)
 ````
 
 ```{r init, echo = FALSE, message = FALSE}
+## Not run
+# install.packages("knitr")
+# install.packages("kableExtra")
+# install.packages("dplyr")
 library(knitr)
 library(kableExtra)
 library(dplyr)
@@ -110,7 +116,7 @@ The histogram of the fibulae length (Fig. \@ref(fig:histlength)) shows a 'L' sha
 ```
 Mardown + Exploratory statistics ca (10 minutes) 
   - Adapt the title  
-  - Compute exploratory analysis (e.g. factorial analysis, hierarchical clustering)  
+  - Compute **exploratory analysis** (e.g. factorial analysis, hierarchical clustering)  
   - Comments the results with Markdown text
   - Call variables and figures  
 ```
@@ -125,9 +131,10 @@ Fibulae.quant.complete <- Fibulae.quant[complete.cases(Fibulae.quant), ]
 fibulae.ca <- CA(Fibulae.quant.complete)
 eig.f1 <- fibulae.ca$eig[1, "percentage of variance"]
 eig.f2 <- fibulae.ca$eig[2, "percentage of variance"]
+factorial.eig <- round((eig.f1 + eig.f2), 2)
 ```
 
-The Correspondence Analysis (Fig. \@ref(fig:correspanal)) shows `r round(eig.f1 + eig.f2)` % of the total variance.The point cloud shape is spherical except for one individual (Mno: Hallstatt) and a variable (number of Coils) (...)
+The Correspondence Analysis (Fig. \@ref(fig:correspanal)) shows `r factorial.eig` % of the total variance.The point cloud shape is spherical except for one individual (Mno: Hallstatt) and a variable (number of Coils) (...)
 
 # Statistical tests
 
