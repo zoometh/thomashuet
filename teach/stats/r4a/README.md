@@ -3,7 +3,7 @@
 
 <center>
 
-![../../../r4a_logo.png]
+![](../../../www/r4a_logo.png)
 
 </center>
 
