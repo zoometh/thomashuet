@@ -1,6 +1,12 @@
 # "Authoring, writing and publishing with R Markdown" 
 > a R for Archaeologists (`r4a`) R winter school organised by [mappa](http://www.mappaproject.org/)
 
+<center>
+
+![../../../r4a_logo.png]
+
+</center>
+
 * [2022](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2022)
 * [2023](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2023)
 * [2024](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024)
