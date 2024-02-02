@@ -1452,9 +1452,22 @@ DB
     - with Jeremy Worth (ICT So2)
 - *Arches and Coffee*, 
     - ACHP GitHub organisation -> RDF
-        - > 5 years fundings
+        - '>' 5 years fundings
     - UCL/HE climate RM
     - Kubernetes/Docker (containerisation)
+
+### week 3
+
+- APAAME server:
+    - creating/structuring the GH documentation (preparing SQLs, etc.)
+    - begin to assess the AWS `eamena-media` S3 bucket 
+    - remaining questions (to Jeremy): need to convert DNG to JPG/TIF? Direct URL can be accessed? (Direct URLs are intentionally hidden, so far)
+    - meeting with Jeremy, Bob, Andrew, etc. to be scheduled in about 3 weeks
+- ongoing AWS deployement of the KAHD (Iraqi Kurdistan) DB with Will and Ash
+- `citation generator` with Reuben
+- EAMENA website work
+- follow-up of the risk assessment for Erbil
+
 
 ---
 TODO:
