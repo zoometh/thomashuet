@@ -81,7 +81,7 @@ Options are used to show/hide the code, change the size of the output image, set
 
 </center>
 
-<https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/temp.pdf>
+<small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/temp.pdf></small>
 
 
 ### Options hierarchy 
@@ -349,6 +349,7 @@ output:
 ```
 </div>
 
+Select the output format, here a PDF: <small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/temp.pdf></small>
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
