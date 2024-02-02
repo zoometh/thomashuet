@@ -437,7 +437,7 @@ Thomas Huet, University of Oxford
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">AFDS</a></li><li><a href="#tabset-1-3">About this document</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">AFDS</a></li><li><a href="#tabset-1-3">About this presentation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
 <p><span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines R code chunks and narrative parts with – mainly – Markdown syntax</p>
@@ -477,7 +477,7 @@ Description
 <span class="r-md">R Markdown</span>
 </td>
 <td>
-R
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 55px;vertical-align: middle;">
 </td>
 <td>
 front-end oriented
@@ -485,10 +485,10 @@ front-end oriented
 </tr>
 <tr>
 <td>
-<a href="https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb">Jupyter</a>
+Jupyter
 </td>
 <td>
-Python
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png" style="height: 55px;vertical-align: middle;">
 </td>
 <td>
 back-end oriented
@@ -496,25 +496,20 @@ back-end oriented
 </tr>
 <tr>
 <td>
-<a href="https://d3js.org/">D3.js</a>
+D3.js
 </td>
-<td rowspan="2">
-JavaScript
-</td>
-<td rowspan="2">
-web oriented
-</td>
-</tr>
-<tr>
 <td>
-<a href="https://plotly.com/">Plotly</a>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 55px;vertical-align: middle;">
+</td>
+<td>
+web oriented
 </td>
 </tr>
 </tbody>
 </table>
 </div>
 <div id="tabset-1-3">
-<p>A <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png" style="height: 45px;vertical-align: middle;"> Quarto document (<code>.qmd</code>) using <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png" style="height: 45px;vertical-align: middle;"> reveal.js (JavaScript) hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png" style="height: 45px;vertical-align: middle;"> GitHub (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index-part1.qmd">here</a>)</p>
+<p>A <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png" style="height: 45px;vertical-align: middle;"> Quarto document (<code>.qmd</code>) using <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png" style="height: 45px;vertical-align: middle;"> reveal.js (<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 45px;vertical-align: middle;">) hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png" style="height: 45px;vertical-align: middle;"> GitHub (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index-part1.qmd">here</a>), prepared in RStudio (<em>aka</em> posit).</p>
 <script src="https://quarto.org/docs/presentations/revealjs/"></script>
 </div>
 </div>
@@ -699,8 +694,9 @@ web oriented
 </div>
 <div id="tabset-3-2">
 <center>
-<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png" width="900"></p>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png" width="900">
 </center>
+<p><small><a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/temp.Rmd" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/temp.Rmd</a></small></p>
 </div>
 <div id="tabset-3-3">
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
@@ -1527,6 +1523,10 @@ Ton cou Exquis<br>
 <div class="tab-content">
 <div id="tabset-13-1">
 <p>Variables calculated inside the <span class="r-code">code chunks</span> can be called in the <span class="r-text">narrative parts</span>: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png" style="height: 45px;vertical-align: middle;"></p>
+<div>
+  <label for="editableField">Editable Field:</label>
+  <input type="text" id="editableField" name="editableField">
+</div>
 <div class="div-code">
 <p><small>code chunk</small> ::: {.cell}</p>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a><span class="fu">library</span>(archdata)</span>

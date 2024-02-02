@@ -393,7 +393,7 @@ bibliography: references.bib
 ```
 </div>
 
-Reference the bibliographic file (e.g.  [`references.bib`](https://github.com/zoometh/thomashuet/blob/main/teachings/stats/R4Archaeo/references.bib)). Here in the same folder as the `.Rmd` file.
+Reference the bibliographic file (e.g.  [`references.bib`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/references.bib)). Here in the same folder as the `.Rmd` file.
 
 
 ```{=html}
@@ -474,7 +474,7 @@ Use a <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/
 ```{=html}
 <script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
 ```
-<small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/r4a/styles.css></small>
+<small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/styles.css></small>
 
 This file is called inside the <span class="r-yaml">YAML header</span> of the document:
 
@@ -553,7 +553,7 @@ runtime: shiny
 </div>        
         
 ::: {.callout-note}
-Try: `File > New File > Rmarkdown > Shiny`, or in the <span class="r-yaml">YAML header</span>. There are different ways to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 45px;vertical-align: middle;'> in R Markdown, for example by embedding an <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> widget created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.
+Try: `File > New File > Rmarkdown > Shiny`, or in the <span class="r-yaml">YAML header</span>. There are different ways to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 45px;vertical-align: middle;'> in <span class="r-md">R Markdown</span>, for example by embedding an <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> widget created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.
 ::: 
 \
 
@@ -613,7 +613,7 @@ plot_ly(data = Fibulae.ex,
 
 ## Export document
 
-Export R Markdown in: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-adobe-pdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-odt.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-rdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>, etc. 
+Export <span class="r-md">R Markdown</span> in: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-adobe-pdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-odt.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-rdf.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>, etc. 
 
 ```{=html}
 <iframe width="1100" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
@@ -623,7 +623,7 @@ Export R Markdown in: <img src='https://raw.githubusercontent.com/zoometh/thomas
 
 ## HTML
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> export is the default option of a R Markdown document.
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> export is the default option of a <span class="r-md">R Markdown</span> document.
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -655,7 +655,7 @@ For advanced editing, read below ⬇️
 ::: 
 
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='height: 70px;vertical-align: middle;'> is useful in R Markdown for chunk calls, and more generally for cross-referencing. PDF uses <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> syntax, if you don't have [MiKTeX](https://miktex.org/) installed, you need to install the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" style="height: 70px;vertical-align: middle;"/> package [@Xie19].
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='height: 70px;vertical-align: middle;'> is useful in <span class="r-md">R Markdown</span> for chunk calls, and more generally for cross-referencing. <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-adobe-pdf.png' style='height: 45px;vertical-align: middle;'> uses <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> syntax, if you don't have [MiKTeX](https://miktex.org/) installed, you need to install the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" style="height: 70px;vertical-align: middle;"/> package [@Xie19].
   
 
 ```{r eval=FALSE, echo=TRUE}
@@ -695,7 +695,7 @@ At the end of the rendering, these files are deleted.
 
 ## LaTeX
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> (extension of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>) is a rich plain text syntax for academic writing. To export in <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>, select in the <span class="r-yaml">YAML header</span> a PDF export + keep tex:
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> (extension of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>) is a rich plain text syntax for academic writing. To export in <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png' style='height: 45px;vertical-align: middle;'>, select in the <span class="r-yaml">YAML header</span>: PDF export + keep tex
 
 
 <div class="div-yaml"> 
@@ -742,15 +742,15 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 <tbody>
   <tr>
     <td>raw</td>
-    <td><small><https://raw.githubusercontent.com/zoometh/thomashuet/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.Rmd></small></td>
+    <td><small><https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
     <td>`.Rmd`</td>
-    <td><small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.Rmd></small></td>
+    <td><small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
     <td>PDF</td>
-    <td><small><https://github.com/zoometh/thomashuet/blob/main/teachings/stats/r4a/2024/2_Rmarkdown_Practice.pdf></small></td>
+    <td><small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.pdf></small></td>
   </tr>
 </tbody>
 </table>
@@ -768,15 +768,11 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 The practical part has an estimated duration of 60 minutes
 :::
 
-Use R Markdown (<span class="r-code">code chunks</span> and <span class="r-text">narrative parts</span>) to create a report. Choice between:
+Use <span class="r-md">R Markdown</span> (<span class="r-code">code chunks</span> and <span class="r-text">narrative parts</span>) to create a report. Choice between:
 
-- [ ] improvement of the existing `.Rmd` model for the fibulae from the Münsingen cemetery
+- [ ] start from scratch ([here](https://zoometh.github.io/thomashuet/teach/stats/r4a/2024/site/index-part1#/new-document))
 
-<center>
-
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png){width="300px"}
-
-</center>
+- [ ] improvement of the existing `.Rmd` model for the <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png' style='height: 65px;vertical-align: middle;'> fibulae from the Münsingen cemetery
 
 - [ ] select another dataset from the {`archdata`} package (e.g. 'Handaxes'), to improve the `.Rmd` template
 
@@ -784,7 +780,7 @@ Use R Markdown (<span class="r-code">code chunks</span> and <span class="r-text"
 
 ### Data
 
-Download the entire `r4a/2024/practice/` folder and locate the file `2_Rmarkdown_Practice.Rmd`: 
+Download the folder `r4a/2024/practice/` and locate the file `2_Rmarkdown_Practice.Rmd`: 
 ```{.html}
 https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024/practice/
 ```
@@ -802,15 +798,13 @@ or go here: [https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/202
 
 ### Output
 
-Contact me here 👋
+Contact me, send me your `.Rmd`, connected files (e.g. `references.bib`) here 👋 online
 
 <center>or</center>
 
-Send me your updated `.Rmd`, and eventually the connected files (e.g. `references.bib`) here:
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/2>
 
-  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'> <https://github.com/zoometh/thomashuet/issues/2>
 
-  - <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/gmail.png' style='height: 50px;vertical-align: middle;'> <thomas.huet@arch.ox.ac.uk>
 
 
 :::

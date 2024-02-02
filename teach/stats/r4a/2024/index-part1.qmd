@@ -80,29 +80,26 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 <tbody>
   <tr>
     <td><span class="r-md">R Markdown</span></td>
-    <td>R</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 55px;vertical-align: middle;'></td>
     <td>front-end oriented</td>
   </tr>
   <tr>
-    <td>[Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb)</td>
-    <td>Python</td>
+    <td>Jupyter</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png' style='height: 55px;vertical-align: middle;'></td>
     <td>back-end oriented</td>
   </tr>
   <tr>
-    <td>[D3.js](https://d3js.org/)</td>
-    <td rowspan="2">JavaScript</td>
-    <td rowspan="2">web oriented</td>
-  </tr>
-  <tr>
-    <td>[Plotly](https://plotly.com/)</td>
+    <td>D3.js</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 55px;vertical-align: middle;'></td>
+    <td>web oriented</td>
   </tr>
 </tbody>
 </table>
 
 
-### About this document
+### About this presentation
 
-A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png' style='height: 45px;vertical-align: middle;'> Quarto document (`.qmd`) using <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png' style='height: 45px;vertical-align: middle;'> reveal.js (JavaScript) hosted on <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png' style='height: 45px;vertical-align: middle;'> GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index-part1.qmd))
+A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png' style='height: 45px;vertical-align: middle;'> Quarto document (`.qmd`) using <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png' style='height: 45px;vertical-align: middle;'> reveal.js (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'>) hosted on <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png' style='height: 45px;vertical-align: middle;'> GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/index-part1.qmd)), prepared in RStudio (*aka* posit).
 
 ```{=html}
 <script src="https://quarto.org/docs/presentations/revealjs/"></script>
