@@ -221,8 +221,10 @@ A new document is created.
 <center>
 
 ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png){width="900px"}
-
 </center>
+
+<small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/temp.Rmd></small>
+
 
 ### GitHub <small>preview</small>
 
