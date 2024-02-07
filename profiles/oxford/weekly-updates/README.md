@@ -1471,20 +1471,19 @@ DB
 ## Team meeting
 > 07/02/2024
 
-- Usual business with the database
+- Usual business with the database, and GeoServer
+- Extended the EAMENA grids to Afghanistan (thanks to Will, Nichole, and Ash)
 - Developing EAMENA GitHub, GitHub issues, reference data, workflow, eamenaR functions, etc.
 - Began work on the new APAAME ResourceSpace server and direct links to EAMENA, with Jeremy and Andrew
-- Extended the EAMENA grids to Afghanistan (thanks to Will, Nichole, and Ash)
-- Updated the GeoServer
-- The workflow for publishing EAMENA data (Zenodo DOI, "how-to-cite", etc.) is now managed by Reuben and will be deployed on the database by Ash
-- Prepared the Arcadia annual report
+- Contribution to the Arcadia annual report (stats mostly)
 - Updating the EAMENA website
-- Attended the "Arches and Coffee," a few activities with the ACHP (Arches sibling projects)
+- ongoing AWS deployement of the `KAHDv2` (Iraqi Kurdistan) on Arches v7.3  DB with Will and Ash
 - Ash has been investigating native functions of the latest Arches release (v7.5) that allows data "round-trip" (BU Upload <-> BU Retrieve), but it has been unsatisfactory. Ash will write a function to export data in a BU layout
 - With Ash, I will work to host a URL shortener service to manage the many datasets, reference data, etc., we aim to publish
-- With Bijan, we reviewed one cultural heritage paper on Apamea proposed to the PCI Archaeology within the framework of our CAA session on cultural heritage (Oxford 2022)
+- The workflow for publishing EAMENA data (Zenodo DOI, "how-to-cite", etc.) is now managed by Reuben and will be deployed on the database by Ash
 - Submitted the Sistan data paper to the JOAD, with Bijan. We currently adressing the reviewers comments (Major revisions)
 - Began work on the AAA paper (Mohamed + Andrew)
+- Attended the "Arches and Coffee," a few activities with the ACHP (Arches sibling projects)
 - AOB
     - Phil Carlisle (HE) is developping a new paradigm to handle Arches permissions at very different levels
 
