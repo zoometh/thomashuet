@@ -1,0 +1,246 @@
+---
+title: "Why <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 100px;vertical-align: middle;'> ?"
+# subtitle: "Create beautiful interactive slide decks with Reveal.js"
+author: "Thomas Huet (University of Oxford, EAMENA project)"
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-research-areas.png"
+    data-background-size: "80%"
+    data-background-opacity: "0.3"
+include-in-header: 
+  text: |
+    <style>
+      .custom-small table {
+        font-size: .5em
+      }
+    </style>
+format:
+  revealjs: 
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    controls: true
+    code-fold: true
+    code-summary: "<small>Code</small>"
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    # self-contained: true
+    # embed-resources: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-eamena.png
+    footer: "<em>Workshop on the use of 'R' at the School of Archaeology</em> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford.png' style='height: 50px;vertical-align: middle;'> Univesity of Oxford, School of Archaeology, 5 December 2023 - Thomas Huet"
+    margin: 0
+    width: 1200
+---
+
+
+## Why <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 50px;vertical-align: middle;'> ?
+
+```{=html}
+<iframe width="1200" height="900" src="https://www.tiobe.com/tiobe-index/" title="research-themes"></iframe>
+```
+
+## Main languages in archaeology
+
+::: custom-small
+
+
+| Language    | User Community | Learning Curve | Statistics                          | 3D                          | AI/ML                | GIS/DB                  | Data-driven doc                                  | Web App Framework                 |
+|-------------|-----------------|-----------------|-------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
+| 🔓 Python      | 🔝 Large and diverse | 🔝 Relatively easy  | 🔝 Strong support  | 🔝 Blender, libraries[^1] | 🔝 Leading language[^2] | 🔝 Leading language[^8] | 🔝 Jupyter Notebook                                  | 🔝 Popular frameworks[^4] |
+| 🔓 Java        | 🔝 Large and established | 👎 Moderate  | 👎 Limited   | 🔝 Java 3D API   | 🔝 Used in enterprise | 🔝 Java-based tools available  | 🔝 Apache POI                                  | 🔝 Various frameworks[^5] |
+| 🔓 JavaScript  | 🔝 Ubiquitous in web dev | 🔝 Easy for web dev | 👎 Limited | 🔝 WebGL | 🔝 web-based apps | 👎 Limited  | 🔝 D3.js                                  | 🔝 Numerous frameworks[^6] |
+| 🔒 MATLAB      | 🔝 Academia, industry | 👎 Steeper  | 🔝 Comprehensive support | 👎 Poor texture mapping | 🔝 Academia, industry | 👎 Limited   | 👎  Live scripts but hard to share  | 👎 Limited   |
+| 🔓 R           | 🔝 Strong community | 👎 Steeper         | 🔝 Leading language | 👎 Poor texture mapping  | 🔝 Extensively used | 🔝 R packages for GIS[^7] | 🔝 Rmarkdown, Shiny                           | 👎 Limited   | 🔝 Many free packages |
+
+:::
+
+[^1]: PyOpenGL
+[^2]: TensorFlow, PyTorch
+
+[^4]: Django
+[^5]: Spring
+[^6]: React 
+[^7]: sf 
+[^8]: QGIS, ArcGIS, libraries: geopandas
+
+# Resources {background-color="aquamarine"}
+
+
+## {}
+
+::: {.panel-tabset}
+
+### resources
+
+| Host 	| URL 	|
+|------	|-----	|
+| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/src-archeo-prog-openarchaeo.png){width=350px} 	| <https://open-archaeo.info/>    	|
+| ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/src-archeo-prog-ssl-map-comput.png){width=350px}  	| <https://sslarch.github.io/>    	|
+
+### `open-archaeo`
+
+```{=html}
+<iframe width="1200" height="500" src="https://open-archaeo.info/" title="research-themes"></iframe>
+```
+
+
+### `SSLA`
+
+```{=html}
+<iframe width="1100" height="500" src="https://sslarch.github.io/MapofComputationalArchaeology/" title="research-themes"></iframe>
+```
+
+:::
+
+# <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 100px;vertical-align: middle;'> libraries {background-color="aquamarine"}
+
+
+## Research areas
+
+
+<div class="row">
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-research-areas-large.png)<br>
+<small><https://www.arch.ox.ac.uk/bioarchaeology></small>
+<small><https://www.arch.ox.ac.uk/...></small>
+</div>
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-tm.png)
+
+</div>
+</div>
+
+
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-soa.png' style='height: 60px;vertical-align: middle;'> Bioarchaeology <img src='https://www.arch.ox.ac.uk/sites/default/files/archit/images/media/bannergrasses1.jpg' style='height: 60px;vertical-align: middle;'>
+
+
+<div class="row">
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/Rdev/master/text/img/bioarchaeology.png){height=500px}</div>
+<div class="column50">
+```{=html}
+<iframe width="780" height="500" src="https://open-archaeo.info/tags/biological-anthropology/" title="research-themes"></iframe>
+```
+</div>
+</div>
+
+
+
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-soa.png' style='height: 60px;vertical-align: middle;'> Chronology <img src='https://www.arch.ox.ac.uk/sites/default/files/archit/images/media/bannerlab1jpg.jpg' style='height: 60px;vertical-align: middle;'>
+
+<div class="row">
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/Rdev/master/text/img/chronology.png){height=500px}</div>
+<div class="column50">
+```{=html}
+<iframe width="780" height="500" src="https://open-archaeo.info/tags/chronological-modelling/" title="research-themes"></iframe>
+```
+</div>
+</div>
+
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-soa.png' style='height: 60px;vertical-align: middle;'> Eurasian Prehistory <img src='https://www.arch.ox.ac.uk/sites/default/files/archit/images/media/bannercave.jpg' style='height: 60px;vertical-align: middle;'>
+
+<div class="row">
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/Rdev/master/text/img/eurasian-prehistory.png){height=500px}</div>
+<div class="column50">
+```{=html}
+<iframe width="780" height="500" src="https://open-archaeo.info/tags/palaeoenvironment-and-palaeobotany/" title="research-themes"></iframe>
+```
+</div>
+</div>
+
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-soa.png' style='height: 60px;vertical-align: middle;'> Historical and Classical <img src='https://www.arch.ox.ac.uk/sites/default/files/archit/images/media/bannerdig1.jpg' style='height: 60px;vertical-align: middle;'>
+
+<div class="row">
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/Rdev/master/text/img/historical-and-classical.png){height=500px}</div>
+<div class="column50">
+```{=html}
+<iframe width="780" height="500" src="https://open-archaeo.info/tags/artefact-morphology/" title="research-themes"></iframe>
+```
+</div>
+</div>
+
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-soa.png' style='height: 60px;vertical-align: middle;'> Materials and Technology <img src='https://www.arch.ox.ac.uk/sites/default/files/archit/images/media/bannermaterials.jpg' style='height: 60px;vertical-align: middle;'>
+
+<div class="row">
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/Rdev/master/text/img/materials-and-technology.png){height=500px}</div>
+<div class="column50">
+```{=html}
+<iframe width="780" height="500" src="https://open-archaeo.info/tags/instrumental-neutron-activation-analysis/" title="research-themes"></iframe>
+```
+</div>
+</div>
+
+## <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-soa.png' style='height: 60px;vertical-align: middle;'> Palaeolithic <img src='https://www.arch.ox.ac.uk/sites/default/files/archit/images/media/bannerpalaeo.jpg' style='height: 60px;vertical-align: middle;'>
+
+<div class="row">
+<div class="column50">![](https://raw.githubusercontent.com/zoometh/Rdev/master/text/img/palaeolithic.png){height=500px}</div>
+<div class="column50">
+```{=html}
+<iframe width="780" height="500" src="https://open-archaeo.info/tags/cultural-evolution/" title="research-themes"></iframe>
+```
+</div>
+</div>
+
+# <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 100px;vertical-align: middle;'> publication frameworks {background-color="aquamarine"}
+
+
+## {}
+
+::: {.panel-tabset}
+
+### JPG/PNG
+
+How: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-ggplot.png' style='height: 50px;vertical-align: middle;'>, Where: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'>
+
+<div class="row">
+<div class="column50">
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/caravanserail_paths.png){height=400px}</div>
+<div class="column50">
+![](https://raw.githubusercontent.com/eamena-project/eamenaR/master/results/map_path_profile.png){height=400px}
+</div>
+</div>
+
+
+### HTML
+
+How: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js-geo-leaflet.png' style='height: 50px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js-plotly.png' style='height: 50px;vertical-align: middle;'>, Where: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png' style='height: 50px;vertical-align: middle;'>
+
+```{=html}
+<iframe width="1200" height="400" src="https://eamena-project.github.io/reveal.js/caravanserail#/1" title="research-themes"></iframe>
+```
+
+
+### JavaScript
+
+How: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js-geo-leaflet.png' style='height: 50px;vertical-align: middle;'> <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js-plotly.png' style='height: 50px;vertical-align: middle;'> + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 50px;vertical-align: middle;'>
+
+```{=html}
+<iframe width="1200" height="700" src="https://trainingidn.shinyapps.io/togo/" title="research-themes"></iframe>
+```
+
+
+:::
+
+## At the University of Oxford <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford.png' style='height: 50px;vertical-align: middle;'>
+
+::: {.panel-tabset}
+
+
+### IT services
+
+<small><https://www.it.ox.ac.uk/home></small>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-itservices.png){height=600px}
+
+
+### ARC
+
+<small><https://www.arc.ox.ac.uk/></small>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-arc.png){height=600px}
+
+
+### IDN
+
+<small><https://idn.it.ox.ac.uk/home></small>
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford-idn.png){height=600px}
+
+:::
+
+

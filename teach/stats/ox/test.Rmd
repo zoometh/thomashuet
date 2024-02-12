@@ -1,0 +1,21 @@
+---
+title: "Introduction to the R programming language"
+output:
+  bookdown::html_document2:
+---
+
+# Ready to begin? 
+You’re about to start an adventure to learn R and statistics. If this is your first time working with R, then you should begin on this page. If you’re comfortable with R basics and you’d like to start with the statistical content, please proceed onto the islands with this [link](02_bellCurve.html).
+
+# Using interactive windows
+Throughout this material we will use an interactive version of R provided by [learnR](https://rstudio.github.io/learnr/). Although this way of using R comes with some limitations regarding functionality, it will give us the benefit of being able to run R code without switching from a web browser to a standalone application such as [RStudio](https://www.rstudio.com/). 
+
+Below you can see an example of an interactive R window. In the white window (under the button with the text *Start Over*) is where you will write code to be executed. To run code you have written, click the green *Run Code* button and observe how information pops up under the window. If no errors were made, this is where the answer will be returned. Error messages are shown in a red box, also under the learnR window. 
+
+Now spend a few minutes using the window below as a calculator and run simple calculations by clicking *Run Code*.
+
+<!---LEARNR EX 1-->
+
+<iframe class="interactive" id="myIframe1" src="https://tinystats.shinyapps.io/01-intro-ex1/" scrolling="no" frameborder="no"></iframe>
+
+<!------------->
