@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: w-func
+  output-dir: site
 
 website:
   title: "Write functions"
