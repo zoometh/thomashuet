@@ -1,6 +1,6 @@
 ## URL
 
-GAO 19/10/22 presentation: http://shinyserver.cfs.unipi.it:3838/teach/stats/gao/_site/#/title-slide )
+GAO 19/10/22 presentation: http://shinyserver.cfs.unipi.it:3838/teach/stats/gao/_site/#/title-slide
 
 ## Used R packages
 
