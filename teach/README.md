@@ -9,7 +9,7 @@
 | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/ox/gao/images/dist-rand-ra-millestone.png' style='height: 100px;vertical-align: middle;'> | [Statistics & Computer Scripts in Archaeology](https://github.com/zoometh/thomashuet/tree/main/teach/stats/upv#readme)  | Feb 2023. Graduate Archaeology at Oxford (GAO), University of Oxford |
 | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prog-r.png' style='height: 70px;vertical-align: middle;'> | [Write functions in R](https://github.com/zoometh/thomashuet/blob/main/teach/stats/ox/w-func/README.md)  | xxx, University of Oxford |
 
-* The final versions of interactives <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 50px;vertical-align: middle;'>) Shiny files are in the [stats/](https://github.com/zoometh/thomashuet/tree/main/teach/stats/stats) folder before being imported into [shinyserver.cfs.unipi.it](http://shinyserver.cfs.unipi.it:3838) and/or [trainingidn](https://idn.it.ox.ac.uk/home)
+* The final versions of interactives <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 40px;vertical-align: middle;'> Shiny files are in the [stats/](https://github.com/zoometh/thomashuet/tree/main/teach/stats/stats) folder before being imported into [shinyserver.cfs.unipi.it](http://shinyserver.cfs.unipi.it:3838) and/or [trainingidn](https://idn.it.ox.ac.uk/home)
 
 
 ## TODO
