@@ -3,6 +3,11 @@
 
 Cours du 21/02/23 au 23/02/23 à l'Université Paul Valéry, Montpellier. Niveau Master
 
+## Theorie
+
+La presentation Quarto est ici: http://shinyserver.cfs.unipi.it:3838/teach/stats/upv3/_site
+ 
+
 ## Pratique
 
 Use the `OxfordPots` dataset from the [archdata](https://cran.r-project.org/web/packages/archdata/index.html) R package, to reproduce the linear regression by Fulford and Hodder[^1]
