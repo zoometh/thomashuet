@@ -9,7 +9,7 @@
 | <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/stats/ox/gao/images/dist-rand-ra-millestone.png' style='height: 100px;vertical-align: middle;'> | [Statistics & Computer Scripts in Archaeology](https://github.com/zoometh/thomashuet/tree/main/teach/stats/upv#readme)  | Feb 2023. Graduate Archaeology at Oxford (GAO), University of Oxford |
 
 
-The final versions of interactives (shinyserver) files are in the [stats/](https://github.com/zoometh/thomashuet/tree/main/teach/stats/stats) folder
+* The final versions of interactives (shinyserver) files are in the [stats/](https://github.com/zoometh/thomashuet/tree/main/teach/stats/stats) folder
 
 
 ## TODO
