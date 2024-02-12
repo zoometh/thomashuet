@@ -13,6 +13,7 @@ ui <- fluidPage(
   aceEditor("code", 
             mode = "r", 
             # height = "200px", 
+            fontSize = 20,
             autoScrollEditorIntoView = TRUE,
             minLines = 2,
             maxLines = nl + 2,

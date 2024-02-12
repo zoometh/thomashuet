@@ -1,0 +1,10 @@
+name: f-sum
+title:
+username: trainingidn
+account: trainingidn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11198400
+bundleId:
+url: https://trainingidn.shinyapps.io/f-sum/
+version: 1

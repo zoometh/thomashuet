@@ -1,0 +1,40 @@
+---
+title: "Write functions in R"
+author: "Thomas Huet, University of Oxford "
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prog-r.png"
+    data-background-size: "33%"
+    data-background-opacity: "0.2"
+include-in-header:
+  text: |
+    <style>
+      .custom-small table {
+        font-size: .5em
+      }
+    </style>
+format:
+  revealjs:
+    controls: true
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/inst-uni-oxford_.png
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    margin: 0.01
+    width: 1200
+bibliography: references.bib
+pagetitle: "Write functions in R"
+footer: "Write functions in R <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prog-r.png' style='height: 25px;vertical-align: middle;'> School of Archaeology, University of Oxford"
+---
+
+## Introduction
+
+A simple function, `sum()`
+
+<div class="iframe-container">
+  <iframe class="interactive" id="f-sum" src="https://trainingidn.shinyapps.io/f-sum/" style="width: 100%; border: none; height: 500px;" scrolling="no" frameborder="no"></iframe>
+</div>
+
