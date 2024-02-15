@@ -1477,16 +1477,26 @@ DB
 - Began work on the new APAAME ResourceSpace server and direct links to EAMENA, with Jeremy and Andrew
 - Contribution to the Arcadia annual report (stats mostly)
 - Updating the EAMENA website
-- ongoing AWS deployement of the `KAHDv2` (Iraqi Kurdistan) on Arches v7.3  DB with Will and Ash
+- ongoing AWS deployement of the [KAHDv2](http://34.246.40.206/) (Iraqi Kurdistan) on Arches v7.3  DB with Will and Ash
 - Ash has been investigating native functions of the latest Arches release (v7.5) that allows data "round-trip" (BU Upload <-> BU Retrieve), but it has been unsatisfactory. Ash will write a function to export data in a BU layout
 - With Ash, I will work to host a URL shortener service to manage the many datasets, reference data, etc., we aim to publish
 - The workflow for publishing EAMENA data (Zenodo DOI, "how-to-cite", etc.) is now managed by Reuben and will be deployed on the database by Ash
 - Submitted the Sistan data paper to the JOAD, with Bijan. We currently adressing the reviewers comments (Major revisions)
 - Began work on the AAA paper (Mohamed + Andrew)
-- Attended the "Arches and Coffee," a few activities with the ACHP (Arches sibling projects)
+- Attended the *Arches and Coffee* a few activities with the ACHP (Arches sibling projects)
 - AOB
     - Phil Carlisle (HE) is developping a new paradigm to handle Arches permissions at very different levels
 
+### week 5
+
+- working on [EAMENA-APAAME links](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links)
+- the [citation-generator plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref/citation_form_code) has been delivered by Reuben (test phase)
+- overviewing the [KAHDv2](http://34.246.40.206/) installation, by Will
+- finishing the revision of the JOAD paper with Bijan (updating the [Advanced use webpage](https://eamena.org/advanced-use), etc.)
+- moved from France to Barcelona 
+- attended *Arches and Coffee*, will try to stream the information on [Arches permissions](https://github.com/achp-project/cultural-heritage/issues/11)
+- will present an updated version of BHDC paper during the next SPA meeting (invited by Stefania Merlo, Thu 22 Feb)
+- will attend the [Arches developer meeting](https://github.com/zoometh/thomashuet/tree/4f729e8322e110a4d77b1ea30f116c3025be6c32/profiles/oxford/weekly-updates)?
 ---
 TODO:
 
@@ -1498,7 +1508,5 @@ TODO:
 - [ ] hide coordinates for Guest users
 - [ ] correct the Grid Ids in HPs
 - [ ] AWS: tuning the KRG DB
-- [ ] [Arches developper meeting](https://community.archesproject.org/t/developer-meeting-2024/1998/11) (20-22 March 2024) at the Getty Center, LA, US - estimate costs for a 7 days journey:
-    - [flight](https://www.google.com/search?q=london+los+angeles+flight&oq=London+Los+&gs_lcrp=EgZjaHJvbWUqBwgDEAAYgAQyBggAEEUYOTIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCDcxMDJqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8): €600
-    - [lodging](https://www.airbnb.es/s/Getty-Center-South-Building--North-Church-Lane--Los-Angeles--California--EE.-UU./homes?tab_id=home_tab&refinement_paths%5B%5D=%2Fhomes&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-02-01&monthly_length=3&price_filter_input_type=0&channel=EXPLORE&query=Getty%20Center%20South%20Building%2C%20Los%20Angeles%2C%20California%2C%20EE.%20UU.&place_id=ChIJQ3zOwsa8woARvn7LmZd5iv4&date_picker_type=calendar&checkin=2024-03-18&checkout=2024-03-24&source=structured_search_input_header&search_type=user_map_move&price_filter_num_nights=6&ne_lat=34.02162345635933&ne_lng=-117.99592753263414&sw_lat=33.4316612028&sw_lng=-118.5311239517547&zoom=10.403016506279975&zoom_level=10.403016506279975&search_by_map=true): €800
-    - food + transport ([Metro bus line 761](https://www.getty.edu/visit/center/parking-and-transportation/)): €700
+
+Arches developper meeting (20-22 March 2024) at the Getty Center, LA, US - estimate costs for a 7 days journey: flight: €600, lodging: €800, food + transport (Metro bus line 761): €700
