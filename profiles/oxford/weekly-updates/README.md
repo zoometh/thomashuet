@@ -1497,6 +1497,9 @@ DB
 - attended *Arches and Coffee*, will try to stream the information on [Arches permissions](https://github.com/achp-project/cultural-heritage/issues/11)
 - will present an updated version of BHDC paper during the next SPA meeting (invited by Stefania Merlo, Thu 22 Feb)
 - will attend the [Arches developer meeting](https://github.com/zoometh/thomashuet/tree/4f729e8322e110a4d77b1ea30f116c3025be6c32/profiles/oxford/weekly-updates)?
+    - [transport](https://upload.wikimedia.org/wikipedia/commons/d/dc/Los_Angeles_Metro_System_Map.png): Expo / Sepulveda Stn
+    - hostel: 
+        - [Culver](https://www.google.com/maps/place/Culver+City/@34.025706,-118.3855525,1552m/data=!3m1!1e3!4m6!3m5!1s0x80c2b981166ee409:0xeeb28f85aa47fea1!8m2!3d34.0278848!4d-118.3888647!16s%2Fg%2F1260p3fs0!5m1!1e2?hl=en&entry=ttu)
 ---
 TODO:
 
