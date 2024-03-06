@@ -1477,7 +1477,7 @@ DB
 - Began work on the new APAAME ResourceSpace server and direct links to EAMENA, with Jeremy and Andrew
 - Contribution to the Arcadia annual report (stats mostly)
 - Updating the EAMENA website
-- ongoing AWS deployement of the [KAHDv2](http://34.246.40.206/) (Iraqi Kurdistan) on Arches v7.3  DB with Will and Ash
+- ongoing AWS deployement of the [KAHD v2](http://34.246.40.206/) (Iraqi Kurdistan) on Arches v7.3  DB with Will and Ash
 - Ash has been investigating native functions of the latest Arches release (v7.5) that allows data "round-trip" (BU Upload <-> BU Retrieve), but it has been unsatisfactory. Ash will write a function to export data in a BU layout
 - With Ash, I will work to host a URL shortener service to manage the many datasets, reference data, etc., we aim to publish
 - The workflow for publishing EAMENA data (Zenodo DOI, "how-to-cite", etc.) is now managed by Reuben and will be deployed on the database by Ash
@@ -1500,6 +1500,54 @@ DB
     - [transport](https://upload.wikimedia.org/wikipedia/commons/d/dc/Los_Angeles_Metro_System_Map.png): Expo / Sepulveda Stn
     - hostel: 
         - [Culver](https://www.google.com/maps/place/Culver+City/@34.025706,-118.3855525,1552m/data=!3m1!1e3!4m6!3m5!1s0x80c2b981166ee409:0xeeb28f85aa47fea1!8m2!3d34.0278848!4d-118.3888647!16s%2Fg%2F1260p3fs0!5m1!1e2?hl=en&entry=ttu)
+
+### week 6
+
+- working on [EAMENA-APAAME links](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links)
+    - met with Andrew, Bob, Jeremy, Bill and Bijan
+- updating the GitHub, mostly:
+    - [EAMENA-APAAME links](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links)
+    - [reference data](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data)
+- working with the EAMENA training instance:
+    - i18n (currently)
+    - hide coordinates by duplicating the HP RM (todo)
+- preparing the meeting with Ash and Reuben (Friday, citation-generator)
+- prepared the SPA talk (today at 1100)
+- in touch with Will for the [KAHDv2](http://34.246.40.206/)
+- US visa issues
+- attended *Arches and Coffee*
+
+
+### week 7
+
+- gave a 25 min presentation durin the SPA meeting ([here](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/talks/2024-spa/EAMENA_spa.ipynb))
+- met Ash and Reuben for the `citation-generator` plugin
+    - run some test these two coming days (if no OAB)
+- working on:
+    - KAHD set-up (various bugs) with Will and Ash
+    - common paper with Mohamed K. and Andrew W. (AAA)
+        - complete my part
+- developped a script to extract the field value description from the BU template ([workflow](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data#field-values-descriptions))
+- updating the EAMENA GitHub 
+- comitted in a project with Bijan on Automatic detection of *qanats*
+- attended *Arches and Coffee*
+
+### Team meeting
+> 06/03/24
+
+- Usual business with the database, GitHub, GeoServer, website
+- APAAME meetings and upstream documentation
+    - [EAMENA-APAAME links](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links)
+- working with:
+    - Ash and Reuben for the [citation-generator plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref) 
+    - Will for the development of the [KAHD v2](http://34.246.40.206) (Arches v7.3)
+    - Will and Ishiba for the Erbil training
+    - Mohamed K. and Andrew on a AAA paper
+- published the ["Sistan" data paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123) in the JOAD, with Bijan
+- [SPA presentation](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/talks/2024-spa/EAMENA_spa.ipynb)
+- attended: *Arches and Coffee* (Arches-based prj) and OA meetings (Oxford)
+
+
 ---
 TODO:
 
