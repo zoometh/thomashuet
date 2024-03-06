@@ -1535,12 +1535,12 @@ DB
 ### Team meeting
 > 06/03/24
 
-- Usual business with the database, GitHub, GeoServer, website
+- Usual business with the database, GitHub, GeoServer, 'eamena' Zenodo community, website
 - APAAME meetings and upstream documentation
     - [EAMENA-APAAME links](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links)
 - working with:
     - Ash and Reuben for the [citation-generator plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref) 
-    - Will for the development of the [KAHD v2](http://34.246.40.206) (Arches v7.3)
+    - Ash and Will for the development of the [KAHD v2](http://34.246.40.206) (Arches v7.3)
     - Will for the [GEE Python API integration](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/spatial/gee/ee_hp_and_satellite.ipynb) for EAMENA datasets
     - Will and Ishiba for the Erbil training
     - Mohamed K. and Andrew on a AAA paper
