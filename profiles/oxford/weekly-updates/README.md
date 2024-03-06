@@ -1541,6 +1541,7 @@ DB
 - working with:
     - Ash and Reuben for the [citation-generator plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref) 
     - Will for the development of the [KAHD v2](http://34.246.40.206) (Arches v7.3)
+    - Will for the [GEE Python API integration](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/spatial/gee/ee_hp_and_satellite.ipynb) for EAMENA datasets
     - Will and Ishiba for the Erbil training
     - Mohamed K. and Andrew on a AAA paper
 - published the ["Sistan" data paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123) in the JOAD, with Bijan
