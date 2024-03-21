@@ -1548,6 +1548,17 @@ DB
 - [SPA presentation](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/talks/2024-spa/EAMENA_spa.ipynb)
 - attended: *Arches and Coffee* (Arches-based prj) and OA meetings (Oxford)
 
+### week 10
+
+- working on the APAAME archive
+    - setting up a dedicated computer with required softwares
+    - updating the documentation on GitHub
+    - uploading photographs on RS
+- developing a Python script to add metadata to photographs (for the "City of the Dead" project) 
+- agreed with Ash that we will develop the RDFization of business data (together with: RDFization of the reference data and citation-generator plugin)
+- attended:
+    - Arcadia meeting, London
+    - SPA meeting and *Arches and Coffee*
 
 ---
 TODO:
@@ -1555,10 +1566,7 @@ TODO:
 - [ ] clustering
 - [ ] reverse geocoding
 - [ ] localisation in French
-- [ ] create IAM user account for Will KAHD
-- [ ] AWS: Attention: Extended Deadline for Updating Your Access Permissions - December 11, 2023. AWS has discontinued use of old IAM permissions for Billing, Cost Management, and Accounts consoles. If you do not take action, you may lose access to these consoles. We are granting an extension until December 11, 2023 for you to update your IAM policies. Update your policies or contact your organization's access administrator. For assistance, please visit the blog, or review the policy migration utilities- Bulk Policy Migrator, action mapping guide.
 - [ ] hide coordinates for Guest users
-- [ ] correct the Grid Ids in HPs
-- [ ] AWS: tuning the KRG DB
-
-Arches developper meeting (20-22 March 2024) at the Getty Center, LA, US - estimate costs for a 7 days journey: flight: €600, lodging: €800, food + transport (Metro bus line 761): €700
+- [ ] correct the Grid Ids in HPs ([here](https://eamena.slack.com/archives/C069FD0MHJR/p1702469727420909))
+- [ ] project: concept-image
+- [ ] move the eamenar user to the main instance (or another instance)

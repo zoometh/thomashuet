@@ -1,0 +1,13 @@
+name: w-func
+title: w-func
+username: trainingidn
+account: trainingidn
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11451481
+bundleId: 8355373
+url: https://trainingidn.shinyapps.io/w-func/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: _quarto.yml|index.html|index.qmd|README.md|references.bib|site

@@ -1,6 +1,6 @@
 ---
 title: "Write functions in R"
-author: "Thomas Huet, University of Oxford "
+author: "Thomas Huet, University of Oxford"
 title-slide-attributes:
     data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prog-r.png"
     data-background-size: "33%"

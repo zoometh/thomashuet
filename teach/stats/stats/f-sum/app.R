@@ -1,9 +1,13 @@
+# simple sum
+
 library(shiny)
 library(shinyAce)
 
 RCODE <- "my_sum <- function (a, b) {
 a + b
 }
+
+## write the parameters of the function
 my_sum( , )
 "
 nl <- stringr::str_count(RCODE, "\\n")
