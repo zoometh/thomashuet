@@ -1,6 +1,23 @@
+
+/* Tables */
+
+.tabtop-left {
+  vertical-align: top;
+  text-align: left;
+  font-size: 25px;
+}
+
+.tabbottom-left {
+  vertical-align: bottom;
+  text-align: left;
+  font-size: 25px;
+}
+
 lp {
   font-family: Helvetica;
 }
+
+/* R markdown tutorial */
 
 .div-code {
   background-color: #EBEBEB;
@@ -48,8 +65,6 @@ notes {
   color: white;
   background-color: dodgerblue;
 }
-
-
 
 /* Quarto natives */
 

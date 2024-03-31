@@ -1539,7 +1539,9 @@ DB
 - APAAME meetings and upstream documentation
     - [EAMENA-APAAME links](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame#update-ir-apaame-links)
 - working with:
-    - Ash and Reuben for the [citation-generator plugin](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref) 
+    - Ash and Reuben for the citation-generator plugin:
+        - [Jupyter NB](https://github.com/eamena-project/eamena-arches-dev/tree/main/data/bibref) 
+        - [EAMENA training instance](http://52.50.27.140/citations/)
     - Ash and Will for the development of the [KAHD v2](http://34.246.40.206) (Arches v7.3)
     - Will for the [GEE Python API integration](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/spatial/gee/ee_hp_and_satellite.ipynb) for EAMENA datasets
     - Will and Ishiba for the Erbil training
@@ -1554,6 +1556,7 @@ DB
     - setting up a dedicated computer with required softwares
     - updating the documentation on GitHub
     - uploading photographs on RS
+- working on KAHD administration with Will
 - developing a Python script to add metadata to photographs (for the "City of the Dead" project) 
 - agreed with Ash that we will develop the RDFization of business data (together with: RDFization of the reference data and citation-generator plugin)
 - attended:
