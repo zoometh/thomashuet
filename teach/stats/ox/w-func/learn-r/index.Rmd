@@ -1,0 +1,187 @@
+---
+title: "Write functions in R"
+author: "Thomas Huet, University of Oxford"
+output: learnr::tutorial
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+library(learnr)
+library(ggplot2)
+library(dplyr)
+```
+
+## Functions in R: an overview
+> "*There are only two hard things in Computer Science: cache invalidation and naming things*" -- Phil Karlton
+
+Native functions
+
+```{r addition, exercise=TRUE}
+sum(1, 1)
+```
+
+Help
+
+```{r addition-h, exercise=TRUE}
+?sum
+```
+
+## Exercices 1
+
+### Fix the typo
+
+```{r addition0, exercise=TRUE}
+my_sum <- function(a, b){
+  a + b
+}
+
+## here
+my_sum(1, "1")
+```
+
+```{r addition0-solution}
+my_sum(1, 1)
+```
+
+### Write the missing parameters
+
+Write the missing parameters adding `1` and `2`
+
+```{r addition1, exercise=TRUE}
+my_sum <- function(a, b){
+  a + b
+}
+
+## here
+my_sum( , )
+```
+
+```{r addition1-solution}
+my_sum(1, 2)
+```
+
+
+## Internal variables
+
+Lorem
+
+```{r varInter, exercise=TRUE}
+my_loop <- function(a){
+  for(i in a){
+    print(i)
+  }
+}
+
+## here
+i <- "grey"
+a <- c("red", "green", "blue", "orange")
+my_loop(a)
+print(i)
+```
+
+## Parameters
+
+### Names
+
+* Give same names to variables outside the function and parameters inside the function (ex: `df`)
+
+```{r varNames, exercise=TRUE}
+
+df <- data.frame(
+  blade = c("A", "B", "C", "D"),
+  length = c(10.1, 0.82, 9.3, 7.4)
+)
+
+my_barplot <- function(df = NA){
+  df_clean <- df[df$length > 4, ]
+  g <- ggplot2::ggplot(df_clean, ggplot2::aes(x = blade, y = length)) + 
+    ggplot2::geom_bar(stat = "identity", fill = "steelblue")
+  return(g)
+}
+
+## here
+my_barplot(df)
+```
+
+```{r varDefault-solution}
+my_sum(1, 2)
+```
+
+### Default values
+
+* Assign default values to parameter when:
+  - the parameter/variable will be used more than once
+  - you know the function works with a precise dataset (ex: a TSV file) and values (ex: )
+
+
+```{r varDefault, exercise=TRUE}
+
+df <- data.frame(
+  blade = c("A", "B", "C"),
+  length = c(10.1, 8.2, 9.3)
+)
+color <- "steelblue"
+
+my_barplot <- function(df = NA, color = "steelblue"){
+  g <- ggplot2::ggplot(df, ggplot2::aes(x = blade, y = length)) + 
+    ggplot2::geom_bar(stat = "identity", fill = color)
+  return(g)
+}
+
+## here
+my_barplot(df)
+```
+
+### Packages
+
+
+* Write the packages names explicitly within the function (ex: `ggplot2::`)
+
+```{r varPackages, exercise=TRUE}
+
+df <- data.frame(
+  blade = c("A", "B", "C", "D"),
+  length = c(10.1, 8.2, NA, "?"),
+  stringsAsFactors = FALSE
+)
+
+my_barplot <- function(df = NA, 
+                       color = "steelblue"){
+  # only rows with numeric values
+  df_clean <- df[!is.na(as.numeric(df$length)), ]
+  # create the plot
+  g <- ggplot2::ggplot(df_clean, ggplot2::aes(x = blade, y = length)) + 
+    ggplot2::geom_bar(stat = "identity", fill = color)
+  return(g)
+}
+
+## here
+my_barplot(df)
+```
+
+```{r varPackages-solution}
+# TODO: return the 3 places where the package name appears
+```
+
+## Function documentation
+
+## DEBUG and troubleshouting
+
+## Notes
+
+* syntax (spaces, `my_plot`)
+* `return`
+* `ggplot2::`
+* function call
+* where to place the comments `#`
+* `print` or `cat` inside a function
+* dataframe column names as variables
+
+
+## Documentation
+
+- https://tinystats.github.io/teacups-giraffes-and-statistics/01_introToR.html
+
+## About this document
+
+This document is a Rmarkdown file using the `learnr` package
