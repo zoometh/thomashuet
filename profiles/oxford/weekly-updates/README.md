@@ -1563,13 +1563,29 @@ DB
     - Arcadia meeting, London
     - SPA meeting and *Arches and Coffee*
 
+## Trinity Term 2024
+
+### week -2
+
+
+- APAAME photo archive upload (unless these last days: internet interruption)
+- GitHub dev:
+    - attaching visual documentation (i.e. photographs) to HP fields [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/README.md#values)
+- in contact with:
+    - Ash and Bijan: Durham in-person meeting
+    - Will: KAHD
+- liaising with the CoD project
+- attended:
+    - SPA meeting and *Arches and Coffee* 
+
+
 ---
 TODO:
 
 - [ ] clustering
 - [ ] reverse geocoding
-- [ ] localisation in French
+- [ ] i18n / localisation in French
 - [ ] hide coordinates for Guest users
 - [ ] correct the Grid Ids in HPs ([here](https://eamena.slack.com/archives/C069FD0MHJR/p1702469727420909))
-- [ ] project: concept-image
-- [ ] move the eamenar user to the main instance (or another instance)
+- [ ] project: [concept-image](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts)
+- [ ] move the `eamenar` user to the main instance (or another instance)
