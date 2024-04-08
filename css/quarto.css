@@ -195,6 +195,10 @@ notes {
   font-size: 30px;
 }
 
+.dataTables_wrapper {
+  font-size: 18px; /* Change the font size as needed */
+}
+
 .div-code {
   background-color: #EBEBEB;
 }

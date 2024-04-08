@@ -1,5 +1,5 @@
 ---
-title: "Write functions in R"
+title: "WriteFunctions(how = 'in R')"
 author: "Thomas Huet, University of Oxford"
 output: learnr::tutorial
 runtime: shiny_prerendered
@@ -18,6 +18,16 @@ Native functions
 
 ```{r addition, exercise=TRUE}
 sum(1, 1)
+```
+
+Nested functions
+
+```{r addition, exercise=TRUE}
+df <- data.frame(
+  blade = c("A", "B", "C", "D"),
+  length = c(10.1, 0.82, 9.3, 7.4)
+)
+sum(mean(df$length), 1)
 ```
 
 Help
