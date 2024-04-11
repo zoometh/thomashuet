@@ -1578,6 +1578,17 @@ DB
 - attended:
     - SPA meeting and *Arches and Coffee* 
 
+### week -1
+
+- APAAME photo archive upload
+- DB work on i18n (test for French with the Arches training instance)
+- with Will:
+    - Meeting on i18n/l10n of Arches for Kurdistan
+- attended:
+    - *Arches and Coffee* meeting
+- scheduled:
+    - Bijan & Ash: in preparation of the Durham in-person meeting
+    - Will: new meeting on i18n/l10n of Arches for Kurdistan
 
 ---
 TODO:
