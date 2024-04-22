@@ -84,7 +84,7 @@
 
 ------------------------------------------------------------------------
 
-### ManCom Monthly report
+### ManCom
 > 3rd Nov - 16th Dec
 
 - integration of the BU process in Oxford
@@ -125,7 +125,7 @@
 
 ---
 
-### ManCom Monthly report
+### ManCom
 
 > 16th Dec 21 - 12th Jan 22
 
@@ -154,7 +154,7 @@
 
 ---
 
-### ManCom Monthly report
+### ManCom
 
 > 13th Jan 22 - 9th Feb 22
 
@@ -200,7 +200,7 @@
 
 ---
 
-### ManCom Monthly report
+### ManCom
 > 10th Feb 22 - 9th Mar 22
 
 - 9-hours training to Palestine DACH, Jordan DoA, Lebanon DGA, futur Arches/EAMENA database managers, with Will and Sayantani
@@ -272,7 +272,7 @@
 
 ---
 
-### ManCom Monthly report
+### ManCom
 > 10th Mar 22 - 12th Apr 22
 
 - Two weeks as a 'visiting fellow' at the Univeristy of Pisa (14th-18th March, 11th-15th April)
@@ -418,7 +418,7 @@
 - Scheduled next week:
     - internationalisation meeting with Crystal, Stefania Merlo, Ash Smith
 
-### ManCom Monthly report
+### ManCom
 >12th Apr 22 - 25th May 22
 
 - Processed some bulks, added some basemaps
@@ -500,7 +500,7 @@
 
 - Overviewing the french MOOC comments
 
-### ManCom Monthly report
+### ManCom
 >25th May 22 - 07th July 22
 
 Database Development
@@ -562,7 +562,7 @@ Database Development
     - DB meeting with MaREA (early October)
     - GitHub training (end of October)
 
-### ManCom Monthly report
+### ManCom
 >07th July 22 - 15th September 22
 
 - Arches 7 has been released
@@ -975,7 +975,7 @@ DB
 - will meet Reuben to discuss the training material and online delivery
 
 
-### ManCom Monthly report
+### ManCom
 > 12/04/23
 
 - Ash worked on the Arches v7 deployement
@@ -1128,7 +1128,7 @@ DB
     - *Arches & Coffee* meeting
     - Leicester meeting about the AAA, with Andrew
 
-### ManCom Monthly report
+### ManCom
 > 26/07/23, and Team meeting 02/08/23
 
 - training in Amman (Jordan + Palestine), on Arches v7
@@ -1510,7 +1510,7 @@ DB
     - [reference data](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/data/reference_data)
 - working with the EAMENA training instance:
     - i18n (currently)
-    - hide coordinates by duplicating the HP RM (todo)
+    - hide coordinates by duplicating the HP RM (TODO)
 - preparing the meeting with Ash and Reuben (Friday, citation-generator)
 - prepared the SPA talk (today at 1100)
 - in touch with Will for the [KAHDv2](http://34.246.40.206/)
@@ -1583,19 +1583,40 @@ DB
 - APAAME photo archive upload
 - DB work on i18n (test for French with the Arches training instance)
 - with Will:
-    - Meeting on i18n/l10n of Arches for Kurdistan
+    - Meeting on i18n/l10n of the Arches DB for Kurdistan
 - attended:
     - *Arches and Coffee* meeting
 - scheduled:
     - Bijan & Ash: in preparation of the Durham in-person meeting
     - Will: new meeting on i18n/l10n of Arches for Kurdistan
 
+### ManCom
+> 22/04/24
+
+- APAAME photo archive upload
+- with Will
+    - finished the i18n/l10n of the Arches DB for Kurdistan, [KAHD v2](http://34.246.40.206) (Arches v7.3)
+    - working to have him a SSO access to manage this particular DB
+- testing the citation-generator plugin
+- Usual business with the database, GitHub, GeoServer, 'eamena' Zenodo community, website
+- with Ash, working on the RDFisation of the business data (with the already done RDFisation of the reference data)
+- with Bijan and Ash, preparing the Durham in-person meeting
+    - ["Sistan" data paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123)
+- preparing workflows (BU, photograph metadata) for the "City of the Dead" (CoD) project. Waiting for them to send their complete data.
+- projects
+    - [concept-image](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts) a way for attaching visual documentation (i.e. photographs) to HP fields [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/README.md#values)
+    - "hackathon" (I asked a funding) to gather programmers of the *Arches and Coffee* group in a 2-day workshop in Oxford
+- attended:
+    - Arcadia meeting, London
+    - SPA meeting
+    - *Arches and Coffee* meeting
+
 ---
 TODO:
 
 - [ ] clustering
 - [ ] reverse geocoding
-- [ ] i18n / localisation in French
+- [ ] EA main database i18n / localisation in French
 - [ ] hide coordinates for Guest users
 - [ ] correct the Grid Ids in HPs ([here](https://eamena.slack.com/archives/C069FD0MHJR/p1702469727420909))
 - [ ] project: [concept-image](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts)
