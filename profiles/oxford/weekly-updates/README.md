@@ -1617,7 +1617,7 @@ TODO:
 - [ ] clustering
 - [ ] reverse geocoding
 - [ ] EA main database i18n / localisation in French
-- [ ] hide coordinates for Guest users
+- [ ] hide coordinates for Guest users / duplicate card
 - [ ] correct the Grid Ids in HPs ([here](https://eamena.slack.com/archives/C069FD0MHJR/p1702469727420909))
 - [ ] project: [concept-image](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts)
 - [ ] move the `eamenar` user to the main instance (or another instance)

@@ -1,3 +1,21 @@
+/* Generic, to reduce the margins */
+
+h1, h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.panel-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+table {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
 /* Tables */
 
