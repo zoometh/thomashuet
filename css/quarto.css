@@ -1,29 +1,4 @@
-/* Generic, to reduce the margins/padding */
 
-h1, h2, h3 {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.panel-title {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-table {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
-p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-}
 
 /* Tables */
 
@@ -260,4 +235,37 @@ notes {
 /* outside links */
 .it-resources{
   color: #ffffb2;
+}
+
+/* Generic, to reduce the margins/padding */
+
+h1, h2, h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.panel-title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+table {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* Test */
+
+.reveal table {
+  padding: 0px; 
 }
