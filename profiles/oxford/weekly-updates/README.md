@@ -1611,6 +1611,18 @@ DB
     - SPA meeting
     - *Arches and Coffee* meeting
 
+### week 1
+
+- DB work on i18n (test for French with the Arches training instance)
+- Preparing the Durham in-person talk
+- in contact with:
+    - Will, remaining RTL issue for the [KAHD v2](http://34.246.40.206)
+- attended:
+    - ManCom meeting   
+    - meeting with Simge Seven (ENSSIB) about EAMENA practices for endangered archaeology archives
+    - IT Training - *Digital futures: AI - Artificial Intelligence past, present and future* (2-hours)
+    - *Arches and Coffee* meeting
+- Next week: will work on the duplicating the HP card (i.e. or any ring-fencing-like solutions)
 ---
 TODO:
 
