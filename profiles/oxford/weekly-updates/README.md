@@ -1599,9 +1599,6 @@ DB
     - working to have him a SSO access to manage this particular DB
 - testing the citation-generator plugin
 - Usual business with the database, GitHub, GeoServer, 'eamena' Zenodo community, website
-- with Ash, working on the RDFisation of the business data (with the already done RDFisation of the reference data)
-- with Bijan and Ash, preparing the Durham in-person meeting
-    - ["Sistan" data paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123)
 - preparing workflows (BU, photograph metadata) for the "City of the Dead" (CoD) project. Waiting for them to send their complete data.
 - projects
     - [concept-image](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts) a way for attaching visual documentation (i.e. photographs) to HP fields [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/README.md#values)
@@ -1623,6 +1620,33 @@ DB
     - IT Training - *Digital futures: AI - Artificial Intelligence past, present and future* (2-hours)
     - *Arches and Coffee* meeting
 - Next week: will work on the duplicating the HP card (i.e. or any ring-fencing-like solutions)
+
+### Team meeting
+> 02/05/24
+
+- Usual business with the database, GitHub, 'eamena' Zenodo community; testing the `citation-generator` plugin
+- APAAME photo archive upload
+- working with:
+    - Will:
+        - finished the i18n/l10n of the Arches DB for Kurdistan, [KAHD v2](http://34.246.40.206) (Arches v7.3) with a remaining RTL issue.
+        - have him an Oxford SSO access to manage this particular DB
+    - Ash (liasing):
+        - RDFisation of the business data (with the already done RDFisation of the reference data)
+    - Mohamed & Andrew:
+        - AAA paper
+    - "City of the Dead" (CoD) project:
+        - preparing workflows (BU, photograph metadata) but waiting for them to send their complete data.
+    - projects
+        - [concept-image](https://github.com/eamena-project/eamena-data?tab=readme-ov-file#concepts) a way for attaching visual documentation (i.e. photographs) to HP fields [here](https://github.com/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/README.md#values)
+- preparing a research paper for the [JCAA](https://journal.caa-international.org/) on the EAMENA database
+- meetings attended:
+    - Arcadia meeting, London
+    - SPA meeting
+    - *Arches and Coffee* meeting
+- scheduled:
+    - DB work on i18n (test for French with the Arches training instance)
+    - duplicating the HP card (i.e. or any ring-fencing-like solutions)
+
 ---
 TODO:
 
