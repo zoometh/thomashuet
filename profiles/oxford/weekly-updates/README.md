@@ -1628,7 +1628,7 @@ DB
 - APAAME photo archive upload
 - working with:
     - Will:
-        - finished the i18n/l10n of the Arches DB for Kurdistan, [KAHD v2](http://34.246.40.206) (Arches v7.3) with a remaining RTL issue.
+        - finished the i18n/l10n of the Arches DB for Kurdistan, [KAHD v2](http://34.246.40.206) (Arches v7.3) with a remaining RTL issue + 240 new sentences to translate.
         - have him an Oxford SSO access to manage this particular DB
     - Ash (liasing):
         - RDFisation of the business data (with the already done RDFisation of the reference data)
@@ -1645,7 +1645,26 @@ DB
     - *Arches and Coffee* meeting
 - scheduled:
     - DB work on i18n (test for French with the Arches training instance)
+    - 240 new `ckb` sentences
     - duplicating the HP card (i.e. or any ring-fencing-like solutions)
+
+### week 3
+
+- working on the EAMENA training instance
+    - AWS -> enlarge the volume
+    - i18n
+- in touch with:
+    - Reuben (citation-generator): need for feedback
+    - Will (SSO, i18n)
+    - David Myers (citation-generator), with Bijan
+    - Alexei Peters (i18n)
+- working on the JCAA paper
+- need to solve the 'hackathon' issue (missing some £1,600)
+- meetings attended:
+    - ACD (ACD GitHub repo)
+    - *Arches and Coffee*
+- meeting scheduled:
+    - Jeremy for the APAAME archive
 
 ---
 TODO:
