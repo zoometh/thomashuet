@@ -1659,13 +1659,35 @@ DB
     - David Myers (citation-generator), with Bijan
     - Alexei Peters (i18n)
 - working on the JCAA paper
+    - created a Zenodo dataset 'reader' in Python (reads EAMENA GeoJSON files hosted on Zenodo)
+    - asked to Michael a mapping of his 'kite' dataset (to develop their typology in Arches graphs)
 - need to solve the 'hackathon' issue (missing some £1,600)
 - meetings attended:
     - ACD (ACD GitHub repo)
     - *Arches and Coffee*
 - meeting scheduled:
+    - 2 upcoming training on AI (today)
     - Jeremy for the APAAME archive
 
+### week 4
+
+- APAAME photo archive upload
+- i18n/l10n
+- working on the JCAA paper
+    - creating a "RM branch" for the kites published by Michael
+    - updating the eamenaR package
+    - ...
+- in touch with Erik Kansa on the [good practices of data lifecylce](https://github.com/achp-project/cultural-heritage/issues/13)
+- still waiting for feedback on citation generator
+- meeting attended:
+    - Jeremy (APAAME)
+    - Will (i18n)
+    - *Arches and Coffee*
+    - Open Access Steering Group (University level)
+    - Health and Safety (SoA, in replacement of one of my SPECTRA colleague)
+- meeting scheduled:
+    - Arches UK user group
+    - Reuben (+ Ash?) on citation generator
 ---
 TODO:
 
