@@ -1359,6 +1359,8 @@ DB
 - 1-to-1 meeting with Chritopher B. Ramsey
 - ~~*Arches & Coffee* meeting~~
 - TODO: convert https://docs.google.com/spreadsheets/d/1r2VLLiyJMaCl8l7C4sKilQ4ZMqEfAwhQAwYC7wGzmk0/edit?usp=sharing to XLSX/TSV and hosted these files to GitHub?
+- attended:
+    - *Crossing Ancient Sacred Landscapes: Contacts and Continuities in the Ancient Desert Cults and Beliefs of Northern Arabia and the Arid Southern Levant*, seminar
 
 ## Team meeting
 > 07/12/2023
@@ -1688,6 +1690,42 @@ DB
 - meeting scheduled:
     - Arches UK user group
     - Reuben (+ Ash?) on citation generator
+
+### week 5
+
+- APAAME photo archive upload (fixed an issue with Jeremy)
+- JCAA paper
+    - Michael's kites dataset has been deposited on the [Zenodo sandbox](https://sandbox.zenodo.org/records/56643)
+    - I created a branch for the specific typology of the kites
+    - Will reuse, or mention, the Sistan paper
+- waiting feedback on the citation generator
+- responding to Eric Kansa (Arches) about [Documenting Good Practices for "Arches Data Lifecyle" Operations](https://github.com/achp-project/cultural-heritage/issues/13)
+- Will cancel the 'hackathon'
+- [Arches bulletin](https://mailchi.mp/archesproject/arches-project-bulletin-may2024), mentions:
+    - the JOAD paper, CAA Arches session + communication, ...
+    - the Citation Generator workflow and its upcoming release as an Arches compatible plugin 
+- meeting attended:
+    - Bob on [APAAME metadata](https://github.com/eamena-project/eamena-arches-dev/issues/47#issuecomment-2122353382) accuracy
+    - Will on the i18n of the RM (comes with the Django messages and the vocabularies)
+    - Reuben and Ash on hidding coordinates. Feedback expected form Reuben this end of the month.
+    - Arches UK user group
+
+### week 6
+
+- APAAME photo archive upload (fixed an issue with Jeremy)
+- JCAA paper (late)
+    - updated the eamenaR package with new functions (contributors, HP by years)
+- feedback on the citation generator have been given. I will move it to the main database
+- response to Eric Kansa (Arches) about [Documenting Good Practices for "Arches Data Lifecyle" Operations](https://github.com/achp-project/cultural-heritage/issues/13)
+- waiting feedback from Reuben about 'hiding coordinates to Guest users'
+- meeting attended:
+    - Getting start with ARC
+    - Python: the infrastructure, not the language
+    - Meyerstein lecture 
+    - *Arches and Coffee*
+- hackathon?
+- will attend:
+    - meeting with Mike Fisher who wants to develop an Arches compliant vocabulary for Mongolian rock-art (useful to work later with Maria Guagnin)
 ---
 TODO:
 
