@@ -1,26 +1,32 @@
+import os
 import pandas as pd
 import folium
+from folium import Iframe
 
-# Step 2: Load Data
-file_path = 'path_to_your_file.xlsx'
-data = pd.read_excel(file_path)
+print(os.getcwd())
 
-# Step 3: Create a Map
-# Initialize the map with a central point
-map = folium.Map(location=[51.751944, -1.257778], zoom_start=13)
+url = 'https://github.com/zoometh/thomashuet/raw/main/profiles/oxford/spectra/oxford_pub_crawl_list.xlsx'
+data = pd.read_excel(url)
+oxford_map = folium.Map(location=[51.751944, -1.257778], zoom_start=14) # central location in Oxford
 
-# Add markers
+# Define HTML for Title and Logo
+html = '''
+<div style="position: fixed; top: 10px; left: 50px; width: 300px; height: 100px; z-index:9999; font-size:18px; font-weight:bold;">
+    <h4>SPECTRA <em>Oxford Pub Crawl</em></h4>
+    <img src="LOGO_URL_HERE" alt="Logo" style="height:50px;">
+</div>
+'''
+
+
 for index, row in data.iterrows():
-    # Split coordinates
     lat, lon = map(float, row['goo_coord'].split(','))
-    # Choose color based on 'date1' being empty or not
     color = 'red' if pd.notna(row['date1']) else 'blue'
-    # Create a marker
     folium.Marker(
-        location=[lat, lon],
-        popup=row['pub_name'],
+        [lat, lon],
+        popup=f"<b>{row['pub_name']}</b>",
         icon=folium.Icon(color=color)
-    ).add_to(map)
+    ).add_to(oxford_map)
+oxford_map 
+# map.save('oxford_pubs_map.html')
 
-# Step 4: Save to HTML
-map.save('oxford_pubs_map.html')
+# %%
