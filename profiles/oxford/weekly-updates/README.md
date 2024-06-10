@@ -1700,7 +1700,7 @@ DB
     - Will reuse, or mention, the Sistan paper
 - waiting feedback on the citation generator
 - responding to Eric Kansa (Arches) about [Documenting Good Practices for "Arches Data Lifecyle" Operations](https://github.com/achp-project/cultural-heritage/issues/13)
-- Will cancel the 'hackathon'
+- ~~Will cancel the 'hackathon'~~
 - [Arches bulletin](https://mailchi.mp/archesproject/arches-project-bulletin-may2024), mentions:
     - the JOAD paper, CAA Arches session + communication, ...
     - the Citation Generator workflow and its upcoming release as an Arches compatible plugin 
@@ -1726,10 +1726,29 @@ DB
 - hackathon?
 - will attend:
     - meeting with Mike Fisher who wants to develop an Arches compliant vocabulary for Mongolian rock-art (useful to work later with Maria Guagnin)
+
+### Team meeting
+> 10/06/24
+
+- Usual business with the main database, training database, GitHub, 'eamena' Zenodo community, EAMENA website;
+- the `citation generator` plugin is now on the main instance (thanks to Reuben and Ash) https://database.eamena.org/citations/ (the export goes to the [Zenodo sandbox](https://sandbox.zenodo.org/))
+- Reuben is working on hiding HP coordinates for Guest users (see [here](http://52.50.27.140/report/1c71b47f-38c5-4601-8921-50b45705173f))
+- [Arches bulletin](https://mailchi.mp/archesproject/arches-project-bulletin-may2024), mentions:
+    - the [JOAD paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123)
+    - the `citation generator` workflow and its upcoming release as an Arches compatible plugin 
+- in touch with Erik Kansa on the [good practices of data lifecylce](https://github.com/achp-project/cultural-heritage/issues/13)
+- organise an "hackathon", with Python coding, in late August with the DB managers of MASHA, MAESaM + Ash (MaREA) + ...
+- APAAME photo archive upload (ongoing)
+- meeting attended:
+    - ACD
+    - *Arches and Coffee*
+    - varia
+- TODO:
+    - finish the localization (l10n) of EAMENA clone in Central Kurdish with Will
+
 ---
 TODO:
 
-- [ ] clustering
 - [ ] reverse geocoding
 - [ ] EA main database i18n / localisation in French
 - [ ] hide coordinates for Guest users / duplicate card
