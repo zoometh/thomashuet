@@ -1743,6 +1743,7 @@ DB
 - meeting attended:
     - ACD
     - *Arches and Coffee*
+    - [Historic England + Arches](https://pelagios.org/events/historic-england-open-university/) (ongoing)
     - varia
 - TODO:
     - finish the export of the different EAMENA RMs for the localization (l10n) in Central Kurdish (Sorani), with Will
