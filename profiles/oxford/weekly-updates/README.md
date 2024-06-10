@@ -1744,7 +1744,7 @@ DB
     - *Arches and Coffee*
     - varia
 - TODO:
-    - finish the localization (l10n) of EAMENA clone in Central Kurdish with Will
+    - finish the export of the different EAMENA RMs for the localization (l10n) in Central Kurdish (Sorani), with Will
 
 ---
 TODO:
