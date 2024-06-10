@@ -1733,10 +1733,11 @@ DB
 - Usual business with the main database, training database, GitHub, eamenaR package, 'eamena' Zenodo community, EAMENA website;
 - the `citation generator` plugin is [now on the main DB](https://database.eamena.org/citations/) (thanks to Reuben and Ash). Exported HPs goe to the [Zenodo sandbox](https://sandbox.zenodo.org/)
 - Reuben is working on hiding HP coordinates for Guest users (see [here](http://52.50.27.140/report/1c71b47f-38c5-4601-8921-50b45705173f))
-- [Arches bulletin](https://mailchi.mp/archesproject/arches-project-bulletin-may2024), mentions:
-    - the [JOAD paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123)
-    - the `citation generator` workflow and its upcoming release as an Arches compatible plugin 
-- in touch with Erik Kansa on the [good practices of data lifecylce](https://github.com/achp-project/cultural-heritage/issues/13)
+- Arches community:
+    - [Arches bulletin](https://mailchi.mp/archesproject/arches-project-bulletin-may2024), mentions:
+        - the [JOAD paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123)
+        - the `citation generator` workflow and its upcoming release as an Arches compatible plugin 
+    - in touch with Erik Kansa on the [good practices of data lifecylce](https://github.com/achp-project/cultural-heritage/issues/13)
 - organise an "hackathon", with Python coding, in late August with the DB managers of MASHA, MAESaM + Ash (MaREA) + ...
 - APAAME photo archive upload (ongoing)
 - meeting attended:
