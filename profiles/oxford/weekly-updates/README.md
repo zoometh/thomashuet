@@ -1731,7 +1731,7 @@ DB
 > 10/06/24
 
 - Usual business with the main database, training database, GitHub, eamenaR package, 'eamena' Zenodo community, EAMENA website;
-- the `citation generator` plugin is now on the main instance (thanks to Reuben and Ash) https://database.eamena.org/citations/ (the export goes to the [Zenodo sandbox](https://sandbox.zenodo.org/))
+- the `citation generator` plugin is [now on the main DB](https://database.eamena.org/citations/) (thanks to Reuben and Ash). Exported HPs goe to the [Zenodo sandbox](https://sandbox.zenodo.org/)
 - Reuben is working on hiding HP coordinates for Guest users (see [here](http://52.50.27.140/report/1c71b47f-38c5-4601-8921-50b45705173f))
 - [Arches bulletin](https://mailchi.mp/archesproject/arches-project-bulletin-may2024), mentions:
     - the [JOAD paper](https://openarchaeologydata.metajnl.com/articles/10.5334/joad.123)
