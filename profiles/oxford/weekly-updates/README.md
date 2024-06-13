@@ -1731,7 +1731,7 @@ DB
 > 10/06/24
 
 - Usual business with the main database, training database, GitHub, eamenaR package, 'eamena' Zenodo community, EAMENA website;
-- the `citation generator` plugin is [now on the main DB](https://database.eamena.org/citations/) (thanks to Reuben and Ash). Exported HPs goe to the [Zenodo sandbox](https://sandbox.zenodo.org/)
+- the `citation generator` plugin is [now on the main DB](https://database.eamena.org/citations/) (thanks to Reuben and Ash). Exported HPs go to the [Zenodo sandbox](https://sandbox.zenodo.org/)
 - Reuben is working on hiding HP coordinates for Guest users (see [here](http://52.50.27.140/report/1c71b47f-38c5-4601-8921-50b45705173f))
 - Arches community:
     - [Arches bulletin](https://mailchi.mp/archesproject/arches-project-bulletin-may2024), mentions:
@@ -1747,6 +1747,18 @@ DB
     - varia
 - TODO:
     - finish the export of the different EAMENA RMs for the localization (l10n) in Central Kurdish (Sorani), with Will
+
+### week 8
+
+- 4 days of leaves
+- APAAME photo archive upload (ongoing)
+- running test on the [citation generator](https://database.eamena.org/citations/) plugin
+- Development of LLM for Arches (Galen)
+- meeting attended:
+    - *Arches and Coffee*
+    - [Historic England + Arches](https://pelagios.org/events/historic-england-open-university/) = Pelagios (very interesting for the Digital Atlas EAMENA aims to create)
+    - Jan Ciglenečki - "Documenting Coptic Monastic Heritage"
+    - Mike Fisher - rock art in Mongolia (Arches graphs)
 
 ---
 TODO:
