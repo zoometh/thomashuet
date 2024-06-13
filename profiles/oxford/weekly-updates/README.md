@@ -1753,7 +1753,7 @@ DB
 - 4 days of leaves
 - APAAME photo archive upload (ongoing)
 - running test on the [citation generator](https://database.eamena.org/citations/) plugin
-- Development of LLM for Arches (Galen)
+- Development of a [LLM for Arches](https://drive.google.com/file/d/1ukf2Cgajxy2-bRD8cMPUh5t832GBezYB/view?usp=sharing) (Galen)
 - meeting attended:
     - *Arches and Coffee*
     - [Historic England + Arches](https://pelagios.org/events/historic-england-open-university/) = Pelagios (very interesting for the Digital Atlas EAMENA aims to create)
