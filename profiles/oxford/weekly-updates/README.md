@@ -1763,8 +1763,9 @@ DB
 ### week 9
 
 - Uploading to the APAAME photo archive (ongoing)
-- Arcadia report (section: database, stats)
+- Arcadia report (sections: database, stats)
     - updating the eamenaR package
+    - creating new Python functions ([for example](https://github.com/eamena-project/eamena-functions/blob/main/grids/grids.py))
 - from Tuesday: 10 days of professional development, [Neural Networks for Archaeologists, with Python](https://www.unipi.it/index.php/humanities/item/26801-neural-networks-archaeologists-python), Summer School, Uninersity of Pisa (remote)
 - Working on the [translation into Kurdish](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/kahd) for the EAMENA project
 - reviewing candidate profiles for the [Practical Mariner project](https://www.arch.ox.ac.uk/article/new-project-led-dr-linda-hulin-set-transform-our-understanding-ancient-sailing-world)
