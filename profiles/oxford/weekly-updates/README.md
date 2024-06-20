@@ -1760,6 +1760,22 @@ DB
     - Jan Ciglenečki - "Documenting Coptic Monastic Heritage"
     - Mike Fisher - rock art in Mongolia (Arches graphs)
 
+### week 9
+
+- Uploading to the APAAME photo archive (ongoing)
+- Arcadia report (section: database, stats)
+    - updating the eamenaR package
+- from Tuesday: 10 days of professional development, [Neural Networks for Archaeologists, with Python](https://www.unipi.it/index.php/humanities/item/26801-neural-networks-archaeologists-python), Summer School, Uninersity of Pisa (remote)
+- Working on the [translation into Kurdish](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/kahd) for the EAMENA project
+- reviewing candidate profiles for the [Practical Mariner project](https://www.arch.ox.ac.uk/article/new-project-led-dr-linda-hulin-set-transform-our-understanding-ancient-sailing-world)
+- Serving as a liaison between the CoD project and the creation of a job position for Ishiba to map data with EAMENA
+- met with:
+    - Jan Ciglenečki - "Documenting Coptic Monastic Heritage" 
+    - Bijan for our paper in the [ARAM conference](https://www.aramsociety.org/conferences/current-conferences/) (mid-July)
+- other:
+    - Open Access Steering Group
+    - *Arches and Coffee* (partly)
+
 ---
 TODO:
 
