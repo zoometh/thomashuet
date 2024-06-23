@@ -7,6 +7,10 @@
 \usepackage[export]{adjustbox}
 \usepackage{titlesec}
 \usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+
+
 \hypersetup{
     colorlinks,
     linkcolor={red!50!black},
@@ -26,57 +30,65 @@
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 
+% footer
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[L]{page \thepage.   -    T. Huet CV} % C for center
+\renewcommand{\headrulewidth}{0pt} % Removes the header line
+
+
 \begin{document}
 
-\large{\textbf{Dr Thomas Huet}}\\
-%\begin{itemize}
-\normalsize
-Chercheur et responsable base de données EAMENA\\
-\small
-$\cdot$Endangered Archaeology in the Middle East and North Africa\\
-\normalsize
-University of Oxford, School of Archaeology\\
-\small
-$\cdot$2 South Parks Road, Oxford OX1 3TG, United Kingdom
-\normalsize
+\begin{adjustwidth}{50pt}{50pt}
+    \begin{center}
+    \large{\textbf{Curriculum Vitae}}\\
+    % \large{Préhistoire, patrimoine culturel \& archéologie computationnelle} 
+    \end{center}
+\end{adjustwidth}
+
 %\end{itemize}
-\\
-\smash{\includegraphics[width=3.5cm, right]{id-r}}
+\huge{\textbf{Thomas Huet}}\\
+\bigbreak
+
+% \smash{\includegraphics[width=3.5cm, right]{id-s}}
 \includegraphics[scale=0.025]{gmail} \quad \href{mailto:thomas.huet@arch.ox.ac.uk}{thomas.huet@arch.ox.ac.uk} \& \href{mailto:thomashuet7@gmail.com}{thomashuet7@gmail.com}\\
 \includegraphics[scale=0.01]{webpro} \quad \href{https://archit.web.ox.ac.uk/people/dr-thomas-huet}{School of Archaeology} \& \href{https://eamena.org/people/dr-thomas-huet}{projet EAMENA}\\
-\includegraphics[scale=0.007]{orcid} \quad \href{https://orcid.org/0000-0002-1112-6122}{0000-0002-1112-6122} \\
+\includegraphics[scale=0.007]{lod-orcid} \quad \href{https://orcid.org/0000-0002-1112-6122}{0000-0002-1112-6122} \\
 \includegraphics[scale=0.007]{github} \quad \href{https://github.com/zoometh/thomashuet.github.io/blob/main/README.md}{zoometh} \\
 \includegraphics[scale=0.025]{gscholar} \quad \href{https://scholar.google.fr/citations?user=2hKEVaIAAAAJ}{2hKEVaIAAAAJ} \\
 \includegraphics[scale=0.05]{rgate} \quad \href{https://www.researchgate.net/profile/Thomas\_Huet2}{Thomas\_Huet2} \\
 \includegraphics[scale=0.005]{phone} \quad  \+ 44 (0)7 518 152 642 \\
 
-\\
+\section{SITUATION ACTUELLE (depuis 2021)}
+%\begin{itemize}
+\textbf{Researcher dans database manager}, University of Oxford, School of Archaeology, project 'Endangered Archaeology in the Middle East and North Africa' (EAMENA), 2 South Parks Road, Oxford OX1 3TG, United Kingdom.
 
-\begin{adjustwidth}{50pt}{50pt}
-\begin{center}
-\large{\textbf{Curriculum Vitae}}\\
-\large{Préhistoire, patrimoine culturel \& archéologie computationnelle} 
-\end{center}
-\end{adjustwidth}
+\section{POSTES ACADÉMIQUES \textit{\&} PROFESSIONNELS (depuis 2013)}
 
-\section{POSTES ACADÉMIQUES \textit{\&} PROFESSIONNELS (CDDs depuis 2013-)}
-
-\textbf{2021-2027} Chercheur et responsable de la base de données EAMENA (\textit{Endangered Archaeology in the Middle East and North Africa}), Université d'Oxford, School of Archaeology, 2 South Parks Road, Oxford OX1 3TG, Royaume-Uni, 1er novembre 2021-24 juin 2023 | Développement, administration et gestion de la base de données EAMENA, formation des utilisateurs et des gestionnaires des instances nationales, etc.
+\textbf{2021-2027} Chercheur et responsable de la base de données EAMENA (\textit{Endangered Archaeology in the Middle East and North Africa}), Université d'Oxford, School of Archaeology, 2 South Parks Road, Oxford OX1 3TG, Royaume-Uni, novembre 2021-\\
+\hspace*{0.5cm} Développement, administration et gestion de la base de données EAMENA, formation des utilisateurs et des gestionnaires des instances nationales, etc.
 \smallbreak
-\textbf{2021} Technicien de Support à la recherche (Técnico Especialista de Suport a la Recerca - TEC), Département de Préhistoire, Universitat Autònoma de Barcelona (UAB), Espagne, 1er juillet-31 octobre | Informatisation de la base de données des gravures médiévales de Sauri, développement de routines d'analyses (scripts R).
+\textbf{2021} Technicien de Support à la recherche (Técnico Especialista de Suport a la Recerca - TEC), Département de Préhistoire, Universitat Autònoma de Barcelona (UAB), Espagne, 1er juillet-31 octobre \\
+\hspace*{0.5cm} Informatisation de la base de données des gravures médiévales de Sauri, développement de routines d'analyses (scripts R).
 \smallbreak
-\textbf{2019-20} Chercheur Archaïos (compagnie privée), 1er juin - 1er juin | Chargé de l'intégration de la base de données et du SIG pour l'étude de l'oasis d'Al-'Ula (Arabie Saoudite).
+\textbf{2019-20} Chercheur Archaïos (compagnie privée), 1er juin - 1er juin \\
+\hspace*{0.5cm} Chargé de l'intégration de la base de données et du SIG pour l'étude de l'oasis d'Al-'Ula (Arabie Saoudite).
 \smallbreak
-\textbf{2019} Ingénieur d'études (IE), UMR 8546 CNRS/PSL-AOrOc, Paris et Allones, 1er juin - 1er juillet | Étude de faisabilité (prospection auprès des acteurs administratifs et de rercheche, locaux, régionaux et nationaux) pour le redéploiement du Centre de Ressources Archéologique (CAPRA, Allones) en \textit{hub} technologique pour le service aux institutions de recherche en archéologie. 
+\textbf{2019} Ingénieur d'études (IE), UMR 8546 CNRS/PSL-AOrOc, Paris et Allones, 1er juin - 1er juillet \\ 
+\hspace*{0.5cm} Étude de faisabilité (prospection auprès des acteurs administratifs et de rercheche, locaux, régionaux et nationaux) pour le redéploiement du Centre de Ressources Archéologique (CAPRA, Allones) en \textit{hub} technologique pour le service aux institutions de recherche en archéologie. 
 \smallbreak
-\textbf{2018} Ingénieur de recherche (IR), UMR 7264 CEPAM-CNRS, Université Nice Sophia-Antipolis, projet \textit{Céramiques Imprimées de Méditerranée occidentale} (CIMO), 1er mai-30 août et 1er octobre-30 novembre | Modélisation des données archéologiques de la diffusion du Néolithique en Méditerranée centro-occidentale, routines d'analyses, développement de l'application web Leapfrog (scripts R) \\
-\textbf{---} Ingénieur de recherche (IR), UMR 5140 ASM-CNRS, Université Paul Valéry Montpellier 3, projet \textit{EpiSpat} (aka \textit{ArchaEpigraph}), LabEx ARCHIMEDE, 1er avril-1er mai et 1er-30 septembre | Étude statistiques et géostatistiques des stèles épigraphiques de la Narbonnaise antique, analyses à la volée de la base de données \textit{EpiSpat}(scripts R, connecteur ODBC, base de données FileMaker).
+\textbf{2018} Ingénieur de recherche (IR), UMR 7264 CEPAM-CNRS, Université Nice Sophia-Antipolis, projet \textit{Céramiques Imprimées de Méditerranée occidentale} (CIMO), 1er mai-30 août et 1er octobre-30 novembre \\
+\hspace*{0.5cm} Modélisation des données archéologiques de la diffusion du Néolithique en Méditerranée centro-occidentale, routines d'analyses, développement de l'application web Leapfrog (scripts R)
+\textbf{2018} Ingénieur de recherche (IR), UMR 5140 ASM-CNRS, Université Paul Valéry Montpellier 3, projet \textit{EpiSpat} (aka \textit{ArchaEpigraph}), LabEx ARCHIMEDE, 1er avril-1er mai et 1er-30 septembre \\
+\hspace*{0.5cm} Étude statistiques et géostatistiques des stèles épigraphiques de la Narbonnaise antique, analyses à la volée de la base de données \textit{EpiSpat}(scripts R, connecteur ODBC, base de données FileMaker).
 \smallbreak
 \textbf{2015-2016} Chercheur postdoctoral, LabEx ARCHIMEDE, UMR 5140 ASM-CNRS et Université Paul-Valéry, Montpellier. Projet : "Étude des décors figuratifs en céramique de l'Âge du Bronze final dans le sud de la France et le nord-est de l'Espagne", 1er octobre 2015 - 30 septembre 2016.
 \smallbreak
-\textbf{2014} Ingénieur de recherche (IR), projet \textit{Archaepigraph}, UMR 6249 Chrono-Environnement, Université de Franche-Comté, 1er septembre-30 octobre | Étude statistiques, géostatistiques et de réseaux des stèles épigraphiques de la Narbonnaise antique.
+\textbf{2014} Ingénieur de recherche (IR), projet \textit{Archaepigraph}, UMR 6249 Chrono-Environnement, Université de Franche-Comté, 1er septembre-30 octobre \\
+\hspace*{0.5cm} Étude statistiques, géostatistiques et de réseaux des stèles épigraphiques de la Narbonnaise antique.
 \smallbreak
-\textbf{2013-14} Ingénieur d'études (IE), USR CNRS - UB 3516, plateforme GeoBFC, MSH de Dijon, Université de Bourgogne, projet OH-FET (Objet Historique, Fonction, Espace, Temps), 1er juin-31 mai | Développement de l'application OH-FET (Python) d'après le modèle conceptuel éponyme.
+\textbf{2013-14} Ingénieur d'études (IE), USR CNRS - UB 3516, plateforme GeoBFC, MSH de Dijon, Université de Bourgogne, projet OH-FET (Objet Historique, Fonction, Espace, Temps), 1er juin-31 mai \\
+\hspace*{0.5cm}  Développement de l'application OH-FET (Python) d'après le modèle conceptuel éponyme.
 
 \section{PARCOURS ACADÉMIQUE}
 
@@ -85,14 +97,14 @@ $\cdot$2 South Parks Road, Oxford OX1 3TG, United Kingdom
 \textbf{2005-2006} Master 2 Recherche en Histoire et Archéologie: "Étude des gravures protohistoriques de la zone des lacs (zones I, II, III et V) de la région du mont Bego, Tende, Alpes-Maritimes", mention bien, Université Nice Sophia-Antipolis, UMR 7264 CEPAM-CNRS, HALtheses: \href{https://tel.archives-ouvertes.fr/tel-00715386}{tel-00715386}.
 \smallbreak
 \textbf{2004-2005} Diplôme universitaire de technologie (DUT) Génie informatique, Conservatoire National des Arts et Métiers (CNAM), Paris.
-\smallbreak
-\textbf{2003} Diplôme de topographie, Universitad de Ingeniería, Lima, Pérou.
-\smallbreak
-\textbf{2002} Maîtrise en Archéologie (Master 1 Archéologie), Université Paris IV, Paris-Sorbonne, Paris.
-\smallbreak
-\textbf{2001} Licence en Archéologie, Université Paris IV, Paris-Sorbonne, Paris.
-\smallbreak
-\textbf{2000} DEUG Archéologie et Histoire de l'Art, Université Paris IV, Paris-Sorbonne, Paris.
+% \smallbreak
+% \textbf{2003} Diplôme de topographie, Universitad de Ingeniería, Lima, Pérou.
+% \smallbreak
+% \textbf{2002} Maîtrise en Archéologie (Master 1 Archéologie), Université Paris IV, Paris-Sorbonne, Paris.
+% \smallbreak
+% \textbf{2001} Licence en Archéologie, Université Paris IV, Paris-Sorbonne, Paris.
+% \smallbreak
+% \textbf{2000} DEUG Archéologie et Histoire de l'Art, Université Paris IV, Paris-Sorbonne, Paris.
 
 \subsection*{Prix et récompenses}
 
@@ -102,13 +114,69 @@ $\cdot$2 South Parks Road, Oxford OX1 3TG, United Kingdom
 \smallbreak
 \textbf{2013} Prix de thèse pour publication. CASDEN-Banque Populaire (UFR LSH, Université Nice Sophia-Antipolis) (1500€).
 
+
+\section*{OUTILS, LANGAGES \textit{\&} PROGRAMMES INFORMATIQUES MAÎTRISÉS}
+\begin{center}(\textbf{\textsuperscript{-}}) notions\end{center}
+\smallbreak
+
+\textbf{Systèmes d'exploitation {\textbar} Langages de programmation et développement de logiciels} \\
+Linux (Ubuntu), Windows \textbf{{\textbar}} \textsf{R}, \textsf{Python}, \textsf{JavaScript\textsuperscript{-}}, SQL, langages de balisage (JSON, XML, HTML, CSS, YAML, etc.).
+\smallbreak
+\textbf{Serveurs {\textbar} Développement de bases de données} \\
+Apache \textbf{{\textbar}} Bases de données SQL (PostgreSQL/GIS, FileMaker Server) et bases de données NoSQL (Arches).
+\smallbreak
+\textbf{Framework d'application web} \\
+\textsf{Django} avec \textsf{Python}.
+\smallbreak
+\textbf{Environnement de développement intégré (IDE) \& Système de contrôle de version Git \& Intégration continue} \\
+Visual Studio Code \textbf{{\textbar}} GitHub, GitLab \textbf{{\textbar}} Travis-CI\textsuperscript{-}, GitHub Actions, GitLab CI\textsuperscript{-}.
+\smallbreak
+\textbf{Documents web dynamiques {\textbar} Publication assistée par ordinateur {\textbar} Plateformes web} \\
+\textsf{Quarto}, \textsf{Rmarkdown}, \textsf{RShiny}, \textsf{Plotly}, \textsf{Jupyter Notebook} \textbf{{\textbar}} \LaTeX, \textsf{Markdown}, Microsoft Office \textbf{{\textbar}} RPubs, HAL, Zenodo.
+\smallbreak
+\textbf{Images 2D (Infographie {\textbar} Gestion et métadonnées des images)} \\
+IIIF\textsuperscript{-}, ImageMagick, ImageJ, et logiciels graphiques courants (Gimp, Inkscape, Photoshop, Illustrator) {\textbar} ExifTool, XnView, Piwigo, etc.
+\smallbreak
+\textbf{Images 3D (Photogrammétrie/RTI {\textbar} Création 3D {\textbar} Web 3D)} \\
+PhotoScan, Meshroom\textsuperscript{-}, MicMac\textsuperscript{-}, RTIBuilder\textsuperscript{-} {\textbar} MeshLab, CloudCompare, Blender \textbf{{\textbar}} WebGL, 3DHOP, Potree\textsuperscript{-}.
+\smallbreak
+\textbf{Systèmes d'information géographique (SIG) {\textbar} Bases de données et services géospatiaux en ligne {\textbar} Géopositionnement et topographie} \\
+QGIS, ArcGIS {\textbar} Arches, GeoCMS (\textsf{Leaflet}, \textsf{Mapbox}, \textsf{OpenLayers}), GeoServer, services géospatiaux web (WMS, WFS, WCS, etc.) {\textbar} GPS différentiel, station totale, théodolite.
+\smallbreak
+\textbf{Modélisation basée sur les agents (ABM)} \\ NetLogo\textsuperscript{-}, \textsf{RNetLogo\textsuperscript{-}}
+\smallbreak
+
+\section{PRODUCTION LOGICIELLE \textit{\&} APPLICATIONS WEB}
+
+\subsection*{Logiciels et bibliothèques logicielles}
+
+\textbf{2024 }Arches \textsf{Python} plugin \textit{citation-generator}, \href{https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
+\smallbreak
+\textbf{2022-... }Package \textsf{R} \textit{eamenaR}, version 0.1.1, \href{https://github.com/eamena-project/eamenaR/tree/main#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
+\smallbreak
+\textbf{2022 }Package \textsf{R} \textit{itineRis}, version 0.1.0 (préversion), avec Veronica Cicolani et Gilberto Artioli, \href{https://github.com/zoometh/itineRis/tree/main#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
+\textbf{--- }Package \textsf{R} \textit{useweaR}, version 0.0.0.999 (préversion), \href{https://github.com/zoometh/itineRis/tree/main#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
+\smallbreak
+\textbf{2021 }Package \textsf{R} \textit{iconR}, version 0.1.0 (version stable CRAN), avec Jose Pozo et Craig Alexander, \href{https://cran.r-project.org/web/packages/iconr/index.html}{\includegraphics[scale=0.04]{prog-r.png}}, \href{https://github.com/zoometh/iconr#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
+\smallbreak
+\textbf{2014 }Application \textsf{OH-FET} v.1, une application \textsf{Python} pour comparer les dynamiques urbaines sur de longues périodes (avec Ludovic Granjon et Laure Saligny, MSH de l'Université de Bourgogne).
+
+\subsection*{Applications web}
+
+\smallbreak
+\textbf{2022 }\href{http://shinyserver.cfs.unipi.it:3838/C14/}{\includegraphics[scale=0.03]{prj_neonet-blue.png}} Application web interactive \textsf{RShiny} NeoNet, version stable. Sélection, calibration, cumul et modélisation à la volée des dates radiocarbones de la transition du Mésolithique final/Néolithique ancien dans le bassin méditerranéen nord-occidental central.
+\smallbreak
+\textbf{--- } Binder D., \textbf{Huet T.}, Base de données et application Leapfrog, \href{https://devr.cepam.cnrs.fr/shinyapps/leap/}{\includegraphics[scale=0.10]{prj_leapfrog-blue.png}} \textsf{RShiny} Leapfrog, \href{https://nakala.fr/10.34847/nkl.fbd6t845}{\includegraphics[scale=0.03]{lod-nakala.png} 10.34847/nkl.fbd6t845}
+\textbf{2018 }\href{https://epispat.shinyapps.io/analyses_mult_5/}{Application EpiSpat} \textsf{RShiny} interactive pour le regroupement multifactoriel à la volée des stèles épigraphiques romaines.
+\smallbreak
+
 \section*{FORMATION SUIVIES}
 
 \subsection*{Systèmes d'exploitation / Bases de données / Infrastructures}
 
 \textbf{2024 }"Getting started with ARC (Advanced Research Computing), IT Services, University of Oxford, 29 Mai.
 \smallbreak
-\textbf{2024 }"\textsf{Python} : The infrastructure, not the language", IT Learning Centre, University of Oxford, 29 Mai.
+\textbf{--- }"\textsf{Python} : The infrastructure, not the language", IT Learning Centre, University of Oxford, 29 Mai.
 \smallbreak
 
 \subsection*{Langages de programmation / Apprentissage machine}
@@ -196,88 +264,33 @@ $\cdot$2 South Parks Road, Oxford OX1 3TG, United Kingdom
 \textbf{2022 } "Presentations: Improving your online talks", IT Learning Centre, University of Oxford, 17 Novembre.
 \smallbreak
 
-\section*{OUTILS, LANGAGES \textit{\&} PROGRAMMES INFORMATIQUES MAÎTRISÉS}
-\begin{center}(\textbf{\textsuperscript{-}}) notions\end{center}
-\smallbreak
-
-\textbf{Systèmes d'exploitation {\textbar} Langages de programmation et développement de logiciels}: Linux (Ubuntu), Windows \textbf{{\textbar}} \textsf{R}, \textsf{Python}, \textsf{JavaScript\textsuperscript{-}}, SQL, langages de balisage (JSON, XML, HTML, CSS, YAML, etc.).
-\smallbreak
-\textbf{Serveurs {\textbar} Développement de bases de données}: Apache \textbf{{\textbar}} Bases de données SQL (PostgreSQL/GIS, FileMaker Server) et bases de données NoSQL (Arches).
-\smallbreak
-\textbf{Framework d'application web}: \textsf{Django} avec \textsf{Python}.
-\smallbreak
-\textbf{Environnement de développement intégré (IDE) \& Système de contrôle de version Git \& Intégration continue}: Visual Studio Code \textbf{{\textbar}} GitHub, GitLab \textbf{{\textbar}} Travis-CI\textsuperscript{-}, GitHub Actions, GitLab CI\textsuperscript{-}.
-\smallbreak
-\textbf{Documents web dynamiques {\textbar} Publication assistée par ordinateur {\textbar} Plateformes web}: \textsf{Quarto}, \textsf{Rmarkdown}, \textsf{RShiny}, \textsf{Plotly}, \textsf{Jupyter Notebook} \textbf{{\textbar}} \LaTeX, \textsf{Markdown}, Microsoft Office \textbf{{\textbar}} RPubs, HAL, Zenodo.
-\smallbreak
-\textbf{Images 2D (Infographie {\textbar} Gestion et métadonnées des images)}: IIIF\textsuperscript{-}, ImageMagick, ImageJ, et logiciels graphiques courants (Gimp, Inkscape, Photoshop, Illustrator) {\textbar} ExifTool, XnView, Piwigo, etc.
-\smallbreak
-\textbf{Images 3D (Photogrammétrie/RTI {\textbar} Création 3D {\textbar} Web 3D)}: PhotoScan, Meshroom\textsuperscript{-}, MicMac\textsuperscript{-}, RTIBuilder\textsuperscript{-} {\textbar} MeshLab, CloudCompare, Blender \textbf{{\textbar}} WebGL, 3DHOP, Potree\textsuperscript{-}.
-\smallbreak
-\textbf{Systèmes d'information géographique (SIG) {\textbar} Bases de données et services géospatiaux en ligne {\textbar} Géopositionnement et topographie}: QGIS, ArcGIS {\textbar} Arches, GeoCMS (\textsf{Leaflet}, \textsf{Mapbox}, \textsf{OpenLayers}), GeoServer, services géospatiaux web (WMS, WFS, WCS, etc.) {\textbar} GPS différentiel, station totale, théodolite.
-\smallbreak
-\textbf{Modélisation basée sur les agents (ABM)}: NetLogo\textsuperscript{-}, \textsf{RNetLogo\textsuperscript{-}}
-\smallbreak
-
-\section{PRODUCTION LOGICIELLE \textit{\&} APPLICATIONS WEB}
-
-\subsection*{Logiciels et bibliothèques logicielles}
-
-\textbf{2024 }Arches \textsf{Python} plugin \textit{citation-generator}, \href{https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/citation#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
-\smallbreak
-\textbf{2022-... }Package \textsf{R} \textit{eamenaR}, version 0.1.1, \href{https://github.com/eamena-project/eamenaR/tree/main#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
-\smallbreak
-\textbf{2022 }Package \textsf{R} \textit{itineRis}, version 0.1.0 (préversion), avec Veronica Cicolani et Gilberto Artioli, \href{https://github.com/zoometh/itineRis/tree/main#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
-\textbf{--- }Package \textsf{R} \textit{useweaR}, version 0.0.0.999 (préversion), \href{https://github.com/zoometh/itineRis/tree/main#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
-\smallbreak
-\textbf{2021 }Package \textsf{R} \textit{iconR}, version 0.1.0 (version stable CRAN), avec Jose Pozo et Craig Alexander, \href{https://cran.r-project.org/web/packages/iconr/index.html}{\includegraphics[scale=0.04]{prog-r.png}}, \href{https://github.com/zoometh/iconr#readme}{\includegraphics[scale=0.1]{app-github-rect.png}}.
-\smallbreak
-\textbf{2014 }Application \textsf{OH-FET} v.1, une application \textsf{Python} pour comparer les dynamiques urbaines sur de longues périodes (avec Ludovic Granjon et Laure Saligny, MSH de l'Université de Bourgogne).
-
-\subsection*{Applications web}
-
-\smallbreak
-\textbf{2022 }\href{http://shinyserver.cfs.unipi.it:3838/C14/}{\includegraphics[scale=0.03]{prj_neonet-blue.png}} Application web interactive \textsf{RShiny} NeoNet, version stable. Sélection, calibration, cumul et modélisation à la volée des dates radiocarbones de la transition du Mésolithique final/Néolithique ancien dans le bassin méditerranéen nord-occidental central.
-\smallbreak
-\textbf{--- } Binder D., \textbf{Huet T.}, Base de données et application Leapfrog, \href{https://devr.cepam.cnrs.fr/shinyapps/leap/}{\includegraphics[scale=0.10]{prj_leapfrog-blue.png}} \textsf{RShiny} Leapfrog, \href{https://nakala.fr/10.34847/nkl.fbd6t845}{\includegraphics[scale=0.03]{lod-nakala.png} 10.34847/nkl.fbd6t845}
-\textbf{2018 }\href{https://epispat.shinyapps.io/analyses_mult_5/}{Application EpiSpat} \textsf{RShiny} interactive pour le regroupement multifactoriel à la volée des stèles épigraphiques romaines.
-\smallbreak
-
 \section{PROJETS DE RECHERCHE \textit{\&} ACADÉMIQUES (depuis 2014)}
 
 \textbf{2022} Chercheur invité, \textit{Dipartimento di Civiltà e forme del Sapere}, Università di Pisa, 11 mars - 15 avril (1 mois).
 \smallbreak
 
 
-\subsection*{Programmes de recherche}
+\subsection*{Programmes de recherche (Membre depuis)}
 
-\textbf{Membre de}:
+\textbf{2021} Comité de gestion du projet EAMENA \href{https://eamena.org/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
+\textbf{2022} Representing Historical Time \href{https://github.com/historical-time}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
+\textbf{--- } Projet CENTAURO: "Equid introduction, hybridisation and agricultural intensification in the Ebro valley from the Late Neolithic to the Iron Age" (2022-2025) \href{https://www.centaur-o.com/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
+\textbf{2021}  ANRJCC Itineris \href{https://anr.fr/Project-ANR-21-CE27-0010}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
+\textbf{2020}  Groupe d'intérêt spécial sur les langages de script scientifiques en archéologie (\textit{Special Interest Group on Scientific Scripting Languages in Archaeology}, SIG-SSLA) \href{https://sslarch.github.io/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
+\textbf{2020} Groupe d'archéologie de haute montagne (\textit{Grup d'Arqueologia de l'Alta Muntanya}, GAAM), Universitat Aut\'{o}noma de Barcelona et Consejo Superior de Investigaciones Cientificas (UAB-CSIC) \href{https://arqueologiademuntanya.wordpress.com/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
+\textbf{2020} Projet collectif de recherche \textit{NeoNet}(2020-...) \href{https://redneonet.com/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
 \smallbreak
-- Comité de gestion du projet EAMENA (2021-2024) \href{https://eamena.org/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
-- Representing Historical Time (2022-...) \href{https://github.com/historical-time}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
-- Projet CENTAURO: "Equid introduction, hybridisation and agricultural intensification in the Ebro valley from the Late Neolithic to the Iron Age" (2022-2025) \href{https://www.centaur-o.com/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
-- ANRJCC Itineris (2021-2025) \href{https://anr.fr/Project-ANR-21-CE27-0010}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
-- Groupe d'intérêt spécial sur les langages de script scientifiques en archéologie (\textit{Special Interest Group on Scientific Scripting Languages in Archaeology}, SIG-SSLA) (2020-...) \href{https://sslarch.github.io/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
-- Groupe d'archéologie de haute montagne (\textit{Grup d'Arqueologia de l'Alta Muntanya}, GAAM), Universitat Aut\'{o}noma de Barcelona et Consejo Superior de Investigaciones Cientificas (UAB-CSIC) (2020-...)\href{https://arqueologiademuntanya.wordpress.com/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
-- Projet collectif de recherche \textit{NeoNet}(2020-...) \href{https://redneonet.com/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
-\smallbreak
-\textbf{Ancien membre de}:
-\smallbreak
-- Projet collectif de recherche (PCR) \textit{Corpus des signes grav\'{e}s n\'{e}olithiques}.\\
-- Projet collectif de recherche (PCR) \textit{Evolutions, transferts, inter-culturalit\'{e}s dans l'arc liguro-proven\c{c}al : Mati\'{e}res premi\'{e}res, productions et usages, du Pal\'{e}olithique sup\'{e}rieur \`{a} l'\^{a}ge du Bronze ancien} (ETICALP).\\
-- Réseau \textit{Information Spatiale et Arch\'{e}ologie} (ISA).\\ 
-- Groupe de travail \textit{"Faire Science avec l'Incertitude en SHS"}, MSH Nice.\\ 
 
-\subsection*{Responsabilités académiques}
+\subsection*{Responsabilités académiques (depuis)}
 
-- Groupe de pilotage sur le libre accès (\textit{Open Access Steering Group}, OASG): Représentant des chercheurs (niveau Université), Université d'Oxford (2023-...) \href{https://researchsupport.admin.ox.ac.uk/oasg}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
-- Société pour le personnel enseignant et de recherche postdoctoral et en début de carrière en archéologie (\textit{Society for Postdoctoral and Early Career Teaching and Research Staff in Archaeology}, SPECTRA): Trésorier \href{https://spectra.arch.ox.ac.uk/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
-- Agence Nationale pour la Recherche (ANR): Expert \href{https://iris.anr.fr/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
+\textbf{2023} Représentant des chercheurs (niveau Université) - Groupe de pilotage sur le libre accès (\textit{Open Access Steering Group}, OASG), Université d'Oxford (2023-...) \href{https://researchsupport.admin.ox.ac.uk/oasg}{\includegraphics[scale=0.02]{link_darkblue.png}}\\ 
+\textbf{2023} Trésorier - Société pour le personnel enseignant et de recherche postdoctoral et en début de carrière en archéologie (\textit{Society for Postdoctoral and Early Career Teaching and Research Staff in Archaeology}, SPECTRA) \href{https://spectra.arch.ox.ac.uk/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
+\textbf{2023} Expert - Agence Nationale pour la Recherche (ANR) \href{https://iris.anr.fr/}{\includegraphics[scale=0.02]{link_darkblue.png}}\\
 
-\subsection*{Comités de revues scientifiques}
+\subsection*{Comités de revues scientifiques (depuis)}
 
-- Membre du comité éditorial de \textit{Pr\'ehistoires M\'editerran\'eennes} journal (2021-...)\\ 
-- Recommandeur et Relecteur pour \textit{PCI Archaeology} \href{https://archaeo.peercommunityin.org/public/user_public_page?userId=1235}{\includegraphics[scale=0.02]{link_grey.png}} (2023-...)\\
+\textbf{2021} Membre du comité éditorial de \textit{Pr\'ehistoires M\'editerran\'eennes} journal\\ 
+\textbf{2023} Recommandeur et Relecteur pour \textit{PCI Archaeology} \href{https://archaeo.peercommunityin.org/public/user_public_page?userId=1235}{\includegraphics[scale=0.02]{link_grey.png}}\\
 - Relecteur pour: \textit{ArcheoLogica-Data} journal (2022-...), \textit{Journal of Open Source Software} (2021-...), \textit{Journal of Computer Applications for Archaeology} (2021-...) et \textit{CAA Review College} (2014-...), \textit{Bulletin de la Soci\'{e}t\'{e} Pr\'{e}historique Fran\c{c}aise} journal (2020-...), \textit{M@ppemonde} journal (2019-...)\\  
 
 \section*{ENSEIGNEMENTS, FORMATIONS \textit{\&} ENCADREMENTS DISPENSÉS}
@@ -354,7 +367,7 @@ Arabe standard moderne : A1 \\
 Italien \& Catalan : compréhension écrite et orale \\
 Allemand : notions \\
 
-Permis de conduire (permis B), test d'anglais de niveau B1, Niveau 1 de plongée, Diplôme de Capacité d'Animation (BAFA)
+Permis de conduire (permis B), Niveau 1 de plongée, Diplôme de Capacité d'Animation (BAFA)
 
 
 \section{PUBLICATIONS}
@@ -448,7 +461,7 @@ $\bullet$ \textbf{Huet T.} (\textbf{2018}). Une revue de l'iconographie du d\'{e
 \textbf{2014 }CAA2014, Session 20: \textit{"(Re)building past networks: archaeological science, GIS and network analysis"}. \textbf{T. Huet}, C. Alexander, S. Robert et E. Mermet, 42${}^{nd}$ international congress of the \textit{Computer Applications and Quantitative Methods in Archaeology}, Universit\'{e} Sorbonne, France, 22-25 Avril (\textbf{i})
 \bigbreak
 
-\begin{center}------------ Communications (invit\'{e}e) ------------\end{center}
+\begin{center}------------ Communications (invit\'{e}es) ------------\end{center}
 \smallbreak
 
 \textbf{2024 }"Les gravures incisées du mont Bego: un état de la question". \textbf{T. Huet}, Séminaire Archéologique de l'Ouest : Les graffitis de la Protohistoire à nos jours. Archéologie de l'expression spontanée, UFR Histoire, histoire de l'art et archéologie, Nantes, 22 mars (\textbf{n}).
