@@ -1344,6 +1344,7 @@ DB
 - working on MDS (Minimun Data Standards, ex-ERMS) with Bijan
 - attended:
     - "The Gaza War and Academic Freedom" seminar 
+    - SSD EDI Researchers Network Event: "Decolonising and Decentring Academic Journals" (16 Nov 23)
     - "Reporting Heritage Destruction: A Double-Edged Sword?"
     - *Arches & Coffee* meeting
 
@@ -1362,7 +1363,7 @@ DB
 - attended:
     - *Crossing Ancient Sacred Landscapes: Contacts and Continuities in the Ancient Desert Cults and Beliefs of Northern Arabia and the Arid Southern Levant*, seminar
 
-## Team meeting
+### Team meeting
 > 07/12/2023
 
 - developping EAMENA GitHub, reference data, workflow, etc.
@@ -1386,7 +1387,7 @@ DB
 - created an automated translation of the EAMENA 'menu' from English to Kurdish for Durham
 - attended several seminars related to cultural heritage, and *Arches and Coffee* 
 
-## week 10
+### week 10
 
 - moved the AWS account from the EAMENA project to the Univeristy of Oxford, with Mel and the IT services
 - finished the workflow for publishing EAMENA data (Zenodo DOI, "how-to-cite", etc.)
