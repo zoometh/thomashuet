@@ -16,7 +16,7 @@ University of Oxford, School of Archaeology
 
 <img align="left" width="22" height="22" src="img/cv.png" alt=" ">  [CV english](https://github.com/zoometh/thomashuet/blob/main/cv/cv_english.pdf) <a href="https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_english.pdf" target="_blank"><img src="img/download.png" width="18" height="18" /></a>  |  [CV Français](https://github.com/zoometh/thomashuet/blob/main/cv/cv_french.pdf) <a href="https://github.com/zoometh/thomashuet.github.io/raw/main/cv/cv_french.pdf" target="_blank"><img src="img/download.png" width="18" height="18" />
 
-<img align="left" width="22" height="22" src="img/orcid.png" alt=" ">  [0000-0002-1112-6122](https://orcid.org/0000-0002-1112-6122)
+<img align="left" width="22" height="22" src="img/lod-orcid.png" alt=" ">  [0000-0002-1112-6122](https://orcid.org/0000-0002-1112-6122)
 
 <img align="left" width="22" height="22" src="img/github.png" alt=" ">  [zoometh](https://github.com/zoometh)
 
