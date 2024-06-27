@@ -1344,7 +1344,7 @@ DB
 - working on MDS (Minimun Data Standards, ex-ERMS) with Bijan
 - attended:
     - "The Gaza War and Academic Freedom" seminar 
-    - SSD EDI Researchers Network Event: "Decolonising and Decentring Academic Journals" (16 Nov 23)
+    - SSD EDI Researchers Network Event: "Decolonising and Decentring Academic Journals" (16 Nov 23), St Antony’s College, 62 Woodstock Road, OX2 6JF
     - "Reporting Heritage Destruction: A Double-Edged Sword?"
     - *Arches & Coffee* meeting
 
@@ -1777,6 +1777,22 @@ DB
 - other:
     - Open Access Steering Group
     - *Arches and Coffee* (partly)
+
+### week 10
+
+- following the [Neural Networks for Archaeologists, with Python](https://www.unipi.it/index.php/humanities/item/26801-neural-networks-archaeologists-python) training, Summer School, Uninersity of Pisa (remote)
+- Uploading to the APAAME photo archive (ongoing)
+- Worked (a bit) on the [ARAM paper](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-aram), with Bijan
+- in touch with Will for the `ckb` translation
+- applied for the "Social Sciences Division Fixed-Term Researchers Support Fund, SSD" (£500) with the project "Streamlining the Publication of Archaeological Data for the Global South", with Bijan
+- met with:
+    - Jan Ciglenečki - ["Documenting Coptic Monastic Heritage"](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe).
+        - Sample of data -> EAMENA
+        - Invited (with Michael) to a 3 days workshop in Egypt, November, on "Documenting Coptic Monastic Heritage" to present EAMENA
+- will meet:
+    - Cathy Giangrande (CoD) + Ishiba
+- shorlisted candidates for the PDRA on maritime connections (PI: Linda Hulin)
+- renewing my visa
 
 ---
 TODO:
