@@ -1792,7 +1792,31 @@ DB
 - will meet:
     - Cathy Giangrande (CoD) + Ishiba
 - shorlisted candidates for the PDRA on maritime connections (PI: Linda Hulin)
-- renewing my visa
+- renewing my UK visa
+
+### week 11
+
+- Uploading to the APAAME photo archive (ongoing) 
+
+### week 12
+
+- Worked on the [ARAM paper](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-aram), with Bijan
+    - updating the eamenaR package, creating new R functions, cleaning the EAMENA GitHub
+- Practical Mariner PDRA interviews
+- Leceister MLACDv2 workshop
+- admin: UK visa renewed
+
+### week 13
+
+- Monday was a day off
+- Awarded by the John Fell fund (£500) to run a workshop on 'Streamlining the Publication of Archaeological Data for the Global South', with Bijan and the contribution of Bill
+- liaising with:
+    - Reuben: hide coordinates. Result: according to Christopher Byrd (Arches developer) the approach to do this isn't currently possible. It would be possible in an upcoming Arches version -> follow-up on the Arches forum
+    - Ishiba and Cathy Giangrande: CoD BU, meeting with Ishiba scheduled next Friday
+    - Jan Ciglenečki: "Documenting Coptic Monastic Heritage"
+- [preparing the 'hackathon'](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon)
+- attended *Arches and Coffee*:
+
 
 ---
 TODO:
