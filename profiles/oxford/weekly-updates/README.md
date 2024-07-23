@@ -1803,7 +1803,7 @@ DB
 - Worked on the [ARAM paper](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-aram), with Bijan
     - updating the eamenaR package, creating new R functions, cleaning the EAMENA GitHub
 - Practical Mariner PDRA interviews
-- Leceister MLACDv2 workshop
+- Leicester MLACDv2 workshop
 - admin: UK visa renewed
 
 ### week 13
@@ -1821,16 +1821,22 @@ DB
 ### ManCom
 > 23/07/24
 
-- Usual business with the database, GitHub, 'eamena' Zenodo community
+- Usual business with the database, GitHub, eamenaR package, 'eamena' Zenodo community
+- hide coordinates. Result: according to Christopher Byrd (Arches developer) the approach to hide coordinates isn't currently possible. It would be possible in an upcoming Arches version -> [follow-up on the Arches forum](https://community.archesproject.org/t/hiding-coordinates-user-is-not-available-in-non-top-level-templates/2489)
 - The `citation-generator` plugin works well (tested with Bijan)
-    - Small funding to organise a workshop by the end of 2024 on ['Streamlining the Publication of Archaeological Data for the Global South'](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication), with Bijan
+    - Small funding to organise a workshop by the end of 2024 on ['Streamlining the Publication of Archaeological Data for the Global South'](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication), with Bijan as a co-applicant.
 - Uploading to the APAAME photo archive (ongoing) 
 - preparing the ['hackathon'](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) on Arches-based project interoperability
 - liasing with Will for the `ckb` (Central Kurdish, Sorani) translation of the DB (messages, thesauri, RM), see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n)
 - reviewing Ishiba mapping (a BU) of the City of the Dead project
-- followed a 10-day training on [Neural Networks for Archaeologists, with Python](https://www.unipi.it/index.php/humanities/item/26801-neural-networks-archaeologists-python), Summer School, Uninersity of Pisa (remote)
+    - liasing with Oxford IT officer to setup a new ResourceSpace server to host the project photographs
+- worked with Jan Ciglenečki - ["Documenting Coptic Monastic Heritage"](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe)
+- liasing with Mike Fisher - rock art in Mongolia (Arches RM)
 - preparing a JCAA paper (late) on the EAMENA sotware
-- attended *Arches and Coffee*
+- attended:
+    - *Arches and Coffee*
+    - Leicester MLACDv2 workshop
+    - 10-day training on [Neural Networks for Archaeologists, with Python](https://www.unipi.it/index.php/humanities/item/26801-neural-networks-archaeologists-python), Summer School, Uninersity of Pisa (remote)
 
 
 ---
