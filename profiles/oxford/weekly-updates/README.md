@@ -1811,11 +1811,26 @@ DB
 - Monday was a day off
 - Awarded by the John Fell fund (£500) to run a workshop on 'Streamlining the Publication of Archaeological Data for the Global South', with Bijan and the contribution of Bill
 - liaising with:
-    - Reuben: hide coordinates. Result: according to Christopher Byrd (Arches developer) the approach to do this isn't currently possible. It would be possible in an upcoming Arches version -> follow-up on the Arches forum
+    - Reuben: hide coordinates. Result: according to Christopher Byrd (Arches developer) the approach to hide coordinates isn't currently possible. It would be possible in an upcoming Arches version -> follow-up on the Arches forum
     - Ishiba and Cathy Giangrande: CoD BU, meeting with Ishiba scheduled next Friday
     - Jan Ciglenečki: "Documenting Coptic Monastic Heritage"
-- [preparing the 'hackathon'](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon)
-- attended *Arches and Coffee*:
+- preparing the ['hackathon'](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) on Arches-based project interoperability
+- attended *Arches and Coffee*
+
+
+### ManCom
+> 23/07/24
+
+- Usual business with the database, GitHub, 'eamena' Zenodo community
+- The `citation-generator` plugin works well (tested with Bijan)
+    - Small funding to organise a workshop by the end of 2024 on ['Streamlining the Publication of Archaeological Data for the Global South'](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication), with Bijan
+- Uploading to the APAAME photo archive (ongoing) 
+- preparing the ['hackathon'](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) on Arches-based project interoperability
+- liasing with Will for the `ckb` (Central Kurdish, Sorani) translation of the DB (messages, thesauri, RM), see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n)
+- reviewing Ishiba mapping (a BU) of the City of the Dead project
+- followed a 10-day training on [Neural Networks for Archaeologists, with Python](https://www.unipi.it/index.php/humanities/item/26801-neural-networks-archaeologists-python), Summer School, Uninersity of Pisa (remote)
+- preparing a JCAA paper (late) on the EAMENA sotware
+- attended *Arches and Coffee*
 
 
 ---
