@@ -1827,17 +1827,38 @@ DB
     - Small funding to organise a workshop by the end of 2024 on ['Streamlining the Publication of Archaeological Data for the Global South'](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication), with Bijan as a co-applicant.
 - Uploading to the APAAME photo archive (ongoing) 
 - preparing the ['hackathon'](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) on Arches-based project interoperability
-- liasing with Will for the `ckb` (Central Kurdish, Sorani) translation of the DB (messages, thesauri, RM), see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n)
+- liaising with Will for the `ckb` (Central Kurdish, Sorani) translation of the DB (messages, thesauri, RM), see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n)
 - reviewing Ishiba mapping (a BU) of the City of the Dead project
-    - liasing with Oxford IT officer to setup a new ResourceSpace server to host the project photographs
+    - liaising with Oxford IT officer to setup a new ResourceSpace server to host the project photographs
 - worked with Jan Ciglenečki - ["Documenting Coptic Monastic Heritage"](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe)
-- liasing with Mike Fisher - rock art in Mongolia (Arches RM)
-- preparing a JCAA paper (late) on the EAMENA sotware
+- liaising with Mike Fisher - rock art in Mongolia (Arches RM)
+- preparing a JCAA paper (late) on the EAMENA software
 - attended:
     - *Arches and Coffee*
     - Leicester MLACDv2 workshop
     - 10-day training on [Neural Networks for Archaeologists, with Python](https://www.unipi.it/index.php/humanities/item/26801-neural-networks-archaeologists-python), Summer School, Uninersity of Pisa (remote)
 
+
+### week 14
+
+-reviewing BU:
+    - [CoD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (by Ishiba), helped by Michael
+    - [EMHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe) (by Jan)
+- ran the citation plugin for Nichole, dataset: [Heritage Sites in Bani Walid, Libya](https://zenodo.org/records/12801265)
+    - invited Nichole to join the eamena Zenodo community
+- forked the [MLACD GitHub repo](https://github.com/eamena-project/EAMENA-MachineLearning-ACD) from Ahmed Mahmoud account to the EAMENA GitHub project
+    - invited Ahmed Mahmoud to join the EAMENA GitHub project
+- working on the Oxford [hackathon](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) organisation:
+    - abstract of the opening 1-hour talk
+    - deploying Arches from Docker
+    - ACHP instance: https://52.210.46.171/
+- liasing with:
+    - Cathy Giangrande (Ishiba contract, report on the data import)
+    - Jeremy (ResourceSpace server for the CoD project)
+- attended:
+    - ManCom
+    - *Arches and Coffee*
+- will restart the APAAME upload
 
 ---
 TODO:
