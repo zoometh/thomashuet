@@ -1851,7 +1851,7 @@ DB
 - working on the Oxford [hackathon](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) organisation:
     - abstract of the opening 1-hour talk
     - deploying Arches from Docker
-    - ACHP instance: https://52.210.46.171/
+    - ACHP instance: ~~<https://52.210.46.171/>~~
 - liasing with:
     - Cathy Giangrande (Ishiba contract, report on the data import)
     - Jeremy (ResourceSpace server for the CoD project)
@@ -1860,6 +1860,33 @@ DB
     - *Arches and Coffee*
 - will restart the APAAME upload
 
+### week 15
+
+-uploaded BU:
+    - [CoD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (by Ishiba), helped by Michael
+    - [EMHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe) (by Jan)
+- liasing with:
+    - Jeremy (ResourceSpace server for the CoD project)
+- working on the Oxford [hackathon](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) organisation:
+    - deployed Arches instance from a Docker image: https://achp.razekmh.dev/
+- attended:
+    - London meeting (Alison, Dennis, Pilip, Rebecca, Cameron, Bill)
+    - *Arches and Coffee*
+
+### week 16
+
+- xxx
+
+### week 17
+
+- Holydays (Mon/Tue)
+- AWS Troubleshooting (SSH/SSHD/`authorized_keys`) with Ash
+    - cleaning the AWS account
+- liaising with Bijan and Bill about the 'Publication Archaeological Data Workshop'
+- Preparing the hackathon 1-hour talk
+- Cleaning the GitHub account (stabilizing a part of the file/folder structure for documentation)
+- attended:
+    - *Arches and Coffee*
 ---
 TODO:
 
