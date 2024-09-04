@@ -1841,7 +1841,7 @@ DB
 
 ### week 14
 
--reviewing BU:
+- reviewing BU:
     - [COD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (by Ishiba), helped by Michael
     - [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) (by Jan)
 - ran the citation plugin for Nichole, dataset: [Heritage Sites in Bani Walid, Libya](https://zenodo.org/records/12801265)
@@ -1897,6 +1897,7 @@ DB
 - 3rd part projects:
     - [COD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod): City of the Dead in Egypt, 91 HP imported (Ishiba has worked on the data mapping during a 10 days contract), currently working on their metadata importation into the ResourceSpace server
     - [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe): Coptic heritage in Egypt, ~ 20 HP imported
+- with Bill, attended the London meeting (Getty, Farallon, HE, Cambridge/MASHA, Cambridge/MASHA)
 - working on the organisation of the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication)
 
 
