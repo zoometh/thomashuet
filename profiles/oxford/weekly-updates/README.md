@@ -1786,7 +1786,7 @@ DB
 - in touch with Will for the `ckb` translation
 - applied for the "Social Sciences Division Fixed-Term Researchers Support Fund, SSD" (£500) with the project "Streamlining the Publication of Archaeological Data for the Global South", with Bijan
 - met with:
-    - Jan Ciglenečki - ["Documenting Coptic Monastic Heritage"](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe).
+    - Jan Ciglenečki - ["Documenting Coptic Monastic Heritage"](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe).
         - Sample of data -> EAMENA
         - Invited (with Michael) to a 3 days workshop in Egypt, November, on "Documenting Coptic Monastic Heritage" to present EAMENA
 - will meet:
@@ -1830,7 +1830,7 @@ DB
 - liaising with Will for the `ckb` (Central Kurdish, Sorani) translation of the DB (messages, thesauri, RM), see [here](https://github.com/eamena-project/eamena-arches-dev/tree/main/dbs/database.eamena/i18n)
 - reviewing Ishiba mapping (a BU) of the City of the Dead project
     - liaising with Oxford IT officer to setup a new ResourceSpace server to host the project photographs
-- worked with Jan Ciglenečki - ["Documenting Coptic Monastic Heritage"](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe)
+- worked with Jan Ciglenečki - ["Documenting Coptic Monastic Heritage"](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe)
 - liaising with Mike Fisher - rock art in Mongolia (Arches RM)
 - preparing a JCAA paper (late) on the EAMENA software
 - attended:
@@ -1842,8 +1842,8 @@ DB
 ### week 14
 
 -reviewing BU:
-    - [CoD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (by Ishiba), helped by Michael
-    - [EMHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe) (by Jan)
+    - [COD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (by Ishiba), helped by Michael
+    - [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) (by Jan)
 - ran the citation plugin for Nichole, dataset: [Heritage Sites in Bani Walid, Libya](https://zenodo.org/records/12801265)
     - invited Nichole to join the eamena Zenodo community
 - forked the [MLACD GitHub repo](https://github.com/eamena-project/EAMENA-MachineLearning-ACD) from Ahmed Mahmoud account to the EAMENA GitHub project
@@ -1864,7 +1864,7 @@ DB
 
 -uploaded BU:
     - [CoD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (by Ishiba), helped by Michael
-    - [EMHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/emhe) (by Jan)
+    - [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) (by Jan)
 - liasing with:
     - Jeremy (ResourceSpace server for the CoD project)
 - working on the Oxford [hackathon](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) organisation:
@@ -1882,11 +1882,24 @@ DB
 - Holydays (Mon/Tue)
 - AWS Troubleshooting (SSH/SSHD/`authorized_keys`) with Ash
     - cleaning the AWS account
-- liaising with Bijan and Bill about the 'Publication Archaeological Data Workshop'
+- liaising with Bijan and Bill about the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication)
 - Preparing the hackathon 1-hour talk
 - Cleaning the GitHub account (stabilizing a part of the file/folder structure for documentation)
 - attended:
     - *Arches and Coffee*
+
+### Team meeting
+> 04/09/24
+
+- SSH issues with AWS, the DB will be down probably until Friday.
+- ACHP hackathon organisation and participation: [two-day, in-person hackathon](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) at the Institute of Archaeology, Oxford, 27-28 Aug 2024 and a one-hour hybrid public talk ([see the presentation](https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/talks/2024-hackathon/achp_hackathon.ipynb))
+    - output: a new v7.5.3 instance with 3 datasets (EAMENA, CAAL, MASHA), reference data + business data
+- 3rd part projects:
+    - [COD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod): City of the Dead in Egypt, 91 HP imported (Ishiba has worked on the data mapping during a 10 days contract), currently working on their metadata importation into the ResourceSpace server
+    - [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe): Coptic heritage in Egypt, ~ 20 HP imported
+- working on the organisation of the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication)
+
+
 ---
 TODO:
 
