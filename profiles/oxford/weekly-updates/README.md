@@ -1862,7 +1862,7 @@ DB
 
 ### week 15
 
--uploaded BU:
+- uploaded BU:
     - [CoD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (by Ishiba), helped by Michael
     - [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) (by Jan)
 - liasing with:
