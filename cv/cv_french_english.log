@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  3 SEP 2024 13:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.2.24)  15 SEP 2024 11:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,6 +447,458 @@ Underfull \hbox (badness 10000) in paragraph at lines 65--72
 
 [1
 
-{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//gmail.png> <../img//webpro.png> <../img//lod-orcid.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>
-!pdfTeX error: pdflatex.exe: fflush() failed (Invalid argument)
- ==> Fatal error occurred, no output PDF file produced!
+{c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../img//gmail.png> <../img//webpro.png> <../img//lod-orcid.png> <../img//github.png> <../img//gscholar.png> <../img//rgate.png> <../img//phone.png>]
+<../img//link_darkblue.png, id=44, 602.25pt x 342.27875pt>
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 193.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 201.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 221.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 225.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 229.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+<../img//link_grey.png, id=50, 602.25pt x 342.27875pt>
+File: ../img//link_grey.png Graphic file (type png)
+<use ../img//link_grey.png>
+Package pdftex.def Info: ../img//link_grey.png  used on input line 241.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 259.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:274: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   /
+l.274 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:274: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   /
+l.274 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:274: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   /
+l.274 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 274.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 279.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:284: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.284 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:284: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.284 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:284: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.284 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 284.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:289: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.289 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:289: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.289 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:289: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.289 ...aphics[scale=0.015]{link_darkblue.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 289.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+[2 <../img//link_darkblue.png> <../img//link_grey.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 335.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 335.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 357.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 363.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 368.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+ [3]
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 374.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 392.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 402.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+ [4]
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 432.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 434.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 452.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 469.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 471.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 475.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_grey.png Graphic file (type png)
+<use ../img//link_grey.png>
+Package pdftex.def Info: ../img//link_grey.png  used on input line 477.
+(pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 479.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 481.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 483.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 485.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 487.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+ [5]
+<../img//icon_youtube.png, id=114, 53.7207pt x 37.5804pt>
+File: ../img//icon_youtube.png Graphic file (type png)
+<use ../img//icon_youtube.png>
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 490.
+(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
+File: ../img//icon_youtube.png Graphic file (type png)
+<use ../img//icon_youtube.png>
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 498.
+(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
+File: ../img//icon_youtube.png Graphic file (type png)
+<use ../img//icon_youtube.png>
+Package pdftex.def Info: ../img//icon_youtube.png  used on input line 502.
+(pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
+ [6 <../img//icon_youtube.png>]
+Overfull \hbox (24.0386pt too wide) in paragraph at lines 533--533
+|\T1/cmr/bx/n/14.4 TOOLS, PRO-GRAM-MING LAN-GUAGES \T1/cmr/bx/it/14.4 & \T1/cmr/bx/n/14.4 SOFT-WARE PRO-FI-CIENCY| 
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+cmss on input line 538.
+(c:/texlive/2021/texmf-dist/tex/latex/base/t1cmss.fd
+File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:580: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.580 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:580: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.580 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:580: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.580 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+<../img//app-github-rect.png, id=124, 225.84375pt x 59.22125pt>
+File: ../img//app-github-rect.png Graphic file (type png)
+<use ../img//app-github-rect.png>
+Package pdftex.def Info: ../img//app-github-rect.png  used on input line 580.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:584: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.584 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:584: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.584 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:584: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.584 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: ../img//app-github-rect.png Graphic file (type png)
+<use ../img//app-github-rect.png>
+Package pdftex.def Info: ../img//app-github-rect.png  used on input line 584.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:588: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.588 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:588: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.588 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:588: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.588 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: ../img//app-github-rect.png Graphic file (type png)
+<use ../img//app-github-rect.png>
+Package pdftex.def Info: ../img//app-github-rect.png  used on input line 588.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:591: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.591 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:591: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.591 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:591: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.591 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: ../img//app-github-rect.png Graphic file (type png)
+<use ../img//app-github-rect.png>
+Package pdftex.def Info: ../img//app-github-rect.png  used on input line 591.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+<../img//prog-r.png, id=129, 250.9375pt x 194.7275pt>
+File: ../img//prog-r.png Graphic file (type png)
+<use ../img//prog-r.png>
+Package pdftex.def Info: ../img//prog-r.png  used on input line 595.
+(pdftex.def)             Requested size: 10.03578pt x 7.78777pt.
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:595: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.595 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:595: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.595 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+c:/Rprojects/thomashuet/cv/cv_french_english.tex:595: Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   r
+l.595 ...aphics[scale=0.1]{app-github-rect.png}}.}
+                                                  
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: ../img//app-github-rect.png Graphic file (type png)
+<use ../img//app-github-rect.png>
+Package pdftex.def Info: ../img//app-github-rect.png  used on input line 595.
+(pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 603.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+<../img//prj_neonet-blue.png, id=133, 1045.9075pt x 237.88875pt>
+File: ../img//prj_neonet-blue.png Graphic file (type png)
+<use ../img//prj_neonet-blue.png>
+Package pdftex.def Info: ../img//prj_neonet-blue.png  used on input line 607.
+(pdftex.def)             Requested size: 31.37587pt x 7.13635pt.
+<../img//prj_leapfrog-blue.png, id=135, 140.77594pt x 108.405pt>
+File: ../img//prj_leapfrog-blue.png Graphic file (type png)
+<use ../img//prj_leapfrog-blue.png>
+Package pdftex.def Info: ../img//prj_leapfrog-blue.png  used on input line 611.
+(pdftex.def)             Requested size: 14.07841pt x 10.84113pt.
+<../img//lod-nakala.png, id=137, 401.5pt x 401.5pt>
+File: ../img//lod-nakala.png Graphic file (type png)
+<use ../img//lod-nakala.png>
+Package pdftex.def Info: ../img//lod-nakala.png  used on input line 611.
+(pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 637.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 657.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+[7 <../img//app-github-rect.png> <../img//prog-r.png> <../img//prj_neonet-blue.png> <../img//prj_leapfrog-blue.png> <../img//lod-nakala.png>]
+File: ../img//link_darkblue.png Graphic file (type png)
+<use ../img//link_darkblue.png>
+Package pdftex.def Info: ../img//link_darkblue.png  used on input line 703.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+ [8]
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
+
+ []
+
+[9] (./cv_french_english.aux)
+
+Package rerunfilecheck Warning: File `cv_french_english.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv_french_english.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  67CFBF6A8EBF690CAEA84BE6D24D3D42;1765.
+ ) 
+Here is how much of TeX's memory you used:
+ 12779 strings out of 478278
+ 203292 string characters out of 5850546
+ 531721 words of memory out of 5000000
+ 30801 multiletter control sequences out of 15000+600000
+ 479387 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 60i,11n,65p,918b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbi1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx0700.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss0700.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfss1000.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on cv_french_english.pdf (9 pages, 596690 bytes).
+PDF statistics:
+ 236 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+
