@@ -1397,9 +1397,9 @@ DB
     - computed statistics
     - updated the GeoServer
 
-# Hilary Term 2024
+## Hilary Term 2024
 
-## week 0
+### week 0
 
 - prepared stats for the Arcadia annual report and updated the eamenaR function
 - various GitHub updates
@@ -1415,7 +1415,7 @@ DB
     - [Helen Thomas](https://www.ucl.ac.uk/bartlett/heritage/people/helen-thomas) (UCL), with Phil Carlisle (Historic England), is working on a RM for climate hasards (to be completed in Feb/Mar 2024)
 - would like to attend the [Arches developper meeting](https://community.archesproject.org/t/developer-meeting-2024/1998/11) (20-22 March 2024) at the Getty Center, LA, US.
 
-## week 1
+### week 1
 
 - working on duplicated EAMENA IDs with a mishandling that removed ~ 500 HPs from the DB when doing a BU append
     - worked and restored the morning backup with Ash
@@ -1900,6 +1900,18 @@ DB
 - with Bill, attended the London meeting (Getty, Farallon, HE, Cambridge/MASHA, Cambridge/MASHA)
 - working on the organisation of the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication)
 
+## Michaelmas Term 2024
+
+### week -3
+
+- fixed the DB SSH issue (reminder: the DB was down) with the AWS support team
+- working with Nichole on a BU append
+    - almost working (sic), excepted the Site Features (see [Arches Forum](https://community.archesproject.org/t/business-data-append-depth-in-the-resource-model/2540))
+- working with Jan Ciglenečki, [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe), on the Alexandria workshop (11-13 Nov) setup.
+- working with Archinos architects, [COD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) (missing metadata, wrong coordinates, etc.)
+- uploading APAAME archives
+- asked Reuben to work on the Docker image for the deployement Arches v7.6 (release scheduled this end of the month)
+- Bill and Bijan, to make the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication) happen
 
 ---
 TODO:
