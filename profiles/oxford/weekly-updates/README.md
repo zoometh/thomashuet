@@ -1913,6 +1913,18 @@ DB
 - asked Reuben to work on the Docker image for the deployement Arches v7.6 (release scheduled this end of the month)
 - Bill and Bijan, to make the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication) happen
 
+### week -1
+
+- developping a workflow for HP field documentation and field value documentation:
+    - [EAMENA website](https://eamena.web.ox.ac.uk/advanced-use#rm-hp-fields) as a hub, field description and MDS.
+    - GitHub threads to discuss the choice of field values
+- developping new functions to create charts and maps on the fly for the citation plugin
+    - 
+- meeting with Jan Ciglenečki, [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe):
+    - BU work
+    - creating a standardised template for 3rd part projects on GitHub
+- attended:
+    - *Arches and Coffee*
 ---
 TODO:
 
