@@ -1925,6 +1925,17 @@ DB
     - creating a standardised template for 3rd part projects on GitHub
 - attended:
     - *Arches and Coffee*
+
+### week 0
+
+- working of the [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) project
+    - GitHub threads to discuss the choice of field values ([example](https://github.com/eamena-project/eamena-arches-dev/issues/91#issuecomment-2402223879)), with Bijan
+- updating the EAMENA website (new page on [Dataset citation](https://eamena.web.ox.ac.uk/database-and-dataset-citation)), with Michael (dataset example) and Mel (IT)
+- developping the MDS assessment (interactive Jupyter NB, GeoJSON URL)
+- attended:
+    - *Arches Virtual (Online-only) Developer Meeting* (partly)
+    - *Arches and Coffee* upgrade of the hackathon DB from v7.5 to v7.6 (LTS)
+
 ---
 TODO:
 
