@@ -1937,17 +1937,32 @@ DB
     - *Arches and Coffee* upgrade of the hackathon DB from v7.5 to v7.6 (LTS)
 
 
-### week 1
+### ManCom
+> 17/10/24
 
-- working with GitHub and Python
-- working of the [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) project
-    - Photograph metadata, Ω = 45
-    - Aim to publish the Wadi Naqqat dataset (Ω = completed 16 HPs) along with the photos on EAMENA's Zenodo community
+- working with GitHub, Python and the EAMENA webiste:
+    - forked the [MLACD GitHub repo](https://github.com/eamena-project/EAMENA-MachineLearning-ACD) from Ahmed Mahmoud account to the EAMENA GitHub project
+    - GitHub threads to discuss the choice of field values ([example](https://github.com/eamena-project/eamena-arches-dev/issues/91#issuecomment-2402223879)), with Bijan.
+    - New page on the EAMENA website: [Dataset citation](https://eamena.web.ox.ac.uk/database-and-dataset-citation)), with Michael (dataset example) and Mel (IT)
+    - [MDS interactive assessment](https://colab.research.google.com/github/eamena-project/eamena-arches-dev/blob/main/dbs/database.eamena/data/reference_data/rm/hp/mds/mds.ipynb)
+    - will meet Ash next Friday to see how to include new functions (on-the-fly maps and charts) in the citation plugin
+- working on 3rd part projects:
+    - [APAAME](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/apaame) project
+        - uploading photographs (see progress: [finished 2012](https://github.com/eamena-project/eamena-arches-dev/issues/47#issuecomment-2003698364))
+        - will manage metadata and clean the uploading documentation process
+    - [COD](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/cod) project
+    - [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) project
+        - Photograph metadata, Ω = 45
+        - Aim to publish the Wadi Naqqat dataset (Ω = completed 16 HPs) along with the photos on EAMENA's Zenodo community
+        - creating a standardised template for 3rd part projects on GitHub
+- ACHP hackathon: [two-day, in-person hackathon](https://github.com/achp-project/cultural-heritage/tree/main/talks/2024-hackathon) at the Institute of Archaeology, Oxford, 27-28 Aug 2024 and a one-hour hybrid public talk ([see the presentation](https://colab.research.google.com/github/achp-project/cultural-heritage/blob/main/talks/2024-hackathon/achp_hackathon.ipynb))
+    - output: a new v7.5.3 instance with 3 datasets (EAMENA, CAAL, MASHA), reference data + business data
+- working on the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication) with Bijan
 - gave a talk on '[Climates of the Mediterranean During the Neolithic Transition](https://zoometh.github.io/neonet/doc/talks/2024-oxford/pres/#/title-slide)' in the '*Climate and Chronology*' Oxford, seminar series
 - attended:
+    - *Arches and Coffee*:
+        - upgrade of the hackathon DB from v7.5 to v7.6 (LTS)
     - *Arches Modeling User Group* Meeting
-- will meet Ash next Friday to see how to include new functions (on-the-fly maps and charts) in the citation plugin
-- promoting the DB Manager position on the web
 
 
 ---
