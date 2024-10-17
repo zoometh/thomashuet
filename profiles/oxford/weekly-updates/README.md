@@ -1936,6 +1936,19 @@ DB
     - *Arches Virtual (Online-only) Developer Meeting* (partly)
     - *Arches and Coffee* upgrade of the hackathon DB from v7.5 to v7.6 (LTS)
 
+
+### week 1
+
+- working with GitHub
+- working of the [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) project
+    - Photograph metadata, Ω = 45
+    - Aim to publish the Wadi Naqqat dataset (Ω = completed 16 HPs) along with the photos on EAMENA's Zenodo community
+- gave a talk on '[Climates of the Mediterranean During the Neolithic Transition](https://zoometh.github.io/neonet/doc/talks/2024-oxford/pres/#/title-slide)' in the '*Climate and Chronology*' Oxford, seminar series
+- attended:
+    - *Arches Modeling User Group* Meeting
+- will meet Ash next Friday to see how to include new functions (on-the-fly maps and charts) in the citation plugin
+
+
 ---
 TODO:
 
