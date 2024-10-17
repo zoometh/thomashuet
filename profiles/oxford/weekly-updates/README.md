@@ -1939,7 +1939,7 @@ DB
 
 ### week 1
 
-- working with GitHub
+- working with GitHub and Python
 - working of the [MHE](https://github.com/eamena-project/eamena-arches-dev/tree/main/projects/mhe) project
     - Photograph metadata, Ω = 45
     - Aim to publish the Wadi Naqqat dataset (Ω = completed 16 HPs) along with the photos on EAMENA's Zenodo community
@@ -1947,6 +1947,7 @@ DB
 - attended:
     - *Arches Modeling User Group* Meeting
 - will meet Ash next Friday to see how to include new functions (on-the-fly maps and charts) in the citation plugin
+- promoting the DB Manager position on the web
 
 
 ---
