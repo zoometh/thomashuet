@@ -1964,6 +1964,19 @@ DB
         - upgrade of the hackathon DB from v7.5 to v7.6 (LTS)
     - *Arches Modeling User Group* Meeting
 
+### week 2
+
+- WFH
+- 3 days of conference (SIMEP workshop)
+- Liaising with Reuben and Ash to enhance the citation plugin
+- working with:
+    - Michael, on data cleaning for the Alexandria workshop
+    - Nichole, on the Fazzan project
+- Preparing 
+    - Alexandria workshop (11-13 Nov), with Jan Ciglenečki.
+    - [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication) with Bijan.
+    - [metadata workshop]()
+
 
 ---
 TODO:
