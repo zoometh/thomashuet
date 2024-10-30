@@ -14,7 +14,7 @@ html = '''
 <h2>SPECTRA <img src="https://raw.githubusercontent.com/zoometh/thomashuet/main/profiles/oxford/spectra/img/spectra-logo.png"
 " alt="Logo" style="height:40px;"></h2>
 <h2><img src="https://raw.githubusercontent.com/zoometh/thomashuet/main/profiles/oxford/spectra/img/map-legend.png"
-" alt="Logo" style="height:40px;"></h2>
+" alt="Logo" style="height:100px;"></h2>
 </div>
 '''
 oxford_map.get_root().html.add_child(folium.Element(html))
