@@ -1977,6 +1977,28 @@ DB
     - [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication) with Bijan.
     - [metadata workshop]()
 
+### week 3
+
+- WFH
+- GitHub, Python and website dev
+    - Added <values> links in the [field descriptions](https://eamena.org/advanced-use#rm-hp-fields)
+- liasing with Jeremy, he has open the COD server to the world
+- COD project: BU append on RS links for IR, ex: COD-001
+    - [IR](https://database.eamena.org/report/eae2d112-b9ef-467b-9f99-db2c94abeff2) ~ [RS](https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection15)
+    - [IR](https://database.eamena.org/report/eae2d112-b9ef-467b-9f99-db2c94abeff2) ~ [HP](https://database.eamena.org/report/b65b4f24-11da-41f8-a9a7-11b4fd5b154b)
+- preparing my talks for the Alexandria WS:
+    - Identifying and Classifying Disturbances and Threats to Archaeological Heritage (EAMENA Project)
+    - The EAMENA Database as an IT Framework for a Photographic Archive (Thomas Huet)
+    - Case Study: Semi-Anchoretic Settlement in Wadi Naqqat as a Heritage Place within the EAMENA Database
+- [metadata workshop]() with Bijan, Kristen and Nichole
+- planned:
+    - bidirectional: [IR](https://database.eamena.org/report/eae2d112-b9ef-467b-9f99-db2c94abeff2) 🔛 [RS](https://cityofthedead.arch.ox.ac.uk/pages/search.php?search=%21collection15)
+    - COD documentation
+    - meeting Jan (today), MHE
+    - meeting Ash and Reuben (tomorrow), citation plugin
+- attended:
+    - *Arches and Coffee*:
+        - preparing a collective communication for the next CAA
 
 ---
 TODO:
