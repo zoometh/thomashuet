@@ -2007,6 +2007,7 @@ DB
         - EAMENA AWS instance
 - last day as a DB Manager: 3rd January 
 
+
 ### Team meeting
 > 12/11/24
 
