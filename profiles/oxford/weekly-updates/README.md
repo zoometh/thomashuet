@@ -1997,9 +1997,31 @@ DB
     - meeting Jan (today), MHE
     - meeting Ash and Reuben (tomorrow), citation plugin
 - attended:
+    - SPECTRA Annual Meeting
     - *Arches and Coffee*:
         - preparing a collective communication for the next CAA
+- planned:
+    - tidying:
+        - EAMENA GitHub
+        - EAMENA Ubuntu instance, with Al
+        - EAMENA AWS instance
+- last day as a DB Manager: 3rd January 
 
+### Team meeting
+> 12/11/24
+
+- Working with Reuben and Ash to enhance the citation plugin: maps and diagrams created on the flight
+- Working on the Alexandria workshop (11-13 Nov) about documenting Coptic Monastic Heritage Archive (CMHA, formely MHE) with Jan Ciglenečki.
+- Working with with Jan to host his project's photographs on a ResourceSpace server
+    - CMHA data will be hosted on the EAMENA DB, published on Zenodo (EAMENA organisation, the author will be the EAMENA DB)
+    - CHMA photos will be hosted by the University Lubjana, probably on a ResourceSpace server (same IT as the COD project, the author will be Jan's project) 
+- Working on the [PADA workshop](https://github.com/eamena-project/eamena-arches-dev/tree/main/talks/2024-publication) with Bijan and Mel
+- GitHub, Python and website dev
+    - Added <values> links in the [field descriptions](https://eamena.org/advanced-use#rm-hp-fields), most of them appear both in English and Arabic
+- Opening the COD photograph server to the world, with Jeremy
+- organised the [metadata workshop](). Bijan, Kristen and Nichole have attended.
+- attended:
+    - *Arches and Coffee*: preparing a collective communication for the next CAA (CAA25, Athens)
 ---
 TODO:
 
