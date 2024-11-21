@@ -2023,6 +2023,20 @@ DB
 - organised the [metadata workshop](). Bijan, Kristen and Nichole have attended.
 - attended:
     - *Arches and Coffee*: preparing a collective communication for the next CAA (CAA25, Athens)
+
+### week 6
+
+- Finished the Alexandria workshop (11-13 Nov)
+    - Liaising with the Bibliotheca Alexandrina (socials, medias, etc.)
+    - Working with the CMHA project to host photographs on a ResourceSpace server (E-RHIS funding)
+        - CMHA data will be hosted on the EAMENA DB, published on Zenodo (EAMENA organisation, the author will be the EAMENA DB)
+        - CHMA photos will be hosted by the University Lubjana, probably on a ResourceSpace server (same IT as the COD project, the author will be Jan's project) 
+- Working with Reuben and Ash to enhance the citation plugin: maps and diagrams.
+- Continuing the APAAME upload
+- Liaising with Will for the AWS management of the Kurdistan DB + Central Kurdistan Internationalisation of the DB
+- attended:
+    - *Python: PyTorch Kick-Off*: IT training
+
 ---
 TODO:
 
