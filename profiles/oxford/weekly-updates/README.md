@@ -2037,6 +2037,17 @@ DB
 - attended:
     - *Python: PyTorch Kick-Off*: IT training
 
+### week 7
+
+- Working with photographs (links with the DB, metadata, Zenodo deposit, RS deposit, etc.)
+    - case study CMHA Project
+- liasing with Jeremy to evaluate the possibility to have a RS server dedicated to 3rd part projects (COD, CMHA, etc.)
+- data paper writing with Jan
+- PADA preparation
+- attended:
+    - *Arches and Coffee*
+    - School Committee
+
 ---
 TODO:
 
