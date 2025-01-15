@@ -1,0 +1,1126 @@
+---
+title: "Authoring, writing and publishing with<br>R Markdown - part 1"
+author: "Thomas Huet, University of Oxford "
+title-slide-attributes:
+    data-background-image: "https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"
+    data-background-size: "33%"
+    data-background-opacity: "0.2"
+include-in-header:
+  text: |
+    <style>
+      .custom-small table {
+        font-size: .5em
+      }
+    </style>
+format:
+  revealjs:
+    controls: true
+    slide-number: true
+    chalkboard: true
+    scrollable: true
+    preview-links: auto
+    reference-location: document
+    footnotes-hover: true
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/inst-uni-oxford_.png
+    # css: ../styles.css
+    # css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
+    css: https://zoometh.github.io/thomashuet/css/quarto.css
+    margin: 0.01
+    width: 1200
+bibliography: references.bib
+pagetitle: "Report with R Markdown - part 1"
+footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Jan 2025 - <em>presented by </em> Thomas Huet"
+---
+
+## Introduction
+
+```{r echo=FALSE, eval=FALSE}
+## Not run
+# install.packages("archdata")
+# install.packages("rmarkdown")
+# install.packages("tinytex")
+# install.packages("bookdown")
+# install.packages("dplyr")
+# install.packages("leaflet")
+# install.packages("plotly")
+# install.packages("rgl")
+library(archdata)
+library(rmarkdown)
+library(tinytex)
+library(bookdown)
+library(dplyr)
+library(leaflet)
+library(plotly)
+library(rgl)
+```
+
+::: {.panel-tabset}
+
+### R Markdown
+
+<span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines R code chunks and narrative parts with -- mainly -- Markdown syntax
+
+::: {.callout-note}
+R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> `.R` + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> `.md` for Markdown
+:::
+
+
+### AFDS
+
+AFDS are used to create data-driven documents (reports) with a notebook interface
+
+<table>
+<thead>
+  <tr>
+    <th>AFDS</th>
+    <th>Language</th>
+    <th>Oriented</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><span class="r-md">R Markdown</span></td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 55px;vertical-align: middle;'></td>
+    <td>front-end</td>
+  </tr>
+  <tr>
+    <td>Jupyter</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png' style='height: 55px;vertical-align: middle;'></td>
+    <td>back-end</td>
+  </tr>
+  <tr>
+    <td>D3.js</td>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 55px;vertical-align: middle;'></td>
+    <td>web</td>
+  </tr>
+</tbody>
+</table>
+
+
+### About this presentation
+
+A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png' style='height: 45px;vertical-align: middle;'> Quarto document (`.qmd`) using <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png' style='height: 45px;vertical-align: middle;'> reveal.js (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'>) hosted on <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png' style='height: 45px;vertical-align: middle;'> GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/index-part1.qmd)), prepared in RStudio (*aka* posit).
+
+```{=html}
+<script src="https://quarto.org/docs/presentations/revealjs/"></script>
+```
+
+
+:::
+\
+
+## Why R Markdown?
+
+::: {.panel-tabset}
+
+### Academic reporting
+
+<span class="r-md">R Markdown</span> is often enough for academic reporting. It supports:
+
+* HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
+* cross-referencing, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
+* interactive maps, 3D plots, etc.
+
+### Popularity of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'>
+
+
+::: custom-small
+
+
+| Language    | User Community | Learning Curve | Statistics                          | 3D                          | AI/ML                | GIS/DB                  | Data-driven doc                                  | Web App Framework                 |
+|-------------|-----------------|-----------------|-------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|------------------------------------|
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png' style='height: 45px;vertical-align: middle;'> | Large and diverse | Relatively easy  | Strong support  | Blender, libraries[^1] | Leading language[^2] | Leading language[^8] | Jupyter Notebook                                  | Popular frameworks[^4] |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-java.png' style='height: 45px;vertical-align: middle;'> | Large and established | Moderate  | Limited   | Java 3D API   | Used in enterprise | Java-based tools available  | Apache POI                                  | Various frameworks[^5] |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'> | Ubiquitous in web dev | Easy for web dev | Limited | WebGL | web-based apps | Limited  | D3.js                                  | Numerous frameworks[^6] |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-matlab.png' style='height: 45px;vertical-align: middle;'> | Academia, industry | Steeper  | Comprehensive support | Poor texture mapping | Academia, industry | Limited   |  Live scripts but hard to share  | Limited   |
+| <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'>  | Strong community | Steeper         | Leading language | Poor texture mapping  | Extensively used | R packages for GIS[^7] | Rmarkdown, Shiny                           | Limited   | Many free packages |
+
+\
+\
+
+:::
+
+[^1]: PyOpenGL
+[^2]: TensorFlow, PyTorch
+[^4]: Django
+[^5]: Spring
+[^6]: React 
+[^7]: sf 
+[^8]: QGIS, ArcGIS, libraries: geopandas
+
+
+### Ubiquity of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>
+
+Copy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):
+
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png' style='height: 450px;'>
+
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png' style='height: 450px;'>
+
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 450px;'>
+
+* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 450px;'>
+
+\
+
+:::
+
+## Main packages
+
+<table>
+<tbody>
+  <tr>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png' style='width: 100px;vertical-align: middle;'></td>
+    <td>[knitr](https://yihui.org/knitr/) engine for dynamic report generation with R (e.g. convert to LaTeX)</td>
+  </tr>
+  <tr>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png' style='width: 100px;vertical-align: middle;'></td>
+    <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
+  </tr>
+    <tr>
+    <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'></td>
+    <td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross referencing)</td>
+  </tr>
+</tbody>
+</table>
+
+
+## New document
+
+  
+::: {.panel-tabset}
+  
+
+### Create
+
+In RStudio: `File > New file > R Markdown...`
+
+<center>
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create.png){width="500px"}
+
+</center>
+
+Options (`Title`, `Author`, `Date`, etc.) can be changed later. Choose **PDF** as the default output format.
+
+<center>
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd.png){width="500px"}
+
+</center>  
+
+::: {.callout-note}
+A new document is created.
+:::
+
+
+### RStudio <small>preview</small>
+
+
+<center>
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png){width="900px"}
+</center>
+
+<small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/temp.Rmd></small>
+
+
+### GitHub <small>preview</small>
+
+
+```{=html}
+<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+```
+
+### Knit
+
+Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>, it will launch the render
+
+<center>
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_render.png){width="900px"}
+
+</center>
+\
+\
+
+:::
+
+
+## RStudio tools
+
+::: {.panel-tabset}
+
+### Tools
+
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"/>
+
+<table>
+<thead>
+  <tr>
+    <th>tool</th>
+    <th>description</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png){width="80px"}</td>
+    <td>knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>automatically when save the document</td>
+  </tr>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png){width="80px"}</td>
+    <td>check spelling</td>
+  </tr>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png){width="80px"}</td>
+    <td>knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>the document</td>
+  </tr>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png){width="80px"}</td>
+    <td>run Visual R Markdown + other options</td>
+  </tr>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png){width="80px"}</td>
+    <td>new code chunk (R, Bash, D3, Python, etc.)</td>
+  </tr>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png){width="80px"}</td>
+    <td>run a part or the whole document</td>
+  </tr>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_publish.png){width="80px"}</td>
+    <td>publish the document</td>
+  </tr>
+  <tr>
+    <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_visualMdEditor.png){width="80px"}</td>
+    <td>run Visual R Markdown</td>
+  </tr>
+</tbody>
+</table>
+
+### Visual R Markdown {#vrm}
+
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www//rmd_nav_visualMdEditor_bar.png" align="left"/><br>
+  
+[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax[^9], supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"/>
+
+:::
+
+::: {.callout-note}
+Use the R package <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 50px;vertical-align: middle;'> [bookdown](https://bookdown.org/) for advanced editing and publishing functions (e.g. cross referencing)
+:::
+
+
+[^9]: extension of Markdown
+
+## Document structure {auto-animate=true}
+
+<span class="r-md">R Markdown</span> combines
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<div class="div-yaml"> 
+<small>header YAML</small><br>
+a [YAML header](#yaml) with metadata
+</div>
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+R [code chunks](#chunks)
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+Markdown [narrative parts](#text)
+</div>
+
+:::
+
+::: {.column width="50%"}
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
+
+:::
+
+::::
+
+## Document structure {auto-animate=true}
+
+<span class="r-md">R Markdown</span> combines
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<div class="div-yaml"> 
+<small>header YAML</small><br>
+</div>
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+</div>
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+</div>
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+</div>
+
+etc.
+
+:::
+
+::: {.column width="50%"}
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
+
+:::
+
+::::
+
+
+
+## Markdown syntax {#text}
+
+::: {.panel-tabset}
+
+### Used by
+
+Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [GitLab](https://about.gitlab.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;"/>, [Obsidian](https://obsidian.md/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;"/>, [Wordpress](https://wordpress.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-wordpress.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, [Reddit](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-reddit.png" style="height: 45px;vertical-align: middle;"/>, etc.
+
+
+### Syntax
+
+
+```{=html}
+<iframe width="1000" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+```
+<small><https://rmarkdown.rstudio.com/authoring_basics.html></small>
+\
+
+### Editor
+
+```{=html}
+<iframe width="1000" height="350" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+```
+<small><https://stackedit.io/app#></small>
+\
+
+
+### Converter
+
+Text conversions (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.) using Pandoc
+
+```{=html}
+<iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+```
+<small><https://pandoc.org/try/></small>
+\
+\
+
+
+:::
+
+## Styling
+
+::: {.panel-tabset}
+
+### Text and paragraphs
+
++---------------------------------------+-------------------------------------+
+| Markdown                              | Rendered                            |
++=======================================+=====================================+
+| `**bold**, __bold__`                  | **bold**, **bold**                  |
++---------------------------------------+-------------------------------------+
+| `*italic*, _italic_`                  | *italic*, *italic*                  |
++---------------------------------------+-------------------------------------+
+| `code`                                | `code`                              |
++---------------------------------------+-------------------------------------+
+| `hyphen -- inserted -- in a sentence` | hyphen -- inserted -- in a sentence |
++---------------------------------------+-------------------------------------+
+| `H~2~O`                               | H~2~O                               |
++---------------------------------------+-------------------------------------+
+| `10^−19^`                             | 10^−19^                             |
++---------------------------------------+-------------------------------------+
+| ...                                   | ...                                 |
++---------------------------------------+-------------------------------------+
+
+blockquotes 
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+> I am a blockquote
+```
+</div>
+
+> I am a blockquote
+
+
+line separator
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+Below this text there's a line separator
+---
+```
+</div>  
+
+Below this text there's a line separator
+---
+\
+\
+
+
+### Math formula
+
+| Markdown                   | Rendered                 |
+|----------------------------|--------------------------|
+| `$$\sum_{i=1}^{n} X^3_i$$` | $$\sum_{i=1}^{n} X^3_i$$ |
+| ...                        | ...                      |
+
+
+### with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
+
+Text styling can be extended done with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'> markup languages
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.html}
+<h2 style="color:blue;">A Blue Heading</h2>
+<p style="color:red;">A red paragraph.</p>
+```
+</div>
+<h1 style="color:blue;">A Blue Heading</h1>
+<p style="color:red;">A red paragraph.</p>
+
+:::
+
+## Lists
+
+::: {.panel-tabset}
+
+
+### Numbered 
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+- Numbered  
+  1. first element
+  2. second element
+```
+</div>
+
+- Numbered  
+  1. first element
+  2. second element
+
+
+\
+
+### Unnumbered
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+- Unnumbered
+  * first element
+  * second element
+  * third element
+    - third element - sub 1
+      + third element - sub 1 - subsub 1
+      + third element - sub 1 - subsub 2
+```
+</div>
+
+- Unnumbered
+  * first element
+  * second element
+  * third element
+    - third element - sub 1
+      + third element - sub 1 - subsub 1
+      + third element - sub 1 - subsub 2
+      
+:::      
+
+## Tables {.unnumbered}
+
+::: {.panel-tabset}
+
+### Simple table
+
+:::: {.columns}
+::: {.column width="40%"}
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+| Header 1 | Header 2 |
+| --- | ----------- |
+| Row 1 | Text |
+| Row 2 | Another text |
+```
+</div>
+
+:::
+
+::: {.column width="10%"}
+<center> or </center> 
+:::
+
+::: {.column width="50%"}
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+| Header 1    | Header 2    |
+| ----------- | ----------- |
+| Row 1       | Text        |
+| Row 2       | Another text|
+```
+</div>
+
+:::
+
+::::
+  
+  
+<br><br> <center> gives the same result : </center> <br>
+
+| Header 1    | Header 2    |
+| ----------- | ----------- |
+| Row 1       | Text        |
+| Row 2       | Another text|
+
+\
+
+### Alignements
+
+Use `:----:`, `:---`, or `---:` to align
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+| Left        |    Center   |         Right |
+| :---        |    :----:   |          ---: |
+| Header      | Title       | Here's this   |
+| Paragraph   | Text        | And more      |
+```
+</div>
+
+\
+
+| Left      | Center |       Right |
+|:----------|:------:|------------:|
+| Header    | Title  | Here's this |
+| Paragraph |  Text  |    And more |
+
+\
+
+### Complex tables
+
+Complex tables have to be created inside <span class="r-code">code chunks</span>, e.g. [kable()](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html) from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+```{r echo = TRUE}
+library(kableExtra)
+dt <- mtcars[1:5, 1:6]
+dtt <- dt %>%
+  kbl() %>%
+  kable_paper("hover", full_width = F, font_size = 20)
+```
+</div>
+
+```{r echo = FALSE}
+dtt
+```
+
+<div class="div-code"> 
+<small>code chunk</small><br>
+```{r echo=TRUE}
+dtt <- dt %>%
+  kbl(caption = "Recreating booktabs style table") %>%
+  kable_classic(full_width = F, html_font = "Cambria", font_size = 20)
+```
+</div>
+
+```{r echo = FALSE}
+dtt
+```
+
+\
+
+### Hint
+
+Use a table converter
+
+```{=html}
+<iframe width="1000" height="400" src="https://tableconvert.com/" title="Online table convertor"></iframe>
+```
+
+<small><https://tableconvert.com/></small>
+
+\
+
+:::
+
+
+## Images
+
+::: {.panel-tabset}
+
+### Online images
+
+Markdown notation
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}
+```
+</div>
+
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}
+
+***
+
+HTML notation
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md code-line-numbers="1"}
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width=100>
+```
+</div>
+
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width=100>
+
+
+### Local images
+
+Markdown notation
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+![](../../../www/logo.png){width=100px}
+```
+</div>
+
+![](../../../www/logo.png){width=100px}
+
+***
+
+HTML notation
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+<img src="../../../www/logo.png" alt="" width=100>  
+```
+</div>
+
+<img src="../../../www/logo.png" alt="" width=100>  
+
+
+
+:::
+
+## Spaces and end of lines
+
+::: {.panel-tabset}
+
+### Spaces
+
+Extra spaces (HTML only)
+
+- `&emsp;` means 4 spaces (= a tabulation)
+- `&ensp;` means 2 spaces
+- `&nbsp;` means 1 space
+
+### End of line
+
+End of line (`<br>` in HTML) with 2 or more spaces and return -- or `\` and return -- for example:
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+Reconnais-toi  
+Cette adorable personne c'est toi  
+Sous le grand chapeau canotier  
+Oeil
+Nez  
+Ta Bouche  
+Voici l’ovale de ta figure  
+Ton cou Exquis  
+(Apollinaire, 1913)
+```
+</div>
+
+Reconnais-toi  
+Cette adorable personne c'est toi  
+Sous le grand chapeau canotier  
+Oeil
+Nez  
+Ta Bouche  
+Voici l’ovale de ta figure  
+Ton cou Exquis  
+(Apollinaire, 1913)
+
+:::
+
+::: {.column width="50%"}
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+Reconnais-toi\
+Cette adorable personne c'est toi\
+Sous le grand chapeau canotier\
+Oeil\ 
+Nez\
+Ta Bouche\
+Voici l'ovale de ta figure\
+Ton cou Exquis\
+(Apollinaire, 1913)
+```
+</div>
+
+Reconnais-toi\
+Cette adorable personne c'est toi\
+Sous le grand chapeau canotier\
+Oeil\
+Nez\
+Ta Bouche\
+Voici l'ovale de ta figure\
+Ton cou Exquis\
+(Apollinaire, 1913)
+
+:::
+
+::::
+
+:::
+
+
+## Titles
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+# Header level 1
+
+## Header level 2
+
+### ...
+
+```
+</div>
+
+
+::: {.panel-tabset}
+
+    
+### Avoid numbering
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+### My Header level 3 {-}
+```
+</div>
+
+### .. add an anchor
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+### My Header level 3 {-#bookmarks}
+```
+</div>
+
+### .. and a hyperlink
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md}
+
+Lorem ipsum dolor sit amet, etc. (**see [My Header level 3](#bookmarks)). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+
+### My Header level 3 {-#bookmarks}
+```
+</div>
+
+:::
+
+## Hyperlinks {.unnumbered}
+
+Add hyperlinks
+
+::: {.panel-tabset}
+
+### To text
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2025/2_R Markdown_Practice)
+```
+</div>
+part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2025/2_R Markdown_Practice)
+
+### To image
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+[![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
+```
+</div>
+[![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width="170px"}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)
+
+### To image (HTML)
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.html }
+<a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists" target="_blank">
+    <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="width:170px;" alt="Logo">
+</a>
+```
+</div>
+<a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists" target="_blank">
+    <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="width:170px;" alt="Logo">
+</a>
+
+:::
+
+
+## Bookmarks {#bookmarks .unnumbered}
+
+
+The header `## Practice` has the anchor `#practice-anchor` inside curly brackets:
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md code-line-numbers="1"}
+## Practice {#practice-anchor}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+```
+</div>
+
+It can be called anywhere in the text by:
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md }
+After this theoretical part, you will do a [practice](#practice-anchor)
+```
+</div>
+
+After this theoretical part, you will do a [practice](#practice) 
+\
+\
+
+## Footnotes 
+
+<div class="div-text"> 
+<small>narrative part</small><br>
+```{.md code-line-numbers="1|4"}
+A simple footnote[^66].
+
+[^10]: This is a footnote.
+```
+</div>
+
+A simple footnote[^66].
+
+[^66]: This is a footnote.
+
+::: {.callout-note}
+Footnotes numbering are automatically updated/incremented
+:::
+
+
+## Cross-referencing
+
+::: {.panel-tabset}
+
+
+### Variables
+
+Variables calculated inside the <span class="r-code">code chunks</span> can be called in the <span class="r-text">narrative parts</span>: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
+
+<div class="div-code"> 
+<small>code chunk</small>
+```{r echo=TRUE}
+library(archdata)
+data("Handaxes")
+number.of.axes <- nrow(Handaxes)
+```
+</div>
+
+<div class="div-text"> 
+<small>narrative part</small>
+```{.md}
+Furze Platt dataset counts 'r number.of.axes' axes
+```
+</div>
+Furze Platt dataset counts `r number.of.axes` axes
+
+::: {.callout-warning}
+Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose
+:::
+\
+
+
+### Figures
+
+<div class="div-code"> 
+<small>code chunk</small>
+```{.r}
+{r maxLmaxB, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
+```
+</div>
+```{.r}
+library(archdata)
+data("Handaxes")
+plot(Handaxes$L, Handaxes$B)
+model <- lm(B ~ L, data = Handaxes)
+abline(lm(model))
+```
+
+```{r maxLmaxB, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
+#| out-width: "70%"
+
+library(archdata)
+data("Handaxes")
+plot(Handaxes$L, Handaxes$B)
+model <- lm(B ~ L, data = Handaxes)
+abline(lm(model))
+```  
+  
+<div class="div-text"> 
+<small>narrative part</small>
+```
+The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
+```
+</div>
+
+::: {.callout-note}
+Need to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 50px;vertical-align: middle;'> [bookdown](https://bookdown.org/), see: the [native `.Rmd`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd) and the [rendered PDF](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf)
+:::
+
+
+
+\
+
+:::
+
+## Bibliographic references
+
+::: {.panel-tabset}
+
+
+### in YAML
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> (`.bib`) is a plain text format for bibliographic references.
+
+<center>
+
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="700"/>
+
+</center>
+  
+  
+The `.bib` file is referenced in the <span class="r-yaml">YAML header</span>.
+  
+<div class="div-yaml"> 
+<small>header YAML</small>
+```{.yml}
+title: temp
+output: pdf_document
+date: '2023-02-05'
+bibliography: references.bib
+```
+</div>
+  
+<center>
+
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"/>
+
+</center>
+
+\
+
+
+### references.bib
+
+```{=html}
+<script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
+```
+
+### Cross citation
+
+<div class="div-text"> 
+<small>narrative part</small>
+```{.md}
+published by Yihui Xie [-@Xie19]
+```
+</div>
+published by Yihui Xie [-@Xie19]
+
+\
+
++---------------------------------------------+-------------------------------------------+
+| code in the narrative parts                 | Render                                    |
++=============================================+===========================================+
+| `@Xie22`                                    | @Xie22                                    |
++---------------------------------------------+-------------------------------------------+
+| `[@Xie18]`                                  | [@Xie18]                                  |
++---------------------------------------------+-------------------------------------------+
+| `[credits: @Xie20]`                         | [credits: @Xie20]                         |
++---------------------------------------------+-------------------------------------------+
+| `published by Yihui Xie [-@Xie19; -@Xie22]` | published by Yihui Xie [-@Xie19; -@Xie22] |
++---------------------------------------------+-------------------------------------------+
+| ...                                         | ...                                       |
++---------------------------------------------+-------------------------------------------+
+
+::: {.callout-note}
+It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and paste it in the `.bib` file. Remember that you can also use [Visual R Markdown](#vrm) bibliographical references add-on (ex: [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>)
+:::
+
+\
+
+
+:::
+
+
+
+## References

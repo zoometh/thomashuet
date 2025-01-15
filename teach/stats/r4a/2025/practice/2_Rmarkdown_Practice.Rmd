@@ -1,0 +1,192 @@
+---
+title: "Münsingen-Rain necropolis (Bern, Switzerland)"
+subtitle: "A quantative study of Late Iron Age fibulae"
+author: "Thomas Huet"
+date: "`r format(Sys.time(), '%B %Y')`"
+bibliography: references.bib
+output:
+  bookdown::pdf_document2:
+    toc: true
+    toc_depth: 2
+---
+
+````md
+```
+In this R Markdown document  
+  - Follow the comments and delete them once completing the instructions  
+  - For each block of instructions there is an estimation of the average duration in minutes 
+  - Overall duration estimation: 60 min
+  - Do basic improvements for the layouts (colors, size, etc.), but stay focused on data  
+  - Install needed packages if not yet installed ({`archdata`}, {`knitr`}, etc.)
+  - Select a dataset from the {`archdata`} package (here: 'Fibulae') 
+  - Read the documentation of the package (`?archdata`) and dataset (`?Fibulae`)
+  - You will have to update the `references.bib` file with your own references
+```
+````
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(fig.pos = "H")
+knitr::opts_chunk$set(warning = FALSE)
+# install.packages("archdata")
+library(archdata)
+data(Fibulae)
+```
+  
+  
+````md
+```
+YAML header (10 minutes)
+  - select your rendering: **bookdown::pdf_document2:** or **bookdown::html_document2:**  
+  - update the **title** depending on the dataset of {archdata} you chose  
+  - update the **author** name
+```
+````
+
+---  
+  
+# Introduction
+
+````md
+```
+Mardown (10 minutes)  
+  - Write some three lines for Introduction 
+  - present the dataset using Markdown syntax (e.g. *italic*, **bold**, lists)  
+  - Import a representative picture image (e.g., map, photograph) depending on your topic  
+```
+````
+
+Munsingen-Rain is a Late Iron Age necropolis composed of *circa* 220 graves, and 300 bronze and iron fibulae. The necropolis became the favored focus for a wide range of experimental investigations, of a typological, chronological, costume historical, art historical and sociological nature [@Muller08]. Here, we will focus on the statistical analysis of fibulae, exploring the archdata R package [@Carlson21] (...)
+
+```{r munsingenfib, echo=FALSE, out.width = "50%", fig.align="center", fig.cap= "Fibulae measurements (Hodson, 1970)"}
+knitr::include_graphics("munsingen_fib_measures.png") 
+```
+  
+Hodson [-@Hodson70] took numerous measurements on the fibulae (Fig. \@ref(fig:munsingenfib)). This report aims to realise their statistical analysis (...)
+
+# Dataset description
+
+````md
+```
+Mardown + Descriptive statistics ca (10 minutes)  
+  - Adapt the title  
+  - Compute **descriptive statistics** (e.g. count of rows, count of columns, means)  
+  - Create descriptive plots (e.g. histograms, boxplots, pie charts, scatterplots)  
+  - Comments the results with Markdown text  
+  - Call variables and figures  
+```
+````
+
+```{r init, echo = FALSE, message = FALSE}
+## Not run
+# install.packages("knitr")
+# install.packages("kableExtra")
+# install.packages("dplyr")
+library(knitr)
+library(kableExtra)
+library(dplyr)
+Fibulae.quant <- Fibulae
+rownames(Fibulae.quant) <- Fibulae.quant$Mno
+Fibulae.quant <- Fibulae.quant[ , sapply(Fibulae.quant, is.numeric)]
+n.col.num <- ncol(Fibulae.quant)
+```
+
+In the studied dataset, there are `r nrow(Fibulae)` fibulae described by `r n.col.num` quantitative variables (`r head(colnames(Fibulae.quant))`, etc.) (...)
+
+```{r tabquantiles, echo = FALSE, out.width = "50%", fig.align = "center", fig.cap = "Distribution and boxplots by quantiles of fibulae measurements"}
+# adapted from the {archdata} documentation
+kable(t(sapply(Fibulae.quant, quantile, na.rm=TRUE)), 
+      caption = "Distribution by quantiles of fibulae measurments") %>% 
+  kable_styling(latex_options = "HOLD_position")
+```
+
+The Tab. \@ref(tab:tabquantiles) resumes the distribution of fibulae measurements by quantiles (...)
+
+
+```{r histlength, echo = FALSE, out.width = "70%", fig.align = "center", fig.cap = "Kernel Density Plot of Length"}
+fib.length <- Fibulae$Length
+hist(fib.length, main = "Distribution of Munsingen fibulae length", xlab = "length in cm")
+```
+
+The histogram of the fibulae length (Fig. \@ref(fig:histlength)) shows a 'L' shape (...)
+
+# Exploration of the dataset
+
+````md
+```
+Mardown + Exploratory statistics ca (10 minutes) 
+  - Adapt the title  
+  - Compute **exploratory analysis** (e.g. factorial analysis, hierarchical clustering)  
+  - Comments the results with Markdown text
+  - Call variables and figures  
+```
+````
+
+
+```{r correspanal, echo=FALSE, message=FALSE, warning=FALSE, out.width = "70%", fig.align="center", fig.cap="Correspondance Analysis (CA) of the dataset"}
+## Not run
+# install.packages("FactoMiner")
+library(FactoMineR)
+Fibulae.quant.complete <- Fibulae.quant[complete.cases(Fibulae.quant), ]
+fibulae.ca <- CA(Fibulae.quant.complete)
+eig.f1 <- fibulae.ca$eig[1, "percentage of variance"]
+eig.f2 <- fibulae.ca$eig[2, "percentage of variance"]
+factorial.eig <- round((eig.f1 + eig.f2), 2)
+```
+
+The Correspondence Analysis (Fig. \@ref(fig:correspanal)) shows `r factorial.eig` % of the total variance.The point cloud shape is spherical except for one individual (Mno: Hallstatt) and a variable (number of Coils) (...)
+
+# Statistical tests
+
+````md
+```
+Mardown + Confirmatory statistics ca (10 minutes)  
+  - Adapt the title  
+  - Compute **confirmatory analysis** (i.e statistical tests)  
+  - Comments the results with Markdown text  
+  - Call variables and figures  
+```
+````
+
+```{r test, echo=FALSE, out.width="50%", fig.align="center", fig.cap="Distribution of Munsingen fibulae length (in cm)"}
+# test on length
+fib.length.normal <- shapiro.test(fib.length)
+fib.length.normal.meth <- fib.length.normal$method
+fib.length.normal.pval <- fib.length.normal$p.value
+fib.length.normal.is <- ifelse(fib.length.normal.pval > 0.05, "normal", "not normal")
+```
+
+Following the `r fib.length.normal.meth`, the distribution of the fibulae length is `r fib.length.normal.is` as the Fig. \@ref(fig:histlength) shown it.  It means (...)
+
+
+# Conclusion
+
+````md
+```
+Mardown + Variable (5 minutes)  
+  - Write some three lines for Conclusion  
+  - In the YAML header add a new line for an **abstract** and complete it 
+```
+````
+
+The statistical analysis of the dataset shows (...)
+
+# References
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
