@@ -29,7 +29,7 @@ format:
     width: 1200
 bibliography: references.bib
 pagetitle: "Report with R Markdown - part 2"
-footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Feb 2024 - <em>presented by </em> Thomas Huet"
+footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Jan 2025 - <em>presented by </em> Thomas Huet"
 ---
 
 
@@ -66,6 +66,8 @@ R <span class="r-code">code chunks</span> are placeholders for the coding part o
 
 ### Headers options
 
+Options are used to show/hide the code, change the size and set the alignment of the ouptut, etc.
+
 <div class="div-code"> 
 <small>code chunk</small>
 ```{.r }
@@ -73,7 +75,6 @@ R <span class="r-code">code chunks</span> are placeholders for the coding part o
 ```
 </div>
 
-Options are used to show/hide the code, change the size of the output image, set the alignment of the ouptut, etc.
 
 <center>
 
@@ -81,10 +82,13 @@ Options are used to show/hide the code, change the size of the output image, set
 
 </center>
 
-<small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/temp.pdf></small>
+<small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/temp.pdf></small>
 
 
 ### Options hierarchy 
+
+The top chunk of the `.Rmd` file is commonly used to set global options for all subsequent chunks, unless you override these options locally within the headers of individual code chunks.
+
 
 <div class="div-code"> 
 <small>code chunk</small>
@@ -93,8 +97,6 @@ Options are used to show/hide the code, change the size of the output image, set
 knitr::opts_chunk$set(echo = TRUE)
 ```
 </div>
-
-The top chunk of the `.Rmd` file is commonly used to set global options for all subsequent chunks, unless you override these options locally within the headers of individual code chunks.
 
 
 ```{=html}
@@ -281,6 +283,8 @@ knitr::include_graphics(fibula)
 
 ## YAML {#yaml}
 
+The <span class="r-yaml">YAML header</span> is the <span class="r-md">R Markdown</span> document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on **key - value** pairs:
+
 <div class="div-yaml"> 
 <small>header YAML</small>
 ```{.yml}
@@ -291,8 +295,6 @@ date: '2023-02-05'
 ---
 ```
 </div>
-
-<span class="r-yaml">YAML header</span> is the document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on **key - value** pairs:
 
 
 ```{=html}
@@ -336,6 +338,8 @@ Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for
 \
 
 ## YAML output
+
+<span class="r-md">R Markdown</span> output format.
   
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -349,7 +353,7 @@ output:
 ```
 </div>
 
-Select the output format, here a PDF: <small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/temp.pdf></small>
+Here a PDF: <small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/temp.pdf></small>
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
@@ -358,7 +362,7 @@ Select the output format, here a PDF: <small><https://github.com/zoometh/thomash
 
 ## YAML table of content
 
-Table of content (TOC)  
+Table of content (TOC).  
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -381,6 +385,8 @@ output:
 
 ## YAML references
 
+Locate the bibliographic file (e.g.  [`references.bib`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/references.bib)).
+
 <div class="div-yaml"> 
 <small>header YAML</small>
 ```{.yml code-line-numbers="5"}
@@ -393,7 +399,7 @@ bibliography: references.bib
 ```
 </div>
 
-Reference the bibliographic file (e.g.  [`references.bib`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/references.bib)). Here in the same folder as the `.Rmd` file.
+Here in the same folder as the `.Rmd` file.
 
 
 ```{=html}
@@ -515,7 +521,7 @@ Customize with CSS like this <notes>**dodgerblue** background</notes>.
 
 :::
 
-## HTML online editor
+## HTML online editor {data-visibility=hidden}
   
 ::: {.panel-tabset}
   
@@ -543,7 +549,7 @@ Customize with CSS like this <notes>**dodgerblue** background</notes>.
 
 ### Shiny
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-pkg-shiny.png' style='height: 45px;vertical-align: middle;'> offers a framework to create interactive documents
+Interactivity with the <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'> package (for the client-side) <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-shiny.png' style='height: 45px;vertical-align: middle;'>
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -742,20 +748,25 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 <tbody>
   <tr>
     <td>raw</td>
-    <td><small><https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.Rmd></small></td>
+    <td><small><https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
     <td>`.Rmd`</td>
-    <td><small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.Rmd></small></td>
+    <td><small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd></small></td>
   </tr>
   <tr>
     <td>PDF</td>
-    <td><small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.pdf></small></td>
+    <td><small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.pdf></small></td>
   </tr>
 </tbody>
 </table>
 
+\
+\
+
 :::
+
+# Practice
 
 
 ## Practice {#practice}
@@ -764,41 +775,44 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 
 ### Objective
 
+<small>
+
+Use <span class="r-md">R Markdown</span> (<span class="r-code">code chunks</span> and <span class="r-text">narrative parts</span>) to create a report. Choose between:
+
+- [ ] improve the `.Rmd` document: "Münsingen-Rain necropolis (Bern, Switzerland). A quantative study of Late Iron Age fibulae" <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png' style='height: 65px;vertical-align: middle;'> using the dataset 'Fibulae' from {`archdata`} 
+
+- [ ] start from scratch ([here](https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part1#/new-document)) and select another dataset from {`archdata`} (e.g. 'Handaxes').
+
+</small>
+
 ::: {.callout-note}
 The practical part has an estimated duration of 60 minutes
 :::
 
-Use <span class="r-md">R Markdown</span> (<span class="r-code">code chunks</span> and <span class="r-text">narrative parts</span>) to create a report. Choice between:
-
-- [ ] start from scratch ([here](https://zoometh.github.io/thomashuet/teach/stats/r4a/2024/site/index-part1#/new-document))
-
-- [ ] improvement of the existing `.Rmd` model for the <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png' style='height: 65px;vertical-align: middle;'> fibulae from the Münsingen cemetery
-
-- [ ] select another dataset from the {`archdata`} package (e.g. 'Handaxes'), to improve the `.Rmd` template
-
 \
 
-### Data
+### How to start?
 
-Download the folder `r4a/2024/practice/` and locate the file `2_Rmarkdown_Practice.Rmd`: 
+<small>Download/Copy the folder `r4a/2025/practice/` and locate the file `2_Rmarkdown_Practice.Rmd` and the .`bib` file by following this link: </small>
+
 ```{.html}
-https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024/practice/
+https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2025/practice/
 ```
 
-You can use this website: 
+<small> You can also use this website to download the folder: </small>
+
 ```{=html}
 <iframe width="1000" height="200" src="https://download-directory.github.io/"></iframe>
 ```
 <small><https://download-directory.github.io/></small>
 
-or go here: [https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.Rmd](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024) and download, or copy/paste this `.Rmd` file and the .`bib` file.
-
+\
 \
 
 
-### Output
+### How to end?
 
-Contact me, send me your `.Rmd`, connected files (e.g. `references.bib`) here 👋 online
+Contact me, send me your `.Rmd` and related files (e.g. `references.bib`) here online 👋 
 
 <center>or</center>
 
