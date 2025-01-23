@@ -153,13 +153,17 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 
 Copy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png' style='height: 450px;'>
+* [Obsidian](https://obsidian.md/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;"/>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian-ex1.png' style='height: 450px;'>
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png' style='height: 450px;'>
+* [Discourse](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-discourse.png" style="height: 45px;vertical-align: middle;"/>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png' style='height: 450px;'>
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 450px;'>
+* [GitHub]() <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-2.png" style="height: 45px;vertical-align: middle;"/>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 450px;'>
 
-* <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 450px;'>
+* [ChatGPT]() <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-ai-ml-chatgpt.png" style="height: 45px;vertical-align: middle;"/>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 450px;'>
 
 \
 
@@ -495,7 +499,7 @@ Below this text there's a line separator
 Text styling can be extended done with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'> markup languages
 
 <div class="div-text"> 
-<small>narrative part</small>
+<small>narrative part</small><br>
 ```{.html}
 <h2 style="color:blue;">A Blue Heading</h2>
 <p style="color:red;">A red paragraph.</p>
@@ -596,12 +600,17 @@ Text styling can be extended done with <img src='https://raw.githubusercontent.c
 ::::
   
   
-<br><br> <center> gives the same result : </center> <br>
+<br> <center> gives the same result :
+
+<small>
 
 | Header 1    | Header 2    |
 | ----------- | ----------- |
 | Row 1       | Text        |
 | Row 2       | Another text|
+
+</small>
+</center>
 
 \
 
@@ -614,8 +623,7 @@ Use `:----:`, `:---`, or `---:` to align
 ```{.md}
 | Left        |    Center   |         Right |
 | :---        |    :----:   |          ---: |
-| Header      | Title       | Here's this   |
-| Paragraph   | Text        | And more      |
+| Header      | Title       | Hello         |
 ```
 </div>
 
@@ -623,44 +631,58 @@ Use `:----:`, `:---`, or `---:` to align
 
 | Left      | Center |       Right |
 |:----------|:------:|------------:|
-| Header    | Title  | Here's this |
-| Paragraph |  Text  |    And more |
+| Header    | Title  | Hello       |
 
 \
 
 ### Complex tables
 
-Complex tables have to be created inside <span class="r-code">code chunks</span>, e.g. [kable()](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html) from {`knitr`} with [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from {`kableExtra`}
+To create in <span class="r-code">code chunks</span>
 
 <div class="div-code"> 
 <small>code chunk</small><br>
-```{r echo = TRUE}
+```{.r}
+library(dplyr)
 library(kableExtra)
 dt <- mtcars[1:5, 1:6]
 dtt <- dt %>%
   kbl() %>%
   kable_paper("hover", full_width = F, font_size = 20)
+dtt
 ```
 </div>
-
 ```{r echo = FALSE}
+library(dplyr)
+library(kableExtra)
+dt <- mtcars[1:5, 1:6]
+dtt <- dt %>%
+  kbl() %>%
+  kable_paper("hover", full_width = F, font_size = 20)
 dtt
 ```
 
+
 <div class="div-code"> 
 <small>code chunk</small><br>
-```{r echo=TRUE}
+```{.r}
+dtt <- dt %>%
+  kbl(caption = "My styled table") %>%
+  kable_classic(full_width = F, html_font = "Cambria", font_size = 20)
+dtt
+```
+</div>
+```{r echo=FALSE}
 dtt <- dt %>%
   kbl(caption = "Recreating booktabs style table") %>%
   kable_classic(full_width = F, html_font = "Cambria", font_size = 20)
-```
-</div>
-
-```{r echo = FALSE}
 dtt
 ```
 
 \
+
+::: {.callout-note}
+[kbl()](https://www.rdocumentation.org/packages/kableExtra/versions/1.4.0/topics/kbl), [kable()](https://bookdown.org/yihui/rmarkdown-cookbook/kable.html), [kable_classic()](https://www.rdocumentation.org/packages/kableExtra/versions/1.4.0/topics/kable_classic) and [kable_styling()](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) from the {`kableExtra`} package
+:::
 
 ### Hint
 
@@ -715,11 +737,11 @@ Markdown notation
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-![](../../../www/logo.png){width=100px}
+![](C:/Rprojects/thomashuet/teach/www/logo.png){width=100px}
 ```
 </div>
 
-![](../../../www/logo.png){width=100px}
+![](C:/Rprojects/thomashuet/teach/www/logo.png){width=100px}
 
 ***
 
@@ -728,11 +750,11 @@ HTML notation
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-<img src="../../../www/logo.png" alt="" width=100>  
+<img src="C:/Rprojects/thomashuet/teach/www/logo.png" alt="" width=100>  
 ```
 </div>
 
-<img src="../../../www/logo.png" alt="" width=100>  
+<img src="C:/Rprojects/thomashuet/teach/www/logo.png" alt="" width=100>  
 
 
 
@@ -752,7 +774,7 @@ Extra spaces (HTML only)
 
 ### End of line
 
-End of line (`<br>` in HTML) with 2 or more spaces and return -- or `\` and return -- for example:
+In Markdown: 2+ spaces and return, or `\` and return. In HTML: `<br>` 
 
 
 :::: {.columns}
@@ -766,7 +788,7 @@ Reconnais-toi
 Cette adorable personne c'est toi  
 Sous le grand chapeau canotier  
 Oeil
-Nez  
+Nez
 Ta Bouche  
 Voici l’ovale de ta figure  
 Ton cou Exquis  
@@ -778,7 +800,7 @@ Reconnais-toi
 Cette adorable personne c'est toi  
 Sous le grand chapeau canotier  
 Oeil
-Nez  
+Nez
 Ta Bouche  
 Voici l’ovale de ta figure  
 Ton cou Exquis  
@@ -970,27 +992,32 @@ Footnotes numbering are automatically updated/incremented
 
 ### Variables
 
-Variables calculated inside the <span class="r-code">code chunks</span> can be called in the <span class="r-text">narrative parts</span>: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
+Variables calculated inside the <span class="r-code">code chunks</span> can be called in the <span class="r-text">narrative parts</span>
 
 <div class="div-code"> 
 <small>code chunk</small>
-```{r echo=TRUE}
+```{.r}
 library(archdata)
 data("Handaxes")
 number.of.axes <- nrow(Handaxes)
 ```
 </div>
+```{r echo=FALSE}
+library(archdata)
+data("Handaxes")
+number.of.axes <- nrow(Handaxes)
+```
 
 <div class="div-text"> 
 <small>narrative part</small>
 ```{.md}
-Furze Platt dataset counts 'r number.of.axes' axes
+<small>Furze Platt dataset counts 'r number.of.axes' axes</small>
 ```
 </div>
-Furze Platt dataset counts `r number.of.axes` axes
+<small>Furze Platt dataset counts `r number.of.axes` axes</small>
 
 ::: {.callout-warning}
-Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose
+Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose: <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png' style='height: 45px;vertical-align: middle;'>
 :::
 \
 
@@ -1002,7 +1029,7 @@ Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for
 ```{.r}
 {r maxLmaxB, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
 ```
-</div>
+
 ```{.r}
 library(archdata)
 data("Handaxes")
@@ -1010,9 +1037,10 @@ plot(Handaxes$L, Handaxes$B)
 model <- lm(B ~ L, data = Handaxes)
 abline(lm(model))
 ```
+</div>
 
 ```{r maxLmaxB, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
-#| out-width: "70%"
+#| out-width: "60%"
 
 library(archdata)
 data("Handaxes")
@@ -1023,13 +1051,17 @@ abline(lm(model))
   
 <div class="div-text"> 
 <small>narrative part</small>
-```
-The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
+```{.md}
+<small>The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients[2], 2)',  Fig. \@ref(fig:maxLmaxB))</small>
 ```
 </div>
+<small>The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))</small>
 
-::: {.callout-note}
-Need to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 50px;vertical-align: middle;'> [bookdown](https://bookdown.org/), see: the [native `.Rmd`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd) and the [rendered PDF](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf)
+::: {.callout-warning}
+
+* Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose in 'r round(model$coefficients[2], 2)'.
+* Need to use <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 50px;vertical-align: middle;'> [bookdown](https://bookdown.org/) to render correctly '\@ref(fig:maxLmaxB)', see: the [raw `.Rmd`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd) and the [rendered PDF](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf)
+
 :::
 
 
@@ -1108,13 +1140,17 @@ published by Yihui Xie [-@Xie19]
 +---------------------------------------------+-------------------------------------------+
 
 ::: {.callout-note}
-It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and paste it in the `.bib` file. Remember that you can also use [Visual R Markdown](#vrm) bibliographical references add-on (ex: [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>)
+It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and paste it in the `.bib` file. You can also use [Visual R Markdown](#vrm) bibliographical references add-on (ex: [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>)
 :::
 
 \
 
 
 :::
+
+## Go to part 2
+
+[Here](https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part2#/title-slide)
 
 
 
