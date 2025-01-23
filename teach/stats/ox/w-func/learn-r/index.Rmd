@@ -12,6 +12,7 @@ library(dplyr)
 ```
 
 ## Functions in R: an overview
+
 > "*There are only two hard things in Computer Science: cache invalidation and naming things*" -- Phil Karlton
 
 Native functions
@@ -70,7 +71,6 @@ my_sum( , )
 my_sum(1, 2)
 ```
 
-
 ## Internal variables
 
 Lorem
@@ -93,7 +93,7 @@ print(i)
 
 ### Names
 
-* Give same names to variables outside the function and parameters inside the function (ex: `df`)
+-   Give same names to variables outside the function and parameters inside the function (ex: `df`)
 
 ```{r varNames, exercise=TRUE}
 
@@ -119,10 +119,9 @@ my_sum(1, 2)
 
 ### Default values
 
-* Assign default values to parameter when:
-  - the parameter/variable will be used more than once
-  - you know the function works with a precise dataset (ex: a TSV file) and values (ex: )
-
+-   Assign default values to parameter when:
+    -   the parameter/variable will be used more than once
+    -   you know the function works with a precise dataset (ex: a TSV file) and values (ex: )
 
 ```{r varDefault, exercise=TRUE}
 
@@ -144,8 +143,7 @@ my_barplot(df)
 
 ### Packages
 
-
-* Write the packages names explicitly within the function (ex: `ggplot2::`)
+-   Write the packages names explicitly within the function (ex: `ggplot2::`)
 
 ```{r varPackages, exercise=TRUE}
 
@@ -179,18 +177,17 @@ my_barplot(df)
 
 ## Notes
 
-* syntax (spaces, `my_plot`)
-* `return`
-* `ggplot2::`
-* function call
-* where to place the comments `#`
-* `print` or `cat` inside a function
-* dataframe column names as variables
-
+-   syntax (spaces, `my_plot`)
+-   `return`
+-   `ggplot2::`
+-   function call
+-   where to place the comments `#`
+-   `print` or `cat` inside a function
+-   dataframe column names as variables
 
 ## Documentation
 
-- https://tinystats.github.io/teacups-giraffes-and-statistics/01_introToR.html
+-   <https://tinystats.github.io/teacups-giraffes-and-statistics/01_introToR.html>
 
 ## About this document
 

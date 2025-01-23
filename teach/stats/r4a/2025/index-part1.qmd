@@ -21,7 +21,7 @@ format:
     preview-links: auto
     reference-location: document
     footnotes-hover: true
-    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/inst-uni-oxford_.png
+    logo: https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_cnrs-iramat.png
     # css: ../styles.css
     # css: https://zoometh.github.io/thomashuet/teach/stats/r4a/styles.css
     css: https://zoometh.github.io/thomashuet/css/quarto.css
@@ -58,7 +58,7 @@ library(rgl)
 
 ### R Markdown
 
-<span class="r-md">R Markdown</span> is an authoring framework for data science (AFDS). It combines R code chunks and narrative parts with -- mainly -- Markdown syntax
+<span class="r-md">R Markdown</span> is an <span class="afds">authoring framework for data science</span> (AFDS). It combines R code chunks and narrative parts with -- mainly -- Markdown syntax
 
 ::: {.callout-note}
 R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> `.R` + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> `.md` for Markdown
@@ -175,11 +175,11 @@ Copy/paste can be done over numerous code-oriented platforms without losing the 
   </tr>
   <tr>
     <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png' style='width: 100px;vertical-align: middle;'></td>
-    <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert R Markdown documents into a variety of formats, extension of {`knitr`}</td>
+    <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert <span class="r-md">R Markdown</span> documents into a variety of formats, extension of [knitr](https://yihui.org/knitr/)</td>
   </tr>
     <tr>
     <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'></td>
-    <td>[bookdown](https://bookdown.org/) advanced editing and publishing functions (e.g. cross referencing)</td>
+    <td>[bookdown](https://bookdown.org/) for advanced editing (e.g. cross referencing) for long formats (ex: books, theses)</td>
   </tr>
 </tbody>
 </table>
@@ -193,7 +193,7 @@ Copy/paste can be done over numerous code-oriented platforms without losing the 
 
 ### Create
 
-In RStudio: `File > New file > R Markdown...`
+1. In RStudio: `File > New file > R Markdown...`
 
 <center>
 
@@ -201,7 +201,7 @@ In RStudio: `File > New file > R Markdown...`
 
 </center>
 
-Options (`Title`, `Author`, `Date`, etc.) can be changed later. Choose **PDF** as the default output format.
+2. Choose **PDF** as the default output format. Options (`Title`, `Author`, `Date`, etc.) can be changed later. 
 
 <center>
 
@@ -209,9 +209,9 @@ Options (`Title`, `Author`, `Date`, etc.) can be changed later. Choose **PDF** a
 
 </center>  
 
-::: {.callout-note}
 A new document is created.
-:::
+
+3. Save it
 
 
 ### RStudio <small>preview</small>
@@ -265,7 +265,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 <tbody>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png){width="80px"}</td>
-    <td>knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>automatically when save the document</td>
+    <td>`knit` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>automatically when save the document</td>
   </tr>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png){width="80px"}</td>
@@ -273,7 +273,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
   </tr>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png){width="80px"}</td>
-    <td>knit <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>the document</td>
+    <td>`knit` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>the document</td>
   </tr>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png){width="80px"}</td>
@@ -281,7 +281,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
   </tr>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png){width="80px"}</td>
-    <td>new code chunk (R, Bash, D3, Python, etc.)</td>
+    <td>new code chunk (R, Python, GraphViz, Mermaid, etc.)</td>
   </tr>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png){width="80px"}</td>
@@ -300,18 +300,13 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 ### Visual R Markdown {#vrm}
 
+
 <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www//rmd_nav_visualMdEditor_bar.png" align="left"/><br>
   
-[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) has a Pandoc syntax[^9], supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"/>
+[Visual R Markdown](https://rstudio.github.io/visual-markdown-editing/) is a graphical editing mode with a Pandoc syntax (extension of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>), supports <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>. For citations, supports [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"/> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;"/>, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;"/>, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"/>
 
 :::
 
-::: {.callout-note}
-Use the R package <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 50px;vertical-align: middle;'> [bookdown](https://bookdown.org/) for advanced editing and publishing functions (e.g. cross referencing)
-:::
-
-
-[^9]: extension of Markdown
 
 ## Document structure {auto-animate=true}
 
@@ -400,7 +395,7 @@ etc.
 
 ### Used by
 
-Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [GitLab](https://about.gitlab.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;"/>, [Obsidian](https://obsidian.md/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;"/>, [Wordpress](https://wordpress.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-wordpress.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, [Reddit](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-reddit.png" style="height: 45px;vertical-align: middle;"/>, etc.
+Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;"/>, [GitHub](https://github.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;"/>, [GitLab](https://about.gitlab.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;"/>, [Obsidian](https://obsidian.md/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;"/>, [Wordpress](https://wordpress.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-wordpress.png" style="height: 45px;vertical-align: middle;"/>, [Google Doc](https://www.google.co.uk/docs/about/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;"/>, [Sketchfab](https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;"/>, [Slack](https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;"/>, [Stackoverflow](https://stackoverflow.com/a/14747656/2854081) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;"/>, [Discourse](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-discourse.png" style="height: 45px;vertical-align: middle;"/>, [Reddit](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-reddit.png" style="height: 45px;vertical-align: middle;"/>, etc.
 
 
 ### Syntax
@@ -423,7 +418,7 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 
 ### Converter
 
-Text conversions (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.) using Pandoc
+Text conversion (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.) with Pandoc
 
 ```{=html}
 <iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
@@ -500,7 +495,7 @@ Below this text there's a line separator
 Text styling can be extended done with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'> markup languages
 
 <div class="div-text"> 
-<small>narrative part</small><br>
+<small>narrative part</small>
 ```{.html}
 <h2 style="color:blue;">A Blue Heading</h2>
 <p style="color:red;">A red paragraph.</p>

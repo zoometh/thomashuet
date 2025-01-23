@@ -21,6 +21,13 @@ lp {
   padding: 5px;
 }
 
+.afds {
+  /* for the text: "R Markdown" */
+  background-color: #cccccc;
+  color: white;
+  padding: 5px;
+}
+
 notes {
   color: white;
   background-color: dodgerblue;
