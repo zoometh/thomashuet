@@ -109,16 +109,37 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 :::
 \
 
-## Why R Markdown?
+## Why authoring with R Markdown?
 
 ::: {.panel-tabset}
 
-### Academic reporting
+### Archaeology 
+
+:::: {.columns}
+::: {.column width="50%"}
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex1.jpg' style='height: 400px;vertical-align: middle;'>
+
+
+:::
+
+::: {.column width="50%"}
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex2.jpg' style='height: 400px;vertical-align: middle;'>
+
+:::
+
+:::
+
+(c) Inrap
+
+
+### Academy
 
 <span class="r-md">R Markdown</span> is often enough for academic reporting. It supports:
 
 * HTML/CSS markup languages <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
-* cross-referencing, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references 
+* cross-referencing, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'> writing and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> bibliographic references maybe with [bookdown](https://bookdown.org/) <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 45px;vertical-align: middle;'>
 * interactive maps, 3D plots, etc.
 
 ### Popularity of <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'>
@@ -153,16 +174,16 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 
 Copy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):
 
-* [Obsidian](https://obsidian.md/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;"/>
+* [Obsidian](https://obsidian.md/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;"/><br> 
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian-ex1.png' style='height: 450px;'>
 
-* [Discourse](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-discourse.png" style="height: 45px;vertical-align: middle;"/>
+* [Discourse](https://www.reddit.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-discourse.png" style="height: 45px;vertical-align: middle;"/><br> 
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png' style='height: 450px;'>
 
-* [GitHub]() <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-2.png" style="height: 45px;vertical-align: middle;"/>
+* [GitHub](https://github.com/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-2.png" style="height: 45px;vertical-align: middle;"/><br> 
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png' style='height: 450px;'>
 
-* [ChatGPT]() <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-ai-ml-chatgpt.png" style="height: 45px;vertical-align: middle;"/>
+* [ChatGPT](https://openai.com/index/chatgpt/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-ai-ml-chatgpt.png" style="height: 45px;vertical-align: middle;"/><br> 
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png' style='height: 450px;'>
 
 \
