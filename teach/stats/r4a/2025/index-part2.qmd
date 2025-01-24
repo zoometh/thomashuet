@@ -33,7 +33,7 @@ pagetitle: "Report with R Markdown - part 2"
 footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Jan 2025 - <em>presented by </em> Thomas Huet"
 ---
 
-# Code chunks
+# Code chunks {data-background-color=#EBEBEB}
 
 ## Code chunks {#chunks}
 
@@ -282,7 +282,7 @@ knitr::include_graphics(fibula)
 
 \
 
-# YAML
+# YAML {data-background-color=#FFCCCB}
 
 
 ## YAML {#yaml}
@@ -300,6 +300,7 @@ date: '2023-02-05'
 ```
 </div>
 
+\
 
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
@@ -309,19 +310,9 @@ date: '2023-02-05'
 
 ## Dates
 
-<div class="div-yaml"> 
-<small>header YAML</small>
-```{.yml code-line-numbers="4"}
----
-title: "temp"
-output: pdf_document
-date: "'r format(Sys.time(), '%D')'"
----
-```
-</div>
+:::: {.columns}
 
-`r format(Sys.time(), '%D')`
-
+::: {.column width="50%"}
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -329,17 +320,40 @@ date: "'r format(Sys.time(), '%D')'"
 ---
 title: "temp"
 output: pdf_document
-date: "'r format(Sys.time(), '%d %B %Y')'"
+date: "'r format(Sys.time(),'%D')'"
 ---
 ```
 </div>
 
-`r format(Sys.time(), '%d %B %Y')`
+`r format(Sys.time(),'%D')`
+
+:::
+
+::: {.column width="50%"}
+
+<div class="div-yaml"> 
+<small>header YAML</small>
+```{.yml code-line-numbers="4"}
+---
+title: "temp"
+output: pdf_document
+date: "'r format(Sys.time(),'%d %B %Y')'"
+---
+```
+</div>
+
+`r format(Sys.time(),'%d %B %Y')`
+
+:::
+
+::::
+
+
 
 ::: {.callout-warning}
 Here the <notes>`</notes> quote has been changed to a <notes>'</notes> quote for display purpose
 :::
-\
+
 
 ## Output
 
@@ -389,7 +403,8 @@ output:
 
 ## References
 
-Locate the bibliographic file (e.g.  [`references.bib`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/references.bib)).
+Locate the bibliographic file (e.g.  [`references.bib`](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/references.bib)), here in the same folder as the `.Rmd` file.
+
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -403,18 +418,10 @@ bibliography: references.bib
 ```
 </div>
 
-Here in the same folder as the `.Rmd` file.
-
-
-```{=html}
-<iframe width="1000" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
-```
-
-see [Xie <em>et al.</em>](https://bookdown.org/yihui/rmarkdown/html-document.html#html-document) [-@Xie18]
 
 \
 
-# More HTML
+# More HTML {data-background-color=#FFFF00}
 
 
 ## Styling
@@ -489,7 +496,7 @@ Use a <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/
 ```
 <small><https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/styles.css></small>
 
-This file is called inside the <span class="r-yaml">YAML header</span> of the document:
+This file is called inside the <span class="r-yaml">YAML header</span> of the document, here in the same folder as the `.Rmd` file. 
 
 <div class="div-yaml"> 
 <small>header YAML</small>
@@ -512,7 +519,7 @@ pagetitle: Report with R Markdown
 ```
 </div>
 
-Here in the same folder as the `.Rmd` file. Do:
+Do:
 
 <div class="div-text"> 
 <small>narrative part</small>
@@ -550,7 +557,7 @@ Customize with CSS like this <notes>**dodgerblue** background</notes>.
 
 :::
 
-# Advanced publishing
+# Advanced publishing {data-background-color=#008000}
 
 
 ## Interactivity
@@ -651,6 +658,12 @@ output: html_document
 ---
 ```
 </div>
+
+```{=html}
+<iframe width="1000" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
+```
+
+see [Xie <em>et al.</em>](https://bookdown.org/yihui/rmarkdown/html-document.html#html-document) [-@Xie18]
 
 ## PDF
 

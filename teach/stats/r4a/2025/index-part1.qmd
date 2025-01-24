@@ -132,13 +132,14 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 
 ::: {.column width="30%"}
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex3.jpg' style='height: 350px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex3.png' style='height: 350px;vertical-align: middle;'>
+
+:::
+
 
 :::
 
 <small>L'archéozoologie &copy; Inrap</small>
-
-:::
 
 
 
@@ -420,7 +421,7 @@ etc.
 
 ::::
 
-
+# Narrative parts {data-background-color=#add8e6}
 
 ## Markdown syntax {#text}
 
@@ -1018,7 +1019,7 @@ Footnotes numbering are automatically updated/incremented
 
 ### Variables
 
-Variables calculated inside the <span class="r-code">code chunks</span> ... 
+Variables calculated inside the <span class="r-code">code chunks</span>
 
 <div class="div-code"> 
 <small>code chunk</small>
@@ -1034,7 +1035,7 @@ data("Handaxes")
 number.of.axes <- nrow(Handaxes)
 ```
 
-... can be called in the <span class="r-text">narrative parts</span>
+can be called in the <span class="r-text">narrative parts</span>
 
 <div class="div-text"> 
 <small>narrative part</small>
