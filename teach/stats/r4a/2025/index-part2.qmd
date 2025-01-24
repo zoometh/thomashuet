@@ -796,7 +796,7 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 
 :::
 
-# Practice
+# Practice {data-background-color=#FFA500}
 
 
 ## Practice {#practice}
@@ -805,11 +805,11 @@ On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/
 
 ### Objective
 
-Use <span class="r-md">R Markdown</span> (<span class="r-code">code chunks</span> and <span class="r-text">narrative parts</span>) to create a report. Choose between:
+Create a <span class="r-md">R Markdown</span> report. Choose between:
 
-- [ ] improve the `.Rmd` document: "*Münsingen-Rain necropolis (Bern, Switzerland). A quantative study of Late Iron Age fibulae*" using the dataset 'Fibulae' from {`archdata`} 
+- [ ] improve report "*Münsingen-Rain necropolis (Bern, Switzerland)*" ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd)) using the dataset 'Fibulae' from {`archdata`} 
 
-- [ ] start from scratch ([here](https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part1#/new-document)) and select another dataset from {`archdata`} (e.g. 'Handaxes').
+- [ ] create a new report and select another dataset from {`archdata`} (e.g. 'Handaxes'), see [doc](https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part1#/new-document) .
 
 ::: {.callout-note}
 The practical part has an estimated duration of 60 minutes
@@ -819,13 +819,13 @@ The practical part has an estimated duration of 60 minutes
 
 ### How to start?
 
-1. Download/Copy the folder `r4a/2025/practice/` and locate the file `2_Rmarkdown_Practice.Rmd` and the .`bib` file by following this link:
+1. Download/Copy the folder `r4a/2025/practice/` by following this link:
 
 ```{.html}
 https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2025/practice/
 ```
 
-2. install the {`bookdown`} package
+2. (***optional***) install the {`bookdown`} package
 
 ```{.r}
 install.packages("bookdown")
@@ -833,7 +833,7 @@ install.packages("bookdown")
 
 ### How to finish?
 
-Contact me, send me your `.Rmd` and related files (e.g. `references.bib`) here online 👋 
+Contact me, send me your `.Rmd`, the output (ex: PDF), and related files (e.g. `references.bib`) here online 👋 
 
 <center>or</center>
 

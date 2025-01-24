@@ -741,6 +741,19 @@ fix the output exactly here.
 <p>24 January 2025</p>
 </div>
 </div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>Here the <notes>`</notes> quote has been changed to a <notes>’</notes> quote for display purpose</p>
+</div>
+</div>
+</div>
 </section>
 <section id="output" class="slide level2">
 <h2>Output</h2>
@@ -777,7 +790,7 @@ fix the output exactly here.
 </section>
 <section id="references" class="slide level2">
 <h2>References</h2>
-<p>Locate the bibliographic file (e.g.&nbsp;<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/references.bib"><code>references.bib</code></a>).</p>
+<p>Locate the bibliographic file (e.g.&nbsp;<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/references.bib"><code>references.bib</code></a>), here in the same folder as the <code>.Rmd</code> file.</p>
 <div class="div-yaml">
 <p><small>header YAML</small></p>
 <div class="sourceCode" id="cb12" data-code-line-numbers="5"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="pp">---</span></span>
@@ -787,14 +800,11 @@ fix the output exactly here.
 <span id="cb12-5"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
 <span id="cb12-6"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Here in the same folder as the <code>.Rmd</code> file.</p>
-<iframe width="1000" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
-<p>see <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document">Xie <em>et al.</em></a> <span class="citation" data-cites="Xie18">(<a href="#/references-1" role="doc-biblioref" onclick="">2018</a>)</span></p>
 <p><br>
 </p>
 </section></section>
 <section>
-<section id="more-html" class="title-slide slide level1 center">
+<section id="more-html" class="title-slide slide level1 center" data-background-color="#FFFF00">
 <h1>More HTML</h1>
 
 </section>
@@ -849,7 +859,7 @@ fix the output exactly here.
 <p>Use a <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"> file to customize styles</p>
 <script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
 <p><small><a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/styles.css" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/styles.css</a></small></p>
-<p>This file is called inside the <span class="r-yaml">YAML header</span> of the document:</p>
+<p>This file is called inside the <span class="r-yaml">YAML header</span> of the document, here in the same folder as the <code>.Rmd</code> file.</p>
 <div class="div-yaml">
 <p><small>header YAML</small></p>
 <div class="sourceCode" id="cb17" data-code-line-numbers="11"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a></a><span class="pp">---</span></span>
@@ -868,7 +878,7 @@ fix the output exactly here.
 <span id="cb17-14"><a></a><span class="fu">pagetitle</span><span class="kw">:</span><span class="at"> Report with R Markdown</span></span>
 <span id="cb17-15"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Here in the same folder as the <code>.Rmd</code> file. Do:</p>
+<p>Do:</p>
 <div class="div-text">
 <p><small>narrative part</small></p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a>Customize with CSS like this &lt;notes&gt;**dodgerblue** background&lt;/notes&gt;.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -883,7 +893,7 @@ fix the output exactly here.
 </section>
 </section>
 <section>
-<section id="advanced-publishing" class="title-slide slide level1 center">
+<section id="advanced-publishing" class="title-slide slide level1 center" data-background-color="#008000">
 <h1>Advanced publishing</h1>
 
 </section>
@@ -934,8 +944,8 @@ fix the output exactly here.
 <span id="cb20-13"><a></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb20-14"><a></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-7102eb4457152340d304" style="width:90%;height:300px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-7102eb4457152340d304">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.569587484129203,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.569587484129203,7.569587484129203]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-fc8470276346eab3c3de" style="width:90%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fc8470276346eab3c3de">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.569587484129203,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.569587484129203,7.569587484129203]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -961,8 +971,8 @@ fix the output exactly here.
 <span id="cb21-12"><a></a>        <span class="at">text =</span> <span class="sc">~</span>lbl,</span>
 <span id="cb21-13"><a></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div class="plotly html-widget html-fill-item" id="htmlwidget-40eb86e29f80bff7e226" style="width:960px;height:480px;"></div>
-<script type="application/json" data-for="htmlwidget-40eb86e29f80bff7e226">{"x":{"visdat":{"3de84b1f2c39":["function () ","plotlyVisDat"]},"cur_data":"3de84b1f2c39","attrs":{"3de84b1f2c39":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e0775e92ff59459ad82e" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-e0775e92ff59459ad82e">{"x":{"visdat":{"4cec7081e18":["function () ","plotlyVisDat"]},"cur_data":"4cec7081e18","attrs":{"4cec7081e18":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div>
@@ -990,6 +1000,8 @@ fix the output exactly here.
 <span id="cb22-4"><a></a><span class="an">output:</span><span class="co"> html_document</span></span>
 <span id="cb22-5"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<iframe width="1000" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
+<p>see <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document">Xie <em>et al.</em></a> <span class="citation" data-cites="Xie18">(<a href="#/references-1" role="doc-biblioref" onclick="">2018</a>)</span></p>
 </section>
 <section id="pdf" class="slide level2">
 <h2>PDF</h2>
@@ -1126,7 +1138,7 @@ PDF
 </div>
 </section></section>
 <section>
-<section id="practice" class="title-slide slide level1 center">
+<section id="practice" class="title-slide slide level1 center" data-background-color="#FFA500">
 <h1>Practice</h1>
 
 </section>
@@ -1136,10 +1148,10 @@ PDF
 <ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Objective</a></li><li><a href="#tabset-7-2">How to start?</a></li><li><a href="#tabset-7-3">How to finish?</a></li></ul>
 <div class="tab-content">
 <div id="tabset-7-1">
-<p>Use <span class="r-md">R Markdown</span> (<span class="r-code">code chunks</span> and <span class="r-text">narrative parts</span>) to create a report. Choose between:</p>
+<p>Create a <span class="r-md">R Markdown</span> report. Choose between:</p>
 <ul class="task-list">
-<li><p><label><input type="checkbox">improve the <code>.Rmd</code> document: “<em>Münsingen-Rain necropolis (Bern, Switzerland). A quantative study of Late Iron Age fibulae</em>” using the dataset ‘Fibulae’ from {<code>archdata</code>}</label></p></li>
-<li><p><label><input type="checkbox">start from scratch (<a href="https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part1#/new-document">here</a>) and select another dataset from {<code>archdata</code>} (e.g.&nbsp;‘Handaxes’).</label></p></li>
+<li><p><label><input type="checkbox">improve report “<em>Münsingen-Rain necropolis (Bern, Switzerland)</em>” (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd">here</a>) using the dataset ‘Fibulae’ from {<code>archdata</code>}</label></p></li>
+<li><p><label><input type="checkbox">create a new report and select another dataset from {<code>archdata</code>} (e.g.&nbsp;‘Handaxes’), see <a href="https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part1#/new-document">doc</a> .</label></p></li>
 </ul>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
@@ -1159,16 +1171,16 @@ PDF
 </div>
 <div id="tabset-7-2">
 <ol type="1">
-<li>Download/Copy the folder <code>r4a/2025/practice/</code> and locate the file <code>2_Rmarkdown_Practice.Rmd</code> and the .<code>bib</code> file by following this link:</li>
+<li>Download/Copy the folder <code>r4a/2025/practice/</code> by following this link:</li>
 </ol>
 <div class="sourceCode" id="cb27"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb27-1"><a></a>https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2025/practice/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ol start="2" type="1">
-<li>install the {<code>bookdown</code>} package</li>
+<li>(<strong><em>optional</em></strong>) install the {<code>bookdown</code>} package</li>
 </ol>
 <div class="sourceCode" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">install.packages</span>(<span class="st">"bookdown"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div id="tabset-7-3">
-<p>Contact me, send me your <code>.Rmd</code> and related files (e.g.&nbsp;<code>references.bib</code>) here online 👋</p>
+<p>Contact me, send me your <code>.Rmd</code>, the output (ex: PDF), and related files (e.g.&nbsp;<code>references.bib</code>) here online 👋</p>
 <center>
 or
 </center>
