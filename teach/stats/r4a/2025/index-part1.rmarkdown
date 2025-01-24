@@ -33,7 +33,9 @@ pagetitle: "Report with R Markdown - part 1"
 footer: "Report with R Markdown - R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 35px;vertical-align: middle;'> Università di Pisa, Jan 2025 - <em>presented by </em> Thomas Huet"
 ---
 
+
 ## Introduction
+
 
 ```{r echo=FALSE, eval=FALSE}
 ## Not run
@@ -54,6 +56,7 @@ library(leaflet)
 library(plotly)
 library(rgl)
 ```
+
 
 ::: {.panel-tabset}
 
@@ -102,9 +105,11 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 
 A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png' style='height: 45px;vertical-align: middle;'> Quarto document (`.qmd`) using <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png' style='height: 45px;vertical-align: middle;'> reveal.js (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'>) hosted on <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png' style='height: 45px;vertical-align: middle;'> GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/index-part1.qmd)), prepared in RStudio (*aka* posit).
 
+
 ```{=html}
 <script src="https://quarto.org/docs/presentations/revealjs/"></script>
 ```
+
 
 
 :::
@@ -261,9 +266,11 @@ A new document is created.
 ### GitHub <small>preview</small>
 
 
+
 ```{=html}
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 ```
+
 
 ### Knit
 
@@ -434,17 +441,21 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 ### Syntax
 
 
+
 ```{=html}
 <iframe width="1000" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
 ```
+
 <small><https://rmarkdown.rstudio.com/authoring_basics.html></small>
 \
 
 ### Editor
 
+
 ```{=html}
 <iframe width="1000" height="350" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
 ```
+
 <small><https://stackedit.io/app#></small>
 \
 
@@ -453,9 +464,11 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 
 Text conversion (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.) with Pandoc
 
+
 ```{=html}
 <iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 ```
+
 <small><https://pandoc.org/try/></small>
 \
 \
@@ -510,6 +523,7 @@ Below this text there's a line separator
 </div>  
 
 Below this text there's a line separator
+
 ---
 \
 \
@@ -1184,3 +1198,4 @@ It's easy to retrieve [this reference in Google Scholar](https://scholar.google.
 
 
 ## References
+
