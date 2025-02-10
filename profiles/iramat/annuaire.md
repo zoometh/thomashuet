@@ -2,39 +2,43 @@
 
 <p align="center">
 <b>Thomas HUET<b><br>
-<em>Ingenieur de Recherche, bases de donnees</em><br>
+<em>Ingénieur de Recherche, bases de données</em><br>
 <img src="IRAMAT_profile.jpg" height='300px' align="center"/><br>
 </p>
 
 
-**Prénom**
-Thomas
-**Nom**
-HUET
-**Numéro de téléphone**
-06 70 54 88 31
-**Adresse e-mail** 
-xxx
-**Présentation** 
+**Prénom**  
+Thomas  
 
-Ingenieur de Recherche, participe a l'interoperabilite des donnees produites a sein du laboratoire et leur alignement avec les standards internationaux, ainsi que leur visibilite. Il assure par ailleurs la conception et le developpenets d'outils d'analyse (programmation) des artefacts archeologiques.
+**Nom**  
+HUET  
 
----
+**Adresse e-mail**   
+thomas.huet@cnrs.fr  
 
-**Thème de recherche**
-Archeologie computationelle, Iconographie ancienne, diffusion du Neolithique, patrimoine culturel, 
+**Numéro de téléphone**  
+01 69 08 51 28  
 
-**Projets**
-ERC Rural Riches ( https://www.universiteitleiden.nl/en/research/research-projects/archaeology/rural-riches#tab-1 )
-FEDER FERMAPYR ( http://www.arscan.fr/gama/programmes/fermapyr/ )
-PCR FERAPO
+**Adresse postale**  
+IRAMAT-UMR 7065
+site CEA de Saclay, bâtiment 637, bureau 115
+91191 Gif-sur-Yvette cedex, FRANCE
+
+**Présentation**   
+
+Archéologue, spécialiste en archéologie computationnelle. Docteur en archéologie de l'Université Nice Sophia-Antipolis (2012). Entre 2012 et 2025, j'ai occupé différents postes au CNRS et à l'université, allant de technicien à postdoctorant, et ce dans trois pays (France, Angleterre, Espagne). J'ai travaillé en archéologie sur des sujets très variés, allant de la Préhistoire récente jusqu'au Moyen Âge, et selon des approches également très diverses : de la conception de systèmes d'information archéologiques aux analyses statistiques.
+
+Depuis février 2025, je suis ingénieur de recherche spécialisé en bases de données à l'IRAMAT. Dans ce cadre, je me concentre sur l'infrastructuration et l’interopérabilité des données de la recherche, en accord avec les principes de la Science Ouverte et du modèle FAIR.
+
 
 **Principales collaborations**
-University of Oxford
-UMR 8546 AOROC-ENS
+
+- UMR 8546 AOROC-ENS, Paris, France
+- University of Oxford, School of Archaeology, Oxford, Royaume-Uni
+- Universitat Autònoma de Barcelona, Departament de Prehistòria, Barcelona, Espagne
+- IMF-CSIC, Barcelona, Espagne
 
 
-**Opérations de terrain**
-Prospections thématiques sur l'extraction et la réduction des minerais de fer dans l'est du massif pyrénéen
+**Resources externes**
 
-**Publications (sélection)**
+[GitHub](https://github.com/zoometh/thomashuet)
