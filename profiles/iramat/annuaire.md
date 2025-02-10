@@ -26,7 +26,7 @@ site CEA de Saclay, bâtiment 637, bureau 115
 
 **Présentation**   
 
-Archéologue, spécialiste en archéologie computationnelle. Docteur en archéologie de l'Université Nice Sophia-Antipolis (2012). Entre 2012 et 2025, j'ai occupé différents postes au CNRS et à l'université, allant de technicien à postdoctorant, et ce dans trois pays (France, Angleterre, Espagne). J'ai travaillé en archéologie sur des sujets très variés, allant de la Préhistoire récente jusqu'au Moyen Âge, et selon des approches également très diverses : de la conception de systèmes d'information archéologiques aux analyses statistiques.
+Archéologue, spécialisé en archéologie computationnelle. Docteur en archéologie de l'Université Nice Sophia-Antipolis (2012). Entre 2012 et 2025, j'ai occupé différents postes au CNRS et à l'université, allant de technicien à postdoctorant, dans trois pays (France, Angleterre, Espagne). J'ai travaillé sur des sujets très variés, allant de la Préhistoire récente jusqu'au Moyen Âge, et selon des approches computationnelles aussi diverses : de la conception de systèmes d'information archéologiques aux analyses statistiques.
 
 Depuis février 2025, je suis ingénieur de recherche spécialisé en bases de données à l'IRAMAT. Dans ce cadre, je me concentre sur l'infrastructuration et l’interopérabilité des données de la recherche, en accord avec les principes de la Science Ouverte et du modèle FAIR.
 
