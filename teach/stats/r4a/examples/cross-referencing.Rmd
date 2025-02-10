@@ -12,5 +12,5 @@ model <- lm(B ~ L, data = Handaxes)
 abline(lm(model))
 ```
 
-The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB))
+With a dataset of `r nrow(Handaxes)` axes, the distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = `r round(model$coefficients[2], 2)`,  Fig. \@ref(fig:maxLmaxB)). The mean length (L) is `r round(mean(Handaxes$L), 1)` cm.
 
