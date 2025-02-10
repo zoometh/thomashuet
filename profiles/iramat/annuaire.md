@@ -1,7 +1,7 @@
 
 
 <p align="center">
-<b>Thomas HUET<b><br>
+<b>Thomas HUET</b><br>
 <em>Ingénieur de Recherche, bases de données</em><br>
 <img src="IRAMAT_profile.jpg" height='300px' align="center"/><br>
 </p>
