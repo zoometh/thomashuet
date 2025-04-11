@@ -242,10 +242,10 @@ Thomas Huet, University of Oxford, CNRS-IRAMAT
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
 <div class="panel-tabset">
-<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">AFDS</a></li><li><a href="#tabset-1-3">About this presentation</a></li></ul>
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">AFDS</a></li><li><a href="#tabset-1-3">AFDS example</a></li><li><a href="#tabset-1-4">About this presentation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1">
-<p><span class="r-md">R Markdown</span> is an <span class="afds">authoring framework for data science</span> (AFDS). It combines R code chunks and narrative parts with – mainly – Markdown syntax</p>
+<p><span class="r-md">R Markdown</span> is an <span class="afds">authoring framework for data science</span> (AFDS), also called “Literate programming”. It combines R code chunks and narrative parts with – mainly – Markdown syntax</p>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -314,6 +314,18 @@ web
 </table>
 </div>
 <div id="tabset-1-3">
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>data <span class="ot">&lt;-</span> openxlsx<span class="sc">::</span><span class="fu">read.xlsx</span>(<span class="st">"data.xlsx"</span>, </span>
+<span id="cb1-2"><a></a>                            <span class="at">colNames =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb1-3"><a></a>                            <span class="at">rowNames =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-4"><a></a>MNI <span class="ot">&lt;-</span> <span class="fu">sum</span>(data<span class="sc">$</span>MNI)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a>There's currently 'r MNI' zooarchaeological remains</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column" style="width:50%;">
+<p>There’s currently 202 zooarchaeological remains</p>
+</div></div>
+</div>
+<div id="tabset-1-4">
 <p>A <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png" style="height: 45px;vertical-align: middle;"> Quarto document (<code>.qmd</code>) using <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png" style="height: 45px;vertical-align: middle;"> reveal.js (<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 45px;vertical-align: middle;">) hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png" style="height: 45px;vertical-align: middle;"> GitHub (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/index-part1.qmd">here</a>), prepared in RStudio (<em>aka</em> posit).</p>
 <script src="https://quarto.org/docs/presentations/revealjs/"></script>
 </div>
@@ -751,7 +763,7 @@ run Visual R Markdown
 <p>blockquotes</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="at">&gt; I am a blockquote</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a><span class="at">&gt; I am a blockquote</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <blockquote>
 <p>I am a blockquote</p>
@@ -759,8 +771,8 @@ run Visual R Markdown
 <p>line separator</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a>Below this text there's a line separator</span>
-<span id="cb2-2"><a></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a>Below this text there's a line separator</span>
+<span id="cb4-2"><a></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="below-this-text-theres-a-line-separator" class="slide level2">
 <h2>Below this text there’s a line separator</h2>
@@ -793,8 +805,8 @@ run Visual R Markdown
 <p>Text styling can be extended done with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"> markup languages</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb3-1"><a></a><span class="dt">&lt;</span><span class="kw">h2</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="dt">&gt;</span>A Blue Heading<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
-<span id="cb3-2"><a></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:red;"</span><span class="dt">&gt;</span>A red paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb5-1"><a></a><span class="dt">&lt;</span><span class="kw">h2</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="dt">&gt;</span>A Blue Heading<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb5-2"><a></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:red;"</span><span class="dt">&gt;</span>A red paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <h1 style="color:blue;">
 A Blue Heading
@@ -814,9 +826,9 @@ A red paragraph.
 <div id="tabset-7-1">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a></a><span class="ss">- </span>Numbered  </span>
-<span id="cb4-2"><a></a><span class="ss">  1. </span>first element</span>
-<span id="cb4-3"><a></a><span class="ss">  2. </span>second element</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="ss">- </span>Numbered  </span>
+<span id="cb6-2"><a></a><span class="ss">  1. </span>first element</span>
+<span id="cb6-3"><a></a><span class="ss">  2. </span>second element</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Numbered
@@ -831,13 +843,13 @@ A red paragraph.
 <div id="tabset-7-2">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="ss">- </span>Unnumbered</span>
-<span id="cb5-2"><a></a><span class="ss">  * </span>first element</span>
-<span id="cb5-3"><a></a><span class="ss">  * </span>second element</span>
-<span id="cb5-4"><a></a><span class="ss">  * </span>third element</span>
-<span id="cb5-5"><a></a><span class="ss">    - </span>third element - sub 1</span>
-<span id="cb5-6"><a></a><span class="ss">      + </span>third element - sub 1 - subsub 1</span>
-<span id="cb5-7"><a></a><span class="ss">      + </span>third element - sub 1 - subsub 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="ss">- </span>Unnumbered</span>
+<span id="cb7-2"><a></a><span class="ss">  * </span>first element</span>
+<span id="cb7-3"><a></a><span class="ss">  * </span>second element</span>
+<span id="cb7-4"><a></a><span class="ss">  * </span>third element</span>
+<span id="cb7-5"><a></a><span class="ss">    - </span>third element - sub 1</span>
+<span id="cb7-6"><a></a><span class="ss">      + </span>third element - sub 1 - subsub 1</span>
+<span id="cb7-7"><a></a><span class="ss">      + </span>third element - sub 1 - subsub 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
 <li>Unnumbered
@@ -868,10 +880,10 @@ A red paragraph.
 <div class="column" style="width:40%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="pp">|</span> Header 1 <span class="pp">|</span> Header 2 <span class="pp">|</span></span>
-<span id="cb6-2"><a></a><span class="pp">| ---</span> <span class="pp">| -----------</span> <span class="pp">|</span></span>
-<span id="cb6-3"><a></a><span class="pp">|</span> Row 1 <span class="pp">|</span> Text <span class="pp">|</span></span>
-<span id="cb6-4"><a></a><span class="pp">|</span> Row 2 <span class="pp">|</span> Another text <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="pp">|</span> Header 1 <span class="pp">|</span> Header 2 <span class="pp">|</span></span>
+<span id="cb8-2"><a></a><span class="pp">| ---</span> <span class="pp">| -----------</span> <span class="pp">|</span></span>
+<span id="cb8-3"><a></a><span class="pp">|</span> Row 1 <span class="pp">|</span> Text <span class="pp">|</span></span>
+<span id="cb8-4"><a></a><span class="pp">|</span> Row 2 <span class="pp">|</span> Another text <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div><div class="column" style="width:10%;">
 <center>
@@ -880,10 +892,10 @@ or
 </div><div class="column" style="width:50%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="pp">|</span> Header 1    <span class="pp">|</span> Header 2    <span class="pp">|</span></span>
-<span id="cb7-2"><a></a><span class="pp">| -----------</span> <span class="pp">| -----------</span> <span class="pp">|</span></span>
-<span id="cb7-3"><a></a><span class="pp">|</span> Row 1       <span class="pp">|</span> Text        <span class="pp">|</span></span>
-<span id="cb7-4"><a></a><span class="pp">|</span> Row 2       <span class="pp">|</span> Another text<span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="pp">|</span> Header 1    <span class="pp">|</span> Header 2    <span class="pp">|</span></span>
+<span id="cb9-2"><a></a><span class="pp">| -----------</span> <span class="pp">| -----------</span> <span class="pp">|</span></span>
+<span id="cb9-3"><a></a><span class="pp">|</span> Row 1       <span class="pp">|</span> Text        <span class="pp">|</span></span>
+<span id="cb9-4"><a></a><span class="pp">|</span> Row 2       <span class="pp">|</span> Another text<span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div></div>
 <br>
@@ -917,9 +929,9 @@ or
 <p>Use <code>:----:</code>, <code>:---</code>, or <code>---:</code> to align</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="pp">|</span> Left        <span class="pp">|</span>    Center   <span class="pp">|</span>         Right <span class="pp">|</span></span>
-<span id="cb8-2"><a></a><span class="pp">| :---</span>        <span class="pp">|    :----:</span>   <span class="pp">|          ---:</span> <span class="pp">|</span></span>
-<span id="cb8-3"><a></a><span class="pp">|</span> Header      <span class="pp">|</span> Title       <span class="pp">|</span> Hello         <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb10-1"><a></a><span class="pp">|</span> Left        <span class="pp">|</span>    Center   <span class="pp">|</span>         Right <span class="pp">|</span></span>
+<span id="cb10-2"><a></a><span class="pp">| :---</span>        <span class="pp">|    :----:</span>   <span class="pp">|          ---:</span> <span class="pp">|</span></span>
+<span id="cb10-3"><a></a><span class="pp">|</span> Header      <span class="pp">|</span> Title       <span class="pp">|</span> Hello         <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br>
 </p>
@@ -946,13 +958,13 @@ or
 <p>To create in <span class="r-code">code chunks</span></p>
 <div class="div-code">
 <p><small>code chunk</small><br></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb9-2"><a></a><span class="fu">library</span>(kableExtra)</span>
-<span id="cb9-3"><a></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
-<span id="cb9-4"><a></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
-<span id="cb9-5"><a></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb9-6"><a></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F, <span class="at">font_size =</span> <span class="dv">20</span>)</span>
-<span id="cb9-7"><a></a>dtt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb11-2"><a></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb11-3"><a></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
+<span id="cb11-4"><a></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
+<span id="cb11-5"><a></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb11-6"><a></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F, <span class="at">font_size =</span> <span class="dv">20</span>)</span>
+<span id="cb11-7"><a></a>dtt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1020,10 +1032,10 @@ or
 </div>
 <div class="div-code">
 <p><small>code chunk</small><br></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
-<span id="cb10-2"><a></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"My styled table"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb10-3"><a></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F, <span class="at">html_font =</span> <span class="st">"Cambria"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span>
-<span id="cb10-4"><a></a>dtt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
+<span id="cb12-2"><a></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"My styled table"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb12-3"><a></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F, <span class="at">html_font =</span> <span class="st">"Cambria"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span>
+<span id="cb12-4"><a></a>dtt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1125,14 +1137,14 @@ or
 <p>Markdown notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="100"></p>
 <hr>
 <p>HTML notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span><span class="ot"> width</span><span class="op">=</span><span class="st">100</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span><span class="ot"> width</span><span class="op">=</span><span class="st">100</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="100"></p>
 </div>
@@ -1140,14 +1152,14 @@ or
 <p>Markdown notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="al">![](C:/Rprojects/thomashuet/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a><span class="al">![](C:/Rprojects/thomashuet/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img data-src="C:/Rprojects/thomashuet/teach/www/logo.png" width="100"></p>
 <hr>
 <p>HTML notation</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"C:/Rprojects/thomashuet/teach/www/logo.png"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">""</span><span class="ot"> width</span><span class="op">=</span><span class="st">100</span><span class="dt">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"C:/Rprojects/thomashuet/teach/www/logo.png"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">""</span><span class="ot"> width</span><span class="op">=</span><span class="st">100</span><span class="dt">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="C:/Rprojects/thomashuet/teach/www/logo.png" alt="" width="100"></p>
 </div>
@@ -1173,15 +1185,15 @@ or
 <div class="column" style="width:50%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a>Reconnais-toi  </span>
-<span id="cb15-2"><a></a>Cette adorable personne c'est toi  </span>
-<span id="cb15-3"><a></a>Sous le grand chapeau canotier  </span>
-<span id="cb15-4"><a></a>Oeil</span>
-<span id="cb15-5"><a></a>Nez</span>
-<span id="cb15-6"><a></a>Ta Bouche  </span>
-<span id="cb15-7"><a></a>Voici l’ovale de ta figure  </span>
-<span id="cb15-8"><a></a>Ton cou Exquis  </span>
-<span id="cb15-9"><a></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a>Reconnais-toi  </span>
+<span id="cb17-2"><a></a>Cette adorable personne c'est toi  </span>
+<span id="cb17-3"><a></a>Sous le grand chapeau canotier  </span>
+<span id="cb17-4"><a></a>Oeil</span>
+<span id="cb17-5"><a></a>Nez</span>
+<span id="cb17-6"><a></a>Ta Bouche  </span>
+<span id="cb17-7"><a></a>Voici l’ovale de ta figure  </span>
+<span id="cb17-8"><a></a>Ton cou Exquis  </span>
+<span id="cb17-9"><a></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Reconnais-toi<br>
 Cette adorable personne c’est toi<br>
@@ -1193,15 +1205,15 @@ Ton cou Exquis<br>
 </div><div class="column" style="width:50%;">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a>Reconnais-toi\</span>
-<span id="cb16-2"><a></a>Cette adorable personne c'est toi\</span>
-<span id="cb16-3"><a></a>Sous le grand chapeau canotier\</span>
-<span id="cb16-4"><a></a>Oeil\ </span>
-<span id="cb16-5"><a></a>Nez\</span>
-<span id="cb16-6"><a></a>Ta Bouche\</span>
-<span id="cb16-7"><a></a>Voici l'ovale de ta figure\</span>
-<span id="cb16-8"><a></a>Ton cou Exquis\</span>
-<span id="cb16-9"><a></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a>Reconnais-toi\</span>
+<span id="cb18-2"><a></a>Cette adorable personne c'est toi\</span>
+<span id="cb18-3"><a></a>Sous le grand chapeau canotier\</span>
+<span id="cb18-4"><a></a>Oeil\ </span>
+<span id="cb18-5"><a></a>Nez\</span>
+<span id="cb18-6"><a></a>Ta Bouche\</span>
+<span id="cb18-7"><a></a>Voici l'ovale de ta figure\</span>
+<span id="cb18-8"><a></a>Ton cou Exquis\</span>
+<span id="cb18-9"><a></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Reconnais-toi<br>
 Cette adorable personne c’est toi<br>
@@ -1221,11 +1233,11 @@ Ton cou Exquis<br>
 <h2>Titles</h2>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a><span class="fu"># Header level 1</span></span>
-<span id="cb17-2"><a></a></span>
-<span id="cb17-3"><a></a><span class="fu">## Header level 2</span></span>
-<span id="cb17-4"><a></a></span>
-<span id="cb17-5"><a></a><span class="fu">### ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a></a><span class="fu"># Header level 1</span></span>
+<span id="cb19-2"><a></a></span>
+<span id="cb19-3"><a></a><span class="fu">## Header level 2</span></span>
+<span id="cb19-4"><a></a></span>
+<span id="cb19-5"><a></a><span class="fu">### ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="panel-tabset">
 <ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Avoid numbering</a></li><li><a href="#tabset-11-2">.. add an anchor</a></li><li><a href="#tabset-11-3">.. and a hyperlink</a></li></ul>
@@ -1233,22 +1245,22 @@ Ton cou Exquis<br>
 <div id="tabset-11-1">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a><span class="fu">### My Header level 3 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a></a><span class="fu">### My Header level 3 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-11-2">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-11-3">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a></a></span>
-<span id="cb20-2"><a></a>Lorem ipsum dolor sit amet, etc. (**see <span class="co">[</span><span class="ot">My Header level 3</span><span class="co">](#bookmarks)</span>). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
-<span id="cb20-3"><a></a></span>
-<span id="cb20-4"><a></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a></a></span>
+<span id="cb22-2"><a></a>Lorem ipsum dolor sit amet, etc. (**see <span class="co">[</span><span class="ot">My Header level 3</span><span class="co">](#bookmarks)</span>). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+<span id="cb22-3"><a></a></span>
+<span id="cb22-4"><a></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -1263,23 +1275,23 @@ Ton cou Exquis<br>
 <div id="tabset-12-1">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2025/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2025/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>part 2: <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2025/2_R%20Markdown_Practice">Practice</a></p>
 </div>
 <div id="tabset-12-2">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a></a><span class="co">[</span><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span><span class="ot">{width=170px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a></a><span class="co">[</span><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span><span class="ot">{width=170px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists"><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="170"></a></p>
 </div>
 <div id="tabset-12-3">
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb23-1"><a></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="dt">&gt;</span></span>
-<span id="cb23-2"><a></a>    <span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"width:170px;"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"Logo"</span><span class="dt">&gt;</span></span>
-<span id="cb23-3"><a></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb25-1"><a></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="dt">&gt;</span></span>
+<span id="cb25-2"><a></a>    <span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"width:170px;"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"Logo"</span><span class="dt">&gt;</span></span>
+<span id="cb25-3"><a></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists" target="_blank"> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="width:170px;" alt="Logo"> </a></p>
 </div>
@@ -1291,14 +1303,14 @@ Ton cou Exquis<br>
 <p>The header <code>## Practice</code> has the anchor <code>#practice-anchor</code> inside curly brackets:</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb24-1"><a></a><span class="fu">## Practice {#practice-anchor}</span></span>
-<span id="cb24-2"><a></a></span>
-<span id="cb24-3"><a></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a><span class="fu">## Practice {#practice-anchor}</span></span>
+<span id="cb26-2"><a></a></span>
+<span id="cb26-3"><a></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>It can be called anywhere in the text by:</p>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a>After this theoretical part, you will do a <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice-anchor)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a>After this theoretical part, you will do a <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice-anchor)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>After this theoretical part, you will do a <a href="#/practice">practice</a><br>
 <br>
@@ -1308,9 +1320,9 @@ Ton cou Exquis<br>
 <h2>Footnotes</h2>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb26" data-code-line-numbers="1|4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a>A simple footnote<span class="ot">[^66]</span>.</span>
-<span id="cb26-2"><a></a></span>
-<span id="cb26-3"><a></a><span class="ot">[^10]: </span>This is a footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb28" data-code-line-numbers="1|4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a></a>A simple footnote<span class="ot">[^66]</span>.</span>
+<span id="cb28-2"><a></a></span>
+<span id="cb28-3"><a></a><span class="ot">[^10]: </span>This is a footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>A simple footnote<a href="#/footnotes" class="footnote-ref" id="fnref8" role="doc-noteref" data-footnote-href="#/fn8" onclick=""><sup>8</sup></a>.</p>
 <div class="callout callout-note callout-titled callout-style-default">
@@ -1336,14 +1348,14 @@ Ton cou Exquis<br>
 <p>Variables calculated inside the <span class="r-code">code chunks</span></p>
 <div class="div-code">
 <p><small>code chunk</small></p>
-<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a><span class="fu">library</span>(archdata)</span>
-<span id="cb27-2"><a></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
-<span id="cb27-3"><a></a>number.of.axes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(Handaxes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a><span class="fu">library</span>(archdata)</span>
+<span id="cb29-2"><a></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
+<span id="cb29-3"><a></a>number.of.axes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(Handaxes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>can be called in the <span class="r-text">narrative parts</span></p>
 <div class="div-text">
 <p><small>narrative part</small></p>
-<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a></a><span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>Furze Platt dataset counts 'r number.of.axes' axes<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a></a><span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>Furze Platt dataset counts 'r number.of.axes' axes<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><small>Furze Platt dataset counts 600 axes</small></p>
 <div class="callout callout-warning callout-titled callout-style-default">
@@ -1365,12 +1377,12 @@ Ton cou Exquis<br>
 <div id="tabset-13-2">
 <div class="div-code">
 <p><small>code chunk</small></p>
-<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>{r maxLmaxB, echo<span class="ot">=</span><span class="cn">FALSE</span>, fig.align<span class="ot">=</span><span class="st">"center"</span>, fig.cap<span class="ot">=</span> <span class="st">"Axes L/B ratio"</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a><span class="fu">library</span>(archdata)</span>
-<span id="cb30-2"><a></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
-<span id="cb30-3"><a></a><span class="fu">plot</span>(Handaxes<span class="sc">$</span>L, Handaxes<span class="sc">$</span>B)</span>
-<span id="cb30-4"><a></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(B <span class="sc">~</span> L, <span class="at">data =</span> Handaxes)</span>
-<span id="cb30-5"><a></a><span class="fu">abline</span>(<span class="fu">lm</span>(model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a>{r maxLmaxB, echo<span class="ot">=</span><span class="cn">FALSE</span>, fig.align<span class="ot">=</span><span class="st">"center"</span>, fig.cap<span class="ot">=</span> <span class="st">"Axes L/B ratio"</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a><span class="fu">library</span>(archdata)</span>
+<span id="cb32-2"><a></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
+<span id="cb32-3"><a></a><span class="fu">plot</span>(Handaxes<span class="sc">$</span>L, Handaxes<span class="sc">$</span>B)</span>
+<span id="cb32-4"><a></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(B <span class="sc">~</span> L, <span class="at">data =</span> Handaxes)</span>
+<span id="cb32-5"><a></a><span class="fu">abline</span>(<span class="fu">lm</span>(model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -1384,7 +1396,7 @@ Ton cou Exquis<br>
 </div>
 <div class="div-text">
 <p><small>narrative part</small></p>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a><span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients<span class="co">[</span><span class="ot">2</span><span class="co">]</span>, 2)',  Fig. \@ref(fig:maxLmaxB))<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a><span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients<span class="co">[</span><span class="ot">2</span><span class="co">]</span>, 2)',  Fig. \@ref(fig:maxLmaxB))<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><small>The distribution of the maximum length (L) and maximum breadth (B) shows a R<sup>2</sup> = 0.42, Fig. @ref(fig:maxLmaxB))</small></p>
 <div class="callout callout-warning callout-titled callout-style-default">
@@ -1422,10 +1434,10 @@ Ton cou Exquis<br>
 <p>The <code>.bib</code> file is referenced in the <span class="r-yaml">YAML header</span>.</p>
 <div class="div-yaml">
 <p><small>header YAML</small></p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb32-1"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> temp</span></span>
-<span id="cb32-2"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
-<span id="cb32-3"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
-<span id="cb32-4"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb34-1"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> temp</span></span>
+<span id="cb34-2"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb34-3"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb34-4"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <center>
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"></p>
@@ -1439,7 +1451,7 @@ Ton cou Exquis<br>
 <div id="tabset-14-3">
 <div class="div-text">
 <p><small>narrative part</small></p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>published by Yihui Xie <span class="citation" data-cites="Xie19">(<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span></p>
 <p><br>

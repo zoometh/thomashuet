@@ -99,7 +99,34 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
 
 ### AFDS example
 
+:::: {.columns}
+::: {.column width="50%"}
 
+```{.r}
+data <- openxlsx::read.xlsx("data.xlsx", 
+                            colNames = TRUE, 
+                            rowNames = TRUE)
+MNI <- sum(data$MNI)
+```
+There's currently 'r MNI' zooarchaeological remains
+
+:::
+
+
+::: {.column width="50%"}
+
+```{r echo = FALSE}
+data <- openxlsx::read.xlsx("data.xlsx", 
+                            colNames = TRUE, 
+                            rowNames = TRUE)
+MNI <- sum(data$MNI)
+```
+
+There's currently `r MNI` zooarchaeological remains
+
+:::
+
+::::
 
 ### About this presentation
 
