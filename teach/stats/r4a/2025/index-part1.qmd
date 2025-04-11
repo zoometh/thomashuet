@@ -59,7 +59,7 @@ library(rgl)
 
 ### R Markdown
 
-<span class="r-md">R Markdown</span> is an <span class="afds">authoring framework for data science</span> (AFDS). It combines R code chunks and narrative parts with -- mainly -- Markdown syntax
+<span class="r-md">R Markdown</span> is an <span class="afds">authoring framework for data science</span> (AFDS), also called "Literate programming". It combines R code chunks and narrative parts with -- mainly -- Markdown syntax
 
 ::: {.callout-note}
 R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png' style='height: 45px;vertical-align: middle;'> `.R` + <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> `.md` for Markdown
@@ -96,6 +96,9 @@ AFDS are used to create data-driven documents (reports) with a notebook interfac
   </tr>
 </tbody>
 </table>
+
+### AFDS example
+
 
 
 ### About this presentation
