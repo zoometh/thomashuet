@@ -54,17 +54,25 @@ lp {
   border-radius: 10px; /* Adjust the border radius for roundness of corners */
 }
 
+.col-title {
+  /* for Quarto columns titles */
+  text-align: center;
+  font-size: smaller;
+}
+
+notes {
+  color: white;
+  background-color: dodgerblue;
+}
+
+/* Fonts */
+
 .r-md {
   /* for the text: "R Markdown" */
   background-color: #2a75dd87;
   color: black;
   padding: 2px; /* Adjust the padding value as needed */
   border-radius: 10px; /* Adjust the border radius for roundness of corners */
-}
-
-notes {
-  color: white;
-  background-color: dodgerblue;
 }
 
 /* Quarto natives */
