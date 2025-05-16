@@ -60,6 +60,13 @@ lp {
   font-size: smaller;
 }
 
+section[data-background-image*="chatgpt_neo_1.png"] {
+  background-size: 30%;  /* Or 'contain', or 'cover', or a specific px/em value */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 notes {
   color: white;
   background-color: dodgerblue;
