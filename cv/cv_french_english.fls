@@ -173,6 +173,16 @@ INPUT ..\img\gmail.png
 INPUT ..\img\gmail.png
 INPUT ..\img\gmail.png
 INPUT ..\img\gmail.png
+INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ectt1000.tfm
+INPUT ..\img\gmail.png
+INPUT ..\img\gmail.png
+INPUT ..\img\gmail.png
+INPUT ..\img\gmail.png
+INPUT ..\img\gmail.png
+INPUT ..\img\gmail.png
+INPUT ..\img\webpro.png
+INPUT ..\img\webpro.png
+INPUT ..\img\webpro.png
 INPUT ..\img\webpro.png
 INPUT ..\img\webpro.png
 INPUT ..\img\webpro.png
@@ -203,6 +213,9 @@ INPUT ..\img\rgate.png
 INPUT ..\img\rgate.png
 INPUT ..\img\rgate.png
 INPUT ..\img\rgate.png
+INPUT ..\img\phone.png
+INPUT ..\img\phone.png
+INPUT ..\img\phone.png
 INPUT ..\img\phone.png
 INPUT ..\img\phone.png
 INPUT ..\img\phone.png
@@ -213,8 +226,8 @@ INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecrm
 INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbx1440.tfm
 INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecbi1440.tfm
 INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\ecti1000.tfm
-INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1000.tfm
 INPUT ..\img\link_darkblue.png
 INPUT ..\img\link_darkblue.png
 INPUT ..\img\link_darkblue.png
@@ -402,6 +415,8 @@ INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\
 INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1440.pk
 INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
 INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1000.pk
+INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
+INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk
 INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1000.pk
 INPUT C:\Users\TH282424\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk

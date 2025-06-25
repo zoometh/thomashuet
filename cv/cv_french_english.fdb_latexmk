@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1749713616.6242 "c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex" "cv_french_english.pdf" "cv_french_english" 1749713690.4194 2
+["pdflatex"] 1750856168.55832 "c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex" "cv_french_english.pdf" "cv_french_english" 1750856170.66289 2
   "../img/app-github-rect.png" 1739182519 8957 37bbc299b6c610447386375fcf8ad8e0 ""
   "../img/github.png" 1739182520 23729 21fa9344e32cd2efdc7d66119c7656e7 ""
   "../img/gmail.png" 1739182520 11074 90c4d618f2e87060b30d035a6b9299ac ""
@@ -27,6 +27,7 @@
   "C:/Users/TH282424/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1000.pk" 1749713687 23808 ed656dc9d7ab61906b6077a3ba1b5d13 ""
   "C:/Users/TH282424/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecss1000.pk" 1749713679 19932 68e67ab4969d87456dd100a6bb7c6501 ""
   "C:/Users/TH282424/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ecti1000.pk" 1749713684 31892 9464d4fb95eb6b782d2e8699b9ec0e6c ""
+  "C:/Users/TH282424/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1750855538 20028 abbb2e6ebad4991a2130a63580d70a6e ""
   "C:/Users/TH282424/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1749713682 11548 9b449ae7eb56b08051477ff842d0e210 ""
   "C:/Users/TH282424/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1744376899 12037541 7390289b275d2132a195e58732ba29b1 ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecbi1000.tfm" 993061906 2900 ce550da2a8b866861d2ce2b29bee03eb ""
@@ -42,6 +43,7 @@
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecss0800.tfm" 993062232 3132 210522a5f285ef2b785f82479c3624db ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecss1000.tfm" 993062234 3140 7eb06dfefee71119860002af13820d26 ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecti1000.tfm" 993062320 2840 5606e1a681c23005308de9d61c09a8ff ""
+  "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ectt1000.tfm" 993062340 1348 d70ddf2d5d512b838e50a335e385e919 ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993062508 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1247596667 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -118,10 +120,10 @@
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "C:/Users/TH282424/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex" 1749713592 92432 bee356d1f712fd55a3bfa475e397fe13 ""
-  "cv_french_english.aux" 1749713674 1482 87e3becc7c5eec734fa490758c78cb09 "pdflatex"
-  "cv_french_english.out" 1749713674 1765 8ef8f0f2dfb61d1b05e76cfbc178c06e "pdflatex"
-  "cv_french_english.tex" 1749713592 92432 bee356d1f712fd55a3bfa475e397fe13 ""
+  "c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex" 1750856165 93075 5410fb28dfe4e565da4ea8942a8511dd ""
+  "cv_french_english.aux" 1750856170 1484 3dec65ed1003ea33b5fd47552e578b45 "pdflatex"
+  "cv_french_english.out" 1750856170 1765 8ef8f0f2dfb61d1b05e76cfbc178c06e "pdflatex"
+  "cv_french_english.tex" 1750856165 93075 5410fb28dfe4e565da4ea8942a8511dd ""
   (generated)
   "cv_french_english.aux"
   "cv_french_english.log"
