@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  25 JUN 2025 14:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  17 NOV 2025 15:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -811,28 +811,56 @@ File: ../img/lod-nakala.png Graphic file (type png)
 <use ../img/lod-nakala.png>
 Package pdftex.def Info: ../img/lod-nakala.png  used on input line 632.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-File: ../img/link_darkblue.png Graphic file (type png)
-<use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 666.
-(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+
+c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:660: Undefined control sequence.
+l.660 \enfr
+           {"Visualisation de données avancées avec Python", Formations du...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:665: Undefined control sequence.
+l.665 \enfr
+           {"PyMoDAQ - Instrumentation en Python : utilisation et écriture ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:670: Undefined control sequence.
+l.670 \enfr
+           {"Concevoir une interface graphique en Python", Formations du Ser...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
 Package pdftex.def Info: ../img/link_darkblue.png  used on input line 686.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 736.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 706.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img/link_darkblue.png Graphic file (type png)
+<use ../img/link_darkblue.png>
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 756.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 
 
 [8 <../img/prj_neonet-blue.png> <../img/prj_leapfrog-blue.png> <../img/lod-nakala.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 932--932
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 952--952
 
  []
 
 
-
-[9]
 
 [10] (cv_french_english.aux)
  ***********
@@ -856,11 +884,11 @@ Here is how much of TeX's memory you used:
  36628 multiletter control sequences out of 15000+600000
  569264 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,933b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,933b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi525\ecss0800.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0700.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on cv_french_english.pdf (10 pages, 566585 bytes).
+Output written on cv_french_english.pdf (10 pages, 567426 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
+ 648 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
  76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
