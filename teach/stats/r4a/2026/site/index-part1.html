@@ -1,0 +1,2024 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<link href="./logo.png" rel="icon" type="image/png">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-226bd0f977fa82dfae4534cac220d79a.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.23">
+
+  <meta name="author" content="Thomas Huet">
+  <title>R4arch – Report with R Markdown - part 1</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-00ac2f6af1389919a18f42df5b7c0002.css">
+  <link rel="stylesheet" href="https://zoometh.github.io/thomashuet/css/quarto.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+
+  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <style>
+    .custom-small table {
+      font-size: .5em
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" data-background-opacity="0.2" data-background-size="33%" class="quarto-title-block center">
+  <h1 class="title">Authoring and publishing with <span class="r-md">R Markdown</span></h1>
+  <p class="subtitle">part 1: Basics and Markdown syntax</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Thomas Huet 
+</div>
+        <p class="quarto-title-affiliation">
+            <span style="font-size:17pt">IRAMAT-CNRS</span>
+          </p>
+    </div>
+</div>
+
+</section>
+<section id="introduction" class="slide level2">
+<h2>Introduction</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">R Markdown</a></li><li><a href="#tabset-1-2">LPs</a></li><li><a href="#tabset-1-3">LPs example</a></li><li><a href="#tabset-1-4">About this presentation</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<p><span class="r-md">R Markdown</span> allows <strong>Literate programming</strong> (LPs)<a href="#/footnotes" class="footnote-ref" id="fnref1" role="doc-noteref" data-footnote-href="#/fn1" onclick=""><sup>1</sup></a>. It combines R code chunks and narrative parts with – mainly – Markdown syntax</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>R Markdown = <code>.Rmd</code> = <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 45px;vertical-align: middle;"> <code>.R</code> + <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"> <code>.md</code> for Markdown</p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<p>LPs are used to create data-driven documents (reports) from a notebook interface</p>
+<table>
+<thead>
+<tr>
+<th>
+LPs
+</th>
+<th>
+Language
+</th>
+<th>
+Oriented
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<span class="r-md">R Markdown</span>
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 55px;vertical-align: middle;">
+</td>
+<td>
+front-end
+</td>
+</tr>
+<tr>
+<td>
+Jupyter
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png" style="height: 55px;vertical-align: middle;">
+</td>
+<td>
+back-end
+</td>
+</tr>
+<tr>
+<td>
+D3.js
+</td>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 55px;vertical-align: middle;">
+</td>
+<td>
+web
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-1-3">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>data <span class="ot">&lt;-</span> openxlsx<span class="sc">::</span><span class="fu">read.xlsx</span>(<span class="st">"data.xlsx"</span>, </span>
+<span id="cb1-2"><a></a>                            <span class="at">colNames =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb1-3"><a></a>                            <span class="at">rowNames =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb1-4"><a></a>MNI <span class="ot">&lt;-</span> <span class="fu">sum</span>(data<span class="sc">$</span>MNI)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The minimum number of individuals (MNI) is 202</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>The minimum number of individuals (MNI) is ‘r MNI’</p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-4">
+<p>A <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png" style="height: 45px;vertical-align: middle;"> Quarto document (<code>.qmd</code>) using <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png" style="height: 45px;vertical-align: middle;"> reveal.js (<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 45px;vertical-align: middle;">) hosted on <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png" style="height: 45px;vertical-align: middle;"> GitHub (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2026/index-part1.qmd">here</a>), prepared in RStudio (<em>aka</em> posit).</p>
+<script src="https://quarto.org/docs/presentations/revealjs/"></script>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+<aside></aside></section>
+<section id="why-authoring-with-r-markdown" class="slide level2">
+<h2>Why authoring with R Markdown?</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">Archaeology</a></li><li><a href="#tabset-2-2">Academy</a></li><li><a href="#tabset-2-3">Popularity of <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 45px;vertical-align: middle;"></a></li><li><a href="#tabset-2-4">Ubiquity of <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"></a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<div class="columns">
+<div class="column" style="width:30%;">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex1.jpg" style="height: 350px;vertical-align: middle;"></p>
+</div><div class="column" style="width:40%;">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex2.jpg" style="height: 350px;vertical-align: middle;"></p>
+</div><div class="column" style="width:30%;">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex3.png" style="height: 350px;vertical-align: middle;"></p>
+</div></div>
+<p><small>L’archéozoologie © Inrap</small></p>
+</div>
+<div id="tabset-2-2">
+<p><span class="r-md">R Markdown</span> is often enough for <strong>academic reporting</strong>. It supports:</p>
+<ul>
+<li>HTML/CSS markup languages <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"></li>
+<li>cross-referencing<a href="#/footnotes" class="footnote-ref" id="fnref2" role="doc-noteref" data-footnote-href="#/fn2" onclick=""><sup>2</sup></a>, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;"> writing and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png" style="height: 45px;vertical-align: middle;"> bibliographic references could be done using <a href="https://bookdown.org/">bookdown</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="width: 45px;vertical-align: middle;"></li>
+<li>interactive maps, 3D plots, etc.</li>
+</ul>
+</div>
+<div id="tabset-2-3">
+<div class="custom-small">
+<table class="caption-top" style="width:100%;">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 6%">
+<col style="width: 6%">
+<col style="width: 14%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Language</th>
+<th>User Community</th>
+<th>Learning Curve</th>
+<th>Statistics</th>
+<th>3D</th>
+<th>AI/ML</th>
+<th>GIS/DB</th>
+<th>Data-driven doc</th>
+<th>Web App Framework</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python.png" style="height: 45px;vertical-align: middle;"></td>
+<td>Large and diverse</td>
+<td>Relatively easy</td>
+<td>Strong support</td>
+<td>Blender, libraries<a href="#/footnotes" class="footnote-ref" id="fnref3" role="doc-noteref" data-footnote-href="#/fn3" onclick=""><sup>3</sup></a></td>
+<td>Leading language<a href="#/footnotes" class="footnote-ref" id="fnref4" role="doc-noteref" data-footnote-href="#/fn4" onclick=""><sup>4</sup></a></td>
+<td>Leading language<a href="#/footnotes" class="footnote-ref" id="fnref5" role="doc-noteref" data-footnote-href="#/fn5" onclick=""><sup>5</sup></a></td>
+<td>Jupyter Notebook</td>
+<td>Popular frameworks<a href="#/footnotes" class="footnote-ref" id="fnref6" role="doc-noteref" data-footnote-href="#/fn6" onclick=""><sup>6</sup></a></td>
+</tr>
+<tr class="even">
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-java.png" style="height: 45px;vertical-align: middle;"></td>
+<td>Large and established</td>
+<td>Moderate</td>
+<td>Limited</td>
+<td>Java 3D API</td>
+<td>Used in enterprise</td>
+<td>Java-based tools available</td>
+<td>Apache POI</td>
+<td>Various frameworks<a href="#/footnotes" class="footnote-ref" id="fnref7" role="doc-noteref" data-footnote-href="#/fn7" onclick=""><sup>7</sup></a></td>
+</tr>
+<tr class="odd">
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 45px;vertical-align: middle;"></td>
+<td>Ubiquitous in web dev</td>
+<td>Easy for web dev</td>
+<td>Limited</td>
+<td>WebGL</td>
+<td>web-based apps</td>
+<td>Limited</td>
+<td>D3.js</td>
+<td>Numerous frameworks<a href="#/footnotes" class="footnote-ref" id="fnref8" role="doc-noteref" data-footnote-href="#/fn8" onclick=""><sup>8</sup></a></td>
+</tr>
+<tr class="even">
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-matlab.png" style="height: 45px;vertical-align: middle;"></td>
+<td>Academia, industry</td>
+<td>Steeper</td>
+<td>Comprehensive support</td>
+<td>Poor texture mapping</td>
+<td>Academia, industry</td>
+<td>Limited</td>
+<td>Live scripts but hard to share</td>
+<td>Limited</td>
+</tr>
+<tr class="odd">
+<td><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r.png" style="height: 45px;vertical-align: middle;"></td>
+<td>Strong community</td>
+<td>Steeper</td>
+<td>Leading language</td>
+<td>Poor texture mapping</td>
+<td>Extensively used</td>
+<td>R packages for GIS<a href="#/footnotes" class="footnote-ref" id="fnref9" role="doc-noteref" data-footnote-href="#/fn9" onclick=""><sup>9</sup></a></td>
+<td>Rmarkdown, Shiny</td>
+<td>Limited</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br>
+</p>
+</div>
+</div>
+<div id="tabset-2-4">
+<p>Copy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):</p>
+<ul>
+<li><p><a href="https://obsidian.md/">Obsidian</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;"><br> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian-ex1.png" style="height: 450px;"></p></li>
+<li><p><a href="https://www.reddit.com/">Discourse</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-discourse.png" style="height: 45px;vertical-align: middle;"><br> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-arches-forum.png" style="height: 450px;"></p></li>
+<li><p><a href="https://github.com/">GitHub</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github-2.png" style="height: 45px;vertical-align: middle;"><br> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-github-readme.png" style="height: 450px;"></p></li>
+<li><p><a href="https://openai.com/index/chatgpt/">ChatGPT</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-ai-ml-chatgpt.png" style="height: 45px;vertical-align: middle;"><br> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-chatgpt.png" style="height: 450px;"></p></li>
+</ul>
+<p><br>
+</p>
+</div>
+</div>
+</div>
+<aside></aside></section>
+<section id="main-packages" class="slide level2">
+<h2>Main packages</h2>
+<table>
+<tbody>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="width: 100px;vertical-align: middle;">
+</td>
+<td>
+<a href="https://yihui.org/knitr/">knitr</a> engine for dynamic report generation with R (e.g.&nbsp;convert to LaTeX)
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png" style="width: 100px;vertical-align: middle;">
+</td>
+<td>
+extension of <a href="https://yihui.org/knitr/">knitr</a>… <a href="https://cran.r-project.org/web/packages/rmarkdown/index.html">rmarkdown</a> convert <span class="r-md">R Markdown</span> documents into a variety of formats
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="width: 100px;vertical-align: middle;">
+</td>
+<td>
+<a href="https://bookdown.org/">bookdown</a> for advanced editing (e.g.&nbsp;cross-referencing) for long formats (ex: books, theses)
+</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="new-document" class="slide level2 scrollable">
+<h2>New document</h2>
+<div class="panel-tabset">
+<ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1">Create</a></li><li><a href="#tabset-3-2">RStudio <small>preview</small></a></li><li><a href="#tabset-3-3">GitHub <small>preview</small></a></li><li><a href="#tabset-3-4">Knit</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1">
+<ol type="1">
+<li>In RStudio: <code>File &gt; New file &gt; R Markdown...</code></li>
+</ol>
+<center>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create.png" width="500"></p>
+</center>
+<ol start="2" type="1">
+<li>Choose <strong>PDF</strong> as the default output format. Options (<code>Title</code>, <code>Author</code>, <code>Date</code>, etc.) can be changed later.</li>
+</ol>
+<center>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd.png" width="500"></p>
+</center>
+<p>A new document is created.</p>
+<ol start="3" type="1">
+<li>Save it</li>
+</ol>
+</div>
+<div id="tabset-3-2">
+<center>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png" width="900">
+</center>
+<p><small><a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2026/temp.Rmd" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2026/temp.Rmd</a></small></p>
+</div>
+<div id="tabset-3-3">
+<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+</div>
+<div id="tabset-3-4">
+<p>Run the new document with <code>knitr</code> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">, it will launch the render</p>
+<center>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_render.png" width="900"></p>
+</center>
+<p><br>
+<br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="rstudio-tools" class="slide level2">
+<h2>RStudio tools</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Tools</a></li><li><a href="#tabset-4-2">Visual R Markdown</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_scriptWindowTopBar.png" alt=" " align="left"></p>
+<table>
+<thead>
+<tr>
+<th>
+tool
+</th>
+<th>
+description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png" width="80">
+</td>
+<td>
+<code>knit</code> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">automatically when save the document
+</td>
+</tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png" width="80">
+</td>
+<td>
+check spelling
+</td>
+</tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knit.png" width="80">
+</td>
+<td>
+<code>knit</code> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;">the document
+</td>
+</tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png" width="80">
+</td>
+<td>
+run Visual R Markdown + other options
+</td>
+</tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_newCodeChunk.png" width="80">
+</td>
+<td>
+new code chunk (R, Python, GraphViz, Mermaid, etc.)
+</td>
+</tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_run.png" width="80">
+</td>
+<td>
+run a part or the whole document
+</td>
+</tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_publish.png" width="80">
+</td>
+<td>
+publish the document
+</td>
+</tr>
+<tr>
+<td>
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_visualMdEditor.png" width="80">
+</td>
+<td>
+run Visual R Markdown
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-4-2">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www//rmd_nav_visualMdEditor_bar.png" align="left"><br></p>
+<p><a href="https://rstudio.github.io/visual-markdown-editing/">Visual R Markdown</a> is a graphical editing mode with a Pandoc syntax (extension of <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;">), supports <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;">. For citations, supports <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;">, can retrieve complete bibliographical references from DOI <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/lod-doi.png" style="height: 45px;vertical-align: middle;"> or searches on PubMed <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-pubmed.png" style="height: 45px;vertical-align: middle;">, Crossref <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-crossref.png" style="height: 45px;vertical-align: middle;">, and DataCite <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-datacite.png" style="height: 45px;vertical-align: middle;"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="document-structure" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Document structure</h2>
+<p><span class="r-md">R Markdown</span> combines</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="div-yaml">
+<p><small>header YAML</small><br> a <a href="#/yaml">YAML header</a> with metadata</p>
+</div>
+<div class="div-code">
+<p><small>code chunk</small><br> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prog-r-1.png" style="height: 45px;vertical-align: middle;"> <a href="#/chunks">code chunks</a></p>
+</div>
+<div class="div-text">
+<p><small>narrative part</small><br> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-2.png" style="height: 45px;vertical-align: middle;"> <a href="#/text">narrative parts</a></p>
+</div>
+</div><div class="column" style="width:50%;">
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png" width="500"></p>
+</div></div>
+</section>
+<section id="document-structure-1" class="slide level2" data-auto-animate="true">
+<h2 data-id="quarto-animate-title">Document structure</h2>
+<p><span class="r-md">R Markdown</span> combines</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="div-yaml">
+<p><small>header YAML</small><br></p>
+</div>
+<div class="div-code">
+<p><small>code chunk</small><br></p>
+</div>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+</div>
+<div class="div-code">
+<p><small>code chunk</small><br></p>
+</div>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+</div>
+<div class="div-code">
+<p><small>code chunk</small><br></p>
+</div>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+</div>
+<p>etc.</p>
+</div><div class="column" style="width:50%;">
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png" width="500"></p>
+</div></div>
+</section>
+<section>
+<section id="narrative-parts" class="title-slide slide level1 center" data-background-color="#add8e6">
+<h1>Narrative parts</h1>
+
+</section>
+<section id="text" class="slide level2">
+<h2>Markdown syntax</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Used by</a></li><li><a href="#tabset-5-2">Syntax</a></li><li><a href="#tabset-5-3">Editor</a></li><li><a href="#tabset-5-4">Converter</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<p>Different code-oriented frameworks: <a href="https://hub.mybinder.turing.ac.uk/user/ipython-ipython-in-depth-qd7itkd2/notebooks/binder/Index.ipynb">Jupyter</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-python-jupyter.png" style="height: 45px;vertical-align: middle;">, <a href="https://github.com/">GitHub</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, <a href="https://about.gitlab.com/">GitLab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;">, <a href="https://obsidian.md/">Obsidian</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-obsidian.png" style="height: 45px;vertical-align: middle;">, <a href="https://wordpress.com/">Wordpress</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-wordpress.png" style="height: 45px;vertical-align: middle;">, <a href="https://www.google.co.uk/docs/about/">Google Doc</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-google-doc.png" style="height: 45px;vertical-align: middle;">, <a href="https://sketchfab.com/3d-models/roche-de-larcher-a5c0771d898d4816950570cd7fb1be37">Sketchfab</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-3d-sketchfab.png" style="height: 45px;vertical-align: middle;">, <a href="https://eamena.slack.com/archives/D02KMQULWVD/p1637257246040200">Slack</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-slack.png" style="height: 45px;vertical-align: middle;">, <a href="https://stackoverflow.com/a/14747656/2854081">Stackoverflow</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-z-stackoverflow.png" style="height: 45px;vertical-align: middle;">, <a href="https://www.reddit.com/">Discourse</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-discourse-1.png" style="height: 45px;vertical-align: middle;">, <a href="https://www.reddit.com/">Reddit</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-com-reddit.png" style="height: 45px;vertical-align: middle;">, etc.</p>
+</div>
+<div id="tabset-5-2">
+<iframe width="1000" height="600" src="https://rmarkdown.rstudio.com/authoring_basics.html" title="Markdown basic syntax"></iframe>
+<p><small><a href="https://rmarkdown.rstudio.com/authoring_basics.html" class="uri">https://rmarkdown.rstudio.com/authoring_basics.html</a></small><br>
+</p>
+</div>
+<div id="tabset-5-3">
+<iframe width="1000" height="350" src="https://stackedit.io/app#" title="Markdown online editor"></iframe>
+<p><small><a href="https://stackedit.io/app#" class="uri">https://stackedit.io/app#</a></small><br>
+</p>
+</div>
+<div id="tabset-5-4">
+<p>Text conversion (<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"> ↔︎ <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"> ↔︎ <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;"> ↔︎ <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;">, etc.) with Pandoc</p>
+<iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<p><small><a href="https://pandoc.org/try/" class="uri">https://pandoc.org/try/</a></small><br>
+<br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="styling" class="slide level2">
+<h2>Styling</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">Text and paragraphs</a></li><li><a href="#tabset-6-2">Math formula</a></li><li><a href="#tabset-6-3">with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"> and <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"></a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<table class="caption-top">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>**bold**, __bold__</code></td>
+<td><strong>bold</strong>, <strong>bold</strong></td>
+</tr>
+<tr class="even">
+<td><code>*italic*, _italic_</code></td>
+<td><em>italic</em>, <em>italic</em></td>
+</tr>
+<tr class="odd">
+<td><code>code</code></td>
+<td><code>code</code></td>
+</tr>
+<tr class="even">
+<td><code>hyphen -- inserted -- in a sentence</code></td>
+<td>hyphen – inserted – in a sentence</td>
+</tr>
+<tr class="odd">
+<td><code>H~2~O</code></td>
+<td>H<sub>2</sub>O</td>
+</tr>
+<tr class="even">
+<td><code>10^−19^</code></td>
+<td>10<sup>−19</sup></td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>blockquotes</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a></a><span class="at">&gt; I am a blockquote</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<blockquote>
+<p>I am a blockquote</p>
+</blockquote>
+<p>line separator</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a></a>Below this text there's a line separator</span>
+<span id="cb3-2"><a></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Below this text there’s a line separator</p>
+<hr>
+<p><br>
+<br>
+</p>
+</div>
+<div id="tabset-6-2">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Markdown</th>
+<th>Rendered</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>$$\sum_{i=1}^{n} X^3_i$$</code></td>
+<td><span class="math display">\[\sum_{i=1}^{n} X^3_i\]</span></td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tabset-6-3">
+<p>Text styling can be extended done with <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"> markup languages</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb4-1"><a></a><span class="dt">&lt;</span><span class="kw">h2</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:blue;"</span><span class="dt">&gt;</span>A Blue Heading<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb4-2"><a></a><span class="dt">&lt;</span><span class="kw">p</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:red;"</span><span class="dt">&gt;</span>A red paragraph.<span class="dt">&lt;/</span><span class="kw">p</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<h1 style="color:blue;">
+A Blue Heading
+</h1>
+<p style="color:red;">
+A red paragraph.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="lists" class="slide level2 scrollable">
+<h2>Lists</h2>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Numbered</a></li><li><a href="#tabset-7-2">Unnumbered</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a></a><span class="ss">- </span>Numbered  </span>
+<span id="cb5-2"><a></a><span class="ss">  1. </span>first element</span>
+<span id="cb5-3"><a></a><span class="ss">  2. </span>second element</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Numbered
+<ol type="1">
+<li>first element</li>
+<li>second element</li>
+</ol></li>
+</ul>
+<p><br>
+</p>
+</div>
+<div id="tabset-7-2">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a></a><span class="ss">- </span>Unnumbered</span>
+<span id="cb6-2"><a></a><span class="ss">  * </span>first element</span>
+<span id="cb6-3"><a></a><span class="ss">  * </span>second element</span>
+<span id="cb6-4"><a></a><span class="ss">  * </span>third element</span>
+<span id="cb6-5"><a></a><span class="ss">    - </span>third element - sub 1</span>
+<span id="cb6-6"><a></a><span class="ss">      + </span>third element - sub 1 - subsub 1</span>
+<span id="cb6-7"><a></a><span class="ss">      + </span>third element - sub 1 - subsub 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Unnumbered
+<ul>
+<li>first element</li>
+<li>second element</li>
+<li>third element
+<ul>
+<li>third element - sub 1
+<ul>
+<li>third element - sub 1 - subsub 1</li>
+<li>third element - sub 1 - subsub 2</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="tables" class="slide level2 unnumbered">
+<h2>Tables</h2>
+<div class="panel-tabset">
+<ul id="tabset-8" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-8-1">Simple table</a></li><li><a href="#tabset-8-2">Alignements</a></li><li><a href="#tabset-8-3">Complex tables</a></li><li><a href="#tabset-8-4">Hint</a></li></ul>
+<div class="tab-content">
+<div id="tabset-8-1">
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a></a><span class="pp">|</span> Header 1 <span class="pp">|</span> Header 2 <span class="pp">|</span></span>
+<span id="cb7-2"><a></a><span class="pp">| ---</span> <span class="pp">| -----------</span> <span class="pp">|</span></span>
+<span id="cb7-3"><a></a><span class="pp">|</span> Row 1 <span class="pp">|</span> Text <span class="pp">|</span></span>
+<span id="cb7-4"><a></a><span class="pp">|</span> Row 2 <span class="pp">|</span> Another text <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div><div class="column" style="width:10%;">
+<center>
+or
+</center>
+</div><div class="column" style="width:50%;">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a></a><span class="pp">|</span> Header 1    <span class="pp">|</span> Header 2    <span class="pp">|</span></span>
+<span id="cb8-2"><a></a><span class="pp">| -----------</span> <span class="pp">| -----------</span> <span class="pp">|</span></span>
+<span id="cb8-3"><a></a><span class="pp">|</span> Row 1       <span class="pp">|</span> Text        <span class="pp">|</span></span>
+<span id="cb8-4"><a></a><span class="pp">|</span> Row 2       <span class="pp">|</span> Another text<span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div></div>
+<br>
+<center>
+<p>gives the same result :</p>
+<p><small></small></p><small>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Header 1</th>
+<th>Header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Row 1</td>
+<td>Text</td>
+</tr>
+<tr class="even">
+<td>Row 2</td>
+<td>Another text</td>
+</tr>
+</tbody>
+</table>
+</small>
+</center>
+<p><br>
+</p>
+</div>
+<div id="tabset-8-2">
+<p>Use <code>:----:</code>, <code>:---</code>, or <code>---:</code> to align</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a></a><span class="pp">|</span> Left        <span class="pp">|</span>    Center   <span class="pp">|</span>         Right <span class="pp">|</span></span>
+<span id="cb9-2"><a></a><span class="pp">| :---</span>        <span class="pp">|    :----:</span>   <span class="pp">|          ---:</span> <span class="pp">|</span></span>
+<span id="cb9-3"><a></a><span class="pp">|</span> Header      <span class="pp">|</span> Title       <span class="pp">|</span> Hello         <span class="pp">|</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Left</th>
+<th style="text-align: center;">Center</th>
+<th style="text-align: right;">Right</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Header</td>
+<td style="text-align: center;">Title</td>
+<td style="text-align: right;">Hello</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+</div>
+<div id="tabset-8-3">
+<p>To create in <span class="r-code">code chunks</span></p>
+<div class="div-code">
+<p><small>code chunk</small><br></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb10-2"><a></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb10-3"><a></a>dt <span class="ot">&lt;-</span> mtcars[<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>]</span>
+<span id="cb10-4"><a></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
+<span id="cb10-5"><a></a>  <span class="fu">kbl</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb10-6"><a></a>  <span class="fu">kable_paper</span>(<span class="st">"hover"</span>, <span class="at">full_width =</span> F, <span class="at">font_size =</span> <span class="dv">20</span>)</span>
+<span id="cb10-7"><a></a>dtt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover caption-top" data-quarto-postprocess="true" style="font-size: 20px; font-family: &quot;Arial Narrow&quot;, arial, helvetica, sans-serif; width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">mpg</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">cyl</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">disp</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">hp</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">drat</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">wt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mazda RX4</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">3.90</td>
+<td style="text-align: right;">2.620</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mazda RX4 Wag</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">3.90</td>
+<td style="text-align: right;">2.875</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Datsun 710</td>
+<td style="text-align: right;">22.8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">3.85</td>
+<td style="text-align: right;">2.320</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hornet 4 Drive</td>
+<td style="text-align: right;">21.4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">258</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">3.08</td>
+<td style="text-align: right;">3.215</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hornet Sportabout</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">360</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">3.15</td>
+<td style="text-align: right;">3.440</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="div-code">
+<p><small>code chunk</small><br></p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>dtt <span class="ot">&lt;-</span> dt <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a></a>  <span class="fu">kbl</span>(<span class="at">caption =</span> <span class="st">"My styled table"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb11-3"><a></a>  <span class="fu">kable_classic</span>(<span class="at">full_width =</span> F, <span class="at">html_font =</span> <span class="st">"Cambria"</span>, <span class="at">font_size =</span> <span class="dv">20</span>)</span>
+<span id="cb11-4"><a></a>dtt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-classic caption-top" data-quarto-postprocess="true" style="font-size: 20px; font-family: Cambria; width: auto !important; margin-left: auto; margin-right: auto;">
+<caption>My styled table</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th"></th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">mpg</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">cyl</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">disp</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">hp</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">drat</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">wt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mazda RX4</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">3.90</td>
+<td style="text-align: right;">2.620</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mazda RX4 Wag</td>
+<td style="text-align: right;">21.0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">160</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">3.90</td>
+<td style="text-align: right;">2.875</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Datsun 710</td>
+<td style="text-align: right;">22.8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">93</td>
+<td style="text-align: right;">3.85</td>
+<td style="text-align: right;">2.320</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Hornet 4 Drive</td>
+<td style="text-align: right;">21.4</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">258</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: right;">3.08</td>
+<td style="text-align: right;">3.215</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Hornet Sportabout</td>
+<td style="text-align: right;">18.7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">360</td>
+<td style="text-align: right;">175</td>
+<td style="text-align: right;">3.15</td>
+<td style="text-align: right;">3.440</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br>
+</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p><a href="https://www.rdocumentation.org/packages/kableExtra/versions/1.4.0/topics/kbl">kbl()</a>, <a href="https://bookdown.org/yihui/rmarkdown-cookbook/kable.html">kable()</a>, <a href="https://www.rdocumentation.org/packages/kableExtra/versions/1.4.0/topics/kable_classic">kable_classic()</a> and <a href="https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html">kable_styling()</a> from the {<code>kableExtra</code>} package</p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-8-4">
+<p>Use a table converter</p>
+<iframe width="1000" height="400" src="https://tableconvert.com/" title="Online table convertor"></iframe>
+<p><small><a href="https://tableconvert.com/" class="uri">https://tableconvert.com/</a></small></p>
+<p><br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="images" class="slide level2">
+<h2>Images</h2>
+<div class="panel-tabset">
+<ul id="tabset-9" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-9-1">Online images</a></li><li><a href="#tabset-9-2">Local images</a></li></ul>
+<div class="tab-content">
+<div id="tabset-9-1">
+<p>Markdown notation</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="100"></p>
+<hr>
+<p>HTML notation</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span><span class="ot"> width</span><span class="op">=</span><span class="st">100</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="100"></p>
+</div>
+<div id="tabset-9-2">
+<p>Markdown notation</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a></a><span class="al">![](C:/Rprojects/thomashuet/teach/www/logo.png)</span>{width=100px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img data-src="C:/Rprojects/thomashuet/teach/www/logo.png" width="100"></p>
+<hr>
+<p>HTML notation</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a></a><span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"C:/Rprojects/thomashuet/teach/www/logo.png"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">""</span><span class="ot"> width</span><span class="op">=</span><span class="st">100</span><span class="dt">&gt;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><img src="C:/Rprojects/thomashuet/teach/www/logo.png" alt="" width="100"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="spaces-and-end-of-lines" class="slide level2">
+<h2>Spaces and end of lines</h2>
+<div class="panel-tabset">
+<ul id="tabset-10" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-10-1">Spaces</a></li><li><a href="#tabset-10-2">End of line</a></li></ul>
+<div class="tab-content">
+<div id="tabset-10-1">
+<p>Extra spaces (HTML only)</p>
+<ul>
+<li><code>&amp;emsp;</code> means 4 spaces (= a tabulation)</li>
+<li><code>&amp;ensp;</code> means 2 spaces</li>
+<li><code>&amp;nbsp;</code> means 1 space</li>
+</ul>
+</div>
+<div id="tabset-10-2">
+<p>In Markdown: 2+ spaces and return, or <code>\</code> and return. In HTML: <code>&lt;br&gt;</code></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb16-1"><a></a>Reconnais-toi  </span>
+<span id="cb16-2"><a></a>Cette adorable personne c'est toi  </span>
+<span id="cb16-3"><a></a>Sous le grand chapeau canotier  </span>
+<span id="cb16-4"><a></a>Oeil</span>
+<span id="cb16-5"><a></a>Nez</span>
+<span id="cb16-6"><a></a>Ta Bouche  </span>
+<span id="cb16-7"><a></a>Voici l’ovale de ta figure  </span>
+<span id="cb16-8"><a></a>Ton cou Exquis  </span>
+<span id="cb16-9"><a></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Reconnais-toi<br>
+Cette adorable personne c’est toi<br>
+Sous le grand chapeau canotier<br>
+Oeil Nez Ta Bouche<br>
+Voici l’ovale de ta figure<br>
+Ton cou Exquis<br>
+(Apollinaire, 1913)</p>
+</div><div class="column" style="width:50%;">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a></a>Reconnais-toi\</span>
+<span id="cb17-2"><a></a>Cette adorable personne c'est toi\</span>
+<span id="cb17-3"><a></a>Sous le grand chapeau canotier\</span>
+<span id="cb17-4"><a></a>Oeil\ </span>
+<span id="cb17-5"><a></a>Nez\</span>
+<span id="cb17-6"><a></a>Ta Bouche\</span>
+<span id="cb17-7"><a></a>Voici l'ovale de ta figure\</span>
+<span id="cb17-8"><a></a>Ton cou Exquis\</span>
+<span id="cb17-9"><a></a>(Apollinaire, 1913)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Reconnais-toi<br>
+Cette adorable personne c’est toi<br>
+Sous le grand chapeau canotier<br>
+Oeil<br>
+Nez<br>
+Ta Bouche<br>
+Voici l’ovale de ta figure<br>
+Ton cou Exquis<br>
+(Apollinaire, 1913)</p>
+</div></div>
+</div>
+</div>
+</div>
+</section>
+<section id="titles" class="slide level2">
+<h2>Titles</h2>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a><span class="fu"># Header level 1</span></span>
+<span id="cb18-2"><a></a></span>
+<span id="cb18-3"><a></a><span class="fu">## Header level 2</span></span>
+<span id="cb18-4"><a></a></span>
+<span id="cb18-5"><a></a><span class="fu">### ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="panel-tabset">
+<ul id="tabset-11" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-11-1">Avoid numbering</a></li><li><a href="#tabset-11-2">.. add an anchor</a></li><li><a href="#tabset-11-3">.. and a hyperlink</a></li></ul>
+<div class="tab-content">
+<div id="tabset-11-1">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a></a><span class="fu">### My Header level 3 {-}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-11-2">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb20-1"><a></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-11-3">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb21-1"><a></a></span>
+<span id="cb21-2"><a></a>Lorem ipsum dolor sit amet, etc. (**see <span class="co">[</span><span class="ot">My Header level 3</span><span class="co">](#bookmarks)</span>). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+<span id="cb21-3"><a></a></span>
+<span id="cb21-4"><a></a><span class="fu">### My Header level 3 {-#bookmarks}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="hyperlinks" class="slide level2 unnumbered">
+<h2>Hyperlinks</h2>
+<p>Add hyperlinks</p>
+<div class="panel-tabset">
+<ul id="tabset-12" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-12-1">To text</a></li><li><a href="#tabset-12-2">To image</a></li><li><a href="#tabset-12-3">To image (HTML)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-12-1">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb22"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a></a><span class="an">part 2:</span><span class="co"> [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2026/2_R Markdown_Practice)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>part 2: <a href="https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2026/2_R%20Markdown_Practice">Practice</a></p>
+</div>
+<div id="tabset-12-2">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb23"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a></a><span class="co">[</span><span class="al">![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png)</span><span class="ot">{width=170px}</span><span class="co">](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists"><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" width="170"></a></p>
+</div>
+<div id="tabset-12-3">
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb24-1"><a></a><span class="dt">&lt;</span><span class="kw">a</span><span class="ot"> href</span><span class="op">=</span><span class="st">"https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists"</span><span class="ot"> target</span><span class="op">=</span><span class="st">"_blank"</span><span class="dt">&gt;</span></span>
+<span id="cb24-2"><a></a>    <span class="dt">&lt;</span><span class="kw">img</span><span class="ot"> src</span><span class="op">=</span><span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png"</span><span class="ot"> style</span><span class="op">=</span><span class="st">"width:170px;"</span><span class="ot"> alt</span><span class="op">=</span><span class="st">"Logo"</span><span class="dt">&gt;</span></span>
+<span id="cb24-3"><a></a><span class="dt">&lt;/</span><span class="kw">a</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists" target="_blank"> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="width:170px;" alt="Logo"> </a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="bookmarks" class="slide level2 unnumbered">
+<h2>Bookmarks</h2>
+<p>The header <code>## Practice</code> has the anchor <code>#practice-anchor</code> inside curly brackets:</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a><span class="fu">## Practice {#practice-anchor}</span></span>
+<span id="cb25-2"><a></a></span>
+<span id="cb25-3"><a></a>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>It can be called anywhere in the text by:</p>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a>After this theoretical part, you will do a <span class="co">[</span><span class="ot">practice</span><span class="co">](#practice-anchor)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>After this theoretical part, you will do a <a href="#/practice">practice</a><br>
+<br>
+</p>
+</section>
+<section id="footnotes" class="slide level2">
+<h2>Footnote(s)</h2>
+<div class="div-text">
+<p><small>narrative part</small><br></p>
+<div class="sourceCode" id="cb27" data-code-line-numbers="1|4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a>A simple footnote<span class="ot">[^66]</span>.</span>
+<span id="cb27-2"><a></a></span>
+<span id="cb27-3"><a></a><span class="ot">[^10]: </span>This is a footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>A simple footnote<a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a>.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Footnotes numbering are automatically updated/incremented</p>
+</div>
+</div>
+</div>
+<aside></aside></section>
+<section id="cross-referencing" class="slide level2">
+<h2>Cross-referencing</h2>
+<div class="panel-tabset">
+<ul id="tabset-13" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-13-1">Variables</a></li><li><a href="#tabset-13-2">Figures</a></li></ul>
+<div class="tab-content">
+<div id="tabset-13-1">
+<p>Variables calculated inside the <span class="r-code">code chunks</span></p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">library</span>(archdata)</span>
+<span id="cb28-2"><a></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
+<span id="cb28-3"><a></a>number.of.axes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(Handaxes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>can be called in the <span class="r-text">narrative parts</span></p>
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a></a><span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>Furze Platt dataset counts 'r number.of.axes' axes<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><small>Furze Platt dataset counts 600 axes</small></p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>Here the <notes>`</notes> quote has been changed to a <notes>’</notes> quote for display purpose: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_call_var.png" style="height: 45px;vertical-align: middle;"></p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-13-2">
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>{r maxLmaxB, echo<span class="ot">=</span><span class="cn">FALSE</span>, fig.align<span class="ot">=</span><span class="st">"center"</span>, fig.cap<span class="ot">=</span> <span class="st">"Axes L/B ratio"</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a><span class="fu">library</span>(archdata)</span>
+<span id="cb31-2"><a></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
+<span id="cb31-3"><a></a><span class="fu">plot</span>(Handaxes<span class="sc">$</span>L, Handaxes<span class="sc">$</span>B)</span>
+<span id="cb31-4"><a></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(B <span class="sc">~</span> L, <span class="at">data =</span> Handaxes)</span>
+<span id="cb31-5"><a></a><span class="fu">abline</span>(<span class="fu">lm</span>(model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="index-part1_files/figure-revealjs/maxLmaxB-1.png" style="width:60.0%"></p>
+<figcaption>Axes L/B ratio</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a><span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients<span class="co">[</span><span class="ot">2</span><span class="co">]</span>, 2)',  Fig. \@ref(fig:maxLmaxB))<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><small>The distribution of the maximum length (L) and maximum breadth (B) shows a R<sup>2</sup> = 0.42, Fig. @ref(fig:maxLmaxB))</small></p>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<ul>
+<li>Here the <notes>`</notes> quote has been changed to a <notes>‘</notes> quote for display purpose in ’r round(model$coefficients[2], 2)’.</li>
+<li>Need to use <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="width: 50px;vertical-align: middle;"> <a href="https://bookdown.org/">bookdown</a> to render correctly ‘@ref(fig:maxLmaxB)’, see: the <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.Rmd">raw <code>.Rmd</code></a> and the <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/examples/cross-referencing.pdf">rendered PDF</a></li>
+</ul>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="bibliographic-references" class="slide level2">
+<h2>Bibliographic references</h2>
+<div class="panel-tabset">
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">in YAML</a></li><li><a href="#tabset-14-2">references.bib</a></li><li><a href="#tabset-14-3">Cross citation</a></li></ul>
+<div class="tab-content">
+<div id="tabset-14-1">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png" style="height: 45px;vertical-align: middle;"> (<code>.bib</code>) is a plain text format for bibliographic references.</p>
+<center>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="700"></p>
+</center>
+<p>The <code>.bib</code> file is referenced in the <span class="r-yaml">YAML header</span>.</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb33-1"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> temp</span></span>
+<span id="cb33-2"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb33-3"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb33-4"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<center>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new-bib.png" alt="rmd_yaml_bib" width="700"></p>
+</center>
+<p><br>
+</p>
+</div>
+<div id="tabset-14-2">
+<script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
+</div>
+<div id="tabset-14-3">
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>published by Yihui Xie <span class="citation" data-cites="Xie19">(<a href="#/references" role="doc-biblioref" onclick="">2019</a>)</span></p>
+<p><br>
+</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 51%">
+<col style="width: 48%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>code in the narrative parts</th>
+<th>Render</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>@Xie22</code></td>
+<td><span class="citation" data-cites="Xie22">Xie (<a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></td>
+</tr>
+<tr class="even">
+<td><code>[@Xie18]</code></td>
+<td><span class="citation" data-cites="Xie18">(<a href="#/references" role="doc-biblioref" onclick="">Xie, Allaire, and Grolemund 2018</a>)</span></td>
+</tr>
+<tr class="odd">
+<td><code>[credits: @Xie20]</code></td>
+<td><span class="citation" data-cites="Xie20">(credits: <a href="#/references" role="doc-biblioref" onclick="">Xie, Dervieux, and Riederer 2020</a>)</span></td>
+</tr>
+<tr class="even">
+<td><code>published by Yihui Xie [-@Xie19; -@Xie22]</code></td>
+<td>published by Yihui Xie <span class="citation" data-cites="Xie19 Xie22">(<a href="#/references" role="doc-biblioref" onclick="">2019</a>, <a href="#/references" role="doc-biblioref" onclick="">2022</a>)</span></td>
+</tr>
+<tr class="odd">
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>It’s easy to retrieve <a href="https://scholar.google.fr/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&amp;btnG=">this reference in Google Scholar</a>, and paste it in the <code>.bib</code> file. You can also use <a href="#/vrm">Visual R Markdown</a> bibliographical references add-on (ex: <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;">)</p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="go-to-part-2" class="slide level2">
+<h2>Go to part 2</h2>
+<p><a href="https://zoometh.github.io/thomashuet/teach/stats/r4a/2026/site/index-part2#/title-slide">Here</a></p>
+</section>
+<section id="references" class="slide level2 smaller scrollable">
+<h2>References</h2>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Xie19" class="csl-entry" role="listitem">
+Xie, Yihui. 2019. <span>“Tinytex: A Lightweight, Cross-Platform, and Easy-to-Maintain Latex Distribution Based on Tex Live.”</span> <em>TUGboat</em> 40: 30–32. <a href="https://yihui.org/tinytex/">https://yihui.org/tinytex/</a>.
+</div>
+<div id="ref-Xie22" class="csl-entry" role="listitem">
+———. 2022. <em>Knitr. Elegant, Flexible, and Fast Dynamic Report Generation with r</em>. <a href="https://yihui.org/knitr/" class="uri">https://yihui.org/knitr/</a>.
+</div>
+<div id="ref-Xie18" class="csl-entry" role="listitem">
+Xie, Yihui, Joseph J Allaire, and Garrett Grolemund. 2018. <em>R Markdown: The Definitive Guide</em>. <a href="https://bookdown.org/yihui/rmarkdown/" class="uri">https://bookdown.org/yihui/rmarkdown/</a>; CRC Press.
+</div>
+<div id="ref-Xie20" class="csl-entry" role="listitem">
+Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbook</em>. Chapman; Hall/CRC. <a href="https://bookdown.org/yihui/rmarkdown-cookbook/">https://bookdown.org/yihui/rmarkdown-cookbook/</a>.
+</div>
+</div>
+</section></section>
+<section id="footnotes" class="footnotes footnotes-end-of-document smaller scrollable" role="doc-endnotes"><h2>Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><em>syn.</em>: Authoring Framework for Data Science (AFDS), or Executable Publication.</p></li>
+<li id="fn2"><p>one that refers the reader to information that’s located somewhere else in the same book.</p></li>
+<li id="fn3"><p>PyOpenGL</p></li>
+<li id="fn4"><p>TensorFlow, PyTorch</p></li>
+<li id="fn5"><p>QGIS, ArcGIS, libraries: geopandas</p></li>
+<li id="fn6"><p>Django</p></li>
+<li id="fn7"><p>Spring</p></li>
+<li id="fn8"><p>React</p></li>
+<li id="fn9"><p>sf</p></li>
+<li id="fn10"><p>This is a footnote.</p></li>
+</ol>
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p><small>R4Rchaeologists <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="height: 20px;vertical-align: middle;"> Università di Pisa, Jan 2026</small></p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1200,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 1.0e-2,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

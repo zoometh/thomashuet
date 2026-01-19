@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<link href="./logo.png" rel="icon" type="image/png">
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/tabby.min.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.549">
+
+  <meta name="author" content="Thomas Huet, University of Oxford, CNRS-IRAMAT">
+  <title>Report with R Markdown - part 2</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="https://zoometh.github.io/thomashuet/css/quarto.css">
+  <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+  <script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+  <link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+  <script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+  <script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+  <link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+  <script src="site_libs/leaflet-binding-2.2.1/leaflet.js"></script>
+  <script src="site_libs/leaflet-providers-2.0.0/leaflet-providers_2.0.0.js"></script>
+  <script src="site_libs/leaflet-providers-plugin-2.2.1/leaflet-providers-plugin.js"></script>
+  <link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+  <script src="site_libs/plotly-binding-4.10.3/plotly.js"></script>
+  <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+  <script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+  <link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+  <script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+  <style>
+    .custom-small table {
+      font-size: .5em
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" data-background-image="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" data-background-opacity="0.2" data-background-size="33%" class="quarto-title-block center">
+  <h1 class="title">Authoring, writing and publishing with R Markdown</h1>
+  <p class="subtitle">part 2: Advanced R and YAML code integration</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Thomas Huet, University of Oxford, CNRS-IRAMAT 
+</div>
+</div>
+</div>
+
+</section>
+<section>
+<section id="code-chunks" class="title-slide slide level1 center" data-background-color="#EBEBEB">
+<h1>Code chunks</h1>
+
+</section>
+<section id="chunks" class="slide level2">
+<h2>Code chunks</h2>
+<p>R <span class="r-code">code chunks</span> are placeholders for the coding part of the document, expressed with a local header, and a body part.</p>
+
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_codechunk_header.png" class="r-stretch"></section>
+<section id="headers" class="slide level2">
+<h2>Headers</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Headers options</a></li><li><a href="#tabset-1-2">Options hierarchy</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<p>Options are used to show/hide the code, change the size and set the alignment of the ouptut, etc.</p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<center>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new.png" width="900"></p>
+</center>
+<p><small><a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/temp.pdf" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/temp.pdf</a></small></p>
+</div>
+<div id="tabset-1-2">
+<p>The top chunk of the <code>.Rmd</code> file is commonly used to set global options for all subsequent chunks, unless you override these options locally within the headers of individual code chunks.</p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>{r setup, include<span class="ot">=</span><span class="cn">FALSE</span>}</span>
+<span id="cb2-2"><a></a>knitr<span class="sc">::</span>opts_chunk<span class="sc">$</span><span class="fu">set</span>(<span class="at">echo =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+</div>
+</div>
+</div>
+</section>
+<section id="tools" class="slide level2">
+<h2>Tools</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png" width="700"></p>
+</div><div class="column" style="width:50%;">
+<p><span class="r-code">code chunks</span> tools</p>
+<p><br>
+</p>
+<table>
+<thead>
+<tr>
+<th>
+tool
+</th>
+<th>
+description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_mdFormatOpt.png" style="height: 50px;vertical-align: middle;">
+</td>
+<td>
+graphical interface for options
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_codechunk_header_runabove.png" style="height: 40px;vertical-align: middle;">
+</td>
+<td>
+run the previous chunks but not this one
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_codechunk_header_runthis.png" style="height: 40px;vertical-align: middle;">
+</td>
+<td>
+run this chunk
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="code-evaluation" class="slide level2">
+<h2>Code evaluation</h2>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>{r munsingenspat, echo <span class="ot">=</span> <span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<table>
+<thead>
+<tr>
+<th>
+code
+</th>
+<th>
+description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>include = FALSE</code>
+</td>
+<td>
+prevents <code>code</code> and <code>output</code> from appearing in the rendered file. R Markdown still runs the code in the chunk, and the output can be used by other chunks.
+</td>
+</tr>
+<tr>
+<td>
+<code>echo = FALSE</code>
+</td>
+<td>
+prevents <code>code</code>, but not the output, from appearing in the rendered file.
+</td>
+</tr>
+<tr>
+<td>
+<code>message = FALSE</code>
+</td>
+<td>
+prevents <code>messages</code> that are generated by code from appearing in the rendered file.
+</td>
+</tr>
+<tr>
+<td>
+<code>warning = FALSE</code>
+</td>
+<td>
+prevents <code>warnings</code> that are generated by code from appearing in the rendered file.
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+</section>
+<section id="graphical-options" class="slide level2 unnumbered">
+<h2>Graphical options</h2>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a></a>{r munsingenspat, fig.cap <span class="ot">=</span> <span class="st">"my caption"</span>, fig.height <span class="ot">=</span> <span class="dv">10</span>, fig.with <span class="ot">=</span> <span class="dv">10</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<table>
+<thead>
+<tr>
+<th>
+code
+</th>
+<th>
+description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>fig.cap = "..."</code>
+</td>
+<td>
+adds a caption to graphical output.
+</td>
+</tr>
+<tr>
+<td>
+<code>fig.height = 7</code>
+</td>
+<td>
+height for plots created by the chunk (in inches).
+</td>
+</tr>
+<tr>
+<td>
+<code>fig.width = 7</code>
+</td>
+<td>
+width for plots created by the chunk (in inches).
+</td>
+</tr>
+<tr>
+<td>
+<code>fig.align = default</code>
+</td>
+<td>
+how to align graphics in the final document. One of <code>'left'</code>, <code>'right'</code>, or <code>'center'</code>.
+</td>
+</tr>
+<tr>
+<td>
+<code>fig.pos = 'H'</code>
+</td>
+<td>
+fix the output exactly here.
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+</p>
+</section>
+<section id="body" class="slide level2">
+<h2>Body</h2>
+<p>The body of a <span class="r-code">code chunk</span> is where you place the R code</p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb5" data-code-line-numbers="2-15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>{r munsingenspat, echo<span class="ot">=</span><span class="cn">TRUE</span>, warning <span class="ot">=</span> <span class="cn">FALSE</span>, message <span class="ot">=</span> <span class="cn">FALSE</span>}</span>
+<span id="cb5-2"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb5-3"><a></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb5-4"><a></a>munsingen.long <span class="ot">&lt;-</span> <span class="fl">7.569587484129203</span></span>
+<span id="cb5-5"><a></a>munsingen.lat <span class="ot">&lt;-</span> <span class="fl">46.864709895956004</span></span>
+<span id="cb5-6"><a></a><span class="fu">leaflet</span>(<span class="at">width =</span> <span class="st">"60%"</span>, <span class="at">height =</span> <span class="st">"400px"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a></a>  <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">'OSM'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-8"><a></a>  <span class="fu">addControl</span>(<span class="st">"Munsingen necropolis"</span>, <span class="at">position =</span> <span class="st">"bottomright"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-9"><a></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group=</span><span class="st">'Esri.WorldImagery'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-10"><a></a>  <span class="fu">addMarkers</span>(munsingen.long,</span>
+<span id="cb5-11"><a></a>             munsingen.lat,</span>
+<span id="cb5-12"><a></a>             <span class="at">label =</span> <span class="st">"Munsingen necropolis"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb5-13"><a></a>  <span class="fu">addLayersControl</span>(</span>
+<span id="cb5-14"><a></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-15"><a></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="images" class="slide level2">
+<h2>Images</h2>
+<p>Images can be render inside a <span class="r-code">code chunk</span>:</p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+
+<img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/munsingen_fib_measures.png" style="width:30.0%" class="r-stretch"><p><br>
+</p>
+</section></section>
+<section>
+<section id="yaml" class="title-slide slide level1 center" data-background-color="#FFCCCB">
+<h1>YAML</h1>
+
+</section>
+<section id="yaml" class="slide level2">
+<h2>YAML</h2>
+<p>The <span class="r-yaml">YAML header</span> is the <span class="r-md">R Markdown</span> document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g.&nbsp;table of content). It is composed on <strong>key - value</strong> pairs:</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb7-1"><a></a><span class="pp">---</span></span>
+<span id="cb7-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb7-3"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb7-4"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb7-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+<p><br>
+</p>
+</section>
+<section id="dates" class="slide level2">
+<h2>Dates</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb8" data-code-line-numbers="4"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a></a><span class="pp">---</span></span>
+<span id="cb8-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb8-3"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb8-4"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"'r format(Sys.time(),'%D')'"</span></span>
+<span id="cb8-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>01/24/25</p>
+</div><div class="column" style="width:50%;">
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb9" data-code-line-numbers="4"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a></a><span class="pp">---</span></span>
+<span id="cb9-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb9-3"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb9-4"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"'r format(Sys.time(),'%d %B %Y')'"</span></span>
+<span id="cb9-5"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>24 January 2025</p>
+</div>
+</div>
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>Here the <notes>`</notes> quote has been changed to a <notes>’</notes> quote for display purpose</p>
+</div>
+</div>
+</div>
+</section>
+<section id="output" class="slide level2">
+<h2>Output</h2>
+<p><span class="r-md">R Markdown</span> output format.</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb10" data-code-line-numbers="4-5"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a></a><span class="pp">---</span></span>
+<span id="cb10-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb10-3"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb10-4"><a></a><span class="fu">output</span><span class="kw">:</span></span>
+<span id="cb10-5"><a></a><span class="at">  pdf_document</span></span>
+<span id="cb10-6"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><small>Here a PDF: <a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/temp.pdf" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/temp.pdf</a></small></p>
+<script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
+</section>
+<section id="table-of-content" class="slide level2">
+<h2>Table of content</h2>
+<p>Table of content (TOC).</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb11" data-code-line-numbers="6-8|5|4"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a></a><span class="pp">---</span></span>
+<span id="cb11-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb11-3"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">'2023-02-05'</span></span>
+<span id="cb11-4"><a></a><span class="fu">output</span><span class="kw">:</span></span>
+<span id="cb11-5"><a></a><span class="at">  </span><span class="fu">html_document</span><span class="kw">:</span></span>
+<span id="cb11-6"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb11-7"><a></a><span class="at">    </span><span class="fu">toc_depth</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb11-8"><a></a><span class="at">    </span><span class="fu">toc_float</span><span class="kw">:</span></span>
+<span id="cb11-9"><a></a><span class="at">      </span><span class="fu">collapsed</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb11-10"><a></a><span class="at">      </span><span class="fu">smooth_scroll</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span>
+<span id="cb11-11"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="references" class="slide level2">
+<h2>References</h2>
+<p>Locate the bibliographic file (e.g.&nbsp;<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/references.bib"><code>references.bib</code></a>), here in the same folder as the <code>.Rmd</code> file.</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb12" data-code-line-numbers="5"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb12-1"><a></a><span class="pp">---</span></span>
+<span id="cb12-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"temp"</span></span>
+<span id="cb12-3"><a></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb12-4"><a></a><span class="fu">date</span><span class="kw">:</span><span class="at"> </span><span class="st">"24 January 2025"</span></span>
+<span id="cb12-5"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb12-6"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</section></section>
+<section>
+<section id="more-html" class="title-slide slide level1 center" data-background-color="#FFFF00">
+<h1>More HTML</h1>
+
+</section>
+<section id="styling" class="slide level2">
+<h2>Styling</h2>
+<div class="panel-tabset">
+<ul id="tabset-2" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-2-1">HTML/CSS</a></li><li><a href="#tabset-2-2">In the <code>.Rmd</code> document</a></li><li><a href="#tabset-2-3">In an external CSS file</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;">/<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"> can be use in all parts of the document</p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>...</span>
+<span id="cb13-2"><a></a>water.values <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;b&gt;"</span>, Oxford.water<span class="sc">$</span>Place, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>, </span>
+<span id="cb13-3"><a></a>                       <span class="st">"Observed: "</span>, Oxford.water<span class="sc">$</span>OxfordPct)</span>
+<span id="cb13-4"><a></a>water.residuals <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;b&gt;"</span>, Oxford.water<span class="sc">$</span>Place, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>,</span>
+<span id="cb13-5"><a></a>                          <span class="st">"Observed: "</span>, <span class="fu">round</span>(Oxford.water<span class="sc">$</span>predicted, <span class="dv">2</span>))</span>
+<span id="cb13-6"><a></a>...</span>
+<span id="cb13-7"><a></a>          <span class="fu">add_trace</span>(<span class="at">name =</span> <span class="st">"Regression line"</span>, <span class="at">x =</span> <span class="sc">~</span>OxfordDst, <span class="at">y =</span> <span class="fu">fitted</span>(lm.water),</span>
+<span id="cb13-8"><a></a>                    <span class="at">mode =</span> <span class="st">'lines'</span>, <span class="at">line =</span> <span class="fu">list</span>(<span class="at">color =</span> <span class="st">'darkgrey'</span>, <span class="at">width =</span> <span class="fl">1.5</span>),</span>
+<span id="cb13-9"><a></a>                    <span class="at">text =</span> <span class="sc">~</span><span class="fu">paste0</span>(<span class="st">"R&lt;sup&gt;2&lt;/sup&gt;: "</span>, <span class="fu">round</span>(r2.water, <span class="dv">2</span>)),</span>
+<span id="cb13-10"><a></a>                    <span class="at">hoverinfo =</span> <span class="st">'text'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb13-11"><a></a>...</span>
+<span id="cb13-12"><a></a>        <span class="fu">layout</span>(<span class="at">title =</span> <span class="fu">paste0</span>(<span class="st">'Oxford pottery with a probable &lt;b&gt;no water&lt;/b&gt; '</span>, </span>
+<span id="cb13-13"><a></a>                              <span class="st">'transportation &lt;br&gt; (R&lt;sup&gt;2&lt;/sup&gt; = '</span>, r2.nowater, <span class="st">")"</span>),</span>
+<span id="cb13-14"><a></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-2-2">
+<p>Use <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"> markup.</p>
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb14-1"><a></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> style</span><span class="op">=</span><span class="st">'font-size: 60px'</span><span class="dt">&gt;</span>Big font<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span style="font-size: 60px">Big font</span></p>
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb15-1"><a></a><span class="dt">&lt;</span><span class="kw">b</span><span class="dt">&gt;</span>bolded<span class="dt">&lt;/</span><span class="kw">b</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><b>bolded</b></p>
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb16-1"><a></a><span class="dt">&lt;</span><span class="kw">span</span><span class="ot"> style</span><span class="op">=</span><span class="st">"color:red"</span><span class="dt">&gt;</span>red<span class="dt">&lt;/</span><span class="kw">span</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span style="color:red">red</span></p>
+<p><br>
+</p>
+</div>
+<div id="tabset-2-3">
+<p>Use a <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png" style="height: 45px;vertical-align: middle;"> file to customize styles</p>
+<script src="https://gist.github.com/zoometh/1c360f5a09ae489cddd500c01fa52035.js"></script>
+<p><small><a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/styles.css" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/styles.css</a></small></p>
+<p>This file is called inside the <span class="r-yaml">YAML header</span> of the document, here in the same folder as the <code>.Rmd</code> file.</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb17" data-code-line-numbers="11"><pre class="sourceCode numberSource yml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb17-1"><a></a><span class="pp">---</span></span>
+<span id="cb17-2"><a></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Report with R Markdown"</span></span>
+<span id="cb17-3"><a></a><span class="fu">subtitle</span><span class="kw">:</span><span class="at"> </span><span class="st">"Report data analysis with R Markdown authoring framework"</span></span>
+<span id="cb17-4"><a></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Thomas Huet, University of Oxford"</span></span>
+<span id="cb17-5"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb17-6"><a></a><span class="at">  </span><span class="fu">revealjs</span><span class="kw">:</span><span class="at"> </span></span>
+<span id="cb17-7"><a></a><span class="at">    </span><span class="fu">slide-number</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb17-8"><a></a><span class="at">    </span><span class="fu">chalkboard</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb17-9"><a></a><span class="at">    </span><span class="fu">scrollable</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb17-10"><a></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> www/inst-uni-oxford_.png</span></span>
+<span id="cb17-11"><a></a><span class="at">    </span><span class="fu">css</span><span class="kw">:</span><span class="at"> styles.css</span></span>
+<span id="cb17-12"><a></a><span class="at">    </span><span class="fu">margin</span><span class="kw">:</span><span class="at"> </span><span class="fl">0.01</span></span>
+<span id="cb17-13"><a></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span>
+<span id="cb17-14"><a></a><span class="fu">pagetitle</span><span class="kw">:</span><span class="at"> Report with R Markdown</span></span>
+<span id="cb17-15"><a></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Do:</p>
+<div class="div-text">
+<p><small>narrative part</small></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb18-1"><a></a>Customize with CSS like this &lt;notes&gt;**dodgerblue** background&lt;/notes&gt;.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Customize with CSS like this <notes><strong>dodgerblue</strong> background</notes>.</p>
+<p><br>
+<br>
+</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section>
+<section id="advanced-publishing" class="title-slide slide level1 center" data-background-color="#008000">
+<h1>Advanced publishing</h1>
+
+</section>
+<section id="interactivity" class="slide level2">
+<h2>Interactivity</h2>
+<div class="panel-tabset">
+<ul id="tabset-4" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-4-1">Shiny</a></li><li><a href="#tabset-4-2">Leaflet</a></li><li><a href="#tabset-4-3">Plotly</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1">
+<p>Interactivity with the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 45px;vertical-align: middle;"> package (for the client-side) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-shiny.png" style="height: 45px;vertical-align: middle;"></p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a></a><span class="an">runtime:</span><span class="co"> shiny</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Try: <code>File &gt; New File &gt; Rmarkdown &gt; Shiny</code>, or in the <span class="r-yaml">YAML header</span>. There are different ways to use <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-shiny.png" style="height: 45px;vertical-align: middle;"> in <span class="r-md">R Markdown</span>, for example by embedding an <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"> widget created by Shiny outside the R Markdown document, or by embedding the Shiny coding directly.</p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-4-2">
+<p>Maps with the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 45px;vertical-align: middle;"> package <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js-geo-leaflet.png" style="height: 45px;vertical-align: middle;"></p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb20-2"><a></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb20-3"><a></a>munsingen.long <span class="ot">&lt;-</span> <span class="fl">7.569587484129203</span></span>
+<span id="cb20-4"><a></a>munsingen.lat <span class="ot">&lt;-</span> <span class="fl">46.864709895956004</span></span>
+<span id="cb20-5"><a></a><span class="fu">leaflet</span>(<span class="at">width =</span> <span class="st">"90%"</span>, <span class="at">height =</span> <span class="st">"300px"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-6"><a></a>  <span class="fu">addTiles</span>(<span class="at">group =</span> <span class="st">'OSM'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-7"><a></a>  <span class="fu">addControl</span>(<span class="st">"Munsingen necropolis"</span>, <span class="at">position =</span> <span class="st">"bottomright"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-8"><a></a>  <span class="fu">addProviderTiles</span>(providers<span class="sc">$</span>Esri.WorldImagery, <span class="at">group=</span><span class="st">'Esri.WorldImagery'</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-9"><a></a>  <span class="fu">addMarkers</span>(munsingen.long,</span>
+<span id="cb20-10"><a></a>             munsingen.lat,</span>
+<span id="cb20-11"><a></a>             <span class="at">label =</span> <span class="st">"Munsingen necropolis"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb20-12"><a></a>  <span class="fu">addLayersControl</span>(</span>
+<span id="cb20-13"><a></a>    <span class="at">baseGroups =</span> <span class="fu">c</span>(<span class="st">'OSM'</span>, <span class="st">'Esri.WorldImagery'</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb20-14"><a></a>  <span class="fu">addScaleBar</span>(<span class="at">position =</span> <span class="st">"bottomleft"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="htmlwidget-fc8470276346eab3c3de" style="width:90%;height:300px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-fc8470276346eab3c3de">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,"OSM",{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addControl","args":["Munsingen necropolis","bottomright",null,"info legend"]},{"method":"addProviderTiles","args":["Esri.WorldImagery",null,"Esri.WorldImagery",{"errorTileUrl":"","noWrap":false,"detectRetina":false}]},{"method":"addMarkers","args":[46.864709895956,7.569587484129203,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},null,null,null,null,"Munsingen necropolis",{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLayersControl","args":[["OSM","Esri.WorldImagery"],[],{"collapsed":true,"autoZIndex":true,"position":"topright"}]},{"method":"addScaleBar","args":[{"maxWidth":100,"metric":true,"imperial":true,"updateWhenIdle":true,"position":"bottomleft"}]}],"limits":{"lat":[46.864709895956,46.864709895956],"lng":[7.569587484129203,7.569587484129203]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-4-3">
+<p>2D plots with the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png" style="height: 45px;vertical-align: middle;"> package <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js-plotly.png" style="height: 45px;vertical-align: middle;"></p>
+<div class="div-code">
+<p><small>code chunk</small></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a><span class="fu">library</span>(plotly)</span>
+<span id="cb21-2"><a></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb21-3"><a></a><span class="fu">library</span>(archdata)</span>
+<span id="cb21-4"><a></a><span class="fu">data</span>(<span class="st">"Fibulae"</span>)</span>
+<span id="cb21-5"><a></a>Fibulae.ex <span class="ot">&lt;-</span> Fibulae</span>
+<span id="cb21-6"><a></a>Fibulae.ex<span class="sc">$</span>lbl <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"&lt;b&gt;Museum num.: "</span>, Fibulae.ex<span class="sc">$</span>Mno, <span class="st">"&lt;/b&gt;&lt;br&gt;"</span>,</span>
+<span id="cb21-7"><a></a>                          <span class="st">"Length: "</span>, Fibulae.ex<span class="sc">$</span>Length, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb21-8"><a></a>                          <span class="st">"Foot Angle: "</span>, Fibulae.ex<span class="sc">$</span>FA, <span class="st">"&lt;br&gt;"</span>)</span>
+<span id="cb21-9"><a></a><span class="fu">plot_ly</span>(<span class="at">data =</span> Fibulae.ex, </span>
+<span id="cb21-10"><a></a>        <span class="at">x =</span> <span class="sc">~</span>Length,</span>
+<span id="cb21-11"><a></a>        <span class="at">y =</span> <span class="sc">~</span>FA,</span>
+<span id="cb21-12"><a></a>        <span class="at">text =</span> <span class="sc">~</span>lbl,</span>
+<span id="cb21-13"><a></a>        <span class="at">hoverinfo =</span> <span class="st">"text"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-e0775e92ff59459ad82e" style="width:960px;height:480px;"></div>
+<script type="application/json" data-for="htmlwidget-e0775e92ff59459ad82e">{"x":{"visdat":{"4cec7081e18":["function () ","plotlyVisDat"]},"cur_data":"4cec7081e18","attrs":{"4cec7081e18":{"x":{},"y":{},"text":{},"hoverinfo":"text","alpha_stroke":1,"sizes":[10,100],"spans":[1,20]}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"xaxis":{"domain":[0,1],"automargin":true,"title":"Length"},"yaxis":{"domain":[0,1],"automargin":true,"title":"FA"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[114,35,60,74,68,55,45,40,54,39,71,78,47,41,38,44,50,36,49,53,128,59,44,47,45,53,56,26,28,110],"y":[10,9,8,7,8,8,10,10,9,7,8,9,8,8,7,7,7,8,9,10,10,8,8,8,6,8,8,10,10,9],"text":["<b>Museum num.: 389<\/b><br>Length: 114<br>Foot Angle: 10<br>","<b>Museum num.: 615<\/b><br>Length: 35<br>Foot Angle: 9<br>","<b>Museum num.: 125<\/b><br>Length: 60<br>Foot Angle: 8<br>","<b>Museum num.: 812<\/b><br>Length: 74<br>Foot Angle: 7<br>","<b>Museum num.: 798<\/b><br>Length: 68<br>Foot Angle: 8<br>","<b>Museum num.: 673<\/b><br>Length: 55<br>Foot Angle: 8<br>","<b>Museum num.: Thames<\/b><br>Length: 45<br>Foot Angle: 10<br>","<b>Museum num.: 643<\/b><br>Length: 40<br>Foot Angle: 10<br>","<b>Museum num.: 391<\/b><br>Length: 54<br>Foot Angle: 9<br>","<b>Museum num.: 398<\/b><br>Length: 39<br>Foot Angle: 7<br>","<b>Museum num.: 491<\/b><br>Length: 71<br>Foot Angle: 8<br>","<b>Museum num.: 149<\/b><br>Length: 78<br>Foot Angle: 9<br>","<b>Museum num.: 545<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 85<\/b><br>Length: 41<br>Foot Angle: 8<br>","<b>Museum num.: 478<\/b><br>Length: 38<br>Foot Angle: 7<br>","<b>Museum num.: 436<\/b><br>Length: 44<br>Foot Angle: 7<br>","<b>Museum num.: 464<\/b><br>Length: 50<br>Foot Angle: 7<br>","<b>Museum num.: 821<\/b><br>Length: 36<br>Foot Angle: 8<br>","<b>Museum num.: 474<\/b><br>Length: 49<br>Foot Angle: 9<br>","<b>Museum num.: 348<\/b><br>Length: 53<br>Foot Angle: 10<br>","<b>Museum num.: 212<\/b><br>Length: 128<br>Foot Angle: 10<br>","<b>Museum num.: 587<\/b><br>Length: 59<br>Foot Angle: 8<br>","<b>Museum num.: 830<\/b><br>Length: 44<br>Foot Angle: 8<br>","<b>Museum num.: 549<\/b><br>Length: 47<br>Foot Angle: 8<br>","<b>Museum num.: 529<\/b><br>Length: 45<br>Foot Angle: 6<br>","<b>Museum num.: 399<\/b><br>Length: 53<br>Foot Angle: 8<br>","<b>Museum num.: 788<\/b><br>Length: 56<br>Foot Angle: 8<br>","<b>Museum num.: 752<\/b><br>Length: 26<br>Foot Angle: 10<br>","<b>Museum num.: Hallstatt<\/b><br>Length: 28<br>Foot Angle: 10<br>","<b>Museum num.: 611<\/b><br>Length: 110<br>Foot Angle: 9<br>"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"type":"scatter","mode":"markers","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="export-document" class="slide level2">
+<h2>Export document</h2>
+<p>Export <span class="r-md">R Markdown</span> in: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-adobe-pdf.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-odt.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-rdf.png" style="height: 45px;vertical-align: middle;">, <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png" style="height: 45px;vertical-align: middle;">, etc.</p>
+<iframe width="1100" height="400" src="https://rmarkdown.rstudio.com/lesson-9.html"></iframe>
+<p><br>
+</p>
+</section>
+<section id="html" class="slide level2">
+<h2>HTML</h2>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png" style="height: 45px;vertical-align: middle;"> export is the default option of a <span class="r-md">R Markdown</span> document.</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb22" data-code-line-numbers="4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb22-1"><a></a><span class="co">---</span></span>
+<span id="cb22-2"><a></a><span class="an">title:</span><span class="co"> "temp"</span></span>
+<span id="cb22-3"><a></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
+<span id="cb22-4"><a></a><span class="an">output:</span><span class="co"> html_document</span></span>
+<span id="cb22-5"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<iframe width="1000" height="400" src="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document" title="YAML for R Markdown"></iframe>
+<p>see <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#html-document">Xie <em>et al.</em></a> <span class="citation" data-cites="Xie18">(<a href="#/references-1" role="doc-biblioref" onclick="">2018</a>)</span></p>
+</section>
+<section id="pdf" class="slide level2">
+<h2>PDF</h2>
+<div class="panel-tabset">
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1">Basic</a></li><li><a href="#tabset-5-2">Advanced</a></li></ul>
+<div class="tab-content">
+<div id="tabset-5-1">
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb23" data-code-line-numbers="4"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb23-1"><a></a><span class="co">---</span></span>
+<span id="cb23-2"><a></a><span class="an">title:</span><span class="co"> "temp"</span></span>
+<span id="cb23-3"><a></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
+<span id="cb23-4"><a></a><span class="an">output:</span><span class="co"> pdf_document</span></span>
+<span id="cb23-5"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>For advanced editing, read the other tab panel ️➡️</p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-2">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png" style="height: 70px;vertical-align: middle;"> is useful in <span class="r-md">R Markdown</span> for chunk calls, and more generally for cross-referencing. <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-adobe-pdf.png" style="height: 45px;vertical-align: middle;"> uses <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;"> syntax, if you don’t have <a href="https://miktex.org/">MiKTeX</a> installed, you need to install the <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-tinytex.png" style="height: 70px;vertical-align: middle;"> package <span class="citation" data-cites="Xie19">(<a href="#/references-1" role="doc-biblioref" onclick="">Xie 2019</a>)</span>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">install.packages</span>(<span class="st">'tinytex'</span>)</span>
+<span id="cb24-2"><a></a>tinytex<span class="sc">::</span><span class="fu">install_tinytex</span>()</span>
+<span id="cb24-3"><a></a><span class="co"># .rs.restartR()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To export in PDF, use <code>bookdown::pdf_document2:</code> and knit.</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb25" data-code-line-numbers="5-6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb25-1"><a></a><span class="co">---</span></span>
+<span id="cb25-2"><a></a><span class="an">title:</span><span class="co"> "temp"</span></span>
+<span id="cb25-3"><a></a><span class="an">output:</span><span class="co"> pdf_document</span></span>
+<span id="cb25-4"><a></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
+<span id="cb25-5"><a></a><span class="an">output:</span></span>
+<span id="cb25-6"><a></a><span class="co">  bookdown::pdf_document2:</span></span>
+<span id="cb25-7"><a></a><span class="co">    css: styles.css</span></span>
+<span id="cb25-8"><a></a><span class="co">    toc: yes</span></span>
+<span id="cb25-9"><a></a><span class="co">    toc_depth: 4</span></span>
+<span id="cb25-10"><a></a><span class="co">    toc_float:</span></span>
+<span id="cb25-11"><a></a><span class="co">      collapsed: no</span></span>
+<span id="cb25-12"><a></a><span class="an">bibliography:</span><span class="co"> references.bib</span></span>
+<span id="cb25-13"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>These temporary files are creates:</p>
+<p><img data-src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_knit_pdf.png" width="400"></p>
+<p>At the end of the rendering, these files are deleted.</p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</section>
+<section id="latex" class="slide level2">
+<h2>LaTeX</h2>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png" style="height: 45px;vertical-align: middle;"> (extension of <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png" style="height: 45px;vertical-align: middle;">) is a rich plain text syntax for academic writing. To export in <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-tex.png" style="height: 45px;vertical-align: middle;">, select in the <span class="r-yaml">YAML header</span>: PDF export + keep tex</p>
+<div class="div-yaml">
+<p><small>header YAML</small></p>
+<div class="sourceCode" id="cb26" data-code-line-numbers="5-6"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb26-1"><a></a><span class="co">---</span></span>
+<span id="cb26-2"><a></a><span class="an">title:</span><span class="co"> "temp"</span></span>
+<span id="cb26-3"><a></a><span class="an">date:</span><span class="co"> '2023-02-05'</span></span>
+<span id="cb26-4"><a></a><span class="an">output:</span></span>
+<span id="cb26-5"><a></a><span class="co">  bookdown::pdf_document2: </span></span>
+<span id="cb26-6"><a></a><span class="co">    keep_tex: true</span></span>
+<span id="cb26-7"><a></a><span class="co">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="publishing" class="slide level2">
+<h2>Publishing</h2>
+<div class="panel-tabset">
+<ul id="tabset-6" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-6-1">On Rpubs</a></li><li><a href="#tabset-6-2">On GitHub and GitLab</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1">
+<p>On <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-rpubs.png" style="height: 45px;vertical-align: middle;">, after Render: <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_publish_Rpubs.png" style="height: 45px;vertical-align: middle;"></p>
+<iframe width="1000" height="300" src="https://rpubs.com/"></iframe>
+<p><small><a href="https://rpubs.com/" class="uri">https://rpubs.com/</a></small></p>
+<p><br>
+</p>
+</div>
+<div id="tabset-6-2">
+<p>On GitHub <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 45px;vertical-align: middle;">, or GitLab <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-gitlab.png" style="height: 45px;vertical-align: middle;">, the same document, or related documents, are accessibles by different means:</p>
+<table>
+<thead>
+<tr>
+<th>
+output
+</th>
+<th>
+URL
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+raw
+</td>
+<td>
+<small><a href="https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd" class="uri">https://raw.githubusercontent.com/zoometh/thomashuet/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd</a></small>
+</td>
+</tr>
+<tr>
+<td>
+<code>.Rmd</code>
+</td>
+<td>
+<small><a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd</a></small>
+</td>
+</tr>
+<tr>
+<td>
+PDF
+</td>
+<td>
+<small><a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.pdf" class="uri">https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.pdf</a></small>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br>
+<br>
+</p>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="practice" class="title-slide slide level1 center" data-background-color="#FFA500">
+<h1>Practice</h1>
+
+</section>
+<section id="practice" class="slide level2 scrollable">
+<h2>Practice</h2>
+<div class="panel-tabset">
+<ul id="tabset-7" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-7-1">Objective</a></li><li><a href="#tabset-7-2">How to start?</a></li><li><a href="#tabset-7-3">How to finish?</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1">
+<p>Create a <span class="r-md">R Markdown</span> report. Choose between:</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox">improve report “<em>Münsingen-Rain necropolis (Bern, Switzerland)</em>” (<a href="https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.Rmd">here</a>) using the dataset ‘Fibulae’ from {<code>archdata</code>}</label></p></li>
+<li><p><label><input type="checkbox">create a new report and select another dataset from {<code>archdata</code>} (e.g.&nbsp;‘Handaxes’), see <a href="https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part1#/new-document">doc</a> .</label></p></li>
+</ul>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>The practical part has an estimated duration of 60 minutes</p>
+</div>
+</div>
+</div>
+<p><br>
+</p>
+</div>
+<div id="tabset-7-2">
+<ol type="1">
+<li>Download/Copy the folder <code>r4a/2025/practice/</code> by following this link:</li>
+</ol>
+<div class="sourceCode" id="cb27"><pre class="sourceCode numberSource html number-lines code-with-copy"><code class="sourceCode html"><span id="cb27-1"><a></a>https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2025/practice/</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ol start="2" type="1">
+<li>(<strong><em>optional</em></strong>) install the {<code>bookdown</code>} package</li>
+</ol>
+<div class="sourceCode" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a><span class="fu">install.packages</span>(<span class="st">"bookdown"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div id="tabset-7-3">
+<p>Contact me, send me your <code>.Rmd</code>, the output (ex: PDF), and related files (e.g.&nbsp;<code>references.bib</code>) here online 👋</p>
+<center>
+or
+</center>
+<p>Write a <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-github.png" style="height: 50px;vertical-align: middle;"> issue: <a href="https://github.com/zoometh/thomashuet/issues/2" class="uri">https://github.com/zoometh/thomashuet/issues/2</a></p>
+</div>
+</div>
+</div>
+</section>
+<section id="references-1" class="slide level2 smaller scrollable">
+<h2>References</h2>
+
+<div class="quarto-auto-generated-content">
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-uni-oxford_cnrs-iramat.png" class="slide-logo"></p>
+<div class="footer footer-default">
+<p>Report with R Markdown - R4Rchaeologists <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="height: 35px;vertical-align: middle;"> Università di Pisa, Jan 2025 - <em>presented by </em> Thomas Huet</p>
+</div>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Xie19" class="csl-entry" role="listitem">
+Xie, Yihui. 2019. <span>“Tinytex: A Lightweight, Cross-Platform, and Easy-to-Maintain Latex Distribution Based on Tex Live.”</span> <em>TUGboat</em> 40: 30–32. <a href="https://yihui.org/tinytex/">https://yihui.org/tinytex/</a>.
+</div>
+<div id="ref-Xie18" class="csl-entry" role="listitem">
+Xie, Yihui, Joseph J Allaire, and Garrett Grolemund. 2018. <em>R Markdown: The Definitive Guide</em>. <a href="https://bookdown.org/yihui/rmarkdown/" class="uri">https://bookdown.org/yihui/rmarkdown/</a>; CRC Press.
+</div>
+</div>
+</section></section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': false,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1200,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 1.0e-2,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          return note.innerHTML;
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
