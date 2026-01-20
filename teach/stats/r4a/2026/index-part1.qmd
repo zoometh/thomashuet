@@ -37,6 +37,7 @@ pagetitle: "Report with R Markdown - part 1"
 footer: "<small>R4Rchaeologists <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png' style='height: 20px;vertical-align: middle;'> Università di Pisa, Jan 2026</small>"
 ---
 
+
 ## Introduction
 
 ```{r echo=FALSE, eval=FALSE}
@@ -138,16 +139,11 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 ### Archaeology 
 
 :::: {.columns}
-::: {.column width="30%"}
-
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex1.jpg' style='height: 350px;vertical-align: middle;'>
-
-
-:::
 
 ::: {.column width="40%"}
 
-<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex2.jpg' style='height: 350px;vertical-align: middle;'>
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/inst-inrap-archeozoologie-ex2.jpg' style='height: 330px;vertical-align: middle;'>
+<div class="captiontext">L'archéozoologie &copy; Inrap</div>
 
 :::
 
@@ -157,10 +153,19 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 
 :::
 
+::: {.column width="30%"}
+
+<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown-ex-report-html.png' style='height: 350px;vertical-align: middle;'>
 
 :::
 
-<small>L'archéozoologie &copy; Inrap</small>
+
+
+:::
+
+
+\
+\
 
 
 
@@ -506,7 +511,6 @@ Pandoc text conversion (<img src='https://raw.githubusercontent.com/zoometh/thom
 
 ### Text and paragraphs
 
-<small>
 
 +---------------------------------------+-------------------------------------+
 | Markdown                              | Rendered                            |
@@ -552,15 +556,13 @@ Below this text there's a line separator
 
 ---
 
-</small>
-
 \
 \
 
 
 ### Math formula
 
-| Markdown                   | Rendered                 |
+| Markdown (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>)                  | Rendered                 |
 |----------------------------|--------------------------|
 | `$$\sum_{i=1}^{n} X^3_i$$` | $$\sum_{i=1}^{n} X^3_i$$ |
 | ...                        | ...                      |
