@@ -179,7 +179,7 @@
     "href": "index-part1.html#introduction",
     "title": "Authoring and publishing with R Markdown",
     "section": "Introduction",
-    "text": "Introduction\n\nR MarkdownLPsLPs exampleAbout this presentation\n\n\nR Markdown allows Literate programming (LPs)1. It combines R code chunks and narrative parts with – mainly – Markdown syntax\n\n\n\n\n\n\nNote\n\n\nR Markdown = .Rmd =  .R +  .md for Markdown\n\n\n\n\n\nLPs are used to create data-driven documents (reports) from a notebook interface\n\n\n\n\nLPs\n\n\nLanguage\n\n\nOriented\n\n\n\n\n\n\nR Markdown\n\n\n\n\n\nfront-end\n\n\n\n\nJupyter\n\n\n\n\n\nback-end\n\n\n\n\nD3.js\n\n\n\n\n\nweb\n\n\n\n\n\n\n\ndata &lt;- openxlsx::read.xlsx(\"data.xlsx\", \n                            colNames = TRUE, \n                            rowNames = TRUE)\nMNI &lt;- sum(data$MNI)\n\nThe minimum number of individuals (MNI) is 202\n\n\n\n\n\n\nNote\n\n\nThe minimum number of individuals (MNI) is ‘r MNI’\n\n\n\n\n\nA  Quarto document (.qmd) using  reveal.js () hosted on  GitHub (here), prepared in RStudio (aka posit)."
+    "text": "Introduction\n\nR MarkdownLP exampleLPsAbout this presentation\n\n\nR Markdown allows Literate programming (LPs)1. It combines R code chunks and narrative parts with – mainly – Markdown syntax\n\n\n\n\n\n\nNote\n\n\nR Markdown = .Rmd =  .R +  .md for Markdown\n\n\n\n\n\n\ndata &lt;- openxlsx::read.xlsx(\"data.xlsx\", \n                            colNames = TRUE, \n                            rowNames = TRUE)\nMNI &lt;- sum(data$MNI)\n\nThe minimum number of individuals (MNI) is 202\n\n\n\n\n\n\nNote\n\n\nSee the code source\n\n\n\n\n\nLPs are used to create data-driven documents (reports) from a notebook interface\n\n\n\n\nLPs\n\n\nLanguage\n\n\nOriented\n\n\n\n\n\n\nR Markdown\n\n\n\n\n\nfront-end\n\n\n\n\nJupyter\n\n\n\n\n\nback-end\n\n\n\n\nD3.js\n\n\n\n\n\nweb\n\n\n\n\n\n\nA  Quarto document (.qmd) – useful for publishing online presentations, wikis and books – using  reveal.js () hosted on  GitHub (here), prepared in RStudio (aka posit)."
   },
   {
     "objectID": "index-part1.html#why-r-markdown",
@@ -193,49 +193,49 @@
     "href": "index-part1.html#main-packages",
     "title": "Authoring and publishing with R Markdown",
     "section": "Main packages",
-    "text": "Main packages\n\n\n\n\n\n\n\nknitr engine for dynamic report generation with R (e.g. convert to LaTeX)\n\n\n\n\n\n\n\nextension of knitr… rmarkdown convert R Markdown documents into a variety of formats\n\n\n\n\n\n\n\nbookdown for advanced editing (e.g. cross-referencing) for long formats (ex: books, theses)"
+    "text": "Main packages\n\n\n\n\n\n\n\nknitr engine for dynamic report generation with R (e.g. convert to LaTeX)\n\n\n\n\n\n\n\nrmarkdown is an extension of knitr to convert R Markdown documents into a variety of formats\n\n\n\n\n\n\n\nbookdown for advanced editing (e.g. cross-referencing) for long formats (ex: books, theses)"
   },
   {
     "objectID": "index-part1.html#new-document",
     "href": "index-part1.html#new-document",
     "title": "Authoring and publishing with R Markdown",
     "section": "New document",
-    "text": "New document\n\nCreateRStudio previewGitHub previewKnit\n\n\n\nIn RStudio: File &gt; New file &gt; R Markdown...\n\n\n\n\n\nChoose PDF as the default output format. Options (Title, Author, Date, etc.) can be changed later.\n\n\n\n\nA new document is created.\n\nSave it\n\n\n\n\n\n\nhttps://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2026/temp.Rmd\n\n\n\n\n\nRun the new document with knitr , it will launch the render"
+    "text": "New document\n\nCreateRStudio previewGitHub previewabout Knit\n\n\n\nIn RStudio: File &gt; New file &gt; R Markdown...\n\n\n\n\n\nChoose PDF as the default output format. Options (Title, Author, Date, etc.) can be changed later.\n\n\n\n\nA new document is created.\n\n\n\nSave your document\n\n\n\n\n\n\nhttps://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2026/temp.Rmd\n\n\n\n\n\nRun the new document with knitr , it will launch the render"
   },
   {
     "objectID": "index-part1.html#rstudio-tools",
     "href": "index-part1.html#rstudio-tools",
     "title": "Authoring and publishing with R Markdown",
     "section": "RStudio tools",
-    "text": "RStudio tools\n\nToolsVisual R Markdown\n\n\n\n\n\n\n\ntool\n\n\ndescription\n\n\n\n\n\n\n\n\n\nknit automatically when save the document\n\n\n\n\n\n\n\ncheck spelling\n\n\n\n\n\n\n\nknit the document\n\n\n\n\n\n\n\nrun Visual R Markdown + other options\n\n\n\n\n\n\n\nnew code chunk (R, Python, GraphViz, Mermaid, etc.)\n\n\n\n\n\n\n\nrun a part or the whole document\n\n\n\n\n\n\n\npublish the document\n\n\n\n\n\n\n\nrun Visual R Markdown\n\n\n\n\n\n\n\nVisual R Markdown is a graphical editing mode with a Pandoc syntax (extension of ), supports . For citations, supports Zotero , can retrieve complete bibliographical references from DOI  or searches on PubMed , Crossref , and DataCite"
+    "text": "RStudio tools\n\nToolsVisual R Markdown\n\n\n\n\n\n\n\ntool\n\n\ndescription\n\n\n\n\n\n\n\n\n\nknit automatically when saving the document\n\n\n\n\n\n\n\ncheck spelling\n\n\n\n\n\n\n\nknit the document\n\n\n\n\n\n\n\nrun Visual R Markdown + other options\n\n\n\n\n\n\n\nnew code chunk (R, Python, GraphViz, Mermaid, etc.)\n\n\n\n\n\n\n\nrun a part or the whole document\n\n\n\n\n\n\n\npublish the document\n\n\n\n\n\n\n\nrun Visual R Markdown\n\n\n\n\n\n\n\nVisual R Markdown is a graphical editing mode with a Pandoc syntax (extension of ), supports . For citations, supports Zotero , can retrieve complete bibliographical references from DOI  or searches on PubMed , Crossref , and DataCite"
   },
   {
     "objectID": "index-part1.html#document-structure",
     "href": "index-part1.html#document-structure",
     "title": "Authoring and publishing with R Markdown",
     "section": "Document structure",
-    "text": "Document structure\nR Markdown combines\n\n\n\nheader YAML a YAML header with metadata\n\n\ncode chunk  code chunks\n\n\nnarrative part  narrative parts"
+    "text": "Document structure\nR Markdown combines\n\n\n\nheader YAML YAML header + document metadata\n\n\ncode chunk  code chunks\n\n\nnarrative part  narrative parts"
   },
   {
     "objectID": "index-part1.html#document-structure-1",
     "href": "index-part1.html#document-structure-1",
     "title": "Authoring and publishing with R Markdown",
     "section": "Document structure",
-    "text": "Document structure\nR Markdown combines\n\n\n\nheader YAML\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\netc."
+    "text": "Document structure\nR Markdown combines\n\n\n\nheader YAML\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\netc.\n\n\netc."
   },
   {
     "objectID": "index-part1.html#text",
     "href": "index-part1.html#text",
     "title": "Authoring and publishing with R Markdown",
     "section": "Markdown syntax",
-    "text": "Markdown syntax\n\nUsed bySyntaxEditorConverter\n\n\nDifferent code-oriented frameworks: Jupyter , GitHub , GitLab , Obsidian , Wordpress , Google Doc , Sketchfab , Slack , Stackoverflow , Discourse , Reddit , etc.\n\n\n\nhttps://rmarkdown.rstudio.com/authoring_basics.html\n\n\n\n\nhttps://stackedit.io/app#\n\n\n\nText conversion ( ↔︎ ,  ↔︎ ,  ↔︎ , etc.) with Pandoc\n\nhttps://pandoc.org/try/"
+    "text": "Markdown syntax\n\nUsed bySyntaxEditorConverter\n\n\nDifferent code-oriented frameworks: Jupyter , GitHub , GitLab , Obsidian , Wordpress , Google Doc , Sketchfab , Slack , Stackoverflow , Discourse , Reddit , etc.\n\n\n\nhttps://rmarkdown.rstudio.com/authoring_basics.html\n\n\n\n\nhttps://stackedit.io/app#\n\n\n\nPandoc text conversion (↔︎, ↔︎, ↔︎, etc.)\n\nhttps://pandoc.org/try/"
   },
   {
     "objectID": "index-part1.html#styling",
     "href": "index-part1.html#styling",
     "title": "Authoring and publishing with R Markdown",
     "section": "Styling",
-    "text": "Styling\n\nText and paragraphsMath formulawith  and \n\n\n\n\n\n\n\n\n\nMarkdown\nRendered\n\n\n\n\n**bold**, __bold__\nbold, bold\n\n\n*italic*, _italic_\nitalic, italic\n\n\ncode\ncode\n\n\nhyphen -- inserted -- in a sentence\nhyphen – inserted – in a sentence\n\n\nH~2~O\nH2O\n\n\n10^−19^\n10−19\n\n\n…\n…\n\n\n\nblockquotes\n\nnarrative part\n&gt; I am a blockquote\n\n\nI am a blockquote\n\nline separator\n\nnarrative part\nBelow this text there's a line separator\n---\n\nBelow this text there’s a line separator\n\n\n\n\n\n\n\n\n\nMarkdown\nRendered\n\n\n\n\n$$\\sum_{i=1}^{n} X^3_i$$\n\\[\\sum_{i=1}^{n} X^3_i\\]\n\n\n…\n…\n\n\n\n\n\nText styling can be extended done with  markup languages\n\nnarrative part\n&lt;h2 style=\"color:blue;\"&gt;A Blue Heading&lt;/h2&gt;\n&lt;p style=\"color:red;\"&gt;A red paragraph.&lt;/p&gt;\n\n\nA Blue Heading\n\n\nA red paragraph."
+    "text": "Styling\n\nText and paragraphsMath formulawith  and \n\n\n\n\n\n\n\n\n\n\nMarkdown\nRendered\n\n\n\n\n**bold**, __bold__\nbold, bold\n\n\n*italic*, _italic_\nitalic, italic\n\n\ncode\ncode\n\n\nhyphen -- inserted -- in a sentence\nhyphen – inserted – in a sentence\n\n\nH~2~O\nH2O\n\n\n10^−19^\n10−19\n\n\n…\n…\n\n\n\nblockquotes\n\nnarrative part\n&gt; I am a blockquote\n\n\nI am a blockquote\n\nline separator\n\nnarrative part\nBelow this text there's a line separator\n---\n\nBelow this text there’s a line separator\n\n\n\n\n\n\n\n\n\n\nMarkdown\nRendered\n\n\n\n\n$$\\sum_{i=1}^{n} X^3_i$$\n\\[\\sum_{i=1}^{n} X^3_i\\]\n\n\n…\n…\n\n\n\n\n\nText styling can be extended done with  markup languages\n\nnarrative part\n&lt;h2 style=\"color:blue;\"&gt;A Blue Heading&lt;/h2&gt;\n&lt;p style=\"color:red;\"&gt;A red paragraph.&lt;/p&gt;\n\n\nA Blue Heading\n\n\nA red paragraph."
   },
   {
     "objectID": "index-part1.html#list",

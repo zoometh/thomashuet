@@ -71,6 +71,21 @@ R Markdown = `.Rmd` =  <img src='https://raw.githubusercontent.com/zoometh/thoma
 
 [^0]: _syn._: Authoring Framework for Data Science (AFDS), or Executable Publication.
 
+### LP example
+
+```{r echo = TRUE}
+data <- openxlsx::read.xlsx("data.xlsx", 
+                            colNames = TRUE, 
+                            rowNames = TRUE)
+MNI <- sum(data$MNI)
+```
+
+The minimum number of individuals (MNI) is `r MNI`
+
+::: {.callout-note}
+See the [code source](https://github.com/zoometh/thomashuet/blob/0d6932cd4e7a618fd6dc8c96f0aec62ca852d92b/teach/stats/r4a/2026/index-part1.qmd#L108-L115)
+:::
+
 
 ### LPs
 
@@ -103,25 +118,10 @@ LPs are used to create data-driven documents (reports) from a notebook interface
 </tbody>
 </table>
 
-### LPs example
-
-```{r echo = TRUE}
-data <- openxlsx::read.xlsx("data.xlsx", 
-                            colNames = TRUE, 
-                            rowNames = TRUE)
-MNI <- sum(data$MNI)
-```
-
-The minimum number of individuals (MNI) is `r MNI`
-
-::: {.callout-note}
-The minimum number of individuals (MNI) is 'r MNI'
-:::
-
 
 ### About this presentation
 
-A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png' style='height: 45px;vertical-align: middle;'> Quarto document (`.qmd`) using <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png' style='height: 45px;vertical-align: middle;'> reveal.js (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'>) hosted on <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png' style='height: 45px;vertical-align: middle;'> GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2026/index-part1.qmd)), prepared in RStudio (*aka* posit).
+A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-r-quarto-2.png' style='height: 45px;vertical-align: middle;'> Quarto document (`.qmd`) -- useful for publishing online presentations, wikis and books --  using <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-web-js-revealjs-1.png' style='height: 45px;vertical-align: middle;'> reveal.js (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-js.png' style='height: 45px;vertical-align: middle;'>) hosted on <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/github.png' style='height: 45px;vertical-align: middle;'> GitHub ([here](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2026/index-part1.qmd)), prepared in RStudio (*aka* posit).
 
 ```{=html}
 <script src="https://quarto.org/docs/presentations/revealjs/"></script>
@@ -232,7 +232,7 @@ Copy/paste can be done over numerous code-oriented platforms without losing the 
   </tr>
   <tr>
     <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-rmarkdown.png' style='width: 100px;vertical-align: middle;'></td>
-    <td>extension of [knitr](https://yihui.org/knitr/)... [rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) convert <span class="r-md">R Markdown</span> documents into a variety of formats</td>
+    <td>[rmarkdown](https://cran.r-project.org/web/packages/rmarkdown/index.html) is an extension of [knitr](https://yihui.org/knitr/) to convert <span class="r-md">R Markdown</span> documents into a variety of formats</td>
   </tr>
     <tr>
     <td><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-bookdown.png' style='width: 100px;vertical-align: middle;'></td>
@@ -263,12 +263,13 @@ Copy/paste can be done over numerous code-oriented platforms without losing the 
 <center>
 
 ![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd.png){width="500px"}
+<div class="captiontext">A new document is created.</div>
 
 </center>  
 
-A new document is created.
 
-3. Save it
+
+3. Save your document
 
 
 ### RStudio <small>preview</small>
@@ -289,7 +290,7 @@ A new document is created.
 <script src="https://gist.github.com/zoometh/d1b4945d1c16f853a7888ede03c4807d.js"></script>
 ```
 
-### Knit
+### about Knit
 
 Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>, it will launch the render
 
@@ -322,7 +323,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 <tbody>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_knitOnSave.png){width="80px"}</td>
-    <td>`knit` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>automatically when save the document</td>
+    <td>`knit` <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/r-pkg-knitr.png" style="height: 40px;vertical-align: middle;"/>automatically when saving the document</td>
   </tr>
   <tr>
     <td>![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_nav_checkSpelling.png){width="80px"}</td>
@@ -374,7 +375,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 <div class="div-yaml"> 
 <small>header YAML</small><br>
-a [YAML header](#yaml) with metadata
+[YAML header](#yaml) + document metadata
 </div>
 
 <div class="div-code"> 
@@ -434,7 +435,17 @@ a [YAML header](#yaml) with metadata
 <small>narrative part</small><br>
 </div>
 
-etc.
+<div class="div-code"> 
+<small>code chunk</small><br>
+</div>
+
+<div class="div-text"> 
+<small>etc.</small><br>
+</div>
+
+<div class="div-code"> 
+<small>etc.</small><br>
+</div>
 
 :::
 
@@ -477,10 +488,10 @@ Different code-oriented frameworks: [Jupyter](https://hub.mybinder.turing.ac.uk/
 
 ### Converter
 
-Text conversion (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'> ↔ <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.) with Pandoc
+Pandoc text conversion (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>↔<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-win-word.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>↔<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'>, <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-markdown.png' style='height: 45px;vertical-align: middle;'>↔<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>, etc.) 
 
 ```{=html}
-<iframe width="1000" height="300" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
+<iframe width="1000" height="350" src="https://pandoc.org/try/" title="Pandoc online convertor"></iframe>
 ```
 <small><https://pandoc.org/try/></small>
 \
@@ -494,6 +505,8 @@ Text conversion (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/
 ::: {.panel-tabset}
 
 ### Text and paragraphs
+
+<small>
 
 +---------------------------------------+-------------------------------------+
 | Markdown                              | Rendered                            |
@@ -538,6 +551,8 @@ Below this text there's a line separator
 Below this text there's a line separator
 
 ---
+
+</small>
 
 \
 \
