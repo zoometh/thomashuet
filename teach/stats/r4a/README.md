@@ -7,18 +7,22 @@
 
 </center>
 
-* [2022](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2022)
-* [2023](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2023)
-* [2024](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024)
+* [2022](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2022) (3-hour)
+* [2023](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2023) (3-hour)
+* [2024](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2024) (3-hour)
 	- Theory 
 		- [part 1](https://zoometh.github.io/thomashuet/teach/stats/r4a/2024/site/index-part1)
 		- [part 2](https://zoometh.github.io/thomashuet/teach/stats/r4a/2024/site/index-part2)
 	- [Practice](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2024/practice/2_Rmarkdown_Practice.pdf)
-* [2025](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2025)
+* [2025](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2025) (3-hour)
 	- Theory 
 		- [part 1](https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part1)
 		- [part 2](https://zoometh.github.io/thomashuet/teach/stats/r4a/2025/site/index-part2)
 	- [Practice](https://github.com/zoometh/thomashuet/blob/main/teach/stats/r4a/2025/practice/2_Rmarkdown_Practice.pdf)
+* [2026](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2026) (2-hour)
+	- Theory 
+		- [part 1](https://zoometh.github.io/thomashuet/teach/stats/r4a/2026/site/index-part1)
+		- [part 2](https://zoometh.github.io/thomashuet/teach/stats/r4a/2026/site/index-part2)
 ---
 
 Quarto doc navigation:
