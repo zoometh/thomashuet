@@ -1052,7 +1052,7 @@ A simple footnote[^66] and a second one[^3]
 A simple footnote[^66] and a second one[^12]
 
 ::: {.callout-note}
-Footnotes numbering is automatically sorted and incremented. Footnotes can be placed virtually everywhere
+Footnotes numbering is automatically sorted and incremented. Footnotes can be placed virtually everywhere (check [this example](https://github.com/zoometh/thomashuet/blob/695e1c0198c989774e4a117bf520d28089c9b158/teach/stats/r4a/2026/index-part1.qmd#L1052-L1059))
 :::
 
 [^66]: This is a first footnote.
@@ -1081,7 +1081,7 @@ data("Handaxes")
 number.of.axes <- nrow(Handaxes)
 ```
 
-can be called in the <span class="r-text">narrative parts</span>
+can be called in the <span class="r-text">narrative parts</span>, for example `number.of.axes`
 
 <div class="div-text"> 
 <small>narrative part</small>
@@ -1114,7 +1114,7 @@ abline(lm(model))
 ```
 </div>
 
-```{r maxLmaxB, echo=FALSE, fig.align="center", fig.cap= "Axes L/B ratio"}
+```{r maxLmaxB, echo=FALSE, fig.cap= "Axes L/B ratio"}
 #| out-width: "60%"
 
 library(archdata)
@@ -1149,18 +1149,18 @@ abline(lm(model))
 
 ::: {.panel-tabset}
 
-
-### in YAML
+### BibTeX
 
 <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png' style='height: 45px;vertical-align: middle;'> (`.bib`) is a plain text format for bibliographic references.
 
 <center>
 
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="700"/>
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="900"/>
 
 </center>
-  
-  
+
+### in YAML
+
 The `.bib` file is referenced in the <span class="r-yaml">YAML header</span>.
   
 <div class="div-yaml"> 
@@ -1215,7 +1215,7 @@ published by Yihui Xie [-@Xie19]
 +---------------------------------------------+-------------------------------------------+
 
 ::: {.callout-note}
-It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and paste it in the `.bib` file. You can also use [Visual R Markdown](#vrm) bibliographical references add-on (ex: [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>)
+It's easy to retrieve [this reference in Google Scholar](https://scholar.google.fr/scholar?hl=en&as_sdt=0%2C5&q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&btnG=), and paste it in the `.bib` file. Or, you can use [Visual R Markdown](#vrm) bibliographical references add-on (ex: [Zotero](https://www.zotero.org/) <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;"/>)
 :::
 
 \

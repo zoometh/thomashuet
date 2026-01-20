@@ -1353,12 +1353,12 @@ Ton cou Exquis<br>
 <h2>Footnote(s)</h2>
 <div class="div-text">
 <p><small>narrative part</small><br></p>
-<div class="sourceCode" id="cb27" data-code-line-numbers="1|4|5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a>A simple footnote<span class="ot">[^66]</span> and a second one<span class="ot">[^12]</span></span>
+<div class="sourceCode" id="cb27" data-code-line-numbers="1|4|5"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a>A simple footnote<span class="ot">[^66]</span> and a second one<span class="ot">[^3]</span></span>
 <span id="cb27-2"><a></a></span>
 <span id="cb27-3"><a></a><span class="ot">[^66]: </span>This is a first footnote.</span>
-<span id="cb27-4"><a></a><span class="ot">[^12]: </span>This is a second footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-4"><a></a><span class="ot">[^3]: </span>This is a second footnote.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>A simple footnote<a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a> and a second one<a href="#/footnotes" class="footnote-ref" id="fnref11" role="doc-noteref" data-footnote-href="#/fn11" onclick=""><sup>11</sup></a></p>
+<p>A simple footnote<a href="#/footnotes" class="footnote-ref" id="fnref10" role="doc-noteref" data-footnote-href="#/fn10" onclick=""><sup>10</sup></a> and a second one[^12]</p>
 <div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1368,7 +1368,7 @@ Ton cou Exquis<br>
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>Footnotes numbering is automatically sorted and incremented</p>
+<p>Footnotes numbering is automatically sorted and incremented. Footnotes can be placed virtually everywhere (check <a href="https://github.com/zoometh/thomashuet/blob/695e1c0198c989774e4a117bf520d28089c9b158/teach/stats/r4a/2026/index-part1.qmd#L1052-L1059">this example</a>)</p>
 </div>
 </div>
 </div>
@@ -1386,7 +1386,7 @@ Ton cou Exquis<br>
 <span id="cb28-2"><a></a><span class="fu">data</span>(<span class="st">"Handaxes"</span>)</span>
 <span id="cb28-3"><a></a>number.of.axes <span class="ot">&lt;-</span> <span class="fu">nrow</span>(Handaxes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>can be called in the <span class="r-text">narrative parts</span></p>
+<p>can be called in the <span class="r-text">narrative parts</span>, for example <code>number.of.axes</code></p>
 <div class="div-text">
 <p><small>narrative part</small></p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a></a><span class="dt">&lt;</span><span class="kw">small</span><span class="dt">&gt;</span>Furze Platt dataset counts 'r number.of.axes' axes<span class="dt">&lt;/</span><span class="kw">small</span><span class="dt">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1418,7 +1418,7 @@ Ton cou Exquis<br>
 <span id="cb31-4"><a></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(B <span class="sc">~</span> L, <span class="at">data =</span> Handaxes)</span>
 <span id="cb31-5"><a></a><span class="fu">abline</span>(<span class="fu">lm</span>(model))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-layout-align="center">
+<div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -1458,13 +1458,15 @@ Ton cou Exquis<br>
 <section id="bibliographic-references" class="slide level2">
 <h2>Bibliographic references</h2>
 <div class="panel-tabset">
-<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">in YAML</a></li><li><a href="#tabset-14-2">references.bib</a></li><li><a href="#tabset-14-3">Cross citation</a></li></ul>
+<ul id="tabset-14" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-14-1">BibTeX</a></li><li><a href="#tabset-14-2">in YAML</a></li><li><a href="#tabset-14-3">references.bib</a></li><li><a href="#tabset-14-4">Cross citation</a></li></ul>
 <div class="tab-content">
 <div id="tabset-14-1">
 <p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-bibtex.png" style="height: 45px;vertical-align: middle;"> (<code>.bib</code>) is a plain text format for bibliographic references.</p>
 <center>
-<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="700"></p>
+<p><img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_bib.png" alt="rmd_bib" width="900"></p>
 </center>
+</div>
+<div id="tabset-14-2">
 <p>The <code>.bib</code> file is referenced in the <span class="r-yaml">YAML header</span>.</p>
 <div class="div-yaml">
 <p><small>header YAML</small></p>
@@ -1479,10 +1481,10 @@ Ton cou Exquis<br>
 <p><br>
 </p>
 </div>
-<div id="tabset-14-2">
+<div id="tabset-14-3">
 <script src="https://gist.github.com/zoometh/f9e61b40970403765a080fa5a63b05e9.js"></script>
 </div>
-<div id="tabset-14-3">
+<div id="tabset-14-4">
 <div class="div-text">
 <p><small>narrative part</small></p>
 <div class="sourceCode" id="cb34"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>published by Yihui Xie <span class="co">[</span><span class="ot">-@Xie19</span><span class="co">]</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1533,7 +1535,7 @@ Ton cou Exquis<br>
 <p><strong>Note</strong></p>
 </div>
 <div class="callout-content">
-<p>It’s easy to retrieve <a href="https://scholar.google.fr/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&amp;btnG=">this reference in Google Scholar</a>, and paste it in the <code>.bib</code> file. You can also use <a href="#/vrm">Visual R Markdown</a> bibliographical references add-on (ex: <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;">)</p>
+<p>It’s easy to retrieve <a href="https://scholar.google.fr/scholar?hl=en&amp;as_sdt=0%2C5&amp;q=Tinytex%3A+A+Lightweight%2C+Cross-Platform%2C+and+Easy-to-Maintain+Latex+Distribution+Based+on+Tex+Live&amp;btnG=">this reference in Google Scholar</a>, and paste it in the <code>.bib</code> file. Or, you can use <a href="#/vrm">Visual R Markdown</a> bibliographical references add-on (ex: <a href="https://www.zotero.org/">Zotero</a> <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-bib-zotero.png" style="height: 45px;vertical-align: middle;">)</p>
 </div>
 </div>
 </div>
@@ -1579,7 +1581,6 @@ Xie, Yihui, Christophe Dervieux, and Emily Riederer. 2020. <em>R Markdown Cookbo
 <li id="fn8"><p>React</p></li>
 <li id="fn9"><p>sf</p></li>
 <li id="fn10"><p>This is a first footnote.</p></li>
-<li id="fn11"><p>This is a second footnote.</p></li>
 </ol>
 </section>
     </div>
