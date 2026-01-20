@@ -161,7 +161,7 @@ A <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-
 
 
 
-:::
+::::
 
 
 \
@@ -373,10 +373,10 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 ## Document structure {auto-animate=true}
 
-<span class="r-md">R Markdown</span> combines
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
+<span class="r-md">R Markdown</span> combines<br>
 
 <div class="div-yaml"> 
 <small>header YAML</small><br>
@@ -397,9 +397,9 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="600px"}
 
 :::
 
@@ -407,10 +407,10 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 ## Document structure {auto-animate=true}
 
-<span class="r-md">R Markdown</span> combines
 
 :::: {.columns}
-::: {.column width="50%"}
+::: {.column width="40%"}
+<span class="r-md">R Markdown</span> combines<br>
 
 <div class="div-yaml"> 
 <small>header YAML</small><br>
@@ -454,9 +454,9 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 :::
 
-::: {.column width="50%"}
+::: {.column width="60%"}
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="500px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="600px"}
 
 :::
 
@@ -565,12 +565,15 @@ Below this text there's a line separator
 | Markdown (<img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-pao-latex.png' style='height: 45px;vertical-align: middle;'>)                  | Rendered                 |
 |----------------------------|--------------------------|
 | `$$\sum_{i=1}^{n} X^3_i$$` | $$\sum_{i=1}^{n} X^3_i$$ |
+| `$$\Delta S \ge 0$$`       | $$\Delta S \ge 0$$       |
 | ...                        | ...                      |
+
+
 
 
 ### with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'> and <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'>
 
-Text styling can be extended done with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'> markup languages
+Text styling can be extended with <img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-html.png' style='height: 45px;vertical-align: middle;'><img src='https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-css.png' style='height: 45px;vertical-align: middle;'> markup languages
 
 <div class="div-text"> 
 <small>narrative part</small><br>
@@ -615,20 +618,18 @@ Text styling can be extended done with <img src='https://raw.githubusercontent.c
 - Unnumbered
   * first element
   * second element
-  * third element
-    - third element - sub 1
-      + third element - sub 1 - subsub 1
-      + third element - sub 1 - subsub 2
+    - second element - sub 1
+      + second element - sub 1 - subsub 1
+      + second element - sub 1 - subsub 2
 ```
 </div>
 
 - Unnumbered
   * first element
   * second element
-  * third element
-    - third element - sub 1
-      + third element - sub 1 - subsub 1
-      + third element - sub 1 - subsub 2
+    - second element - sub 1
+      + second element - sub 1 - subsub 1
+      + second element - sub 1 - subsub 2
       
 :::      
 
@@ -695,9 +696,9 @@ Use `:----:`, `:---`, or `---:` to align
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md}
-| Left        |    Center   |         Right |
-| :---        |    :----:   |          ---: |
-| Header      | Title       | Hello         |
+| Left             |    Center           |         Right |
+| :---             |    :----:           |          ---: |
+| Long Header      | My Very Long Title  | Hello World   |
 ```
 </div>
 
@@ -705,13 +706,13 @@ Use `:----:`, `:---`, or `---:` to align
 
 | Left      | Center |       Right |
 |:----------|:------:|------------:|
-| Header    | Title  | Hello       |
+| Long Header    | My Very Long Title  | Hello World      |
 
 \
 
 ### Complex tables
 
-To create in <span class="r-code">code chunks</span>
+To be created in <span class="r-code">code chunks</span>
 
 <div class="div-code"> 
 <small>code chunk</small><br>
@@ -811,11 +812,11 @@ Markdown notation
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-![](C:/Rprojects/thomashuet/teach/www/logo.png){width=100px}
+![](C:/Users/TH282424/Rprojects/thomashuet/teach/www/logo.png){width=100px}
 ```
 </div>
 
-![](C:/Rprojects/thomashuet/teach/www/logo.png){width=100px}
+![](C:/Users/TH282424/Rprojects/thomashuet/teach/www/logo.png){width=100px}
 
 ***
 
@@ -824,11 +825,11 @@ HTML notation
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-<img src="C:/Rprojects/thomashuet/teach/www/logo.png" alt="" width=100>  
+<img src="C:/Users/TH282424/Rprojects/thomashuet/teach/www/logo.png" alt="logo" width=100>  
 ```
 </div>
 
-<img src="C:/Rprojects/thomashuet/teach/www/logo.png" alt="" width=100>  
+<img src="C:/Users/TH282424/Rprojects/thomashuet/teach/www/logo.png" alt="logo" width=100>  
 
 
 
@@ -842,9 +843,9 @@ HTML notation
 
 Extra spaces (HTML only)
 
-- `&emsp;` means 4 spaces (= a tabulation)
-- `&ensp;` means 2 spaces
-- `&nbsp;` means 1 space
+- `&emsp;` = 4 spaces (i.e., a tabulation)
+- `&ensp;` = 2 spaces
+- `&nbsp;` = 1 space
 
 ### End of line
 
@@ -958,7 +959,7 @@ Ton cou Exquis\
 <small>narrative part</small><br>
 ```{.md}
 
-Lorem ipsum dolor sit amet, etc. (**see [My Header level 3](#bookmarks)). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+Lorem ipsum dolor sit amet, etc. (**see [My Header level 3](#bookmarks)). 
 
 ### My Header level 3 {-#bookmarks}
 ```
@@ -977,10 +978,10 @@ Add hyperlinks
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.md }
-part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2026/2_R Markdown_Practice)
+part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2026/2_R Markdown_Practice)
 ```
 </div>
-part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2026/2_R Markdown_Practice)
+part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2026/2_R Markdown_Practice)
 
 ### To image
 
@@ -997,12 +998,12 @@ part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/sta
 <div class="div-text"> 
 <small>narrative part</small><br>
 ```{.html }
-<a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists" target="_blank">
+<a href="https://www.mappalab.eu/en/2021/01/04/r4-archaeologists-winter-school-deadline-postponed/" target="_blank">
     <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="width:170px;" alt="Logo">
 </a>
 ```
 </div>
-<a href="https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists" target="_blank">
+<a href="https://www.mappalab.eu/en/2021/01/04/r4-archaeologists-winter-school-deadline-postponed/" target="_blank">
     <img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png" style="width:170px;" alt="Logo">
 </a>
 
@@ -1012,7 +1013,7 @@ part 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/sta
 ## Bookmarks {#bookmarks .unnumbered}
 
 
-The header `## Practice` has the anchor `#practice-anchor` inside curly brackets:
+The header "`## Practice`" has the anchor "`#practice-anchor`" inside curly brackets:
 
 <div class="div-text"> 
 <small>narrative part</small><br>
@@ -1040,21 +1041,22 @@ After this theoretical part, you will do a [practice](#practice)
 
 <div class="div-text"> 
 <small>narrative part</small><br>
-```{.md code-line-numbers="1|4"}
-A simple footnote[^66].
+```{.md code-line-numbers="1|4|5"}
+A simple footnote[^66] and a second one[^3]
 
-[^10]: This is a footnote.
+[^66]: This is a first footnote.
+[^3]: This is a second footnote.
 ```
 </div>
 
-A simple footnote[^66].
-
-[^66]: This is a footnote.
+A simple footnote[^66] and a second one[^12]
 
 ::: {.callout-note}
-Footnotes numbering are automatically updated/incremented
+Footnotes numbering is automatically sorted and incremented. Footnotes can be placed virtually everywhere
 :::
 
+[^66]: This is a first footnote.
+[^3]: This is a second footnote.
 
 ## Cross-referencing
 

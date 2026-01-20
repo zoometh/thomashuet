@@ -214,14 +214,14 @@
     "href": "index-part1.html#document-structure",
     "title": "Authoring and publishing with R Markdown",
     "section": "Document structure",
-    "text": "Document structure\nR Markdown combines\n\n\n\nheader YAML YAML header + document metadata\n\n\ncode chunk  code chunks\n\n\nnarrative part  narrative parts"
+    "text": "Document structure\n\n\nR Markdown combines\n\nheader YAML YAML header + document metadata\n\n\ncode chunk  code chunks\n\n\nnarrative part  narrative parts"
   },
   {
     "objectID": "index-part1.html#document-structure-1",
     "href": "index-part1.html#document-structure-1",
     "title": "Authoring and publishing with R Markdown",
     "section": "Document structure",
-    "text": "Document structure\nR Markdown combines\n\n\n\nheader YAML\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\netc.\n\n\netc."
+    "text": "Document structure\n\n\nR Markdown combines\n\nheader YAML\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\nnarrative part\n\n\ncode chunk\n\n\netc.\n\n\netc."
   },
   {
     "objectID": "index-part1.html#text",
@@ -235,7 +235,7 @@
     "href": "index-part1.html#styling",
     "title": "Authoring and publishing with R Markdown",
     "section": "Styling",
-    "text": "Styling\n\nText and paragraphsMath formulawith  and \n\n\n\n\n\n\n\n\n\nMarkdown\nRendered\n\n\n\n\n**bold**, __bold__\nbold, bold\n\n\n*italic*, _italic_\nitalic, italic\n\n\ncode\ncode\n\n\nhyphen -- inserted -- in a sentence\nhyphen – inserted – in a sentence\n\n\nH~2~O\nH2O\n\n\n10^−19^\n10−19\n\n\n…\n…\n\n\n\nblockquotes\n\nnarrative part\n&gt; I am a blockquote\n\n\nI am a blockquote\n\nline separator\n\nnarrative part\nBelow this text there's a line separator\n---\n\nBelow this text there’s a line separator\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkdown ()\nRendered\n\n\n\n\n$$\\sum_{i=1}^{n} X^3_i$$\n\\[\\sum_{i=1}^{n} X^3_i\\]\n\n\n…\n…\n\n\n\n\n\nText styling can be extended done with  markup languages\n\nnarrative part\n&lt;h2 style=\"color:blue;\"&gt;A Blue Heading&lt;/h2&gt;\n&lt;p style=\"color:red;\"&gt;A red paragraph.&lt;/p&gt;\n\n\nA Blue Heading\n\n\nA red paragraph."
+    "text": "Styling\n\nText and paragraphsMath formulawith  and \n\n\n\n\n\n\n\n\n\nMarkdown\nRendered\n\n\n\n\n**bold**, __bold__\nbold, bold\n\n\n*italic*, _italic_\nitalic, italic\n\n\ncode\ncode\n\n\nhyphen -- inserted -- in a sentence\nhyphen – inserted – in a sentence\n\n\nH~2~O\nH2O\n\n\n10^−19^\n10−19\n\n\n…\n…\n\n\n\nblockquotes\n\nnarrative part\n&gt; I am a blockquote\n\n\nI am a blockquote\n\nline separator\n\nnarrative part\nBelow this text there's a line separator\n---\n\nBelow this text there’s a line separator\n\n\n\n\n\n\n\n\n\n\n\n\n\nMarkdown ()\nRendered\n\n\n\n\n$$\\sum_{i=1}^{n} X^3_i$$\n\\[\\sum_{i=1}^{n} X^3_i\\]\n\n\n$$\\Delta S \\ge 0$$\n\\[\\Delta S \\ge 0\\]\n\n\n…\n…\n\n\n\n\n\nText styling can be extended with  markup languages\n\nnarrative part\n&lt;h2 style=\"color:blue;\"&gt;A Blue Heading&lt;/h2&gt;\n&lt;p style=\"color:red;\"&gt;A red paragraph.&lt;/p&gt;\n\n\nA Blue Heading\n\n\nA red paragraph."
   },
   {
     "objectID": "index-part1.html#list",
@@ -249,49 +249,49 @@
     "href": "index-part1.html#tables",
     "title": "Authoring and publishing with R Markdown",
     "section": "Tables",
-    "text": "Tables\n\nSimple tableAlignementsComplex tablesHint\n\n\n\n\n\nnarrative part\n| Header 1 | Header 2 |\n| --- | ----------- |\n| Row 1 | Text |\n| Row 2 | Another text |\n\n\n\nor\n\n\n\nnarrative part\n| Header 1    | Header 2    |\n| ----------- | ----------- |\n| Row 1       | Text        |\n| Row 2       | Another text|\n\n\n\n\ngives the same result :\n\n\n\n\nHeader 1\nHeader 2\n\n\n\n\nRow 1\nText\n\n\nRow 2\nAnother text\n\n\n\n\n\n\n\n\n\nUse :----:, :---, or ---: to align\n\nnarrative part\n| Left        |    Center   |         Right |\n| :---        |    :----:   |          ---: |\n| Header      | Title       | Hello         |\n\n\n\n\n\n\nLeft\nCenter\nRight\n\n\n\n\nHeader\nTitle\nHello\n\n\n\n\n\n\n\nTo create in code chunks\n\ncode chunk\nlibrary(dplyr)\nlibrary(kableExtra)\ndt &lt;- mtcars[1:5, 1:6]\ndtt &lt;- dt %&gt;%\n  kbl() %&gt;%\n  kable_paper(\"hover\", full_width = F, font_size = 20)\ndtt\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n3.90\n2.620\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n3.90\n2.875\n\n\nDatsun 710\n22.8\n4\n108\n93\n3.85\n2.320\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.08\n3.215\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.15\n3.440\n\n\n\n\n\n\ncode chunk\ndtt &lt;- dt %&gt;%\n  kbl(caption = \"My styled table\") %&gt;%\n  kable_classic(full_width = F, html_font = \"Cambria\", font_size = 20)\ndtt\n\n\n\n\nMy styled table\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n3.90\n2.620\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n3.90\n2.875\n\n\nDatsun 710\n22.8\n4\n108\n93\n3.85\n2.320\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.08\n3.215\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.15\n3.440\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nkbl(), kable(), kable_classic() and kable_styling() from the {kableExtra} package\n\n\n\n\n\nUse a table converter\n\nhttps://tableconvert.com/"
+    "text": "Tables\n\nSimple tableAlignementsComplex tablesHint\n\n\n\n\n\nnarrative part\n| Header 1 | Header 2 |\n| --- | ----------- |\n| Row 1 | Text |\n| Row 2 | Another text |\n\n\n\nor\n\n\n\nnarrative part\n| Header 1    | Header 2    |\n| ----------- | ----------- |\n| Row 1       | Text        |\n| Row 2       | Another text|\n\n\n\n\ngives the same result :\n\n\n\n\nHeader 1\nHeader 2\n\n\n\n\nRow 1\nText\n\n\nRow 2\nAnother text\n\n\n\n\n\n\n\n\n\nUse :----:, :---, or ---: to align\n\nnarrative part\n| Left             |    Center           |         Right |\n| :---             |    :----:           |          ---: |\n| Long Header      | My Very Long Title  | Hello World   |\n\n\n\n\n\n\nLeft\nCenter\nRight\n\n\n\n\nLong Header\nMy Very Long Title\nHello World\n\n\n\n\n\n\n\nTo be created in code chunks\n\ncode chunk\nlibrary(dplyr)\nlibrary(kableExtra)\ndt &lt;- mtcars[1:5, 1:6]\ndtt &lt;- dt %&gt;%\n  kbl() %&gt;%\n  kable_paper(\"hover\", full_width = F, font_size = 20)\ndtt\n\n\n\n\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n3.90\n2.620\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n3.90\n2.875\n\n\nDatsun 710\n22.8\n4\n108\n93\n3.85\n2.320\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.08\n3.215\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.15\n3.440\n\n\n\n\n\n\ncode chunk\ndtt &lt;- dt %&gt;%\n  kbl(caption = \"My styled table\") %&gt;%\n  kable_classic(full_width = F, html_font = \"Cambria\", font_size = 20)\ndtt\n\n\n\n\nMy styled table\n\n\n\nmpg\ncyl\ndisp\nhp\ndrat\nwt\n\n\n\n\nMazda RX4\n21.0\n6\n160\n110\n3.90\n2.620\n\n\nMazda RX4 Wag\n21.0\n6\n160\n110\n3.90\n2.875\n\n\nDatsun 710\n22.8\n4\n108\n93\n3.85\n2.320\n\n\nHornet 4 Drive\n21.4\n6\n258\n110\n3.08\n3.215\n\n\nHornet Sportabout\n18.7\n8\n360\n175\n3.15\n3.440\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nkbl(), kable(), kable_classic() and kable_styling() from the {kableExtra} package\n\n\n\n\n\nUse a table converter\n\nhttps://tableconvert.com/"
   },
   {
     "objectID": "index-part1.html#images",
     "href": "index-part1.html#images",
     "title": "Authoring and publishing with R Markdown",
     "section": "Images",
-    "text": "Images\n\nOnline imagesLocal images\n\n\nMarkdown notation\n\nnarrative part\n![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png\" width=100&gt;\n\n\n\n\nMarkdown notation\n\nnarrative part\n![](C:/Rprojects/thomashuet/teach/www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"C:/Rprojects/thomashuet/teach/www/logo.png\" alt=\"\" width=100&gt;"
+    "text": "Images\n\nOnline imagesLocal images\n\n\nMarkdown notation\n\nnarrative part\n![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png\" width=100&gt;\n\n\n\n\nMarkdown notation\n\nnarrative part\n![](C:/Users/TH282424/Rprojects/thomashuet/teach/www/logo.png){width=100px}\n\n\n\nHTML notation\n\nnarrative part\n&lt;img src=\"C:/Users/TH282424/Rprojects/thomashuet/teach/www/logo.png\" alt=\"logo\" width=100&gt;"
   },
   {
     "objectID": "index-part1.html#spaces-and-end-of-lines",
     "href": "index-part1.html#spaces-and-end-of-lines",
     "title": "Authoring and publishing with R Markdown",
     "section": "Spaces and end of lines",
-    "text": "Spaces and end of lines\n\nSpacesEnd of line\n\n\nExtra spaces (HTML only)\n\n&emsp; means 4 spaces (= a tabulation)\n&ensp; means 2 spaces\n&nbsp; means 1 space\n\n\n\nIn Markdown: 2+ spaces and return, or \\ and return. In HTML: &lt;br&gt;\n\n\n\nnarrative part\nReconnais-toi  \nCette adorable personne c'est toi  \nSous le grand chapeau canotier  \nOeil\nNez\nTa Bouche  \nVoici l’ovale de ta figure  \nTon cou Exquis  \n(Apollinaire, 1913)\n\nReconnais-toi\nCette adorable personne c’est toi\nSous le grand chapeau canotier\nOeil Nez Ta Bouche\nVoici l’ovale de ta figure\nTon cou Exquis\n(Apollinaire, 1913)\n\n\nnarrative part\nReconnais-toi\\\nCette adorable personne c'est toi\\\nSous le grand chapeau canotier\\\nOeil\\ \nNez\\\nTa Bouche\\\nVoici l'ovale de ta figure\\\nTon cou Exquis\\\n(Apollinaire, 1913)\n\nReconnais-toi\nCette adorable personne c’est toi\nSous le grand chapeau canotier\nOeil\nNez\nTa Bouche\nVoici l’ovale de ta figure\nTon cou Exquis\n(Apollinaire, 1913)"
+    "text": "Spaces and end of lines\n\nSpacesEnd of line\n\n\nExtra spaces (HTML only)\n\n&emsp; = 4 spaces (i.e., a tabulation)\n&ensp; = 2 spaces\n&nbsp; = 1 space\n\n\n\nIn Markdown: 2+ spaces and return, or \\ and return. In HTML: &lt;br&gt;\n\n\n\nnarrative part\nReconnais-toi  \nCette adorable personne c'est toi  \nSous le grand chapeau canotier  \nOeil\nNez\nTa Bouche  \nVoici l’ovale de ta figure  \nTon cou Exquis  \n(Apollinaire, 1913)\n\nReconnais-toi\nCette adorable personne c’est toi\nSous le grand chapeau canotier\nOeil Nez Ta Bouche\nVoici l’ovale de ta figure\nTon cou Exquis\n(Apollinaire, 1913)\n\n\nnarrative part\nReconnais-toi\\\nCette adorable personne c'est toi\\\nSous le grand chapeau canotier\\\nOeil\\ \nNez\\\nTa Bouche\\\nVoici l'ovale de ta figure\\\nTon cou Exquis\\\n(Apollinaire, 1913)\n\nReconnais-toi\nCette adorable personne c’est toi\nSous le grand chapeau canotier\nOeil\nNez\nTa Bouche\nVoici l’ovale de ta figure\nTon cou Exquis\n(Apollinaire, 1913)"
   },
   {
     "objectID": "index-part1.html#titles",
     "href": "index-part1.html#titles",
     "title": "Authoring and publishing with R Markdown",
     "section": "Titles",
-    "text": "Titles\n\nnarrative part\n# Header level 1\n\n## Header level 2\n\n### ...\n\n\nAvoid numbering.. add an anchor.. and a hyperlink\n\n\n\nnarrative part\n### My Header level 3 {-}\n\n\n\n\nnarrative part\n### My Header level 3 {-#bookmarks}\n\n\n\n\nnarrative part\n\nLorem ipsum dolor sit amet, etc. (**see [My Header level 3](#bookmarks)). Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum\n\n### My Header level 3 {-#bookmarks}"
+    "text": "Titles\n\nnarrative part\n# Header level 1\n\n## Header level 2\n\n### ...\n\n\nAvoid numbering.. add an anchor.. and a hyperlink\n\n\n\nnarrative part\n### My Header level 3 {-}\n\n\n\n\nnarrative part\n### My Header level 3 {-#bookmarks}\n\n\n\n\nnarrative part\n\nLorem ipsum dolor sit amet, etc. (**see [My Header level 3](#bookmarks)). \n\n### My Header level 3 {-#bookmarks}"
   },
   {
     "objectID": "index-part1.html#hyperlinks",
     "href": "index-part1.html#hyperlinks",
     "title": "Authoring and publishing with R Markdown",
     "section": "Hyperlinks",
-    "text": "Hyperlinks\nAdd hyperlinks\n\nTo textTo imageTo image (HTML)\n\n\n\nnarrative part\npart 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teachings/stats/r4a/2026/2_R Markdown_Practice)\n\npart 2: Practice\n\n\n\nnarrative part\n[![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)\n\n\n\n\n\nnarrative part\n&lt;a href=\"https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists\" target=\"_blank\"&gt;\n    &lt;img src=\"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png\" style=\"width:170px;\" alt=\"Logo\"&gt;\n&lt;/a&gt;"
+    "text": "Hyperlinks\nAdd hyperlinks\n\nTo textTo imageTo image (HTML)\n\n\n\nnarrative part\npart 2: [Practice](https://github.com/zoometh/thomashuet/tree/main/teach/stats/r4a/2026/2_R Markdown_Practice)\n\npart 2: Practice\n\n\n\nnarrative part\n[![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png){width=170px}](https://www.unipi.it/index.php/humanities/item/16574-r4rchaeologists)\n\n\n\n\n\nnarrative part\n&lt;a href=\"https://www.mappalab.eu/en/2021/01/04/r4-archaeologists-winter-school-deadline-postponed/\" target=\"_blank\"&gt;\n    &lt;img src=\"https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/logo.png\" style=\"width:170px;\" alt=\"Logo\"&gt;\n&lt;/a&gt;"
   },
   {
     "objectID": "index-part1.html#bookmarks",
     "href": "index-part1.html#bookmarks",
     "title": "Authoring and publishing with R Markdown",
     "section": "Bookmarks",
-    "text": "Bookmarks\nThe header ## Practice has the anchor #practice-anchor inside curly brackets:\n\nnarrative part\n## Practice {#practice-anchor}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nIt can be called anywhere in the text by:\n\nnarrative part\nAfter this theoretical part, you will do a [practice](#practice-anchor)\n\nAfter this theoretical part, you will do a practice"
+    "text": "Bookmarks\nThe header “## Practice” has the anchor “#practice-anchor” inside curly brackets:\n\nnarrative part\n## Practice {#practice-anchor}\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nIt can be called anywhere in the text by:\n\nnarrative part\nAfter this theoretical part, you will do a [practice](#practice-anchor)\n\nAfter this theoretical part, you will do a practice"
   },
   {
     "objectID": "index-part1.html#footnotes",
     "href": "index-part1.html#footnotes",
     "title": "Authoring and publishing with R Markdown",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nsyn.: Authoring Framework for Data Science (AFDS), or Executable Publication.\none that refers the reader to information that’s located somewhere else in the same book.\nPyOpenGL\nTensorFlow, PyTorch\nQGIS, ArcGIS, libraries: geopandas\nDjango\nSpring\nReact\nsf\nThis is a footnote."
+    "text": "Footnotes\n\n\nsyn.: Authoring Framework for Data Science (AFDS), or Executable Publication.\none that refers the reader to information that’s located somewhere else in the same book.\nPyOpenGL\nTensorFlow, PyTorch\nQGIS, ArcGIS, libraries: geopandas\nDjango\nSpring\nReact\nsf\nThis is a first footnote.\nThis is a second footnote."
   },
   {
     "objectID": "index-part1.html#cross-referencing",
@@ -326,7 +326,7 @@
     "href": "index-part1.html#lists",
     "title": "Authoring and publishing with R Markdown",
     "section": "Lists",
-    "text": "Lists\n\nNumberedUnnumbered\n\n\n\nnarrative part\n- Numbered  \n  1. first element\n  2. second element\n\n\nNumbered\n\nfirst element\nsecond element\n\n\n\n\n\n\n\nnarrative part\n- Unnumbered\n  * first element\n  * second element\n  * third element\n    - third element - sub 1\n      + third element - sub 1 - subsub 1\n      + third element - sub 1 - subsub 2\n\n\nUnnumbered\n\nfirst element\nsecond element\nthird element\n\nthird element - sub 1\n\nthird element - sub 1 - subsub 1\nthird element - sub 1 - subsub 2"
+    "text": "Lists\n\nNumberedUnnumbered\n\n\n\nnarrative part\n- Numbered  \n  1. first element\n  2. second element\n\n\nNumbered\n\nfirst element\nsecond element\n\n\n\n\n\n\n\nnarrative part\n- Unnumbered\n  * first element\n  * second element\n    - second element - sub 1\n      + second element - sub 1 - subsub 1\n      + second element - sub 1 - subsub 2\n\n\nUnnumbered\n\nfirst element\nsecond element\n\nsecond element - sub 1\n\nsecond element - sub 1 - subsub 1\nsecond element - sub 1 - subsub 2"
   },
   {
     "objectID": "index-part1.html#go-to-part-2",
@@ -347,7 +347,7 @@
     "href": "index-part1.html#why-authoring-with-r-markdown",
     "title": "Authoring and publishing with R Markdown",
     "section": "Why authoring with R Markdown?",
-    "text": "Why authoring with R Markdown?\n\nArchaeologyAcademyPopularity of Ubiquity of \n\n\n\n\n\n\n\n\nL’archéozoologie © Inrap\n/ /\n\n\nR Markdown is often enough for academic reporting. It supports:\n\nHTML/CSS markup languages \ncross-referencing2,  writing and  bibliographic references could be done using bookdown \ninteractive maps, 3D plots, etc.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLanguage\nUser Community\nLearning Curve\nStatistics\n3D\nAI/ML\nGIS/DB\nData-driven doc\nWeb App Framework\n\n\n\n\n\nLarge and diverse\nRelatively easy\nStrong support\nBlender, libraries3\nLeading language4\nLeading language5\nJupyter Notebook\nPopular frameworks6\n\n\n\nLarge and established\nModerate\nLimited\nJava 3D API\nUsed in enterprise\nJava-based tools available\nApache POI\nVarious frameworks7\n\n\n\nUbiquitous in web dev\nEasy for web dev\nLimited\nWebGL\nweb-based apps\nLimited\nD3.js\nNumerous frameworks8\n\n\n\nAcademia, industry\nSteeper\nComprehensive support\nPoor texture mapping\nAcademia, industry\nLimited\nLive scripts but hard to share\nLimited\n\n\n\nStrong community\nSteeper\nLeading language\nPoor texture mapping\nExtensively used\nR packages for GIS9\nRmarkdown, Shiny\nLimited\n\n\n\n\n\n\n\n\n\nCopy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):\n\nObsidian  \nDiscourse  \nGitHub  \nChatGPT"
+    "text": "Why authoring with R Markdown?\n\nArchaeologyAcademyPopularity of Ubiquity of \n\n\n\n\n\n\nL’archéozoologie © Inrap\n\n\n\n\n\n\n\n\n\n\n\nR Markdown is often enough for academic reporting. It supports:\n\nHTML/CSS markup languages \ncross-referencing2,  writing and  bibliographic references could be done using bookdown \ninteractive maps, 3D plots, etc.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLanguage\nUser Community\nLearning Curve\nStatistics\n3D\nAI/ML\nGIS/DB\nData-driven doc\nWeb App Framework\n\n\n\n\n\nLarge and diverse\nRelatively easy\nStrong support\nBlender, libraries3\nLeading language4\nLeading language5\nJupyter Notebook\nPopular frameworks6\n\n\n\nLarge and established\nModerate\nLimited\nJava 3D API\nUsed in enterprise\nJava-based tools available\nApache POI\nVarious frameworks7\n\n\n\nUbiquitous in web dev\nEasy for web dev\nLimited\nWebGL\nweb-based apps\nLimited\nD3.js\nNumerous frameworks8\n\n\n\nAcademia, industry\nSteeper\nComprehensive support\nPoor texture mapping\nAcademia, industry\nLimited\nLive scripts but hard to share\nLimited\n\n\n\nStrong community\nSteeper\nLeading language\nPoor texture mapping\nExtensively used\nR packages for GIS9\nRmarkdown, Shiny\nLimited\n\n\n\n\n\n\n\n\n\nCopy/paste can be done over numerous code-oriented platforms without losing the typesetting (easy-to-write plain text syntax):\n\nObsidian  \nDiscourse  \nGitHub  \nChatGPT"
   },
   {
     "objectID": "index-part2.html#dates",
