@@ -74,14 +74,14 @@
     "href": "index-part2.html#yaml",
     "title": "Authoring and publishing with R Markdown",
     "section": "YAML",
-    "text": "YAML\nThe YAML header is the R Markdown document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on key - value pairs:\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: '2023-02-05'\n---"
+    "text": "YAML\nThe YAML header is the R Markdown document header, it contains its metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on key - value pairs:\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: '2023-02-05'\n---"
   },
   {
     "objectID": "index-part2.html#dates",
     "href": "index-part2.html#dates",
     "title": "Authoring and publishing with R Markdown",
     "section": "Dates",
-    "text": "Dates\n\n\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(),'%D')'\"\n---\n\n01/20/26\n\n\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(),'%d %B %Y')'\"\n---\n\n20 janvier 2026\n\n\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
+    "text": "Dates\n\n\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(),'%D')'\"\n---\n\n01/24/26\n\n\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"'r format(Sys.time(),'%d %B %Y')'\"\n---\n\n24 janvier 2026\n\n\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose"
   },
   {
     "objectID": "index-part2.html#output",
@@ -102,7 +102,7 @@
     "href": "index-part2.html#references",
     "title": "Authoring and publishing with R Markdown",
     "section": "References",
-    "text": "References\nLocate the bibliographic file (e.g. references.bib).\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"20 janvier 2026\"\nbibliography: references.bib\n---\n\n\n\n\n\n\n\n\n\nNote\n\n\nIn this example, references.bib and the .Rmd file are in the same folder."
+    "text": "References\nLocate the bibliographic file (e.g. references.bib).\n\nheader YAML\n---\ntitle: \"temp\"\noutput: pdf_document\ndate: \"24 janvier 2026\"\nbibliography: references.bib\n---\n\n\n\n\n\n\n\n\n\nNote\n\n\nIn this example, references.bib and the .Rmd file are in the same folder."
   },
   {
     "objectID": "index-part2.html#styling",
@@ -207,7 +207,7 @@
     "href": "index-part1.html#document-structure",
     "title": "Authoring and publishing with R Markdown",
     "section": "Document structure",
-    "text": "Document structure\n\n\nR Markdown combines\n\nheader YAML YAML header + document metadata\n\n\ncode chunk  code chunks\n\n\nnarrative part  narrative parts"
+    "text": "Document structure\n\n\nR Markdown combines\n\nheader YAML  YAML header\n\n\ncode chunk  code chunks\n\n\nnarrative part  narrative parts"
   },
   {
     "objectID": "index-part1.html#document-structure-1",
@@ -284,14 +284,14 @@
     "href": "index-part1.html#footnotes",
     "title": "Authoring and publishing with R Markdown",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nsyn.: Authoring Framework for Data Science (AFDS), or Executable Publication.\none that refers the reader to information that’s located somewhere else in the same book.\nPyOpenGL\nTensorFlow, PyTorch\nQGIS, ArcGIS, libraries: geopandas\nDjango\nSpring\nReact\nsf\nThis is a first footnote."
+    "text": "Footnotes\n\n\nsyn.: Authoring Framework for Data Science (AFDS), or Executable Publication.\none that refers the reader to information that’s located somewhere else in the same book.\nPyOpenGL\nTensorFlow, PyTorch\nQGIS, ArcGIS, libraries: geopandas\nDjango\nSpring\nReact\nsf\nThis is a first footnote.\nThis is a second footnote."
   },
   {
     "objectID": "index-part1.html#cross-referencing",
     "href": "index-part1.html#cross-referencing",
     "title": "Authoring and publishing with R Markdown",
     "section": "Cross-referencing",
-    "text": "Cross-referencing\n\nVariablesFigures\n\n\nVariables calculated inside the code chunks\n\ncode chunk\nlibrary(archdata)\ndata(\"Handaxes\")\nnumber.of.axes &lt;- nrow(Handaxes)\n\ncan be called in the narrative parts, for example number.of.axes\n\nnarrative part\n&lt;small&gt;Furze Platt dataset counts 'r number.of.axes' axes&lt;/small&gt;\n\nFurze Platt dataset counts 600 axes\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose: \n\n\n\n\n\n\n\n\ncode chunk\n{r maxLmaxB, echo=FALSE, fig.align=\"center\", fig.cap= \"Axes L/B ratio\"}\nlibrary(archdata)\ndata(\"Handaxes\")\nplot(Handaxes$L, Handaxes$B)\nmodel &lt;- lm(B ~ L, data = Handaxes)\nabline(lm(model))\n\n\n\n\n\n\nAxes L/B ratio\n\n\n\n\n\nnarrative part\n&lt;small&gt;The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients[2], 2)',  Fig. \\@ref(fig:maxLmaxB))&lt;/small&gt;\n\nThe distribution of the maximum length (L) and maximum breadth (B) shows a R2 = 0.42, Fig. @ref(fig:maxLmaxB))\n\n\n\n\n\n\nWarning\n\n\n\nHere the ` quote has been changed to a ‘ quote for display purpose in ’r round(model$coefficients[2], 2)’.\nNeed to use  bookdown to render correctly ‘@ref(fig:maxLmaxB)’, see: the raw .Rmd and the rendered PDF"
+    "text": "Cross-referencing\n\nVariablesFigures\n\n\nVariables calculated within code chunks\n\ncode chunk\nlibrary(archdata)\ndata(\"Handaxes\")\nnumber.of.axes &lt;- nrow(Handaxes)\n\ncan be called in the narrative parts, for example number.of.axes\n\nnarrative part\n&lt;small&gt;Furze Platt dataset counts 'r number.of.axes' axes&lt;/small&gt;\n\nFurze Platt dataset counts 600 axes\n\n\n\n\n\n\nWarning\n\n\nHere the ` quote has been changed to a ’ quote for display purpose: \n\n\n\n\n\n\n\n\ncode chunk\n{r maxLmaxB, echo=FALSE, fig.align=\"center\", fig.cap= \"Axes L/B ratio\"}\nlibrary(archdata)\ndata(\"Handaxes\")\nplot(Handaxes$L, Handaxes$B)\nmodel &lt;- lm(B ~ L, data = Handaxes)\nabline(lm(model))\n\n\n\n\n\n\nAxes L/B ratio\n\n\n\n\n\nnarrative part\n&lt;small&gt;The distribution of the maximum length (L) and maximum breadth (B) shows a R^2^ = 'r round(model$coefficients[2], 2)',  Fig. \\@ref(fig:maxLmaxB))&lt;/small&gt;\n\nThe distribution of the maximum length (L) and maximum breadth (B) shows a R2 = 0.42, Fig. @ref(fig:maxLmaxB))\n\n\n\n\n\n\nWarning\n\n\n\nHere the ` quote has been changed to a ‘ quote for display purpose in ’r round(model$coefficients[2], 2)’.\nNeed to use  bookdown to render correctly ‘@ref(fig:maxLmaxB)’, see: the raw .Rmd and the rendered PDF"
   },
   {
     "objectID": "index-part1.html#bibliographic-references",

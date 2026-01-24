@@ -380,12 +380,12 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 <div class="div-yaml"> 
 <small>header YAML</small><br>
-[YAML header](#yaml) + document metadata
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/app-prg-yaml-1.png" style="height: 45px;vertical-align: middle;"/> [YAML header](https://zoometh.github.io/thomashuet/teach/stats/r4a/2026/site/index-part2#/yaml)
 </div>
 
 <div class="div-code"> 
 <small>code chunk</small><br>
-<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prog-r-1.png" style="height: 45px;vertical-align: middle;"/> [code chunks](#chunks)
+<img src="https://raw.githubusercontent.com/zoometh/thomashuet/master/img/prog-r-1.png" style="height: 45px;vertical-align: middle;"/> [code chunks](https://zoometh.github.io/thomashuet/teach/stats/r4a/2026/site/index-part2#/chunks)
 </div>
 
 <div class="div-text"> 
@@ -399,7 +399,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 ::: {.column width="60%"}
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="600px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="700px"}
 
 :::
 
@@ -456,7 +456,7 @@ Run the new document with `knitr` <img src="https://raw.githubusercontent.com/zo
 
 ::: {.column width="60%"}
 
-![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="600px"}
+![](https://raw.githubusercontent.com/zoometh/thomashuet/master/teach/www/rmd_create_rmd_new_skrinked.png){width="700px"}
 
 :::
 
@@ -1041,7 +1041,7 @@ After this theoretical part, you will do a [practice](#practice)
 
 <div class="div-text"> 
 <small>narrative part</small><br>
-```{.md code-line-numbers="1|4|5"}
+```{.md code-line-numbers="1|3|4"}
 A simple footnote[^66] and a second one[^3]
 
 [^66]: This is a first footnote.
@@ -1049,7 +1049,7 @@ A simple footnote[^66] and a second one[^3]
 ```
 </div>
 
-A simple footnote[^66] and a second one[^12]
+A simple footnote[^66] and a second one[^3]
 
 ::: {.callout-note}
 Footnotes numbering is automatically sorted and incremented. Footnotes can be placed virtually everywhere (check [this example](https://github.com/zoometh/thomashuet/blob/695e1c0198c989774e4a117bf520d28089c9b158/teach/stats/r4a/2026/index-part1.qmd#L1052-L1059))
@@ -1065,7 +1065,7 @@ Footnotes numbering is automatically sorted and incremented. Footnotes can be pl
 
 ### Variables
 
-Variables calculated inside the <span class="r-code">code chunks</span>
+Variables calculated within <span class="r-code">code chunks</span>
 
 <div class="div-code"> 
 <small>code chunk</small>

@@ -291,7 +291,7 @@ knitr::include_graphics(fibula)
 
 ## YAML {#yaml}
 
-The <span class="r-yaml">YAML header</span> is the <span class="r-md">R Markdown</span> document header, it contains the metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on **key - value** pairs:
+The <span class="r-yaml">YAML header</span> is the <span class="r-md">R Markdown</span> document header, it contains its metadata (e.g, title), the document output format (e.g, PDF) and configuration (e.g. table of content). It is composed on **key - value** pairs:
 
 <div class="div-yaml"> 
 <small>header YAML</small>
