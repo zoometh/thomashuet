@@ -1,3 +1,5 @@
+/* ############# Global margins/paddings #################*/
+
 /* Reduce space below slide titles */
 .reveal h1,
 .reveal h2,
@@ -10,7 +12,18 @@
   margin: 0.2em 0;
 }
 
-/* Others */
+/* Center iframe without extra margins */
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  margin: 0.2em 0;
+}
+
+.iframe-container iframe {
+  border: none;
+}
+
+/* ############# Others #################*/
 
 p.petit {
   font-size: 0.9rem;
