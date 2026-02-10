@@ -302,8 +302,6 @@ notes {
 h1, h2, h3 {
   margin-top: 10px;
   margin-bottom: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .panel-title {
   margin-top: 5px;
@@ -332,4 +330,40 @@ p {
 
 .reveal p {
   padding: 0px; 
+}
+
+/* ===== Reveal.js compact spacing (put this at END of file) ===== */
+
+/* Remove top padding inside slides */
+.reveal .slides section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Kill the big gap: title + first content element */
+.reveal .slides section > h1,
+.reveal .slides section > h2,
+.reveal .slides section > h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0.15em !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Often the extra gap is actually the first element after the title */
+.reveal .slides section > h1 + *,
+.reveal .slides section > h2 + *,
+.reveal .slides section > h3 + * {
+  margin-top: 0 !important;
+}
+
+/* Tighten paragraphs + block spacing */
+.reveal p {
+  margin: 0.15em 0 !important;
+  padding: 0 !important;
+}
+
+/* Remove default margins from block elements you use a lot */
+.reveal .slides section > :first-child {
+  margin-top: 0 !important;
 }
