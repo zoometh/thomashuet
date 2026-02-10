@@ -367,3 +367,13 @@ p {
 .reveal .slides section > :first-child {
   margin-top: 0 !important;
 }
+
+/* applies everywhere EXCEPT reveal slides */
+body:not(.reveal-viewport) h1,
+body:not(.reveal-viewport) h2,
+body:not(.reveal-viewport) h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
