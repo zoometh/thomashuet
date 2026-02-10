@@ -28,6 +28,22 @@
   border: none;
 }
 
+.iframe-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;              /* ← zero spacing */
+  margin: 0;
+  padding: 0;
+}
+
+.iframe-figure iframe {
+  display: block;     /* removes baseline gap */
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 /* ############# Others #################*/
 
 p.petit {
@@ -209,11 +225,13 @@ notes {
 
 .captiontext {
   display: block;
-  margin-top: 0.1em;
+  margin-top: 0.0em;
   font-size: 20px;
   color: #666;
   text-align: center;
 }
+
+
 
 /* text for file paths, folder structure, etc. */
 .fhstext {
