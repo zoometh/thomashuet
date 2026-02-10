@@ -1,0 +1,70 @@
+/* quarto_2.css — minimal “compact Reveal.js” spacing for Quarto
+   Use: format: revealjs: css: [quarto_2.css]
+*/
+
+/* 1) Tighten slide vertical padding */
+.reveal .slides section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* 2) Tighten headings (main cause of “huge gap”) */
+.reveal .slides section > h1,
+.reveal .slides section > h2,
+.reveal .slides section > h3,
+.reveal .slides section > h4 {
+  margin: 0 0 0.18em 0 !important;
+  padding: 0 !important;
+  line-height: 1.08 !important;
+}
+
+/* 3) Remove top margin on the very first content element after the title */
+.reveal .slides section > h1 + *,
+.reveal .slides section > h2 + *,
+.reveal .slides section > h3 + *,
+.reveal .slides section > h4 + * {
+  margin-top: 0 !important;
+}
+
+/* 4) Tighten common block spacing inside slides */
+.reveal p,
+.reveal ul,
+.reveal ol,
+.reveal pre,
+.reveal blockquote,
+.reveal table,
+.reveal figure {
+  margin-top: 0.18em !important;
+  margin-bottom: 0.18em !important;
+}
+
+/* 5) Spans you use as “lines” should behave like lines (no extra gap) */
+.reveal .smalltext,
+.reveal .captiontext {
+  display: block !important;
+  margin: 0.12em 0 0 0 !important;
+  padding: 0 !important;
+}
+
+/* 6) Iframe container: no extra whitespace */
+.reveal .iframe-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.18em 0 !important;
+  padding: 0 !important;
+}
+.reveal .iframe-container iframe {
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+/* 7) Safety: remove top margin from the first child in each slide */
+.reveal .slides section > :first-child {
+  margin-top: 0 !important;
+}
+
+/* 8) Optional: slightly tighten overall line spacing in slides (comment out if undesired) */
+/* .reveal .slides { line-height: 1.15; } */
