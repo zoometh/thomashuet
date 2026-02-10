@@ -1,5 +1,9 @@
 /* ############# Global margins/paddings #################*/
 
+.reveal section {
+  padding-top: 0.5em;
+}
+
 /* Reduce space below slide titles */
 .reveal h1,
 .reveal h2,
@@ -196,11 +200,19 @@ notes {
   text-align: center;
 }
 
-.captiontext {
+.captiontext_old {
   text-align: center;
   /* font-style: italic; */
   font-size: 20px;
   color: #808080;
+}
+
+.captiontext {
+  display: block;
+  margin-top: 0.1em;
+  font-size: 20px;
+  color: #666;
+  text-align: center;
 }
 
 /* text for file paths, folder structure, etc. */
@@ -222,7 +234,13 @@ notes {
   color: #808080;
 }
 
+.smalltext_old {
+  font-size: 25px;
+}
+
 .smalltext {
+  display: block;
+  margin-bottom: 0.2em;
   font-size: 25px;
 }
 
