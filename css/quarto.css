@@ -14,6 +14,7 @@
 
 /* Center iframe without extra margins */
 .iframe-container {
+  align-items: center;
   display: flex;
   justify-content: center;
   margin: 0.2em 0;
