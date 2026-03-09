@@ -2,9 +2,9 @@
 
 <script>
   const steps = [
-    { label: "1. Prototype", color: "#e5f5f9" },
-    { label: "👉 2. Self-service", color: "#99d8c9" },
-    { label: "3. CMS", color: "#2ca25f" },
+    { label: "1. Prototype", color: "#66c2a4" },
+    { label: "👉 2. Self-service", color: "#2ca25f" },
+    { label: "3. CMS", color: "#006d2c" },
   ];
 
   const svg = document.getElementById("stepsSvg");
@@ -13,7 +13,7 @@
   const xStart = 0;
   const yTop = 10;
   const h = 90;
-  const bodyW = 230;
+  const bodyW = 320;
   const tipW = 45;
   const overlap = 5;
 
@@ -54,7 +54,7 @@
     text.setAttribute("y", yTop + h / 2 + 1);
     text.setAttribute("text-anchor", "middle");
     text.setAttribute("dominant-baseline", "middle");
-    text.setAttribute("font-size", "22");
+    text.setAttribute("font-size", "32");
     text.setAttribute("fill", "white");
     text.textContent = step.label;
     svg.appendChild(text);
