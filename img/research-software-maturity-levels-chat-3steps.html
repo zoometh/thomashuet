@@ -1,0 +1,62 @@
+<svg id="stepsSvg" width="1220" height="130" viewBox="0 0 1220 130" xmlns="http://www.w3.org/2000/svg"></svg>
+
+<script>
+  const steps = [
+    { label: "1. Prototype", color: "#4A74BF" },
+    { label: "2. Self-service", color: "#ED7D31" },
+    { label: "3. CMS", color: "#FFC000" },
+  ];
+
+  const svg = document.getElementById("stepsSvg");
+  const ns = "http://www.w3.org/2000/svg";
+
+  const xStart = 0;
+  const yTop = 10;
+  const h = 90;
+  const bodyW = 230;
+  const tipW = 45;
+  const overlap = 5;
+
+  steps.forEach((step, i) => {
+    const x = xStart + i * (bodyW - overlap);
+
+    let points;
+    if (i === 0) {
+      points = [
+        [x, yTop],
+        [x + bodyW, yTop],
+        [x + bodyW + tipW, yTop + h / 2],
+        [x + bodyW, yTop + h],
+        [x, yTop + h]
+      ];
+    } else {
+      points = [
+        [x, yTop],
+        [x + bodyW, yTop],
+        [x + bodyW + tipW, yTop + h / 2],
+        [x + bodyW, yTop + h],
+        [x, yTop + h],
+        [x + tipW, yTop + h / 2]
+      ];
+    }
+
+    const polygon = document.createElementNS(ns, "polygon");
+    polygon.setAttribute("points", points.map(p => p.join(",")).join(" "));
+    polygon.setAttribute("fill", step.color);
+    if (i > 0) {
+      polygon.setAttribute("stroke", "#F2F2F2");
+      polygon.setAttribute("stroke-width", "2");
+    }
+    svg.appendChild(polygon);
+
+    const text = document.createElementNS(ns, "text");
+    text.setAttribute("x", x + bodyW / 2 + 8);
+    text.setAttribute("y", yTop + h / 2 + 1);
+    text.setAttribute("text-anchor", "middle");
+    text.setAttribute("dominant-baseline", "middle");
+    text.setAttribute("font-size", "22");
+    text.setAttribute("fill", "white");
+    text.textContent = step.label;
+    svg.appendChild(text);
+  });
+</script>
