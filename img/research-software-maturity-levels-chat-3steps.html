@@ -12,7 +12,7 @@
 
   const xStart = 0;
   const yTop = 10;
-  const h = 90;
+  const h = 70;
   const bodyW = 300;
   const tipW = 45;
   const overlap = 5;
@@ -54,7 +54,8 @@
     text.setAttribute("y", yTop + h / 2 + 1);
     text.setAttribute("text-anchor", "middle");
     text.setAttribute("dominant-baseline", "middle");
-    text.setAttribute("font-size", "32");
+    text.setAttribute("font-size", "26");
+    text.setAttribute("style", "font-family: Arial, sans-serif;");
     text.setAttribute("fill", "white");
     text.textContent = step.label;
     svg.appendChild(text);
