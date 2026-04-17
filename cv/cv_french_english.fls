@@ -154,8 +154,14 @@ INPUT .\cv_french_english.aux
 INPUT cv_french_english.aux
 OUTPUT cv_french_english.aux
 INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-OUTPUT cv_french_english.out
+INPUT .\cv_french_english.out
+INPUT .\cv_french_english.out
+INPUT cv_french_english.out
+INPUT cv_french_english.out
 OUTPUT cv_french_english.pdf
+INPUT .\cv_french_english.out
+INPUT .\cv_french_english.out
+OUTPUT cv_french_english.out
 INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\TH282424\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
