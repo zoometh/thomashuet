@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  19 MAR 2026 15:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  13 JUL 2026 17:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -325,10 +325,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 25.
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count299
 \l__pdf_internal_box=\box55
-) (cv_french_english.aux
-Package babel Info: 'french' activates 'french' shorthands.
-(babel)             Reported  on input line 12.
-)
+) (cv_french_english.aux)
 \openout1 = `cv_french_english.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -349,10 +346,11 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported  on input line 51.
 LaTeX Info: Redefining \degres on input line 51.
 LaTeX Info: Redefining \up on input line 51.
 Package hyperref Info: Link coloring ON on input line 51.
- (cv_french_english.out) (cv_french_english.out)
 \@outlinefile=\write3
 \openout3 = `cv_french_english.out'.
 
@@ -414,7 +412,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--63
 
  []
 
-<../img/webpro.png, id=35, 923.45pt x 983.675pt>
+<../img/webpro.png, id=3, 923.45pt x 983.675pt>
 File: ../img/webpro.png Graphic file (type png)
 <use ../img/webpro.png>
 Package pdftex.def Info: ../img/webpro.png  used on input line 66.
@@ -423,27 +421,27 @@ File: ../img/webpro.png Graphic file (type png)
 <use ../img/webpro.png>
 Package pdftex.def Info: ../img/webpro.png  used on input line 67.
 (pdftex.def)             Requested size: 9.2294pt x 9.83131pt.
-<../img/lod-orcid.png, id=39, 1204.5pt x 1204.5pt>
+<../img/lod-orcid.png, id=7, 1204.5pt x 1204.5pt>
 File: ../img/lod-orcid.png Graphic file (type png)
 <use ../img/lod-orcid.png>
 Package pdftex.def Info: ../img/lod-orcid.png  used on input line 68.
 (pdftex.def)             Requested size: 8.43604pt x 8.43604pt.
-<../img/github.png, id=42, 1606.0pt x 1606.0pt>
+<../img/github.png, id=10, 1606.0pt x 1606.0pt>
 File: ../img/github.png Graphic file (type png)
 <use ../img/github.png>
 Package pdftex.def Info: ../img/github.png  used on input line 69.
 (pdftex.def)             Requested size: 11.24805pt x 11.24805pt.
-<../img/gscholar.png, id=44, 513.92pt x 513.92pt>
+<../img/gscholar.png, id=12, 513.92pt x 513.92pt>
 File: ../img/gscholar.png Graphic file (type png)
 <use ../img/gscholar.png>
 Package pdftex.def Info: ../img/gscholar.png  used on input line 70.
 (pdftex.def)             Requested size: 12.84482pt x 12.84482pt.
-<../img/rgate.png, id=46, 225.84375pt x 225.84375pt>
+<../img/rgate.png, id=14, 225.84375pt x 225.84375pt>
 File: ../img/rgate.png Graphic file (type png)
 <use ../img/rgate.png>
 Package pdftex.def Info: ../img/rgate.png  used on input line 71.
 (pdftex.def)             Requested size: 11.29285pt x 11.29285pt.
-<../img/gmail.png, id=48, 385.44pt x 385.44pt>
+<../img/gmail.png, id=16, 385.44pt x 385.44pt>
 File: ../img/gmail.png Graphic file (type png)
 <use ../img/gmail.png>
 Package pdftex.def Info: ../img/gmail.png  used on input line 72.
@@ -464,7 +462,7 @@ File: ../img/gmail.png Graphic file (type png)
 <use ../img/gmail.png>
 Package pdftex.def Info: ../img/gmail.png  used on input line 75.
 (pdftex.def)             Requested size: 9.63362pt x 9.63362pt.
-<../img/phone.png, id=53, 2409.0pt x 2409.0pt>
+<../img/phone.png, id=21, 2409.0pt x 2409.0pt>
 File: ../img/phone.png Graphic file (type png)
 <use ../img/phone.png>
 Package pdftex.def Info: ../img/phone.png  used on input line 76.
@@ -492,7 +490,7 @@ and I'll forget about whatever was undefined.
 [1
 
 {C:/Users/TH282424/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <../img/webpro.png> <../img/lod-orcid.png> <../img/github.png> <../img/gscholar.png> <../img/rgate.png> <../img/gmail.png> <../img/phone.png>]
-<../img/link_darkblue.png, id=76, 602.25pt x 342.27875pt>
+<../img/link_darkblue.png, id=47, 602.25pt x 342.27875pt>
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
 Package pdftex.def Info: ../img/link_darkblue.png  used on input line 198.
@@ -513,7 +511,7 @@ File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
 Package pdftex.def Info: ../img/link_darkblue.png  used on input line 234.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
-<../img/link_grey.png, id=82, 602.25pt x 342.27875pt>
+<../img/link_grey.png, id=53, 602.25pt x 342.27875pt>
 File: ../img/link_grey.png Graphic file (type png)
 <use ../img/link_grey.png>
 Package pdftex.def Info: ../img/link_grey.png  used on input line 246.
@@ -677,7 +675,7 @@ File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
 Package pdftex.def Info: ../img/link_darkblue.png  used on input line 522.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
-<../img/icon_youtube.png, id=148, 53.7207pt x 37.5804pt>
+<../img/icon_youtube.png, id=121, 53.7207pt x 37.5804pt>
 File: ../img/icon_youtube.png Graphic file (type png)
 <use ../img/icon_youtube.png>
 Package pdftex.def Info: ../img/icon_youtube.png  used on input line 525.
@@ -700,7 +698,7 @@ Overfull \hbox (24.0386pt too wide) in paragraph at lines 577--577
 
 
 [7]
-<../img/app-github-rect.png, id=167, 225.84375pt x 59.22125pt>
+<../img/app-github-rect.png, id=140, 225.84375pt x 59.22125pt>
 File: ../img/app-github-rect.png Graphic file (type png)
 <use ../img/app-github-rect.png>
 Package pdftex.def Info: ../img/app-github-rect.png  used on input line 624.
@@ -799,7 +797,7 @@ File: ../img/app-github-rect.png Graphic file (type png)
 <use ../img/app-github-rect.png>
 Package pdftex.def Info: ../img/app-github-rect.png  used on input line 635.
 (pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-<../img/prog-r.png, id=172, 250.9375pt x 194.7275pt>
+<../img/prog-r.png, id=145, 250.9375pt x 194.7275pt>
 File: ../img/prog-r.png Graphic file (type png)
 <use ../img/prog-r.png>
 Package pdftex.def Info: ../img/prog-r.png  used on input line 639.
@@ -812,23 +810,23 @@ File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
 Package pdftex.def Info: ../img/link_darkblue.png  used on input line 647.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
-<../img/prj_neonet-blue.png, id=176, 1045.9075pt x 237.88875pt>
+<../img/prj_neonet-blue.png, id=149, 1045.9075pt x 237.88875pt>
 File: ../img/prj_neonet-blue.png Graphic file (type png)
 <use ../img/prj_neonet-blue.png>
 Package pdftex.def Info: ../img/prj_neonet-blue.png  used on input line 651.
 (pdftex.def)             Requested size: 31.37587pt x 7.13635pt.
-<../img/prj_leapfrog-blue.png, id=178, 140.77594pt x 108.405pt>
+<../img/prj_leapfrog-blue.png, id=151, 140.77594pt x 108.405pt>
 File: ../img/prj_leapfrog-blue.png Graphic file (type png)
 <use ../img/prj_leapfrog-blue.png>
 Package pdftex.def Info: ../img/prj_leapfrog-blue.png  used on input line 655.
 (pdftex.def)             Requested size: 14.07841pt x 10.84113pt.
-<../img/lod-nakala.png, id=180, 401.5pt x 401.5pt>
+<../img/lod-nakala.png, id=153, 401.5pt x 401.5pt>
 File: ../img/lod-nakala.png Graphic file (type png)
 <use ../img/lod-nakala.png>
 Package pdftex.def Info: ../img/lod-nakala.png  used on input line 655.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
-c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:683: Undefined control sequence.
-l.683 \enfr
+c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:706: Undefined control sequence.
+l.706 \enfr
            {"Visualisation de données avancées avec Python", Formations du...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -836,8 +834,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:688: Undefined control sequence.
-l.688 \enfr
+c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:711: Undefined control sequence.
+l.711 \enfr
            {"PyMoDAQ - Instrumentation en Python : utilisation et écriture ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -845,8 +843,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:693: Undefined control sequence.
-l.693 \enfr
+c:/Users/TH282424/Rprojects/thomashuet/cv/cv_french_english.tex:716: Undefined control sequence.
+l.716 \enfr
            {"Concevoir une interface graphique en Python", Formations du Ser...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -856,23 +854,23 @@ and I'll forget about whatever was undefined.
 
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 709.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 732.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 729.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 752.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 
 
 [8 <../img/app-github-rect.png> <../img/prog-r.png> <../img/prj_neonet-blue.png> <../img/prj_leapfrog-blue.png> <../img/lod-nakala.png>]
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 779.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 802.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 975--975
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
 
  []
 
@@ -883,21 +881,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 975--975
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `cv_french_english.out' has not changed.
-(rerunfilecheck)             Checksum: 8EF8F0F2DFB61D1B05E76CFBC178C06E;1765.
+
+
+Package rerunfilecheck Warning: File `cv_french_english.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `cv_french_english.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  8EF8F0F2DFB61D1B05E76CFBC178C06E;1765.
  ) 
 Here is how much of TeX's memory you used:
- 13603 strings out of 473523
- 223756 string characters out of 5713178
- 654679 words of memory out of 5000000
- 36638 multiletter control sequences out of 15000+600000
+ 13589 strings out of 473523
+ 223464 string characters out of 5713178
+ 654547 words of memory out of 5000000
+ 36628 multiletter control sequences out of 15000+600000
  569264 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,965b,454s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,965b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi525\ecss0800.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0700.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on cv_french_english.pdf (10 pages, 573301 bytes).
+Output written on cv_french_english.pdf (10 pages, 570389 bytes).
 PDF statistics:
- 678 PDF objects out of 1000 (max. 8388607)
+ 653 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 76 words of extra memory for PDF output out of 10000 (max. 10000000)
 
