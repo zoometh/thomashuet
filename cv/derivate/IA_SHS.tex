@@ -1,0 +1,66 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage[a4paper,margin=1.65cm]{geometry}
+\usepackage{enumitem,titlesec,xcolor,hyperref,microtype}
+
+\definecolor{accent}{HTML}{174B69}
+\hypersetup{colorlinks=true,urlcolor=accent}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlist[itemize]{leftmargin=1.3em,itemsep=1pt,topsep=2pt,parsep=0pt}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{9pt}{3pt}
+\pagestyle{empty}
+\begin{document}
+{\LARGE\bfseries Thomas Huet}\hfill {\small Candidature --- Formation "Ingénierie IA pour les SHS", CNRS INSHS}\\[-1pt]
+\newline
+{\bfseries Ingénieur de recherche CNRS --- IRAMAT (UMR 7065), Saclay}\\
+\href{mailto:thomas.huet@cnrs.fr}{thomas.huet@cnrs.fr} \quad\textbar\quad \href{https://orcid.org/0000-0002-1112-6122}{ORCID 0000-0002-1112-6122} \quad\textbar\quad \href{https://iramat.cnrs.fr/user/thomas.huet/}{Profil CNRS}
+
+\section*{Profil et objectif}
+Ingénieur de recherche et docteur en archéologie, spécialisé dans l'\textbf{infrastructuration et l'interopérabilité des données de recherche} en sciences humaines et sociales (SHS). Mon activité relie administration système (Linux/Ubuntu), conception de bases de données (BDD PostgreSQL/PostGIS), services web, \textbf{Linked Open Data (LOD)}, standards FAIR, alignements avec des ontologies et analyses quantitatives. Je développe des outils reproductibles en Python (infrastructuration) et R (analyses statistiques). Je porte un projet de reconnaissance automatique (CV) de faciès métallographique avec mon laboratoire (IRAMAT, apporte les données) et le \textit{Barcelona Supercomputer} (apporte le modèle d'IA, v. \href{https://github.com/iramat/iramat-dev/tree/main/talks/2026-bsc#worflow}{workflow} ). 
+
+\section*{Compétences clés}
+\textbf{Infrastructures et ingénierie des données.} Modélisation conceptuelle et relationnelle ; PostgreSQL/GIS, SQL, Arches ; administration Linux/Ubuntu et services web (Apache, API REST, PostgREST) ; pipelines d'intégration, transformation, contrôle et exposition des données ; gestion de versions (Git/GitHub/GitLab), documentation, publication et catalogage des jeux de données de manière semi-automatisée (ex: API Zenodo + OAI-PMH).
+
+\textbf{Interopérabilité, web sémantique et science ouverte.} Principes FAIR, métadonnées, référentiels, thésaurus et ontologies ; \textbf{CIDOC CRM / CRMarchaeo, SKOS, Linked Open Data} ; formats JSON, XML et standards du web ; identifiants pérennes et diffusion via Zenodo/HAL ; interopérabilité des ressources iconographiques (IIIF).
+
+\textbf{Analyse de données, IA et ML.} Python (pandas, NumPy), R, statistiques multivariées, géostatistiques, analyse de réseaux, modélisation chronologique et spatiale, visualisation interactive ; formation aux \textbf{réseaux de neurones et à PyTorch}.
+
+\textbf{Développement et transfert.} Applications de recherche (Dash, R Shiny, Django), tableaux de bord et \textit{data-driven documentation}, cartographie standalone (QGIS) + Geoweb (GeoServer), API, documentation technique ; formation des utilisateurs, animation de collectifs et accompagnement méthodologique.
+
+\section*{Expériences professionnelles sélectionnées}
+\textbf{Depuis 2025 --- Ingénieur de recherche, CNRS, IRAMAT (UMR 7065), Saclay.} Structuration et valorisation de données archéométriques, numismatiques et archéologiques ; BDD PostgreSQL/PostGIS et XML (Numishare), interfaces et API de consultation, publication et interopérabilité des données ; développement d'outils web et de visualisation pour les projets de recherche.
+
+\textbf{2021--2025 --- Researcher and Database Manager, EAMENA, Université d'Oxford.} Développement et administration d'un système d'information patrimonial à grande échelle (Arches, ~ 400,000 \textit{heritage places}) ; modèles de données fondés sur le CIDOC CRM ; qualité, partage et réutilisation des données ; formation des utilisateurs et responsables d'instances nationales ; automatisation de traitements (developpement de plugins) et outils de citation des données.
+
+\textbf{2013--2021 --- Ingénierie et recherche, CNRS, universités et partenaires.} Conception de bases et applications scientifiques (OH-FET, CIMO/Leapfrog, EpiSpat, Sauri) ; intégration SIG/BDD ; analyses statistiques, géospatiales et de réseaux en Python et R.
+
+\section*{Réalisations représentatives}
+\begin{itemize}
+\item \textbf{EAMENA (University of Oxford):} gestion d'une base patrimoniale internationale ; structuration sémantique, procédures de qualité et outils de diffusion/citation de jeux de données.
+\item \textbf{CHIPS (IRAMAT-CNRS) :} mise en place d'une chaîne de publication de données archéométriques combinant PostgreSQL, API REST (PostREST), tableaux de bord Python/Dash, \textit{dump} vers Zenodo et calcul des métadonnées semi-automatisé et documentation web.
+\item \textbf{ALMACIR (IRAMAT-CNRS) :} développement d'une instance Numishare reposant sur l'ontologie Nomisma (Nomima.org) ; structuration et exposition de données numismatiques, articulation des notices, ressources iconographiques et analyses chimiques.
+\item \textbf{NeoNet et autres travaux quantitatifs :} agrégation de données de datation, analyses spatio-temporelles et restitution interactive ; scripts reproductibles en R/Python.
+\end{itemize}
+
+\section*{Formation et perfectionnement ciblés}
+\textbf{2012 --- Doctorat en histoire et archéologie}, Université Nice Sophia-Antipolis (analyse spatiale et sériation des gravures du mont Bego). \textbf{2005 --- Formation en génie informatique}, CNAM, Paris.\\
+\textbf{IA/ML :} « Neural Networks for Archaeologists, with Python » (Université de Pise, 2024) ; « Python: PyTorch Kick-Off » (Université d'Oxford, 2024) ; formation sur les outils d'IA pour l'enseignement (Oxford, 2024). \\
+\textbf{Données/LOD :} « CRMarchaeo Workshop: a stepping stone to FAIR practice » (2023) ; « Linked Past VIII » (2022) ; formations à la gestion des données de recherche et aux plans de gestion (Oxford, 2022). \textbf{Statistiques :} formation CNRS « STATS BAYES 2026 ».
+
+\section*{Responsabilités et engagement collectif}
+\textbf{2025--2026 :} coordination du groupe « Bases de données et référentiels » du réseau national CAI-RN (MITI-CNRS). \textbf{2023--2024 :} représentant des chercheurs au \emph{Open Access Steering Group} de l'Université d'Oxford. Formation et accompagnement d'équipes de recherche aux bases de données, à l'analyse et aux outils numériques.
+
+\section*{Publications et contributions en lien avec la candidature}
+\begin{itemize}
+\item Huet T. et Burke A. (2026), « Toward Reproducible Machine Learning-Based Provenance Analysis of Chalcolithic Variscite », \emph{Peer Community in Archaeology}. \href{https://doi.org/10.24072/pci.archaeo.100676}{doi:10.24072/pci.archaeo.100676}.
+\item Huet T. (2026), « Approaches to Uncertainty in Archaeological Linked Open Data within NFDI4Objects », \emph{Peer Community in Archaeology}. \href{https://doi.org/10.24072/pci.archaeo.100634}{doi:10.24072/pci.archaeo.100634}.
+\end{itemize}
+
+$\Rightarrow$ \textbf{CV complet} \href{https://github.com/zoometh/thomashuet#dr-thomas-huet-}{https://github.com/zoometh/thomashuet}.
+
+\end{document}

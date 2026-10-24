@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  13 AUG 2026 11:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.11)  19 OCT 2026 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -520,168 +520,167 @@ Package pdftex.def Info: ../img/link_darkblue.png  used on input line 294.
 
 
 [2 <../img/link_darkblue.png> <../img/link_grey.png>]
-File: ../img/link_darkblue.png Graphic file (type png)
-<use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 371.
-(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
-
 
 [3]
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 377.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 374.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 382.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 380.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 388.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 385.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 424.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 391.
+(pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
+File: ../img/link_darkblue.png Graphic file (type png)
+<use ../img/link_darkblue.png>
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 429.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 
 
 [4]
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 436.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 441.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 469.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 474.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 471.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 476.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 489.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 494.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 
 
 [5]
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 510.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 515.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 512.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 517.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 516.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 521.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_grey.png Graphic file (type png)
 <use ../img/link_grey.png>
-Package pdftex.def Info: ../img/link_grey.png  used on input line 518.
+Package pdftex.def Info: ../img/link_grey.png  used on input line 523.
 (pdftex.def)             Requested size: 12.04753pt x 6.84702pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 520.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 525.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 522.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 527.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 524.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 529.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 526.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 531.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 528.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 533.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
-<../img/icon_youtube.png, id=148, 53.7207pt x 37.5804pt>
+<../img/icon_youtube.png, id=150, 53.7207pt x 37.5804pt>
 File: ../img/icon_youtube.png Graphic file (type png)
 <use ../img/icon_youtube.png>
-Package pdftex.def Info: ../img/icon_youtube.png  used on input line 531.
+Package pdftex.def Info: ../img/icon_youtube.png  used on input line 536.
 (pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
 File: ../img/icon_youtube.png Graphic file (type png)
 <use ../img/icon_youtube.png>
-Package pdftex.def Info: ../img/icon_youtube.png  used on input line 539.
+Package pdftex.def Info: ../img/icon_youtube.png  used on input line 544.
 (pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
 File: ../img/icon_youtube.png Graphic file (type png)
 <use ../img/icon_youtube.png>
-Package pdftex.def Info: ../img/icon_youtube.png  used on input line 543.
+Package pdftex.def Info: ../img/icon_youtube.png  used on input line 548.
 (pdftex.def)             Requested size: 10.74394pt x 7.51593pt.
 
 
 [6 <../img/icon_youtube.png>]
 
 [7]
-<../img/app-github-rect.png, id=167, 225.84375pt x 59.22125pt>
+<../img/app-github-rect.png, id=169, 225.84375pt x 59.22125pt>
 File: ../img/app-github-rect.png Graphic file (type png)
 <use ../img/app-github-rect.png>
-Package pdftex.def Info: ../img/app-github-rect.png  used on input line 629.
+Package pdftex.def Info: ../img/app-github-rect.png  used on input line 634.
 (pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
 File: ../img/app-github-rect.png Graphic file (type png)
 <use ../img/app-github-rect.png>
-Package pdftex.def Info: ../img/app-github-rect.png  used on input line 633.
+Package pdftex.def Info: ../img/app-github-rect.png  used on input line 638.
 (pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
 File: ../img/app-github-rect.png Graphic file (type png)
 <use ../img/app-github-rect.png>
-Package pdftex.def Info: ../img/app-github-rect.png  used on input line 637.
+Package pdftex.def Info: ../img/app-github-rect.png  used on input line 642.
 (pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
 File: ../img/app-github-rect.png Graphic file (type png)
 <use ../img/app-github-rect.png>
-Package pdftex.def Info: ../img/app-github-rect.png  used on input line 640.
+Package pdftex.def Info: ../img/app-github-rect.png  used on input line 645.
 (pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
-<../img/prog-r.png, id=172, 250.9375pt x 194.7275pt>
+<../img/prog-r.png, id=174, 250.9375pt x 194.7275pt>
 File: ../img/prog-r.png Graphic file (type png)
 <use ../img/prog-r.png>
-Package pdftex.def Info: ../img/prog-r.png  used on input line 644.
+Package pdftex.def Info: ../img/prog-r.png  used on input line 649.
 (pdftex.def)             Requested size: 10.03578pt x 7.78777pt.
 File: ../img/app-github-rect.png Graphic file (type png)
 <use ../img/app-github-rect.png>
-Package pdftex.def Info: ../img/app-github-rect.png  used on input line 644.
+Package pdftex.def Info: ../img/app-github-rect.png  used on input line 649.
 (pdftex.def)             Requested size: 22.5857pt x 5.92245pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 652.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 657.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
-<../img/prj_neonet-blue.png, id=176, 1045.9075pt x 237.88875pt>
+<../img/prj_neonet-blue.png, id=178, 1045.9075pt x 237.88875pt>
 File: ../img/prj_neonet-blue.png Graphic file (type png)
 <use ../img/prj_neonet-blue.png>
-Package pdftex.def Info: ../img/prj_neonet-blue.png  used on input line 656.
+Package pdftex.def Info: ../img/prj_neonet-blue.png  used on input line 661.
 (pdftex.def)             Requested size: 31.37587pt x 7.13635pt.
-<../img/prj_leapfrog-blue.png, id=178, 140.77594pt x 108.405pt>
+<../img/prj_leapfrog-blue.png, id=180, 140.77594pt x 108.405pt>
 File: ../img/prj_leapfrog-blue.png Graphic file (type png)
 <use ../img/prj_leapfrog-blue.png>
-Package pdftex.def Info: ../img/prj_leapfrog-blue.png  used on input line 660.
+Package pdftex.def Info: ../img/prj_leapfrog-blue.png  used on input line 665.
 (pdftex.def)             Requested size: 14.07841pt x 10.84113pt.
-<../img/lod-nakala.png, id=180, 401.5pt x 401.5pt>
+<../img/lod-nakala.png, id=182, 401.5pt x 401.5pt>
 File: ../img/lod-nakala.png Graphic file (type png)
 <use ../img/lod-nakala.png>
-Package pdftex.def Info: ../img/lod-nakala.png  used on input line 660.
+Package pdftex.def Info: ../img/lod-nakala.png  used on input line 665.
 (pdftex.def)             Requested size: 12.04448pt x 12.04448pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 713.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 718.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 733.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 738.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 File: ../img/link_darkblue.png Graphic file (type png)
 <use ../img/link_darkblue.png>
-Package pdftex.def Info: ../img/link_darkblue.png  used on input line 754.
+Package pdftex.def Info: ../img/link_darkblue.png  used on input line 759.
 (pdftex.def)             Requested size: 9.03336pt x 5.13396pt.
 
 
 [8 <../img/app-github-rect.png> <../img/prog-r.png> <../img/prj_neonet-blue.png> <../img/prj_leapfrog-blue.png> <../img/lod-nakala.png>]
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 968--968
+Underfull \hbox (badness 10000) in paragraph at lines 973--973
 
  []
 
@@ -702,11 +701,11 @@ Here is how much of TeX's memory you used:
  36638 multiletter control sequences out of 15000+600000
  569264 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,933b,455s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,933b,456s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi525\ecss0800.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx0700.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbi1440.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1000.pk> <C:\Users\TH282424\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/TH282424/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on cv_french_english.pdf (10 pages, 577436 bytes).
+Output written on cv_french_english.pdf (10 pages, 578163 bytes).
 PDF statistics:
- 686 PDF objects out of 1000 (max. 8388607)
+ 688 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
  140 words of extra memory for PDF output out of 10000 (max. 10000000)
 
